@@ -1,39 +1,35 @@
 - links:
+  - header: IT Solver
+    link: /
   - name: Pricing
     link: /pricing/
-  - name: Blog
-    link: /blog/
+  - name: Cloud Apps
+    link: /cloud-apps-g-suite/
   - name: About
     link: /about/
   - name: Contact
     link: /contact/
 - links:
-  - name: Login
-    link: /
-    new_window: true
-  - name: Sign Up
-    link: /
-    new_window: true
-  - name: Docs
-    link: /
-    new_window: true
-  - name: Status
-    link: /
-    new_window: true
+  - header: Support
+  - name: Help Centre
+    link: https://support.itsolver.net/hc/en-au
+    contact_icon: help
+  - name: support@itsolver.net
+    link: mailto:support@itsolver.net
+    contact_icon: email
+  - name: 07 3123 6000
+    link: tel:+61731236000
+    contact_icon: phone
 - links:
+  - header: Connect
+  - name: Blog
+    link: /blog/
+    social_icon: ITSolver-Blog
   - name: Facebook
-    link: https://facebook.com
-    new_window: true
+    link: https://facebook.com/itsolver.net
     social_icon: Facebook
+    new_window: true
   - name: Twitter
-    link: https://twitter.com
+    link: https://twitter.com/itsolvernet
     social_icon: Twitter
     new_window: true
-  - name: YouTube
-    link: https://youtube.com
-    social_icon: YouTube
-    new_window: true
-  - name: RSS
-    link: /feed.xml
-    social_icon: RSS
-    new_window: false

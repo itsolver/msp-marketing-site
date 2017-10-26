@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "latest",
+    "firebase-admin": "latest"
+  }
+}

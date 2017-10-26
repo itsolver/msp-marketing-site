@@ -1,0 +1,28 @@
+- suburbs:
+  - name: Alexandra Hills
+  - name: Amity Point
+  - name: Birkdale
+  - name: Capalaba
+  - name: Carbrook
+  - name: Coochiemudlo Island
+  - name: Cornubia
+  - name: Cleveland
+  - name: Dunwich
+  - name: Karragarra Island
+  - name: Lamb Island
+  - name: Macleay Island
+  - name: Mount Cotton
+  - name: North Stradbroke Island
+  - name: Ormiston
+  - name: Point Lookout
+  - name: Russell Island
+  - name: Sheldon
+  - name: Thorneside
+  - name: Thornlands
+  - name: Victoria Point
+  - name: Wellington Point
+- globals:
+  - name: Mexico
+  - name: New Zealand
+  - name: Papua New Guinea
+  - name: Singapore

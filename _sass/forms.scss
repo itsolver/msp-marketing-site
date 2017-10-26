@@ -1,11 +1,13 @@
 .button a, input[type=submit] {
 	color: #fff;
 	text-decoration: none;
-	padding: 10px 30px;
 	background: $brand-color;
-	border-radius: 3px;
 	border: 1px solid rgba(255,255,255,.5);
-	transition: .2s ease-in-out;
+	transition: all 0.5s ease;
+	padding: 14px 30px;
+	margin: 30px auto 0 auto;
+	min-width: 200px;
+	width: auto;
 }
 
 .button a:hover, input[type=submit]:hover {
@@ -14,11 +16,19 @@
 	cursor: pointer;
 }
 
+.button a.home-register {
+	margin-left: 20px;
+}
+
+
+.button.alt {
+	padding: 30px 0;
+}
+
 .button.alt a {
 	background: rgba(255,255,255,0.15);
-	border-radius: 3px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
-	padding: 16px 50px;
+	padding: 14px 30px;
 }
 
 .button.alt a:hover {
@@ -26,42 +36,107 @@
 	color: $brand-color;
 }
 
-textarea, input, button, select { font-family: inherit; font-size: inherit; }
+.cta.button {
+	padding: 40px 0;
+	text-align: center;
+}
 
-input[type=submit] {
+.cta.button a:hover {
+	background: #fff;
+	color: $brand-color;
+}
+
+.cta.button a.bg-fff:hover {
+	background: $secondary-brand-color;
+	color: #fff;
+}
+
+.cta.button a.home-request-demo  {
+	background: rgba(255,255,255,0.3);
+}
+
+.cta.button a.home-request-demo:hover  {
+	background: #fff;
+	color: $brand-color;
+}
+.cta.button a.bg-fff-request-demo  {
+	background: rgba(255,255,255,0.3);
+}
+
+.cta.button a.bg-fff-request-demo:hover  {
+	background: #fff;
+	color: $brand-color;
+}
+.cta.button.help-centre {
+	text-align: center;
+}
+.cta.button.help-centre a {
+	color: $brand-color;
+  border: 1px solid $brand-color;
+  background: #fff;
+	cursor: pointer;
+}
+
+.cta.button.help-centre a:hover {
+	color: #fff;
+	border: 1px solid $brand-color;
+	background: $brand-color;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 670px) {
+    .hide-sitewidth {
+        display: none !important;
+    }
+}
+
+.contact-form textarea, input, button, select {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.contact-form input[type=submit] {
 	margin: 20px 0 0 0;
+	border-radius: 0;
+	-webkit-appearance: button;
 }
 
-label, input, textarea {
-	display: block;
+.contact-form label, input, textarea, select {
+	margin: 0 0 10px 0;
 	width: 100%;
+	padding: 12px 0 12px 15px;
+	height: 46px;
+	vertical-align: middle;
+	border: 1px solid #D5D5D5;
+	box-shadow: none;
+	display: block;
 	box-sizing: border-box;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	color: $text-color;
 }
 
-textarea {
+.contact-form textarea {
 	resize: vertical;
 	height: 150px;
 }
 
-label {
+.contact-form label {
 	margin: 20px 0 5px 0;
 }
 
-input, textarea {
-	padding: 10px;
-	font-size: 1em;
-}
-
-input, textarea {
+.contact-form input, textarea {
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
 	-ms-transition: all 0.30s ease-in-out;
 	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 	border: 1px solid #DDDDDD;
+	font-size: 1em;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+.contact-form input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
 	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 	border: 1px solid rgba(81, 203, 238, 1);
 }

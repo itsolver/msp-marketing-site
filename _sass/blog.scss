@@ -85,8 +85,8 @@
 	}
 
 	.post-content {
-		.button {
-			margin: 30px 0 0 0;
+		.read-more {
+			margin: 20px 0 0 0;
 		}
 	}
 }
@@ -101,9 +101,9 @@
 		background: #eee;
     padding: 3px 5px;
     font-size: .8em;
-    border-radius: 5px;
+    border-radius: 2px;
     color: #888;
-		transition: .2s ease-in-out;
+		transition: all 0.5s ease;
 
 		&:hover {
 			color: #555;
@@ -122,4 +122,11 @@
 		bottom: 4px;
 		right: -3px;
 	}
+}
+
+img + em { 
+	text-align: center;
+	font-size: 0.65em;
+	font-style: normal;
+	display: block;
 }

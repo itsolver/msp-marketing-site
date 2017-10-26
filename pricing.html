@@ -1,87 +1,529 @@
 ---
 title: Pricing
-heading: Find the perfect plan for your business
-description: All plans include our award winning sales optimization solution to track your sales in real time.
-pricing_table:
-  - name: Basic
-    color: "#8e8e8e"
-    features:
-      - text: $25 per month
-        highlight: true
-      - text: Up to 5 users
-        highlight: false
-      - text: Basic lead scoring
-        highlight: false
-      - text: CRM
-        highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
-    color: "#4a4a4a"
-    features:
-      - text: $99 per month
-        highlight: true
-      - text: Everything in Basic
-        highlight: false
-      - text: Up to 25 users
-        highlight: false
-      - text: Advanced lead scoring
-        highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
-    color: "#000000"
-    features:
-      - text: $299 per month
-        highlight: true
-      - text: Everything in Basic and Pro
-        highlight: false
-      - text: Up to 100 users
-        highlight: false
-      - text: Campaign builder
-        highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
+heading: Get premium support
+description:
 faq:
-  - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express.
-  - question: Can I change my plan at a later time?
-    answer: Yes, you can upgrade and downgrade your plan at anytime.
-  - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
-  - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+  - question: What is a user?
+    answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are included in pricing and don't count as additional users.
+  - question: Do you offer email accounts?
+    answer: Yes. You can purchase email accounts via G Suite from IT Solver. This also includes Google Calendar, Docs, Drive, and more.
+  - question: How do I buy and pay?
+    answer: Get started with a free 14-day trial or <a href="{{ site.baseurl }}/contact/">contact sales</a>. After the trial ends, you can pay by credit card.
+  - question: What is the payment plan?
+    answer: We offer a flexible payment plan. You can add and delete users at anytime. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a> or see the IT Solver Help Centre.
+  - question: When are hourly rates billed?
+    answer: Projects or work related to an add, remove or change.
+  - question: What are the hourly rates for project work?
+    answer: $100 an hour for customers on a plan, otherwise $150 an hour. 1 hour minimum, then billed in 15 minute increments.
+  - question: Have more questions?
+    answer: Angus usually responds in under an hour during Mon-Sat 9AM - 5PM. Visit the <a href="{{ site.baseurl }}/contact/">Help & Support Center</a> to contact Angus.
 ---
-<div class="plans">
-	{% for plan in page.pricing_table %}
-		<ul class="plan">
-			<li style="background: {{ plan.color }}">
-				<h3>{{ plan.name }}</h3>
-			</li>
-			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
-
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
+<div id="cloud-site">
+  <div class="l-space-top-6 l-space-bottom-6">
+    <div class="is-hidden-tablet-large">
+      <div class="table-top flex">
+        <div class="transparent-card col flex-28"></div>
+        <div class="silver-card col flex-24 flex flex-c">
+          <div class="plan-status bg-silver"></div>
+          <div class="plan-type">Silver</div>
+          <div class="plan-desc">
+            Lowest-cost access to support services. Includes G Suite Basic.
+          </div>
+          <div class="plan-pricing flex flex-c flex-1">
+            <div class="darker flex-1">$34 per user per month</div>
+            <a href="{{ site.baseurl }}/register-silver/" class="button bg-silver">
+              Upgrade To Silver
+            </a>
+          </div>
+        </div>
+        <div class="gold-card col flex flex-c flex-24">
+          <div class="plan-status bg-gold"></div>
+          <div class="plan-type">Gold</div>
+          <div class="plan-desc">
+            for more protection to keep your business safer. Includes G Suite Business and computer support.
+          </div>
+          <div class="plan-pricing flex flex-c flex-1">
+            <div class="darker flex-1">
+              $124 per user per month
+            </div>
+            <a href="{{ site.baseurl }}/register-gold/" class="button bg-gold">
+              Upgrade To Gold
+            </a>
+          </div>
+        </div>
+        <div class="platinum-card col flex flex-c flex-24">
+          <div class="plan-status bg-platinum"></div>
+          <div class="plan-type">Platinum</div>
+          <div class="plan-desc">
+            for premium support. Includes G Suite Business, computer and mobile device support.</div>
+          <div class="plan-pricing flex flex-c flex-1">
+            <div class="darker flex-1">
+              $152 per user per month
+            </div>
+            <a href="{{ site.baseurl }}/register-platinum/" class="button bg-platinum">
+              Upgrade to Platinum
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-table">
+        <div class="flex-header flex-row">
+          <div class="flex-28">Features</div>
+          <div class="flex-24">Silver</div>
+          <div class="flex-24">Gold</div>
+          <div class="flex-24">Platinum</div>
+        </div>
+        <div class="flex-row row-heading">
+          <div class="flex-1">Issue Resolution</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Break/Fix Cases</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            Target Initial Response Time for High Priority Issues
+          </div>
+          <div class="flex-24">4-8 business hours</div>
+          <div class="flex-24">2-4 business hours</div>
+          <div class="flex-24">1 business hour</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            24x7 Support for Critical Impact issues
+          </div>
+          <div class="flex-24"></div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row row-heading">
+          <div class="flex-1">Support Access</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            Log-in access to
+              <a href="https://support.itsolver.net/hc/en-au" target="_blank">Support Center</a>
+          </div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Phone, Email and Chat Support</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">On-site visits by a technician when issues cannot be resolved remotely</div>
+          <div class="flex-24"></div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+          <div class="flex-row row-heading">
+          <div class="flex-1">Managed environments</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">G Suite</div>
+          <div class="flex-24">Basic</div>
+          <div class="flex-24">Business</div>
+          <div class="flex-24">Business</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            <div>Computer</div>
+            <small>Windows or Mac</small>
+          </div>
+          
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            <div>Smartphone or tablet
+            </div>
+            <small>iOS or Android</small>
+          </div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row row-heading">
+          <div class="flex-1">Productivity</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">
+            Business email through Gmail
+          </div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Secure online storage</div>
+          <div class="flex-24">30GB</div>
+          <div class="flex-24">Unlimited cloud storage (or 1TB per user if fewer than 5 users)</div>
+          <div class="flex-24">Unlimited cloud storage (or 1TB per user if fewer than 5 users)</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Word processing for teams</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Powerful spreadsheets</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Archiving and compliance</div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row row-heading">
+          <div class="flex-1">Security and maintenance for computer</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Internet Security</div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">24x7 Proactice Monitoring</div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-28">Automatic fixes and maintenance</div>
+          <div class="flex-24">&nbsp;</div>
+          <div class="flex-24">Yes</div>
+          <div class="flex-24">Yes</div>
+        </div>
+        </div>
+      <div class="flex-table">
+        <div class="flex-header flex-row">
+          <div class="flex-1">Options</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-8">
+            <div>Hosting</div>
+          </div>
+          <div class="flex-28">$50 per month</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-8">
+            <div>Cloud to Cloud Backup</div>
+              <small>
+                Per domain includes up to 10 users 
+              </small>
+          </div>
+          <div class="flex-28">$50 per month</div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-8">
+            <div>Projects</div>
+              <small>Add, remove or change</small>
+          </div>
+          <div class="flex-28">$100 per hour</div>
+        </div>
+      </div>
+    </div>
+    <div class="is-hidden-desktop-large">
+      <div class="table-top flex">
+        <div class="silver-card col flex-24 flex flex-c">
+          <div class="plan-status bg-silver"></div>
+          <div>Silver</div>
+          <div>Lowest-cost access to support services. Includes G Suite Basic.</div>
+          <div class="flex flex-c flex-1">
+            <div class="flex-1">$36 per user per month</div>
+            <a href="{{ site.baseurl }}/register-silver/" class="button bg-silver">
+              Upgrade To Silver
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-table">
+        <div class="flex-row flex-header">
+          <div class="flex-1">Features</div>
+        </div>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Issue Resolution"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Issue Resolution</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">Break/Fix Cases</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              Target Initial Response Time for Critical Issues
+            </div>
+            <div>4-8 business hours</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Support Access"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Support Access</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">
+              Log-in access to
+              <a href="https://support.itsolver.net/hc/en-au" target="_blank">Support Center</a>
+            </div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              Phone, Email and Chat Support
+            </div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Managed environments"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Managed environments</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">G Suite</div>
+            <div>Basic</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Productivity"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Productivity</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="ng-scope">
+            <div class="darker">Business email through Gmail</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Secure online storage</div>
+            <div>30GB</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Word processing for teams</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Powerful spreadsheets</div>
+            <div>Yes</div>
+          </div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Pricing Details"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Pricing Details</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            $36 per user monthly flat fee
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+      </div>
+      <div class="table-top flex">
+        <div class="gold-card col flex flex-c flex-1">
+          <div class="plan-status bg-gold"></div>
+          <div>Gold</div>
+          <div>for more protection to keep your business safer. Includes G Suite Business and computer support.</div>
+          <div class="flex flex-c flex-1">
+            <div class="flex-1">$124 per user per month</div>
+            <a href="{{ site.baseurl }}/register-gold/" class="button bg-gold">
+              Upgrade To Gold
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-table">
+        <div class="flex-row flex-header">
+          <div class="flex-1">Features</div>
+        </div>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Issue Resolution"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Issue Resolution</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">Break/Fix Cases</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              Target Initial Response Time for Critical Issues
+            </div>
+            <div>2-4 business hours</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Support Access"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Support Access</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">
+              Log-in access to
+              <a href="https://support.itsolver.net/hc/en-au" target="_blank">Support Center</a>
+            </div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Phone, Email and Chat Support</div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Managed environments"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Managed environments</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">G Suite</div>
+            <div>Business</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Computer - Windows or Mac</div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Productivity"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Productivity</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">Business email through Gmail</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Secure online storage</div>
+            <div>Unlimited cloud storage (or 1TB per user if fewer than 5 users)</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Word processing for teams</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Powerful spreadsheets</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Archiving and compliance</div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Security and maintenance"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Security and maintenance for computer</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">Google Account Security</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Internet Security</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">24x7 Proactive Monitoring</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Automatic fixes and maintenance</div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Pricing Details"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Pricing Details</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            $124 per user monthly flat fee
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+      </div>
+      <div class="table-top flex">
+        <div class="platinum-card col flex flex-c flex-1">
+          <div class="plan-status bg-platinum"></div>
+          <div>Platinum</div>
+          <div>for premium support. Includes G Suite Business, computer and mobile device support.</div>
+          <div class="flex flex-c flex-1">
+            <div class="flex-1">$152 per user per month</div>
+            <a href="{{ site.baseurl }}/register-platinum/" class="button bg-platinum">
+              Upgrade to Platinum
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-table">
+        <div class="flex-row flex-header">
+          <div class="flex-1">Features</div>
+        </div>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Issue Resolution"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Issue Resolution</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">Break/Fix Cases</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              Target Initial Response Time for Critical Issues
+            </div>
+            <div>1 business hour</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              24x7 Support for Critical Impact issues
+            </div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Support Access"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Support Access</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">
+              Log-in access to
+              <a href="https://support.itsolver.net/hc/en-au" target="_blank">Support Center</a>
+            </div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">
+              Phone, Email and Chat Support
+            </div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Managed environments"><div class="zippy-container expanded" ng-class="{expanded: zippyCtrl.zippyExpanded}"><div class="zippy-title ng-binding" ng-click="zippyCtrl.toggle()">Managed environments</div><!-- ngIf: zippyCtrl.zippyExpanded --><div class="toggle-zippy zippy-content ng-scope" ng-if="zippyCtrl.zippyExpanded" ng-transclude="">
+          <div class="ng-scope">
+            <div class="darker">G Suite</div>
+            <div>Business</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Computer - Windows or Mac</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Smartphone or tablet</div>
+            <div>Yes</div>
+          </div>
+        </div><!-- end ngIf: zippyCtrl.zippyExpanded --></div></cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Productivity">
+          <div class="ng-scope">
+            <div class="ng-scope">
+            <div class="darker">Business email through Gmail</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Secure online storage</div>
+            <div>Unlimited cloud storage (or 1TB per user if fewer than 5 users)</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Word processing for teams</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Powerful spreadsheets</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Archiving and compliance</div>
+            <div>Yes</div>
+          </div>
+          </cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Security and maintenance">
+          <div class="ng-scope">
+            <div class="darker">Google Account Security</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Internet Security</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">24x7 Proactive Monitoring</div>
+            <div>Yes</div>
+          </div>
+          <div class="ng-scope">
+            <div class="darker">Automatic fixes and maintenance</div>
+            <div>Yes</div>
+          </div>
+        </cloud-zippy>
+        <cloud-zippy class="flex-row flex-c ng-isolate-scope" zippy-title="Pricing Details">
+          <div>
+            $152 per user monthly flat fee
+          </div>
+        </cloud-zippy>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% if page.faq %}

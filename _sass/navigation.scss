@@ -8,47 +8,48 @@
 	@media #{$mid-point} {
 		border: 0;
 		padding: 0 20px;
-
 		a {
 			display: inline;
 		}
 	}
 }
 
+
+
 nav {
-	text-transform: uppercase;
-	font-size: .8em;
+	font-size: 17px;
 	width: 100%;
 
 	@media #{$mid-point} {
+		font-size: 14px;
 		text-align: right;
 		position: absolute;
-		top: 13px;
+		top: 3px;
 		right: 0;
 		padding: 0 20px;
 	}
 
-
 	a {
 		margin: 0 3px;
-		padding: 20px 10px;
+		padding: 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: rgba(255,255,255,.8);
-		transition: .2s ease-in-out;
+		transition: all 0.5s ease;
 		display: none;
+		letter-spacing: 0.66px;
 
 		@media #{$mid-point} {
+			
 			display: inline;
-			padding: 10px;
+			padding:  0 10px;
 		}
-
 
 		&.nav-toggle {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -22px;
-			font-size: 1.9em;
+			top: -17px;
+			font-size: 22px;
 			border: 0;
 
 			@media #{$mid-point} {
@@ -66,12 +67,18 @@ nav {
 		border-bottom: 1px solid rgba(255,255,255,.3);
 		color: #fff;
 	}
-
+	a.highlight {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
 	@media #{$mid-point} {
 		a.highlight {
 			border: 1px #ccc solid;
-			border-radius: 5px;
-
+			background: $brand-color;
+			color: #fff;
+			margin-left: 30px;
+			padding-top: 8px;
+			padding-bottom: 8px;
 			&:hover {
 				background: #fff;
 				color: $brand-color;

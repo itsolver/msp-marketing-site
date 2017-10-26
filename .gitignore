@@ -1,3 +1,7 @@
+_assets/
 _site/
 .sass-cache/
-.jekyll-metadata
+.vscode/
+node_modules/
+.firebaserc
+have-i-been-pwned-verification.txt

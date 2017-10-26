@@ -1,178 +1,55 @@
 ---
-title: Contact
-heading: Get in touch today
-description: We'd love to help you improve your sales.
-
-map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
+title: Contact Us
 ---
-<div class="map" id="map"></div>
 
 
 <div class="contact-box">
-	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-		<input type="hidden" name="_to" value="support@example.com" />
-		<input type="text" name="_gotcha" style="display: none;">
-
-		<label for="name">Full Name</label>
-		<input type="text" name="name" id="name" placeholder="Enter your name..." />
-
-		<label for="email">Email Address</label>
-		<input type="email" name="email" id="email" placeholder="Enter your email..." required />
-
-		<label for="message">Message</label>
-		<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-		<input type="submit" value="Send Message" />
-	</form>
-
 	<div class="contact-details">
-		<h3 class="editable">Address</h3>
-		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
-
-		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+		<form action="https://formspree.io/support@itsolver.net" method="post" class="contact-form">
+			<input type="hidden" name="_next" value="{{ site.baseurl }}/contact-success/" />
+			<input type="email" name="_replyto" id="email" placeholder="Email address" required />
+			<input type="text" name="_gotcha" style="display: none;">
+			<select type="select" name="subject" class="select subject required" id="subject">
+				<option value="-" disabled="" selected="">What's this about?</option>
+				<option value="Pricing/Sales">Pricing/Sales</option>
+				<option value="Billing">Billing</option>
+				<option value="Marketing/PR">Marketing/PR</option>
+				<option value="Partnerships">Partnerships</option>
+				<option value="Employment">Employment</option>
+			</select>
+			<textarea name="message" id="message" placeholder="Go ahead, we're listening..."></textarea>
+			<input type="submit" value="Send" />
+		</form>
 	</div>
 </div>
 
-<script type="text/javascript">
-	window.mapData = {{ page.map | jsonify }};
+<div class="contact-box">
+	<div class="contact-help-centre">
+		<h2 class="editable">Looking for support?</h2>
+		<div class="cta button help-centre">
+				<a class="editable" href="https://support.itsolver.net/">Visit Our Help Centre</a>
+		</div>
+	</div>
+</div>
 
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{
-				"featureType": "all",
-				"elementType": "labels.text.fill",
-				"stylers": [{
-					"saturation": 36
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 40
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.text.stroke",
-				"stylers": [{
-					"visibility": "on"
-				}, {
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "all",
-				"elementType": "labels.icon",
-				"stylers": [{
-					"visibility": "off"
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "administrative",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}, {
-					"weight": 1.2
-				}]
-			}, {
-				"featureType": "landscape",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 20
-				}]
-			}, {
-				"featureType": "poi",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 21
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.fill",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}, {
-				"featureType": "road.highway",
-				"elementType": "geometry.stroke",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 29
-				}, {
-					"weight": 0.2
-				}]
-			}, {
-				"featureType": "road.arterial",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 18
-				}]
-			}, {
-				"featureType": "road.local",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 16
-				}]
-			}, {
-				"featureType": "transit",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 19
-				}]
-			}, {
-				"featureType": "water",
-				"elementType": "geometry",
-				"stylers": [{
-					"color": "#000000"
-				}, {
-					"lightness": 17
-				}]
-			}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById("map"), myOptions);
-		marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
+<div class="contact-box">
+	<div class="contact-details">
+		<h2 class="editable">More options</h2>
+		<h3 class="editable icon">{% if site.data.icon_ready %}{% include other-icon.html icon="phone" %}{% endif %} Call now</h3>
+		<p><a  href="tel:+61731236000">07 3123 6000</a></p></br>
+		<h3 class="editable">Schedule a Call</h3>
+		<p><a href="https://calendly.com/itsolver/20-minute-phone-call">Setup a call for later</a></p>
+		<h3 class="editable">Email</h3>
+		<p>For all general enquiries, email <a href="mailto:support@itsolver.net">support@itsolver.net</a></p>
+	</div>
+</div>
 
-		google.maps.event.addDomListener(window, "resize", function () {
-			map.setCenter(myOptions.center);
-		});
-	}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
+<div class="contact-box">
+	<div class="contact-details">
+		<h2  class="editable">Where we operate</h2>
+			  <p>We're based in Redland Bay and visit local businesses to deliver productivity and more money. Thanks to the internet, IT Solver can help customers all around the world.</p>
+	</div>
+</div>
+
+<div class="overlay" onClick="style.pointerEvents='none'"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226349.99095722762!2d153.21640464864808!3d-27.571242239201556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b916510942d8acf%3A0xf831a7625f6a263f!2sIT+Solver!5e0!3m2!1sen!2sau!4v1490193241568" style="border:0; background: #eee; display: block; width: 100%;" height="300" frameborder="0"></iframe>

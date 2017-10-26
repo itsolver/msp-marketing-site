@@ -1,0 +1,12 @@
+- name: Warranty Management
+  description: Lower your Total Cost of Ownership by replacing hardware before it becomes a liability.
+- name: Security
+  description: Stay ahead of the bad guys with our custom package of the best solutions the security industry has to offer. Key components we take care of are antivirus, web defense and software updates.
+- name: Backups
+  description: Ensure your business continuity with a Backup & Disaster Recovery strategy.
+- name: Web performance
+  description: IT Solver makes it easy for you to monitor the uptime and performance of your website or web application.
+- name: Availability
+  description: Protect your profit and personal time.
+- name: Automatic health check-ups
+  description: Our tools automatically check and fix common issues. If it's too much for a bot to handle, an expert human will take over.

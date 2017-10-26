@@ -2,8 +2,8 @@
   link: /pricing/
   new_window: false
   highlight: false
-- name: Blog
-  link: /blog/
+- name: Cloud Apps
+  link: /cloud-apps-g-suite/
   new_window: false
   highlight: false
 - name: About
@@ -14,11 +14,9 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
-  highlight: false
-- name: Sign Up
-  link: /
-  new_window: true
+- name: Support
+  link: https://support.itsolver.net/hc/en-au
+- name: SIGN UP
+  link: /register/
+  new_window: false
   highlight: true

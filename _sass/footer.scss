@@ -13,14 +13,15 @@
 		margin: 15px auto;
 
 		@media #{$tablet} {
-			max-width: 150px;
+			max-width: 180px;
 		}
 		a {
-
+			display: inline !important;
 			&:hover {
 				text-decoration: none;
 			}
 			svg {
+				display: inline !important;
 				fill: #999;
 				margin-right: 10px;
 				transition: fill 0.2s ease;
@@ -34,16 +35,22 @@
 			&:hover svg {
 				fill: #fff;
 			}
-
-			&.twitter-icon:hover svg {
+			&.Facebook-icon:hover svg {
+				fill: #365899;
+			}
+			
+			&.Twitter-icon:hover svg {
 				fill: #55acee;
 			}
 
-			&.google-plus-icon:hover svg {
+			&.Google-Plus-icon:hover svg {
 				fill: #db4437;
 			}
+			&.ITSolver-Blog-icon:hover svg {
+				fill: #4182e4;
+			}
 
-			&.youtube-icon:hover svg {
+			&.Youtube-icon:hover svg {
 				fill: #cd201f;
 			}
 
@@ -76,13 +83,13 @@ footer {
 	.copyright {
 		font-size: .8em;
 		margin: 0 auto;
-		
+
 		@media #{$tablet} {
 			text-align: center;
 		}
 
 	}
-	
+
 	&,
 	a {
 		color: #999;
