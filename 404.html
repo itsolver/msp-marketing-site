@@ -1,6 +1,30 @@
 ---
-title: Page not found
-description: The page you requested does not exist. That's all we know.
+title: 404 Not Found
+heading: hide-heading
+description:
 permalink: /404.html
 sitemap: false
 ---
+<body class="exp-invert-logo">
+    <div id="error-page">
+      <div id="error-page-content">
+        <img id="error-page-hh-illustration" src="{{ site.baseurl }}/images/magnifier.svg" alt="">
+        <p>
+          This page isn&#39;t available. Sorry about that.
+        </p>
+        <p>Try searching for something else.</p>
+        <script>
+        (function() {
+            var cx = '015780201329825883875:rawfgsyhk_c';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+        </script>
+        <gcse:search></gcse:search>
+     </div>
+      <span id="error-page-vertical-align"></span>
+</div>
