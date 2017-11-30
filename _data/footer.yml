@@ -20,6 +20,8 @@
   - name: 07 3123 6000
     link: tel:+61731236000
     contact_icon: phone
+  - name: Privacy & terms
+    link: /privacy/
 - links:
   - header: Connect
   - name: Blog
