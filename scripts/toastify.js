@@ -223,7 +223,7 @@
             bottom: 15
         };
         var topRightOffsetSize = {
-            top: 0,
+            top: 10,
             bottom: 15
         };
         var offsetSize = {

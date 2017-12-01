@@ -14,7 +14,7 @@ future: false # https://stackoverflow.com/a/5013966
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /the_favicon/favicon.ico
-description: Managed Tech Support | Maintenance and Monitoring
+description: Managed Tech Support, Maintenance and Monitoring
 author:
   name: Angus McLauchlan
   twitter: gusmacca
