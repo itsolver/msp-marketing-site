@@ -39,9 +39,8 @@ Install uBlock Origin on [Chrome](https://chrome.google.com/webstore/detail/ublo
 For mobile phones and tablets the options are different. 
 
 ## iOS - iPhone, iPad and iPod
-- [AdBlock for Mobile](https://itunes.apple.com/au/app/adblock-for-mobile/id1036484810?mt=8) (free / pay what you want), or
-- [Purify](https://itunes.apple.com/au/app/purify-block-ads-and-tracking-browse-in-peace/id1030156203?mt=8) (paid)
+[AdBlock for Mobile](https://itunes.apple.com/au/app/adblock-for-mobile/id1036484810?mt=8) (free / pay what you want) or [Purify](https://itunes.apple.com/au/app/purify-block-ads-and-tracking-browse-in-peace/id1030156203?mt=8) (paid)
 
-## Android - Samsung, Sony, Huawei (generally all other phones and tablets)
+## Android - Samsung, Sony, Huawei (all other phones and tablets)
 1. Get [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
 2. Install [uBlock Origin for Firefox](https://addons.mozilla.org/en-US/android/addon/ublock-origin/)
