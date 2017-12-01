@@ -27,12 +27,12 @@ tags:
 - Mozilla Firefox
 - Safari
 ---
+![Screenshot of YouTube Ad]({{ site.baseurl }}/images/skip-youtube-ad.jpg)
+If you use the web, you should read this. I get new customers calling me with malware on their computer or as victoms of tech support scams. 
 
-If you use the web, you should read this. New customers call me with malware on their computer and as victoms of tech support scams. 
+Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.
 
-Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.  
-
-I do the usual clean up but the real value is the last step, installing an adblocker. They're impressed with how much faster, safer and cleaner the web is without ads.
+I do the usual clean up but the real value is in the last step, installing an adblocker. They're impressed with how much cleaner, faster and safer the web is without ads.
 
 Install uBlock Origin on [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/addon/ublock-origin/) and [Microsoft Edge](https://www.microsoft.com/store/p/app/9nblggh444l4).
 

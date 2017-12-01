@@ -1,6 +1,6 @@
 var options = {
     text: "Technical support unavailable Dec 25 - Jan 1 🎅 🎄",
-    duration: 5000,
+    duration: 4000,
     callback: function () {
         this.remove();
         Toastify.reposition();
