@@ -44,7 +44,7 @@ script:
 
 after_success:
   #deploy to firebase using stored token. 
-  - firebase deploy --token "$FIREBASE_API_TOKEN" 
+  - firebase deploy --project itsolver-499d1 --token "$FIREBASE_API_TOKEN" 
 
 env:
   global:
