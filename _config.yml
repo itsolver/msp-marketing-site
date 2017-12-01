@@ -11,6 +11,9 @@ icon_ready: true
 twitter:
   username: itsolvernet
 future: false # https://stackoverflow.com/a/5013966
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /the_favicon/favicon.ico

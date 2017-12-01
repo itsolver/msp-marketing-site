@@ -1203,46 +1203,6 @@
         letter-spacing: -.01em;
         font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
     }
-
-    #ac-localnav .ac-ln-menu:lang(ar) {
-        letter-spacing: 0em;
-        font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(ja) {
-        letter-spacing: 0em;
-        font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(ko) {
-        letter-spacing: 0em;
-        font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(th) {
-        letter-spacing: 0em;
-        font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh) {
-        letter-spacing: 0em
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-CN) {
-        font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-HK) {
-        font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-MO) {
-        font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-TW) {
-        font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1797,39 +1757,6 @@
     white-space: nowrap
 }
 
-#ac-localnav .ac-ln-title:lang(ja) {
-    line-height: 2.375;
-    font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(th) {
-    font-family: "SF Pro TH","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Display","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Display","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Display","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 @media only screen and (max-width: 767px) {
     #ac-localnav .ac-ln-title {
         font-size:20px;
@@ -1837,39 +1764,6 @@
         font-weight: 500;
         letter-spacing: .017em;
         font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(ja) {
-        line-height: 2.65;
-        font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(ar) {
-        font-family: "SF Pro AR","SF Pro Gulf","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(ko) {
-        font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(th) {
-        font-family: "SF Pro TH","SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(zh-CN) {
-        font-family: "SF Pro SC","SF Pro Display","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(zh-HK) {
-        font-family: "SF Pro HK","SF Pro Display","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(zh-MO) {
-        font-family: "SF Pro HK","SF Pro TC","SF Pro Display","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title:lang(zh-TW) {
-        font-family: "SF Pro TC","SF Pro Display","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
     }
 }
 
@@ -1940,46 +1834,6 @@
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
-#ac-localnav .ac-ln-title-subhead:lang(ar),#ac-localnav .ac-ln-title-comingsoon:lang(ar) {
-    letter-spacing: 0em;
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(ja),#ac-localnav .ac-ln-title-comingsoon:lang(ja) {
-    letter-spacing: 0em;
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(ko),#ac-localnav .ac-ln-title-comingsoon:lang(ko) {
-    letter-spacing: 0em;
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(th),#ac-localnav .ac-ln-title-comingsoon:lang(th) {
-    letter-spacing: 0em;
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(zh),#ac-localnav .ac-ln-title-comingsoon:lang(zh) {
-    letter-spacing: 0em
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(zh-CN),#ac-localnav .ac-ln-title-comingsoon:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(zh-HK),#ac-localnav .ac-ln-title-comingsoon:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(zh-MO),#ac-localnav .ac-ln-title-comingsoon:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-title-subhead:lang(zh-TW),#ac-localnav .ac-ln-title-comingsoon:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 @media only screen and (max-width: 767px) {
     #ac-localnav .ac-ln-title-subhead,#ac-localnav .ac-ln-title-comingsoon {
         font-size:14px;
@@ -1988,48 +1842,4 @@
         letter-spacing: -.01em;
         font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
     }
-
-    #ac-localnav .ac-ln-title-subhead:lang(ar),#ac-localnav .ac-ln-title-comingsoon:lang(ar) {
-        letter-spacing: 0em;
-        font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(ja),#ac-localnav .ac-ln-title-comingsoon:lang(ja) {
-        letter-spacing: 0em;
-        font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(ko),#ac-localnav .ac-ln-title-comingsoon:lang(ko) {
-        letter-spacing: 0em;
-        font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(th),#ac-localnav .ac-ln-title-comingsoon:lang(th) {
-        letter-spacing: 0em;
-        font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(zh),#ac-localnav .ac-ln-title-comingsoon:lang(zh) {
-        letter-spacing: 0em
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(zh-CN),#ac-localnav .ac-ln-title-comingsoon:lang(zh-CN) {
-        font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(zh-HK),#ac-localnav .ac-ln-title-comingsoon:lang(zh-HK) {
-        font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(zh-MO),#ac-localnav .ac-ln-title-comingsoon:lang(zh-MO) {
-        font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-title-subhead:lang(zh-TW),#ac-localnav .ac-ln-title-comingsoon:lang(zh-TW) {
-        font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-}
-
-#ac-localnav .ac-ln-title-comingsoon {
-    opacity: 0.6
 }
