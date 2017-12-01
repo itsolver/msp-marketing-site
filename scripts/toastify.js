@@ -210,6 +210,7 @@
             }.bind(this), 400); // Binding `this` for function invocation 
 
         }
+        
 
     }
 
@@ -222,7 +223,7 @@
             bottom: 15
         };
         var topRightOffsetSize = {
-            top: 15,
+            top: 0,
             bottom: 15
         };
         var offsetSize = {
