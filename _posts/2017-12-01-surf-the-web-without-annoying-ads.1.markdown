@@ -28,14 +28,20 @@ tags:
 - Safari
 ---
 
-If you use the web, you should read this.
+If you use the web, you should read this. New customers call me with malware on their computer and as victoms of tech support scams. 
 
-Most of my customers that call me with malware or scams on their computer have loaded a website from a dodgy ad.
+Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.  
 
-Fake news outlets, malware developers and scammers all use ad networks as one of their channels to get crap onto our devices. If it's easy to block ads, why not do it and enjoy the peace of mind. 
+I do the usual clean up but the real value is the last step, installing an adblocker. They're impressed with how much faster, safer and cleaner the web is without ads.
 
-For desktop, install uBlock Origin on [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/addon/ublock-origin/) and [Microsoft Edge](https://www.microsoft.com/store/p/app/9nblggh444l4).
+Install uBlock Origin on [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/addon/ublock-origin/) and [Microsoft Edge](https://www.microsoft.com/store/p/app/9nblggh444l4).
 
-For iPhone, iPad and iPod, try AdBlock (free) or Purify
+For mobile phones and tablets the options are different. 
 
-For Android (i.e. all other mobile phones and tablets), 
+## iOS - iPhone, iPad and iPod
+- [AdBlock for Mobile](https://itunes.apple.com/au/app/adblock-for-mobile/id1036484810?mt=8) (free / pay what you want), or
+- [Purify](https://itunes.apple.com/au/app/purify-block-ads-and-tracking-browse-in-peace/id1030156203?mt=8) (paid)
+
+## Android - Samsung, Sony, Huawei (generally all other phones and tablets)
+1. Get [Firefox](https://play.google.com/store/apps/details?id=org.mozilla.firefox)
+2. Install [uBlock Origin for Firefox](https://addons.mozilla.org/en-US/android/addon/ublock-origin/)
