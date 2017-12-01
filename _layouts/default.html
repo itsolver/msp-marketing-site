@@ -18,20 +18,6 @@
 
 	{% seo %}
 	{% feed_meta %}
-	<script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyDklO6NmLUgys9z7gH5FfbdKGXhW9xQFgc",
-	    authDomain: "itsolver-499d1.firebaseapp.com",
-	    databaseURL: "https://itsolver-499d1.firebaseio.com",
-	    projectId: "itsolver-499d1",
-	    storageBucket: "itsolver-499d1.appspot.com",
-	    messagingSenderId: "144235454278"
-	  };
-	  firebase.initializeApp(config);
-	</script>
-
 	{% if site.environment == 'production' and site.google_analytics_key != '' %}
 
 		<script>
