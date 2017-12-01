@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-05-21 21:44:47+00:00
-layout: post
-link: https://www.itsolver.net/national-consumer-fraud-week-18-24-may-2015/
-slug: national-consumer-fraud-week-18-24-may-2015
 title: National Consumer Fraud Week 18 - 24 May 2015
-wordpress_id: 435
 categories:
 - News
 - Security-Advisory

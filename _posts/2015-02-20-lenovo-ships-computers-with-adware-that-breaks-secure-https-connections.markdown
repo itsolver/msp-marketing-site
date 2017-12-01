@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-02-20 04:11:17+00:00
-layout: post
-link: https://www.itsolver.net/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections/
-slug: lenovo-ships-computers-with-adware-that-breaks-secure-https-connections
 title: Lenovo ships computers with adware that breaks secure HTTPS connections
-wordpress_id: 366
 categories:
 - News
 - Security-Advisory

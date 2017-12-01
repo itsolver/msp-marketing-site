@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-05-26 12:41:19+00:00
-layout: post
-link: https://www.itsolver.net/why-we-suggest-bitdefender-for-internet-security/
-slug: why-we-suggest-bitdefender-for-internet-security
 title: Why we suggest Bitdefender for Internet Security
-wordpress_id: 433
 categories:
 - News
 - Security-Advisory

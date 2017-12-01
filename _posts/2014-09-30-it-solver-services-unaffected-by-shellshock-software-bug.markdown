@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-09-30 23:03:54+00:00
-layout: post
-link: https://www.itsolver.net/it-solver-services-unaffected-by-shellshock-software-bug/
-slug: it-solver-services-unaffected-by-shellshock-software-bug
 title: IT Solver services unaffected by Shellshock software bug
-wordpress_id: 230
 categories:
 - Security-Advisory
 tags:

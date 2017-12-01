@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-06-01 08:02:06+00:00
-layout: post
-link: https://www.itsolver.net/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated/
-slug: how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated
 title: How can I prevent Ask.com Toolbar from being installed every time Java is updated?
-wordpress_id: 460
 categories:
 - Tips-and-Tricks
 tags:

@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2016-07-13 13:12:24+00:00
-layout: post
-link: https://www.itsolver.net/the-future-of-television-is-here/
-slug: the-future-of-television-is-here
 title: The Future of Television is Here
-wordpress_id: 537
 categories:
 - News
 tags:

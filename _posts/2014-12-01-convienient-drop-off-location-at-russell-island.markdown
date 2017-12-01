@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-12-01 01:02:16+00:00
-layout: post
-link: https://www.itsolver.net/convienient-drop-off-location-at-russell-island/
-slug: convienient-drop-off-location-at-russell-island
 title: Convienient carry-in location at Russell Island
-wordpress_id: 307
 categories:
 - News
 tags:

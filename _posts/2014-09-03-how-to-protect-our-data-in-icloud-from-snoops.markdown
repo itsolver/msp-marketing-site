@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-09-03 04:24:29+00:00
-layout: post
-link: https://www.itsolver.net/how-to-protect-our-data-in-icloud-from-snoops/
-slug: how-to-protect-our-data-in-icloud-from-snoops
 title: How to protect our data in iCloud from snoops
-wordpress_id: 140
 categories:
 - News
 tags:

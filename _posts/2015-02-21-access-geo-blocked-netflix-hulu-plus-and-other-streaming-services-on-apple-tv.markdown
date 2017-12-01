@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-02-21 09:14:50+00:00
-layout: post
-link: https://www.itsolver.net/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv/
-slug: access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv
 title: Access geo-blocked Netflix, Hulu Plus and other streaming services on Apple TV
-wordpress_id: 381
 categories:
 - Tips-and-Tricks
 tags:

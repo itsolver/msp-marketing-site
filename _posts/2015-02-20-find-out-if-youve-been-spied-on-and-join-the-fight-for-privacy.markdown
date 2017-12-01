@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-02-20 23:17:59+00:00
-layout: post
-link: https://www.itsolver.net/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy/
-slug: find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy
 title: Find Out if You've Been Spied on—and Join the Fight for Privacy
-wordpress_id: 377
 categories:
 - News
 tags:

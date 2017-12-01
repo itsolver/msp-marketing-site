@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-08-24 09:29:31+00:00
-layout: post
-link: https://www.itsolver.net/tech-advice-for-southern-moreton-bay-islanders/
-slug: tech-advice-for-southern-moreton-bay-islanders
 title: Tech advice for Southern Moreton Bay Islanders
-wordpress_id: 131
 categories:
 - Tips-and-Tricks
 tags:

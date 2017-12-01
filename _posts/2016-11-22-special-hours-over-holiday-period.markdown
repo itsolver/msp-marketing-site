@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2016-11-22 06:10:31+00:00
-layout: post
-link: https://www.itsolver.net/special-hours-over-holiday-period/
-slug: special-hours-over-holiday-period
 title: Special hours over holiday period
-wordpress_id: 555
 categories:
 - News
 ---

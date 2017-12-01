@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-04-07 06:17:36+00:00
-layout: post
-link: https://www.itsolver.net/still-running-xp-after-april-8-2014/
-slug: still-running-xp-after-april-8-2014
 title: 7 Steps to Secure Windows XP After Support Ends
-wordpress_id: 63
 categories:
 - Tips-and-Tricks
 tags:

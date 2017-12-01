@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2017-01-04 19:30:39+00:00
-layout: post
-link: https://www.itsolver.net/accepting-apple-pay-and-android-pay/
-slug: accepting-apple-pay-and-android-pay
 title: Accepting Apple Pay and Android Pay
-wordpress_id: 569
 categories:
 - News
 tags:

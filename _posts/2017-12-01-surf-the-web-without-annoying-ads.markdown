@@ -1,10 +1,5 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2017-12-01 05:00:00+10:00
-layout: post
-link: https://www.itsolver.net/surf-the-web-without-annoying-ads/
-slug: surf-the-web-without-annoying-ads
 title: Surf the web without annoying ads
 categories:
 - Tips-and-Tricks

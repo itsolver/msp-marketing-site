@@ -1,10 +1,5 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2017-08-31 19:46:39+10:00
-layout: post
-link: https://www.itsolver.net/huge-list-of-emails-and-passwords-exposed
-slug: huge-list-of-emails-and-passwords-exposed
 title: Huge list of emails and passwords exposed
 categories:
 - News

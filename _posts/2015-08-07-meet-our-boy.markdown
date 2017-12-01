@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-08-07 01:10:31+00:00
-layout: post
-link: https://www.itsolver.net/meet-our-boy/
-slug: meet-our-boy
 title: Meet our boy!
-wordpress_id: 489
 categories:
 - News
 ---

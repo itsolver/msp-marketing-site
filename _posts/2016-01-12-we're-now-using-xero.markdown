@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2016-01-12 20:00:46+00:00
-layout: post
-link: "https://www.itsolver.net/we're-now-using-xero/"
-slug: "we're-now-using-xero"
 title: "We're now using Xero"
-wordpress_id: 513
 categories:
 - News
 tags:

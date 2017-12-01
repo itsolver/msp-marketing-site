@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-10-01 13:01:14+00:00
-layout: post
-link: https://www.itsolver.net/announcing-windows-10/
-slug: announcing-windows-10
 title: Announcing Windows 10
-wordpress_id: 273
 categories:
 - News
 tags:

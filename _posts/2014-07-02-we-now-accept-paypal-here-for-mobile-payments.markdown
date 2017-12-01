@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-07-02 08:13:32+00:00
-layout: post
-link: https://www.itsolver.net/we-now-accept-paypal-here-for-mobile-payments/
-slug: we-now-accept-paypal-here-for-mobile-payments
 title: We now accept PayPal Here for mobile payments
-wordpress_id: 99
 categories:
 - News
 tags:

@@ -1,10 +1,5 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2017-11-29 20:09:00+10:00
-layout: post
-link: https://www.itsolver.net/quick-fix-huge-security-flaw-in-macos-high-sierra/
-slug: quick-fix-huge-security-flaw-in-macos-high-sierra
 title: Fix huge security flaw in macOS High Sierra
 categories:
 - Security

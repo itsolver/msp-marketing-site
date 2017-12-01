@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2015-06-09 18:30:11+00:00
-layout: post
-link: https://www.itsolver.net/smart-tv-and-netflix-installations-are-easy-with-it-solver/
-slug: smart-tv-and-netflix-installations-are-easy-with-it-solver
 title: Smart TV And Netflix Installations Easy With IT Solver
-wordpress_id: 471
 categories:
 - News
 tags:

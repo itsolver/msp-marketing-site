@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-06-04 20:40:28+00:00
-layout: post
-link: https://www.itsolver.net/reset-the-net/
-slug: reset-the-net
 title: Reset the Net
-wordpress_id: 90
 categories:
 - News
 tags:

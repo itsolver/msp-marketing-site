@@ -1,12 +1,6 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2013-11-27 20:37:17+00:00
-layout: post
-link: https://www.itsolver.net/exciting-changes-ahead/
-slug: exciting-changes-ahead
 title: Exciting changes ahead
-wordpress_id: 10
 categories:
 - News
 ---

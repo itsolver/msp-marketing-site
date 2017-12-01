@@ -1,13 +1,7 @@
 ---
-author_staff_member: angus
-comments: true
 date: 2014-09-26 23:46:10+00:00
-layout: post
-link: https://www.itsolver.net/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus/
-slug: fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus
 title: Fix for loss of cellular service and Touch ID after updating to iOS 8.0.1 on
   iPhone 6 & 6 Plus
-wordpress_id: 226
 categories:
 - Tips-and-Tricks
 tags:
