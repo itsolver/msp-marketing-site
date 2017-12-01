@@ -1,5 +1,5 @@
 var options = {
-    text: "Technical support unavailable Dec 25 - Jan 1 🎅 🎄",
+    text: "Technical support unavailable Dec 25 - Jan 1 🎅 🎄🏖",
     duration: 4000,
     callback: function () {
         this.remove();
