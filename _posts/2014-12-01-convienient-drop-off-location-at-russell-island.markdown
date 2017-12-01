@@ -1,6 +1,7 @@
 ---
 date: 2014-12-01 01:02:16+00:00
 title: Convienient carry-in location at Russell Island
+author_staff_member: angus
 categories:
 - News
 tags:

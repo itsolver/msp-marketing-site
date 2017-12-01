@@ -1,6 +1,8 @@
 ---
 date: 2017-12-01 05:00:00+10:00
 title: Surf the web without annoying ads
+layout: post
+author_staff_member: angus
 categories:
 - Tips-and-Tricks
 tags:

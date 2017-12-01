@@ -1,6 +1,7 @@
 ---
 date: 2016-07-13 13:12:24+00:00
 title: The Future of Television is Here
+author_staff_member: angus
 categories:
 - News
 tags:

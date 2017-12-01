@@ -1,6 +1,7 @@
 ---
 date: 2015-06-09 18:30:11+00:00
 title: Smart TV And Netflix Installations Easy With IT Solver
+author_staff_member: angus
 categories:
 - News
 tags:

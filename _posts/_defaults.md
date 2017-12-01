@@ -1,6 +1,6 @@
 ---
 title:
 categories:
-__
+author: "Angus McLauchlan"
 date:
 ---

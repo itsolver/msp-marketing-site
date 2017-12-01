@@ -1,6 +1,7 @@
 ---
 date: 2014-10-01 13:01:14+00:00
 title: Announcing Windows 10
+author_staff_member: angus
 categories:
 - News
 tags:

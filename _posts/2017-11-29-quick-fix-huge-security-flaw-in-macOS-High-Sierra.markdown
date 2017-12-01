@@ -1,6 +1,7 @@
 ---
 date: 2017-11-29 20:09:00+10:00
 title: Fix huge security flaw in macOS High Sierra
+author_staff_member: angus
 categories:
 - Security
 tags:

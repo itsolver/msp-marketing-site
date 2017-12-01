@@ -1,6 +1,7 @@
 ---
 date: 2014-08-24 09:29:31+00:00
 title: Tech advice for Southern Moreton Bay Islanders
+author_staff_member: angus
 categories:
 - Tips-and-Tricks
 tags:

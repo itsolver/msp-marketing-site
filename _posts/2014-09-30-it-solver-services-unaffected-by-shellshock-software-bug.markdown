@@ -1,6 +1,7 @@
 ---
 date: 2014-09-30 23:03:54+00:00
 title: IT Solver services unaffected by Shellshock software bug
+author_staff_member: angus
 categories:
 - Security-Advisory
 tags:

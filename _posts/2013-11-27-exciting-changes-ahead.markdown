@@ -1,6 +1,7 @@
 ---
 date: 2013-11-27 20:37:17+00:00
 title: Exciting changes ahead
+author_staff_member: angus
 categories:
 - News
 ---

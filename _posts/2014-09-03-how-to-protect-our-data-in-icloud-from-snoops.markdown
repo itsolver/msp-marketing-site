@@ -1,6 +1,7 @@
 ---
 date: 2014-09-03 04:24:29+00:00
 title: How to protect our data in iCloud from snoops
+author_staff_member: angus
 categories:
 - News
 tags:
