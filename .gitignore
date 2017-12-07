@@ -6,3 +6,4 @@ node_modules/
 .DS_Store
 .firebaserc
 have-i-been-pwned-verification.txt
+*.sh
