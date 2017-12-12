@@ -1,4 +1,6 @@
-Jekyll marketing site forked from [CloudCannon/hydra-jekyll-template](https://github.com/CloudCannon/hydra-jekyll-template).
+[![Build Status](https://travis-ci.org/itsolver/msp-marketing-site.svg?branch=master)](https://travis-ci.org/itsolver/msp-marketing-site)
+
+Jekyll marketing site for a Managed Tech Support business, IT Solver, forked from [CloudCannon/hydra-jekyll-template](https://github.com/CloudCannon/hydra-jekyll-template).
 
 Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
 
