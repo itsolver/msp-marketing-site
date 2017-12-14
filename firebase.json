@@ -159,6 +159,10 @@
       "destination" : "/news/2016/07/13/the-future-of-television-is-here/",
       "type" : 301
     }, {
+      "source" : "/vcard",
+      "destination" : "/Angus_McLauchlan.vcf",
+      "type" : 301
+    }, {
       "source" : "/we-now-accept-paypal-here-for-mobile-payments",
       "destination" : "/news/2014/07/02/we-now-accept-paypal-here-for-mobile-payments/",
       "type" : 301
