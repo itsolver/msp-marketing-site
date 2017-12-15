@@ -18,16 +18,17 @@ notifications:
 
 
 before_install:
-  #install rvm 2.2
-  - rvm install 2.2
-  #use rvm 2.2
-  - rvm use 2.2
+  #install rvm 2.3.3
+  - rvm install 2.3.3
+  #use rvm 2.3.3
+  - rvm use 2.3.3
   #set home varaibles
   - . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1  
   #install gems through bundler
   - gem install bundler 
   #if gems are missing this script will get the missing gems.
-  - bundle check || bundle install 
+  - bundle check || bundle install
+  - bundle exec htmlproofer ./_site --disable-external
 
 install:
   #install firebase tools, required to deploy on firebase hosting 

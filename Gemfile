@@ -9,4 +9,5 @@ group :jekyll_plugins do
 	gem 'jekyll-seo-tag', '~> 2.4.0'
 	gem 'jekyll-feed', '~> 0.8.0'
 	gem 'jekyll-redirect-from', '~> 0.12.1'
+	gem "html-proofer"
 end
