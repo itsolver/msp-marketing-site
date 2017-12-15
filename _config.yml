@@ -10,19 +10,20 @@ disqus_shortname:
 icon_ready: true
 twitter:
   username: itsolvernet
-future: false # https://stackoverflow.com/a/5013966
+future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 sass:
   sass_dir: _sass
   style: compressed
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /the_favicon/favicon.ico
+logo: /the_favicon/android-chrome-192x192.png
 description: Managed Tech Support, Maintenance and Monitoring
+facebook:
+  publisher: https://www.facebook.com/itsolver.net
+  admins: gusdoo
 author:
-  name: Angus McLauchlan
-  twitter: gusmacca
-  facebook: gusdoo
   picture: /images/staff-angus.jpg
+  twitter: gusmacca
 social:
   name: IT Solver
   links: 
