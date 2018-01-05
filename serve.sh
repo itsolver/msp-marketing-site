@@ -9,4 +9,4 @@ host=`ipconfig getifaddr en0`
 port='4000'
 
 open http://$host:$port
-bundle exec jekyll serve --incremental -H $host --watch --config _config.yml,_config_dev.yml
+bundle exec jekyll serve --incremental -H $host --watch --config _config.yml,_config_dev.yml --limit_posts 1
