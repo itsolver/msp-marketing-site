@@ -2,7 +2,7 @@ $brand-color: #4182e4;
 $secondary-brand-color: #2c5799;
 $text-color: #333;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
-
+$font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
 // Breakpoints
 $tablet: "(min-width: 450px)";
 $mid-point: "(min-width: 735px)";
