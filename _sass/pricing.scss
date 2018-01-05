@@ -27,10 +27,12 @@
 	-webkit-flex: 0 1 330px;
 	flex: 0 1 330px;
 }
+.pricing-item .single {
+
+}
 
 .pricing-item-section {
 	height: 468px;
-	padding-top: 10px;
 }
 
 @media only screen and (max-width: 755px){
@@ -58,20 +60,12 @@
 }
 
 .pricing-title {
-	font-size: 2em;
-	font-weight: 400;
-	margin: 0.5em 0;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin: 0 auto 20px;
 	position: relative;
-}
-
-.pricing-title::after {
-	content: '';
-	position: absolute;
-	width: 20%;
-	height: 1px;
-	background: #fff;
-	left: 40%;
-	bottom: 0;
+    padding: 20px 30px 20px;
+    border-bottom: 2px solid #f6f9fc;
 }
 
 .icon {
@@ -81,7 +75,7 @@
 
 .pricing-price {
 	font-size: 3.5em;
-	font-weight: 400;
+	font-weight: 500;
 	position: relative;
 	z-index: 100;
 }
@@ -148,7 +142,8 @@
 	text-decoration: none;
 	padding: 25px;
 	transition: background .15s ease;
-	
+	font-size: 1.2em;
+	font-weight: 600;
 }
 
 .plan-button:hover, .plan-button:focus {
@@ -187,8 +182,6 @@ a:hover, a:focus {
 
 .pricing-item ul li img {
 	display: inline;
-	width: 15px;
-	height: 15px;
 	vertical-align: middle;
 	margin-right: 10px;  
 }
@@ -212,4 +205,56 @@ a:hover, a:focus {
 		margin: 0;
 
 	}
+}
+
+.grid2col {
+	width: 100%;
+}
+
+.grid2col .column {
+	width:255px;
+}
+
+.column {
+    float: left;
+}
+
+.column.first, .column.last {
+	margin-left: 0 !important;
+}
+
+.grid2col .column.first {
+	width:518px !important; 
+}
+
+.grid2col .column.last {
+    width: 245px !important;
+    border: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 20px 25px;
+}
+
+.column.last {
+    float: right !important;
+}
+
+.column.last h3{
+	margin: 0;
+	font-size: 14px;
+    margin-bottom: 6px;
+}
+.grid2col .column.last p {
+	margin-bottom: 5px;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+#container:after, #content:after, .grid2col:after, .grid2cola:after, .grid2colb:after, .grid2colc:after, .grid2cold:after, .grid2cole:after, .grid2colf:after, .grid3col:after, .grid3cola:after, .grid4col:after, .grid5col:after, .grid6col:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }

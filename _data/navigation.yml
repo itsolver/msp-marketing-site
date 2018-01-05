@@ -1,3 +1,7 @@
+- name: Pay-Per-Incident
+  link: /pay-per-incident/
+  new_window: false
+  highlight: false
 - name: Pricing
   link: /pricing/
   new_window: false
