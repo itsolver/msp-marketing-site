@@ -29,12 +29,13 @@
 }
 
 .pricing-item-section {
-	height: 386px;
+	height: fit-content;
+	
 }
 
-@media only screen and (max-width: 755px){
+@media (min-width: 694px) {
 	.pricing-item-section {
-		height: fit-content;
+		height: 386px;
 	}
 }	
 
