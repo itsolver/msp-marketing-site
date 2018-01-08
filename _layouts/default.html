@@ -1,2 +1,63 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/css/screen.css"><link rel="apple-touch-icon" sizes="180x180" href="/the_favicon/apple-touch-icon.png"><link rel="icon" type="image/png" href="/the_favicon/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/the_favicon/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="/the_favicon/manifest.json"><link rel="mask-icon" href="/the_favicon/safari-pinned-tab.svg" color="#4182e4"><link rel="shortcut icon" href="/the_favicon/favicon.ico"><meta name="apple-mobile-web-app-title" content="IT Solver"><meta name="application-name" content="IT Solver"><meta name="msapplication-config" content="/the_favicon/browserconfig.xml"><meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %} {% if site.environment == 'production' and site.google_analytics_key != '' %}<script>(function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)})(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","{{ site.google_analytics_key }}","auto"),ga("send","pageview")</script>{% endif %}</head><body><header><div class="container"><div class="company-name"><a href="/"><img src="/images/itsolver-logo.svg" alt="IT Solver Logo" width="97.77" height="18"></a></div>{% include navigation.html %}</div></header>{{ content }}<footer><div class="container"><div class="footer-columns">{% for column in site.data.footer %}<ul class="footer-links">{% for link in column.links %} {% if link.header %} {% if link.header == "IT Solver" %}<li><a href="/"><h2>{{ link.header }}</h2></a></li>{% else %}<li><h2>{{ link.header }}</h2></li>{% endif %} {% endif %} {% if link.link %}<li><a {% if link.new_window %}target="_blank" {% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include social-icon.html icon=link.social_icon %} {% endif %} {{ link.name }}</a></li>{% endif %} {% endfor %}</ul>{% endfor %}</div></div></footer>
-<script>document.getElementById("open-nav").onclick=function(){return document.body.classList.toggle("nav-open"),!1}</script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/the_favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/the_favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/the_favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/the_favicon/manifest.json">
+    <link rel="mask-icon" href="/the_favicon/safari-pinned-tab.svg" color="#4182e4">
+    <link rel="shortcut icon" href="/the_favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="IT Solver">
+    <meta name="application-name" content="IT Solver">
+    <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
+    <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %} {% if site.environment == 'production' and site.google_analytics_key != '' %}
+    <script>
+        (function (e, a, t, n, c, o, s) {
+            e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
+                    (e[c].q = e[c].q || []).push(arguments)
+                }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src =
+                n, s.parentNode.insertBefore(o, s)
+        })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
+            "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
+    </script>{% endif %}</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="company-name">
+                <a href="/">
+                    <img src="/images/itsolver-logo.svg" alt="IT Solver Logo" width="97.77" height="18">
+                </a>
+            </div>{% include navigation.html %}</div>
+    </header>{{ content }}
+    <footer>
+        <div class="container">
+            <div class="footer-columns">{% for column in site.data.footer %}
+                <ul class="footer-links">{% for link in column.links %} {% if link.header %} {% if link.header == "IT Solver" %}
+                    <li>
+                        <a href="/">
+                            <h2>{{ link.header }}</h2>
+                        </a>
+                    </li>{% else %}
+                    <li>
+                        <h2>{{ link.header }}</h2>
+                    </li>{% endif %} {% endif %} {% if link.link %}
+                    <li>
+                        <a {% if link.new_window %}target="_blank" {% endif %} href="{{ link.link }}" {% if link.social_icon
+                            %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include social-icon.html icon=link.social_icon %} {% endif %} {{ link.name
+                            }}</a>
+                    </li>{% endif %} {% endfor %}</ul>{% endfor %}</div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("open-nav").onclick = function () {
+            return document.body.classList.toggle("nav-open"), !1
+        }
+    </script>
+</body>
+
+</html>
