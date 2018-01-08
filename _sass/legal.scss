@@ -1,11 +1,20 @@
 ol.terms, ul.terms {
-    font-size: 1.38em;
-	margin-bottom: 20px;
-	font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: normal;
+
+    ol.terms, ul.terms {
+        font-size: 100%;
+        margin-bottom: 20px;
+        font-weight: normal;
+        -webkit-padding-start: 0px;
+    }
 }
 
 ol {
     counter-reset: item;
+    -webkit-padding-start: 20px;
+
 }
 
 ol > li {
