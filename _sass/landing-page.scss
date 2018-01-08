@@ -4,6 +4,7 @@
 	text-align: center;
 	margin: 0;
 	padding: 100px 0;
+	font-weight: 500;
 
 	h2 {
 		margin-bottom: 50px;
@@ -60,8 +61,8 @@
 		.benefits {
 			li {
 				font-size: 1.2em;
-				font-weight: 300;
-				line-height: 1.4em;
+				font-weight: normal;
+				line-height: 1.45em;
 			}
 		}
 	}
@@ -69,4 +70,20 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+}
+
+.cta.button {
+	padding: 40px 0;
+	text-align: center;
+	font-weight: 500;
+}
+
+.cta.button a:hover {
+	background: #fff;
+	color: $brand-color;
+}
+
+.cta.button a.bg-fff:hover {
+	background: $secondary-brand-color;
+	color: #fff;
 }

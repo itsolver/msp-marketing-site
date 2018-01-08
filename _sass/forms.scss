@@ -36,21 +36,6 @@
 	color: $brand-color;
 }
 
-.cta.button {
-	padding: 40px 0;
-	text-align: center;
-}
-
-.cta.button a:hover {
-	background: #fff;
-	color: $brand-color;
-}
-
-.cta.button a.bg-fff:hover {
-	background: $secondary-brand-color;
-	color: #fff;
-}
-
 .cta.button a.home-request-demo  {
 	background: rgba(255,255,255,0.3);
 }

@@ -52,8 +52,12 @@ h4 {
 	font-size: 1.4em;
 }
 
-p, address, ol {
+p, address {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 	font-weight: normal;
+}
+
+ol {
+	margin-bottom: 20px;
 }
