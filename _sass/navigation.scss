@@ -1,59 +1,63 @@
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
-	padding: 10px 0;
 	a {
 		display: block;
+		padding: 20px 0;
 	}
 
-	@media #{$mid-point} {
+	@media #{$desktop} {
 		border: 0;
-		padding: 0 20px;
+		padding: 0 10px;
 		a {
 			display: inline;
 		}
 	}
 }
 
-
-
 nav {
-	font-size: 17px;
+	font-size: 18px;
 	width: 100%;
 	font-weight: 500;
 
-	@media #{$mid-point} {
-		font-size: 14px;
+	@media #{$desktop} {
+		font-size: 13px;
 		text-align: right;
 		position: absolute;
 		top: 3px;
 		right: 0;
 		padding: 0 20px;
 	}
+	@media (min-width: 1000px) {
+		font-size: 17px;
+	}
 
 	a {
 		margin: 0 3px;
-		padding: 20px;
+		padding: 0 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: #fff;
 		transition: all 0.5s ease;
 		display: none;
 		letter-spacing: 0.66px;
 
-		@media #{$mid-point} {
-			
+		@media #{$desktop} {
 			display: inline;
-			padding:  20px;
+		}
+		@media (min-width: 1000px) {
+			padding: 0 22px;
 		}
 
 		&.nav-toggle {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -17px;
-			font-size: 22px;
+			top: -12px;
+			font-size: 29px;
 			border: 0;
+			margin: 0 auto;
+			padding: 0 10px;
 
-			@media #{$mid-point} {
+			@media #{$desktop} {
 				display: none;
 			}
 
@@ -66,12 +70,14 @@ nav {
 	a:hover {
 		color: hsla(0,0%,100%,.5);
 	}
-	a.highlight {
-		// margin-left: 15px;
-	}
-	@media #{$mid-point} {
+	@media #{$desktop} {
 		a.highlight {
-			margin-left: 30px;
+			padding-left: 15px;
+		}
+	}
+	@media (min-width: 1000px) {
+		a.highlight {
+			padding-left: 30px;
 		}
 	}
 
