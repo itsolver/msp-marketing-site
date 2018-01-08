@@ -14,7 +14,7 @@ tags:
 - walk-in
 ---
 
-![my_health_aisle_front_656x]({{ site.baseurl }}/images/my_health_aisle_front_656x.jpg)
+![my_health_aisle_front_656x](/images/my_health_aisle_front_656x.jpg)
 We're happy to announce our newest drop-off and pick-up location available at [My Health Aisle](http://www.myhealthaisle.com.au/), Russell Island's health food store and wellness clinic. Whether you need a health boost for yourself or your computer, say hello to Kirsty Holmes, the owner of My Health Aisle.
 
 At IT Solver we're always striving to deliver value and a walk-in location at Russell Island will do exactly this - saving our customers $40 compared to on-site support. Residents and visitors of Macleay Island still have the option of dropping off their device at Macleay Island Data Services (Bendigo Bank).

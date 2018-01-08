@@ -16,7 +16,7 @@ tags:
 - software
 ---
 
-![antivirus software, image credit: av-test.org]({{ site.baseurl }}/images/AV-Test-The-best-antivirus-software-for-Windows-Home-User-2015.png) 
+![antivirus software, image credit: av-test.org](/images/AV-Test-The-best-antivirus-software-for-Windows-Home-User-2015.png) 
 # Best in protection, performance and usability
 We regularly check independent test results of internet security solutions at [AV-Test](http://www.av-test.org/en/antivirus/home-windows/) and [AV-Comparatives](http://www.av-comparatives.org/dynamic-tests/) where we see year after year Bitdefender is reviewed as #1 in protection, performance and ease of use.
 

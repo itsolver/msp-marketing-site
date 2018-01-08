@@ -14,7 +14,7 @@ tags:
 - sponsor
 ---
 
-![Java-ask.com]({{ site.baseurl }}/images/java-ask-foistware-516x393.png)
+![Java-ask.com](/images/java-ask-foistware-516x393.png)
 Tired of the annoying Ask.com home page and search engine taking over your browser? So are we!
 The likely culprit is Java installing bundled "offers", i.e. a euphemism for [adware.](https://en.wikipedia.org/wiki/Adware)
 

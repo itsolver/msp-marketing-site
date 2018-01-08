@@ -11,8 +11,8 @@ layout: page
 		<div class="author">
 			{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
 			{% assign author = site.staff_members | where: "url", author_id | first %}
-			<div class="square-image"><a href="{{ site.baseurl }}/about/"><img src="{% include relative-src.html src=author.image_path %}" alt="{{ author.name }}"/></a></div>
-			<a href="{{ site.baseurl }}/about/"><p class="blurb">{{ author.blurb }}</p></a>
+			<div class="square-image"><a href="/about/"><img src="{% include relative-src.html src=author.image_path %}" alt="{{ author.name }}"/></a></div>
+			<a href="/about/"><p class="blurb">{{ author.blurb }}</p></a>
 		</div>
 
 		<div class="blog-navigation">

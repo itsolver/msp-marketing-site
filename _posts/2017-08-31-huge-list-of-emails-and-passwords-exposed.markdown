@@ -18,7 +18,7 @@ tags:
 - verification
 - authentication
 ---
-![Example of mobile payment with smart phone]({{ site.baseurl }}/images/have-i-been-pwned.jpg)
+![Example of mobile payment with smart phone](/images/have-i-been-pwned.jpg)
 [Troy Hunt](https://en.wikipedia.org/wiki/Troy_Hunt) has received a huge collection of over 700 million email addresses that's used by spammers to clog up our inboxes and spread malware. He also received email addresses and passwords, over 35 million of them, that allow spammers to send their spam. 
 
 All these addresses are a key way malware is spread - out of those 700 million addresses, for a spam campaign to be profitable it only takes a small fraction to click a link, get infected and then become part of a [botnet](https://simple.wikipedia.org/wiki/Botnet) or victim of a [cryptolocker](https://simple.wikipedia.org/wiki/CryptoLocker).

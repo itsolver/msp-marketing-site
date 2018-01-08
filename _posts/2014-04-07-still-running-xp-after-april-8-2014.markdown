@@ -19,7 +19,7 @@ tags:
 - xp
 ---
 
-![]({{ site.baseurl }}/images/bliss_656.jpg)
+![](/images/bliss_656.jpg)
 Not quite ready to upgrade from XP? We're not surprised as you have probably invested countless hours installing (and configuring) applications in Windows XP or simply are not ready to upgrade.
 
 Whatever your reasons, you should plan to upgrade or move your data to a new computer as soon as you can. Until then, here are a few steps to help keep your data safe, ordered from most to least effective.

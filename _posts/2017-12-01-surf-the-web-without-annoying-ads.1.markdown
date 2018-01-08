@@ -25,7 +25,7 @@ tags:
 - Mozilla Firefox
 - Safari
 ---
-![Screenshot of YouTube Ad]({{ site.baseurl }}/images/skip-youtube-ad.jpg)
+![Screenshot of YouTube Ad](/images/skip-youtube-ad.jpg)
 If you use the web, you should read this. I get new customers calling me with malware on their computer or as victoms of tech support scams. 
 
 Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.

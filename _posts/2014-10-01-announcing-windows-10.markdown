@@ -20,7 +20,7 @@ tags:
 - Windows 8.1
 ---
 
-![Windows_Product_Family_9-30-Event-656x368]({{ site.baseurl }}/images/Windows_Product_Family_9-30-Event-656x368.jpg)
+![Windows_Product_Family_9-30-Event-656x368](/images/Windows_Product_Family_9-30-Event-656x368.jpg)
 **Update: The technical preview is now [available for download](http://preview.windows.com/)!**
 Earlier today [Microsoft announced](http://blogs.windows.com/bloggingwindows/2014/09/30/announcing-windows-10/) the next release of Windows after 8/8.1 will not be called Windows 9, instead, Windows 10. Why not 9? Because seven, eight, ten.
 

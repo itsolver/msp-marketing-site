@@ -13,7 +13,7 @@ tags:
 - regular
 - operation
 ---
-![Screenshot of YouTube Ad]({{ site.baseurl }}/images/wrist-watch.png)
+![Screenshot of YouTube Ad](/images/wrist-watch.png)
 
 Good news, from today onwards we're open 8 AM - 6 PM AEST Monday - Friday. That's an extra two hours per weekday. 
 

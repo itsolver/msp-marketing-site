@@ -22,7 +22,7 @@ tags:
 - the
 ---
 
-![Man In The Middle attack illustration]({{ site.baseurl }}/images/man-in-the-middle-attack.png)
+![Man In The Middle attack illustration](/images/man-in-the-middle-attack.png)
 Yesterday we discovered Lenovo is pre-installing adware on notebooks that uses a “man-in-the-middle” attack to break secure connections on affected laptops to get access to sensitive data and inject advertising. To make things worse, Lenovo installed a weak certificate into the system in a way that means affected users cannot trust any secure connections.
 
 Received a new computer from Lenovo? Until 1st March, **we are offering a [50% discount for a remote malware removal on affected Lenovo systems](https://itsolver.net/contact/)** as listed below. That's only $29.50 for malware removal. Alternatively for a free vulnerability check visit [https://filippo.io/Badfish/.](https://filippo.io/Badfish/)

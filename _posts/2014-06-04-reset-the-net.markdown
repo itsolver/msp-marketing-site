@@ -13,6 +13,6 @@ tags:
 - rights
 - surveillance
 ---
-![]({{ site.baseurl }}/images/ResetTheNet.org.jpeg)
+![](/images/ResetTheNet.org.jpeg)
 ## Don’t ask for your privacy. 
 **Take it back.** Today we [#ResetTheNet](https://twitter.com/search?src=typd&q=%23ResetTheNet) to stop mass spying. Encrypt everything! [Learn how](https://www.resetthenet.org/).
