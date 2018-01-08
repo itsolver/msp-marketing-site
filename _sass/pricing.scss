@@ -29,7 +29,7 @@
 }
 
 .pricing-item-section {
-	height: 468px;
+	height: 386px;
 }
 
 @media only screen and (max-width: 755px){
@@ -63,10 +63,9 @@
 .pricing-title {
 	font-size: 1.2em;
 	font-weight: 600;
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	position: relative;
-    padding: 20px 30px 20px;
-    border-bottom: 2px solid #f6f9fc;
+    padding: 15px 30px 10px;
 }
 
 .icon {
@@ -79,6 +78,7 @@
 	font-weight: 500;
 	position: relative;
 	z-index: 100;
+	line-height: 0.6em;
 }
 
 .pricing-currency {
@@ -89,7 +89,6 @@
 .pricing-period {
 	font-size: 0.25em;
 	display: block;
-	padding: 1em;
 }
 
 .pricing-sentence {
@@ -100,9 +99,9 @@
 
 .pricing-feature-list {
 	font-size: 1.1em;
-	margin: 0 2em;
+	margin: 10px 20px;
 	letter-spacing: 0;
-	padding: 1em 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -258,7 +257,6 @@ a:hover, a:focus {
 .last {
     margin-bottom: 0;
 }
-body > div > section > div > div > div.column.first > div > div
 
 #container:after, #content:after, .grid2col:after, .grid2cola:after, .grid2colb:after, .grid2colc:after, .grid2cold:after, .grid2cole:after, .grid2colf:after, .grid3col:after, .grid3cola:after, .grid4col:after, .grid5col:after, .grid6col:after {
     content: ".";
