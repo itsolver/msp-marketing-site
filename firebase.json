@@ -119,6 +119,10 @@
       "destination" : "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015/",
       "type" : 301
     }, {
+      "source" : "/pricing",
+      "destination" : "/service-plans/",
+      "type" : 301
+    }, {
       "source" : "/qs",
       "destination" : "https://get.teamviewer.com/k6xf54t",
       "type" : 301

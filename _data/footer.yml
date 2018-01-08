@@ -1,8 +1,10 @@
 - links:
   - header: IT Solver
     link: /
-  - name: Pricing
-    link: /pricing/
+  - name: Pay-Per-Incident
+    link: /pay-per-incident/
+  - name: Service Plans
+    link: /service-plans/
   - name: Cloud Apps
     link: /cloud-apps-g-suite/
   - name: About

@@ -2,8 +2,8 @@
   link: /pay-per-incident/
   new_window: false
   highlight: false
-- name: Pricing
-  link: /pricing/
+- name: Service Plans
+  link: /service-plans/
   new_window: false
   highlight: false
 - name: Cloud Apps
@@ -21,6 +21,6 @@
 - name: Support
   link: https://support.itsolver.net/hc/en-au
 - name: SIGN UP
-  link: /pricing/
+  link: /service-plans/
   new_window: false
   highlight: true
