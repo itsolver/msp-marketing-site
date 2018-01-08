@@ -9,8 +9,8 @@
     link: /cloud-apps-g-suite/
   - name: About
     link: /about/
-  - name: Contact
-    link: /contact/
+  - name: Privacy & terms
+    link: /privacy/
 - links:
   - header: Support
   - name: Help Centre
@@ -22,8 +22,8 @@
   - name: 07 3123 6000
     link: tel:+61731236000
     contact_icon: phone
-  - name: Privacy & terms
-    link: /privacy/
+  - name: Contact
+    link: /contact/
 - links:
   - header: Connect
   - name: Blog
