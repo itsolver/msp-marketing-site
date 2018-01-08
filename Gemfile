@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.3.1'
+gem 'jekyll'
 
 group :jekyll_plugins do
-	gem 'jekyll-archives', '~> 2.1.1'
-	gem 'jekyll-paginate', '~> 1.1.0'
-	gem 'jekyll-sitemap', '~> 0.12.0'
-	gem 'jekyll-seo-tag', '~> 2.4.0'
-	gem 'jekyll-feed', '~> 0.8.0'
-	gem 'jekyll-redirect-from', '~> 0.12.1'
-	gem "html-proofer"
+	gem 'jekyll-archives'
+	gem 'jekyll-paginate'
+	gem 'jekyll-sitemap'
+	gem 'jekyll-seo-tag'
+	gem 'jekyll-feed'
+	gem 'jekyll-redirect-from'
+	gem 'html-proofer'
 end
