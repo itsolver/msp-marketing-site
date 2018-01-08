@@ -69,7 +69,7 @@ jekyll-archives:
     - categories
     - tags
 
-gems:
+plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
