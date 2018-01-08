@@ -14,13 +14,11 @@
   link: /about/
   new_window: false
   highlight: false
+- name: Support
+  link: https://support.itsolver.net/hc/en-au
+  new_window: false
+  highlight: true
 - name: Contact
   link: /contact/
   new_window: false
   highlight: false
-- name: Support
-  link: https://support.itsolver.net/hc/en-au
-- name: SIGN UP
-  link: /service-plans/
-  new_window: false
-  highlight: true
