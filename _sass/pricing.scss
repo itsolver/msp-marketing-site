@@ -27,9 +27,6 @@
 	-webkit-flex: 0 1 330px;
 	flex: 0 1 330px;
 }
-.pricing-item .single {
-
-}
 
 .pricing-item-section {
 	height: 468px;
@@ -211,10 +208,6 @@ a:hover, a:focus {
 	width: 100%;
 }
 
-.grid2col .column {
-	width:255px;
-}
-
 .column {
     float: left;
 }
@@ -223,15 +216,25 @@ a:hover, a:focus {
 	margin-left: 0 !important;
 }
 
+.column.first .pricing-item {
+	margin-left: 0px;
+}
+
 .grid2col .column.first {
-	width:518px !important; 
+	width: auto; 
 }
 
 .grid2col .column.last {
-    width: 245px !important;
-    border: 1px solid #e0e0e0;
-    border-bottom: 2px solid #e0e0e0;
-    padding: 20px 25px;
+    width: auto;
+}
+
+@media #{$desktop}{
+	.grid2col .column.first {
+		width: 518px !important;
+	}
+	.grid2col .column.last {
+		width: 300px !important;
+	}
 }
 
 .column.last {
@@ -240,8 +243,8 @@ a:hover, a:focus {
 
 .column.last h3{
 	margin: 0;
-	font-size: 14px;
-    margin-bottom: 6px;
+	margin-bottom: 6px;
+	font-size: 1em;
 }
 .grid2col .column.last p {
 	margin-bottom: 5px;
@@ -257,4 +260,26 @@ a:hover, a:focus {
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+.support-plan-upgrade {
+	padding: 20px 25px;
+	color: #444;
+	cursor: default;
+	-webkit-transition: border-color 0.3s, background 0.3s;
+	transition: border-color 0.3s, background 0.3s;
+	margin: 1em;
+	margin-left: 0;
+	border: 1px solid #e0e0e0;
+	border-bottom: 2px solid #e0e0e0;
+	font-size: 1em;
+}
+
+.rounded {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.column.first .left {
+	text-align: left;
 }
