@@ -228,12 +228,12 @@ a:hover, a:focus {
     width: auto;
 }
 
-@media #{$desktop}{
+@media #{$mid-point}{
 	.grid2col .column.first {
-		width: 518px !important;
+		width: 590px !important;
 	}
 	.grid2col .column.last {
-		width: 300px !important;
+		width: 262px !important;
 	}
 }
 
