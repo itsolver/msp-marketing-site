@@ -56,6 +56,10 @@
 	transition: border-color 0.3s, background 0.3s;
 }
 
+.pricing-item.single {
+	padding-top: 10px;
+}
+
 .pricing-title {
 	font-size: 1.2em;
 	font-weight: 600;
@@ -233,7 +237,7 @@ a:hover, a:focus {
 		width: 590px !important;
 	}
 	.grid2col .column.last {
-		width: 262px !important;
+		width: 270px !important;
 	}
 }
 
@@ -244,15 +248,17 @@ a:hover, a:focus {
 .column.last h3{
 	margin: 0;
 	margin-bottom: 6px;
-	font-size: 1em;
+	font-size: 1.1em;
 }
 .grid2col .column.last p {
 	margin-bottom: 5px;
+	font-size: 1.1em;
 }
 
 .last {
     margin-bottom: 0;
 }
+body > div > section > div > div > div.column.first > div > div
 
 #container:after, #content:after, .grid2col:after, .grid2cola:after, .grid2colb:after, .grid2colc:after, .grid2cold:after, .grid2cole:after, .grid2colf:after, .grid3col:after, .grid3cola:after, .grid4col:after, .grid5col:after, .grid6col:after {
     content: ".";
@@ -272,7 +278,6 @@ a:hover, a:focus {
 	margin-left: 0;
 	border: 1px solid #e0e0e0;
 	border-bottom: 2px solid #e0e0e0;
-	font-size: 1em;
 }
 
 .rounded {
