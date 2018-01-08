@@ -19,6 +19,7 @@
 nav {
 	font-size: 17px;
 	width: 100%;
+	font-weight: 500;
 
 	@media #{$mid-point} {
 		font-size: 14px;
@@ -33,7 +34,7 @@ nav {
 		margin: 0 3px;
 		padding: 20px;
 		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.8);
+		color: #fff;
 		transition: all 0.5s ease;
 		display: none;
 		letter-spacing: 0.66px;
@@ -41,7 +42,7 @@ nav {
 		@media #{$mid-point} {
 			
 			display: inline;
-			padding:  10px;
+			padding:  20px;
 		}
 
 		&.nav-toggle {
@@ -63,26 +64,14 @@ nav {
 	}
 
 	a:hover {
-
-		border-bottom: 1px solid rgba(255,255,255,.3);
-		color: #fff;
+		color: hsla(0,0%,100%,.5);
 	}
 	a.highlight {
-		padding-top: 8px;
-		padding-bottom: 8px;
+		// margin-left: 15px;
 	}
 	@media #{$mid-point} {
 		a.highlight {
-			// border: 1px #ccc solid;
-			background: $brand-color;
-			// color: #fff;
 			margin-left: 30px;
-			padding-top: 8px;
-			padding-bottom: 8px;
-			// &:hover {
-			// 	background: #fff;
-			// 	color: $brand-color;
-			// }
 		}
 	}
 
