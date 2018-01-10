@@ -34,7 +34,8 @@ nav {
 
 	a {
 		margin: 0 3px;
-		padding: 0 10px;
+		padding: 0 8px;
+		font-size: 11px;
 		border-bottom: 1px solid rgba(255,255,255,0);
 		color: #fff;
 		transition: all 0.5s ease;
@@ -44,8 +45,17 @@ nav {
 		@media #{$desktop} {
 			display: inline;
 		}
-		@media (min-width: 1000px) {
-			padding: 0 22px;
+		@media #{$large-desktop} {
+			padding: 0 16px;
+			margin: 0;
+			font-size: 16px;
+		}
+
+		svg {
+			margin-right: 8px;
+			height: 16px;
+			vertical-align: middle;
+			fill: currentColor;
 		}
 
 		&.nav-toggle {
@@ -86,6 +96,9 @@ nav {
 		color: #fff;
 	}
 
+	a:last-child {
+		padding-right: 0;
+	}
 }
 
 body {
