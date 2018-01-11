@@ -31,6 +31,10 @@
       "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSdeXS0LI-g-6anKAH8-aTposZyzwI7Y-seTOqOg60MUF9hO3w/viewform?usp=sf_link",
       "type" : 301  
     }, {
+      "source" : "/benefits",
+      "destination" : "/",
+      "type" : 301
+    }, {
       "source" : "/cal",
       "destination" : "https://calendly.com/itsolver",
       "type" : 301
@@ -127,12 +131,20 @@
       "destination" : "https://get.teamviewer.com/k6xf54t",
       "type" : 301
     }, {
+      "source" : "/register",
+      "destination" : "/service-plans/",
+      "type" : 301
+    }, {
       "source" : "/reset-the-net",
       "destination" : "/news/2014/06/04/reset-the-net/",
       "type" : 301
     }, {
       "source" : "/rs",
       "destination" : "https://get.teamviewer.com/h5rbys3",
+      "type" : 301
+    }, {
+      "source" : "/sign-in",
+      "destination" : "/service-plans/",
       "type" : 301
     }, {
       "source" : "/smart-tv-and-netflix-installations-are-easy-with-it-solver",
