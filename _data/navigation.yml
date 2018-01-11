@@ -1,5 +1,5 @@
-- name: Pay-Per-Incident
-  link: /pay-per-incident/
+- name: On-Demand
+  link: /on-demand/
   new_window: false
   highlight: false
   first: true

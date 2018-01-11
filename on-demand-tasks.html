@@ -1,0 +1,43 @@
+---
+title: On-Demand Tasks
+heading: On-Demand Tasks
+description: <p>This is a list of all the tasks we will do as part of your Service Plan or On-Demand Support. You’ll also find a list of the things that are explicitly not included.</p><p>If something isn’t on the include list, that doesn’t mean we won’t do it. Reach out to us with your task. We’ll make a call on it and maybe even add it to this list. If not, we’ll give you an estimate of costs.</p>
+---
+<h2>Tasks Included</h2>
+<dl class="faq">
+    {% for column in site.data.tasks %}
+    {% for task in column.tasks-included %}
+        <div>
+            {% if task.header %}
+            <dt>{{ task.header }}</dt>
+            {% endif %}
+            <dd>{{ task.task }}</dd>
+        </div>
+    {% endfor %}
+    {% endfor %}
+</dl>
+
+<h2>Tasks Excluded</h2>
+<dl class="faq">
+    {% for column in site.data.tasks %}
+    {% for task in column.tasks-excluded %}
+        <div>
+            {% if task.header %}
+            <dt>{{ task.header }}</dt>
+            {% endif %}
+            <dd>{{ task.task }}</dd>
+        </div>
+    {% endfor %}
+    {% endfor %}
+</dl>
+
+<h2>Platforms</h2>
+<dl class="faq">
+        {% for column in site.data.tasks %}
+        {% for platform in column.platforms %}
+            <div>
+                <dd>{{ platform.name }}</dd>
+            </div>
+        {% endfor %}
+        {% endfor %}
+</dl>

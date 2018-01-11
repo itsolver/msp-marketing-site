@@ -1,0 +1,80 @@
+- tasks-included:
+  - header: One stop for expert service and support
+  - task: Direct access to an expert via chat or phone
+  - task: 24/7 priority access through <a href="https://support.itsolver.net/">support.itsolver.net</a>
+  - task: "Onsite repair for desktop computers: request that a technician come to your workplace <sup>1</sup>"
+- tasks-included:
+  - header: Staff changes
+  - task: Onboarding and offboarding assistance including adding and removing users
+  - task: Locating a lost device using location tracking
+  - task: Wiping a company owned device to prevent theft of Intellectual Property
+- tasks-included:
+  - header: Security
+  - task: Malware removal
+  - task: Configure Cisco Umbrella - extra layer of web protection
+- tasks-included:
+  - header: Photo management
+  - task: Coonfigure photos to backup to cloud storage
+  - task: Demonstrate how to copy transfer photos to a computer
+- tasks-included:
+  - header: Software support 
+  - task: Direct access to an expert to answer your questions on a wide range of topics
+  - task: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
+  - task: Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets
+  - task: Connecting to printers and networks
+  - task: Support for most Australian supplied internet enabled devices, such as computers, smart TV’s, smartphones and tablets (eg Apple iPad).
+- tasks-included:
+  - header: Email
+  - task: Change basic account settings
+  - task: Create email addresses
+  - task: Forward email addresses to other ones
+  - task: “Send as” other emails in Google Apps (impersonation)
+- tasks-included:
+  - header: Web & Domain Hosting
+  - task: Editing DNS / Domain settings
+  - task: Editing basic web hosting settings
+- tasks-included:
+  - header: Operating System - Apple macOS
+  - task: Your device’s operating system
+  - task: macOS & macOS Server using command-line interface<sup aria-label="superscript, 2." role="text">2</sup>'
+  - task: macOS & macOS Server in a virtual environment<sup aria-label="superscript, 2." role="text">2</sup>'
+  - task: Troubleshooting automated administrative tasks & scripts<sup aria-label="superscript, 2." role="text">2</sup>'
+  - task: Troubleshooting cross-platform integration (security, file and print)<sup aria-label="superscript, 2." role="text">2</sup>'
+  - task: Troubleshooting Directory Services integration (including Active Directory)<sup aria-label="superscript, 2." role="text">2</sup>'
+  - task: File system and RAID configuration
+- tasks-included: 
+  - header: Troubleshooting
+  - task: We diagnose and solve technology problems, such as internet connectivity, Wi-Fi, removing viruses.
+  - task: 
+  - task: 
+  - task: 
+- tasks-included: 
+  - header: 
+  - task: 
+  - task: 
+  - task: 
+  - task: 
+  - task: 
+- tasks-included: 
+  - header: 
+  - task: 
+  - task: 
+  - task: 
+  - task: 
+  - task: 
+- tasks-excluded:
+  - task: Professional services beyond standard technical support, advice and coaching (for example, website creation, software migrations or development work).
+  - task: Hardware repair, unless purchased from IT Solver and under warranty.
+  - task: Initial G Suite Setup
+  - task: Data recovery
+  - task: Data migration
+  - task: Training or instruction (>20 minutes)
+  - task: Marketing or website changes
+  - task: You are responsible for all data charges associated with this service. Unless otherwise stated, the cost of any software or hardware is not included in the price of the Service Plan.
+- platforms:
+  - name: Google - G Suite Apps including Gmail, Docs, Calendar and more
+  - name: Microsoft Office 365
+  - name: Apple - iCloud, Apple ID
+- conditions:
+  - condition: Requires Premium Service Plan. Availability of service options depends on the country or region in which the service is requested and the location of IT Solver. Products returned for service may be repaired or replaced with parts equivalent to new in performance and reliability. IT Solver may also request that the customer replace components with readily installable parts.
+  - condition: For Solo Plan, requires at least one of ten included support incidents to resolve. Unlimited incidents for Business and Premium Plan. 

@@ -1,6 +1,8 @@
 html {
 	background: #fff;
 	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html, body {
@@ -9,7 +11,7 @@ html, body {
 }
 
 body {
-	font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+	font-family: #{$font-family};
 	letter-spacing: 0.33px;
 }
 
@@ -60,4 +62,19 @@ p, address {
 
 ol {
 	margin-bottom: 20px;
+}
+
+li { 
+	list-style-type: none;
+}
+
+sup {
+	font-size: 10px !important;
+    bottom: 0.6em;
+    line-height: 9px;
+    font-weight: normal !important;
+    vertical-align: baseline;
+    position: relative;
+    bottom: 0.33em;
+	position: static !important;
 }

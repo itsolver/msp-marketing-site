@@ -1,81 +1,72 @@
 ---
-title: Support Plans
+title: Service Plans
 heading: hide-heading
 description:
 faq:
+  - question: What things will you do?
+    answer: Lots of stuff! <a href="on-demand-tasks">Check out the full list here</a>.
   - question: What is a user?
-    answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are included in pricing and don't count as additional users.
+    answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are free and don't count as additional users.
   - question: Do you offer email accounts?
-    answer: Yes. You can purchase email accounts via G Suite from IT Solver. This also includes Google Calendar, Docs, Drive, and more.
+    answer: Yes. You may <a href="/cloud-apps-g-suite/">purchase email accounts separately</a>.
   - question: How do I buy and pay?
-    answer: Get started with a free 14-day trial or <a href="/contact/">contact sales</a>. After the trial ends, you can pay by credit card.
+    answer: Choose plan above and complete the sign up form. Payment details will be requested when we call you shortly. We accept Visa and Mastercard.
   - question: What is the payment plan?
-    answer: We offer a flexible payment plan. You can add and delete users at anytime. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a> or see the IT Solver Help Centre.
-  - question: When are hourly rates billed?
-    answer: Projects or work related to an add, remove or change.
-  - question: What is your hourly rate for work outside a support plan?
-    answer: $90 an hour with a 1 hour minimum, billed by the minute.
+    answer: We offer a flexible payment plan. You can add and delete users at anytime. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.
+  - question: What is the rate for customers not on a service plan?
+    answer: $168 per hour. Billed by the minute, 1 hour minimum. 
+  - question: Is there a call out fee for on-site work?
+    answer: There is no call out fee for Business and Premium plans as on-site labour is included. But for the Solo Plan, travel time is billed at the hourly rate of $99 per hour.
   - question: Have more questions?
-    answer: Angus usually responds in under an hour during Mon-Sat 9AM - 5PM. Visit the <a href="/contact/">Help & Support Center</a> to contact Angus.
+    answer: <a href="/contact/">Contact us</a>.
+common-features:
+  - feature: Business grade antivirus by Bitdefender
+  - feature: Cloud security by Cisco Umbrella
+  - feature: Software updates
+  - feature: 24x7 Monitoring to detect issues
+  - feature: Automatically resolve issues
 ---
 <section class="pricing-section">
     <h2 class="pricing-section-title">Choose the plan that’s right for you or your business.</h2>
     <div class="pricing">
+        {% for column in site.data.service-plans %}
+
         <div class="pricing-item">
+                {% for plan in column.plan %}
+                {% if plan.name %}{% assign {{ service-plan-name = plan.name %}
             <div class="pricing-item-section">
-                <h3 class="pricing-title">BASIC</h3>
-                <div class="pricing-price"><span class="pricing-currency">$</span>39<span class="pricing-period">/ month per user</span></div>
+                <h3 class="pricing-title">{{ plan.name }}</h3>
+        {% endif %}
+                {% if plan.fee %}
+                <div class="pricing-price"><span class="pricing-currency">$</span>{{ plan.fee }}{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
                 <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Antivirus</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Professional email from Google</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Software updates</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Monitoring</li>
+                {% endif %}
+                {% if plan.feature %}
+                    <li class="pricing-feature">{{ plan.feature }}</li>
+                {% endif %}
+                {% endfor %}
                 </ul>
             </div>
-        <a class="plan-button" href="/register-basic/">CHOOSE PLAN</a>
+        <a class="plan-button" href="/register-{{ service-plan-name | downcase }}">CHOOSE PLAN</a>
         </div>
-        <div class="pricing-item pricing-item-featured">
-            <div class="pricing-item-section">
-                <h3 class="pricing-title">MAINTENANCE</h3>
-                <div class="pricing-price"><span class="pricing-currency">$</span>99<span class="pricing-period">/ month per user</span></div>
-                <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Antivirus</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Professional email from Google</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Software updates</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Monitoring</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">24x7 Support</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Maintenance</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Phishing protection</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Static website hosting</li>
-                    
-                </ul>
-            </div>
-            <a class="plan-button" href="/register-maintenance/">CHOOSE PLAN</a>
-        </div>  
-        <div class="pricing-item">
-            <div class="pricing-item-section">
-                <h3 class="pricing-title">CARE</h3>
-                <div class="pricing-price"><span class="pricing-currency">$</span>149<span class="pricing-period">/ month per user</span></div>
-                <ul class="pricing-feature-list">
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Antivirus</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Professional email from Google</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Software updates</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Monitoring</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">24x7 Support</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Maintenance</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Phishing protection</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Static website hosting</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Onsite maintenance (labour)</li>
-                    <li class="pricing-feature"><img src="/images/list.svg" alt="list icon">Free training per quarter</li>
-                </ul>
-            </div>
-            <a class="plan-button" href="/register-care/">CHOOSE PLAN</a>
-        </div>
+        {% endfor %}
     </div>
 </section>
+{% if page.common-features %}
+<div class="container common-feature-list" id="common-feature-list">
+    <section>
+    <h2>Powerful Features Included in All Plans</h2>
+    <ul class="list-items">
+        {% for item in page.common-features %}
+        <li>{{ item.feature }}</li>
+        {% endfor %}
+    </ul>
+    </section>
+</div>
+{% endif %}
 
 {% if page.faq %}
-	<h2>Pricing FAQ</h2>
+	<h2>Service Plans FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
 			<div>

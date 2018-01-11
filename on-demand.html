@@ -1,0 +1,46 @@
+---
+title: On-Demand
+heading: hide-heading
+description:
+faq:
+ - question: What kind of things will you do?
+ - answer: Lots of stuff! Check out the <a href="/on-demand-tasks/">full list here</a>.
+rate: 168
+---
+
+<div class="grid2col">
+    <div class="column first">
+        <h1 class="left">On-Demand Support</h1>
+        <p>If your products aren’t covered by a Service Plan, you can purchase support on-demand.</p>
+        <p>To purchase on-demand support, please call <a href="tel:+61731236000">(07) 3123 6000</a>.</p>
+        <div class="pricing-item single">
+            <div class="pricing-price"><span class="pricing-currency">$</span>{{ site.data.on-demand.fee }}<span class="pricing-period">{{ site.data.on-demand.period }}{% if site.data.on-demand.minimum %}, minimum charge{% endif %}</span></div>
+            <ul class="pricing-feature-list">
+                    {% for feature in site.data.on-demand.features %}
+                    <li class="pricing-feature">{{ feature.feature }}</li>
+                    {% endfor %}
+            </ul>
+            <a class="plan-button" href="/contact/">CONTACT SALES</a>
+        </div>
+    </div>
+
+    <div class="column last">
+        <div class="support-plan-upgrade rounded">
+        <h3>IT Solver Service Plans</h3>
+        <p>Choose an IT Solver Service Plan and get unlimited telephone technical support and maintenance.</p>
+        <p><a href="/service-plans/">View Service Plans</a></p>
+        </div>
+    </div>
+</div>
+
+{% if page.faq %}
+	<h2>Service Plans FAQ</h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}
