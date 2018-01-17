@@ -36,7 +36,9 @@
     </header>{{ content }}
     <footer>
         <div class="container">
-            <div class="footer-columns">{% for column in site.data.footer %}
+            <div class="footer-columns">
+                <div class="qassure"><a href="https://qassure.com.au/supplier/details/13046"><img src="/images/qassure.jpg"></a></div>
+                {% for column in site.data.footer %}
                 <ul class="footer-links">{% for link in column.links %} {% if link.header %} {% if link.header == "IT Solver" %}
                     <li>
                         <a href="/">
