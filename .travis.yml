@@ -28,7 +28,6 @@ before_install:
   - gem install bundler 
   #if gems are missing this script will get the missing gems.
   - bundle check || bundle install
-  - bundle exec htmlproofer ./_site --disable-external
 
 install:
   #install firebase tools, required to deploy on firebase hosting 
@@ -41,6 +40,8 @@ script:
   - set -e 
   #build jekyll site
   - jekyll build 
+  #proof before publish
+  - htmlproofer ./_site
 
 after_success:
   #deploy to firebase using stored token. 
@@ -51,3 +52,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build
+
+cache:
+  directories:
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer # speed up external link checking
