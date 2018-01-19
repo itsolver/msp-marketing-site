@@ -62,12 +62,12 @@
                     <li><a href="/"><h2>{{ link.header }}</h2></a>
                     </li>{% else %}<li><h2>{{ link.header }}</h2>
                     </li>{% endif %} {% endif %} 
-                    {% if link.name == "Message Us" %}<div class="fb-messengermessageus" 
+                    {% if link.name == "Message Us" %}<li><div class="fb-messengermessageus" 
                     messenger_app_id="272237009895034" 
                     page_id="itsolver.net"
                     color="white"
                     size="standard">
-                  </div>{% endif %}
+                  </div></li>{% endif %}
                     {% if link.link %}
                     <li><a {% if link.new_window %}target="_blank" {% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include social-icon.html icon=link.social_icon %} {% endif %} {{ link.name }}</a>
                     </li>{% endif %} {% endfor %}</ul>{% endfor %}</div>
