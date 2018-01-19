@@ -33,11 +33,7 @@ install:
   #install firebase tools, required to deploy on firebase hosting 
   - npm install -g firebase-tools 
 
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
 script: 
-  #continue even after error
-  - set -e 
   #build jekyll site
   - jekyll build 
   #proof before publish
