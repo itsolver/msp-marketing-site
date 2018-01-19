@@ -36,8 +36,8 @@ install:
 script: 
   #build jekyll site
   - jekyll build 
-  #proof before publish
-  - htmlproofer ./_site
+  #proof before publish # DISABLED UNTIL "SSL ERROR" FIXED
+  #- htmlproofer ./_site
 
 after_success:
   #deploy to firebase using stored token. 
