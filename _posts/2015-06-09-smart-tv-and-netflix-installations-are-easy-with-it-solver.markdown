@@ -24,7 +24,7 @@ tags:
 - YouTube
 ---
 
-![Angus testing a power adapter for wireless headphones with a multi-meter. Photo: Friendly Bay Islander](/images/angus-smart-tv-installation.jpg) *Angus testing a power adapter for a wireless headphones base station. Photo: Friendly Bay Islander*
+![Angus testing a power adapter for wireless headphones with a multi-meter. Photo: The Friendly Bay Islander](/images/angus-smart-tv-installation.jpg) *Angus testing a power adapter for a wireless headphones base station. Photo: The Friendly Bay Islander*
 
 There is so much technology around at the moment, it is most mind-boggling! Smart TVs, apps, smart phones that do just about everything, and computers that can run just about everything in your business and home life. It is all very wonderful.
 It can also be all very confusing, particularly if you live on an island where quality service can be difficult to access. And that’s where Angus McLauchlan of IT Solver comes in extremely handy.

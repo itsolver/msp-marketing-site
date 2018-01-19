@@ -13,7 +13,7 @@ tags:
 - security
 ---
 
-[![](/images/FRAUD-WEEK-ARTWORK_Landscape_D01.jpg)](https://www.scamwatch.gov.au/)
+[![Fraud Week ArtWork, ScamWatch](/images/FRAUD-WEEK-ARTWORK_Landscape_D01.jpg)](https://www.scamwatch.gov.au/)
 Are you keeping your private information secure? Chances are you could be leaving it wide open for scammers to use for fraudulent purposes. Identity theft is now one of the most common crimes in Australia, and can lead to all sorts of associated illegal activities.
 
 During Fraud Week 2015, the Australasian Consumer Fraud Taskforce is urging Australian consumers and businesses to get smarter with their data and keep it out of the hands of scammers.
