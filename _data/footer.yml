@@ -19,16 +19,17 @@
   - name: support@itsolver.net
     link: mailto:support@itsolver.net
     contact_icon: email
-  - name: 07 3123 6000
+  - name: (07) 3123 6000
     link: tel:+61731236000
     contact_icon: phone
   - name: Contact
     link: /contact/
 - links:
   - header: Connect
+  - name: Message Us
   - name: Blog
     link: /blog/
-    social_icon: ITSolver-Blog
+    social_icon: IT-Solver
   - name: Facebook
     link: https://facebook.com/itsolver.net
     social_icon: Facebook

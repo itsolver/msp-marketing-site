@@ -25,9 +25,10 @@
 				fill: #999;
 				margin-right: 10px;
 				transition: fill 0.2s ease;
-				vertical-align: middle;
+				vertical-align: text-bottom;
 				position: relative;
-				top: -2px;
+				width: 22px;
+				height: 22px;
 			}
 
 			&:hover svg {
@@ -44,7 +45,7 @@
 			&.Google-Plus-icon:hover svg {
 				fill: #db4437;
 			}
-			&.ITSolver-Blog-icon:hover svg {
+			&.IT-Solver-icon:hover svg {
 				fill: #4182e4;
 			}
 
