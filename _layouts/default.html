@@ -24,25 +24,26 @@
         })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
             "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
     </script>
+    {% endif %}
     <script>
-            window.fbAsyncInit = function() {
-              FB.init({
-                appId            : '272237009895034',
-                autoLogAppEvents : true,
-                xfbml            : true,
-                version          : 'v2.11'
-              });
-            };
-          
-            (function(d, s, id){
-               var js, fjs = d.getElementsByTagName(s)[0];
-               if (d.getElementById(id)) {return;}
-               js = d.createElement(s); js.id = id;
-               js.src = "https://connect.facebook.net/en_US/sdk.js";
-               fjs.parentNode.insertBefore(js, fjs);
-             }(document, 'script', 'facebook-jssdk'));
-          </script>
-    {% endif %}</head>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '272237009895034',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.11'
+          });
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+</head>
 
 <body>
     <header>
@@ -64,7 +65,7 @@
                     </li>{% endif %} {% endif %} 
                     {% if link.name == "Message Us" %}<li><div class="fb-messengermessageus" 
                     messenger_app_id="272237009895034" 
-                    page_id="itsolver.net"
+                    page_id="346353632068707"
                     color="white"
                     size="standard">
                   </div></li>{% endif %}
