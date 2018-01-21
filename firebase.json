@@ -5,6 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+      "**/*.sh"
     ],
     "redirects": [ {
       "source" : "/accepting-apple-pay-and-android-pay",
