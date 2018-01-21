@@ -21,7 +21,7 @@ install:
   #if gems are missing this script will get the missing gems.
   - bundle check || bundle install
   #build jekyll site and html-proof it
-  - jekyll build #&& htmlproofer ./_site ## Disabled htmlproofer until external SSL link checking is working
+  - bundle exec jekyll build #&& htmlproofer ./_site ## Disabled htmlproofer until external SSL link checking is working
 
 deploy:
   provider: firebase
