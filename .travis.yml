@@ -1,37 +1,24 @@
-language: ruby
 sudo: false
-
-#choose branch on commit of which this script should excecute
-branches:
-  only:
-    - master
-
+language: ruby
+cache: bundler
+rvm:
+  - 2.4.1
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+cache:
+  directories:
+  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer # speed up external link checking
 notifications:
   email:
     on_success: never
     on_failure : change 
-
-install:
-  - rvm install 2.5.0
-  - rvm use 2.5.0
-  #set home variables
-  - . $HOME/.nvm/nvm.sh && nvm install 6.1 && nvm use 6.1  
-  #install gems through bundler
-  - gem install bundler 
-  #if gems are missing this script will get the missing gems.
-  - bundle check || bundle install
-  #build jekyll site and html-proof it
+before_install:
+  - "nvm install v7.10.0"
+before_deploy:
   - bundle exec jekyll build #&& htmlproofer ./_site ## Disabled htmlproofer until external SSL link checking is working
-
 deploy:
+  skip_cleanup: true
   provider: firebase
   token:
     secure: "$FIREBASE_API_TOKEN" 
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-cache:
-  directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer # speed up external link checking
