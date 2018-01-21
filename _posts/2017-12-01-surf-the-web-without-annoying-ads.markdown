@@ -30,13 +30,15 @@ If you use the web, you should read this. I get new customers calling me with ma
 
 Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.
 
-I do the usual clean up but the real value is in the last step, installing an adblocker. They're impressed with how much cleaner, faster and safer the web is without ads.
+I do the usual clean up but the real value is in the last step, installing an adblocker. My customers are impressed with how much cleaner, faster and safer the web is without ads.
+
+## Desktop 
 
 Install uBlock Origin on [Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Firefox](https://addons.mozilla.org/addon/ublock-origin/) and [Microsoft Edge](https://www.microsoft.com/store/p/app/9nblggh444l4).
 
+## iOS - iPhone, iPad and iPod
 For mobile phones and tablets the options are different. 
 
-## iOS - iPhone, iPad and iPod
 [AdBlock for Mobile](https://itunes.apple.com/au/app/adblock-for-mobile/id1036484810?mt=8) (free / pay what you want) or [Purify](https://itunes.apple.com/au/app/purify-block-ads-and-tracking-browse-in-peace/id1030156203?mt=8) (paid)
 
 ## Android - Samsung, Sony, Huawei, etc
