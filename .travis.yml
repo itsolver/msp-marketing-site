@@ -11,7 +11,7 @@ notifications:
     on_success: never
     on_failure : change 
 
-before_deploy:
+install:
   - rvm install 2.5.0
   - rvm use 2.5.0
   #set home variables
