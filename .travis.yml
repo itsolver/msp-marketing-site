@@ -1,27 +1,28 @@
 sudo: false
 language: ruby
-cache: bundler
-rvm:
-  - 2.4.1
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 cache:
   directories:
-  - $TRAVIS_BUILD_DIR/tmp/.htmlproofer # speed up external link checking
+  - "$TRAVIS_BUILD_DIR/tmp/.htmlproofer"
+rvm:
+- 2.4.1
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: KB+UiNjTyPAvADZqeWdq/KEx62IEUt0JZHfprcyysCPpxrdegdbA6kIXGrcxjzTwmfOHcr6Ksn1S/HqkLr5E6O+OKaLqH4YOA8r9g+GRtHlNdpuK52l6EZmRcdFa6ZgvQyOB+vAZkh68U5BOdill9+V4YasgfFpQYZu+PZam2teoXx+UoiH6MfYv+UCfruC1pkcBdBl7abf9DHFwXDUQAWiA8e4qMG2wC3juHYSJ8tP04k+cotL8XJ+gBd6K9my6mn2ti0HhlvoTcMZodImdAdStp92bKIOey0sYoU0W0frcOVBwa+pO671fPRPKSrWqf0/tAKqv+3N2uegw1VDaJQy/8MqOsLfrGbvprdmDsqGpk3Vjb+qgNTUvMuX3bZjE7nrH1oKu2bs8bZjHYbE/ooDJtSQystNMT8zi9ol2yiNZ7661CrCbGSgBlaAfX8Ib9lRw4zFYt5G3t5QjmBV0Bhdi1z50jLI0ip51SYCDWD44/vx9dx6m7xgVuZ9EURrKt2Sq/ujoD8JEJxjMIN2VYTpcdc8TEjk/Gyl2xppYgXPuH3qxnPQVtKECQHA5oRmxolKzCkLnrU+DC8SstO7jpkWK/dMhLK0nKpf9q+RpOGhtuLruZloAr9m8hgsX8E1hfmD3SWntnNugudmiDlcZdmaoQRUSIRpPSxnYVhuvT3I=
 notifications:
   email:
     on_success: never
-    on_failure : change
+    on_failure: change
 addons:
   apt:
     packages:
-    - libcurl4-openssl-dev # required to avoid SSL errors
+    - libcurl4-openssl-dev
 install:
-  - nvm install v7.10.0
-  - bundle install
+- nvm install v7.10.0
+- bundle install
 script: jekyll build && htmlproofer ./_site --disable-external
 deploy:
+  skip_cleanup: true
   provider: firebase
   token:
     secure: $FIREBASE_API_TOKEN
