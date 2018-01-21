@@ -13,8 +13,8 @@ notifications:
   email:
     on_success: never
     on_failure : change 
-before_install:
-  - "nvm install v7.10.0"
+install:
+  - nvm install v7.10.0
 before_deploy:
   - bundle exec jekyll build #&& htmlproofer ./_site ## Disabled htmlproofer until external SSL link checking is working
 deploy:
