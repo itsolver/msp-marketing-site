@@ -1,4 +1,3 @@
-cache: bundler
 language: ruby
 sudo: false
 
@@ -12,7 +11,7 @@ notifications:
     on_success: never
     on_failure : change 
 
-before_deploy:
+install:
   - rvm install 2.5.0
   - rvm use 2.5.0
   #set home variables
@@ -21,12 +20,10 @@ before_deploy:
   - gem install bundler 
   #if gems are missing this script will get the missing gems.
   - bundle check || bundle install
-  #install firebase tools, required to deploy on firebase hosting 
-  - npm install -g firebase-tools 
   #build jekyll site
   - jekyll build 
-  #proof before publish # DISABLED UNTIL "SSL ERROR" FIXED
-  #- htmlproofer ./_site
+
+script: jekyll build && htmlproofer ./_site
 
 deploy:
   provider: firebase
