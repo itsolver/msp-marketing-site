@@ -20,7 +20,7 @@ addons:
 install:
   - nvm install v7.10.0
   - bundle install
-script: jekyll build && htmlproofer ./_site
+script: jekyll build && htmlproofer ./_site --disable-external
 deploy:
   skip_cleanup: true
   provider: firebase
