@@ -22,7 +22,7 @@ install:
   - bundle install
 script: jekyll build && htmlproofer ./_site --disable-external
 deploy:
-  skip_cleanup: true
   provider: firebase
   token:
-    secure: "$FIREBASE_API_TOKEN" 
+    secure: $FIREBASE_API_TOKEN
+  project: $FIREBASE_PROJECT_ID
