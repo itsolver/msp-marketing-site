@@ -11,7 +11,7 @@ notifications:
     on_success: never
     on_failure : change 
 
-install:
+before_deploy:
   - rvm install 2.5.0
   - rvm use 2.5.0
   #set home variables
@@ -20,10 +20,8 @@ install:
   - gem install bundler 
   #if gems are missing this script will get the missing gems.
   - bundle check || bundle install
-  #build jekyll site
-  - jekyll build 
-
-script: jekyll build && htmlproofer ./_site
+  #build jekyll site and html-proof it
+  - jekyll build && htmlproofer ./_site
 
 deploy:
   provider: firebase
