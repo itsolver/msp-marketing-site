@@ -15,8 +15,8 @@ notifications:
     on_failure : change 
 install:
   - nvm install v7.10.0
-before_deploy:
-  - bundle exec jekyll build #&& htmlproofer ./_site ## Disabled htmlproofer until external SSL link checking is working
+  - bundle install
+script: jekyll build && htmlproofer ./_site
 deploy:
   skip_cleanup: true
   provider: firebase
