@@ -16,11 +16,11 @@ tags:
 
 #### ![youeAMH_600](/images/youeAMH_600.jpg)
 #### Update: iOS 8.0.2 is available. Remember before updating your iPhone, backup to iTunes on a PC or Mac.
-There is a [workaround](http://support.apple.com/kb/HT6487) for those who have lost cellular service and use of Touch ID after updating to iOS 8.0.1 on iPhone 6 and iPhone 6 Plus.
+There is a workaround for those who have lost cellular service and use of Touch ID after updating to iOS 8.0.1 on iPhone 6 and iPhone 6 Plus.
 
 Apple have pulled the iOS 8.0.1 update from their servers and are working on a proper solution soon to be released in iOS 8.0.2.
 
-The workaround is a guide to revert back to iOS 8: [http://support.apple.com/kb/HT6487](http://support.apple.com/kb/HT6487)
+The workaround is a guide to revert back to iOS 8: http://support.apple.com/kb/HT6487 (edit: Apple removed the page)
 
 If you are affected by this bug and need assistance, we can do this workaround via remote support for only $59.
 

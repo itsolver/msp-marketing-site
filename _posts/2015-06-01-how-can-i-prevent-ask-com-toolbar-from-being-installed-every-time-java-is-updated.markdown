@@ -28,13 +28,6 @@ If you play Minecraft, then yes! However, [Java is less popular these days](http
 
 If you still require Java, the following solution will prevent Java updates automatically installing adware including Ask.com toolbar, McAfee Security Scan and any future new "offers" as well.
 
-
-### Automatic Solution (_aka. I've got Netflix episodes to watch!_) 
-Right-click and Save [this .reg file](https://itsolver.net/disable-java-adware.reg), then open and follow prompts to merge the changes.
-
-
-### Manual Solution (_aka. I know what I'm doing_) 
-
 Copy and paste the text below into a new text file, save with a .reg extension and double-click to apply.
 
 ```

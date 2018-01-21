@@ -40,7 +40,7 @@
       "destination" : "https://calendly.com/itsolver",
       "type" : 301
     }, {
-      "source" : "/category/tips-tricks/",
+      "source" : "/category/tips-tricks",
       "destination" : "https://www.itsolver.net/category/tips-and-tricks/",
       "type" : 301
     }, {
@@ -48,8 +48,12 @@
       "destination" : "https://support.itsolver.net/hc/en-au/community/topics",
       "type" : 301
     },{
-      "source" : "/computer-support-repairs-tutoring/",
+      "source" : "/computer-support-repairs-tutoring",
       "destination" : "/",
+      "type" : 301
+      },{
+      "source" : "/contact-us",
+      "destination" : "/contact/",
       "type" : 301
     }, {
       "source" : "/convienient-drop-off-location-at-russell-island",

@@ -20,11 +20,6 @@ During Fraud Week 2015, the Australasian Consumer Fraud Taskforce is urging Aust
 
 
 ## Follow SCAMwatch's top 6 'protect yourself' tips to leave scammers out in the cold
-
-
-
-
-
  	
   1. **Keep your personal details secure**
 Your postal mail and your online presence are the first place a scammer will look to piece together your details. Lock your mailbox, and shred your bills and other important documents before throwing out. Be careful sharing information about yourself online, including social media, blogs and other online forums.
@@ -52,6 +47,4 @@ Your credit report contains information on your credit history. You can get a fr
 
 If you think your banking details have been misused, you should contact your bank or credit union immediately to let them know. You should also contact iDcare - a free government-industry service which works with you to develop specific response plans to your situation to reduce risk and impact. Visit the [iDcare website](http://www.idcare.org/) or call 1300 IDCARE (432273).
 
-Source: [http://www.scamwatch.gov.au/content/index.phtml/itemId/1216972](http://www.scamwatch.gov.au/content/index.phtml/itemId/1216972)
-
-
+Source: http://www.scamwatch.gov.au
