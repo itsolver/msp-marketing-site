@@ -81,12 +81,13 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
-  - *.sh
+  - build-proof.sh
+  - serve-quick.sh
+  - serve.sh
   - package.json
   - firebase.json
   - database.rules.json
   - node_modules
-  
 
 # -----------
 # CloudCannon
