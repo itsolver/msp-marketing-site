@@ -136,6 +136,18 @@
       "destination" : "/service-plans/",
       "type" : 301
     }, {
+      "source" : "/register-business",
+      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSehCi2U_gs-7uD6oYi9SO9p5Swk8gkQmZCQEsihh2dYNOYQEw/viewform?usp=sf_link",
+      "type" : 301
+    }, {
+      "source" : "/register-premium",
+      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLScMDUWtIbv3DadHBrQtctQrln038WsLFfyhPdq_to9NGEbpGQ/viewform?usp=sf_link",
+      "type" : 301
+    }, {
+      "source" : "/register-solo",
+      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSehBf1jBsAC28Xv33jdTdlV1cikqoj3sSUUsrf3yiGQKNB1CA/viewform?usp=sf_link",
+      "type" : 301
+    }, {
       "source" : "/reset-the-net",
       "destination" : "/news/2014/06/04/reset-the-net/",
       "type" : 301
