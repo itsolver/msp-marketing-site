@@ -5,6 +5,8 @@ title: IT Solver
 url: "https://www.itsolver.net"
 baseurl:
 environment: "production"
+repository: https://github.com/itsolver/msp-marketing-site
+timezone: Australia/Brisbane
 google_analytics_key: "UA-90161029-1"
 disqus_shortname:
 icon_ready: true
@@ -14,6 +16,8 @@ future: false # Publish on schedule future dated posts https://stackoverflow.com
 sass:
   sass_dir: _sass
   style: compressed
+
+
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /the_favicon/android-chrome-192x192.png
