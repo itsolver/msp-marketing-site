@@ -29,8 +29,19 @@ author:
 social:
   name: IT Solver
   links: 
+    - https://www.itsolver.net/blog/
     - https://www.facebook.com/itsolver.net
     - https://www.twitter.com/itsolvernet
+    - https://plus.google.com/105525146496759832582
+    - https://www.yelp.com.au/biz/it-solver-redland-bay
+    - https://foursquare.com/v/it-solver/5a65800a0a08ab7fafc50d49
+    - https://github.com/itsolver/msp-marketing-site
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /the_favicon/android-chrome-192x192.png
 
 # -----
 # Build
