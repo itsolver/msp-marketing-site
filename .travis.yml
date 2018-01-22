@@ -20,7 +20,7 @@ addons:
 install:
 - nvm install v7.10.0
 - bundle install
-script: jekyll build && htmlproofer ./_site
+script: jekyll build && htmlproofer ./_site --url-ignore "https://www.itsolver.net/404/index.html,404.html,https://www.itsolver.net/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads/"
 deploy:
   skip_cleanup: true
   provider: firebase
