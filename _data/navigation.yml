@@ -18,11 +18,6 @@
   new_window: false
   highlight: false
   first: false
-- name: Support
-  link: https://support.itsolver.net/hc/en-au
-  new_window: false
-  highlight: true
-  first: false
 - name: Contact
   link: /contact/
   new_window: false
