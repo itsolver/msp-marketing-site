@@ -1,3 +1,4 @@
+dist: trusty
 sudo: false
 language: ruby
 cache:
@@ -19,7 +20,7 @@ addons:
   apt:
     packages:
     - libcurl4-openssl-dev
-   sonarcloud:
+  sonarcloud:
     organization: "itsolver" # the key of the org you chose at step #3
     token:
       secure: "$SONAR_TOKEN" # encrypted value of your token
