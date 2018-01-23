@@ -19,11 +19,11 @@
 }
 
 header {
-	color: #fff;
+	color: $light-shade;
 	padding: 16px 0;
 	background: $brand-color;
 	a {
-		color: #fff;
+		color: $light-shade;
 		text-decoration: none;
 		z-index: 1;
 		position: relative;
@@ -47,7 +47,7 @@ header {
 }
 
 .content {
-	background: #fff;
+	background: $light-shade;
 	padding: 1px 0 0 0;
 	position: relative;
 }
@@ -74,7 +74,7 @@ section + section {
 }
 
 .hero-benefits {
-	color: #333;
+	color: $dark-shade;
 	text-align: left;
 	padding-top: 0;
 	line-height: 1.5em;
@@ -95,7 +95,7 @@ blockquote {
 	margin: 0;
 	quotes: "\201C""\201D""\201C""\201D";
 	font-style: italic;
-	color: #666;
+	color: $dark-shade;
 
 	.author {
 		display: block;

@@ -22,7 +22,7 @@
 			}
 			svg {
 				display: inline !important;
-				fill: #999;
+				fill: $dark-shade;
 				margin-right: 10px;
 				transition: fill 0.2s ease;
 				vertical-align: text-bottom;
@@ -32,7 +32,7 @@
 			}
 
 			&:hover svg {
-				fill: #fff;
+				fill: $dark-shade;
 			}
 			&.Facebook-icon:hover svg {
 				fill: #365899;
@@ -76,8 +76,8 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: #2b2b40;
-	color: #fff;
+	background: $light-shade;
+	color: $dark-shade;
 
 	.copyright {
 		font-size: .8em;
@@ -91,13 +91,13 @@ footer {
 
 	&,
 	a {
-		color: #999;
+		color: $dark-shade;
 	}
 
 	h2 {
 		font-size: 1.4em;
 		margin: 0 0 30px 0;
-		color: #ccc;
+		color: $dark-shade;
 	}
 
 	.footer-columns {
@@ -119,7 +119,8 @@ footer {
 		text-decoration: none;
 
 		&:hover {
-			color: #fff;
+			color: $dark-accent;
 		}
 	}
+
 }

@@ -1,6 +1,6 @@
 .bottom-cta {
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
-	color: #fff;
+	background: $dark-shade;
+	color: $light-shade;
 	text-align: center;
 	margin: 0;
 	padding: 100px 0;
@@ -36,12 +36,12 @@
 }
 
 .hero {
-	color: #ffffff;
+	color: $light-shade;
 	text-align: center;
 	background: $brand-color;
 	padding-top: 50px;
 	p, h1 {
-		color: #fff;
+		color: $light-shade;
 		padding: 0 20px;
 	}
 }
@@ -93,15 +93,53 @@
 }
 
 .cta.button a:hover {
-	background: #fff;
-	color: $brand-color;
+	background: $dark-shade;
+	color: $light-shade;
+	border: 1px solid $dark-shade;
 }
 
 .cta.button a.bg-fff:hover {
-	background: $secondary-brand-color;
-	color: #fff;
+	background: $dark-shade;
+	color: $light-shade;
+	border: 1px solid $dark-shade;
 }
 
 .cta.button.left {
 	text-align: left;
+}
+
+.cta.button a.home-request-demo  {
+	background: rgba(255,255,255,0.3);
+}
+
+.cta.button a.home-request-demo:hover  {
+	background: $dark-shade;
+	color: $light-shade;
+	border: 1px solid $dark-shade;
+}
+.cta.button a.bg-fff-request-demo  {
+	background: $light-shade;
+	color: $brand-color;
+}
+
+.cta.button a.bg-fff-request-demo:hover  {
+	background: $dark-shade;
+	color: $light-shade;
+	border: 1px solid $dark-shade;
+}
+.cta.button.help-centre {
+	text-align: center;
+}
+.cta.button.help-centre a {
+	color: $brand-color;
+  border: 1px solid $brand-color;
+  background: $light-shade;
+	cursor: pointer;
+}
+
+.cta.button.help-centre a:hover {
+	color: $light-shade;
+	border: 1px solid $brand-color;
+	background: $brand-color;
+	cursor: pointer;
 }

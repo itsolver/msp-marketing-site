@@ -33,18 +33,18 @@
 			float: none;
 			margin: 30px auto 0 auto;
 			min-width: 200px;
-			color: #fff !important;
+			color: $light-shade !important;
 			border: 1px solid $brand-color;
 			background: $brand-color;
 			cursor: pointer;
 		}
 		input[type=submit]:hover{
-			background: $secondary-brand-color;
-			border: 1px solid $secondary-brand-color;
+			background: $dark-accent;
+			border: 1px solid $dark-accent;
 		}
 		select#subject {
-			background-color: #fff;
-			color: #333;
+			background-color: $light-shade;
+			color: $dark-shade;
 		  	padding: 12px 0 12px 15px;
 			font-size: inherit;
 			overflow: hidden;

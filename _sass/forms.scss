@@ -1,5 +1,5 @@
 .button a, input[type=submit] {
-	color: #fff;
+	color: $light-shade;
 	text-decoration: none;
 	background: $brand-color;
 	border: 1px solid rgba(255,255,255,.5);
@@ -11,8 +11,8 @@
 }
 
 .button a:hover, input[type=submit]:hover {
-	border: 1px solid #fff;
-	background: $secondary-brand-color;
+	border: 1px solid $light-shade;
+	background: $dark-accent;
 	cursor: pointer;
 }
 
@@ -26,47 +26,14 @@
 }
 
 .button.alt a {
-	background: rgba(255,255,255,0.15);
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: $brand-color;
+	border: $brand-color;
 	padding: 14px 30px;
 }
 
 .button.alt a:hover {
-	background: #fff;
+	background: $light-shade;
 	color: $brand-color;
-}
-
-.cta.button a.home-request-demo  {
-	background: rgba(255,255,255,0.3);
-}
-
-.cta.button a.home-request-demo:hover  {
-	background: #fff;
-	color: $brand-color;
-}
-.cta.button a.bg-fff-request-demo  {
-	background: rgba(255,255,255,0.3);
-}
-
-.cta.button a.bg-fff-request-demo:hover  {
-	background: #fff;
-	color: $brand-color;
-}
-.cta.button.help-centre {
-	text-align: center;
-}
-.cta.button.help-centre a {
-	color: $brand-color;
-  border: 1px solid $brand-color;
-  background: #fff;
-	cursor: pointer;
-}
-
-.cta.button.help-centre a:hover {
-	color: #fff;
-	border: 1px solid $brand-color;
-	background: $brand-color;
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 670px) {
@@ -99,7 +66,7 @@
 	border-radius: 5px;
 	-moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-	color: $text-color;
+	color: $dark-shade;
 }
 
 .contact-form textarea {

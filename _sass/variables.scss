@@ -1,7 +1,9 @@
-$brand-color: #4182e4;
-$secondary-brand-color: #2c5799;
-$text-color: #333;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+$light-shade: #fff; //refactor me in
+$light-accent: #cfbc74; //refactor me in
+$brand-color: #4184e1;
+$dark-accent: #838baa;
+$dark-shade: #3b4668;
+$middle-gradient-color: mix($brand-color, $dark-accent, 95%);
 $font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
 // Breakpoints
 $tablet: "(min-width: 450px)";

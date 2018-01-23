@@ -451,7 +451,7 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    color: #fff;
+    color: $light-shade;
     cursor: pointer;
     display: inline-block;
     min-width: 30px;
@@ -533,7 +533,7 @@
     background: -webkit-linear-gradient(#42a1ec, #0070c9);
     background: linear-gradient(#42a1ec, #0070c9);
     border-color: #07c;
-    color: #fff;
+    color: $light-shade;
     cursor: default;
     opacity: .3
 }
@@ -592,16 +592,16 @@
 
 #ac-localnav .ac-ln-button-secondary {
     background-color: #e3e3e3;
-    background: -webkit-linear-gradient(#fff, #e3e3e3);
-    background: linear-gradient(#fff, #e3e3e3);
+    background: -webkit-linear-gradient($light-shade, #e3e3e3);
+    background: linear-gradient($light-shade, #e3e3e3);
     border-color: #d6d6d6;
     color: #0070c9
 }
 
 #ac-localnav .ac-ln-button-secondary:hover {
     background-color: #eee;
-    background: -webkit-linear-gradient(#fff, #eee);
-    background: linear-gradient(#fff, #eee);
+    background: -webkit-linear-gradient($light-shade, #eee);
+    background: linear-gradient($light-shade, #eee);
     border-color: #d9d9d9
 }
 
@@ -614,8 +614,8 @@
 
 #ac-localnav .ac-ln-button-secondary:disabled,#ac-localnav .ac-ln-button-secondary.disabled {
     background-color: #e3e3e3;
-    background: -webkit-linear-gradient(#fff, #e3e3e3);
-    background: linear-gradient(#fff, #e3e3e3);
+    background: -webkit-linear-gradient($light-shade, #e3e3e3);
+    background: linear-gradient($light-shade, #e3e3e3);
     border-color: #d6d6d6;
     color: #0070c9
 }
@@ -1037,7 +1037,7 @@
 }
 
 #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-background,#ac-ln-menustate:target ~ #ac-localnav .ac-ln-background {
-    background-color: #fff;
+    background-color: $light-shade;
     max-height: none;
     -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
@@ -1062,7 +1062,7 @@
 #ac-ln-menustate:checked ~ #ac-localnav.ac-localnav-noblur .ac-ln-background,#ac-ln-menustate:target ~ #ac-localnav.ac-localnav-noblur .ac-ln-background {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
-    background-color: #fff
+    background-color: $light-shade
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-background:after,#ac-localnav.ac-localnav-dark .ac-ln-background:after {
@@ -1421,7 +1421,7 @@
 }
 
 #ac-localnav .ac-ln-menu-link {
-    color: #333;
+    color: $dark-shade;
     display: inline-block;
     line-height: 22px;
     white-space: nowrap
@@ -1448,7 +1448,7 @@
     }
 
     .ac-theme-dark #ac-localnav .ac-ln-menu-link,#ac-localnav.ac-localnav-dark .ac-ln-menu-link {
-        border-color: #333
+        border-color: $dark-shade
     }
 
     #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menu-link,#ac-ln-menustate:target ~ #ac-localnav .ac-ln-menu-link {
@@ -1459,15 +1459,15 @@
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-menu-link {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menu-link {
-    color: #333
+    color: $dark-shade
 }
 
 #ac-ln-menustate:checked ~ .ac-localnav-hero#ac-localnav .ac-ln-menu-link,#ac-ln-menustate:target ~ .ac-localnav-hero#ac-localnav .ac-ln-menu-link {
-    color: #333
+    color: $dark-shade
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-menu-link:hover {
@@ -1483,15 +1483,15 @@
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menu-link,#ac-localnav.ac-localnav-dark .ac-ln-menu-link {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menu-link,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menu-link {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menu-link,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menu-link,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menu-link,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menu-link {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menu-link:hover,#ac-localnav.ac-localnav-dark .ac-ln-menu-link:hover {
@@ -1626,7 +1626,7 @@
 }
 
 #ac-localnav .ac-ln-menucta-chevron::before,#ac-localnav .ac-ln-menucta-chevron::after {
-    background: #333
+    background: $dark-shade
 }
 
 #ac-localnav .ac-ln-menucta-chevron::before {
@@ -1672,27 +1672,27 @@
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-menucta-chevron::before,#ac-localnav.ac-localnav-hero .ac-ln-menucta-chevron::after {
-    background: #fff
+    background: $light-shade
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after {
-    background: #333
+    background: $dark-shade
 }
 
 #ac-ln-menustate:checked ~ .ac-localnav-hero#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:checked ~ .ac-localnav-hero#ac-localnav .ac-ln-menucta-chevron::after,#ac-ln-menustate:target ~ .ac-localnav-hero#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:target ~ .ac-localnav-hero#ac-localnav .ac-ln-menucta-chevron::after {
-    background: #333
+    background: $dark-shade
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-localnav .ac-ln-menucta-chevron::after,#ac-localnav.ac-localnav-dark .ac-ln-menucta-chevron::before,#ac-localnav.ac-localnav-dark .ac-ln-menucta-chevron::after {
-    background: #fff
+    background: $light-shade
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after {
-    background: #fff
+    background: $light-shade
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menucta-chevron::after,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menucta-chevron::after,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::after,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::after {
-    background: #fff
+    background: $light-shade
 }
 
 #ac-localnav .ac-ln-menucta-anchor {
@@ -1797,33 +1797,33 @@
 }
 
 #ac-localnav .ac-ln-title,#ac-localnav .ac-ln-title a {
-    color: #333;
+    color: $dark-shade;
     -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-title,#ac-localnav.ac-localnav-hero .ac-ln-title a {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-title,.ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-title a {
-    color: #333
+    color: $dark-shade
 }
 
 #ac-ln-menustate:checked ~ .ac-localnav-hero#ac-localnav .ac-ln-title,#ac-ln-menustate:target ~ .ac-localnav-hero#ac-localnav .ac-ln-title,#ac-ln-menustate:checked ~ .ac-localnav-hero#ac-localnav .ac-ln-title a,#ac-ln-menustate:target ~ .ac-localnav-hero#ac-localnav .ac-ln-title a {
-    color: #333
+    color: $dark-shade
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-title,.ac-theme-dark #ac-localnav .ac-ln-title a,#ac-localnav.ac-localnav-dark .ac-ln-title,#ac-localnav.ac-localnav-dark .ac-ln-title a {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-title,.ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-title a,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-title,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-title a {
-    color: #fff
+    color: $light-shade
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-title,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-title,.ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-title a,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-title a,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-title,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-title,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-title a,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-title a {
-    color: #fff
+    color: $light-shade
 }
 
 #ac-localnav .ac-ln-title-subhead,#ac-localnav .ac-ln-title-comingsoon {

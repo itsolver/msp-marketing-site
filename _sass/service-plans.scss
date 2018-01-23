@@ -32,8 +32,8 @@
 	margin: 10px;
 	color: #444;
 	cursor: default;
-	border: 1px solid $secondary-brand-color;
-	background: #FFF;
+	border: 1px solid $dark-accent;
+	background: $light-shade;
 	-webkit-transition: border-color 0.3s, background 0.3s;
 	transition: border-color 0.3s, background 0.3s;
 	position: relative;
@@ -119,7 +119,7 @@ li.pricing-feature:last-child {
 .plan-button {
 	background: #f6f9fc;
 	display: block;
-	color: #{$secondary-brand-color};
+	color: #{$dark-accent};
 	text-align: center;
 	text-decoration: none;
 	padding: 25px;

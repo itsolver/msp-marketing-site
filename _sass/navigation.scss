@@ -33,7 +33,7 @@ nav {
 		padding: 0 8px;
 		font-size: 11px;
 		border-bottom: 1px solid rgba(255,255,255,0);
-		color: #fff;
+		color: $light-shade;
 		transition: all 0.5s ease;
 		display: none;
 		letter-spacing: 0.66px;
@@ -73,6 +73,9 @@ nav {
 			}
 		}
 	}
+	a.active {
+		color: $light-shade;
+	}
 
 	a:hover {
 		color: hsla(0,0%,100%,.5);
@@ -86,11 +89,7 @@ nav {
 		a.highlight {
 			padding-left: 30px;
 		}
-	}
-
-	a.active {
-		color: #fff;
-	}
+	}	
 
 	a:last-child {
 		padding-right: 0;
