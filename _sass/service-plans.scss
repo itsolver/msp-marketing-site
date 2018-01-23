@@ -30,7 +30,7 @@
 /* norbu */
 .pricing-item {
 	margin: 10px;
-	color: #444;
+	color: $dark-shade;
 	cursor: default;
 	border: 1px solid $dark-accent;
 	background: $light-shade;
@@ -77,6 +77,7 @@
 	position: relative;
 	z-index: 100;
 	line-height: 0.6em;
+	color: $brand-color;
 }
 
 .pricing-currency {
@@ -117,9 +118,9 @@ li.pricing-feature:last-child {
 }
 
 .plan-button {
-	background: #f6f9fc;
+	background: $dark-accent;
 	display: block;
-	color: #{$dark-accent};
+	color: $light-shade;
 	text-align: center;
 	text-decoration: none;
 	padding: 25px;
@@ -129,7 +130,7 @@ li.pricing-feature:last-child {
 }
 
 .plan-button:hover, .plan-button:focus {
-	background: #e6ebf1;
+	background: $dark-shade;
 	transition: background .15s ease;
 }
 
@@ -241,7 +242,7 @@ li.pricing-feature:last-child {
 
 .support-plan-upgrade {
 	padding: 20px 25px;
-	color: #444;
+	color: $dark-shade;
 	cursor: default;
 	-webkit-transition: border-color 0.3s, background 0.3s;
 	transition: border-color 0.3s, background 0.3s;
