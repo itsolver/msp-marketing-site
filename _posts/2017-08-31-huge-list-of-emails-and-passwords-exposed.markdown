@@ -51,7 +51,7 @@ If no pwnage, [subscribe](https://haveibeenpwned.com/NotifyMe) to get notified w
 ### Upgrade your email service
 Google catches 99.9% of spam thanks to AI tools. For personal use, switch to [gmail.com](https://www.gmail.com). You can [still receive email at the old address](https://support.google.com/mail/answer/21289?co=GENIE.Platform%3DDesktop&hl=en).
 
-For professionals and businesses, switch to [G Suite](https://gsuite.google.com).
+For professionals and businesses, switch to [G Suite](/cloud-apps-g-suite/).
 
 ### Need help?
 
