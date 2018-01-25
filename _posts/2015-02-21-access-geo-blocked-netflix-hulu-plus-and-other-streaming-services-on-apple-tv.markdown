@@ -39,15 +39,9 @@ Today in Australia, using an Apple TV we are offered  no subscription-based str
 
 
  	
-  1. Sign up for a free 7-day trial at [Unblock-Us.](http://unblock-us.com) Follow the three steps on their website before proceeding.
-
- 	
-  2. Follow the guide [Setting up Apple TV with Unblock-Us](http://support.unblock-us.com/customer/portal/articles/291549)
-
- 	
+  1. Sign up for a free 7-day trial at [Unblock-Us.](http://unblock-us.com) Follow the three steps on their website before proceeding. 	
+  2. Follow the guide Setting up Apple TV with Unblock-Us
   3. On the Apple TV, Go the Settings > General > iTunes Store > Location. Select United States.
-
- 	
   4. Return back to main screen to see Netflix, Hulu Plus and other streaming services available in US. You will need to follow the next set of instructions to create an account.
 
 
