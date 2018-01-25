@@ -16,11 +16,13 @@ rate: 168
         <div class="pricing-item single">
             <div class="pricing-price"><span class="pricing-currency">$</span>{{ site.data.on-demand.fee }}<span class="pricing-period">{{ site.data.on-demand.period }}{% if site.data.on-demand.minimum %}, minimum charge{% endif %}</span></div>
             <ul class="pricing-feature-list">
-                    {% for feature in site.data.on-demand.features %}
-                    <li class="pricing-feature">{{ feature.feature }}</li>
-                    {% endfor %}
+                {% for feature in site.data.on-demand.features %}
+                <li class="pricing-feature">{{ feature.feature }}</li>
+                {% endfor %}
             </ul>
-            <a class="plan-button" href="/contact/">CONTACT SALES</a>
+            <div class="cta button pricing">
+            <a class="dark" href="/contact/">CONTACT SALES</a>
+            </div>
         </div>
     </div>
 
