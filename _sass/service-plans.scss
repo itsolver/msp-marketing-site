@@ -117,21 +117,15 @@ li.pricing-feature:last-child {
 	padding: 0 0.75em 0 0;
 }
 
-.plan-button {
-	background: $dark-accent;
-	display: block;
-	color: $light-shade;
-	text-align: center;
-	text-decoration: none;
-	padding: 25px;
-	transition: background .15s ease;
-	font-size: 1.2em;
-	font-weight: 600;
+.cta.button.pricing {
+	padding: 0;
+	flex: flex-grow;
 }
 
-.plan-button:hover, .plan-button:focus {
-	background: $dark-shade;
-	transition: background .15s ease;
+.cta.button.pricing a {
+	width: 100%;
+	padding: 20px 10px;
+	margin: 0;
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
