@@ -4,98 +4,6 @@
 	height: 400px;
 }
 
-.contact-box {
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	max-width: 750px;
-	margin: 0 auto;
-	form {
-		width: 100%
-	}
-
-	p {
-		margin: 0;
-	}
-
-	.contact-form, .contact-details  {
-		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
-		}
-	}
-
-	.contact-form  {
-		margin: auto;
-		max-width: 464px;
-		width: 100%;
-		input[type=submit] {
-			text-align: center;
-			float: none;
-			margin: 30px auto 0 auto;
-			min-width: 200px;
-			color: $light-shade !important;
-			border: 1px solid $brand-color;
-			background: $brand-color;
-			cursor: pointer;
-		}
-		input[type=submit]:hover{
-			background: $dark-accent;
-			border: 1px solid $dark-accent;
-		}
-		select#subject {
-			background-color: $light-shade;
-			color: $dark-shade;
-		  	padding: 12px 0 12px 15px;
-			font-size: inherit;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			white-space: nowrap;
-			-webkit-appearance: none;
-		}
-		
-	}
-
-	@media screen and (-webkit-min-device-pixel-ratio: 0) {
-		select#subject {
-			background: #EFEFEF url('/images/down-arrow.svg') 95% 50% no-repeat;
-			background-size: 5%;
-		}
-	}
-
-	.contact-details, .contact-help-centre {
-		font-size: .9em;
-		padding-bottom: 50px;
-		width: 100%;
-		margin: auto;
-		h2 {
-			margin: 0 0 15px 0;
-		}
-
-		h2.icon, h3.icon {
-
-			&:hover {
-				text-decoration: none;
-			}
-			svg {
-				fill: #4a4a4a;
-				margin-right: 10px;
-				transition: fill 0.2s ease;
-				vertical-align: middle;
-				position: relative;
-				top: -2px;
-				width: 24px;
-				height: 24px;
-			}
-		}
-		h2.icon {
-			svg {
-				width: 32px;
-				height: 32px;
-			}
-		}
-	}
-}
-
 .overlay {
    background:transparent;
    position:relative;
@@ -103,4 +11,11 @@
    height:300px; /* your iframe height */
    top:300px;  /* your iframe height */
    margin-top:-300px;  /* your iframe height */
+}
+
+.contact-help-centre h2 {
+	margin-bottom: 20px;
+}
+h2.where  {
+	margin-top: 40px;
 }
