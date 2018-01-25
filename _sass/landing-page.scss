@@ -107,6 +107,7 @@
 	@media #{$mid-point}{
 		display: inline-block;
 		margin-left: 20px;
+		margin-top: 0;
 	}
 }
 
@@ -153,4 +154,36 @@
 	border: 1px solid $brand-color;
 	background: $brand-color;
 	cursor: pointer;
+}
+
+.button a {
+	color: $light-shade;
+	text-decoration: none;
+	background: $brand-color;
+	border: 1px solid rgba(255,255,255,.5);
+	transition: all 0.5s ease;
+	padding: 14px 30px;
+	min-width: 200px;
+	width: auto;
+}
+
+.button a:hover {
+	border: 1px solid $light-shade;
+	background: $dark-accent;
+	cursor: pointer;
+}
+
+.button.alt {
+	padding: 30px 0;
+}
+
+.button.alt a {
+	background: $brand-color;
+	border: $brand-color;
+	padding: 14px 30px;
+}
+
+.button.alt a:hover {
+	background: $light-shade;
+	color: $brand-color;
 }
