@@ -87,17 +87,31 @@
 }
 
 .cta.button {
-	padding: 40px 0;
+	padding: 30px 0;
 	text-align: center;
 	font-weight: 500;
+	display: inline-block;
+	@media #{$mid-point}{
+		display: block;
+	}
+}
+
+.cta.button a {
+	display: inline-block;
+}
+
+.cta.button a+a.alt {
+	margin-top: 20px;
+	display: block;
+
+	@media #{$mid-point}{
+		display: inline-block;
+		margin-left: 20px;
+	}
 }
 
 .cta.button.left {
 	text-align: left;
-}
-
-.cta.button a.alt {
-	margin: 0 20px;
 }
 
 .cta.button a.light  {
