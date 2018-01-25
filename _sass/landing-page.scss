@@ -92,41 +92,38 @@
 	font-weight: 500;
 }
 
-.cta.button a:hover {
-	background: $dark-shade;
-	color: $light-shade;
-	border: 1px solid $dark-shade;
-}
-
-.cta.button a.bg-fff:hover {
-	background: $dark-shade;
-	color: $light-shade;
-	border: 1px solid $dark-shade;
-}
-
 .cta.button.left {
 	text-align: left;
 }
 
-.cta.button a.home-request-demo  {
-	background: rgba(255,255,255,0.3);
+.cta.button a.alt {
+	margin: 0 20px;
 }
 
-.cta.button a.home-request-demo:hover  {
-	background: $dark-shade;
-	color: $light-shade;
-	border: 1px solid $dark-shade;
-}
-.cta.button a.bg-fff-request-demo  {
+.cta.button a.light  {
 	background: $light-shade;
 	color: $brand-color;
+	border: 1px solid $light-shade;
 }
 
-.cta.button a.bg-fff-request-demo:hover  {
+.cta.button a.light:hover  {
+	background: $dark-accent;
+	color: $light-shade;
+	border: 1px solid $dark-accent;
+}
+
+.cta.button a.dark  {
+	background: $brand-color;
+	color: $light-shade;
+	border: 1px solid $light-shade;
+}
+
+.cta.button a.dark:hover  {
 	background: $dark-shade;
 	color: $light-shade;
 	border: 1px solid $dark-shade;
 }
+
 .cta.button.help-centre {
 	text-align: center;
 }
