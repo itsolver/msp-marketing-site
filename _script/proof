@@ -34,4 +34,4 @@ bundle exec jekyll build -s $SOURCE -d $DESTINATION --trace
 
 # 3.
 msg "Proofing..."
-time bundle exec htmlproofer ./$DESTINATION --allow-hash-href --url-ignore $IGNORE_HREFS $@
+time bundle exec htmlproofer ./$DESTINATION --allow-hash-href --url-ignore $IGNORE_HREFS $@ --check_favicon --check_opengraph --check_html --check_img_http --
