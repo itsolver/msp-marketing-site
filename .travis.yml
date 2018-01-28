@@ -29,7 +29,7 @@ install:
 - bundle install
 script:
 - jekyll build
-- htmlproofer ./_site --assume-extension --url-ignore "https://www.itsolver.net/404.html"
+- _script/proof
 - sonar-scanner
 deploy:
   skip_cleanup: true

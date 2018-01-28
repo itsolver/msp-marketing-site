@@ -101,6 +101,7 @@ exclude:
   - firebase.json
   - database.rules.json
   - node_modules
+  - _script
 
 # -----------
 # CloudCannon
