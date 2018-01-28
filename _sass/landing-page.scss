@@ -98,6 +98,7 @@
 
 .cta.button a {
 	display: inline-block;
+	text-align: center;
 }
 
 .cta.button a+a.alt {
@@ -120,40 +121,20 @@
 	color: $brand-color;
 	border: 1px solid $light-shade;
 }
-
-.cta.button a.light:hover  {
-	background: $dark-accent;
-	color: $light-shade;
-	border: 1px solid $dark-accent;
-}
-
 .cta.button a.dark  {
 	background: $brand-color;
 	color: $light-shade;
 	border: 1px solid $light-shade;
 }
-
+.cta.button a.light:hover  {
+	background: $dark-accent;
+	color: $light-shade;
+	border: 1px solid $dark-accent;
+}
 .cta.button a.dark:hover  {
-	background: $dark-shade;
+	background: $dark-accent;
 	color: $light-shade;
-	border: 1px solid $dark-shade;
-}
-
-.cta.button.help-centre {
-	text-align: center;
-}
-.cta.button.help-centre a {
-	color: $brand-color;
-	border: 1px solid $brand-color;
-	background: $light-shade;
-	cursor: pointer;
-}
-
-.cta.button.help-centre a:hover {
-	color: $light-shade;
-	border: 1px solid $brand-color;
-	background: $brand-color;
-	cursor: pointer;
+	border: 1px solid $dark-accent;
 }
 
 .button a {
@@ -173,6 +154,15 @@
 	cursor: pointer;
 }
 
+.button.alt {
+	padding: 30px 0;
+}
+
+.button.alt a {
+	background: $brand-color;
+	border: $brand-color;
+	padding: 14px 30px;
+}
 .button.alt {
 	padding: 30px 0;
 }
