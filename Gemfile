@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'breakpoint'
 gem 'html-proofer'
 gem 'rake'
 
