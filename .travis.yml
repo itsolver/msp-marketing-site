@@ -30,7 +30,6 @@ install:
 script:
 - jekyll build
 - _script/proof
-- sonar-scanner
 deploy:
   skip_cleanup: true
   provider: firebase
