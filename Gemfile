@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'breakpoint'
+gem 'html-proofer'
+gem 'rake'
 
+# Jekyll
+gem 'jekyll'
 group :jekyll_plugins do
 	gem 'html-proofer'
 	gem 'jekyll-archives'
