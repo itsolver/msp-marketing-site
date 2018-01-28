@@ -89,11 +89,15 @@
 		.read-more {
 			margin: 20px 0 0 0;
 		}
+
 		p img {
 			margin-bottom: 10px;
-			width: fit-content;
+			width: 100%;
 			display: block;
 			margin: 10px auto;
+			@media #{$mid-point} {
+				width: fit-content;
+			}
 		}
 	}
 }
