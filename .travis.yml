@@ -10,6 +10,7 @@ cache:
 rvm:
   - 2.4.1
 env:
+  CXX=g++-4.8
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     - secure: KB+UiNjTyPAvADZqeWdq/KEx62IEUt0JZHfprcyysCPpxrdegdbA6kIXGrcxjzTwmfOHcr6Ksn1S/HqkLr5E6O+OKaLqH4YOA8r9g+GRtHlNdpuK52l6EZmRcdFa6ZgvQyOB+vAZkh68U5BOdill9+V4YasgfFpQYZu+PZam2teoXx+UoiH6MfYv+UCfruC1pkcBdBl7abf9DHFwXDUQAWiA8e4qMG2wC3juHYSJ8tP04k+cotL8XJ+gBd6K9my6mn2ti0HhlvoTcMZodImdAdStp92bKIOey0sYoU0W0frcOVBwa+pO671fPRPKSrWqf0/tAKqv+3N2uegw1VDaJQy/8MqOsLfrGbvprdmDsqGpk3Vjb+qgNTUvMuX3bZjE7nrH1oKu2bs8bZjHYbE/ooDJtSQystNMT8zi9ol2yiNZ7661CrCbGSgBlaAfX8Ib9lRw4zFYt5G3t5QjmBV0Bhdi1z50jLI0ip51SYCDWD44/vx9dx6m7xgVuZ9EURrKt2Sq/ujoD8JEJxjMIN2VYTpcdc8TEjk/Gyl2xppYgXPuH3qxnPQVtKECQHA5oRmxolKzCkLnrU+DC8SstO7jpkWK/dMhLK0nKpf9q+RpOGhtuLruZloAr9m8hgsX8E1hfmD3SWntnNugudmiDlcZdmaoQRUSIRpPSxnYVhuvT3I=
@@ -23,16 +24,15 @@ addons:
   apt:
     packages:
       - libcurl4-openssl-dev
-  sonarcloud:
-    organization: "itsolver" # the key of the org you chose at step #3
-    token:
-      secure: "$SONAR_TOKEN" # encrypted value of your token
 install:
   - nvm install v7.10.0
+  - npm install gulp-cli -g
+  - npm install gulp@next --save-dev
+  - npm install yarn -g
+  - yarn
   - bundle install
 script:
-  - jekyll build
-  - _script/proof
+  - gulp build --prod
 deploy:
   skip_cleanup: true
   provider: firebase
@@ -40,4 +40,4 @@ deploy:
     secure: "$FIREBASE_API_TOKEN"
   project: "$FIREBASE_PROJECT_ID"
 after_deploy:
-  - _script/proof-live
+  - src/_script/proof-live

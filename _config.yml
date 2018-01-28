@@ -1,5 +1,7 @@
 # ----
 # Site
+source                   : .tmp/src
+destination              : .tmp/_site
 
 title: IT Solver
 url: "https://www.itsolver.net"
@@ -13,9 +15,6 @@ icon_ready: true
 twitter:
   username: itsolvernet
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
-sass:
-  sass_dir: _sass
-  style: compressed
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /the_favicon/android-chrome-192x192.png
