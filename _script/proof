@@ -11,6 +11,12 @@ function msg {
 
 IGNORE_HREFS=$(ruby -e 'puts %w{
   privacyinternational.org
+  https://www.itsolver.net/404.html
+  https://www.itsolver.net/news/
+  https://www.itsolver.net/security/
+  https://www.itsolver.net/security-advisory/
+  https://www.itsolver.net/tips-and-tricks/
+  https://www.itsolver.net/tag/
 }.map{|h| "/#{h}/"}.join(",")')
 SOURCE="."
 DESTINATION="_site"
