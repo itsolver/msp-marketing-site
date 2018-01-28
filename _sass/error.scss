@@ -11,7 +11,7 @@
 }
 
 #error-page p {
-    width: 500px;
+    max-width: 500px;
     margin: 20px auto;
     line-height: 1.5;
     color: $dark-shade;
@@ -34,6 +34,6 @@
 }
 
 #___gcse_0 {
-    width: 500px;
+    max-width: 500px;
     margin: auto;
 }
