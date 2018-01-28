@@ -99,8 +99,12 @@
 .cta.button a {
 	display: inline-block;
 	text-align: center;
+	color: $light-shade;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	padding: 14px 30px;
+	width: auto;
 }
-
 .cta.button a+a.alt {
 	margin-top: 20px;
 	display: block;
@@ -111,11 +115,9 @@
 		margin-top: 0;
 	}
 }
-
 .cta.button.left {
 	text-align: left;
 }
-
 .cta.button a.light  {
 	background: $light-shade;
 	color: $brand-color;
@@ -135,45 +137,4 @@
 	background: $dark-accent;
 	color: $light-shade;
 	border: 1px solid $dark-accent;
-}
-
-.button a {
-	color: $light-shade;
-	text-decoration: none;
-	background: $brand-color;
-	border: 1px solid rgba(255,255,255,.5);
-	transition: all 0.5s ease;
-	padding: 14px 30px;
-	min-width: 200px;
-	width: auto;
-}
-
-.button a:hover {
-	border: 1px solid $light-shade;
-	background: $dark-accent;
-	cursor: pointer;
-}
-
-.button.alt {
-	padding: 30px 0;
-}
-
-.button.alt a {
-	background: $brand-color;
-	border: $brand-color;
-	padding: 14px 30px;
-}
-.button.alt {
-	padding: 30px 0;
-}
-
-.button.alt a {
-	background: $brand-color;
-	border: $brand-color;
-	padding: 14px 30px;
-}
-
-.button.alt a:hover {
-	background: $light-shade;
-	color: $brand-color;
 }
