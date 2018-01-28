@@ -37,3 +37,5 @@ deploy:
   token:
     secure: "$FIREBASE_API_TOKEN"
   project: "$FIREBASE_PROJECT_ID"
+after_deploy:
+- _script/proof-live
