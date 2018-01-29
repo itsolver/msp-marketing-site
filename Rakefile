@@ -4,7 +4,8 @@ task :test do
   options = {
     :internal_domains => ['itsolver.net'],
     :cache => {
-      :timeframe => '30d'
+      :timeframe => '30d',
+      :storage_dir => '.tmp/html-proofer'
     },
     :url_ignore => [/(twitter).com|(privacyinternational).org/],
     # disable SSL certificates
@@ -20,9 +21,7 @@ task :test do
     :check_html => true,
     :empty_alt_ignore => false,
     :enforce_https => true,
-    :report_invalid_tags => true,
-    
-
+    :report_invalid_tags => true
   }
   HTMLProofer.check_directory('./dist', options).run
 end
