@@ -34,7 +34,7 @@ addons:
       - libcurl4-openssl-dev
 
 install:
-  - nvm install 6
+  - nvm install 9.4
   - npm install --global gulp-cli
   - npm install --save-dev gulp@next
   - npm install --global yarn
