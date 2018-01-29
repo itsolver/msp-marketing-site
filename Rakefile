@@ -7,7 +7,7 @@ task :test do
       :timeframe => '30d',
       :storage_dir => '.tmp/html-proofer'
     },
-    :url_ignore => [/(twitter).com|(privacyinternational).org/],
+    :url_ignore => [/(twitter).com|(privacyinternational).org|itsolver.net\/404/],
     # disable SSL certificates
     :typhoeus => {
       :ssl_verifypeer => false,
