@@ -30,7 +30,8 @@ gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'html', 'xml'));
 // 'gulp critical' -- builds critical path CSS includes
 //   WARNING: run this after substantial CSS changes
 //   WARNING: .html files referenced need to exist, run after `gulp build` to ensure.
-gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archive', 'styles:critical:post'));
+//gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archive', 'styles:critical:post'));
+gulp.task('critical', gulp.series('styles:critical:home')); // home only for now
 
 // 'gulp deploy' -- deploy site to production and submit sitemap XML
 gulp.task('deploy', gulp.series('firebase', 'submit:sitemap'));
