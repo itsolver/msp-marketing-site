@@ -31,7 +31,7 @@ Unfortunately corporate spying like this is the tip 0f the iceberg as we discove
 
 **The complete solution is to take back control of your hardware and software. Today we have the [Novena](https://www.crowdsupply.com/kosagi/novena-open-laptop) and in the not to distant future, [Purism Librem 15 laptop.](https://puri.sm/)**
 
-List of affected computers as provided in [Lenovo statement](https://news.lenovo.com/article_display.cfm?article_id=1929):
+List of affected computers as provided in [Lenovo statement](http://news.lenovo.com/article_display.cfm?article_id=1929):
 
 _G Series:_ G410, G510, G710, G40-70, G50-70, G40-30, G50-30, G40-45, G50-45
 _U Series:_ U330P, U430P, U330Touch, U430Touch, U530Touch
