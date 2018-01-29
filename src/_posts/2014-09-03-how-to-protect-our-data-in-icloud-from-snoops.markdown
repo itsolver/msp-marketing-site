@@ -14,7 +14,7 @@ tags:
 - security
 ---
 
-![Apple iCloud logo](/images/apple-icloud-logo.jpg)
+![Apple iCloud logo](/assets/images/apple-icloud-logo.jpg)
 This week the FBI is investigating an alleged iCloud celebrity hack, labelled The Fappening, after over 400 celebrities nude photos and videos leaked on the image board, 4chan.org/b. Apple's iCloud service allows users to store photos and other content and access it from any Apple device. 
 
 According to Mac Daily News, the hack was achieved by a combination of weak passwords, security questions and software bugs that allowed brute-force attacks. Before we go on to proactive steps to protect our data in iCloud, here is the media advisory from Apple:

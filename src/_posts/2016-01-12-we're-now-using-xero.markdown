@@ -16,7 +16,7 @@ tags:
 - Xero
 ---
 
-![Xero](/images/xero-macbook-ITS.jpg)
+![Xero](/assets/images/xero-macbook-ITS.jpg)
 We're delighted to announce we have upgraded our accounting software to [Xero.](https://www.xero.com/accounting-software/) What is Xero I hear you ask? Well, Xero is online accounting software for your small business.
 
 We believe this upgrade will enable us to grow our business and maintain the high level of customer satisfaction we work so hard to achieve.

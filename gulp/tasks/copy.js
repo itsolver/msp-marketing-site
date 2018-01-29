@@ -14,7 +14,7 @@ gulp.task('copy:assets', () => {
 
 // 'gulp copy:images' -- copies unoptimized images to /dist/
 gulp.task('copy:images', () => {
-  return gulp.src([paths.imageFilesGlob, '!src/assets/images/{feature,feature/**}']) // do not process feature images
+  return gulp.src([paths.imageFilesGlob, '!src/assets/assets/images/{feature,feature/**}']) // do not process feature images
     .pipe(newer(paths.imageFilesSite))
     .pipe(gulp.dest(paths.imageFilesSite))
 });

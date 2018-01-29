@@ -3,7 +3,7 @@ date: 2017-12-16 02:00:00+10:00
 title: New trading hours
 layout: post
 author_staff_member: angus
-image: /images/wrist-watch.png
+image: /assets/images/wrist-watch.png
 categories:
 - News
 tags:
@@ -13,7 +13,7 @@ tags:
 - regular
 - operation
 ---
-![Screenshot of YouTube Ad](/images/wrist-watch.png)
+![Screenshot of YouTube Ad](/assets/images/wrist-watch.png)
 
 Good news, from today onwards we're open 8 AM - 6 PM AEST Monday - Friday. That's an extra two hours per weekday. 
 

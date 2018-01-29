@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "_site",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -30,7 +30,7 @@
     }, {
       "source" : "/focus-on-business",
       "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSdeXS0LI-g-6anKAH8-aTposZyzwI7Y-seTOqOg60MUF9hO3w/viewform?usp=sf_link",
-      "type" : 301  
+      "type" : 301
     }, {
       "source" : "/benefits",
       "destination" : "/",

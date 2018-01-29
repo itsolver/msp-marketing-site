@@ -11,7 +11,7 @@ paths.layoutsFolderName  = '_layouts';
 paths.scriptFolderName   = 'javascripts';
 paths.siteFolderName     = 'dist';
 paths.sourceFolderName   = 'src';
-paths.stylesFolderName   = 'css';
+paths.stylesFolderName   = 'stylesheets';
 paths.tempFolderName     = '.tmp';
 
 paths.prodUrl            = 'https://www.itsolver.net';

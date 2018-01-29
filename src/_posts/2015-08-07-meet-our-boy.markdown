@@ -6,7 +6,7 @@ categories:
 - News
 ---
 
-![image](/images/meet-our-boy.jpg) **Update: Now back to work and responding to the mountain of requests. Thanks for your patience.**
+![image](/assets/images/meet-our-boy.jpg) **Update: Now back to work and responding to the mountain of requests. Thanks for your patience.**
 
 I am proud and delighted to announce my fiancé, Bonnie, gave birth to a healthy boy. His name is Cameron Aart McLauchlan. At birth, Cameron weighed in at a healthy 4.31kg (4lb 8oz) and measured 53cm long.
 

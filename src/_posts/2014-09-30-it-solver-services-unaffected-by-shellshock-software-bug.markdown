@@ -20,7 +20,7 @@ tags:
 - vulnerability
 ---
 
-![terminal-shellshock-vulnerable-test](/images/terminal-shellshock-vulnerable-test.jpg)
+![terminal-shellshock-vulnerable-test](/assets/images/terminal-shellshock-vulnerable-test.jpg)
 **Dear customers, we would like to advise _our services are not vulnerable to the Shellshock software bug_.**
 Shellshock allows unauthorised remote access to certain Linux, Macs, routers, web servers and “Internet of Things” devices that have a vulnerable version of command-line software called Bash. Researchers say Shellshock could be worse than [Heartbleed.](https://en.wikipedia.org/wiki/Heartbleed) Patching Linux and Macs is easy, but security researchers are assessing the risk to our routers and "Internet of Things" devices such as smart televisions, kitchen appliances and security cameras.
 

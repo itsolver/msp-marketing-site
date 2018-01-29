@@ -10,13 +10,14 @@ var rename      = require('gulp-rename');
 var responsive  = require('gulp-responsive');
 var size        = require('gulp-size');
 var util        = require('gulp-util');
+var imagemin    = require('gulp-imagemin');
 
 // include paths file
 var paths       = require('../paths');
 
 // 'gulp images:optimize' -- optimize images
 gulp.task('images:optimize', () => {
-  return gulp.src([paths.imageFilesGlob]) 
+  return gulp.src([paths.imageFilesGlob])
     .pipe(newer(paths.imageFilesSite))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),

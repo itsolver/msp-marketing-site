@@ -23,7 +23,7 @@ tags:
 
 
  	
-![appletv-menu-netflix-hulu-plus](/images/appletv-menu-netflix-hulu-plus.jpg)
+![appletv-menu-netflix-hulu-plus](/assets/images/appletv-menu-netflix-hulu-plus.jpg)
 **Update: Accessing other regions of Netflix is now only reliable on computers. We encourage you to check out your own Netflix region, particularly with Netflix Originals, the need to bypass these geo-blocks is reducing.**
 This weekend in South East Queensland started indoors courtesy of heavy rain from Tropical Cyclone Marcia. What better time to test how easy it is to bypass _geo-blocking restrictions_ on streaming services on the Apple TV.
 
@@ -52,7 +52,7 @@ Today in Australia, using an Apple TV we are offered  no subscription-based str
 
 On a PC, smart phone or tablet, you will need an active trial with Unblock-Us setup correctly and USA region picked. The below image is what you want to see on the Unblock-Us website.
 
-![DNS setup correctly using unblock-us.com](/images/DNS-setup-correctly-using-unblock-us.com_.png) Demonstration of DNS setup correctly using unblock-us.com[/caption]
+![DNS setup correctly using unblock-us.com](/assets/images/DNS-setup-correctly-using-unblock-us.com_.png) Demonstration of DNS setup correctly using unblock-us.com[/caption]
 
 
 

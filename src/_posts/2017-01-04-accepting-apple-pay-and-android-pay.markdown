@@ -19,7 +19,7 @@ tags:
 - Samsung
 - Watch
 ---
-![Example of mobile payment with smart phone](/images/Apple-Pay-Android-Pay.png)
+![Example of mobile payment with smart phone](/assets/images/Apple-Pay-Android-Pay.png)
 You already use your phone for just about everything. Now at IT Solver you can pay with it, too.
 
 It's incredibly simple and secure.

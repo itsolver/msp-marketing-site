@@ -26,7 +26,7 @@ tags:
 - UPS
 ---
 
-![battery low](/images/battery.gif)
+![battery low](/assets/images/battery.gif)
 ## Power outages.
 We have somewhat unreliable power on the bay islands and as a business owner, I have put in measures to keep my business, IT Solver operational regardless of mains power availability. Protect your desktop computer and modem from mains power failures with an Uninterruptible Power Supply or UPS, available at Officeworks from $119. Your access to cute cat videos will be uninterrupted if the modem is connected to a UPS. Mobile towers and ADSL exchange have about 48 hours of backup power provided by a generator before the diesel runs out.
 

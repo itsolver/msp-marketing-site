@@ -3,7 +3,7 @@ date: 2017-12-01 05:00:00+10:00
 title: Surf the web without annoying ads
 layout: post
 author_staff_member: angus
-image: /images/skip-youtube-ad.jpg
+image: /assets/images/skip-youtube-ad.jpg
 categories:
 - Tips-and-Tricks
 tags:
@@ -25,7 +25,7 @@ tags:
 - Mozilla Firefox
 - Safari
 ---
-![Screenshot of YouTube Ad](/images/skip-youtube-ad.jpg)
+![Screenshot of YouTube Ad](/assets/images/skip-youtube-ad.jpg)
 If you use the web, you should read this. I get new customers calling me with malware on their computer or as victoms of tech support scams. 
 
 Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.

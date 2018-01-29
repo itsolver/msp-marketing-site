@@ -1,6 +1,6 @@
 ---
 name: Angus J. McLauchlan
-picture: /images/staff-angus.jpg
+picture: /assets/images/staff-angus.jpg
 twitter: gusmacca
 facebook: gusdoo
 ---
