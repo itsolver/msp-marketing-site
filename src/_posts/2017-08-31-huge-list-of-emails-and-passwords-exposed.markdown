@@ -44,7 +44,7 @@ Aka. [Two-Factor Authentication](https://twofactorauth.org/) helps keep the bad 
 
 Visit Troy Hunt's site [Have i been pwned?](https://haveibeenpwned.com/)
 
-If you got [pwned](http://www.urbandictionary.com/define.php?term=pwned), review the types of data that were compromised (email addresses, passwords, credit cards etc.) and take appropriate action, such as changing passwords. Make sure you're signed into your password manager so it captures the updated passwords.
+If you got [pwned](https://www.urbandictionary.com/define.php?term=pwned), review the types of data that were compromised (email addresses, passwords, credit cards etc.) and take appropriate action, such as changing passwords. Make sure you're signed into your password manager so it captures the updated passwords.
 
 If no pwnage, [subscribe](https://haveibeenpwned.com/NotifyMe) to get notified when future pwnage occurs and your account is compromised.
 

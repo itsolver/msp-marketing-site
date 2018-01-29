@@ -45,6 +45,6 @@ Scammers will try to trick you into handing over your data by using the names of
 Your credit report contains information on your credit history. You can get a free copy of your report every year to check that no-one is using your name to borrow money or run up debts. Find out how you can get your free credit report on ASIC’s [MoneySmart website.](https://www.moneysmart.gov.au/borrowing-and-credit/borrowing-basics/credit-reports#Get)
 
 
-If you think your banking details have been misused, you should contact your bank or credit union immediately to let them know. You should also contact iDcare - a free government-industry service which works with you to develop specific response plans to your situation to reduce risk and impact. Visit the [iDcare website](http://www.idcare.org/) or call 1300 IDCARE (432273).
+If you think your banking details have been misused, you should contact your bank or credit union immediately to let them know. You should also contact iDcare - a free government-industry service which works with you to develop specific response plans to your situation to reduce risk and impact. Visit the [iDcare website](https://www.idcare.org/) or call 1300 IDCARE (432273).
 
-Source: http://www.scamwatch.gov.au
+Source: https://www.scamwatch.gov.au

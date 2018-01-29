@@ -40,14 +40,14 @@ If you are vulnerable, you'll get:
     Your system is vulnerable. test script
 
 
-Additionally, [test your website or public IP](http://bashsmash.ccsir.org/) (Internet Protocol) address for Shellshock.
+Additionally, [test your website or public IP](https://bashsmash.ccsir.org/) (Internet Protocol) address for Shellshock.
 _Hint: To get your public IP address, do a web search "what is my ip"._
 
 
 ## Linux users
 
 
-You know what to do - [**update**](http://www.linuxnews.pro/patch-bash-shell-shock-centos-ubuntu/)! At the time of writing this post, security updates exist for the following linux distributions:
+You know what to do - [**update**](https://www.linuxnews.pro/patch-bash-shell-shock-centos-ubuntu/)! At the time of writing this post, security updates exist for the following linux distributions:
 
 
 
@@ -76,13 +76,13 @@ A patch is available from Apple you can download and install it here:
 
 
 	
-  * [OS X Mavericks](http://support.apple.com/kb/DL1769?viewlocale=en_US&locale=en_US)
+  * [OS X Mavericks](https://support.apple.com/kb/DL1769?viewlocale=en_US&locale=en_US)
 
 	
-  * [OS X Mountain Lion](http://support.apple.com/kb/DL1768)
+  * [OS X Mountain Lion](https://support.apple.com/kb/DL1768)
 
 	
-  * [OS X Lion](http://support.apple.com/kb/DL1767)
+  * [OS X Lion](https://support.apple.com/kb/DL1767)
 
 
 

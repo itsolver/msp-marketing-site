@@ -27,11 +27,11 @@ Yesterday we discovered Lenovo is pre-installing adware on notebooks that uses a
 
 Received a new computer from Lenovo? Until 1st March, **we are offering a [50% discount for a remote malware removal on affected Lenovo systems](https://itsolver.net/contact/)** as listed below. That's only $29.50 for malware removal. Alternatively for a free vulnerability check visit [https://filippo.io/Badfish/.](https://filippo.io/Badfish/)
 
-Unfortunately corporate spying like this is the tip 0f the iceberg as we discovered from the [Snowden leaks](http://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html) that all Windows and Mac computers have backdoors for government spies which then allow criminals in.
+Unfortunately corporate spying like this is the tip 0f the iceberg as we discovered from the [Snowden leaks](https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html) that all Windows and Mac computers have backdoors for government spies which then allow criminals in.
 
 **The complete solution is to take back control of your hardware and software. Today we have the [Novena](https://www.crowdsupply.com/kosagi/novena-open-laptop) and in the not to distant future, [Purism Librem 15 laptop.](https://puri.sm/)**
 
-List of affected computers as provided in [Lenovo statement](http://news.lenovo.com/article_display.cfm?article_id=1929):
+List of affected computers as provided in [Lenovo statement](https://news.lenovo.com/article_display.cfm?article_id=1929):
 
 _G Series:_ G410, G510, G710, G40-70, G50-70, G40-30, G50-30, G40-45, G50-45
 _U Series:_ U330P, U430P, U330Touch, U430Touch, U530Touch
