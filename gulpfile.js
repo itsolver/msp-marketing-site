@@ -33,10 +33,10 @@ gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'html', 'xml'));
 gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archive', 'styles:critical:post'));
 
 // 'gulp deploy' -- deploy site to production and submit sitemap XML
-gulp.task('deploy', gulp.series('firebase', 'submit:sitemap')); // use firebase deploy instead
+gulp.task('deploy', gulp.series('firebase', 'submit:sitemap'));
 
 // 'gulp rebuild' -- WARNING: removes all assets, images, and built site
-//gulp.task('rebuild', gulp.series('clean', 'clean:images')); // hey I need these for firebase deploy
+gulp.task('rebuild', gulp.series('clean', 'clean:images'));
 
 // 'gulp check' -- checks your Jekyll site for errors
 gulp.task('check', gulp.series('site:check'));
