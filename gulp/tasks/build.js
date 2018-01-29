@@ -18,7 +18,7 @@ gulp.task('site:tmp', () => {
 // 'gulp site --prod' -- builds site with production settings
 gulp.task('site', done => {
   if (!argv.prod) {
-    shell.exec('bundle exec jekyll build --config _config.yml,_config.dev.yml');
+    shell.exec('bundle exec jekyll build --config _config.yml,_config.dev.yml --limit_posts 3'); // limit posts to speed up local dev, until I rewrite blog archive layout
     done();
   } else if (argv.prod) {
     shell.exec('bundle exec jekyll build');
