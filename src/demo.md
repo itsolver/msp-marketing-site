@@ -1,4 +1,5 @@
 ---
+permalink: /demo/
 title: Schedule your personal demo
 description: Tell us a few things about yourself and we'll show you a lot more about us.
 ---
