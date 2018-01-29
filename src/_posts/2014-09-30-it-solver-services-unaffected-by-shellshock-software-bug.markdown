@@ -30,13 +30,13 @@ Shellshock allows unauthorised remote access to certain Linux, Macs, routers, we
 
 If you using Linux or Mac OS X, you can test your system by running this command from Terminal:
 
-    
+
     env x='() { :;}; echo Your system is vulnerable.' bash -c 'echo test script'
 
 
 If you are vulnerable, you'll get:
 
-    
+
     Your system is vulnerable. test script
 
 
@@ -47,20 +47,20 @@ _Hint: To get your public IP address, do a web search "what is my ip"._
 ## Linux users
 
 
-You know what to do - [**update**](https://www.linuxnews.pro/patch-bash-shell-shock-centos-ubuntu/)! At the time of writing this post, security updates exist for the following linux distributions:
+You know what to do - **update**! At the time of writing this post, security updates exist for the following linux distributions:
 
 
 
-	
+
   * CentOS
 
-	
+
   * Debian
 
-	
+
   * Redhat
 
-	
+
   * Ubuntu
 
 
@@ -75,13 +75,13 @@ A patch is available from Apple you can download and install it here:
 
 
 
-	
+
   * [OS X Mavericks](https://support.apple.com/kb/DL1769?viewlocale=en_US&locale=en_US)
 
-	
+
   * [OS X Mountain Lion](https://support.apple.com/kb/DL1768)
 
-	
+
   * [OS X Lion](https://support.apple.com/kb/DL1767)
 
 
