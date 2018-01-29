@@ -2,7 +2,6 @@ require 'html-proofer'
 
 task :test do
   options = {
-    :checks_to_ignore => ['ImageCheck'],
     :internal_domains => ['itsolver.net'],
     :cache => {
       :timeframe => '30d'
@@ -15,7 +14,15 @@ task :test do
     },
     :allow_hash_href => true,
     :assume_extension => true,
-    :empty_alt_ignore => true
+    :check_favicon => true,
+    :check_img_http => true,
+    :check_opengraph => true,
+    :check_html => true,
+    :empty_alt_ignore => false,
+    :enforce_https => true,
+    :report_invalid_tags => true,
+    
+
   }
   HTMLProofer.check_directory('./dist', options).run
 end
