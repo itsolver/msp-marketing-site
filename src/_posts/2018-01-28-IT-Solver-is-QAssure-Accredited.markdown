@@ -15,7 +15,7 @@ tags:
 - ICT
 ---
 ![IT Solver logo and QAssure Accredition badge](/assets/images/itsolver-qassure.jpg)
-IT Solver is pleased to announce we received [QAssure accreditation](https://qassure.com.au/supplier/details/13046) from CCIQ – Queensland’s peak business body. 
+IT Solver is pleased to announce we received [QAssure accreditation](https://qassure.com.au/supplier/details/13046) from CCIQ – Queensland’s peak business body.
 
 This accreditation is a process which seeks to easily connect, contract ready and qualified ICT suppliers with public and private sector organisations seeking their services.
 
