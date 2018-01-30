@@ -192,6 +192,10 @@
       "destination" : "/news/2016/07/13/the-future-of-television-is-here/",
       "type" : 301
     }, {
+      "source" : "/tips%20&%20tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders/",
+      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders/",
+      "type" : 301
+    }, {
       "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads.1/",
       "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads/",
       "type" : 301
