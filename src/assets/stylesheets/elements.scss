@@ -57,15 +57,17 @@ h4 {
 p, address {
 	font-size: 1.2em;
 	margin-bottom: 20px;
-	font-weight: normal;
+  font-weight: normal;
+  line-height: 1.8em;
 }
 
 ol {
 	margin-bottom: 20px;
 }
 
-li { 
-	list-style-type: none;
+ul {
+  list-style-type: disc;
+  line-height: 1.8em;
 }
 
 sup {

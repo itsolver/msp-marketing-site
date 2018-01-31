@@ -1,31 +1,38 @@
 .staff {
 	padding: 0;
 	list-style: none;
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	text-align: center;
+  margin: 0 -20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 	li {
-		padding: 30px 20px;
-		box-sizing: border-box;
-		width: 100%;
+    flex: 0 1 150px;
+    margin: 20px;
+    justify-content: center;
+    margin: 20px auto;
 
 		@media #{$tablet} {
-			@include flex(1, 1, 45%);
+      @include flex(1, 1, 45%);
+
 		}
 
 		@media #{$desktop} {
 			@include flex(1, 1, 29%);
 		}
-
+    p {
+      text-align: center;
+    }
 	}
 
-	.square-image {
+	.image {
 		width: 200px;
-		height: 200px;
+    height: 200px;
+    margin: 20px auto;
 			img {
 				border-radius: 200px;
 			}
-		}
+    }
+
 
 	.name {
 		font-size: 1.3em;

@@ -1,0 +1,64 @@
+---
+layout: page
+heading: "The latest in IT Solver"
+subtitle: Stay informed with our latest news and tutorials
+title: Blog
+permalink: /blog/
+sitemap:
+  changefreq: daily
+  priority: 0.8
+---
+
+<!-- Change to Mailchimp subscribe
+  <div class="subscribe">
+	<form action="https://cloudcannon.us12.list-manage.com/subscribe/post?u=c2598ec08fca5843b980a7d3f&amp;id=16297bb754" method="post">
+		<label class="form-icon">
+			<i class="material-icons">email</i>
+			<input type="email" name="EMAIL" placeholder="Email Address" required>
+			<input type="submit" class="dark-blue" value="subscribe">
+		</label>
+	</form>
+</div> -->
+
+
+<ul class="blog-posts">
+	{% for post in site.posts limit: 10 %}
+		<li class="blog-post card">
+			{% if post.image_featured and post.image %}
+				<div class="feature-image {{ post.image_featured_style }}">
+					<a href="{{ post.url }}">
+						<img src="{{ post.image }}" alt="{{ post.title }}">
+					</a>
+				</div>
+			{% endif %}
+			<div class="post-box">
+				<div class="title">
+					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					<div class="post-date">{{ post.date | date: "%d %b %Y" }}</div>
+				</div>
+
+				<div class="post-details">
+					{% assign author = site.data.authors[post.author] %}
+					<img src="{{ author.image }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
+					<span class="name">{{ author.name }}</span>
+					{% for category in post.categories %}
+						<span class="category-separator">&bull;</span> <span class="category">{{ category }}</span>
+					{% endfor %}
+
+				</div>
+
+				<div class="post-summary">
+					{% if post.content contains '<!-- excerpt stop -->' %}
+						{{ post.content | split:'<!-- excerpt stop -->' | first }}
+					{% else %}
+						{{ post.excerpt }}
+					{% endif %}
+				</div>
+
+				<div class="card-actions"><a class="button light no-border no-padding no-hover" href="{{ post.url }}">Read more &rsaquo;</a></div>
+			</div>
+		</li>
+	{% endfor %}
+</ul>
+
+<p class="view-archived"><a class="button light" href="/archived/">View archived</a></p>
