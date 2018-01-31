@@ -17,14 +17,14 @@
 
 .pricing-item-section {
 	height: 100%;
-	
+
 }
 
 @media (min-width: 694px) {
 	.pricing-item-section {
-		height: 438px;
+		height: 475px;
 	}
-}	
+}
 
 /* Individual style */
 /* norbu */
@@ -143,7 +143,7 @@ li.pricing-feature:last-child {
 .pricing-item ul li img {
 	display: inline;
 	vertical-align: middle;
-	margin-right: 10px;  
+	margin-right: 10px;
 }
 
 .faq {
@@ -184,7 +184,7 @@ li.pricing-feature:last-child {
 }
 
 .grid2col .column.first {
-	width: auto; 
+	width: auto;
 }
 
 .grid2col .column.last {
@@ -256,36 +256,43 @@ li.pricing-feature:last-child {
 }
 
 .list-items {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    -js-display: flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    max-width: 927px;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 927px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 	margin: 0 auto;
 }
 .list-items>li:first-child {
 	background-image: url(/assets/images/shield.svg);
-	
+
 }
 
 .list-items>li {
-    background-size: 20px 28px;
+  background-size: 20px 28px;
 	padding-left: 28px;
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: 18px 26px;
-    padding-left: 26px;
+  padding-left: 26px;
 	margin-bottom: 10px;
-	line-height: 1.55555556;
+  line-height: 1.55555556;
+  list-style-type: none;
 }
 
 .list-items li {
     width: 48%;
 	font-size: 1.1em;
+}
+
+// On Demand
+section.on-demand-support {
+  padding: 0;
+  margin-bottom: 50px;
 }
