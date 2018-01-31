@@ -4,17 +4,9 @@ title: Fix huge security flaw in macOS High Sierra
 author: angus
 categories:
 - Security
-tags:
-- macOS
-- High Sierra
-- security
-- vulnerability
-- Apple
-- fix
-- solution
 ---
 
-If you’re running macOS High Sierra, stop and *do this now* to fix the root access vulnerability. 
+If you’re running macOS High Sierra, stop and *do this now* to fix the root access vulnerability.
 
 **Update: Apple has released a fix. [Security Update 2017-001](https://support.apple.com/en-au/HT208315). Install the update:**
 1. Click Apple icon in menu bar

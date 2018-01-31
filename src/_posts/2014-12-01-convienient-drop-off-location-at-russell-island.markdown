@@ -1,17 +1,8 @@
 ---
-date: 2014-12-01 01:02:16+00:00
 title: Convienient carry-in location at Russell Island
 author: angus
 categories:
 - News
-tags:
-- carry-in
-- computer
-- help
-- island
-- russell
-- russell island
-- walk-in
 ---
 
 ![my_health_aisle_front_656x](/assets/images/my_health_aisle_front_656x.jpg)

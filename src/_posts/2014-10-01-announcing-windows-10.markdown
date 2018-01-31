@@ -1,23 +1,8 @@
 ---
-date: 2014-10-01 13:01:14+00:00
 title: Announcing Windows 10
 author: angus
 categories:
 - News
-tags:
-- '10'
-- '7'
-- '8'
-- '8.1'
-- announcement
-- microsoft
-- preview
-- technical
-- threshold
-- windows
-- Windows 7
-- Windows 8
-- Windows 8.1
 ---
 
 ![Windows_Product_Family_9-30-Event-656x368](/assets/images/Windows_Product_Family_9-30-Event-656x368.jpg)

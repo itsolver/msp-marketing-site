@@ -1,22 +1,13 @@
 ---
-date: 2015-05-26 12:41:19+00:00
 title: Why we suggest Bitdefender for Internet Security
 author: angus
 categories:
 - News
 - Security-Advisory
 - Tips-and-Tricks
-tags:
-- anti-virus
-- AV-Comparatives
-- AV-Test
-- Bitdefender
-- internet
-- security
-- software
 ---
 
-![antivirus software, image credit: av-test.org](/assets/images/AV-Test-The-best-antivirus-software-for-Windows-Home-User-2015.png) 
+![antivirus software, image credit: av-test.org](/assets/images/AV-Test-The-best-antivirus-software-for-Windows-Home-User-2015.png)
 # Best in protection, performance and usability
 We regularly check independent test results of internet security solutions at [AV-Test](https://www.av-test.org/en/antivirus/home-windows/) and [AV-Comparatives](https://www.av-comparatives.org/dynamic-tests/) where we see year after year Bitdefender is reviewed as #1 in protection, performance and ease of use.
 

@@ -1,18 +1,9 @@
 ---
-date: 2018-01-28 06:00:00+10:00
 title: IT Solver is QAssure Accredited
-layout: post
 author: angus
 image: /assets/images/itsolver-qassure.jpg
 categories:
 - News
-tags:
-- QAssure
-- Accredited
-- trust
-- IT
-- Contract
-- ICT
 ---
 ![IT Solver logo and QAssure Accredition badge](/assets/images/itsolver-qassure.jpg)
 IT Solver is pleased to announce we received [QAssure accreditation](https://qassure.com.au/supplier/details/13046) from CCIQ – Queensland’s peak business body.

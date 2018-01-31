@@ -1,24 +1,8 @@
 ---
-date: 2016-07-13 13:12:24+00:00
 title: The Future of Television is Here
 author: angus
 categories:
 - News
-tags:
-- 4th
-- ABC
-- Apple
-- AppleTV
-- Entertainment
-- Gen
-- Generation
-- iView
-- Netflix
-- On Demand
-- SBS
-- Siri
-- Smart
-- TV
 ---
 ![Apple TV 4th Generation with Siri Remote. Image credit: iFixit](/assets/images/header-image-apple-tv.ifixit-656px.jpg)
 For many Australian families, the lounge room is the central hub of the household, with the humble TV playing a major part in that. We gather around the television screen nightly, to cheer on our favourite sporting teams, watch season finales of top drama series and laugh together at the latest movies.

@@ -1,19 +1,8 @@
 ---
-date: 2016-01-12 20:00:46+00:00
 title: "We're now using Xero"
 author: angus
 categories:
 - News
-tags:
-- accounting
-- announced
-- announcement
-- Freshbooks
-- invoicing
-- online accounting
-- service
-- software
-- Xero
 ---
 
 ![Xero](/assets/images/xero-macbook-ITS.jpg)

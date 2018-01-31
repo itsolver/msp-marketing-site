@@ -1,27 +1,8 @@
 ---
-date: 2015-06-09 18:30:11+00:00
 title: Smart TV And Netflix Installations Easy With IT Solver
 author: angus
 categories:
 - News
-tags:
-- ABC
-- Google Play
-- iTunes
-- iView
-- Netflix
-- On Demand
-- online
-- Plus7
-- PVR
-- SBS
-- Set Top Box
-- Smart TV
-- STB
-- streaming
-- Tenplay
-- video
-- YouTube
 ---
 
 ![Angus testing a power adapter for wireless headphones with a multi-meter. Photo: The Friendly Bay Islander](/assets/images/angus-smart-tv-installation.jpg) *Angus testing a power adapter for a wireless headphones base station. Photo: The Friendly Bay Islander*

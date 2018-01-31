@@ -1,29 +1,8 @@
 ---
-date: 2014-08-24 09:29:31+00:00
 title: Tech advice for Southern Moreton Bay Islanders
 author: angus
 categories:
 - Tips-and-Tricks
-tags:
-- adsl
-- broadband
-- coverage
-- exchange
-- island
-- karragarra
-- karragarra island
-- lamb
-- lamb island
-- macleay
-- macleay island
-- mobile
-- mobile broadband
-- outages adsl
-- ports
-- power
-- russell
-- russell island
-- UPS
 ---
 
 ![battery low](/assets/images/battery.gif)

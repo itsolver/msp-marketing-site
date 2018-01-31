@@ -1,18 +1,8 @@
 ---
-date: 2014-07-02 08:13:32+00:00
 title: We now accept PayPal Here for mobile payments
 author: angus
 categories:
 - News
-tags:
-- accepted
-- here
-- Interface
-- mastercard
-- Miura
-- payments
-- paypal
-- visa
 ---
 
 ![PayPal Here Chip and PIN card reader](/assets/images/paypal-reader.jpg)

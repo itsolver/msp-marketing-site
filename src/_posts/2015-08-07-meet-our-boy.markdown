@@ -1,5 +1,4 @@
 ---
-date: 2015-08-07 01:10:31+00:00
 title: Meet our boy!
 author: angus
 categories:

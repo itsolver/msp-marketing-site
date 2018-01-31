@@ -1,23 +1,8 @@
 ---
-date: 2014-09-30 23:03:54+00:00
 title: IT Solver services unaffected by Shellshock software bug
 author: angus
 categories:
-- Security-Advisory
-tags:
-- bug
-- CVE-2014-6271
-- CVE-2014-7169
-- linux
-- mac
-- patch
-- security
-- shellshock
-- software
-- terminal
-- unix
-- update
-- vulnerability
+- Security
 ---
 
 ![terminal-shellshock-vulnerable-test](/assets/images/terminal-shellshock-vulnerable-test.jpg)

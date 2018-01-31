@@ -1,22 +1,8 @@
 ---
-date: 2014-04-07 06:17:36+00:00
 title: 7 Steps to Secure Windows XP After Support Ends
 author: angus
 categories:
 - Tips-and-Tricks
-tags:
-- '2014'
-- '8'
-- adblock
-- adblockers
-- april
-- end
-- malware
-- protect
-- security
-- support
-- windows
-- xp
 ---
 
 ![Windows XP bliss wallpaper, photograph of a green hill and blue sky with clouds in the Los Carneros American Viticultural Area of Sonoma County, California, United States.](/assets/images/bliss_656.jpg)
@@ -44,13 +30,13 @@ You will find the following actions under Start Menu > Control Panel > User Acco
 
 
 
- 	
+
   * Create a new admin account and note the user name and password
 
- 	
+
   * Log in with your new admin account and switch your main account to limited
 
- 	
+
   * Log out of admin account and back into your main account
 
 

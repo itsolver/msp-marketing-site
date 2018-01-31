@@ -1,21 +1,12 @@
 ---
-date: 2014-09-03 04:24:29+00:00
 title: How to protect our data in iCloud from snoops
 author: angus
 categories:
 - News
-tags:
-- Apple
-- celebrities
-- fappening
-- hacked
-- icloud
-- password
-- security
 ---
 
 ![Apple iCloud logo](/assets/images/apple-icloud-logo.jpg)
-This week the FBI is investigating an alleged iCloud celebrity hack, labelled The Fappening, after over 400 celebrities nude photos and videos leaked on the image board, 4chan.org/b. Apple's iCloud service allows users to store photos and other content and access it from any Apple device. 
+This week the FBI is investigating an alleged iCloud celebrity hack, labelled The Fappening, after over 400 celebrities nude photos and videos leaked on the image board, 4chan.org/b. Apple's iCloud service allows users to store photos and other content and access it from any Apple device.
 
 According to Mac Daily News, the hack was achieved by a combination of weak passwords, security questions and software bugs that allowed brute-force attacks. Before we go on to proactive steps to protect our data in iCloud, here is the media advisory from Apple:
 
@@ -35,10 +26,10 @@ Storing data in online storage services such as iCloud is and will continue to b
 
   * Use a strong password that is not the same password on other accounts. This is _much easier_ with a password manager.
 
-	
+
   * Update security questions that have answers only you know the answer.
 
-	
+
   * Enable two-step verification.
 
 
@@ -50,7 +41,7 @@ Storing data in online storage services such as iCloud is and will continue to b
 
 
 
-	
+
   * As well as the above, create a free email account and change your Apple ID to this email address. This way a hacker has to guess not only our password, but Apple ID as well.
 
 
@@ -62,7 +53,7 @@ Storing data in online storage services such as iCloud is and will continue to b
 
 
 
-	
+
   * Disregard the above, use private cloud storage such as [owncloud.org](https://owncloud.org/) instead of a big target like iCloud.
 
 
@@ -74,10 +65,10 @@ Storing data in online storage services such as iCloud is and will continue to b
 
 
 
-	
+
   * make two-factor authentication easier to use.
 
-	
+
   * ensure there are no bugs that allow brute force (password guessing) attacks.
 
 
