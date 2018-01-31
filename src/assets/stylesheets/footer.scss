@@ -37,7 +37,7 @@
 			&.Facebook-icon:hover svg {
 				fill: #365899;
 			}
-			
+
 			&.Twitter-icon:hover svg {
 				fill: #55acee;
 			}
@@ -104,7 +104,7 @@ footer {
 		@extend %flexbox;
 		@include flex-flow(wrap);
 		margin: -10px -10px 10px -10px;
-		
+
 		.qassure {
 			margin: 30px 10px 0 10px;
 		 img {
