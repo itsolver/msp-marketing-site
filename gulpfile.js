@@ -31,6 +31,7 @@ gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'html', 'xml'));
 //   WARNING: run this after substantial CSS changes
 //   WARNING: .html files referenced need to exist, run after `gulp build` to ensure.
 //gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archive', 'styles:critical:post')); // BEFORE TO DO: Create layouts for home, archive and past with critical css
+gulp.task('critical', gulp.series('styles:critical:home'));
 
 // 'gulp deploy' -- deploy site to production and submit sitemap XML
 gulp.task('deploy', gulp.series('firebase', 'submit:sitemap'));
