@@ -1,7 +1,10 @@
+p.subtext {
+	text-align: center;
+}
 .map {
-    border:0; 
-    background: #eee; 
-    display: block; 
+    border:0;
+    background: #eee;
+    display: block;
     width: 100%;
 }
 .overlay {
@@ -17,4 +20,24 @@
 }
 h2.where  {
 	margin-top: 40px;
+}
+
+ul.operating-hours {
+  @extend %flexbox;
+  @include flex-flow(wrap);
+  margin: 0;
+  padding: 0;
+  li {
+    -webkit-flex: 1 0 180px;
+    flex: 1 0 180px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 180px;
+    text-align: left;
+    font-size: 1.2em;
+  }
+  .days {
+    max-width: 100px;
+  }
 }
