@@ -70,14 +70,15 @@
 		.benefits {
 			li {
 				font-size: 1.2em;
-				line-height: 1.45em;
+        line-height: 1.45em;
+        list-style-type: none;
 			}
 		}
 
 		ol.benefits {
 			-webkit-padding-start: 0;
 			padding-left: 0;
-	
+
 		}
 	}
 
