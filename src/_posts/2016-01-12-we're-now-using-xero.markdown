@@ -1,7 +1,7 @@
 ---
 date: 2016-01-12 20:00:46+00:00
 title: "We're now using Xero"
-author_staff_member: angus
+author: angus
 categories:
 - News
 tags:

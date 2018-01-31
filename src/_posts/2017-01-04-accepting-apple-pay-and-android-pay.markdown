@@ -1,7 +1,7 @@
 ---
 date: 2017-01-04 19:30:39+00:00
 title: Accepting Apple Pay and Android Pay
-author_staff_member: angus
+author: angus
 categories:
 - News
 tags:

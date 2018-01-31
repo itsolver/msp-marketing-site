@@ -60,7 +60,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author_staff_member: angus
+      author: angus
   -
     scope:
       path: ""

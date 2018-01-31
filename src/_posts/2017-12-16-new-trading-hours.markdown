@@ -2,7 +2,7 @@
 date: 2017-12-16 02:00:00+10:00
 title: New trading hours
 layout: post
-author_staff_member: angus
+author: angus
 image: /assets/images/wrist-watch.png
 categories:
 - News

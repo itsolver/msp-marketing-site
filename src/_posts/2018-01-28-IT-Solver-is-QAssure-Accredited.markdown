@@ -2,7 +2,7 @@
 date: 2018-01-28 06:00:00+10:00
 title: IT Solver is QAssure Accredited
 layout: post
-author_staff_member: angus
+author: angus
 image: /assets/images/itsolver-qassure.jpg
 categories:
 - News

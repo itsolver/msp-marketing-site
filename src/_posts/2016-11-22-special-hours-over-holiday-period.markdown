@@ -1,7 +1,7 @@
 ---
 date: 2016-11-22 06:10:31+00:00
 title: Special hours over holiday period
-author_staff_member: angus
+author: angus
 categories:
 - News
 ---

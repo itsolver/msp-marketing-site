@@ -1,7 +1,7 @@
 ---
 date: 2015-02-20 04:11:17+00:00
 title: Lenovo ships computers with adware that breaks secure HTTPS connections
-author_staff_member: angus
+author: angus
 categories:
 - News
 - Security-Advisory

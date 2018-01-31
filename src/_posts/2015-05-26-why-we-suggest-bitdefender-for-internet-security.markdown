@@ -1,7 +1,7 @@
 ---
 date: 2015-05-26 12:41:19+00:00
 title: Why we suggest Bitdefender for Internet Security
-author_staff_member: angus
+author: angus
 categories:
 - News
 - Security-Advisory
