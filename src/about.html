@@ -1,19 +1,25 @@
 ---
 permalink: /about/
-title: The beginning
-heading: In the beginning
+title: About
+heading: About
 ---
-<p>IT Solver is a team of one. Angus McLauchlan realised early on it was more rewarding to work as a one man band.</p>
-<p>Angus works hard to empathise with others to solve real problems and build a service that he can be proud of.</p>
-<p>Using tools like <a href="/cloud-apps-g-suite">G Suite</a>, Xero, Receipt-Bank, Zapier and Hazel, Angus automated the most tedious parts of his day to day job.</p>
-<p>Angus believes there are jobs that a computer is best at doing and that there are jobs that a human is best at doing. Angus wants to empower businesses to create workflows that let computers do what they are best at doing and let humans do what they are best at doing.</p>
-<p>IT Solver finds your business the right tools so you can have 10X the impact with less work.</p>
+<p>Started in 2013, computer support and repair services, IT Solver, helps businesses succeed with the right technology mix. Angus McLauchlan operates a mobile support unit to tackle software and hardware issues.</p>
+<p>There’s nothing more frustrating than finding yourself at the mercy of an uncooperative computer.  Computers, in one shape or another, are as much a part of our lives as daily transport. We can’t live without them and, when something goes wrong, it’s hard to measure the value of a knowledgeable ‘techie’.</p>
+<p>Angus’ obsession with computers began at age 10 and since then, he’s acquired an advanced diploma in IT from Mt Gravatt Metro South Institute of Technology and worked in a number of technology companies over several years. You can find his details at <a href="https://www.linkedin.com/in/angusmclauchlan/">LinkedIn</a>.
+<p>He specialises in networking and delivering first rate customer service.  If you don’t know what networking is, try living without it! Angus is experienced in laptops, PCs and Macs, iOS (iPhone and iPads) and Android devices.  He has an across the board knowledge of technology and, aside from weekends, his average turn-around time from drop off to completion is approximately 24-48 hours.</p>
+<p>His main strength is, he’s up to date with technology – aside from following the release of the latest devices, apps and programs, fundamentally, he’s good at fixing problems; he’s patient, prompt and clearly explains the issues.</p>
+<p>Angus has provided computer support for kids (the Macleay Island State School), professionals, business people, tradies, and just ordinary people. He is keen to extend his knowledge into the community with knowledge base articles and tutoring.</p>
+<p>Customers can receive IT support by phone, on the web, on-site, or if they prefer, they can carry-in their device at <a href="/contact/">IT Solver, Redland Bay</a>, where they will find a raft of services on offer.</p>
+<p>Last but not least, not only is Angus abreast of the latest technology, he has chosen the Redlands to establish his business; further proof that through technology he can do business world wide and locals have access to his skills on their doorstep.</p>
+
 <ul class="staff">
-	{% for person in site.staff_members %}
-		<li>
-			<div class="square-image"><img src="{{ person.image_path }}" alt="{{ person.name }}"/></div>
-			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
-			<div class="position">{{ person.position }}</div>
-		</li>
-	{% endfor %}
+  {% for person_obj in site.data.authors %}
+    {% assign person = person_obj[1] %}
+    {% if person.position %}
+      <li>
+        <div class="image"><img src="{{ person.image }}" alt="{{ person.name }}"></div>
+        <p>{{ person.name }}</p>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
