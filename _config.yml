@@ -57,6 +57,30 @@ defaults:
     values:
       layout: "post"
 
+exclude:
+- .asset-cache
+- .bundle
+- .jekyll-assets-cache
+- .sass-cache
+- "*.sublime-project"
+- "*.sublime-workspace"
+- Capfile
+- config
+- Gemfile
+- Gemfile.lock
+- Gruntfile.js
+- gulpfile.js
+- log
+- node_modules
+- package.json
+- Rakefile
+- README
+- tmp
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
