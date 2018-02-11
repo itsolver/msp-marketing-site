@@ -8,7 +8,7 @@
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
-    color: $light-shade;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 13px;
@@ -32,13 +32,17 @@
     img.product-lockup--img{
         width: 99px;
     }
+    .product-lockup {
+      margin-bottom: 40px;
+      text-align: left;
+    }
 }
 .js-video {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
-    
+
     iframe {
             position: absolute;
             top: 0;
@@ -49,5 +53,7 @@
 }
 
 .center {
-    margin:auto;
+  margin:auto;
 }
+
+

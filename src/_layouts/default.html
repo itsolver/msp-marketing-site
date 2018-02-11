@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/the_favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/the_favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/the_favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/the_favicon/manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/the_favicon/safari-pinned-tab.svg" color="#4182e4">
     <link rel="shortcut icon" href="/the_favicon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="IT Solver">
@@ -28,57 +28,14 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="company-name">
-                <a href="/">
-                    <img src="/assets/images/itsolver-logo.svg" alt="IT Solver Logo">
-                </a>
-            </div>{% include navigation.html %}</div>
-    </header>{{ content }}
-    <footer>
-        <div class="container">
-            <div class="footer-columns">
-                <div class="qassure"><a href="https://qassure.com.au/supplier/details/13046" rel="nofollow"><img src="/assets/images/qassure.jpg" alt="QAssure, Chamber of Commerce and Industry Queensland, Accredited Business"></a></div>
-                {% for column in site.data.footer %}
-                <ul class="footer-links">{% for link in column.links %} {% if link.header %} {% if link.header == "IT Solver" %}
-                    <li><a href="/"><h2>{{ link.header }}</h2></a>
-                    </li>{% else %}<li><h2>{{ link.header }}</h2>
-                    </li>{% endif %} {% endif %}
-                    {% if link.name == "Message Us" %}<li><div class="fb-messengermessageus"
-                    messenger_app_id="272237009895034"
-                    page_id="346353632068707"
-                    color="white"
-                    size="large">
-                  </div></li>{% endif %}
-                    {% if link.link %}
-                    <li><a {% if link.new_window %}target="_blank" {% endif %} href="{{ link.link }}" {% if link.social_icon %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include social-icon.html icon=link.social_icon %} {% endif %} {{ link.name }}</a>
-                    </li>{% endif %} {% endfor %}</ul>{% endfor %}</div>
-        </div>
-    </footer>
+    {{ content }}
+		{% include navigation/footer.html %}
     <script>
-        document.getElementById("open-nav").onclick = function () {
-            return document.body.classList.toggle("nav-open"), !1
-        }
+        document.getElementById("open-nav").addEventListener("click", function (event) {
+          event.preventDefault();
+          document.body.classList.toggle("nav-open");
+        });
     </script>
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : '272237009895034',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v2.11'
-          });
-        };
-
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "https://connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
 </body>
 
 </html>

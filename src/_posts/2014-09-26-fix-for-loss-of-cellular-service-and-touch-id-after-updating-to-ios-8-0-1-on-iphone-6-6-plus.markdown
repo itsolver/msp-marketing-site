@@ -4,8 +4,7 @@ author: angus
 categories:
 - Tips-and-Tricks
 ---
-
-#### ![youeAMH_600](/assets/images/youeAMH_600.jpg)
+![youeAMH_600](/assets/images/youeAMH_600.jpg)
 #### Update: iOS 8.0.2 is available. Remember before updating your iPhone, backup to iTunes on a PC or Mac.
 There is a workaround for those who have lost cellular service and use of Touch ID after updating to iOS 8.0.1 on iPhone 6 and iPhone 6 Plus.
 

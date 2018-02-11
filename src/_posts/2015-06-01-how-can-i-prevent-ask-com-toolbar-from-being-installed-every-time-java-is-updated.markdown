@@ -1,11 +1,12 @@
 ---
 title: How can I prevent Ask.com Toolbar from being installed every time Java is updated?
 author: angus
+image: /assets/images/java-ask-foistware-516x393.png
+image_alt: Annoying ask.com adware in Java
+image_featured: true
 categories:
 - Tips-and-Tricks
 ---
-
-![Java-ask.com](/assets/images/java-ask-foistware-516x393.png)
 Tired of the annoying Ask.com home page and search engine taking over your browser? So are we!
 The likely culprit is Java installing bundled "offers", i.e. a euphemism for [adware.](https://en.wikipedia.org/wiki/Adware)
 

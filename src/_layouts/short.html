@@ -1,0 +1,26 @@
+---
+layout: default
+icons: true
+header_class: short
+---
+
+<header class="{{ page.header_class }}">
+	{% include navigation/top.html %}
+
+	<section>
+		<div class="wrapper">
+			<h1>{{ page.heading }}</h1>
+			{% if page.subtitle %}
+				<p class="subtitle">{{ page.subtitle }}</p>
+			{% endif %}
+		</div>
+	</section>
+</header>
+
+<div class="dark-content">
+	<div class="wrapper">
+		{{ content }}
+	</div>
+</div>
+
+{% include components/cta/main.html text="Join other small businesses working with IT Solver" button="Free on-site asssessment"%}

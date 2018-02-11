@@ -13,19 +13,8 @@
   new_window: false
   highlight: false
   first: false
-- name: About
-  link: /about/
+- name: Blog
+  link: /blog/
   new_window: false
   highlight: false
   first: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
-  first: false
-- name: 3123 6000
-  link: tel:+61731236000
-  new_window: false
-  highlight: false
-  first: false
-  phone: true

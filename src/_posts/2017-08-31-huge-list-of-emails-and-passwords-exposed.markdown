@@ -2,10 +2,12 @@
 date: 2017-08-31 19:46:39+10:00
 title: Huge list of emails and passwords exposed
 author: angus
+image: /assets/images/have-i-been-pwned.jpg
+image_alt: Have I been Pwned? Check if you have an account that has been compromised in a data breach
+image_featured: true
 categories:
 - Security
 ---
-![Example of mobile payment with smart phone](/assets/images/have-i-been-pwned.jpg)
 [Troy Hunt](https://en.wikipedia.org/wiki/Troy_Hunt) has received a huge collection of over 700 million email addresses that's used by spammers to clog up our inboxes and spread malware. He also received email addresses and passwords, over 35 million of them, that allow spammers to send their spam.
 
 All these addresses are a key way malware is spread - out of those 700 million addresses, for a spam campaign to be profitable it only takes a small fraction to click a link, get infected and then become part of a [botnet](https://simple.wikipedia.org/wiki/Botnet) or victim of a [cryptolocker](https://simple.wikipedia.org/wiki/CryptoLocker).

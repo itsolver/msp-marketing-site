@@ -1,101 +1,205 @@
-.nav-open nav {
-	a {
-		display: block;
-		padding: 10px 0;
-		font-size: 20px;
+.logo {
+	line-height: 0;
+	text-align: left;
+
+	svg {
+		height: 25px;
+		margin: 7px 0;
+		fill: currentColor;
 	}
 
-	a.first {
-		margin-top: 10px;
+	span {
+		display: none;
 	}
 }
 
-nav {
-	font-size: 18px;
-	width: 100%;
-	font-weight: 500;
+header.landing,
+header.short {
+	text-align: center;
 
-	@media #{$desktop} {
-		font-size: 13px;
-		text-align: right;
-		position: absolute;
-		top: 3px;
-		right: 0;
-		padding: 0 20px;
-	}
-	@media (min-width: 1000px) {
-		font-size: 17px;
-		top: 3px;
-	}
-
+	&,
 	a {
-		margin: 0;
-		padding: 0 8px;
-		font-size: 14px;
-		border-bottom: 1px solid rgba(255,255,255,0);
-		color: $light-shade;
-		transition: all 0.5s ease;
-		display: none;
-		letter-spacing: 0.66px;
+		color: $grey-text;
+	}
+}
 
-		@media #{$desktop} {
-			display: inline;
-		}
-		@media #{$large-desktop} {
-			padding: 0 16px;
-			margin: 0;
-			font-size: 16px;
-		}
+header.plain  {
+	background: #fff;
+	border-bottom: 1px solid $plain-border-color;
 
-		svg {
-			margin-right: 8px;
-			height: 16px;
-			vertical-align: middle;
+	.nav-bar.wrapper {
+		.logo svg {
 			fill: currentColor;
 		}
 
-		&.nav-toggle {
-			display: inline;
-			position: absolute;
-			right: 10px;
-			top: -12px;
-			font-size: 29px;
-			border: 0;
-			margin: 0 auto;
-			padding: 0 10px;
+		a,
+		a.button {
+			color: $text-color;
+		}
 
-			@media #{$desktop} {
-				display: none;
+		#open-nav {
+			svg {
+				fill: currentColor;
 			}
+		}
+	}
+}
+nav.right > svg {
+  fill: currentColor;
+}
+.nav-bar.wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: $font-small;
+
+	.logo a {
+		display: inline-block;
+	}
+
+	a {
+		text-decoration: none;
+		white-space: nowrap;
+		display: block;
+	}
+
+	.main,
+	.right {
+		display: none;
+		text-align: right;
+
+		a {
+      padding: 20px 0;
+      transition-duration: 0.15s;
+    &:hover {
+      color: $dark-accent;
+    }
+    svg,
+    svg:hover {
+      fill: currentColor;
+    }
+		}
+	}
+
+	.main {
+		flex: 1;
+		margin-top: 20px;
+
+		a {
+			transition-duration: 0.2s;
 
 			&:hover {
-				border: 0;
+				color: $dark-accent;
 			}
 		}
-	}
-	a.active {
-		color: $light-shade;
-	}
-
-	a:hover {
-		color: hsla(0,0%,100%,.5);
-	}
-	@media #{$desktop} {
-		a.highlight {
-			padding-left: 15px;
-		}
-	}
-	@media (min-width: 1000px) {
-		a.highlight {
-			padding-left: 30px;
-		}
-	}	
-
-	a:last-child {
-		padding-right: 0;
 	}
 }
 
-body {
-    padding: 0;
+#open-nav {
+	text-align: right;
+	display: block;
+	float: right;
+	margin-top: 7px;
+}
+
+.nav-open .nav-bar.wrapper .main,
+.nav-open .nav-bar.wrapper .right {
+	display: block;
+}
+
+@media only screen and (max-width: $desktop-min - 1) {
+	.nav-bar.wrapper .right .button {
+		background: none;
+		text-align: right;
+		text-transform: none;
+		font-weight: 400;
+		border: 0;
+
+		&.dark:hover {
+			color: #fff;
+		}
+
+		&.light:hover {
+			color: $brand-color;
+		}
+	}
+}
+
+@media only screen and (min-width: $desktop-min) {
+	#open-nav {
+		display: none;
+	}
+
+	.nav-bar.wrapper {
+		display: flex;
+
+		& > .logo,
+		& > .main,
+		& > .right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.main {
+			margin-top: 0;
+			flex: 1;
+			text-align: center;
+		}
+
+		.main,
+		.right {
+			display: flex;
+
+			a {
+				display: inline;
+				text-align: center;
+				padding: 5px 20px;
+
+				&.button {
+					padding-top: 1em;
+					padding-bottom: 1em;
+				}
+			}
+		}
+
+		.right {
+			font-weight: 200;
+
+			a {
+				opacity: 1;
+			}
+		}
+	}
+
+	header.landing,
+	header.short {
+		.nav-bar.wrapper .right a {
+
+      &:hover {
+        color: $dark-accent;
+      }
+
+			.button {
+				border-color: rgba(255, 255, 255, $text-opacity);
+			}
+		}
+	}
+
+	header.plain .nav-bar.wrapper .right a {
+		color: $text-color;
+
+    &:hover,
+    &.button:hover {
+			color: $brand-color;
+    }
+
+    &svg:hover {
+      fill: currentColor;
+    }
+	}
+}
+
+#open-nav > svg {
+  fill: currentColor;
 }

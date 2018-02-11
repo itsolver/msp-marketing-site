@@ -4,9 +4,6 @@ author: angus
 categories:
 - Tips-and-Tricks
 ---
-
-
-
 ![appletv-menu-netflix-hulu-plus](/assets/images/appletv-menu-netflix-hulu-plus.jpg)
 **Update: Accessing other regions of Netflix is now only reliable on computers. We encourage you to check out your own Netflix region, particularly with Netflix Originals, the need to bypass these geo-blocks is reducing.**
 This weekend in South East Queensland started indoors courtesy of heavy rain from Tropical Cyclone Marcia. What better time to test how easy it is to bypass _geo-blocking restrictions_ on streaming services on the Apple TV.

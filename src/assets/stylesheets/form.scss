@@ -1,11 +1,11 @@
 ::-webkit-input-placeholder, // Chrome
 :-ms-input-placeholder { // IE 10+
-	color: $placeholder-colour;
+	color: $placeholder-color;
 }
 
 ::-moz-placeholder, // Firefox 19+
 :-moz-placeholder { // Firefox 4 - 18
-	color: $placeholder-colour;
+	color: $placeholder-color;
 	opacity: 1;
 }
 
@@ -33,7 +33,7 @@ input[type="submit"] {
 
 	&:hover,
 	&.light.dark-hover:hover {
-		background-color: $cta-background-color;
+		background-color: $dark-accent;
 	}
 
 	&.keep-text-size {
@@ -57,36 +57,35 @@ input[type="submit"] {
 				background: none;
 			}
 		}
-
-		&.light:hover {
-			color: $brand-color;
-		}
 	}
 
 	&.no-border {
 		&,
-		&.light,
-		&.light:hover {
-			border-color: rgba(0, 0, 0, 0);
-		}
+		&.light {
+			border-color: #fff;
+    }
 	}
 
 	&.dark {
-		background: none;
-		border: 1px solid #fff;
+    background: $brand-color;
+    color: #fff;
+		border: 1px solid $brand-color;
 
 		&.brand {
 			background: $brand-color;
 		}
 
 		&:hover {
-			background: #fff;
-			color: $brand-color;
+      background: $dark-accent;
+      color: #fff;
 		}
 
 		&.no-border {
-			border: 0;
-		}
+      border: 0;
+    }
+    &.no-border-radius {
+      border-radius: 0;
+    }
 	}
 
 	&.dark-blue {
@@ -107,9 +106,21 @@ input[type="submit"] {
 		border: 1px solid $brand-color;
 
 		&:hover {
-			color: #fff;
-			background: $brand-color;
+      color: $brand-color;
+			background-color: #e8f2fc;
 		}
+	}
+}
+
+a.button+a.button.alt {
+  display: block;
+  margin: 30px auto;
+  width: fit-content;
+
+	@media #{$mid-point}{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 0;
 	}
 }
 
@@ -159,7 +170,7 @@ textarea {
 	position: relative;
 
 	i.material-icons {
-		color: $form-icon-colour;
+		color: $form-icon-color;
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -181,4 +192,8 @@ fieldset {
 
 textarea {
 	resize: none;
+}
+
+.go-away {
+  margin-bottom: 40px;
 }

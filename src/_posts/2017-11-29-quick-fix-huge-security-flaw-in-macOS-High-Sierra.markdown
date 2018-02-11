@@ -5,7 +5,6 @@ author: angus
 categories:
 - Security
 ---
-
 If you’re running macOS High Sierra, stop and *do this now* to fix the root access vulnerability.
 
 **Update: Apple has released a fix. [Security Update 2017-001](https://support.apple.com/en-au/HT208315). Install the update:**

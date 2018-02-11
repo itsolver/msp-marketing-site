@@ -1,0 +1,116 @@
+////////////////
+// Cloudcannon
+//
+html {
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-family: $font-display-family;
+  font-weight: 200;
+}
+
+h1 {
+	font-size: 2.3rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+.big-text {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+h3.legal {
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: $tablet-min) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.9rem;
+	}
+
+	.big-text {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: $desktop-min) {
+	h1 {
+		font-size: 2.7rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.big-text {
+		font-size: 2.3rem;
+	}
+}
+
+p,
+ul,
+li {
+	font-size: $font-size-content;
+	line-height: 1.8em;
+}
+
+p,
+ul,
+ol,
+blockquote,
+figure,
+h1,
+h2,
+h3,
+h4 {
+	@extend .vertical-flow;
+}
+
+body,
+input,
+textarea,
+select {
+	font-family: $font-family;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	font-weight: normal;
+}
+
+code {
+	word-break: break-word;
+}
+
+/////////////
+// IT Solver
+//
+sup {
+	font-size: 10px !important;
+    bottom: 0.6em;
+    line-height: 9px;
+    font-weight: normal !important;
+    vertical-align: baseline;
+    position: relative;
+    bottom: 0.33em;
+	position: static !important;
+}

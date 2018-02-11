@@ -1,0 +1,15 @@
+<section class="hero">
+    <div class="wrapper">
+      <h1>{{ include.heading }}</h1>
+      <p class="subtitle">{{ include.subtitle }}</p>
+      <div class="hero-cta">
+          <a class="button light border light-hover" href="/on-demand/">Get instant help</a>
+          <a class="alt button dark no-border dark-hover" href="/service-plans/">See plans and pricing</a>
+      </div>
+      {% if include.video != "" %}
+      <div class="landing-video">
+        {% include video.html video = include.video %}
+      </div>
+      {% endif %}
+    </div>
+  </section>

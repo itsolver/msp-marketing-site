@@ -1,6 +1,9 @@
 ---
 title: 7 Steps to Secure Windows XP After Support Ends
 author: angus
+image:
+image_alt:
+image_featured: true
 categories:
 - Tips-and-Tricks
 ---

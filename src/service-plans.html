@@ -2,7 +2,9 @@
 permalink: /service-plans/
 title: Service Plans
 heading: Choose the plan that’s right for you or your business.
-description: IT Solver offers three service plans to cater for all levels of care.
+subtitle: IT Solver offers three service plans to cater for all levels of care.
+description: IT Solver offers managed services plans to automatically resolve all computer technical issues from remote maintenance, security updates to on-site hardware servicing. Choose from three support plans to cater for all levels of care.
+layout: info-page
 faq:
   - question: What things will you do?
     answer: Lots of stuff! <a href="/on-demand-tasks/">Check out the full list here</a>.
@@ -49,9 +51,8 @@ common-features:
                 {% endfor %}
                 </ul>
             </div>
-            <div class="cta button pricing">
-              <a class="dark" href="https://www.itsolver.net/register-{{ service-plan-name | downcase }}">CHOOSE PLAN</a>
-            </div>
+
+            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/register-{{ service-plan-name | downcase }}">CHOOSE PLAN</a>
         </div>
         {% endfor %}
     </div>

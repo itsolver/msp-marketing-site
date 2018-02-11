@@ -96,7 +96,7 @@
 				font-size: 1.6rem;
 
 				a {
-					color: $text-colour;
+					color: $text-color;
 				}
 			}
 		}
@@ -186,6 +186,40 @@
 	max-width: $post-width;
 }
 
+.wrapper {
+	position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px
+}
+
+@media only screen and (min-width: 500px) {
+    .wrapper {
+        padding:50px 20px
+    }
+
+    header section .wrapper {
+        padding-top: 65px
+    }
+}
+
+@media only screen and (min-width: 930px) {
+    .wrapper {
+        padding: 65px 20px
+    }
+}
+
+.wrapper.wrapper-large {
+    max-width: 1200px
+}
+
+.wrapper.small-pad {
+    padding-top: 45px;
+    padding-bottom: 45px
+}
+
 .sharing-bar {
 	display: flex;
 	align-items: center;
@@ -233,6 +267,11 @@
 			height: 25px;
 		}
 	}
+}
+
+#disqus_thread {
+	max-width: $post-width;
+	margin: 0 auto;
 }
 
 .view-archived {

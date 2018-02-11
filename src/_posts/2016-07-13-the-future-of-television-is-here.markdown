@@ -1,10 +1,13 @@
 ---
 title: The Future of Television is Here
 author: angus
+image: /assets/images/header-image-apple-tv.ifixit-656px.jpg
+image_alt: "Apple TV 4th Generation with Siri Remote. Image credit: iFixit"
+image_featured: true
 categories:
 - News
 ---
-![Apple TV 4th Generation with Siri Remote. Image credit: iFixit](/assets/images/header-image-apple-tv.ifixit-656px.jpg)
+
 For many Australian families, the lounge room is the central hub of the household, with the humble TV playing a major part in that. We gather around the television screen nightly, to cheer on our favourite sporting teams, watch season finales of top drama series and laugh together at the latest movies.
 
 With the rapid rise of technology and the introduction of smartphones and tablets to our daily lives, you may be wondering about the future of television. Can television remain relevant in a tablet and smartphone age?

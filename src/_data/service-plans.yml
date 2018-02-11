@@ -1,11 +1,11 @@
-- plan: 
+- plan:
   - name: Solo
   - fee: 69
   - period: / mo
   - feature: Total Device Care
   - feature: Minor changes cost $69
   - feature: 1 User
-- plan: 
+- plan:
   - name: Business
   - fee: 199
   - period: / mo
@@ -14,7 +14,8 @@
   - feature: Up to 3 Users
   - feature: One task at a time
   - feature: On-site labour
-- plan: 
+  - highlight: true
+- plan:
   - name: Premium
   - fee: 299
   - period: / mo

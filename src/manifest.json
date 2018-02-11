@@ -12,7 +12,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "$brand-color",
-    "background_color": "$dark-shade",
-    "display": "standalone"
+    "theme_color": "#4184E4",
+    "background_color": "#FFF",
+    "display": "standalone",
+    "short_name": "IT Solver"
 }

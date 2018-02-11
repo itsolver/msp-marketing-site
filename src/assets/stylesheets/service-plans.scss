@@ -8,7 +8,8 @@
 	-webkit-justify-content: center;
 	justify-content: center;
 	width: 100%;
-	margin: 0;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .pricing-section {
@@ -32,10 +33,8 @@
 	margin: 10px;
 	color: $dark-shade;
 	cursor: default;
-	border: 1px solid $dark-accent;
-	background: $light-shade;
-	-webkit-transition: border-color 0.3s, background 0.3s;
-	transition: border-color 0.3s, background 0.3s;
+	border: 1px solid $light-shade;
+	background: #fafafa;
 	position: relative;
 	display: -webkit-flex;
 	display: flex;
@@ -68,7 +67,7 @@
 	font-weight: 600;
 	margin: 0 auto;
 	position: relative;
-    padding: 15px 15px 10px;
+  padding: 15px 15px 10px;
 }
 
 .pricing-price {
@@ -117,15 +116,10 @@ li.pricing-feature:last-child {
 	padding: 0 0.75em 0 0;
 }
 
-.cta.button.pricing {
-	padding: 0;
-}
-
 .cta.button.pricing a {
 	width: 100%;
 	padding: 20px 10px;
 	margin: 0;
-	border: 1px solid $brand-color;
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -215,7 +209,7 @@ li.pricing-feature:last-child {
 .column.last h3{
 	margin: 0;
 	margin-bottom: 6px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 }
 .grid2col .column.last p {
 	margin-bottom: 5px;
@@ -226,7 +220,7 @@ li.pricing-feature:last-child {
     margin-bottom: 0;
 }
 
-#container:after, #content:after, .grid2col:after, .grid2cola:after, .grid2colb:after, .grid2colc:after, .grid2cold:after, .grid2cole:after, .grid2colf:after, .grid3col:after, .grid3cola:after, .grid4col:after, .grid5col:after, .grid6col:after {
+#container:after, #content:after, .grid2col:after, .grid2cola:after {
     content: ".";
     display: block;
     height: 0;
@@ -236,10 +230,8 @@ li.pricing-feature:last-child {
 
 .support-plan-upgrade {
 	padding: 20px 25px;
-	color: $dark-shade;
+	color: $text-color;
 	cursor: default;
-	-webkit-transition: border-color 0.3s, background 0.3s;
-	transition: border-color 0.3s, background 0.3s;
 	margin: 1em;
 	margin-left: 0;
 	border: 1px solid #e0e0e0;
@@ -267,7 +259,7 @@ li.pricing-feature:last-child {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-	margin: 0 auto;
+	margin: 0 auto 40px;
 }
 .list-items>li:first-child {
 	background-image: url(/assets/images/shield.svg);

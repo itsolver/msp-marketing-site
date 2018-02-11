@@ -2,10 +2,11 @@
 title: Surf the web without annoying ads
 author: angus
 image: /assets/images/skip-youtube-ad.jpg
+image_featured: true
+image_alt: Screenshot of skip ad button on YouTube
 categories:
 - Tips-and-Tricks
 ---
-![Screenshot of YouTube Ad](/assets/images/skip-youtube-ad.jpg)
 If you use the web, you should read this. I get new customers calling me with malware on their computer or as victoms of tech support scams.
 
 Often the threat got on the computer by a dodgy advertisement on a website. Fake news outlets, malware developers and scammers, all use ad networks as a channel to our devices.

@@ -2,11 +2,11 @@
 title: New trading hours
 author: angus
 image: /assets/images/wrist-watch.png
+image_featured: true
+image_alt: Watch showing the time
 categories:
 - News
 ---
-![Screenshot of YouTube Ad](/assets/images/wrist-watch.png)
-
 Good news, from today onwards we're open 8 AM - 6 PM AEST Monday - Friday. That's an extra two hours per weekday.
 
 For Christmas trading hours, we're closed Dec 25th - Jan 1. Our last day of trading for 2017 is Friday 22nd December.

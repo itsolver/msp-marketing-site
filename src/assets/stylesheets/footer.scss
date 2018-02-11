@@ -16,13 +16,14 @@
 			max-width: 180px;
 		}
 		a {
-			display: inline !important;
+      display: inline !important;
 			&:hover {
-				text-decoration: none;
+        text-decoration: none;
+        color: #fff;
 			}
 			svg {
 				display: inline !important;
-				fill: $dark-shade;
+				fill: currentColor;
 				margin-right: 10px;
 				transition: fill 0.2s ease;
 				vertical-align: text-bottom;
@@ -46,7 +47,7 @@
 				fill: #db4437;
 			}
 			&.IT-Solver-icon:hover svg {
-				fill: #4182e4;
+				fill: $brand-color;
 			}
 
 			&.Youtube-icon:hover svg {
@@ -76,8 +77,8 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 1.1em;
 	position: relative;
-	background: $light-shade;
-	color: $dark-shade;
+	background: $dark-shade;
+	color: $light-shade;
 
 	.copyright {
 		font-size: .8em;
@@ -90,14 +91,13 @@ footer {
 	}
 
 	&,
-	a {
-		color: $dark-shade;
+	a, h2 {
+		color: $light-shade;
 	}
 
 	h2 {
 		font-size: 1.4em;
 		margin: 0 0 30px 0;
-		color: $dark-shade;
 	}
 
 	.footer-columns {
@@ -114,13 +114,4 @@ footer {
 		}
 
 	}
-
-	a {
-		text-decoration: none;
-
-		&:hover {
-			color: $dark-accent;
-		}
-	}
-
 }

@@ -42,78 +42,6 @@
     text-align: left
 }
 
-#ac-localnav,#ac-localnav select,#ac-localnav button {
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(ar),#ac-localnav select:lang(ar),#ac-localnav button:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(ja),#ac-localnav select:lang(ja),#ac-localnav button:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(ko),#ac-localnav select:lang(ko),#ac-localnav button:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(th),#ac-localnav select:lang(th),#ac-localnav button:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(zh-CN),#ac-localnav select:lang(zh-CN),#ac-localnav button:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(zh-HK),#ac-localnav select:lang(zh-HK),#ac-localnav button:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(zh-MO),#ac-localnav select:lang(zh-MO),#ac-localnav button:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav:lang(zh-TW),#ac-localnav select:lang(zh-TW),#ac-localnav button:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input,#ac-localnav textarea {
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(ar),#ac-localnav textarea:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(ja),#ac-localnav textarea:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(ko),#ac-localnav textarea:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(th),#ac-localnav textarea:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(zh-CN),#ac-localnav textarea:lang(zh-CN) {
-    font-family: "SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(zh-HK),#ac-localnav textarea:lang(zh-HK) {
-    font-family: "SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(zh-MO),#ac-localnav textarea:lang(zh-MO) {
-    font-family: "SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav input:lang(zh-TW),#ac-localnav textarea:lang(zh-TW) {
-    font-family: "SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 #ac-localnav a,#ac-localnav a:hover {
     text-decoration: none
 }
@@ -123,7 +51,6 @@
     line-height: 1.52947;
     font-weight: 400;
     letter-spacing: -.021em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: #e85d00;
     background: transparent;
@@ -136,79 +63,6 @@
     padding-bottom: 4px;
     white-space: nowrap
 }
-
-#ac-localnav .ac-ln-violator:lang(ar) {
-    letter-spacing: 0em;
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ja) {
-    letter-spacing: 0em;
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ko) {
-    letter-spacing: 0em;
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(th) {
-    letter-spacing: 0em;
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh) {
-    letter-spacing: 0em
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 @media only screen and (max-width: 735px) {
     #ac-localnav .ac-ln-violator {
         font-size:12px;
@@ -220,38 +74,6 @@
         padding-right: 10px;
         padding-top: 1px;
         padding-bottom: 1px
-    }
-
-    #ac-localnav .ac-ln-violator:lang(ar) {
-        font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(ja) {
-        font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(ko) {
-        font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(th) {
-        font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(zh-CN) {
-        font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(zh-HK) {
-        font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(zh-MO) {
-        font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-violator:lang(zh-TW) {
-        font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
     }
 }
 
@@ -269,38 +91,6 @@
     border-radius: 3px
 }
 
-#ac-localnav .ac-ln-violator-inline:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-inline:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 #ac-localnav .ac-ln-violator-secondary {
     border-color: #888;
     color: #666
@@ -315,78 +105,6 @@
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: #e85d00;
     display: block
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ar) {
-    letter-spacing: 0em;
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ja) {
-    letter-spacing: 0em;
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ko) {
-    letter-spacing: 0em;
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(th) {
-    letter-spacing: 0em;
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh) {
-    letter-spacing: 0em
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator-frameless:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
 #ac-localnav .ac-ln-violator-frameless-inline {
@@ -406,38 +124,6 @@
     padding-bottom: 1px
 }
 
-#ac-localnav .ac-ln-violator:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-violator:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 #ac-localnav .ac-ln-button {
     font-size: 17px;
     line-height: 1.52947;
@@ -451,7 +137,7 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 4px;
-    color: $light-shade;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     min-width: 30px;
@@ -461,46 +147,6 @@
     padding-bottom: 4px;
     text-align: center;
     white-space: nowrap
-}
-
-#ac-localnav .ac-ln-button:lang(ar) {
-    letter-spacing: 0em;
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(ja) {
-    letter-spacing: 0em;
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(ko) {
-    letter-spacing: 0em;
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(th) {
-    letter-spacing: 0em;
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(zh) {
-    letter-spacing: 0em
-}
-
-#ac-localnav .ac-ln-button:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 
 #ac-localnav .ac-ln-button:hover {
@@ -533,7 +179,7 @@
     background: -webkit-linear-gradient(#42a1ec, #0070c9);
     background: linear-gradient(#42a1ec, #0070c9);
     border-color: #07c;
-    color: $light-shade;
+    color: #fff;
     cursor: default;
     opacity: .3
 }
@@ -551,38 +197,6 @@
     padding-bottom: 1px
 }
 
-#ac-localnav .ac-ln-button-compact:lang(ar),#ac-localnav .ac-ln-button:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(ja),#ac-localnav .ac-ln-button:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(ko),#ac-localnav .ac-ln-button:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(th),#ac-localnav .ac-ln-button:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(zh-CN),#ac-localnav .ac-ln-button:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(zh-HK),#ac-localnav .ac-ln-button:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(zh-MO),#ac-localnav .ac-ln-button:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-button-compact:lang(zh-TW),#ac-localnav .ac-ln-button:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 #ac-localnav .ac-ln-button-block {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -592,16 +206,16 @@
 
 #ac-localnav .ac-ln-button-secondary {
     background-color: #e3e3e3;
-    background: -webkit-linear-gradient($light-shade, #e3e3e3);
-    background: linear-gradient($light-shade, #e3e3e3);
+    background: -webkit-linear-gradient(#fff, #e3e3e3);
+    background: linear-gradient(#fff, #e3e3e3);
     border-color: #d6d6d6;
     color: #0070c9
 }
 
 #ac-localnav .ac-ln-button-secondary:hover {
     background-color: #eee;
-    background: -webkit-linear-gradient($light-shade, #eee);
-    background: linear-gradient($light-shade, #eee);
+    background: -webkit-linear-gradient(#fff, #eee);
+    background: linear-gradient(#fff, #eee);
     border-color: #d9d9d9
 }
 
@@ -614,8 +228,8 @@
 
 #ac-localnav .ac-ln-button-secondary:disabled,#ac-localnav .ac-ln-button-secondary.disabled {
     background-color: #e3e3e3;
-    background: -webkit-linear-gradient($light-shade, #e3e3e3);
-    background: linear-gradient($light-shade, #e3e3e3);
+    background: -webkit-linear-gradient(#fff, #e3e3e3);
+    background: linear-gradient(#fff, #e3e3e3);
     border-color: #d6d6d6;
     color: #0070c9
 }
@@ -1037,7 +651,7 @@
 }
 
 #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-background,#ac-ln-menustate:target ~ #ac-localnav .ac-ln-background {
-    background-color: $light-shade;
+    background-color: #fff;
     max-height: none;
     -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
@@ -1062,7 +676,7 @@
 #ac-ln-menustate:checked ~ #ac-localnav.ac-localnav-noblur .ac-ln-background,#ac-ln-menustate:target ~ #ac-localnav.ac-localnav-noblur .ac-ln-background {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
-    background-color: $light-shade
+    background-color: #fff
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-background:after,#ac-localnav.ac-localnav-dark .ac-ln-background:after {
@@ -1163,38 +777,6 @@
     padding-top: 12px
 }
 
-#ac-localnav .ac-ln-menu:lang(ar) {
-    font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(ja) {
-    font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(ko) {
-    font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(th) {
-    font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(zh-CN) {
-    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(zh-HK) {
-    font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(zh-MO) {
-    font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
-#ac-localnav .ac-ln-menu:lang(zh-TW) {
-    font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-}
-
 @media only screen and (max-width: 767px) {
     #ac-localnav .ac-ln-menu {
         font-size:14px;
@@ -1216,45 +798,6 @@
         width: 100%
     }
 
-    #ac-localnav .ac-ln-menu:lang(ar) {
-        letter-spacing: 0em;
-        font-family: "SF Pro AR","SF Pro Gulf","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(ja) {
-        letter-spacing: 0em;
-        font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3","ãƒ¡ã‚¤ãƒªã‚ª","Meiryo","ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(ko) {
-        letter-spacing: 0em;
-        font-family: "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(th) {
-        letter-spacing: 0em;
-        font-family: "SF Pro TH","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh) {
-        letter-spacing: 0em
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-CN) {
-        font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-HK) {
-        font-family: "SF Pro HK","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-MO) {
-        font-family: "SF Pro HK","SF Pro TC","SF Pro Text","SF Pro Icons","PingFang HK","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
-
-    #ac-localnav .ac-ln-menu:lang(zh-TW) {
-        font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","PingFang TC","Helvetica Neue","Helvetica","Arial",sans-serif
-    }
 }
 
 #ac-localnav .ac-ln-menu-tray {
@@ -1459,7 +1002,7 @@
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-menu-link {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menu-link {
@@ -1483,15 +1026,15 @@
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menu-link,#ac-localnav.ac-localnav-dark .ac-ln-menu-link {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menu-link,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menu-link {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menu-link,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menu-link,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menu-link,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menu-link {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menu-link:hover,#ac-localnav.ac-localnav-dark .ac-ln-menu-link:hover {
@@ -1672,7 +1215,7 @@
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-menucta-chevron::before,#ac-localnav.ac-localnav-hero .ac-ln-menucta-chevron::after {
-    background: $light-shade
+    background: #fff
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after {
@@ -1684,15 +1227,15 @@
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-localnav .ac-ln-menucta-chevron::after,#ac-localnav.ac-localnav-dark .ac-ln-menucta-chevron::before,#ac-localnav.ac-localnav-dark .ac-ln-menucta-chevron::after {
-    background: $light-shade
+    background: #fff
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::before,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-menucta-chevron::after {
-    background: $light-shade
+    background: #fff
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-menucta-chevron::after,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menucta-chevron::before,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-menucta-chevron::after,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::after,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::before,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-menucta-chevron::after {
-    background: $light-shade
+    background: #fff
 }
 
 #ac-localnav .ac-ln-menucta-anchor {
@@ -1767,9 +1310,6 @@
     }
 }
 
-#ac-localnav .ac-ln-title:lang(ja) {
-    line-height: 2.375
-}
 
 @media only screen and (max-width: 767px) {
     #ac-localnav .ac-ln-title {
@@ -1778,9 +1318,6 @@
         height: 48px
     }
 
-    #ac-localnav .ac-ln-title:lang(ja) {
-        line-height: 2.65
-    }
 }
 
 #ac-localnav .ac-ln-title a {
@@ -1803,7 +1340,7 @@
 }
 
 #ac-localnav.ac-localnav-hero .ac-ln-title,#ac-localnav.ac-localnav-hero .ac-ln-title a {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-title,.ac-localnav-hero#ac-localnav.ac-ln-sticking .ac-ln-title a {
@@ -1815,15 +1352,15 @@
 }
 
 .ac-theme-dark #ac-localnav .ac-ln-title,.ac-theme-dark #ac-localnav .ac-ln-title a,#ac-localnav.ac-localnav-dark .ac-ln-title,#ac-localnav.ac-localnav-dark .ac-ln-title a {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-title,.ac-theme-dark #ac-localnav.ac-ln-sticking .ac-ln-title a,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-title,.ac-localnav-dark#ac-localnav.ac-ln-sticking .ac-ln-title a {
-    color: $light-shade
+    color: #fff
 }
 
 .ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-title,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-title,.ac-theme-dark #ac-ln-menustate:checked ~ #ac-localnav .ac-ln-title a,.ac-theme-dark #ac-ln-menustate:target ~ #ac-localnav .ac-ln-title a,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-title,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-title,#ac-ln-menustate:checked ~ .ac-localnav-dark#ac-localnav .ac-ln-title a,#ac-ln-menustate:target ~ .ac-localnav-dark#ac-localnav .ac-ln-title a {
-    color: $light-shade
+    color: #fff
 }
 
 #ac-localnav .ac-ln-title-subhead,#ac-localnav .ac-ln-title-comingsoon {

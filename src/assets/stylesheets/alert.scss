@@ -21,7 +21,7 @@
     opacity: 0.4;
     padding: 0 5px;
 }
-.right {
+.right-alert {
     right: 15px;
 }
 .top {
@@ -32,7 +32,7 @@
 }
 
 @media only screen and (max-width: 360px){
-    .right, .left{
+    .right-alert, .left-alert{
         margin-left: auto;
         margin-right: auto;
         left: 0;

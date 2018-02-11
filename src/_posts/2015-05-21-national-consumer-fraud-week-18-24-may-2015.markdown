@@ -4,7 +4,6 @@ author: angus
 categories:
 - Security
 ---
-
 [![Fraud Week ArtWork, ScamWatch](/assets/images/FRAUD-WEEK-ARTWORK_Landscape_D01.jpg)](https://www.scamwatch.gov.au/)
 Are you keeping your private information secure? Chances are you could be leaving it wide open for scammers to use for fraudulent purposes. Identity theft is now one of the most common crimes in Australia, and can lead to all sorts of associated illegal activities.
 

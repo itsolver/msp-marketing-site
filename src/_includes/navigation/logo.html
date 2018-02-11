@@ -1,0 +1,6 @@
+<div class="logo">
+  <a href="{% if site.environment == 'production' %}{{site.url}}{% else %}/{% endif %}">
+    {% include svgs/logo.html logo="main" %}
+    <span>IT Solver</span>
+  </a>
+</div>

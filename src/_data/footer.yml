@@ -1,6 +1,6 @@
 - links:
   - header: IT Solver
-    link: /
+    link: https://www.itsolver.net/
   - name: On-Demand
     link: /on-demand/
   - name: Service Plans
@@ -26,10 +26,12 @@
     link: /contact/
 - links:
   - header: Connect
-  - name: Message Us
   - name: Blog
     link: /blog/
     social_icon: IT-Solver
+  - name: Message Us
+    link: https://m.me/346353632068707
+    social_icon: Messenger
   - name: Facebook
     link: https://facebook.com/itsolver.net
     social_icon: Facebook
