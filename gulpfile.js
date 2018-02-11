@@ -33,9 +33,6 @@ gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'html', 'xml'));
 //gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archive', 'styles:critical:post')); // BEFORE TO DO: Create layouts for home, archive and past with critical css
 gulp.task('critical', gulp.series('styles:critical:home'));
 
-// 'gulp deploy' -- deploy site to production and submit sitemap XML
-gulp.task('deploy', gulp.series('firebase:deploy', 'submit:sitemap'));
-
 // 'gulp rebuild' -- WARNING: removes all assets, images, and built site
 gulp.task('rebuild', gulp.series('clean', 'clean:images'));
 
@@ -46,3 +43,6 @@ gulp.task('check', gulp.series('site:check'));
 //   in includes or layouts, builds site, serves site
 // 'gulp --prod' -- same as above but with production settings
 gulp.task('default', gulp.series('build', 'serve'));
+
+// 'gulp submit' -- submit sitemap XML to Google and Bing
+gulp.task('submit', gulp.series('submit:sitemap'));

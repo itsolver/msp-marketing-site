@@ -19,8 +19,8 @@ env:
   global:
     - CXX=g++-4.8
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - secure: "K/sEAI2Tgz8TYzU+87xRVm2vOk14nuCTLZc0xRpX52EoHxxN7dVv4QGXQEnBKCj9x2M03rJHmWLxnAgbkv1twR8VMAii0LULXrfa+VMspEfHN+2jEBLOaq941nHWguAjIE1ISt3DYvfxju5MIlPDPMBoe2y4uNFwQNKd6WUUvxBJoh/Klgn2AnucRZA+cvZ46dqEEiDGhl5NOq4ZSH1kh1tXy26F/yWHi1Zj4MiLTDDaQ9UYrCwiFYTFy4wY9JHh98MK+KhSRf4YIQ8dJZNXoFLw93a0wWsWslD5kNxMe9/T+8QvF7FuqEGN2nbpjuv3jf7HxruWUo5VGQXHC+SCcmzeyuKiB07OHPDKaHLFEvOr+0Cz/n8mfRk0urfx/0BLXEXAP/SYVAGs+legmMs6cPGa1hu3UcYU2dSet8oDm4BAzbOmn/CBOImwn+J4MKZ8yQCmaffQuEkIa69UzMoeRrA92Z7ykWu7hkQsTszHKYZqfxOy73PgAqhPrybjdt7/7JzIwcFn0oKnJB6EWNPX/m8cJ2ASlrjSltDcNS/FeRlIwni9ieaGK0NDaCIIgRutYaliwW6cxougFAZTFIjivmc0zSWSqGmo5cDkqOBL3XdD+IM4rRu9OZQ65alv+dSsJjKao9eT6Y/vDCES3rTH89wcMMQ1Fedn2xYj/91OGw8="
-
+    - secure: "K/sEAI2Tgz8TYzU+87xRVm2vOk14nuCTLZc0xRpX52EoHxxN7dVv4QGXQEnBKCj9x2M03rJHmWLxnAgbkv1twR8VMAii0LULXrfa+VMspEfHN+2jEBLOaq941nHWguAjIE1ISt3DYvfxju5MIlPDPMBoe2y4uNFwQNKd6WUUvxBJoh/Klgn2AnucRZA+cvZ46dqEEiDGhl5NOq4ZSH1kh1tXy26F/yWHi1Zj4MiLTDDaQ9UYrCwiFYTFy4wY9JHh98MK+KhSRf4YIQ8dJZNXoFLw93a0wWsWslD5kNxMe9/T+8QvF7FuqEGN2nbpjuv3jf7HxruWUo5VGQXHC+SCcmzeyuKiB07OHPDKaHLFEvOr+0Cz/n8mfRk0urfx/0BLXEXAP/SYVAGs+legmMs6cPGa1hu3UcYU2dSet8oDm4BAzbOmn/CBOImwn+J4MKZ8yQCmaffQuEkIa69UzMoeRrA92Z7ykWu7hkQsTszHKYZqfxOy73PgAqhPrybjdt7/7JzIwcFn0oKnJB6EWNPX/m8cJ2ASlrjSltDcNS/FeRlIwni9ieaGK0NDaCIIgRutYaliwW6cxougFAZTFIjivmc0zSWSqGmo5cDkqOBL3XdD+IM4rRu9OZQ65alv+dSsJjKao9eT6Y/vDCES3rTH89wcMMQ1Fedn2xYj/91OGw8=" # $FIREBASE_TOKEN
+    - secure: "Fj1cI7UsDoCSlHOVUHVsVHGb71ObsI0spM2wZzEepp1ODzE1/7dTWSBFMo8siiMHHyCMQp6uZs1VIHeRpFq+aSgOsPD60tpl6FHljPuAnypX1/LyDq2wdGuYA19OGFSGZCmkYePIixdLYF4IXkj0O1gaJ1GZujROYGFb5QTTdAJFbe+cf6e+FMvKpg+onzOg31qXfhy53hnXpxYr48ctTvuC3HynO5t7cd1i+M1cLNBL5CcJYvTCPJx5WAtPXTLbFjYtvBJYTfKUY2Lgi4U5sGvqkjRIhl5QwYVDAGwm1Xvq9xhRIZif9TFSL3nk7G9+Y0BvQiW6HQSHbD06L6uZd+Y/prE5CoIKcW7Y0UxtGh9sRETxnsm5Pb5yyFM54F4OSrg+S0m4mCinjlL3q1SPui9axttYwOQ8+vqkwGk42Ve+fzZ4yBebWs1VuRvaLkQ+RmfrHOAj7GKGTnbgTfB+jPKmph0gynzZWbNwUPQ2TJVvhKUK0M0YUzAjzhqg14Mo9D/fOtnVJ3Pmg2o0Y/eXbawMZ+fd7rt+trWrMsEbBJRIS8rPlgi0nirE3zhxSqx6fAd6U2wmW1p8RB2j7Wq91ABygXTRKwwA1KPi9tLAs5SvO4yumtY/3y1eaaLVs/AlaLSCwnAFw/+z71ilic898hFQqpOQZeco2Xs2Equ8Ctw=" # $FIREBASE_PROJECT_ID
 notifications:
   email:
     on_success: never
@@ -34,11 +34,14 @@ install:
   - yarn
 
 script:
-  - gulp build --prod --firebase_api_token=$FIREBASE_API_TOKEN
+  - gulp build --prod
 
 deploy:
-  provider: script
   skip_cleanup: true
-  script: gulp deploy
-  on:
-    branch: master
+  provider: firebase
+  token:
+    secure: "$FIREBASE_API_TOKEN"
+  project: "$FIREBASE_PROJECT_ID"
+
+after_deploy:
+  - gulp submit
