@@ -5,7 +5,6 @@
 var gulp       = require('gulp');
 var requireDir = require('require-dir');
 var tasks      = requireDir('./gulp/tasks', {recurse: true}); // eslint-disable-line
-const shell    = require('gulp-shell');
 
 // include paths file
 var paths      = require('./gulp/paths');
