@@ -2,6 +2,7 @@
 var fs    = require('fs');
 var gulp  = require('gulp');
 const shell = require('gulp-shell')
+const firebase_api_token =
 
 // include paths file
 var paths = require('../paths');
@@ -11,7 +12,7 @@ gulp.task('firebase:deploy', shell.task([
   'cd ' + paths.siteDir,
   'echo "Deploying paths.siteDir: "',
   'pwd',
-  'firebase deploy --non-interactive --token ' + firebase_api_token,
+  'firebase deploy --non-interactive --token ' + gutil.env.firebase_api_token,
 ]))
 
 // 'gulp submit:sitemap` -- submit sitemap XML file to Google and Bing
