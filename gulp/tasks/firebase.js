@@ -1,8 +1,7 @@
 'use strict';
 var fs    = require('fs');
 var gulp  = require('gulp');
-const shell = require('gulp-shell')
-const firebase_api_token =
+const shell = require('gulp-shell');
 
 // include paths file
 var paths = require('../paths');
