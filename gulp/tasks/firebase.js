@@ -2,6 +2,7 @@
 var fs    = require('fs');
 var gulp  = require('gulp');
 const shell = require('gulp-shell');
+var gutil = require('gulp-util');
 
 // include paths file
 var paths = require('../paths');
