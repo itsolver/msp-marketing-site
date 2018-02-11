@@ -8,7 +8,10 @@ var paths = require('../paths');
 
 // 'gulp firebase' -- reads rsync credentials file and incrementally uploads site to server
 gulp.task('firebase', shell.task([
-  'cd ' + paths.siteDir + ' && firebase deploy',
+  'cd ' + paths.siteDir,
+  'echo Deploying paths.siteDir: ',
+  'pwd',
+  'firebase deploy',
 ]))
 
 // 'gulp submit:sitemap` -- submit sitemap XML file to Google and Bing
