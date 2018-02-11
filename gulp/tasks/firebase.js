@@ -7,9 +7,9 @@ const shell = require('gulp-shell')
 var paths = require('../paths');
 
 // 'gulp firebase' -- reads rsync credentials file and incrementally uploads site to server
-gulp.task('firebase', shell.task([
+gulp.task('firebase:deploy', shell.task([
   'cd ' + paths.siteDir,
-  'echo Deploying paths.siteDir: ',
+  'echo "Deploying paths.siteDir: "',
   'pwd',
   'firebase deploy',
 ]))
