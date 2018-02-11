@@ -35,7 +35,7 @@ install:
   - yarn
 
 script:
-  - gulp build --prod
+  - gulp build --prod --firebase_api_token=$(FIREBASE_API_TOKEN)
 
 deploy:
   provider: script
