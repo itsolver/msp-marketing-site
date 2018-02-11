@@ -30,7 +30,6 @@ notifications:
 install:
   - nvm install 6
   - npm install --global gulp-cli
-  - npm install --global gulp-shell
   - npm install --save-dev gulp@next
   - npm install --global yarn
   - yarn
