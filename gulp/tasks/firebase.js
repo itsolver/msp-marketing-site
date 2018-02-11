@@ -11,7 +11,7 @@ gulp.task('firebase:deploy', shell.task([
   'cd ' + paths.siteDir,
   'echo "Deploying paths.siteDir: "',
   'pwd',
-  'firebase deploy',
+  'firebase deploy --non-interactive --token ' + $FIREBASE_API_TOKEN,
 ]))
 
 // 'gulp submit:sitemap` -- submit sitemap XML file to Google and Bing

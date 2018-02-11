@@ -36,3 +36,10 @@ install:
 
 script:
   - gulp build --prod
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: gulp deploy
+  on:
+    branch: master
