@@ -12,45 +12,9 @@ video:
 header_class: "landing"
 ---
 
-<div class="content">
-	<section class="why">
-		<div class="container flex">
-			<div class="text">
-				<h2>Why IT Solver?</h2>
-				<p>Flat rate IT support program including around-the-clock monitoring, preventative maintenance and proactive IT solutions.</p>
-				<p>Our business is transparent, with upfront pricing, no lock in contracts, just the peace of mind that IT experts can deliver.</p>
-			</div>
-		</div>
-	</section>
+{% include components/landing-page/what.html %}
 
-	<section class="benefits">
-		<div class="container flex">
-			<div class="text">
-				<h2>What are the benefits?</h2>
-				<ol class="benefits">
-				<li><strong>Predictable costs.</strong> Convenient, fixed monthly payments.</li>
-				<li><strong>Flexible support plan.</strong> No contract.</li>
-				<li><strong>All you need</strong> to do your best work, together in one package.</li>
-				<li><strong>Work seamlessly</strong> from your computer, phone or tablet.</li>
-				<li><strong>Cooperative partnership</strong> with IT Solver.</li>
-				<li><strong>Automatic fixes</strong> before impacting your workflow.</li>
-				<li><strong>Cloud solutions</strong> free your work, go mobile.</li>
-				<li><strong>Best practices</strong> implemented into your business.</li>
-				<li><strong>Evolving protection</strong> against cyber threats.</li>
-				<li><strong>Happier staff</strong> with technology that exceeds expectation.</li>
-				</ol>
-			</div>
-		</div>
-	</section>
+{% include components/landing-page/benefits.html %}
 
-	<section class="testimonial">
-		<div class="container flex">
-			<div class="testimonial-block">
-				<blockquote>
-					<p class="">Angus is always happy and helpful. He has managed to work with professional and knowledgeable attitude, while still explaining things in terms that are understandable to me. I thank him for his patience and support in helping us upgrade our computer system and related work practices.</p>
-					<p class="author">Chris Rice, Statewide Roofing</p>
-				</blockquote>
-			</div>
-		</div>
-	</section>
-</div>
+{% assign case = site.case_studies | where: "name", "Statewide Roofing" | first %}
+{% include components/case-study/quote.html case=case %}

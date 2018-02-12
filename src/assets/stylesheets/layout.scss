@@ -1,5 +1,4 @@
 .hero-benefits {
-	color: $dark-shade;
 	text-align: left;
 	padding-top: 0;
 	line-height: 1.5em;
@@ -10,7 +9,6 @@ blockquote {
 	margin: 0;
 	quotes: "\201C""\201D""\201C""\201D";
 	font-style: italic;
-	color: $dark-shade;
 
 	.author {
 		display: block;
@@ -22,33 +20,6 @@ blockquote {
 
 	p {
 		display: inline;
-	}
-}
-
-blockquote:before {
-	color: #ccc;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-}
-
-.square-image {
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
-	margin: 25px auto 0 auto;
-	position: relative;
-	border-radius: 200px;
-
-	img {
-		position: absolute;
-		left: -1000%;
-		right: -1000%;
-		top: -1000%;
-		bottom: -1000%;
-		margin: auto;
 	}
 }
 

@@ -1,0 +1,16 @@
+<div class="testimonial">
+    <div class="wrapper">
+      <blockquote class="card big">
+        <div class="author">
+          <p>
+            <span class="name">{{ include.case.testimonial.name }}</span>
+            <span class="title">{{ include.case.testimonial.work_title }}</span>
+          </p>
+        </div>
+        <div class="quote">
+          {{ include.case.testimonial.text_markdown | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
+        </div>
+      <div class="image"><img src="{{ include.case.logo_path }}" width="136" height="136" ></div>
+      </blockquote>
+    </div>
+</div>
