@@ -10,7 +10,7 @@
         <div class="quote">
           {{ include.case.testimonial.text_markdown | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
         </div>
-      <div class="image"><img src="{{ include.case.logo_path }}" width="136" height="136" ></div>
+      <div class="image"><img src="{{ include.case.logo_path }}" width="136" height="136" alt="{{ include.case.name }} logo"></div>
       </blockquote>
     </div>
 </div>
