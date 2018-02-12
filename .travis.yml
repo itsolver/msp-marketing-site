@@ -47,6 +47,7 @@ deploy:
   skip_cleanup: true
   token:
     secure: "$FIREBASE_API_TOKEN"
+  project: "itsolver-499d1"
 
 after_deploy:
   - gulp submit
