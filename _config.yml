@@ -4,7 +4,7 @@ source                   : .tmp/src
 destination              : .tmp/dist
 
 title: IT Solver
-url: "https://www.itsolver.net"
+url: "https://www.itsolver.net/"
 baseurl:
 environment: "production"
 repository: https://github.com/itsolver/msp-marketing-site
