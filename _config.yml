@@ -1,51 +1,51 @@
 # ----
 # Site
-source                   : .tmp/src
-destination              : .tmp/dist
+source                   : ".tmp/src"
+destination              : ".tmp/dist"
 
-title: IT Solver
+title: "IT Solver"
 url: "https://www.itsolver.net/"
 baseurl:
 environment: "production"
-repository: https://github.com/itsolver/msp-marketing-site
-timezone: Australia/Brisbane
+repository: "https://github.com/itsolver/msp-marketing-site"
+timezone: "Australia/Brisbane"
 google_analytics_key: "UA-90161029-1"
 disqus_shortname:
 icon_ready: true
 twitter:
-  username: itsolvernet
+  username: "itsolvernet"
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /the_favicon/android-chrome-192x192.png
-description: Computer support and services for small businesses near Redland Bay. IT Solver helps small businesses get the best value from their technology investment.
+logo: "/the_favicon/android-chrome-192x192.png"
+description: "Computer support and services for small businesses near Redland Bay. IT Solver helps small businesses get the best value from their technology investment."
 facebook:
-  publisher: https://www.facebook.com/itsolver.net
-  admins: gusdoo
+  publisher: "https://www.facebook.com/itsolver.net"
+  admins: "gusdoo"
 author:
-  picture: /assets/images/staff-angus.jpg
-  twitter: gusmacca
+  picture: "/assets/images/staff-angus.jpg"
+  twitter: "gusmacca"
 social:
-  name: IT Solver
+  name: "IT Solver"
   links:
-    - https://www.itsolver.net/blog/
-    - https://www.facebook.com/itsolver.net
-    - https://www.twitter.com/itsolvernet
-    - https://plus.google.com/105525146496759832582
-    - https://www.yelp.com.au/biz/it-solver-redland-bay
-    - https://foursquare.com/v/it-solver/5a65800a0a08ab7fafc50d49
-    - https://github.com/itsolver/msp-marketing-site
+    - "https://www.itsolver.net/blog/"
+    - "https://www.facebook.com/itsolver.net"
+    - "https://www.twitter.com/itsolvernet"
+    - "https://plus.google.com/105525146496759832582"
+    - "https://www.yelp.com.au/biz/it-solver-redland-bay"
+    - "https://foursquare.com/v/it-solver/5a65800a0a08ab7fafc50d49"
+    - "https://github.com/itsolver/msp-marketing-site"
 
 defaults:
   - scope:
       path: ""
     values:
-      image: /the_favicon/android-chrome-192x192.png
+      image: "/the_favicon/android-chrome-192x192.png"
 
 # -----
 # Build
 
-permalink: pretty
+permalink: "pretty"
 defaults:
   - scope:
       path: ""
