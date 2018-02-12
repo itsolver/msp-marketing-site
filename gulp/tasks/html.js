@@ -64,7 +64,7 @@ var pageDimensions = [{
 // 'gulp styles:critical:archive' -- extract layout.archive critical CSS
 //   into /_includes/critical-archive.css
 gulp.task('styles:critical:archive', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'blog/archive/index.html')
+  return gulp.src(paths.tempDir  + paths.siteDir + 'archived.html')
     .pipe(critical({
       base: paths.tempDir,
       inline: false,
@@ -77,21 +77,21 @@ gulp.task('styles:critical:archive', () => {
     }))
 });
 
-// 'gulp styles:critical:post' -- extract layout.post critical CSS
-//   into /_includes/critical-post.css
-gulp.task('styles:critical:post', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'blog/index.html')
-    .pipe(critical({
-      base: paths.tempDir,
-      inline: false,
-      css: [paths.sassFilesTemp + '/main.css'],
-      dimensions: pageDimensions,
-      dest: paths.sourceDir + paths.includesFolderName + '/critical-post.css',
-      minify: true,
-      extract: false,
-      ignore: ['@font-face','/print/',/url\(/,'.popular-list'] // defer loading of webfonts and background images
-    }))
-});
+// // 'gulp styles:critical:post' -- extract layout.post critical CSS
+// //   into /_includes/critical-post.css
+// gulp.task('styles:critical:post', () => {
+//   return gulp.src(paths.tempDir  + paths.siteDir + 'blog.html')
+//     .pipe(critical({
+//       base: paths.tempDir,
+//       inline: false,
+//       css: [paths.sassFilesTemp + '/main.css'],
+//       dimensions: pageDimensions,
+//       dest: paths.sourceDir + paths.includesFolderName + '/critical-post.css',
+//       minify: true,
+//       extract: false,
+//       ignore: ['@font-face','/print/',/url\(/,'.popular-list'] // defer loading of webfonts and background images
+//     }))
+// });
 
 // 'gulp styles:critical:home' -- extract layout.home critical CSS
 //   into /_includes/critical-home.css
