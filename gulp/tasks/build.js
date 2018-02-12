@@ -23,8 +23,7 @@ gulp.task('site', done => {
     done();
   } else if (argv.prod) {
     shell.exec('bundle install');
-    shell.exec('bundle exec jekyll build --profile'); // Show build time for each file
-    //shell.exec('bundle exec jekyll build');
+    shell.exec('bundle exec jekyll build');
     done();
   }
 });
