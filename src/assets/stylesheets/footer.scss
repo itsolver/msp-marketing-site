@@ -78,7 +78,7 @@ footer {
 	font-size: 1.1em;
 	position: relative;
 	background: $dark-shade;
-	color: $light-shade;
+	color: $footer-color;
 
 	.copyright {
 		font-size: .8em;
@@ -92,7 +92,7 @@ footer {
 
 	&,
 	a, h2 {
-		color: $light-shade;
+		color: $footer-color;
 	}
 
 	h2 {

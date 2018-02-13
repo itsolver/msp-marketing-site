@@ -1,5 +1,5 @@
 .testimonial {
-	background: $testimonial-bg;
+	background: $testimonial-background-color;
 
 	blockquote {
 		margin: 0;
@@ -35,7 +35,7 @@
 		}
 
 		.title {
-			color: $footer-color;
+			color: $cta-background-color;
 			font-size: $font-smaller;
 		}
 	}
