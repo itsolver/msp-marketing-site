@@ -19,8 +19,10 @@ gulp.task('html', () => {
       removeComments: true,
       collapseWhitespace: true,
       collapseBooleanAttributes: false,
-      removeAttributeQuotes: false,
-      removeRedundantAttributes: false,
+      removeAttributeQuotes: true,
+      removeEmptyAttributes: true,
+      removeEmptyElements: true,
+      removeRedundantAttributes: true,
       minifyJS: true,
       minifyCSS: true
     })))
@@ -40,7 +42,7 @@ gulp.task('xml', () => {
   return gulp.src(paths.siteFolderName + paths.xmlPattern)
     .pipe(when(argv.prod, prettyData({
       type: 'minify',
-      preserveComments: true
+      preserveComments: false
     })))
     .pipe(when(argv.prod, size({title: 'optimized XML'})))
     .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
