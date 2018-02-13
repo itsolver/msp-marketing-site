@@ -1,7 +1,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | absolute_url %}
 <!-- htmlmin:ignore -->
   {% if page.layout == 'main-landing' %}
   <style>{% include critical-home.css %}</style>
@@ -10,6 +9,7 @@
   {% elsif page.layout == 'post' or page.layout == 'short' %}
   <style>{% include critical-post.css %}</style>
   {% endif %}
+  {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | absolute_url %}
   <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
 <!-- htmlmin:ignore -->
