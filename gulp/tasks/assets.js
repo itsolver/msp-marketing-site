@@ -6,7 +6,6 @@ var cheerio = require('gulp-cheerio');
 var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 var gulp = require('gulp');
-var gzip = require('gulp-gzip');
 var newer = require('gulp-newer');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
@@ -55,17 +54,6 @@ gulp.task('scripts', () => {
     .pipe(when(argv.prod, size({ showFiles: true })))
 });
 
-// 'gulp scripts:gzip --prod' -- gzips JS
-gulp.task('scripts:gzip', () => {
-  return gulp.src([paths.jsFilesTemp + '/*.js'])
-    .pipe(when(argv.prod, when('*.js', gzip({ append: true }))))
-    .pipe(when(argv.prod, size({
-      gzip: true,
-      showFiles: true
-    })))
-    .pipe(when(argv.prod, gulp.dest(paths.jsFilesTemp)))
-});
-
 // 'gulp styles' -- creates a CSS file from SCSS, adds prefixes and creates a Sourcemap
 // 'gulp styles --prod' -- creates a CSS file from your SCSS, adds prefixes,
 //   minifies, and cache busts it (does not create a Sourcemap)
@@ -94,17 +82,6 @@ gulp.task('styles', () => {
     .pipe(gulp.dest(paths.tempDir + paths.sourceDir + paths.dataFolderName))
     .pipe(when(argv.prod, size({ showFiles: true })))
     .pipe(when(!argv.prod, browserSync.stream()))
-});
-
-// 'gulp styles:gzip --prod' -- gzips CSS
-gulp.task('styles:gzip', () => {
-  return gulp.src([paths.sassFilesTemp + '/*.css'])
-    .pipe(when(argv.prod, when('*.css', gzip({ append: true }))))
-    .pipe(when(argv.prod, size({
-      gzip: true,
-      showFiles: true
-    })))
-    .pipe(when(argv.prod, gulp.dest(paths.sassFilesTemp)))
 });
 
 // 'gulp icons' -- combine all svg icons into single file

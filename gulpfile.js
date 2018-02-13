@@ -15,11 +15,11 @@ gulp.task('build:site', gulp.series('site:tmp', 'site', 'copy:site'));
 // 'gulp assets --prod' -- same as above but with production settings
 gulp.task('assets', gulp.series(
   gulp.series('scripts', 'styles', 'fonts', 'icons'),
-  gulp.series('scripts:gzip', 'styles:gzip', 'images:lazyload', 'images:feature', 'copy:assets', 'copy:images', 'copy:icons', 'copy:manifest')
+  gulp.series('images:lazyload', 'images:feature', 'copy:assets', 'copy:images', 'copy:icons', 'copy:manifest')
 ));
 
-// 'gulp clean' -- removes assets and gzipped files
-gulp.task('clean', gulp.parallel('clean:assets', 'clean:gzip', 'clean:dist', 'clean:site'));
+// 'gulp clean' -- removes assets and files
+gulp.task('clean', gulp.parallel('clean:assets', 'clean:dist', 'clean:site'));
 
 // 'gulp critical' -- builds critical path CSS includes
 //   WARNING: run this after substantial CSS changes
@@ -36,7 +36,7 @@ gulp.task('rebuild', gulp.series('clean', 'clean:images'));
 // 'gulp check' -- checks your Jekyll site for errors
 gulp.task('check', gulp.series('site:check'));
 
-// 'gulp' -- removes assets and gzipped files, creates assets and revs version
+// 'gulp' -- removes assets and files, creates assets and revs version
 //   in includes or layouts, builds site, serves site
 // 'gulp --prod' -- same as above but with production settings
 gulp.task('default', gulp.series('build', 'serve'));

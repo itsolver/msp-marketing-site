@@ -2,7 +2,6 @@
 var argv       = require('yargs').argv;
 var critical   = require('critical').stream;
 var gulp       = require('gulp');
-var gzip       = require('gulp-gzip');
 var htmlmin    = require('gulp-htmlmin');
 var prettyData = require('gulp-pretty-data');
 var size       = require('gulp-size');
@@ -12,7 +11,7 @@ var when       = require('gulp-if');
 var paths      = require('../paths');
 
 // 'gulp html' -- does nothing
-// 'gulp html --prod' -- minifies and gzips HTML files for production
+// 'gulp html --prod' -- minifies HTML files for production
 gulp.task('html', () => {
   return gulp.src(paths.siteFolderName + paths.htmlPattern)
     .pipe(when(argv.prod, htmlmin({
@@ -27,12 +26,6 @@ gulp.task('html', () => {
       minifyCSS: true
     })))
     .pipe(when(argv.prod, size({title: 'optimized HTML'})))
-    .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
-    .pipe(when(argv.prod, gzip({append: true})))
-    .pipe(when(argv.prod, size({
-      title: 'gzipped HTML',
-      gzip: true
-    })))
     .pipe(when(argv.prod, gulp.dest(paths.siteFolderName)))
 });
 

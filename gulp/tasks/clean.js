@@ -20,11 +20,6 @@ gulp.task('clean:dist', () => {
   return del([paths.siteFolderName + '/**/*', '!' + paths.assetFilesSite, '!' + paths.imageFilesSite, '!' + paths.imageFilesSite + '/**/*'], {'dot': true});
 });
 
-// 'gulp clean:gzip' -- removes gzip files
-gulp.task('clean:gzip', () => {
-  return del([paths.siteFolderName  + '/**/*.gz']);
-});
-
 // 'gulp clean:site' -- removes temporary source
 gulp.task('clean:site', () => {
   return del([paths.tempDir  + paths.sourceFolderName]);
