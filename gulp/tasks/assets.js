@@ -40,7 +40,7 @@ gulp.task('scripts', () => {
     .pipe(concat('index.js'))
     .pipe(size({ showFiles: true }))
     // minify for production
-    .pipe(when(argv.prod, when('*.js', uglify({ preserveComments: 'some' }))))
+    .pipe(when(argv.prod, when('*.js', uglify())))
     // output sourcemap for development
     .pipe(when(!argv.prod, sourcemaps.write('.')))
     .pipe(gulp.dest(paths.jsFilesTemp))
