@@ -70,6 +70,10 @@ gulp.task('styles:critical:archive', () => {
       extract: false,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
+    .on('error', notify.onError({
+      title: 'Error in styles:critical:archive ',
+      message: '<%= error.message %>'
+    }))
 });
 
 // 'gulp styles:critical:post' -- extract layout.post critical CSS
@@ -86,6 +90,10 @@ gulp.task('styles:critical:post', () => {
       extract: false,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
+    .on('error', notify.onError({
+      title: 'Error in styles:critical:post ',
+      message: '<%= error.message %>'
+    }))
 });
 
 // 'gulp styles:critical:home' -- extract layout.home critical CSS
@@ -100,5 +108,9 @@ gulp.task('styles:critical:home', () => {
       minify: true,
       extract: false,
       ignore: ['@font-face]'] // defer loading of webfonts
+    }))
+    .on('error', notify.onError({
+      title: 'Error in styles:critical:post ',
+      message: '<%= error.message %>'
     }))
 });
