@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
 <!--#else-->
   {% if page.layout == 'main-landing' %}
-    <style>{% include critical-home.css %}</style>
+  <style>{% include critical-home.css %}</style>
+  {% elsif page.layout == 'info-page' or page.layout == 'page' %}
+  <style>{% include critical-archive.css %}</style>
+  {% elsif page.layout == 'post' or page.layout == 'short' %}
+  <style>{% include critical-post.css %}</style>
   {% endif %}
 <!--#endif-->
 <!-- htmlmin:ignore -->
