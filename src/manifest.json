@@ -12,7 +12,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#4184E4",
+    "theme_color": "#2570DA",
     "background_color": "#FFF",
     "display": "standalone",
     "short_name": "IT Solver"
