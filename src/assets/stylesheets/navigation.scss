@@ -19,7 +19,7 @@ header.short {
 
 	&,
 	a {
-		color: $text-color;
+		color: $cta-background-color;
 	}
 }
 
@@ -34,7 +34,7 @@ header.plain  {
 
 		a,
 		a.button {
-			color: $text-color;
+			color: $cta-background-color;
 		}
 
 		#open-nav {
@@ -182,7 +182,7 @@ nav.right > svg {
 	}
 
 	header.plain .nav-bar.wrapper .right a {
-		color: $text-color;
+		color: $cta-background-color;
 
     &:hover,
     &.button:hover {
