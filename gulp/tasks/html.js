@@ -56,6 +56,22 @@ var pageDimensions = [{
                         height: 1280
                       }];
 
+// 'gulp styles:critical:home' -- extract layout.home critical CSS
+//   into /_includes/critical-home.css
+gulp.task('styles:critical:home', () => {
+  return gulp.src(paths.tempDir  + paths.siteDir + 'index.html')
+    .pipe(critical({
+      base: paths.tempDir,
+      inline: false,
+      css: [paths.sassFilesTemp + '/main.css'],
+      dimensions: pageDimensions,
+      dest: paths.sourceDir + paths.includesFolderName + '/critical-home.css',
+      minify: true,
+      extract: false,
+      ignore: ['@font-face]'] // defer loading of webfonts
+    }))
+});
+
 // 'gulp styles:critical:archive' -- extract layout.archive critical CSS
 //   into /_includes/critical-archive.css
 gulp.task('styles:critical:archive', () => {
@@ -85,20 +101,5 @@ gulp.task('styles:critical:post', () => {
       minify: true,
       extract: false,
       ignore: ['@font-face'] // defer loading of webfonts
-    }))
-});
-
-// 'gulp styles:critical:home' -- extract layout.home critical CSS
-//   into /_includes/critical-home.css
-gulp.task('styles:critical:home', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'index.html')
-    .pipe(critical({
-      base: paths.tempDir,
-      css: [paths.sassFilesTemp + '/main.css'],
-      dimensions: pageDimensions,
-      dest: paths.sourceDir + paths.includesFolderName + '/critical-home.css',
-      minify: true,
-      extract: false,
-      ignore: ['@font-face]'] // defer loading of webfonts
     }))
 });
