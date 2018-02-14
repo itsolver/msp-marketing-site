@@ -63,7 +63,7 @@ gulp.task('styles:critical:home', () => {
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesTemp + '/main.css'],
+      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'index.html',
       minify: true,
@@ -76,11 +76,11 @@ gulp.task('styles:critical:home', () => {
 // 'gulp styles:critical:archive' -- extract layout.archive critical CSS
 //   into /_includes/critical-archive.css
 gulp.task('styles:critical:archive', () => {
-  return gulp.src(paths.siteFolderName + '/archived/index.html')
+  return gulp.src(paths.siteDir + '/archived/index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesTemp + '/main.css'],
+      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'archived/index.html',
       minify: true,
@@ -93,11 +93,11 @@ gulp.task('styles:critical:archive', () => {
 // 'gulp styles:critical:post' -- extract layout.post critical CSS
 //   into /_includes/critical-post.css
 gulp.task('styles:critical:post', () => {
-  return gulp.src(paths.siteFolderName + '/blog/index.html')
+  return gulp.src(paths.siteDir + '/blog/index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesTemp + '/main.css'],
+      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'blog/index.html',
       minify: true,
