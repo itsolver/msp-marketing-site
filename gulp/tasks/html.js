@@ -59,15 +59,16 @@ var pageDimensions = [{
 // 'gulp styles:critical:home' -- extract layout.home critical CSS
 //   into /_includes/critical-home.css
 gulp.task('styles:critical:home', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'index.html')
+  return gulp.src(paths.siteDir + 'index.html')
     .pipe(critical({
-      base: paths.tempDir,
-      inline: false,
+      base: paths.siteDir,
+      inline: true,
       css: [paths.sassFilesTemp + '/main.css'],
       dimensions: pageDimensions,
-      dest: paths.sourceDir + paths.includesFolderName + '/critical-home.css',
+      dest: 'index.html',
       minify: true,
       extract: false,
+      timeout: 30000,
       ignore: ['@font-face]'] // defer loading of webfonts
     }))
 });
@@ -75,15 +76,16 @@ gulp.task('styles:critical:home', () => {
 // 'gulp styles:critical:archive' -- extract layout.archive critical CSS
 //   into /_includes/critical-archive.css
 gulp.task('styles:critical:archive', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'archived/index.html')
+  return gulp.src(paths.siteFolderName + '/archived/index.html')
     .pipe(critical({
-      base: paths.tempDir,
-      inline: false,
+      base: paths.siteDir,
+      inline: true,
       css: [paths.sassFilesTemp + '/main.css'],
       dimensions: pageDimensions,
-      dest: paths.sourceDir + paths.includesFolderName + '/critical-archive.css',
+      dest: 'archived/index.html',
       minify: true,
       extract: false,
+      timeout: 30000,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
 });
@@ -91,15 +93,16 @@ gulp.task('styles:critical:archive', () => {
 // 'gulp styles:critical:post' -- extract layout.post critical CSS
 //   into /_includes/critical-post.css
 gulp.task('styles:critical:post', () => {
-  return gulp.src(paths.tempDir  + paths.siteDir + 'blog/index.html')
+  return gulp.src(paths.siteFolderName + '/blog/index.html')
     .pipe(critical({
-      base: paths.tempDir,
-      inline: false,
+      base: paths.siteDir,
+      inline: true,
       css: [paths.sassFilesTemp + '/main.css'],
       dimensions: pageDimensions,
-      dest: paths.sourceDir + paths.includesFolderName + '/critical-post.css',
+      dest: 'blog/index.html',
       minify: true,
       extract: false,
+      timeout: 30000,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
 });
