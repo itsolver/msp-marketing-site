@@ -215,10 +215,10 @@
       "destination" : "/news/2016/01/12/we're-now-using-xero",
       "type" : 301
     }, {
-      "source" : "/why-we-suggest-bitdefender-for-internet-security",
-      "destination" : "/news/security-advisory/tips-and-tricks/2015/05/26/why-we-suggest-bitdefender-for-internet-security",
+      "source" : "/ddg",
+      "destination" : "https://www.duckduckgo.com",
       "type" : 301
-      } ],
+    } ],
     "headers": [ {
       "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
       "headers" : [ {
@@ -226,7 +226,7 @@
         "value" : "*"
       } ]
       }, {
-      "source" : "**/*.@(jpg|jpeg|gif|png)",
+      "source" : "**/*.@(jpg|jpeg|gif|png|css)",
       "headers" : [ {
         "key" : "Cache-Control",
         "value" : "max-age=7200"
