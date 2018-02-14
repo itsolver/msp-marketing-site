@@ -4,16 +4,15 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "**/*.sh"
+      "**/node_modules/**"
     ],
     "redirects": [ {
       "source" : "/accepting-apple-pay-and-android-pay",
-      "destination" : "/news/2017/01/04/accepting-apple-pay-and-android-pay/",
+      "destination" : "/news/2017/01/04/accepting-apple-pay-and-android-pay",
       "type" : 301
     }, {
       "source" : "/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
-      "destination" : "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv/",
+      "destination" : "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
       "type" : 301
     }, {
       "source" : "/angus.vcf",
@@ -21,11 +20,11 @@
       "type" : 301
     }, {
       "source" : "/angus-of-it-solver-a-genius-at-smart-tv-installation",
-      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver/",
+      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
       "type" : 301
     }, {
       "source" : "/announcing-windows-10",
-      "destination" : "/news/2014/10/01/announcing-windows-10/",
+      "destination" : "/news/2014/10/01/announcing-windows-10",
       "type" : 301
     }, {
       "source" : "/focus-on-business",
@@ -33,7 +32,7 @@
       "type" : 301
     }, {
       "source" : "/benefits",
-      "destination" : "/",
+      "destination" : "",
       "type" : 301
     }, {
       "source" : "/cal",
@@ -41,7 +40,7 @@
       "type" : 301
     }, {
       "source" : "/category/tips-tricks",
-      "destination" : "https://www.itsolver.net/category/tips-and-tricks/",
+      "destination" : "https://www.itsolver.net/category/tips-and-tricks",
       "type" : 301
     }, {
       "source" : "/community",
@@ -49,19 +48,19 @@
       "type" : 301
     },{
       "source" : "/computer-support-repairs-tutoring",
-      "destination" : "/",
+      "destination" : "",
       "type" : 301
       },{
       "source" : "/contact-us",
-      "destination" : "/contact/",
+      "destination" : "/contact",
       "type" : 301
     }, {
       "source" : "/convienient-drop-off-location-at-russell-island",
-      "destination" : "https://www.itsolver.net/news/2014/12/01/convienient-drop-off-location-at-russell-island/",
+      "destination" : "https://www.itsolver.net/news/2014/12/01/convienient-drop-off-location-at-russell-island",
       "type" : 301
     }, {
       "source" : "/exciting-changes-ahead",
-      "destination" : "/news/2013/11/27/exciting-changes-ahead/",
+      "destination" : "/news/2013/11/27/exciting-changes-ahead",
       "type" : 301
     }, {
       "source" : "/facebook-review",
@@ -69,15 +68,15 @@
       "type" : 301
     }, {
       "source" : "/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
-      "destination" : "/news/2015/02/20/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy/",
+      "destination" : "/news/2015/02/20/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
       "type" : 301
     }, {
       "source" : "/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
-      "destination" : "/tips-and-tricks/2014/09/26/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus/",
+      "destination" : "/tips-and-tricks/2014/09/26/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
       "type" : 301
     }, {
       "source" : "/gsuite",
-      "destination" : "https://www.itsolver.net/cloud-apps-g-suite/",
+      "destination" : "https://www.itsolver.net/cloud-apps-g-suite",
       "type" : 301
     }, {
       "source" : "/g-suite-promo",
@@ -93,43 +92,43 @@
       "type" : 301
     }, {
       "source" : "/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
-      "destination" : "/tips-and-tricks/2015/06/01/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated/",
+      "destination" : "/tips-and-tricks/2015/06/01/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
       "type" : 301
     }, {
       "source" : "/how-to-block-annoying-ads-and-malware",
-      "destination" : "/tips-and-tricks/2014/08/04/how-to-block-annoying-ads-and-malware/",
+      "destination" : "/tips-and-tricks/2014/08/04/how-to-block-annoying-ads-and-malware",
       "type" : 301
     }, {
       "source" : "/how-to-protect-our-data-in-icloud-from-snoops",
-      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops/",
+      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
       "type" : 301
     }, {
       "source" : "/how-to-protect-our-data-in-icloud-from-snoops",
-      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops/",
+      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
       "type" : 301
     }, {
       "source" : "/it-solver-services-unaffected-by-shellshock-software-bug",
-      "destination" : "/security-advisory/2014/09/30/it-solver-services-unaffected-by-shellshock-software-bug/",
+      "destination" : "/security-advisory/2014/09/30/it-solver-services-unaffected-by-shellshock-software-bug",
       "type" : 301
     }, {
       "source" : "/keep-your-data-safe-on-windows-xp-after-april-8-2014",
-      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014/",
+      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
       "type" : 301
     }, {
       "source" : "/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
-      "destination" : "/news/security-advisory/2015/02/20/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections/",
+      "destination" : "/news/security-advisory/2015/02/20/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
       "type" : 301
     }, {
       "source" : "/meet-our-boy",
-      "destination" : "/news/2015/08/07/meet-our-boy/",
+      "destination" : "/news/2015/08/07/meet-our-boy",
       "type" : 301
     }, {
       "source" : "/national-consumer-fraud-week-18-24-may-2015",
-      "destination" : "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015/",
+      "destination" : "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
       "type" : 301
     }, {
       "source" : "/pricing",
-      "destination" : "/service-plans/",
+      "destination" : "/service-plans",
       "type" : 301
     }, {
       "source" : "/qs",
@@ -137,7 +136,7 @@
       "type" : 301
     }, {
       "source" : "/register",
-      "destination" : "/service-plans/",
+      "destination" : "/service-plans",
       "type" : 301
     }, {
       "source" : "/register-business",
@@ -153,7 +152,7 @@
       "type" : 301
     }, {
       "source" : "/reset-the-net",
-      "destination" : "/news/2014/06/04/reset-the-net/",
+      "destination" : "/news/2014/06/04/reset-the-net",
       "type" : 301
     }, {
       "source" : "/rs",
@@ -161,47 +160,47 @@
       "type" : 301
     }, {
       "source" : "/sign-in",
-      "destination" : "/service-plans/",
+      "destination" : "/service-plans",
       "type" : 301
     }, {
       "source" : "/smart-tv-and-netflix-installations-are-easy-with-it-solver",
-      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver/",
+      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
       "type" : 301
     }, {
       "source" : "/special-hours-over-holiday-period",
-      "destination" : "/news/2016/11/22/special-hours-over-holiday-period/",
+      "destination" : "/news/2016/11/22/special-hours-over-holiday-period",
       "type" : 301
     }, {
       "source" : "/still-running-xp-after-april-8-2014",
-      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014/",
+      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
       "type" : 301
     }, {
       "source" : "/tech-advice-for-southern-moreton-bay-islanders",
-      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders/",
+      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
       "type" : 301
     }, {
       "source" : "/page/*",
-      "destination" : "/blog/",
+      "destination" : "/blog",
       "type" : 301
     }, {
       "source" : "/terms-of-service",
-      "destination" : "/terms/",
+      "destination" : "/terms",
       "type" : 301
     }, {
       "source" : "/the-future-of-television-is-here",
-      "destination" : "/news/2016/07/13/the-future-of-television-is-here/",
+      "destination" : "/news/2016/07/13/the-future-of-television-is-here",
       "type" : 301
     }, {
-      "source" : "/tips%20&%20tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders/",
-      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders/",
+      "source" : "/tips%20&%20tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
+      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
       "type" : 301
     }, {
-      "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads.1/",
-      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads/",
+      "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads.1",
+      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
       "type" : 301
     }, {
       "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads",
-      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads/",
+      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
       "type" : 301
     }, {
       "source" : "/vcard",
@@ -209,16 +208,37 @@
       "type" : 301
     }, {
       "source" : "/we-now-accept-paypal-here-for-mobile-payments",
-      "destination" : "/news/2014/07/02/we-now-accept-paypal-here-for-mobile-payments/",
+      "destination" : "/news/2014/07/02/we-now-accept-paypal-here-for-mobile-payments",
       "type" : 301
     }, {
       "source" : "/were-now-using-xero",
-      "destination" : "/news/2016/01/12/we're-now-using-xero/",
+      "destination" : "/news/2016/01/12/we're-now-using-xero",
       "type" : 301
     }, {
       "source" : "/why-we-suggest-bitdefender-for-internet-security",
-      "destination" : "/news/security-advisory/tips-and-tricks/2015/05/26/why-we-suggest-bitdefender-for-internet-security/",
+      "destination" : "/news/security-advisory/tips-and-tricks/2015/05/26/why-we-suggest-bitdefender-for-internet-security",
       "type" : 301
-    } ]
+      } ],
+    "headers": [ {
+      "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      } ]
+      }, {
+      "source" : "**/*.@(jpg|jpeg|gif|png)",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=7200"
+      } ]
+      }, {
+      "source" : "404.html",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=300"
+      } ]
+    } ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
