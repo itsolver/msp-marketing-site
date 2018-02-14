@@ -31,10 +31,10 @@
 /* norbu */
 .pricing-item {
 	margin: 10px;
-	color: $dark-shade;
+	color: $text-color;
 	cursor: default;
 	border: 1px solid $light-shade;
-	background: #fafafa;
+	background: $cards-background-color;
 	position: relative;
 	display: -webkit-flex;
 	display: flex;
