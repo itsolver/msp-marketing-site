@@ -34,7 +34,7 @@ notifications:
     on_failure: change
 
 install:
-  - nvm install 6
+  - nvm install 9.5
   - npm install --global gulp-cli
   - npm install git+https://git@github.com/gulpjs/gulp.git#4.0 --save-dev
   - npm install --global yarn
