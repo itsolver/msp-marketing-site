@@ -32,7 +32,7 @@
       "type" : 301
     }, {
       "source" : "/benefits",
-      "destination" : "",
+      "destination" : "/",
       "type" : 301
     }, {
       "source" : "/cal",
@@ -48,7 +48,7 @@
       "type" : 301
     },{
       "source" : "/computer-support-repairs-tutoring",
-      "destination" : "",
+      "destination" : "/",
       "type" : 301
       },{
       "source" : "/contact-us",
