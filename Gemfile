@@ -7,10 +7,7 @@ gem 'rake'
 # Jekyll
 gem 'jekyll'
 group :jekyll_plugins do
-	gem 'jekyll-archives'
-	gem 'jekyll-feed'
-	gem 'jekyll-livereload'
-	gem 'jekyll-paginate'
-	gem 'jekyll-sitemap'
-	gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-feed'
 end
