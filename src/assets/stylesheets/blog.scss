@@ -113,7 +113,7 @@
 	margin: 10px 0;
 	font-size: $font-normal;
 	font-weight: 600;
-	color: $grey-text;
+	color: $text-color;
 	letter-spacing: 0.02em;
 
 	img {
@@ -143,7 +143,7 @@
 }
 
 .post-date {
-	color: $grey-text;
+	color: $text-color;
 	font-size: $font-smaller;
 	font-weight: 600;
 	line-height: 1em;
@@ -228,7 +228,7 @@
 	span {
 		font-size: $font-normal;
 		font-weight: 600;
-		color: $grey-text;
+		color: $text-color;
 	}
 
 	ul {
