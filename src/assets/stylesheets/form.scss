@@ -16,10 +16,6 @@ textarea {
 
 a.button,
 input[type="submit"] {
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: 700;
 	padding: 18px $half-space;
 	display: inline-block;
 	border-radius: $border-radius;
@@ -27,8 +23,6 @@ input[type="submit"] {
 	color: #fff;
 	border: 0;
 	transition: $transition-duration background-color ease, $transition-duration color ease;
-	letter-spacing: $uppercase-letter-spacing;
-	font-size: $font-smaller;
 	cursor: pointer;
 
 	&:hover,

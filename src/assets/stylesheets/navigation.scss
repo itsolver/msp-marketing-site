@@ -111,7 +111,6 @@ nav.right > svg {
 		background: none;
 		text-align: right;
 		text-transform: none;
-		font-weight: 400;
 		border: 0;
 
 		&.dark:hover {
@@ -163,14 +162,10 @@ nav.right > svg {
 			}
 		}
 
-		.right {
-			font-weight: 200;
-
-			a {
+		.right a {
 				opacity: 1;
 			}
 		}
-	}
 
 	header.landing,
 	header.short {

@@ -2,7 +2,8 @@
 // Cloudcannon
 //
 html {
-	font-size: 16px;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased
 }
 
 h1,
@@ -93,8 +94,7 @@ textarea,
 select {
 	font-family: $font-family;
 	color: $text-color;
-	-webkit-font-smoothing: antialiased;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 code {
@@ -122,4 +122,31 @@ ul {
 .subtitle {
   font-size: 1.1rem;
   line-height: 1.7rem;
+}
+
+a.button,
+input[type="submit"] {
+  font-family: $font-display-family;
+  font-size: $font-smaller;
+  font-weight: 600;
+  text-decoration: none;
+	text-transform: uppercase;
+  text-align: center;
+  letter-spacing: $uppercase-letter-spacing;
+}
+
+
+blockquote {
+	quotes: "\201C""\201D""\201C""\201D";
+	font-style: italic;
+
+	.author {
+		font-weight: bold;
+		font-size: .85em;
+		font-style: normal;
+  }
+}
+
+.nav-bar.wrapper .right {
+  font-weight: inherit;
 }
