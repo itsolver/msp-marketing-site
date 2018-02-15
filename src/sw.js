@@ -2,25 +2,26 @@
 layout: null
 ---
 
-const staticCacheName = "itsolver-msp-v1";
+const staticCacheName = "itsolver-msp-v2";
 
 console.log("installing service worker");
 
 const filesToCache = [
   "/",
   {% for page in site.html_pages %}
-    '{{ page.url }}',
+    "{{ page.url }}",
   {% endfor %}
   {% for post in site.posts %}
-    '{{ post.url }}',
+    "{{ post.url }}",
   {% endfor %}
   "/assets/images/customers/statewide-roofing/logo.jpg",
   "/assets/images/qassure.jpg",
   "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
   "/assets/images/gsuite-product-lockup.png",
-  "css/main.css",
-  "/index.html"
+  "/assets/stylesheets/main.css",
+  "/index.html",
+  "/sw.js"
 ];
 
 self.addEventListener("install", function(e){
