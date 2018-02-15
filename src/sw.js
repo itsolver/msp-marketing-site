@@ -2,7 +2,7 @@
 layout: null
 ---
 
-const staticCacheName = "itsolver-msp-v2";
+const staticCacheName = "itsolver-msp-v4";
 
 console.log("installing service worker");
 
