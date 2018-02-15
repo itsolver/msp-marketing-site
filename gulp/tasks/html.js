@@ -1,7 +1,8 @@
 'use strict';
-var argv       = require('yargs').argv;
-var critical   = require('critical').stream;
 var gulp       = require('gulp');
+var gutil      = require('gulp-util');
+var critical   = require('critical').stream;
+var argv       = require('yargs').argv;
 var htmlmin    = require('gulp-htmlmin');
 var prettyData = require('gulp-pretty-data');
 var size       = require('gulp-size');
@@ -56,14 +57,12 @@ var pageDimensions = [{
                         height: 1280
                       }];
 
-// 'gulp styles:critical:home' -- extract layout.home critical CSS
-//   into /_includes/critical-home.css
+// 'gulp styles:critical:home' -- Generate, minify and inline critical-path CSS
 gulp.task('styles:critical:home', () => {
   return gulp.src(paths.siteDir + 'index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'index.html',
       minify: true,
@@ -71,16 +70,15 @@ gulp.task('styles:critical:home', () => {
       timeout: 30000,
       ignore: ['@font-face]'] // defer loading of webfonts
     }))
+    .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
 });
 
-// 'gulp styles:critical:archive' -- extract layout.archive critical CSS
-//   into /_includes/critical-archive.css
+// 'gulp styles:critical:archive' -- Generate, minify and inline critical-path CSS
 gulp.task('styles:critical:archive', () => {
   return gulp.src(paths.siteDir + '/archived/index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'archived/index.html',
       minify: true,
@@ -88,16 +86,15 @@ gulp.task('styles:critical:archive', () => {
       timeout: 30000,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
+    .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
 });
 
-// 'gulp styles:critical:post' -- extract layout.post critical CSS
-//   into /_includes/critical-post.css
+// 'gulp styles:critical:post' -- Generate, minify and inline critical-path CSS
 gulp.task('styles:critical:post', () => {
   return gulp.src(paths.siteDir + '/blog/index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
-      css: [paths.sassFilesSite + '/main.css'],
       dimensions: pageDimensions,
       dest: 'blog/index.html',
       minify: true,
@@ -105,4 +102,5 @@ gulp.task('styles:critical:post', () => {
       timeout: 30000,
       ignore: ['@font-face'] // defer loading of webfonts
     }))
+    .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
 });
