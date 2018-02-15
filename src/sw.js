@@ -1,3 +1,6 @@
+---
+layout: null
+---
 /* ===========================================================
  * sw.js
  * ===========================================================
@@ -6,7 +9,7 @@
  * Register service worker.
  * ========================================================== */
 
-const PRECACHE = 'precache-v1';
+const PRECACHE = 'precache-v3';
 const RUNTIME = 'runtime';
 const HOSTNAME_WHITELIST = [
   "itsolver.net"
