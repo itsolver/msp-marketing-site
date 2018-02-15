@@ -4,7 +4,8 @@
 
 <body>
     {{ content }}
-		{% include navigation/footer.html %}
+    {% include navigation/footer.html %}
+    {% include serviceWorker.html %}
     <script>
         document.getElementById("open-nav").addEventListener("click", function (event) {
           event.preventDefault();

@@ -4,7 +4,7 @@
 <!-- htmlmin:ignore -->
   {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | absolute_url %}
   <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- htmlmin:ignore -->
 <script>
   /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
