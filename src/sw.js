@@ -2,7 +2,7 @@
 layout: null
 ---
 
-const staticCacheName = "itsolver-msp-v0.0.1";
+const staticCacheName = "itsolver-msp-v1";
 
 console.log("installing service worker");
 
@@ -38,7 +38,7 @@ self.addEventListener("activate", function(e){
     caches.keys().then(function(cacheNames){
       return Promise.all(
         cacheNames.filter(function(cacheName){
-          return cacheName.startsWith("gdad-s-river-static-")
+          return cacheName.startsWith("itsolver-msp-")
             && cacheName != staticCacheName;
         }).map(function(cacheName){
           return caches.delete(cacheName);
