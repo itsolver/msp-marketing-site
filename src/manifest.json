@@ -25,6 +25,7 @@
             "sizes": "150x150",
             "type": "image/png"
         }
-    ]
+    ],
+    "start_url": "/"
 }
 
