@@ -1,39 +1,11 @@
 <head>
-<<<<<<< HEAD
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- htmlmin:ignore -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- htmlmin:ignore -->
   {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | absolute_url %}
   <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
-<!-- htmlmin:ignore -->
-<script>
-  /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-  /* This file is meant as a standalone workflow for
-  - testing support for link[rel=preload]
-  - enabling async CSS loading in browsers that do not support rel=preload
-  - applying rel preload css once loaded, whether supported or not.
-  */
-  (function( w ){
-  "use strict";
-  // rel=preload support test
-  if( !w.loadCSS ){
-    w.loadCSS = function(){};
-  }
-  // define on the loadCSS obj
-  var rp = loadCSS.relpreload = {};
-  // rel=preload feature support test
-  // runs once and returns a function for compat purposes
-  rp.support = (function(){
-    var ret;
-    try {
-      ret = w.document.createElement( "link" ).relList.supports( "preload" );
-    } catch (e) {
-      ret = false;
-=======
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
+  <!-- htmlmin:ignore -->
   <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
     /* This file is meant as a standalone workflow for
@@ -46,7 +18,6 @@
     // rel=preload support test
     if( !w.loadCSS ){
       w.loadCSS = function(){};
->>>>>>> e3e9620e3339c7995879d9238239819befd40a9f
     }
     // define on the loadCSS obj
     var rp = loadCSS.relpreload = {};
