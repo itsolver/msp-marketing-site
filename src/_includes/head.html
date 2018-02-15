@@ -123,8 +123,10 @@
     <meta name="apple-mobile-web-app-title" content="IT Solver">
     <meta name="application-name" content="IT Solver">
     <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
-    <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %} {% if site.environment == 'production' and site.google_analytics_key != '' %}
+    <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %}
+    {% if site.environment == 'production' and site.google_analytics_key != '' %}
     <script>
+      if(navigator.userAgent.indexOf("Speed Insights") == -1) {
         (function (e, a, t, n, c, o, s) {
             e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
                     (e[c].q = e[c].q || []).push(arguments)
@@ -132,6 +134,7 @@
                 n, s.parentNode.insertBefore(o, s)
         })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
             "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
+      }
     </script>
     {% endif %}
 </head>
