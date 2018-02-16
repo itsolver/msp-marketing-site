@@ -84,25 +84,6 @@ gulp.task('styles', () => {
     .pipe(when(!argv.prod, browserSync.stream()))
 });
 
-// 'gulp icons' -- combine all svg icons into single file
-gulp.task('icons', () => {
-  return gulp.src(paths.iconFiles + '/*.svg')
-    .pipe(svgmin())
-    .pipe(rename({ prefix: 'icon-' }))
-    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true }))
-    .pipe(cheerio({
-      run: function ($, file) {
-        $('svg').attr('style', 'display:none');
-        $('[fill]').removeAttr('fill');
-      },
-      parserOptions: { xmlMode: true }
-    }))
-    .pipe(size({
-      showFiles: true
-    }))
-    .pipe(gulp.dest(paths.iconFilesTemp))
-});
-
 // function to properly reload your browser
 function reload(done) {
   browserSync.reload();
