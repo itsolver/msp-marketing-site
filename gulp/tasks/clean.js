@@ -15,12 +15,17 @@ gulp.task('clean:images', () => {
   return del([paths.imageFilesSite]);
 });
 
-// 'gulp clean:dist' -- removes built site but keep images
+// 'gulp clean:dist' -- removes built site
 gulp.task('clean:dist', () => {
-  return del([paths.siteFolderName + '/**/*', '!' + paths.assetFilesSite, '!' + paths.imageFilesSite, '!' + paths.imageFilesSite + '/**/*'], {'dot': true});
+  return del([paths.siteFolderName]);
 });
 
 // 'gulp clean:site' -- removes temporary source
 gulp.task('clean:site', () => {
   return del([paths.tempDir  + paths.sourceFolderName]);
+});
+
+// 'gulp clean:temp' -- removes temporary directory
+gulp.task('clean:temp', () => {
+  return del([paths.tempDir]);
 });
