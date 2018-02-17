@@ -103,15 +103,6 @@ footer {
 	.footer-columns {
 		@extend %flexbox;
 		@include flex-flow(wrap);
-		margin: -10px -10px 10px -10px;
-
-		.qassure {
-			margin: 30px 10px 0 10px;
-		 img {
-			margin: auto;
-			margin-bottom: 30px;
-		 }
-		}
-
-	}
+    margin: -10px -10px 10px -10px;
+  }
 }
