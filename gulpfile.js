@@ -15,7 +15,7 @@ gulp.task('build:site', gulp.series('site:tmp', 'site', 'copy:site'));
 // 'gulp assets --prod' -- same as above but with production settings
 gulp.task('assets', gulp.series(
   gulp.series('scripts', 'styles'),
-  gulp.series('images:feature', 'copy:assets', 'copy:images', 'copy:manifest')
+  gulp.series('images:optimize', 'images:feature', 'copy:assets', 'copy:images', 'copy:manifest')
 ));
 
 // 'gulp clean' -- removes assets and files

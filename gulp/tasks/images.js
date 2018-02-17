@@ -15,17 +15,16 @@ var imagemin    = require('gulp-imagemin');
 // include paths file
 var paths       = require('../paths');
 
-// 'gulp images:optimize' -- optimize images
+// 'gulp images:optimize' -- optimize images, overwriting src.
 gulp.task('images:optimize', () => {
   return gulp.src([paths.imageFilesGlob])
-    .pipe(newer(paths.imageFilesSite))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
       imagemin.optipng(),
       imagemin.svgo({plugins: [{cleanupIDs: false}]})
     ], {verbose: true}))
-    .pipe(gulp.dest(paths.imageFilesSite))
+    .pipe(gulp.dest(paths.imageFiles))
     .pipe(size({title: 'images'}))
 });
 
