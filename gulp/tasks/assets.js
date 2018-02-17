@@ -18,9 +18,17 @@ var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
 var uglify = require('gulp-uglify');
 var when = require('gulp-if');
+const shell = require('gulp-shell');
 
 // include paths file
 var paths = require('../paths');
+
+// Get latest lozad.min.js
+// Highly performant, light ~0.8kb and configurable lazy loader in pure JS with no dependencies for responsive images, iframes and more
+// https://github.com/ApoorvSaxena/lozad.js
+gulp.task('lozadjs', shell.task([
+  'cd ' + paths.jsFiles + '&& wget https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js -O lozad.min.js'
+]));
 
 // 'gulp scripts' -- creates a index.js file with Sourcemap from your JavaScript files
 // 'gulp scripts --prod' -- creates a index.js file from your JavaScript files,
@@ -29,9 +37,10 @@ gulp.task('scripts', () => {
   // NOTE: The order here is important since it's concatenated in order from
   // top to bottom, so you want vendor scripts etc on top
   return gulp.src([
-    paths.jsFiles + '/ac-localnav.built.min.js',
+    paths.jsFiles + '/lozad.min.js',
     paths.jsFiles + '/toastify-cfg.min.js',
-    paths.jsFiles + '/toastify.min.js'
+    paths.jsFiles + '/toastify.min.js',
+    paths.jsFiles + '/ac-localnav.built.min.js'
   ])
     .pipe(newer(paths.jsFilesTemp + '/index.js', { dest: paths.jsFilesTemp, ext: '.js' }))
     .pipe(when(!argv.prod, sourcemaps.init()))
