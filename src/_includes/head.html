@@ -112,7 +112,6 @@
     }
     }( typeof global !== "undefined" ? global : this ) );
   </script>
-  {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | absolute_url %}
   <noscript>
     <link rel="stylesheet" href="{{ style_css }}">
   </noscript>
