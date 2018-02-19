@@ -1,11 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <!-- htmlmin:ignore -->
-  {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
-  <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro">
-  <!-- htmlmin:ignore -->
   <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
     /* This file is meant as a standalone workflow for
@@ -111,10 +107,7 @@
       w.loadCSS = loadCSS;
     }
     }( typeof global !== "undefined" ? global : this ) );
-  </script>
-  <noscript>
-    <link rel="stylesheet" href="{{ style_css }}">
-  </noscript>
+  </script> -->
   <link rel="apple-touch-icon" sizes="180x180" href="/the_favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/the_favicon/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/the_favicon/favicon-16x16.png" sizes="16x16">
@@ -125,6 +118,17 @@
   <meta name="application-name" content="IT Solver">
   <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
   <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %}
+
+  <!-- Preload remaining CSS on any page other than main-landing, and apply on arrival (with no-js fallback)
+ To do: Push critical CSS if HTTP/2.0 supported, e.g. https://github.com/branneman/nodejs-app-boilerplate/blob/66d77b3765731b1bf67ecaa13478027ee388b82d/app/areas/shared/layout/criticalcss/index.njk -->
+  {% if page.layout != main-landing' %}
+  {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
+  <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="{{ style_css }}">
+  </noscript>
+  {% endif %}
+
   {% if site.environment == 'production' and site.google_analytics_key != '' %}
     <script>
       if(navigator.userAgent.indexOf("Speed Insights") == -1) {
