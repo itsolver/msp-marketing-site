@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="footer-columns">
-        {% for column in site.data.footer %}
+        {% for column in site.data.navigation.footer %}
         <ul class="footer-links">{% for link in column.links %} {% if link.header %} {% if link.header == "IT Solver" %}
           <li>
             <a href="https://www.itsolver.net/">
@@ -14,7 +14,7 @@
           </li>{% endif %} {% endif %} {% if link.link %}
           <li>
             <a {% if link.new_window %}target="_blank" rel="noopener" {% endif %} href="{{ link.link }}" {% if link.social_icon
-              %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include social-icon.html icon=link.social_icon %} {% endif %} {{ link.name }}</a>
+              %}class="{{ link.social_icon }}-icon" {% endif %}>{% if link.social_icon %} {% include svgs/social-icon.html icon=link.social_icon %} {% endif %} {{ link.name }}</a>
           </li>{% endif %} {% endfor %}</ul>{% endfor %}</div>
     </div>
   </div>
