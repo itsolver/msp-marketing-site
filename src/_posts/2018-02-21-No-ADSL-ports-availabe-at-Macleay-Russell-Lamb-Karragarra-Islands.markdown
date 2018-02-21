@@ -20,5 +20,5 @@ Yes the alternative is to use mobile broadband or hotspot on a smart phone. Some
 #### But my part of the island is like a blackhole for mobile signal
 Tell me about it! Mobile reception on the islands is like swiss cheese. Fortunately though, I've seen 4G modems go from no signal to blazing fast after plugging in [an antenna](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.X4g+antenna.TRS0&_nkw=4g+antenna&_sacat=0).
 
-#### Do I have to mount the antenna to the roof
-Only in some cases are roof mounted antennas necessary. Either DIY or get an antenna expert to do this.
+#### Do I have to mount the antenna to the roof?
+A roof mounted 4G/4GX antenna will yield best results. Only in some cases are roof mounted antennas necessary to get good enough speeds. Either DIY or try an expert like Telco Antennas.
