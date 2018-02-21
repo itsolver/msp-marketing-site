@@ -1,10 +1,6 @@
 {
-    "name": "IT Solver - Business technology made simple",
     "short_name": "IT Solver",
-    "start_url": "https://www.itsolver.net",
-    "theme_color": "#2570DA",
-    "background_color": "#FFF",
-    "display": "standalone",
+    "name": "IT Solver - Business technology made simple",
     "icons": [
         {
             "src": "/the_favicon/android-chrome-192x192.png",
@@ -26,6 +22,10 @@
             "sizes": "150x150",
             "type": "image/png"
         }
-    ]
+    ],
+    "theme_color": "#2570DA",
+    "background_color": "#FFF",
+    "display": "standalone",
+    "start_url": "/"
 }
 
