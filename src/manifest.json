@@ -1,6 +1,6 @@
 {
     "short_name": "IT Solver",
-    "name": "IT Solver - Business technology made simple",
+    "name": "IT Solver",
     "icons": [
         {
             "src": "/the_favicon/android-chrome-192x192.png",
@@ -15,11 +15,6 @@
         {
             "src": "/the_favicon/apple-touch-icon.png",
             "sizes": "180x180",
-            "type": "image/png"
-        },
-        {
-            "src": "/the_favicon/mstile-150x150.png",
-            "sizes": "150x150",
             "type": "image/png"
         }
     ],
