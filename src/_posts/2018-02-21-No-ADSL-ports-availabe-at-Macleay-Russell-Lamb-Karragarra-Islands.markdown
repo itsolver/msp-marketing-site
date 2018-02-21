@@ -1,5 +1,5 @@
 ---
-title: No ADSL ports available at Sourthern Moretan Bay Islands
+title: No ADSL ports available at Southern Moretan Bay Islands
 author: angus
 image: /assets/images/russell-island-adsl-exchange.jpg
 image_alt: Russell Island ADSL Exchange
@@ -9,10 +9,10 @@ categories:
 ---
 People moving to Southern Moreton Bay Islands are having a hard time getting ADSL internet connected. The reason is there are currently no ADSL ports available at Macleay and Russell Island exchanges. The same applies to Lamb Island and Karragarra Island which is linked to Macleay and Russell Island, respectively.
 
-Unfortunately there isn't a waiting list. People who want a fixed broadband connection have to repeatedly apply with their preferred Internet Service Provider until a port becomes available.
+Unfortunately there isn’t a waiting list. If you're keen for ADSL, then keep applying with your preferred Internet Service Provider until a port becomes available.
 
 #### What about the nbn?
-Late 2019 - early 2020 couldn't arrive sooner for island residents when the [NBN is expected to progressively available](https://www.nbnco.com.au/connect-home-or-business/check-your-address/).
+Late 2019 - early 2020 couldn't arrive sooner for island residents when the [NBN is expected to be progressively available](https://www.nbnco.com.au/connect-home-or-business/check-your-address/).
 
 #### What about mobile broadband?
 Yes the alternative is to use mobile broadband or hotspot on a smart phone.
