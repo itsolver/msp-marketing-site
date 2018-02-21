@@ -21,7 +21,7 @@ gulp.task('html', () => {
       collapseBooleanAttributes: false,
       removeAttributeQuotes: true,
       removeEmptyAttributes: true,
-      removeEmptyElements: true,
+      removeEmptyElements: false,
       removeRedundantAttributes: true,
       minifyJS: true,
       minifyCSS: true
