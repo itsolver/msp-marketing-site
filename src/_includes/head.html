@@ -121,13 +121,11 @@
 
   <!-- Preload remaining CSS on any page other than main-landing, and apply on arrival (with no-js fallback)
  To do: Push critical CSS if HTTP/2.0 supported, e.g. https://github.com/branneman/nodejs-app-boilerplate/blob/66d77b3765731b1bf67ecaa13478027ee388b82d/app/areas/shared/layout/criticalcss/index.njk -->
-  {% if page.layout != 'main-landing' %}
   {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
   <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="{{ style_css }}">
   </noscript>
-  {% endif %}
 
   {% if site.environment == 'production' and site.google_analytics_key != '' %}
     <script>
