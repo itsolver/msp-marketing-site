@@ -15,10 +15,10 @@ Unfortunately there isn’t a waiting list. If you're keen for ADSL, then keep a
 Late 2019 - early 2020 couldn't arrive sooner for island residents when the [NBN is expected to be progressively available](https://www.nbnco.com.au/connect-home-or-business/check-your-address/).
 
 #### What about mobile broadband?
-Yes the alternative is to use mobile broadband or hotspot on a smart phone.
+Yes the alternative is to use mobile broadband or hotspot on a smart phone. Some people live purely on mobile data which is a remarkable feat considering data-hungry software updates and Netflix.
 
 #### But my part of the island is like a blackhole for mobile signal
-Tell me about it! Some parts of the islands have poor reception and I've seen 4G modems [with an antenna](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.X4g+antenna.TRS0&_nkw=4g+antenna&_sacat=0) go from no signal to blazing fast.
+Tell me about it! Mobile reception on the islands is like swiss cheese. Fortunately though, I've seen 4G modems go from no signal to blazing fast after plugging in [an antenna](https://www.ebay.com.au/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR0.TRC0.H0.X4g+antenna.TRS0&_nkw=4g+antenna&_sacat=0).
 
 #### Do I have to mount the antenna to the roof
 Only in some cases are roof mounted antennas necessary. Either DIY or get an antenna expert to do this.
