@@ -127,6 +127,10 @@
       "destination" : "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
       "type" : 301
     }, {
+      "source" : "/No-ADSL-ports-availabe-at-Macleay-Russell-Lamb-Karragarra-Islands",
+      "destination" : "/news/2018/02/21/State-of-the-internet-at-Macleay-Russell-Lamb-Karragarra-Islands",
+      "type" : 301
+    }, {
       "source" : "/pricing",
       "destination" : "/service-plans",
       "type" : 301

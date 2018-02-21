@@ -1,5 +1,5 @@
 ---
-title: No ADSL ports available at Southern Moretan Bay Islands
+title: State of the internet at Southern Moreton Bay Islands
 author: angus
 image: /assets/images/russell-island-adsl-exchange.jpg
 image_alt: Russell Island ADSL Exchange
