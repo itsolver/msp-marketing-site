@@ -10,7 +10,7 @@
         <div class="quote">
           {{ include.case.testimonial.text_markdown | prepend: "&ldquo;" | append: "&rdquo;" | markdownify }}
         </div>
-      <div class="image"><img class="lozad" data-src="{{ include.case.logo_path }}" width="150" data-alt="{{ include.case.name }} logo"><noscript><img src="{{ include.case.logo_path }}" width="136" height="136" alt="{{ include.case.name }} logo"></noscript></div>
+      <div class="image"><img class="lozad" data-src="{{ include.case.logo_path }}" width="150" data-alt="{{ include.case.name }} logo" alt="{{ include.case.name }} logo"><noscript><img src="{{ include.case.logo_path }}" width="136" height="136" alt="{{ include.case.name }} logo"></noscript></div>
       </blockquote>
     </div>
 </div>
