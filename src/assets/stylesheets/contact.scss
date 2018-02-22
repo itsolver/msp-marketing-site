@@ -18,14 +18,16 @@ p.subtext {
 .contact-help-centre h2 {
     margin-bottom: 20px;
 }
-h2.where  {
+h2.what,
+h2.when,
+h2.where {
 	margin-top: 40px;
 }
 
 ul.operating-hours {
   @extend %flexbox;
   @include flex-flow(wrap);
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   padding: 0;
   li {
     -webkit-flex: 1 0 180px;
@@ -38,4 +40,8 @@ ul.operating-hours {
   .days {
     max-width: 110px;
   }
+}
+
+p.urgent-enquries {
+  padding-top: 20px;
 }
