@@ -18,7 +18,10 @@ const urlsToCache = [
   "/assets/images/customers/statewide-roofing/logo.jpg",
   "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
-  "/assets/images/gsuite-product-lockup.png"
+  "/assets/images/gsuite-product-lockup.png",
+  "/the_favicon/favicon-32x32.png",
+  "the_favicon/favicon-16x16.png",
+  "/the_favicon/favicon.ico"
 ];
 
 self.addEventListener('install', function(event) {
