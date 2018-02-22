@@ -19,7 +19,6 @@ const filesToCache = [
   "{{ page.url }}",
   {% endfor %}
   "/assets/images/customers/statewide-roofing/logo.jpg",
-  "/assets/images/qassure.jpg",
   "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
   "/assets/images/gsuite-product-lockup.png",
