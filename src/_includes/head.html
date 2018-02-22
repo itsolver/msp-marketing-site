@@ -13,25 +13,23 @@
   <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
   <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %}
 
-  <!-- Preload remaining CSS on any page other than main-landing, and apply on arrival (with no-js fallback)
- To do: Push critical CSS if HTTP/2.0 supported, e.g. https://github.com/branneman/nodejs-app-boilerplate/blob/66d77b3765731b1bf67ecaa13478027ee388b82d/app/areas/shared/layout/criticalcss/index.njk -->
-  {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
-  <link rel="preload" href="{{ style_css }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="{{ style_css }}">
-  </noscript>
+<!-- Load remaining CSS for non-landing pages, and apply on arrival. We've got HTTP/2 at Firebase Hosting -->
+{% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
+{% if page.header_class != "landing" %}
+<link rel="stylesheet" href="{{ style_css }}">
+{% endif %}
 
-  {% if site.environment == 'production' and site.google_analytics_key != '' %}
-    <script>
-      if(navigator.userAgent.indexOf("Speed Insights") == -1) {
-        (function (e, a, t, n, c, o, s) {
-            e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
-                    (e[c].q = e[c].q || []).push(arguments)
-                }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src =
-                n, s.parentNode.insertBefore(o, s)
-        })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
-            "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
-      }
-    </script>
-  {% endif %}
+{% if site.environment == 'production' and site.google_analytics_key != '' %}
+  <script>
+    if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+      (function (e, a, t, n, c, o, s) {
+          e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
+                  (e[c].q = e[c].q || []).push(arguments)
+              }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src =
+              n, s.parentNode.insertBefore(o, s)
+      })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
+          "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
+    }
+  </script>
+{% endif %}
 </head>
