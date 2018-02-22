@@ -29,7 +29,7 @@ install:
   - nvm install 9.5
   - npm install -g gulp-cli
 
-script: gulp build --prod
+script: travis_retry gulp build --prod
 
 deploy:
   provider: firebase
