@@ -15,9 +15,17 @@ const HOSTNAME_WHITELIST = [
   "itsolver.net"
 ]
 const filesToCache = [
-  {% for page in site.html_pages %}
-  "{{ page.url }}",
-  {% endfor %}
+  "/about/",
+  "/blog/",
+  "/cloud-apps-g-suite/",
+  "/contact/",
+  "/legal/",
+  "/offline",
+  "/on-demand-tasks/",
+  "/on-demand/",
+  "/privacy/",
+  "/service-area/",
+  "/service-plans/",
   "/assets/images/customers/statewide-roofing/logo.jpg",
   "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
