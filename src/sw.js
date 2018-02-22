@@ -4,6 +4,7 @@
 const CACHE_NAME = 'itsolver-cache-v2';
 const urlsToCache = [
   "/",
+  "/sw.js",
   "/about/",
   "/blog/",
   "/cloud-apps-g-suite/",
