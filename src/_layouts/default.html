@@ -12,7 +12,9 @@
           document.body.classList.toggle("nav-open");
         });
     </script>
-    <script type="text/javascript" src="/assets/javascripts/index.js"></script>
+    {% assign fingerprinted_js = site.data.js-manifest['index.js'] | default: 'index.js' | prepend: 'assets/javascripts/' | relative_url %}
+
+    <script type="text/javascript" src="{{ fingerprinted_js }}"></script>
     <script>
       const observer = lozad(); // lazy loads elements with default selector as '.lozad'
       observer.observe();
