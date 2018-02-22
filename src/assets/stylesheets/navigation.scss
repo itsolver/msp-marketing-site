@@ -198,3 +198,17 @@ nav.right > svg {
 #open-nav > svg {
   fill: currentColor;
 }
+
+div.secondary-nav-bar{
+  display: block;
+  .right {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  a {
+    padding: 5px 20px;
+    display: inline;
+    text-align: center;
+  }
+}

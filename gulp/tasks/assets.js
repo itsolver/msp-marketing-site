@@ -38,7 +38,6 @@ gulp.task('scripts', () => {
   // top to bottom, so you want vendor scripts etc on top
   return gulp.src([
     paths.jsFiles + '/lozad.min.js',
-    paths.jsFiles + '/ac-localnav.built.min.js'
   ])
     .pipe(newer(paths.jsFilesTemp + '/index.js', { dest: paths.jsFilesTemp, ext: '.js' }))
     .pipe(when(!argv.prod, sourcemaps.init()))

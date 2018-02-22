@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+<div class="legal wrapper">
+  <section>
+    <h1>{{ page.heading }}</h1>
+    {% if page.subtitle %}
+    <p class="subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </section>
+	{{ content }}
+</div>
