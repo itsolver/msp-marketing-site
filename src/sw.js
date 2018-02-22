@@ -1,6 +1,3 @@
----
-layout: null
----
 /* ===========================================================
  * sw.js
  * ===========================================================
@@ -15,6 +12,7 @@ const HOSTNAME_WHITELIST = [
   "itsolver.net"
 ]
 const filesToCache = [
+  "/",
   "/about/",
   "/blog/",
   "/cloud-apps-g-suite/",
@@ -29,10 +27,7 @@ const filesToCache = [
   "/assets/images/customers/statewide-roofing/logo.jpg",
   "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
-  "/assets/images/gsuite-product-lockup.png",
-  "/assets/stylesheets/main.css",
-  "/index.html",
-  "/sw.js"
+  "/assets/images/gsuite-product-lockup.png"
 ];
 
 // The Util Function to hack URLs of intercepted requests
