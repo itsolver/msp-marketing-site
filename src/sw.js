@@ -16,7 +16,7 @@ const urlsToCache = [
   "/service-area/",
   "/service-plans/",
   "/assets/images/customers/statewide-roofing/logo.jpg",
-  "/assets/images/staff-angus-200.jpg",
+  "/assets/images/staff-angus.jpg",
   "/assets/images/gsuite-logo.png",
   "/assets/images/gsuite-product-lockup.png"
 ];
