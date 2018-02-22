@@ -1,7 +1,7 @@
 // Service worker to give a Progressive Web App experience.
 // Credit to Matt Gaunt - https://developers.google.com/web/fundamentals/primers/service-workers/
 
-const CACHE_NAME = 'itsolver-cache-v1';
+const CACHE_NAME = 'itsolver-cache-v2';
 const urlsToCache = [
   "/",
   "/about/",
