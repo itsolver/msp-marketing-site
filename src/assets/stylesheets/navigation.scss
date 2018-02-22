@@ -50,8 +50,6 @@ nav.right > svg {
 .nav-bar.wrapper {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: $font-small;
-
 	.logo a {
 		display: inline-block;
 	}
@@ -207,8 +205,12 @@ div.secondary-nav-bar{
     flex-wrap: wrap;
   }
   a {
-    padding: 5px 20px;
+    padding: 5px 10px 20px;
     display: inline;
     text-align: center;
+    @media only screen and (min-width: $desktop-min) {
+      padding: 5px 20px;
+    }
   }
+
 }
