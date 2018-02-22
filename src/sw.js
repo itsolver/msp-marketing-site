@@ -18,9 +18,6 @@ const filesToCache = [
   {% for page in site.html_pages %}
   "{{ page.url }}",
   {% endfor %}
-  {% for post in site.posts %}
-  "{{ post.url }}",
-  {% endfor %}
   "/assets/images/customers/statewide-roofing/logo.jpg",
   "/assets/images/qassure.jpg",
   "/assets/images/staff-angus.jpg",
