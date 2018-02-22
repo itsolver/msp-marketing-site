@@ -13,9 +13,11 @@
   <meta name="msapplication-config" content="/the_favicon/browserconfig.xml">
   <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %}
 
-<!-- Load remaining CSS for non-landing pages, and apply on arrival. We've got HTTP/2 at Firebase Hosting -->
+<!-- Inline navigation css for landing page that's missing from critical inlined css. Load remaining CSS for non-landing pages.  -->
 {% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
-{% if page.header_class != "landing" %}
+{% if page.header_class == "landing" %}
+<style>.nav-open .nav-bar.wrapper .main, .nav-open .nav-bar.wrapper .right {display: block;}</style>
+{% else %}
 <link rel="stylesheet" href="{{ style_css }}">
 {% endif %}
 
