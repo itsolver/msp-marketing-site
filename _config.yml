@@ -16,6 +16,12 @@ twitter:
   username: "itsolvernet"
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 
+# Let search engines discover this site quicker
+google_site_verification : ""
+bing_site_verification   : ""
+alexa_site_verification  : ""
+yandex_site_verification : ""
+
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: "/the_favicon/android-chrome-192x192.png"
 description: "Computer support and services for small businesses near Redland Bay. IT Solver helps small businesses get the best value from their technology investment."
