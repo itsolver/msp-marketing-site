@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2
+  - 2.4
 
 dist: trusty
 sudo: false
@@ -13,7 +13,7 @@ cache:
   bundler: true
   yarn: true
   directories:
-    - node_modules # NPM packages
+    - node_modules
 
 env:
   global:
@@ -29,6 +29,7 @@ install:
   - nvm install 9.5
   - npm install --global gulp-cli
   - npm install --save-dev gulp
+  - npm install --global yarn
   - yarn
 
 script: travis_retry gulp build --prod
