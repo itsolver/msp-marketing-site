@@ -18,12 +18,10 @@ gulp.task('site:tmp', () => {
 // 'gulp site --prod' -- builds site with production settings
 gulp.task('site', done => {
   if (!argv.prod) {
-    shell.exec('bundle install');
-    shell.exec('bundle exec jekyll build --config _config.yml,_config.dev.yml'); // To speed up site build for local testing, add --limit_posts 1
+    shell.exec('jekyll build --config _config.yml,_config.dev.yml'); // To speed up site build for local testing, add --limit_posts 1
     done();
   } else if (argv.prod) {
-    shell.exec('bundle install');
-    shell.exec('bundle exec jekyll build');
+    shell.exec('jekyll build');
     done();
   }
 });

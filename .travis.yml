@@ -3,7 +3,7 @@ rvm:
   - 2.4
 
 dist: trusty
-sudo: false
+sudo: required
 
 branches:
   only:
@@ -28,9 +28,8 @@ notifications:
 install:
   - nvm install 9.5
   - npm install --global gulp-cli
-  - npm install --save-dev gulp
-  - npm install --global yarn
-  - yarn
+  - npm install
+  - bundle install
 
 script: travis_retry gulp build --prod
 
