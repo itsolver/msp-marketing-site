@@ -26,6 +26,13 @@ gulp.task('copy:manifest', () => {
     .pipe(gulp.dest(paths.imageFilesSite))
 });
 
+// 'gulp copy:audio' -- copies audio to /dist/
+gulp.task('copy:audio', () => {
+  return gulp.src(paths.audioFilesGlob)
+    .pipe(newer(paths.audioFilesSite))
+    .pipe(gulp.dest(paths.audioFilesSite))
+});
+
 // 'gulp copy:site' -- copies processed Jekyll site to /dist/
 gulp.task('copy:site', () => {
   return gulp.src([paths.tempDir + paths.siteFolderName + '/**/*', paths.tempDir + paths.siteFolderName + '/**/.*'])

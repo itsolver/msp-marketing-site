@@ -13,6 +13,7 @@ paths.siteFolderName     = 'dist';
 paths.sourceFolderName   = 'src';
 paths.stylesFolderName   = 'stylesheets';
 paths.tempFolderName     = '.tmp';
+paths.audioFolderName    = 'audio';
 
 paths.prodUrl            = 'https://www.itsolver.net';
 
@@ -28,6 +29,7 @@ paths.jsFiles            = paths.sourceDir + paths.assetsDir + paths.scriptFolde
 paths.iconFiles          = paths.sourceDir + paths.assetsDir + paths.iconFolderName;
 paths.imageFiles         = paths.sourceDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFiles          = paths.sourceDir + paths.assetsDir + paths.fontFolderName;
+paths.audioFiles         = paths.sourceDir + paths.assetsDir + paths.audioFolderName;
 
 // Temp asset files locations.
 paths.assetFilesTemp     = paths.tempDir + paths.assetsFolderName
@@ -36,6 +38,7 @@ paths.jsFilesTemp        = paths.tempDir + paths.assetsDir + paths.scriptFolderN
 paths.iconFilesTemp      = paths.tempDir + paths.assetsDir + paths.iconFolderName;
 paths.imageFilesTemp     = paths.tempDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFilesTemp      = paths.tempDir + paths.assetsDir + paths.fontFolderName;
+paths.audioFilesTemp     = paths.tempDir + paths.assetsDir + paths.audioFolderName;
 
 // Site asset files locations.
 paths.assetFilesSite     = paths.siteDir + paths.assetsFolderName
@@ -44,6 +47,8 @@ paths.jsFilesSite        = paths.siteDir + paths.assetsDir + paths.scriptFolderN
 paths.iconFilesSite      = paths.siteDir + paths.assetsDir + paths.iconFolderName;
 paths.imageFilesSite     = paths.siteDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFilesSite      = paths.siteDir + paths.assetsDir + paths.fontFolderName;
+paths.audioFilesSite     = paths.siteDir + paths.assetsDir + paths.audioFolderName;
+
 
 // Glob patterns by file type.
 paths.sassPattern        = '/**/*.scss';
@@ -54,6 +59,7 @@ paths.htmlPattern        = '/**/*.html';
 paths.txtPattern         = '/**/*.txt';
 paths.xmlPattern         = '/**/*.{xml,json}';
 paths.ymlPattern         = '/**/*.yml';
+paths.audioPattern       = '/**/*.(mp3|ogg|wav)';
 
 // File globs
 paths.htmlFilesGlob      = paths.sourceFolderName + paths.htmlPattern
@@ -64,5 +70,6 @@ paths.sassFilesGlob      = paths.sassFiles + paths.sassPattern
 paths.txtFilesGlob       = paths.sourceFolderName + paths.txtPattern
 paths.xmlFilesGlob       = paths.sourceFolderName + paths.xmlPattern
 paths.ymlFilesGlob       = paths.sourceFolderName + paths.ymlPattern
+paths.audioFilesGlob     = paths.sourceFolderName + paths.audioPattern
 
 module.exports = paths;
