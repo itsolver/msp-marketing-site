@@ -59,7 +59,7 @@ paths.htmlPattern        = '/**/*.html';
 paths.txtPattern         = '/**/*.txt';
 paths.xmlPattern         = '/**/*.{xml,json}';
 paths.ymlPattern         = '/**/*.yml';
-paths.audioPattern       = '/**/*.(mp3|ogg|wav)';
+paths.audioPattern       = '/**/*.+(mp3|ogg|wav)';
 
 // File globs
 paths.htmlFilesGlob      = paths.sourceFolderName + paths.htmlPattern
