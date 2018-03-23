@@ -2,7 +2,6 @@
 	<span>Share with:</span>
 	<ul>
 		<li><a class="twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url={{ include.url | prepend: site.url | cgi_escape }}">{% include svgs/social-icon.html icon="Twitter" %}</a></li>
-		<li><a class="facebook" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ include.url | prepend: site.url | cgi_escape }}">{% include svgs/social-icon.html icon="Facebook" %}</a></li>
 		<li><a class="google-plus" target="_blank" rel="noopener" href="https://plus.google.com/share?url={{ include.url | prepend: site.url | cgi_escape }}">{% include svgs/social-icon.html icon="Google-Plus" %}</a></li>
 	</ul>
 </div>

@@ -28,13 +28,6 @@
   - name: Blog
     link: /blog/
     social_icon: IT-Solver
-  - name: Message Us
-    link: https://m.me/346353632068707
-    social_icon: Messenger
-  - name: Facebook
-    link: https://facebook.com/itsolver.net
-    social_icon: Facebook
-    new_window: true
   - name: Twitter
     link: https://twitter.com/itsolvernet
     social_icon: Twitter
