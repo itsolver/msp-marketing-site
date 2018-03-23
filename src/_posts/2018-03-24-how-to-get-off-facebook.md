@@ -1,5 +1,5 @@
 ---
-title: How to get off the Facebook grid
+title: How to get off Facebook
 author: angus
 image: /assets/images/delete-facebook-owned-ios-apps-700.png
 image_alt: Deleting iOS apps owned by Facebook
