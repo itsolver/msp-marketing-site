@@ -11,11 +11,9 @@ In light of the Facebook scandal this week, I have deleted my Facebook, Instagra
 
 {% include audio.html src="/assets/audio/triplej-hack-facebook-scandal-23-03-2018.mp3" %} [Triple J Hack](http://www.abc.net.au/triplej/programs/hack/hack/9559680) on the Facebook scandal.
 
-Facebook for me was mostly promoting my business and connecting with my family, but I have alternatives.
+Facebook for me was about promoting my business and connecting with my family. My business will do fine without Facebook and we have alternative channels.
 
-**Want to stay up to date with the latest IT Solver news? [Subscribe to this blog](/blog) or follow [IT Solver on Twitter](https://twitter.com/itsolvernet).**
-
-Here I detail how I freed myself from Facebook surveillance, and at the end I have included alternative apps to Facebook.
+Here is the process of how I freed myself from Facebook surveillance. At the end I have included alternative apps to Facebook.
 
 ### Understand your options
 You have a choice to make if you want to get off Facebook: [deactivate or delete](https://www.facebook.com/help/359046244166395/). Deactivating is temporary — you can return to the site at any time. Deleting is forever — much (not necessarily [all](https://www.facebook.com/help/224562897555674/?ref=u2u)) of your content disappears, and you can’t ever get it back.
@@ -61,3 +59,6 @@ Pages: [Google Business](https://business.google.com), a blog or website.
 
 ### Go further to improve your digital security
 Learn more about [Surveillance Self-Defense](https://ssd.eff.org/).
+
+## Stay up to date with the latest IT Solver news
+[Subscribe to this blog](https://www.itsolver.net/blog) or follow [IT Solver on Twitter](https://twitter.com/itsolvernet).
