@@ -170,6 +170,9 @@ textarea {
 		transform: translateY(-50%);
 		left: 20px;
 		font-size: 19px;
+		svg {
+			fill: $form-icon-color;;
+		}
 	}
 
 	input[type="text"],
