@@ -19,20 +19,6 @@ description: This is a list of all the tasks we will do as part of your Service 
     {% endfor %}
 </dl>
 
-<h2>Tasks Excluded</h2>
-<dl class="faq">
-    {% for column in site.data.tasks %}
-    {% for task in column.tasks-excluded %}
-        <div>
-            {% if task.header %}
-            <dt>{{ task.header }}</dt>
-            {% endif %}
-            <dd>{{ task.task }}</dd>
-        </div>
-    {% endfor %}
-    {% endfor %}
-</dl>
-
 <h2>Platforms</h2>
 <dl class="faq">
         {% for column in site.data.tasks %}
@@ -43,3 +29,12 @@ description: This is a list of all the tasks we will do as part of your Service 
         {% endfor %}
         {% endfor %}
 </dl>
+
+<h4>Conditions</h4>
+{% for column in site.data.tasks %}
+{% for condition in column.conditions %}
+<ol class="conditions">
+<li>{{ condition.condition }}</li>
+</ol>
+{% endfor %}
+{% endfor %}
