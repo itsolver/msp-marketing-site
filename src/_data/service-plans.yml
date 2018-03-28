@@ -4,7 +4,7 @@
   - period: / mo
   - feature: Typical IT tasks included
   - feature: $39 per additional incident
-  - feature: "Support hours: 10x5"
+  - feature: 10 x 5 support hours
   - feature: Best effort response times
 - plan:
   - name: Business
@@ -12,7 +12,7 @@
   - period: / mo
   - feature: Unlimited support incidents
   - feature: One incident at a time
-  - feature: 10x5 support hours
+  - feature: 10 x 5 support hours
   - feature: Quicker response times
   - feature: Monthly written activity report
   - feature: Quarterly strategic consult
@@ -23,10 +23,9 @@
   - period: / mo
   - feature: Unlimited support incidents
   - feature: Two incidents at a time
-  - feature: 10x5 + weekends
+  - feature: 10 x 5 + weekends
   - feature: 24 x 7 for P1 incidents
   - feature: Quickest response times
   - feature: Monthly written activity report
   - feature: Quarterly strategic consult
 
-  
