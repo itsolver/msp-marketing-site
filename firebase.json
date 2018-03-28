@@ -235,6 +235,12 @@
         "key" : "Cache-Control",
         "value" : "max-age=31536000"
       } ]
+    }, {
+      "source" : "sw.js",
+      "headers" : [ {
+        "key" : "Cache-Control",
+        "value" : "max-age=300"
+      } ]
       }, {
       "source" : "404.html",
       "headers" : [ {
