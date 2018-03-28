@@ -2,16 +2,18 @@
   - name: Solo
   - fee: 219
   - period: / mo
-  - feature: Common IT tasks included
-  - feature: $39 per incident
+  - feature: Typical IT tasks included
+  - feature: $39 per additional incident
+  - feature: "Support hours: 10x5"
+  - feature: Best effort response times
 - plan:
   - name: Business
   - fee: 599
   - period: / mo
-  - feature: Unlimited support
+  - feature: Unlimited support incidents
   - feature: One incident at a time
+  - feature: 10x5 support hours
   - feature: Quicker response times
-  - feature: On-site service
   - feature: Monthly written activity report
   - feature: Quarterly strategic consult
   - highlight: true
@@ -19,12 +21,12 @@
   - name: Enterprise
   - fee: 3499
   - period: / mo
-  - feature: Unlimited support
+  - feature: Unlimited support incidents
   - feature: Two incidents at a time
-  - feature: Extended Support Hours
+  - feature: 10x5 + weekends
   - feature: 24 x 7 for P1 incidents
   - feature: Quickest response times
-  - feature: On-site service
   - feature: Monthly written activity report
   - feature: Quarterly strategic consult
 
+  
