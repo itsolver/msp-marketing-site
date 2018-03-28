@@ -1,6 +1,7 @@
 fee: 168
-period: / hour
-minimum: true
+period: per incident
+minimum: false
 features:
   - feature: Scope to be agreed upon prior to commencement of service
-  - feature: 90 days cover for peace of mind
+  - feature: Includes up to 60 minutes of support
+  - feature: 30 days cover for peace of mind

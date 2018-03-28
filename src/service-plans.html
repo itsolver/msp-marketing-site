@@ -8,28 +8,23 @@ layout: info-page
 faq:
   - question: What things will you do?
     answer: Lots of stuff! <a href="/on-demand-tasks/">Check out the full list here</a>.
-  - question: What is a user?
-    answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are free and don't count as additional users.
   - question: Do you offer email accounts?
     answer: Yes. You may <a href="/cloud-apps-g-suite/">purchase email accounts separately</a>.
   - question: How do I buy and pay?
     answer: Choose plan above and complete the sign up form. Payment details will be requested when we call you shortly. We accept Visa and Mastercard.
   - question: What is the payment plan?
-    answer: We offer a flexible payment plan. You can add and delete users at anytime. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.
-  - question: What is the rate for customers not on a service plan?
-    answer: $168 per hour. Billed by the minute, 1 hour minimum.
+    answer: We offer a flexible payment plan. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.
   - question: Is there a call out fee for on-site work?
-    answer: There is no call out fee for Business and Premium plans as on-site labour is included. But for the Solo Plan, travel time is billed at the hourly rate of $99 per hour.
+    answer: There is no call out fee.
   - question: What is your service area for on-site support?
     answer: <a href="/service-area">Here is a list of suburbs</a> serviced by the Business and Premium plan. Let's talk if you're outside of this area.
   - question: Have more questions?
     answer: <a href="/contact/">Contact us</a>.
 common-features:
-  - feature: Business grade antivirus by Bitdefender
-  - feature: Cloud security by Cisco Umbrella
-  - feature: Software updates
-  - feature: 24x7 Monitoring to detect issues
-  - feature: Automatically resolve issues
+  - feature: 'Support Hours: 8am-6pm Mon - Fri'
+  - feature: Hardware troubleshooting
+  - feature: Quick how-to questions
+
 ---
 <section class="pricing-section">
     <div class="pricing">
@@ -60,7 +55,7 @@ common-features:
 {% if page.common-features %}
 <div class="container common-feature-list" id="common-feature-list">
     <section>
-    <h2>Powerful Features Included in All Plans</h2>
+    <h2>Features Included in All Plans</h2>
     <ul class="list-items">
         {% for item in page.common-features %}
         <li>{{ item.feature }}</li>

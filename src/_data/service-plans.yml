@@ -1,27 +1,30 @@
 - plan:
   - name: Solo
-  - fee: 69
+  - fee: 219
   - period: / mo
-  - feature: Total Device Care
-  - feature: Minor changes cost $69
-  - feature: 1 User
+  - feature: Common IT tasks included
+  - feature: $39 per incident
 - plan:
   - name: Business
-  - fee: 199
+  - fee: 599
   - period: / mo
-  - feature: Total Device Care
   - feature: Unlimited support
-  - feature: Up to 3 Users
-  - feature: One task at a time
-  - feature: On-site labour
+  - feature: One incident at a time
+  - feature: Quicker response times
+  - feature: On-site service
+  - feature: Monthly written activity report
+  - feature: Quarterly strategic consult
   - highlight: true
 - plan:
-  - name: Premium
-  - fee: 299
+  - name: Enterprise
+  - fee: 3499
   - period: / mo
-  - feature: Total Device Care
   - feature: Unlimited support
-  - feature: Up to 5 Users
-  - feature: Two tasks at a time
-  - feature: On-site labour
-  - feature: After-hours emergencies
+  - feature: Two incidents at a time
+  - feature: Extended Support Hours
+  - feature: 24 x 7 for P1 incidents
+  - feature: Quickest response times
+  - feature: On-site service
+  - feature: Monthly written activity report
+  - feature: Quarterly strategic consult
+
