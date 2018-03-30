@@ -1,8 +1,8 @@
 ---
-permalink: /service-plans/
-title: Service Plans
+permalink: /support-plans/
+title: Support Plans
 heading: Choose the plan that’s right for you or your business.
-subtitle: IT Solver offers three service plans to cater for all levels of care.
+subtitle: IT Solver offers three support plans to cater for all levels of care.
 description: IT Solver offers managed services plans to automatically resolve all computer technical issues from remote maintenance, security updates to on-site hardware servicing. Choose from three support plans to cater for all levels of care.
 layout: info-page
 faq:
@@ -28,11 +28,11 @@ common-features:
 ---
 <section class="pricing-section">
     <div class="pricing">
-        {% for column in site.data.service-plans %}
+        {% for column in site.data.support-plans %}
 
         <div class="pricing-item">
                 {% for plan in column.plan %}
-                {% if plan.name %}{% assign {{ service-plan-name = plan.name %}
+                {% if plan.name %}{% assign {{ support-plan-name = plan.name %}
             <div class="pricing-item-section">
                 <h3 class="pricing-title">{{ plan.name }}</h3>
         {% endif %}
@@ -47,7 +47,7 @@ common-features:
                 </ul>
             </div>
 
-            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/register-{{ service-plan-name | downcase }}">CHOOSE PLAN</a>
+            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/register-{{ support-plan-name | downcase }}">CHOOSE PLAN</a>
         </div>
         {% endfor %}
     </div>
@@ -66,7 +66,7 @@ common-features:
 {% endif %}
 
 {% if page.faq %}
-	<h2>Service Plans FAQ</h2>
+	<h2>Support Plans FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
 			<div>
