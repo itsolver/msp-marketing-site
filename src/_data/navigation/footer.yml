@@ -1,15 +1,17 @@
 - links:
   - header: IT Solver
   - name: On-Demand
-    link: /on-demand/
-  - name: Service Plans
-    link: /service-plans/
+    link: /on-demand
+  - name: Support Plans
+    link: /support-plans
+  - name: Maintenance
+    link: /maintenance
   - name: Cloud Apps
-    link: /cloud-apps-g-suite/
+    link: /cloud-apps-g-suite
   - name: About
-    link: /about/
+    link: /about
   - name: Privacy & terms
-    link: /privacy/
+    link: /privacy
 - links:
   - header: Support
   - name: Help Centre
@@ -22,7 +24,7 @@
     link: tel:+61731236000
     contact_icon: phone
   - name: Contact
-    link: /contact/
+    link: /contact
 - links:
   - header: Connect
   - name: Blog

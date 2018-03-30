@@ -4,7 +4,12 @@
   highlight: false
   first: true
 - name: Service Plans
-  link: /service-plans/
+  link: /support-plans/
+  new_window: false
+  highlight: false
+  first: false
+- name: Maintenance
+  link: /maintenance/
   new_window: false
   highlight: false
   first: false
