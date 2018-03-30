@@ -1,25 +1,25 @@
 - name: On-Demand
-  link: /on-demand/
+  link: /on-demand
   new_window: false
   highlight: false
   first: true
 - name: Support Plans
-  link: /support-plans/
+  link: /support-plans
   new_window: false
   highlight: false
   first: false
 - name: Maintenance
-  link: /maintenance/
+  link: /maintenance
   new_window: false
   highlight: false
   first: false
 - name: Cloud Apps
-  link: /cloud-apps-g-suite/
+  link: /cloud-apps-g-suite
   new_window: false
   highlight: false
   first: false
 - name: Blog
-  link: /blog/
+  link: /blog
   new_window: false
   highlight: false
   first: false
