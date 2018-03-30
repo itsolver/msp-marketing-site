@@ -163,6 +163,10 @@
       "destination" : "https://get.teamviewer.com/h5rbys3",
       "type" : 301
     }, {
+      "source" : "/service-plan",
+      "destination" : "/support-plans",
+      "type" : 301
+    }, {
       "source" : "/sign-in",
       "destination" : "/service-plans",
       "type" : 301
