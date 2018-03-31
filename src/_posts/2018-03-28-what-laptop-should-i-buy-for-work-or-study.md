@@ -1,8 +1,10 @@
 ---
 title: What laptop should I buy for work or study?
 author: angus
-category: Tips & Tricks
+categories:
+- Tips-and-Tricks
 image: /assets/images/macbook-air.jpg
+image_alt: Close up of a MacBook Air
 image_featured: true
 ---
 This question comes up a lot, so here is the answer with links for more information and where to buy.
