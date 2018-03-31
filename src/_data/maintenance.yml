@@ -3,7 +3,7 @@ period: per device per month
 minimum: false
 features:
   - feature: Business grade antivirus
-  - feature: Keep your devices up to date with the latest system and third-party software updates
-  - feature: Block malicious ads and phishing threats
-  - feature: Regular health checks for security, stability and system performance
-  - feature: Automatic fixes applied for failed health checks
+  - feature: Managed software updates
+  - feature: Automatic maintenance
+  - feature: Regular health checks
+  - feature: Full protection against all types of attacks
