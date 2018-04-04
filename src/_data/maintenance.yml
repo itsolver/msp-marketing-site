@@ -1,9 +1,11 @@
 fee: 59
-period: per device per month
+period: per computer per month
 minimum: false
 features:
   - feature: Business grade antivirus
+  - feature: Advanced security management
   - feature: Managed software updates
-  - feature: Automatic maintenance
   - feature: Regular health checks
-  - feature: Full protection against all types of attacks
+  - feature: Automatic maintenance
+  - feature: Inventory
+  - feature: Reporting
