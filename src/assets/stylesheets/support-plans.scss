@@ -259,7 +259,8 @@ li.pricing-feature:last-child {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 auto 40px;
+  margin: 0 0 40px 0;
+  padding: 0;
 }
 
 .list-items>li {
@@ -275,8 +276,9 @@ li.pricing-feature:last-child {
 }
 
 .list-items li {
-  width: 48%;
-	font-size: 1.1em;
+  -webkit-flex: 0 1 50%;
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 // On Demand
