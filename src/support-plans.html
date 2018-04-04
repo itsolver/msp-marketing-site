@@ -37,7 +37,7 @@ common-features:
                 <h3 class="pricing-title">{{ plan.name }}</h3>
         {% endif %}
                 {% if plan.fee %}
-                <div class="pricing-price"><span class="pricing-currency">$</span>{{ plan.fee }}{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
+                <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
                 <ul class="pricing-feature-list">
                 {% endif %}
                 {% if plan.feature %}

@@ -89,7 +89,7 @@
 	font-size: 0.25em;
 	display: inline;
     font-weight: 500;
-    margin-left: 0;
+    margin-left: 2px;
 }
 
 .pricing-feature-list {
@@ -259,7 +259,7 @@ li.pricing-feature:last-child {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-	margin: 0 auto 40px;
+  margin: 0 auto 40px;
 }
 
 .list-items>li {
@@ -275,7 +275,7 @@ li.pricing-feature:last-child {
 }
 
 .list-items li {
-    width: 48%;
+  width: 48%;
 	font-size: 1.1em;
 }
 
