@@ -1,31 +1,30 @@
 - plan:
   - name: Solo
-  - fee: 219
-  - period: / month
+  - fee: 100
+  - period: / user / month
+  - feature: Maintenance for 1 computer
   - feature: Unlimited support incidents
-  - feature: Add/remove/changes $39 per incident
-  - feature: 10 x 5 support hours
+  - feature: One incident at a time
+  - feature: 8am-6pm Mon-Fri support hours
   - feature: Best effort response times
 - plan:
   - name: Business
-  - fee: 599
-  - period: / month
-  - feature: Unlimited support incidents
-  - feature: One incident at a time
-  - feature: 10 x 5 support hours
+  - fee: 130
+  - period: / user / month
+  - feature: <strong>Solo, plus...</strong>
+  - feature: Mobile Management Basic
   - feature: Quicker response times
-  - feature: Monthly written activity report
-  - feature: Quarterly strategic consult
+  - feature: Monthly activity report
   - highlight: true
 - plan:
   - name: Enterprise
-  - fee: 3499
-  - period: / month
-  - feature: Unlimited support incidents
+  - fee: 550
+  - period: / user / month
+  - feature: <strong>Business, plus...</strong>
+  - feature: Mobile Management Advanced
   - feature: Two incidents at a time
-  - feature: 10 x 5 + weekends
-  - feature: 24 x 7 for P1 incidents
+  - feature: 10am - 5pm Sat - Sun
+  - feature: 24 x 7 for Priority 1 incidents
   - feature: Quickest response times
-  - feature: Monthly written activity report
   - feature: Quarterly strategic consult
 
