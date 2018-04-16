@@ -1,30 +1,20 @@
 - plan:
-  - name: Solo
-  - fee: 100
-  - period: / user / month
-  - feature: Maintenance for 1 computer
-  - feature: Unlimited support incidents
-  - feature: One incident at a time
-  - feature: 8am-6pm Mon-Fri support hours
-  - feature: Best effort response times
-- plan:
   - name: Business
-  - fee: 130
-  - period: / user / month
-  - feature: <strong>Solo, plus...</strong>
-  - feature: Mobile Management Basic
-  - feature: Quicker response times
-  - feature: Monthly activity report
+  - fee: 150
+  - period: / month
+  - feature: G Suite support & training per 5 users
+  - feature: One incident at a time
+  - feature: Mobile Management
   - highlight: true
 - plan:
   - name: Enterprise
-  - fee: 550
-  - period: / user / month
-  - feature: <strong>Business, plus...</strong>
-  - feature: Mobile Management Advanced
+  - fee: 450
+  - period: / month
+  - feature: G Suite support & training per 5 users
   - feature: Two incidents at a time
-  - feature: 10am - 5pm Sat - Sun
-  - feature: 24 x 7 for Priority 1 incidents
-  - feature: Quickest response times
+  - feature: Mobile Management - Advanced
+  - feature: Faster response times
   - feature: Quarterly strategic consult
-
+- common-features:
+  - feature: Access to an expert by email, chat and phone
+  - feature: Cloud backup for G Suite
