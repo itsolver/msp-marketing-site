@@ -97,25 +97,15 @@ layout: info-page
 <!-- Import and configure the Firebase SDK -->
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
 <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
-<script src="/__/firebase/4.13.0/firebase-app.js"></script>
-<script src="/__/firebase/4.13.0/firebase-auth.js"></script>
-<script src="/__/firebase/4.13.0/firebase-database.js"></script>
+<script src="/__/firebase/4.2.0/firebase-app.js"></script>
+<script src="/__/firebase/4.2.0/firebase-auth.js"></script>
+<script src="/__/firebase/4.2.0/firebase-database.js"></script>
 <script src="/__/firebase/init.js"></script>
 
 <!-- Import Firebase UI -->
-<script src="https://cdn.firebase.com/libs/firebaseui/1.0.1/firebaseui.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
 
 <script>
-    // Initialize Firebase
-    var config = {
-    apiKey: "AIzaSyDklO6NmLUgys9z7gH5FfbdKGXhW9xQFgc",
-    authDomain: "itsolver-499d1.firebaseapp.com",
-    databaseURL: "https://itsolver-499d1.firebaseio.com",
-    projectId: "itsolver-499d1",
-    storageBucket: "",
-    messagingSenderId: "144235454278"
-  };
-  firebase.initializeApp(config);
   Stripe.setPublishableKey('pk_test_Z4WqeCfXTPJQDJE3qM1PP27Z');
   var firebaseUI = new firebaseui.auth.AuthUI(firebase.auth());
   var firebaseAuthOptions = {
