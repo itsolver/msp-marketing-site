@@ -23,6 +23,7 @@ notifications:
 install:
 - nvm install 9.5
 - npm install --global gulp-cli
+- npm install -g firebase-tools
 - npm install
 - cd functions && npm install && cd ..
 - bundle install
