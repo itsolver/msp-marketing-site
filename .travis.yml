@@ -1,44 +1,38 @@
 language: ruby
 rvm:
-  - 2.4
-
+- 2.4
 dist: trusty
 sudo: required
-
 branches:
   only:
-    - master
-
+  - master
 cache:
   bundler: true
   yarn: true
   directories:
-    - node_modules
-
+  - node_modules
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-    - secure: "K/sEAI2Tgz8TYzU+87xRVm2vOk14nuCTLZc0xRpX52EoHxxN7dVv4QGXQEnBKCj9x2M03rJHmWLxnAgbkv1twR8VMAii0LULXrfa+VMspEfHN+2jEBLOaq941nHWguAjIE1ISt3DYvfxju5MIlPDPMBoe2y4uNFwQNKd6WUUvxBJoh/Klgn2AnucRZA+cvZ46dqEEiDGhl5NOq4ZSH1kh1tXy26F/yWHi1Zj4MiLTDDaQ9UYrCwiFYTFy4wY9JHh98MK+KhSRf4YIQ8dJZNXoFLw93a0wWsWslD5kNxMe9/T+8QvF7FuqEGN2nbpjuv3jf7HxruWUo5VGQXHC+SCcmzeyuKiB07OHPDKaHLFEvOr+0Cz/n8mfRk0urfx/0BLXEXAP/SYVAGs+legmMs6cPGa1hu3UcYU2dSet8oDm4BAzbOmn/CBOImwn+J4MKZ8yQCmaffQuEkIa69UzMoeRrA92Z7ykWu7hkQsTszHKYZqfxOy73PgAqhPrybjdt7/7JzIwcFn0oKnJB6EWNPX/m8cJ2ASlrjSltDcNS/FeRlIwni9ieaGK0NDaCIIgRutYaliwW6cxougFAZTFIjivmc0zSWSqGmo5cDkqOBL3XdD+IM4rRu9OZQ65alv+dSsJjKao9eT6Y/vDCES3rTH89wcMMQ1Fedn2xYj/91OGw8=" # $FIREBASE_TOKEN
-
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: K/sEAI2Tgz8TYzU+87xRVm2vOk14nuCTLZc0xRpX52EoHxxN7dVv4QGXQEnBKCj9x2M03rJHmWLxnAgbkv1twR8VMAii0LULXrfa+VMspEfHN+2jEBLOaq941nHWguAjIE1ISt3DYvfxju5MIlPDPMBoe2y4uNFwQNKd6WUUvxBJoh/Klgn2AnucRZA+cvZ46dqEEiDGhl5NOq4ZSH1kh1tXy26F/yWHi1Zj4MiLTDDaQ9UYrCwiFYTFy4wY9JHh98MK+KhSRf4YIQ8dJZNXoFLw93a0wWsWslD5kNxMe9/T+8QvF7FuqEGN2nbpjuv3jf7HxruWUo5VGQXHC+SCcmzeyuKiB07OHPDKaHLFEvOr+0Cz/n8mfRk0urfx/0BLXEXAP/SYVAGs+legmMs6cPGa1hu3UcYU2dSet8oDm4BAzbOmn/CBOImwn+J4MKZ8yQCmaffQuEkIa69UzMoeRrA92Z7ykWu7hkQsTszHKYZqfxOy73PgAqhPrybjdt7/7JzIwcFn0oKnJB6EWNPX/m8cJ2ASlrjSltDcNS/FeRlIwni9ieaGK0NDaCIIgRutYaliwW6cxougFAZTFIjivmc0zSWSqGmo5cDkqOBL3XdD+IM4rRu9OZQ65alv+dSsJjKao9eT6Y/vDCES3rTH89wcMMQ1Fedn2xYj/91OGw8=
+  - secure: iOr5Voonpzahto4cDDtRmHeRwM9WmVhSuFikzrCEDQTXM4O0IyxK2ut0ZLTO83SZ1i0v9Tm3ujaCnmTsxd+BKIsX4RXpve2ALt2lchF0aNbjphtMTGvFRDpPJSWVIP0LNJJIajsX+FBTgXhGPPMwXQ4NF7v9cxjaiQ/uk+Db6iRHzL6oAY9gtsVp7XM95utMA7KoGbWspP1AHmh9s4gAHTRglFK+z83Dn5rXhYMLwFKnr0rDkgpwvBf+YWhaob4QUbLi9oLMafDGUNO1vfkqIcWjjTqKkmBmTZwQ40lNWqt0PJpF4RpE0W+rYCB9noNzhOlU/3JPvih9CfU/sjh5AQouhVaU3Lg8ATMzLP0r9VAvNSqk1Ko9Vy74lW4jpDLltHo1GDMZtCrfhJz15HlbbAnNBzpOaZsniXA/6/St7U9bruW/fmdgPF7wEsNzq0Urwfx7ZCRiJWxVx45rom0KbgcLugKejYOTcq0laUNDMCd7VKgrd8X8f/WhAhLOiIx4LJ3FS1wqMGszE1KJ7ADYmT9nswSVChpgUwn/1VncgAHwmBMIDvakuEFmf4wBz/KgWK02jCAzC1+x6IH+Y4WGFNYRg0zcmLwGitKGnQzFYKliFSD7Dao66HKS6srYIZvbUgag8ugtk/FDQgxKyfdedX0qjqp6BYfGjLJvPTI3tQg=
 notifications:
   email:
     on_success: never
     on_failure: change
-
 install:
-  - nvm install 9.5
-  - npm install --global gulp-cli
-  - npm install
-  - bundle install
-
+- nvm install 9.5
+- npm install --global gulp-cli
+- npm install
+- cd functions && npm install && cd ..
+- bundle install
+- firebase functions:config:set stripe.token=$STRIPETOKEN
 script: travis_retry gulp build --prod
-
 deploy:
   provider: firebase
   skip_cleanup: true
   token:
     secure: "$FIREBASE_API_TOKEN"
-  project: "itsolver-499d1"
-
+  project: itsolver-499d1
 after_deploy:
-  - gulp submit
+- gulp submit
