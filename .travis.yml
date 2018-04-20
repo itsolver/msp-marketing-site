@@ -26,7 +26,7 @@ install:
 - npm install
 - cd functions && npm install && cd ..
 - bundle install
-- firebase functions:config:set stripe.token=$STRIPETOKEN
+- firebase functions:config:set stripe.token=STRIPETOKEN
 script: travis_retry gulp build --prod
 deploy:
   provider: firebase
