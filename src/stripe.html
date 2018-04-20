@@ -106,6 +106,16 @@ layout: info-page
 <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
 
 <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDklO6NmLUgys9z7gH5FfbdKGXhW9xQFgc",
+    authDomain: "itsolver-499d1.firebaseapp.com",
+    databaseURL: "https://itsolver-499d1.firebaseio.com",
+    projectId: "itsolver-499d1",
+    storageBucket: "itsolver-499d1.appspot.com",
+    messagingSenderId: "144235454278"
+  };
+  firebase.initializeApp(config);
   Stripe.setPublishableKey('pk_test_Z4WqeCfXTPJQDJE3qM1PP27Z');
   var firebaseUI = new firebaseui.auth.AuthUI(firebase.auth());
   var firebaseAuthOptions = {
