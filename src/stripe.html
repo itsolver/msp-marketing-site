@@ -1,9 +1,11 @@
 ---
 permalink: /stripe/
-title: Stripe test
-heading: Stripe test
+title: "Stripe test"
+heading: "Stripe test"
 layout: info-page
 ---
+<script src="https://js.stripe.com/v2/"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
 <div class="container">
       <div id="app">
         <div id="firebaseui-auth-container"></div>
@@ -106,7 +108,7 @@ layout: info-page
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
 
     <script>
-      Stripe.setPublishableKey( 'pk_test_Z4WqeCfXTPJQDJE3qM1PP27Z' );
+      Stripe.setPublishableKey('pk_test_Z4WqeCfXTPJQDJE3qM1PP27Z');
       var firebaseUI = new firebaseui.auth.AuthUI(firebase.auth());
       var firebaseAuthOptions = {
         callbacks: {
