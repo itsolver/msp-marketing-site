@@ -1,20 +1,21 @@
 - plan:
   - name: Business
   - fee: 150
-  - period: / month
-  - feature: G Suite support & training per 5 users
+  - period: / month / 5 users
+  - feature: G Suite support & training
+  - feature: Access to an expert
   - feature: One incident at a time
   - feature: Mobile Management
+  - feature: Cloud backup for G Suite
   - highlight: true
 - plan:
   - name: Enterprise
   - fee: 450
-  - period: / month
-  - feature: G Suite support & training per 5 users
+  - period: / month / 5 users
+  - feature: G Suite support & training
+  - feature: Access to an expert
   - feature: Two incidents at a time
-  - feature: Mobile Management - Advanced
-  - feature: Faster response times
-  - feature: Quarterly strategic consult
-- common-features:
-  - feature: Access to an expert by email, chat and phone
+  - feature: Mobile Management
   - feature: Cloud backup for G Suite
+  - feature: Faster response times
+  - feature: Quarterly strategic review
