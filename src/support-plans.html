@@ -6,8 +6,6 @@ subtitle: IT Solver offers two plans to support your business.
 description: IT Solver offers managed services plans to automatically resolve all computer technical issues from remote maintenance, security updates to on-site hardware servicing. Choose from three support plans to cater for all levels of care.
 layout: info-page
 faq:
-  - question: What tasks will you do?
-    answer: Lots of stuff! <a href="/on-demand-tasks/">Check out the full list here</a>.
   - question: Do you offer email accounts?
     answer: Yes. You may <a href="/cloud-apps-g-suite/">purchase email accounts separately</a>.
   - question: How do I buy and pay?
@@ -54,18 +52,6 @@ faq:
         {% endfor %}
     </div>
 </section>
-{% if page.common-features %}
-<div class="container common-feature-list" id="common-feature-list">
-    <section>
-    <h2>Features Included in All Plans</h2>
-    <ul class="list-items">
-        {% for item in page.common-features %}
-        <li>{{ item.feature }}</li>
-        {% endfor %}
-    </ul>
-    </section>
-</div>
-{% endif %}
 
 {% if page.faq %}
 	<h2>Support Plans FAQ</h2>
