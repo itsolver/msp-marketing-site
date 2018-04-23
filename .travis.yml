@@ -28,7 +28,7 @@ install:
 - cd functions && npm install && cd ..
 - bundle install
 - firebase use itsolver-499d1 --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set stripe.token=STRIPETOKEN --token "$FIREBASE_API_TOKEN"
+- firebase functions:config:set stripe.token="$STRIPETOKEN" --token "$FIREBASE_API_TOKEN"
 script: travis_retry gulp build --prod
 deploy:
   provider: firebase
