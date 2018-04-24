@@ -30,7 +30,8 @@ gulp.task('critical', gulp.series('styles:critical:home', 'styles:critical:archi
 
 // 'gulp build' -- same as 'gulp' but doesn't serve site
 // 'gulp build --prod' -- same as above but with production settings
-gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'critical','html', 'xml'));
+// gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'critical','html', 'xml'));
+gulp.task('build', gulp.series('clean', 'assets', 'build:site', 'critical'));
 
 // 'gulp rebuild' -- WARNING: removes all assets, images, and built site
 gulp.task('rebuild', gulp.series('clean', 'clean:images'));
