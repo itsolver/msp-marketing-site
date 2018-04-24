@@ -1,11 +1,6 @@
 {
   "hosting": {
     "public": "dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
     "redirects": [ {
       "source" : "/accepting-apple-pay-and-android-pay",
       "destination" : "/news/2017/01/04/accepting-apple-pay-and-android-pay",
