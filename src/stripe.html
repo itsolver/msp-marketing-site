@@ -12,15 +12,15 @@ layout: info-page
     <div id="firebaseui-auth-container"></div>
     <div id="loader">&hellip;</div>
     <div v-if="currentUser">
-      <h2>Hello {% raw %}{{ currentUser.email }}{% endraw %},</h2>
+      <h2>Hello {% raw %}{{ currentUser.email }}{% endraw %}{% endraw %},</h2>
       <button v-on:click="signOut">Sign out</button>
       <div v-if="stripeCustomerInitialized">
         <h3>Credit Cards</h3>
         <ul>
           <li v-for="(source, id) in sources">
             <span v-if="source.id">
-              {{ source.brand }} &hellip;{{ source.last4 }}
-              (exp. {{ source.exp_month }}/{{ source.exp_year }})
+              {% raw %}{{ source.brand }}{% endraw %} &hellip;{% raw %}{{ source.last4 }}{% endraw %}
+              (exp. {% raw %}{{ source.exp_month }}{% endraw %}/{% raw %}{{ source.exp_year }}{% endraw %})
             </span>
             <span v-else>&hellip;</span>
           </li>
@@ -51,20 +51,20 @@ layout: info-page
           </div>
           <div>
             <button v-on:click="submitNewCreditCard">Add</button>
-            {{ newCreditCard.error }}
+            {% raw %}{{ newCreditCard.error }}{% endraw %}
           </div>
         </div>
         <h3>Charges</h3>
         <ul>
           <li v-for="(charge, id) in charges">
-            {{ charge.amount }}
+            {% raw %}{{ charge.amount }}{% endraw %}
             <span v-if="charge.error">
-              {{ charge.error }}
+              {% raw %}{{ charge.error }}{% endraw %}
             </span>
             <span v-else-if="charge.outcome">
-              {{ charge.outcome.seller_message }}
-              {{ charge.source.brand }} &hellip;{{ charge.source.last4 }}
-              (exp. {{ charge.source.exp_month }}/{{ charge.source.exp_year }})
+              {% raw %}{{ charge.outcome.seller_message }}{% endraw %}
+              {% raw %}{{ charge.source.brand }}{% endraw %} &hellip;{% raw %}{{ charge.source.last4 }}{% endraw %}
+              (exp. {% raw %}{{ charge.source.exp_month }}{% endraw %}/{% raw %}{{ charge.source.exp_year }}{% endraw %})
             </span>
             <span v-else>&hellip;<span>
           </li>
@@ -76,8 +76,8 @@ layout: info-page
             <select v-model="newCharge.source">
               <option :value="null">Default payment method</option>
               <option v-for="(source, id) in sources" v-bind:value="source.id" v-if="source.id">
-                {{ source.brand }} &hellip;{{ source.last4 }}
-                (exp. {{ source.exp_month }}/{{ source.exp_year }})
+                {% raw %}{{ source.brand }}{% endraw %} &hellip;{% raw %}{{ source.last4 }}{% endraw %}
+                (exp. {% raw %}{{ source.exp_month }}{% endraw %}/{% raw %}{{ source.exp_year }}{% endraw %})
               </option>
             </select>
           </label>
@@ -89,7 +89,7 @@ layout: info-page
         </div>
         <div>
           <button v-on:click="submitNewCharge">Charge</button>
-          {{ newCharge.error }}
+          {% raw %}{{ newCharge.error }}{% endraw %}
         </div>
       </div>
       <div v-else>&hellip;</div>
