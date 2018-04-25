@@ -12,7 +12,7 @@ layout: info-page
     <div id="firebaseui-auth-container"></div>
     <div id="loader">&hellip;</div>
     <div v-if="currentUser">
-      <h2>Hello {% raw %}{{ currentUser.email }}{% endraw %}{% endraw %},</h2>
+      <h2>Hello {% raw %}{{ currentUser.email }}{% endraw %},</h2>
       <button v-on:click="signOut">Sign out</button>
       <div v-if="stripeCustomerInitialized">
         <h3>Credit Cards</h3>
