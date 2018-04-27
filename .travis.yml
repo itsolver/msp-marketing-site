@@ -25,7 +25,6 @@ install:
 - npm install -g gulp-cli
 - npm install -g firebase-tools
 - npm install
-- cd functions && npm install && cd ..
 - bundle install
 - firebase use itsolver-499d1 --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.token="$STRIPETOKEN" --token "$FIREBASE_API_TOKEN"
