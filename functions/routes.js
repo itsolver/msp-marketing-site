@@ -9,18 +9,17 @@
 
 'use strict';
 
-const config = require('/config');
-const setup = require('/setup');
-const {orders, products} = require('./orders');
+const config = require('./config');
+//const {orders, products} = require('/orders');
 const express = require('express');
-const router = express.Router();
+//const router = express.Router();
 const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
 // Render the main app HTML.
-router.get('/', (req, res) => {
-  res.render('index.html');
-});
+// app.get('/', (req, res) => {
+//   res.render('index.html');
+// });
 
 /**
  * Stripe integration to accept all types of payments with 3 POST endpoints:
@@ -35,7 +34,7 @@ router.get('/', (req, res) => {
  */
 
 // // Create an order on the backend.
-// router.post('/orders', async (req, res, next) => {
+// app.post('/orders', async (req, res, next) => {
 //   let {currency, items, email, shipping} = req.body;
 //   try {
 //     let order = await orders.create(currency, items, email, shipping);
@@ -46,7 +45,7 @@ router.get('/', (req, res) => {
 // });
 
 // // Complete payment for an order using a source.
-// router.post('/orders/:id/pay', async (req, res, next) => {
+// app.post('/orders/:id/pay', async (req, res, next) => {
 //   let {source} = req.body;
 //   try {
 //     // Retrieve the order associated to the ID.
@@ -106,7 +105,7 @@ router.get('/', (req, res) => {
 // });
 
 // // Webhook handler to process payments for sources asynchronously.
-// router.post('/webhook', async (req, res) => {
+// app.post('/webhook', async (req, res) => {
 //   let data;
 //   // Check if webhook signing is configured.
 //   if (config.stripe.webhookSecret) {
@@ -251,7 +250,7 @@ router.get('/', (req, res) => {
 //  */
 
 // // Expose the Stripe publishable key and other pieces of config via an endpoint.
-// router.get('/config', (req, res) => {
+// app.get('/config', (req, res) => {
 //   res.json({
 //     stripePublishableKey: config.stripe.publishableKey,
 //     stripeCountry: config.stripe.country,
@@ -261,7 +260,7 @@ router.get('/', (req, res) => {
 // });
 
 // // Retrieve an order.
-// router.get('/orders/:id', async (req, res) => {
+// app.get('/orders/:id', async (req, res) => {
 //   try {
 //     return res.status(200).json(await orders.retrieve(req.params.id));
 //   } catch (err) {
@@ -270,7 +269,7 @@ router.get('/', (req, res) => {
 // });
 
 // // Retrieve all products.
-// router.get('/products', async (req, res) => {
+// app.get('/products', async (req, res) => {
 //   const productList = await products.list();
 //   // Check if products exist on Stripe Account.
 //   if (products.exist(productList)) {
@@ -283,8 +282,8 @@ router.get('/', (req, res) => {
 // });
 
 // // Retrieve a product by ID.
-// router.get('/products/:id', async (req, res) => {
+// app.get('/products/:id', async (req, res) => {
 //   res.json(await products.retrieve(req.params.id));
 // });
 
-module.exports = router;
+module.exports = app;

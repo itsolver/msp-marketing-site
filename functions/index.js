@@ -1,4 +1,4 @@
-const config = require('config');
+const config = require('./config');
 const functions = require('firebase-functions');
 const express = require('express');
 const logger = require('morgan');
