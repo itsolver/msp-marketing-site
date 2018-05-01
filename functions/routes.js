@@ -10,9 +10,10 @@
 'use strict';
 
 const config = require('./config');
+const setup = require('./setup');
 //const {orders, products} = require('/orders');
 const express = require('express');
-//const router = express.Router();
+const app = express();
 const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
@@ -33,16 +34,16 @@ stripe.setApiVersion(config.stripe.apiVersion);
  * It creates a charge as soon as a non-card payment source becomes chargeable.
  */
 
-// // Create an order on the backend.
-// app.post('/orders', async (req, res, next) => {
-//   let {currency, items, email, shipping} = req.body;
-//   try {
-//     let order = await orders.create(currency, items, email, shipping);
-//     return res.status(200).json({order});
-//   } catch (err) {
-//     return res.status(500).json({error: err.message});
-//   }
-// });
+// Create an order on the backend.
+app.post('/orders', async (req, res, next) => {
+  let {currency, items, email, shipping} = req.body;
+  try {
+    let order = await orders.create(currency, items, email, shipping);
+    return res.status(200).json({order});
+  } catch (err) {
+    return res.status(500).json({error: err.message});
+  }
+});
 
 // // Complete payment for an order using a source.
 // app.post('/orders/:id/pay', async (req, res, next) => {
@@ -268,18 +269,18 @@ stripe.setApiVersion(config.stripe.apiVersion);
 //   }
 // });
 
-// // Retrieve all products.
-// app.get('/products', async (req, res) => {
-//   const productList = await products.list();
-//   // Check if products exist on Stripe Account.
-//   if (products.exist(productList)) {
-//     res.json(productList);
-//   } else {
-//     // We need to set up the products.
-//     await setup.run();
-//     res.json(await products.list());
-//   }
-// });
+// Retrieve all products.
+app.get('/products', async (req, res) => {
+  const productList = await products.list();
+  // Check if products exist on Stripe Account.
+  if (products.exist(productList)) {
+    res.json(productList);
+  } else {
+    // We need to set up the products.
+    await setup.run();
+    res.json(await products.list());
+  }
+});
 
 // // Retrieve a product by ID.
 // app.get('/products/:id', async (req, res) => {
