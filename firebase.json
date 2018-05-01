@@ -278,10 +278,12 @@
         "type": 301
       }
     ],
-    "rewrites": [{
+    "rewrites": [
+      {
         "source": "/buy/on-demand",
         "function": "app"
-      }],
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
@@ -326,6 +328,7 @@
   "functions": {
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint"
-    ]
+    ],
+    "source": "functions"
   }
 }
