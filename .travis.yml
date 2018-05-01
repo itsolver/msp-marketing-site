@@ -35,7 +35,7 @@ install:
 - firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
-- firebase deploy --only functions
+- firebase deploy --only functions --token "$FIREBASE_API_TOKEN"
 - npm install
 - bundle install
 
