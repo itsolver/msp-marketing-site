@@ -1,252 +1,325 @@
 {
   "hosting": {
     "public": "dist",
-    "redirects": [ {
-      "source" : "/accepting-apple-pay-and-android-pay",
-      "destination" : "/news/2017/01/04/accepting-apple-pay-and-android-pay",
-      "type" : 301
-    }, {
-      "source" : "/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
-      "destination" : "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
-      "type" : 301
-    }, {
-      "source" : "/angus.vcf",
-      "destination" : "/Angus_McLauchlan.vcf",
-      "type" : 301
-    }, {
-      "source" : "/angus-of-it-solver-a-genius-at-smart-tv-installation",
-      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
-      "type" : 301
-    }, {
-      "source" : "/announcing-windows-10",
-      "destination" : "/news/2014/10/01/announcing-windows-10",
-      "type" : 301
-    }, {
-      "source" : "/focus-on-business",
-      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSdeXS0LI-g-6anKAH8-aTposZyzwI7Y-seTOqOg60MUF9hO3w/viewform?usp=sf_link",
-      "type" : 301
-    }, {
-      "source" : "/benefits",
-      "destination" : "/",
-      "type" : 301
-    }, {
-      "source" : "/cal",
-      "destination" : "https://calendly.com/itsolver",
-      "type" : 301
-    }, {
-      "source" : "/category/tips-tricks",
-      "destination" : "https://www.itsolver.net/category/tips-and-tricks",
-      "type" : 301
-    }, {
-      "source" : "/community",
-      "destination" : "https://support.itsolver.net/hc/en-au/community/topics",
-      "type" : 301
-    },{
-      "source" : "/computer-support-repairs-tutoring",
-      "destination" : "/",
-      "type" : 301
-      },{
-      "source" : "/contact-us",
-      "destination" : "/contact",
-      "type" : 301
-    }, {
-      "source" : "/convienient-drop-off-location-at-russell-island",
-      "destination" : "https://www.itsolver.net/news/2014/12/01/convienient-drop-off-location-at-russell-island",
-      "type" : 301
-    }, {
-      "source" : "/exciting-changes-ahead",
-      "destination" : "/news/2013/11/27/exciting-changes-ahead",
-      "type" : 301
-    }, {
-      "source" : "/facebook-review",
-      "destination" : "https://www.facebook.com/itsolver.net/reviews/?ref=page_internal",
-      "type" : 301
-    }, {
-      "source" : "/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
-      "destination" : "/news/2015/02/20/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
-      "type" : 301
-    }, {
-      "source" : "/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
-      "destination" : "/tips-and-tricks/2014/09/26/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
-      "type" : 301
-    }, {
-      "source" : "/gsuite",
-      "destination" : "https://www.itsolver.net/cloud-apps-g-suite",
-      "type" : 301
-    }, {
-      "source" : "/g-suite-promo",
-      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLScjX2o-4ROn91ReuvuhXgReIudZyktAzEHqa_zCYOTPv0disg/viewform?embedded=true",
-      "type" : 301
-    }, {
-      "source" : "/google-review",
-      "destination" : "https://www.google.com.au/search?q=IT+Solver,+Redland+Bay+QLD,+Australiaandludocid=17884259636214375999&gws_rd=cr&ei=60eIWf2OMIKp0gTkr7KQDg#lrd=0x6b916510942d8acf:0xf831a7625f6a263f,3,5",
-      "type" : 301
-    }, {
-      "source" : "/help",
-      "destination" : "https://support.itsolver.net/hc/en-au",
-      "type" : 301
-    }, {
-      "source" : "/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
-      "destination" : "/tips-and-tricks/2015/06/01/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
-      "type" : 301
-    }, {
-      "source" : "/how-to-block-annoying-ads-and-malware",
-      "destination" : "/tips-and-tricks/2014/08/04/how-to-block-annoying-ads-and-malware",
-      "type" : 301
-    }, {
-      "source" : "/how-to-protect-our-data-in-icloud-from-snoops",
-      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
-      "type" : 301
-    }, {
-      "source" : "/how-to-protect-our-data-in-icloud-from-snoops",
-      "destination" : "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
-      "type" : 301
-    }, {
-      "source" : "/it-solver-services-unaffected-by-shellshock-software-bug",
-      "destination" : "/security-advisory/2014/09/30/it-solver-services-unaffected-by-shellshock-software-bug",
-      "type" : 301
-    }, {
-      "source" : "/keep-your-data-safe-on-windows-xp-after-april-8-2014",
-      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
-      "type" : 301
-    }, {
-      "source" : "/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
-      "destination" : "/news/security-advisory/2015/02/20/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
-      "type" : 301
-    }, {
-      "source" : "/meet-our-boy",
-      "destination" : "/news/2015/08/07/meet-our-boy",
-      "type" : 301
-    }, {
-      "source" : "/national-consumer-fraud-week-18-24-may-2015",
-      "destination" : "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
-      "type" : 301
-    }, {
-      "source" : "/No-ADSL-ports-availabe-at-Macleay-Russell-Lamb-Karragarra-Islands",
-      "destination" : "/news/2018/02/21/State-of-the-internet-at-Macleay-Russell-Lamb-Karragarra-Islands",
-      "type" : 301
-    }, {
-      "source" : "/pricing",
-      "destination" : "/service-plans",
-      "type" : 301
-    }, {
-      "source" : "/qs",
-      "destination" : "https://get.teamviewer.com/k6xf54t",
-      "type" : 301
-    }, {
-      "source" : "/register",
-      "destination" : "/service-plans",
-      "type" : 301
-    }, {
-      "source" : "/register-business",
-      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSehCi2U_gs-7uD6oYi9SO9p5Swk8gkQmZCQEsihh2dYNOYQEw/viewform?usp=sf_link",
-      "type" : 301
-    }, {
-      "source" : "/register-premium",
-      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLScMDUWtIbv3DadHBrQtctQrln038WsLFfyhPdq_to9NGEbpGQ/viewform?usp=sf_link",
-      "type" : 301
-    }, {
-      "source" : "/register-solo",
-      "destination" : "https://docs.google.com/forms/d/e/1FAIpQLSehBf1jBsAC28Xv33jdTdlV1cikqoj3sSUUsrf3yiGQKNB1CA/viewform?usp=sf_link",
-      "type" : 301
-    }, {
-      "source" : "/reset-the-net",
-      "destination" : "/news/2014/06/04/reset-the-net",
-      "type" : 301
-    }, {
-      "source" : "/rs",
-      "destination" : "https://get.teamviewer.com/h5rbys3",
-      "type" : 301
-    }, {
-      "source" : "/service-plan",
-      "destination" : "/support-plans",
-      "type" : 301
-    }, {
-      "source" : "/sign-in",
-      "destination" : "/service-plans",
-      "type" : 301
-    }, {
-      "source" : "/smart-tv-and-netflix-installations-are-easy-with-it-solver",
-      "destination" : "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
-      "type" : 301
-    }, {
-      "source" : "/special-hours-over-holiday-period",
-      "destination" : "/news/2016/11/22/special-hours-over-holiday-period",
-      "type" : 301
-    }, {
-      "source" : "/still-running-xp-after-april-8-2014",
-      "destination" : "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
-      "type" : 301
-    }, {
-      "source" : "/tech-advice-for-southern-moreton-bay-islanders",
-      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
-      "type" : 301
-    }, {
-      "source" : "/page/*",
-      "destination" : "/blog",
-      "type" : 301
-    }, {
-      "source" : "/terms-of-service",
-      "destination" : "/terms",
-      "type" : 301
-    }, {
-      "source" : "/the-future-of-television-is-here",
-      "destination" : "/news/2016/07/13/the-future-of-television-is-here",
-      "type" : 301
-    }, {
-      "source" : "/tips%20&%20tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
-      "destination" : "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
-      "type" : 301
-    }, {
-      "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads.1",
-      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
-      "type" : 301
-    }, {
-      "source" : "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads",
-      "destination" : "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
-      "type" : 301
-    }, {
-      "source" : "/vcard",
-      "destination" : "/Angus_McLauchlan.vcf",
-      "type" : 301
-    }, {
-      "source" : "/we-now-accept-paypal-here-for-mobile-payments",
-      "destination" : "/news/2014/07/02/we-now-accept-paypal-here-for-mobile-payments",
-      "type" : 301
-    }, {
-      "source" : "/were-now-using-xero",
-      "destination" : "/news/2016/01/12/we're-now-using-xero",
-      "type" : 301
-    }, {
-      "source" : "/ddg",
-      "destination" : "https://www.duckduckgo.com",
-      "type" : 301
-    } ],
-    "headers": [ {
-      "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
-      "headers" : [ {
-        "key" : "Access-Control-Allow-Origin",
-        "value" : "*"
-      } ]
-      }, {
-      "source" : "**/*.@(jpg|jpeg|gif|png|css|js|ico)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=31536000"
-      } ]
-    }, {
-      "source" : "sw.js",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=300"
-      } ]
-      }, {
-      "source" : "404.html",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=300"
-      } ]
-    } ],
+    "redirects": [
+      {
+        "source": "/accepting-apple-pay-and-android-pay",
+        "destination": "/news/2017/01/04/accepting-apple-pay-and-android-pay",
+        "type": 301
+      },
+      {
+        "source": "/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
+        "destination": "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
+        "type": 301
+      },
+      {
+        "source": "/angus.vcf",
+        "destination": "/Angus_McLauchlan.vcf",
+        "type": 301
+      },
+      {
+        "source": "/angus-of-it-solver-a-genius-at-smart-tv-installation",
+        "destination": "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
+        "type": 301
+      },
+      {
+        "source": "/announcing-windows-10",
+        "destination": "/news/2014/10/01/announcing-windows-10",
+        "type": 301
+      },
+      {
+        "source": "/focus-on-business",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdeXS0LI-g-6anKAH8-aTposZyzwI7Y-seTOqOg60MUF9hO3w/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/benefits",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/cal",
+        "destination": "https://calendly.com/itsolver",
+        "type": 301
+      },
+      {
+        "source": "/category/tips-tricks",
+        "destination": "https://www.itsolver.net/category/tips-and-tricks",
+        "type": 301
+      },
+      {
+        "source": "/community",
+        "destination": "https://support.itsolver.net/hc/en-au/community/topics",
+        "type": 301
+      },
+      {
+        "source": "/computer-support-repairs-tutoring",
+        "destination": "/",
+        "type": 301
+      },
+      {
+        "source": "/contact-us",
+        "destination": "/contact",
+        "type": 301
+      },
+      {
+        "source": "/convienient-drop-off-location-at-russell-island",
+        "destination": "https://www.itsolver.net/news/2014/12/01/convienient-drop-off-location-at-russell-island",
+        "type": 301
+      },
+      {
+        "source": "/exciting-changes-ahead",
+        "destination": "/news/2013/11/27/exciting-changes-ahead",
+        "type": 301
+      },
+      {
+        "source": "/facebook-review",
+        "destination": "https://www.facebook.com/itsolver.net/reviews/?ref=page_internal",
+        "type": 301
+      },
+      {
+        "source": "/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
+        "destination": "/news/2015/02/20/find-out-if-youve-been-spied-on-and-join-the-fight-for-privacy",
+        "type": 301
+      },
+      {
+        "source": "/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
+        "destination": "/tips-and-tricks/2014/09/26/fix-for-loss-of-cellular-service-and-touch-id-after-updating-to-ios-8-0-1-on-iphone-6-6-plus",
+        "type": 301
+      },
+      {
+        "source": "/gsuite",
+        "destination": "https://www.itsolver.net/cloud-apps-g-suite",
+        "type": 301
+      },
+      {
+        "source": "/g-suite-promo",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLScjX2o-4ROn91ReuvuhXgReIudZyktAzEHqa_zCYOTPv0disg/viewform?embedded=true",
+        "type": 301
+      },
+      {
+        "source": "/google-review",
+        "destination": "https://www.google.com.au/search?q=IT+Solver,+Redland+Bay+QLD,+Australiaandludocid=17884259636214375999&gws_rd=cr&ei=60eIWf2OMIKp0gTkr7KQDg#lrd=0x6b916510942d8acf:0xf831a7625f6a263f,3,5",
+        "type": 301
+      },
+      {
+        "source": "/help",
+        "destination": "https://support.itsolver.net/hc/en-au",
+        "type": 301
+      },
+      {
+        "source": "/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
+        "destination": "/tips-and-tricks/2015/06/01/how-can-i-prevent-ask-com-toolbar-from-being-installed-every-time-java-is-updated",
+        "type": 301
+      },
+      {
+        "source": "/how-to-block-annoying-ads-and-malware",
+        "destination": "/tips-and-tricks/2014/08/04/how-to-block-annoying-ads-and-malware",
+        "type": 301
+      },
+      {
+        "source": "/how-to-protect-our-data-in-icloud-from-snoops",
+        "destination": "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
+        "type": 301
+      },
+      {
+        "source": "/how-to-protect-our-data-in-icloud-from-snoops",
+        "destination": "/news/2014/09/03/how-to-protect-our-data-in-icloud-from-snoops",
+        "type": 301
+      },
+      {
+        "source": "/it-solver-services-unaffected-by-shellshock-software-bug",
+        "destination": "/security-advisory/2014/09/30/it-solver-services-unaffected-by-shellshock-software-bug",
+        "type": 301
+      },
+      {
+        "source": "/keep-your-data-safe-on-windows-xp-after-april-8-2014",
+        "destination": "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
+        "type": 301
+      },
+      {
+        "source": "/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
+        "destination": "/news/security-advisory/2015/02/20/lenovo-ships-computers-with-adware-that-breaks-secure-https-connections",
+        "type": 301
+      },
+      {
+        "source": "/meet-our-boy",
+        "destination": "/news/2015/08/07/meet-our-boy",
+        "type": 301
+      },
+      {
+        "source": "/national-consumer-fraud-week-18-24-may-2015",
+        "destination": "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
+        "type": 301
+      },
+      {
+        "source": "/No-ADSL-ports-availabe-at-Macleay-Russell-Lamb-Karragarra-Islands",
+        "destination": "/news/2018/02/21/State-of-the-internet-at-Macleay-Russell-Lamb-Karragarra-Islands",
+        "type": 301
+      },
+      {
+        "source": "/pricing",
+        "destination": "/service-plans",
+        "type": 301
+      },
+      {
+        "source": "/qs",
+        "destination": "https://get.teamviewer.com/k6xf54t",
+        "type": 301
+      },
+      {
+        "source": "/register",
+        "destination": "/service-plans",
+        "type": 301
+      },
+      {
+        "source": "/register-business",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSehCi2U_gs-7uD6oYi9SO9p5Swk8gkQmZCQEsihh2dYNOYQEw/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/register-premium",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLScMDUWtIbv3DadHBrQtctQrln038WsLFfyhPdq_to9NGEbpGQ/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/register-solo",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSehBf1jBsAC28Xv33jdTdlV1cikqoj3sSUUsrf3yiGQKNB1CA/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/reset-the-net",
+        "destination": "/news/2014/06/04/reset-the-net",
+        "type": 301
+      },
+      {
+        "source": "/rs",
+        "destination": "https://get.teamviewer.com/h5rbys3",
+        "type": 301
+      },
+      {
+        "source": "/service-plan",
+        "destination": "/support-plans",
+        "type": 301
+      },
+      {
+        "source": "/sign-in",
+        "destination": "/service-plans",
+        "type": 301
+      },
+      {
+        "source": "/smart-tv-and-netflix-installations-are-easy-with-it-solver",
+        "destination": "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
+        "type": 301
+      },
+      {
+        "source": "/special-hours-over-holiday-period",
+        "destination": "/news/2016/11/22/special-hours-over-holiday-period",
+        "type": 301
+      },
+      {
+        "source": "/still-running-xp-after-april-8-2014",
+        "destination": "/tips-and-tricks/2014/04/07/still-running-xp-after-april-8-2014",
+        "type": 301
+      },
+      {
+        "source": "/tech-advice-for-southern-moreton-bay-islanders",
+        "destination": "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
+        "type": 301
+      },
+      {
+        "source": "/page/*",
+        "destination": "/blog",
+        "type": 301
+      },
+      {
+        "source": "/terms-of-service",
+        "destination": "/terms",
+        "type": 301
+      },
+      {
+        "source": "/the-future-of-television-is-here",
+        "destination": "/news/2016/07/13/the-future-of-television-is-here",
+        "type": 301
+      },
+      {
+        "source": "/tips%20&%20tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
+        "destination": "/tips-and-tricks/2014/08/24/tech-advice-for-southern-moreton-bay-islanders",
+        "type": 301
+      },
+      {
+        "source": "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads.1",
+        "destination": "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
+        "type": 301
+      },
+      {
+        "source": "/tips-and-tricks/2017/11/30/surf-the-web-without-annoying-ads",
+        "destination": "/tips-and-tricks/2017/12/01/surf-the-web-without-annoying-ads",
+        "type": 301
+      },
+      {
+        "source": "/vcard",
+        "destination": "/Angus_McLauchlan.vcf",
+        "type": 301
+      },
+      {
+        "source": "/we-now-accept-paypal-here-for-mobile-payments",
+        "destination": "/news/2014/07/02/we-now-accept-paypal-here-for-mobile-payments",
+        "type": 301
+      },
+      {
+        "source": "/were-now-using-xero",
+        "destination": "/news/2016/01/12/we're-now-using-xero",
+        "type": 301
+      },
+      {
+        "source": "/ddg",
+        "destination": "https://www.duckduckgo.com",
+        "type": 301
+      }
+    ],
+    "rewrites": [{
+        "source": "/buy/on-demand",
+        "function": "app"
+      }],
+    "headers": [
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|css|js|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source": "sw.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=300"
+          }
+        ]
+      }
+    ],
     "cleanUrls": true,
     "trailingSlash": false
   },
