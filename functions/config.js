@@ -2,6 +2,7 @@
  * config.js
  * Stripe Payments Demo. Created by Romain Huet (@romainhuet).
  */
+const functions = require('firebase-functions');
 
 'use strict';
 
