@@ -5,9 +5,6 @@
 
 'use strict';
 
-// Load environment variables from the `.env` file.
-require('dotenv').config();
-
 module.exports = {
   // Default country for the checkout form.
   country: 'AU',
@@ -29,10 +26,10 @@ module.exports = {
     apiVersion: '2018-02-28',
     // Use your test keys for development and live keys for real charges in production.
     // For non-card payments like iDEAL, live keys will redirect to real banking sites.
-    publishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
-    secretKey: process.env.STRIPE_SECRET_KEY,
+    publishableKey: functions.config().stripe.publishable_key,
+    secretKey: functions.config().stripe.secret_key,
     // Setting the webhook secret is good practice in order to verify signatures.
     // After creating a webhook, click to reveal details and find your signing secret.
-    webhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
+    webhookSecret: functions.config().stripe.webhook_secret,
   }
 }

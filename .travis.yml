@@ -33,9 +33,11 @@ install:
 - bundle install
 - firebase use itsolver-499d1 --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.token="$STRIPETOKEN" --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set STRIPE_PUBLISHABLE_KEY="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set STRIPE_SECRET_KEY="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set STRIPE_WEBHOOK_SECRET="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
+- echo "$STRIPE_PUBLISHABLE_KEY"
+- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
+- firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
+- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
+
 script: travis_retry gulp build --prod
 deploy:
   provider: firebase
