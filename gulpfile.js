@@ -16,8 +16,9 @@ gulp.task('build:site', gulp.series('site:tmp', 'site', 'copy:site'));
 gulp.task('assets', gulp.series(
   //gulp.series('scripts', 'styles'),
   // no external scripts
-  gulp.series('styles'),
-  gulp.series('images:optimize', 'images:feature', 'copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
+  gulp.series('scripts','styles'),
+  // gulp.series('images:optimize', 'images:feature', 'copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
+  gulp.series('copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
 ));
 
 // 'gulp clean' -- removes assets and files
