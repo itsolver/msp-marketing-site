@@ -20,7 +20,6 @@ stripe.setApiVersion(config.stripe.apiVersion);
 router.get('/buy/on-demand', (req, res) => {
   res.render('/buy/on-demand');
 });
-
 /**
  * Stripe integration to accept all types of payments with 3 POST endpoints:
  *
