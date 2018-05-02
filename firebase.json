@@ -280,8 +280,20 @@
     ],
     "rewrites": [
       {
-        "source": "/buy/on-demand",
+        "source": "/buy/*",
         "function": "app"
+      },
+      {
+        "source": "/config",
+        "function": "router"
+      },
+      {
+        "source": "/products",
+        "function": "router"
+      },
+      {
+        "source": "/orders",
+        "function": "router"
       }
     ],
     "headers": [
@@ -290,8 +302,8 @@
         "headers": [
           {
             "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
+            "value": "* origina"l
+ge          }
         ]
       },
       {
@@ -324,5 +336,11 @@
     ],
     "cleanUrls": true,
     "trailingSlash": false
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
+    ]
   }
 }
