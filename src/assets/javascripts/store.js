@@ -8,7 +8,7 @@
  * A production app would need to handle this very differently.
  */
 
-class store {
+class Store {
   constructor() {
     this.lineItems = [];
     this.products = {};
@@ -177,4 +177,4 @@ class store {
   }
 }
 
-window.store = new s $ tore();
+window.store = new Store();
