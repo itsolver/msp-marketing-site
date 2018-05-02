@@ -14,7 +14,7 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    // "lint": "tslint --project tsconfig.json",
+    "lint": "tslint --project tsconfig.json",
     "serve": "npm run build && firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
