@@ -12,8 +12,8 @@
           document.body.classList.toggle("nav-open");
         });
     </script>
-    {% assign fingerprinted_js = site.data.js-manifest['index.js'] | default: 'index.js' | prepend: 'assets/javascripts/' | relative_url %}
-    <script async src="{{ fingerprinted_js }}"></script>
+    <!-- {% assign fingerprinted_js = site.data.js-manifest['index.js'] | default: 'index.js' | prepend: 'assets/javascripts/' | relative_url %}
+    <script async src="{{ fingerprinted_js }}"></script> -->
     <script>
       /*! lozad.js - v1.2.0 - 2018-01-23
       * https://github.com/ApoorvSaxena/lozad.js
