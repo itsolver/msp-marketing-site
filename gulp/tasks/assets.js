@@ -37,8 +37,7 @@ gulp.task('scripts', () => {
   // NOTE: The order here is important since it's concatenated in order from
   // top to bottom, so you want vendor scripts etc on top
   return gulp.src([
-    paths.jsFiles + '/store.js',
-    paths.jsFiles + '/payments.js',
+    paths.jsFiles + '/*.js',
   ])
     .pipe(newer(paths.jsFilesTemp + '/index.js', { dest: paths.jsFilesTemp, ext: '.js' }))
     .pipe(when(!argv.prod, sourcemaps.init()))
