@@ -35,7 +35,6 @@ install:
 - firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
 - npm install
-- firebase deploy --only functions --token "$FIREBASE_API_TOKEN"
 - bundle install
 
 script: travis_retry gulp build --prod
