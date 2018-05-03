@@ -14,7 +14,6 @@ import  { Stripe } from 'stripe';
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 stripe.setApiVersion(config.stripe.apiVersion);
 
-
 // Automatically allow cross-origin requests
 router.use(cors({ origin: true }));
 
