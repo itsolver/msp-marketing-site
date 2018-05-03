@@ -23,7 +23,7 @@ router.use(cors({ origin: true }));
 
 // Render the main app HTML.
 router.get('/buy/on-demand', (req, res) => {
-  res.render('/buy/on-demand');
+  res.render('app.html');
 });
 /**
  * Stripe integration to accept all types of payments with 3 POST endpoints:
