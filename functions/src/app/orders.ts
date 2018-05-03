@@ -9,9 +9,14 @@
 
 'use strict';
 
-const config = require('./config');
-const stripe = require('stripe')(config.stripe.secretKey);
+import * as config from './config';
+import  { Stripe } from 'stripe';
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 stripe.setApiVersion(config.stripe.apiVersion);
+
+
+// Automatically allow cross-origin requests
+router.use(cors({ origin: true }));
 
 // Create an order.
 const createOrder = async (currency, items, email, shipping) => {

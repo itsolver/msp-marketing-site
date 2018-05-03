@@ -9,12 +9,17 @@
 
 'use strict';
 
-const config = require('./config');
-const {orders, products} = require('./orders');
-const express = require('express');
-const router = express.Router();
-const stripe = require('stripe')(config.stripe.secretKey);
+import * as config from './config';
+import {orders, products} from './orders';
+import * as cors from 'cors';
+import  { Stripe } from 'stripe';
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 stripe.setApiVersion(config.stripe.apiVersion);
+import * as express from 'express';
+const router = express.Router();
+
+// Automatically allow cross-origin requests
+router.use(cors({ origin: true }));
 
 // Render the main app HTML.
 router.get('/buy/on-demand', (req, res) => {
@@ -34,9 +39,9 @@ router.get('/buy/on-demand', (req, res) => {
 
 // Create an order on the backend.
 router.post('/orders', async (req, res, next) => {
-  let {currency, items, email, shipping} = req.body;
+  const {currency, items, email, shipping} = req.body;
   try {
-    let order = await orders.create(currency, items, email, shipping);
+    const order = await orders.create(currency, items, email, shipping);
     return res.status(200).json({order});
   } catch (err) {
     return res.status(500).json({error: err.message});
@@ -44,64 +49,64 @@ router.post('/orders', async (req, res, next) => {
 });
 
 // Complete payment for an order using a source.
-router.post('/orders/:id/pay', async (req, res, next) => {
-  let {source} = req.body;
-  try {
-    // Retrieve the order associated to the ID.
-    let order = await orders.retrieve(req.params.id);
-    // Verify that this order actually needs to be paid.
-    if (
-      order.metadata.status === 'pending' ||
-      order.metadata.status === 'paid'
-    ) {
-      return res.status(403).json({order, source});
-    }
-    // Dynamically evaluate if 3D Secure should be used.
-    if (source && source.type === 'card') {
-      // A 3D Secure source may be created referencing the card source.
-      source = await dynamic3DS(source, order, req);
-    }
-    // Demo: In test mode, replace the source with a test token so charges can work.
-    if (!source.livemode) {
-      source.id = 'tok_visa';
-    }
-    // Pay the order using the Stripe source.
-    if (source && source.status === 'chargeable') {
-      let charge, status;
-      try {
-        charge = await stripe.charges.create(
-          {
-            source: source.id,
-            amount: order.amount,
-            currency: order.currency,
-            receipt_email: order.email,
-          },
-          {
-            // Set a unique idempotency key based on the order ID.
-            // This is to avoid any race conditions with your webhook handler.
-            idempotency_key: order.id,
-          }
-        );
-      } catch (err) {
-        // This is where you handle declines and errors.
-        // For the demo we simply set to failed.
-        status = 'failed';
-      }
-      if (charge && charge.status === 'succeeded') {
-        status = 'paid';
-      } else if (charge) {
-        status = charge.status;
-      } else {
-        status = 'failed';
-      }
-      // Update the order with the charge status.
-      order = await orders.update(order.id, {metadata: {status}});
-    }
-    return res.status(200).json({order, source});
-  } catch (err) {
-    return res.status(500).json({error: err.message});
-  }
-});
+// router.post('/orders/:id/pay', async (req, res, next) => {
+//   let {source} = req.body;
+//   try {
+//     // Retrieve the order associated to the ID.
+//     let order = await orders.retrieve(req.params.id);
+//     // Verify that this order actually needs to be paid.
+//     if (
+//       order.metadata.status === 'pending' ||
+//       order.metadata.status === 'paid'
+//     ) {
+//       return res.status(403).json({order, source});
+//     }
+//     // Dynamically evaluate if 3D Secure should be used.
+//     if (source && source.type === 'card') {
+//       // A 3D Secure source may be created referencing the card source.
+//       source = await dynamic3DS(source, order, req);
+//     }
+//     // Demo: In test mode, replace the source with a test token so charges can work.
+//     if (!source.livemode) {
+//       source.id = 'tok_visa';
+//     }
+//     // Pay the order using the Stripe source.
+//     if (source && source.status === 'chargeable') {
+//       let charge, status;
+//       try {
+//         charge = await stripe.charges.create(
+//           {
+//             source: source.id,
+//             amount: order.amount,
+//             currency: order.currency,
+//             receipt_email: order.email,
+//           },
+//           {
+//             // Set a unique idempotency key based on the order ID.
+//             // This is to avoid any race conditions with your webhook handler.
+//             idempotency_key: order.id,
+//           }
+//         );
+//       } catch (err) {
+//         // This is where you handle declines and errors.
+//         // For the demo we simply set to failed.
+//         status = 'failed';
+//       }
+//       if (charge && charge.status === 'succeeded') {
+//         status = 'paid';
+//       } else if (charge) {
+//         status = charge.status;
+//       } else {
+//         status = 'failed';
+//       }
+//       // Update the order with the charge status.
+//       order = await orders.update(order.id, {metadata: {status}});
+//     }
+//     return res.status(200).json({order, source});
+//   } catch (err) {
+//     return res.status(500).json({error: err.message});
+//   }
+// });
 
 // Webhook handler to process payments for sources asynchronously.
 router.post('/webhook', async (req, res) => {
@@ -110,7 +115,7 @@ router.post('/webhook', async (req, res) => {
   if (config.stripe.webhookSecret) {
     // Retrieve the event by verifying the signature using the raw body and secret.
     let event;
-    let signature = req.headers['stripe-signature'];
+    const signature = req.headers['stripe-signature'];
     try {
       event = stripe.webhooks.constructEvent(
         req.rawBody,
@@ -223,26 +228,26 @@ router.post('/webhook', async (req, res) => {
 });
 
 // Dynamically create a 3D Secure source.
-const dynamic3DS = async (source, order, req) => {
-  // Check if 3D Secure is required, or trigger it based on a custom rule (in this case, if the amount is above a threshold).
-  if (source.card.three_d_secure === 'required' || order.amount > 5000) {
-    source = await stripe.sources.create({
-      amount: order.amount,
-      currency: order.currency,
-      type: 'three_d_secure',
-      three_d_secure: {
-        card: source.id,
-      },
-      metadata: {
-        order: order.id,
-      },
-      redirect: {
-        return_url: req.headers.origin,
-      },
-    });
-  }
-  return source;
-};
+// const dynamic3DS = async (source, order, req) => {
+//   // Check if 3D Secure is required, or trigger it based on a custom rule (in this case, if the amount is above a threshold).
+//   if (source.card.three_d_secure === 'required' || order.amount > 5000) {
+//     source = await stripe.sources.create({
+//       amount: order.amount,
+//       currency: order.currency,
+//       type: 'three_d_secure',
+//       three_d_secure: {
+//         card: source.id,
+//       },
+//       metadata: {
+//         order: order.id,
+//       },
+//       redirect: {
+//         return_url: req.headers.origin,
+//       },
+//     });
+//   }
+//   return source;
+// };
 
 /**
  * Routes exposing the config as well as the ability to retrieve products and orders.
@@ -275,7 +280,6 @@ router.get('/products', async (req, res) => {
     res.json(productList);
   } else {
     // We need to set up the products.
-    await setup.run();
     res.json(await products.list());
   }
 });

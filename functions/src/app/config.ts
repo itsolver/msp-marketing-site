@@ -2,9 +2,10 @@
  * config.js
  * Stripe Payments Demo. Created by Romain Huet (@romainhuet).
  */
-const functions = require('firebase-functions');
-
 'use strict';
+
+import * as functions from 'firebase-functions';
+
 
 module.exports = {
   // Default country for the checkout form.

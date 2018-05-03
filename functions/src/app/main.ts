@@ -1,18 +1,21 @@
+// // Start writing Firebase Functions
+// // https://firebase.google.com/docs/functions/typescript
+//
+// export const helloWorld = functions.https.onRequest((request, response) => {
+//  response.send("Hello from Firebase!");
+// });
+
 'use strict';
 
-const config = require('./config');
-const functions = require('firebase-functions');
-const express = require('express');
-const cors = require('cors');
-const logger = require('morgan');
-const bodyParser = require('body-parser');
-const path = require('path');
-const {orders, products} = require('./orders');
-const stripe = require('stripe')(config.stripe.secretKey);
+import * as config from './config';
+import {orders, products} from './orders';
+import * as functions from 'firebase-functions';
+import * as express from 'express';
+import * as path from 'path';
+import * as bodyParser from 'body-parser';
+import  { Stripe } from 'stripe';
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 stripe.setApiVersion(config.stripe.apiVersion);
-
-// Automatically allow cross-origin requests
-router.use(cors({ origin: true }));
 
 const app = express();
 
@@ -35,4 +38,4 @@ app.set('view engine', 'html');
 // Define routes.
 app.use('/', require('./routes'));
 
-exports.app = functions.https.onRequest(app);
+export const app = functions.https.onRequest(app);
