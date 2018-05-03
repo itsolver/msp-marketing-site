@@ -19,6 +19,13 @@ gulp.task('copy:images', () => {
     .pipe(gulp.dest(paths.imageFilesSite))
 });
 
+// 'gulp copy:scripts' -- copies scripts to /dist/
+gulp.task('copy:scripts', () => {
+  return gulp.src(paths.jsFilesGlob)
+    .pipe(newer(paths.jsFilesSite))
+    .pipe(gulp.dest(paths.jsFilesSite))
+});
+
 // 'gulp copy:manifest' -- copies image json to /dist/
 gulp.task('copy:manifest', () => {
   return gulp.src(paths.imageFiles + '/*.json')
