@@ -33,32 +33,14 @@ gulp.task('lozadjs', shell.task([
 // 'gulp scripts' -- creates a index.js file with Sourcemap from your JavaScript files
 // 'gulp scripts --prod' -- creates a index.js file from your JavaScript files,
 //   minifies, and cache busts it (does not create a Sourcemap)
-gulp.task('scripts', () => {
-  // NOTE: The order here is important since it's concatenated in order from
-  // top to bottom, so you want vendor scripts etc on top
-  return gulp.src([
-    paths.jsFiles + '/*.js',
-  ])
-    .pipe(newer(paths.jsFilesTemp + '/index.js', { dest: paths.jsFilesTemp, ext: '.js' }))
-    .pipe(when(!argv.prod, sourcemaps.init()))
-    // concatenate scripts
-    .pipe(concat('index.js'))
-    .pipe(size({ showFiles: true }))
-    // minify for production
-    .pipe(when(argv.prod, when('*.js', uglify())))
-    // output sourcemap for development
-    .pipe(when(!argv.prod, sourcemaps.write('.')))
-    .pipe(gulp.dest(paths.jsFilesTemp))
-    // hash JS for production
-    .pipe(when(argv.prod, rev()))
-    .pipe(when(argv.prod, size({ showFiles: true })))
-    // output hashed files
-    .pipe(when(argv.prod, gulp.dest(paths.jsFilesTemp)))
-    // generate manifest of hashed CSS files
-    .pipe(rev.manifest('js-manifest.json'))
-    .pipe(gulp.dest(paths.tempDir + paths.sourceDir + paths.dataFolderName))
-    .pipe(when(argv.prod, size({ showFiles: true })))
-});
+// gulp.task('scripts', () => {
+//   // NOTE: The order here is important since it's concatenated in order from
+//   // top to bottom, so you want vendor scripts etc on top
+//   return gulp.src([
+//     paths.jsFiles + '/*.js',
+//   ])
+//   .pipe(gulp.dest(paths.jsFilesSite))
+// });
 
 // 'gulp styles' -- creates a CSS file from SCSS, adds prefixes and creates a Sourcemap
 // 'gulp styles --prod' -- creates a CSS file from your SCSS, adds prefixes,
