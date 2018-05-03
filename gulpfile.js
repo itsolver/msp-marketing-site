@@ -15,14 +15,13 @@ gulp.task('build:site', gulp.series('site:tmp', 'site', 'copy:site'));
 // 'gulp assets --prod' -- same as above but with production settings
 gulp.task('assets', gulp.series(
   //gulp.series('scripts', 'styles'),
-  // no styles = no fingerprinted index.js
   gulp.series('styles'),
   // gulp.series('images:optimize', 'images:feature', 'copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
-  gulp.series('copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
+  gulp.series('copy:assets', 'copy:scripts', 'copy:images', 'copy:manifest', 'copy:audio')
 ));
 
 // 'gulp clean' -- removes assets and files
-gulp.task('clean', gulp.parallel('clean:temp', 'clean:dist', ));
+gulp.task('clean', gulp.parallel('clean:temp', 'clean:dist' );
 
 // 'gulp critical' -- builds critical path CSS includes
 //   WARNING: run this after substantial CSS changes
