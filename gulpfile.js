@@ -21,7 +21,7 @@ gulp.task('assets', gulp.series(
 ));
 
 // 'gulp clean' -- removes assets and files
-gulp.task('clean', gulp.parallel('clean:temp', 'clean:dist' );
+gulp.task('clean', gulp.parallel('clean:temp', 'clean:dist' ));
 
 // 'gulp critical' -- builds critical path CSS includes
 //   WARNING: run this after substantial CSS changes
