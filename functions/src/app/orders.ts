@@ -10,9 +10,13 @@
 'use strict';
 
 import * as config from './config';
+import * as express from 'express';
 import  { Stripe } from 'stripe';
+import * as cors from 'cors';
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 stripe.setApiVersion(config.stripe.apiVersion);
+
+const router = express.Router();
 
 // Automatically allow cross-origin requests
 router.use(cors({ origin: true }));
@@ -62,14 +66,14 @@ const checkProducts = productList => {
   }, !!productList.data.length);
 };
 
-exports.orders = {
-  create: createOrder,
-  retrieve: retrieveOrder,
-  update: updateOrder,
+export class orders {
+  create: createOrder;
+  retrieve: retrieveOrder;
+  update: updateOrder;
 };
 
-exports.products = {
-  list: listProducts,
-  retrieve: retrieveProduct,
-  exist: checkProducts,
+export class products {
+  list: listProducts;
+  retrieve: retrieveProduct;
+  exist: checkProducts;
 };
