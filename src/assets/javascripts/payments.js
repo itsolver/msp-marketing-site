@@ -239,7 +239,7 @@
         redirect: {
           return_url: window.location.href,
         },
-        statement_descriptor: 'Stripe Payments Demo',
+        statement_descriptor: 'itsolver.net',
         metadata: {
           order: order.id,
         },
@@ -424,7 +424,7 @@
         mainElement.classList.remove('receiver');
         // Update the note about receipt and shipping (the payment has been fully confirmed by the bank).
         confirmationElement.querySelector('.note').innerText =
-          'We just sent your receipt to your email address, and Angus will call shortly.';
+          'We sent your receipt to your email address, and Angus will call shortly.';
         mainElement.classList.add('success');
         break;
     }
