@@ -1,5 +1,5 @@
-fee: 180
-period: / incident
+fee: 179
+period: / request
 minimum: false
 features:
   - feature: Scope to be agreed upon prior to commencement of service
