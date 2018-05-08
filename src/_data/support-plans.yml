@@ -1,21 +1,31 @@
 - plan:
-  - name: Business
-  - fee: 150
-  - period: / month / 5 users
+  - name: Solo
+  - fee: 49
+  - period: / month
+  - feature: Minor requests cost $49
   - feature: G Suite support & training
-  - feature: Access to an expert
-  - feature: One incident at a time
+  - feature: Dedicated expert
+  - feature: Email, chat, phone support
   - feature: Mobile Management
-  - feature: Cloud backup for G Suite
+  - highlight: true
+- plan:
+  - name: Business
+  - fee: 99
+  - period: / month / 5 users
+  - feature: Unlimited requests
+  - feature: G Suite support & training
+  - feature: Dedicated expert
+  - feature: Email, chat, phone support
+  - feature: Mobile Management
   - highlight: true
 - plan:
   - name: Enterprise
-  - fee: 450
+  - fee: 249
   - period: / month / 5 users
+  - feature: Unlimited requests
   - feature: G Suite support & training
-  - feature: Access to an expert
-  - feature: Two incidents at a time
+  - feature: Dedicated expert
+  - feature: Priority support
   - feature: Mobile Management
-  - feature: Cloud backup for G Suite
-  - feature: Faster response times
-  - feature: Quarterly strategic review
+  - feature: Cloud backup
+

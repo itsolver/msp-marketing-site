@@ -23,7 +23,7 @@
 
 @media (min-width: 694px) {
 	.pricing-item-section {
-		height: 545px;
+		height: 455px;
 	}
 }
 
@@ -54,7 +54,7 @@
 
 @media #{$mid-point}{
 	.pricing-item {
-	-webkit-flex: 0 1 40%;
+	-webkit-flex: 0 1 30%;
 	}
 }
 
