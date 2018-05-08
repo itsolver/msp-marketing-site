@@ -278,9 +278,37 @@
         "type": 301
       }
     ],
+    "rewrites": [{
+        "source": "/buy/on-demand",
+        "function": "app"
+      },
+      {
+        "source": "/config",
+        "function": "app"
+      },
+      {
+        "source": "/orders",
+        "function": "app"
+      },
+      {
+        "source": "/orders/**",
+        "function": "app"
+      },
+      {
+        "source": "/products",
+        "function": "app"
+      },
+      {
+        "source": "/products/**",
+        "function": "app"
+      },
+      {
+        "source": "/webhook",
+        "function": "app"
+      }],
     "headers": [
       {
-        "source": "buy/*",
+        "source": "/buy/*",
         "headers" : [ {
         "key" : "Access-Control-Allow-Origin",
         "value" : "*"

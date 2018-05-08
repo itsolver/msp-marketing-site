@@ -139,7 +139,7 @@ layout: info-page
           <fieldset>
             <label>
               <span>IBAN</span>
-              <input name="iban" class="field" placeholder="FR14 2004 1010 0505 0001 3M02 606" />
+              <div id="iban-element" class="field"></div>
             </label>
           </fieldset>
           <p class="notice">By providing your IBAN and confirming this payment, you’re authorizing Payments Demo and Stripe, our payment
@@ -159,7 +159,8 @@ layout: info-page
       </section>
       <button class="billing" type="submit">Pay</button>
     </form>
-    <div id="card-errors" class="payment-errors"></div>
+    <div id="card-errors" class="element-errors"></div>
+    <div id="iban-errors" class="element-errors"></div>
   </div>
   <div id="confirmation">
     <div class="status processing">
@@ -170,9 +171,8 @@ layout: info-page
     <div class="status success">
       <h1>Thanks for your order!</h1>
       <p>Yay! You successfully ordered support from IT Solver.</p>
-      <p class="note">We just sent your receipt to your email address, and Angus will call shortly.</p>
-      <button class="billing" type="submit">Pay A$180.00</button>
-      <p class="schedule"><a href="https://calendly.com/itsolver/on-demand-support">Schedule in an appointment now</a>.</p>
+      <p class="note">We just sent your receipt to your email address.</p>
+      <a class="button schedule" href="https://calendly.com/itsolver/on-demand-support">Schedule appointment</a>
     </div>
     <div class="status receiver">
       <h1>Thanks! One last step!</h1>
@@ -222,7 +222,7 @@ layout: info-page
 <!-- Stripe.js v3 for Elements -->
 <script src="https://js.stripe.com/v3/"></script>
 <!-- Library to render QR codes, required only for WeChat -->
-<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
 <!-- App -->
 <script src="/assets/javascripts/store.js"></script>
 <script src="/assets/javascripts/payments.js"></script>

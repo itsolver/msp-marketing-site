@@ -78,13 +78,7 @@ typings/
 
 # dotenv environment variables file
 .env
-functions/lib/app.module.js
-functions/lib/app.module.js.map
-functions/lib/config.js
-functions/lib/config.js.map
-functions/lib/main.js
-functions/lib/main.js.map
-functions/lib/orders.js
-functions/lib/orders.js.map
-functions/lib/routes.js
-functions/lib/routes.js.map
+
+# js and maps compiled by Firebase
+functions/lib/*js
+functions/lib/*.js.map
