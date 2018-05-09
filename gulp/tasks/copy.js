@@ -45,3 +45,9 @@ gulp.task('copy:site', () => {
   return gulp.src([paths.tempDir + paths.siteFolderName + '/**/*', paths.tempDir + paths.siteFolderName + '/**/.*'])
     .pipe(gulp.dest(paths.siteFolderName))
 });
+
+// 'gulp copy:applecert' -- copies .well-known/apple-developer-merchantid-domain-association to /dist/
+gulp.task('copy:applecert', () => {
+  return gulp.src([paths.sourceDir + '.well-known/apple-developer-merchantid-domain-association'])
+    .pipe(gulp.dest(paths.siteFolderName + '/.well-known/'))
+});
