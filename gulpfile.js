@@ -17,7 +17,7 @@ gulp.task('assets', gulp.series(
   //gulp.series('scripts', 'styles'),
   gulp.series('styles'),
   // gulp.series('images:optimize', 'images:feature', 'copy:assets', 'copy:images', 'copy:manifest', 'copy:audio')
-  gulp.series('copy:assets', 'copy:scripts', 'copy:images', 'copy:manifest', 'copy:audio')
+  gulp.series('copy:assets', 'copy:scripts', 'copy:images', 'copy:manifest', 'copy:audio', 'copy:applecert')
 ));
 
 // 'gulp clean' -- removes assets and files
