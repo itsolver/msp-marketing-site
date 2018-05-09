@@ -1,5 +1,3 @@
-/* Common styles */
-
 .pricing {
 	display: -webkit-flex;
 	display: flex;
@@ -18,17 +16,8 @@
 
 .pricing-item-section {
 	height: 100%;
-
 }
 
-@media (min-width: 694px) {
-	.pricing-item-section {
-		height: 506px;
-	}
-}
-
-/* Individual style */
-/* norbu */
 .pricing-item {
 	margin: 10px;
 	color: $text-color;
