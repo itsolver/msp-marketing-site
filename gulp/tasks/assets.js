@@ -10,7 +10,6 @@ var newer = require('gulp-newer');
 var postcss = require('gulp-postcss');
 var rename = require('gulp-rename');
 var rev = require('gulp-rev');
-var revDel = require('rev-del');
 var sass = require('gulp-sass');
 var size = require('gulp-size');
 var sourcemaps = require('gulp-sourcemaps');
@@ -67,7 +66,7 @@ gulp.task('styles', () => {
     .pipe(gulp.dest(paths.sassFilesTemp))
     // generate manifest of hashed CSS files
     .pipe(rev.manifest('css-manifest.json'))
-    .pipe(gulp.dest(paths.tempDir + paths.sourceDir + paths.dataFolderName))
+    .pipe(when(argv.prod,gulp.dest(paths.tempDir + paths.sourceDir + paths.dataFolderName)))
     .pipe(when(argv.prod, size({ showFiles: true })))
     .pipe(when(!argv.prod, browserSync.stream()))
 });
@@ -92,9 +91,9 @@ gulp.task('serve', (done) => {
   done();
 
   // watch various files for changes and do the needful
-  gulp.watch([paths.mdFilesGlob, paths.htmlFilesGlob, paths.ymlFilesGlob], gulp.series('build:site', reload));
   gulp.watch([paths.xmlFilesGlob, paths.txtFilesGlob], gulp.series('site', reload));
   gulp.watch(paths.jsFilesGlob, gulp.series('copy:scripts', reload));
   gulp.watch(paths.sassFilesGlob, gulp.series('styles', reload));
   gulp.watch(paths.imageFilesGlob, gulp.series('copy:images', reload));
+  gulp.watch([paths.mdFilesGlob, paths.htmlFilesGlob, paths.ymlFilesGlob], gulp.series('build:site', reload));
 });
