@@ -2,6 +2,6 @@ fee: 179
 period: / request
 minimum: false
 features:
-  - feature: Scope to be agreed upon prior to commencement of service
-  - feature: Includes up to 60 minutes of support
+  - feature: Submit only one support issue (a single, discrete problem) per request.
+  - feature: Includes up to 60 minutes of technical support
   - feature: 30 days cover for peace of mind
