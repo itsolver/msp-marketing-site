@@ -57,13 +57,15 @@
     "yargs": "^11.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "ejs": "^2.5.7",
     "express": "^4.15.2",
+    "firebase-admin": "^5.12.0",
     "firebase-functions": "^1.0.2",
+    "gulp-cli": "^2.0.1",
+    "morgan": "^1.8.1",
     "postcss": "^6.0.17",
     "sharp": "^0.19.0",
-    "body-parser": "^1.17.1",
-    "morgan": "^1.8.1",
     "stripe": "^4.18.0"
   },
   "browserslist": [
