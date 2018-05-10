@@ -37,7 +37,7 @@ install:
 - firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
-- echo "Stripe test keys in use"
+- Stripe test keys in use
 #- echo "Stripe live keys in use"
 - cd functions && npm install && cd ..
 - npm install
