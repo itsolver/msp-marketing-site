@@ -656,6 +656,7 @@
 #main.error #confirmation {
   visibility: visible;
   opacity: 1;
+  height: inherit;
 }
 
 #main.success #order,
