@@ -79,9 +79,5 @@ typings/
 # dotenv environment variables file
 .env
 
-# js and maps compiled by Firebase
-functions/lib/*js
-functions/lib/*.js.map
-
 # Environment variables to serve Firebase functions locally
 functions/.runtimeconfig.json
