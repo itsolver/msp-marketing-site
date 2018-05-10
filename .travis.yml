@@ -41,12 +41,7 @@ install:
 - npm install
 - bundle install
 
-script: travis_retry gulp build --prod
-deploy:
-  provider: firebase
-  skip_cleanup: true
-  token:
-    secure: "$FIREBASE_API_TOKEN"
-  project: itsolver-499d1
-after_deploy:
+script:
+- travis_retry gulp build --prod
+- firebase --non-interactive deploy --token "$FIREBASE_API_TOKEN"
 - gulp submit
