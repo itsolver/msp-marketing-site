@@ -1,4 +1,31 @@
-a.button {
+input[type=text],input[type=email],input[type=password],textarea {
+  padding: 16px;
+  outline: 0;
+  border-radius: 2px;
+  border: 1px solid #e7e7e7;
+  font-size: 1rem;
+  box-sizing: border-box
+}
+
+.form-icon {
+  position: relative
+}
+
+.form-icon i.material-icons {
+  color: #828a9b;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-size: 19px
+}
+
+.form-icon input[type=text],.form-icon input[type=email] {
+  padding-left: 54px
+}
+
+
+a.button, input[type=submit] {
 	padding: 18px $half-space;
 	display: inline-block;
 	border-radius: $border-radius;
