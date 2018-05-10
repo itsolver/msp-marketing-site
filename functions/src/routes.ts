@@ -43,7 +43,7 @@ router.post('/orders', async (req, res, next) => {
       return res.status(500).json({error: err.message});
     }
   });
-  
+
   // Complete payment for an order using a source.
   router.post('/orders/:id/pay', async (req, res, next) => {
     let {source} = req.body;
@@ -104,7 +104,7 @@ router.post('/orders', async (req, res, next) => {
       return res.status(500).json({error: err.message});
     }
   });
-  
+
   // Webhook handler to process payments for sources asynchronously.
   router.post('/webhook', async (req, res) => {
     let data;
@@ -131,7 +131,7 @@ router.post('/orders', async (req, res, next) => {
       data = req.body.data;
     }
     const object = data.object;
-  
+
     // Monitor `source.chargeable` events.
     if (
       object.object === 'source' &&
@@ -150,7 +150,7 @@ router.post('/orders', async (req, res, next) => {
       ) {
         return res.sendStatus(403);
       }
-  
+
       // Note: We're setting an idempotency key below on the charge creation to
       // prevent any race conditions. It's set to the order ID, which protects us from
       // 2 different sources becoming `chargeable` simultaneously for the same order ID.
@@ -158,7 +158,7 @@ router.post('/orders', async (req, res, next) => {
       // lock surrounding your webhook code to prevent other race conditions.
       // Read more on Stripe's best practices here for asynchronous charge creation:
       // https://stripe.com/docs/sources/best-practices#charge-creation
-  
+
       // Pay the order using the source we just received.
       let charge, status;
       try {
@@ -190,7 +190,7 @@ router.post('/orders', async (req, res, next) => {
       // Update the order status based on the charge status.
       await orders.update(order.id, {metadata: {status}});
     }
-  
+
     // Monitor `charge.succeeded` events.
     if (
       object.object === 'charge' &&
@@ -204,7 +204,7 @@ router.post('/orders', async (req, res, next) => {
       // Update the order status to mark it as paid.
       await orders.update(order.id, {metadata: {status: 'paid'}});
     }
-  
+
     // Monitor `source.failed`, `source.canceled`, and `charge.failed` events.
     if (
       (object.object === 'source' || object.object === 'charge') &&
@@ -219,11 +219,11 @@ router.post('/orders', async (req, res, next) => {
         await orders.update(order.id, {metadata: {status: 'failed'}});
       }
     }
-  
+
     // Return a 200 success code to Stripe.
     res.sendStatus(200);
   });
-  
+
   // Dynamically create a 3D Secure source.
   const dynamic3DS = async (source, order, req) => {
     // Check if 3D Secure is required, or trigger it based on a custom rule (in this case, if the amount is above a threshold).
@@ -245,11 +245,11 @@ router.post('/orders', async (req, res, next) => {
     }
     return source;
   };
-  
+
   /**
    * Routes exposing the config as well as the ability to retrieve products and orders.
    */
-  
+
   // Expose the Stripe publishable key and other pieces of config via an endpoint.
   router.get('/config', (req, res) => {
     res.json({
@@ -259,7 +259,7 @@ router.post('/orders', async (req, res, next) => {
       currency: config.currency,
     });
   });
-  
+
   // Retrieve an order.
   router.get('/orders/:id', async (req, res) => {
     try {
@@ -268,7 +268,7 @@ router.post('/orders', async (req, res, next) => {
       return res.sendStatus(404);
     }
   });
-  
+
   // Retrieve all products.
   router.get('/products', async (req, res) => {
     const productList = await products.list();
@@ -278,14 +278,14 @@ router.post('/orders', async (req, res, next) => {
     } else {
       // We need to set up the products.
       //await setup.run();
-      console.log("Products don't exist. Add products in Stripe Dashboard.");
+      console.log("ERROR: Products don't exist. Add products in Stripe Dashboard.");
       res.json(await products.list());
     }
   });
-  
+
   // Retrieve a product by ID.
   router.get('/products/:id', async (req, res) => {
     res.json(await products.retrieve(req.params.id));
   });
-  
+
   module.exports = router;
