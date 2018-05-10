@@ -42,6 +42,7 @@ install:
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
+- yarn
 
 script:
 - travis_retry gulp build --prod
