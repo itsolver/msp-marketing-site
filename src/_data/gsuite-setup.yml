@@ -1,0 +1,39 @@
+- plan:
+  - name: Startup
+  - description: Fresh account setup
+  - fee: 549
+  - feature: Unlimited mailboxes configured for your team
+  - feature: Professional project management
+  - feature: < 7 days full implementation time
+  - feature: 30 days post-project support
+  - highlight: false
+- plan:
+  - name: Solo
+  - description: 1 User Migrated
+  - fee: 899
+  - feature: Email, Contacts and Calendars migrated for 1 existing user
+  - feature: Unlimited mailboxes configured for your team
+  - feature: Professional project management
+  - feature: < 21 days full implementation time
+  - feature: 30 days post-project support
+  - highlight: false
+- plan:
+  - name: Business
+  - description: 5 Users Migrated
+  - fee: 1499
+  - feature: Email, Contacts and Calendars migrated for up to 5 existing users
+  - feature: Unlimited mailboxes configured for your team
+  - feature: Professional project management
+  - feature: < 30 days full implementation time
+  - feature: 30 days post-project support
+  - highlight: false
+- plan:
+  - name: Enterprise
+  - description: 10 Users Migrated
+  - fee: 2499
+  - feature: Email, Contacts and Calendars migrated for up to 10 existing users
+  - feature: Unlimited mailboxes configured for your team
+  - feature: Professional project management
+  - feature: < 30 days full implementation time
+  - feature: 30 days post-project support
+  - highlight: false

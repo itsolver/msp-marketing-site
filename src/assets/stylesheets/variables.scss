@@ -26,6 +26,9 @@ $tablet: '(min-width: 450px)';
 $mid-point: '(min-width: 620px)';
 $desktop: '(min-width: 768px)';
 $large-desktop:  '(min-width: 1000px)';
+$desktop-min: 930px;
+$tablet-min: 500px;
+$overhang-min: 940px;
 
 // Sizes
 $large-wrapper-width: 1200px;
@@ -58,11 +61,6 @@ $text-opacity: 0.75;
 $light-text-opacity: 0.4;
 $border-radius: 2px;
 $uppercase-letter-spacing: 1px;
-
-// Breaks
-$desktop-min: 930px;
-$tablet-min: 500px;
-$overhang-min: 940px;
 
 // Shadows
 $large-box-shadow: 0 10px 50px 0 rgba(0, 20, 180, 0.1);

@@ -3,8 +3,8 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	-webkit-justify-content: center;
-	justify-content: center;
+	-webkit-justify-content: left;
+	justify-content: left;
 	width: 100%;
   margin: 0;
   margin-bottom: 40px;
@@ -19,7 +19,6 @@
 }
 
 .pricing-item {
-	margin: 10px;
 	color: $text-color;
 	cursor: default;
 	border: 1px solid $light-shade;
@@ -31,19 +30,25 @@
 	flex-direction: column;
 	-webkit-align-items: stretch;
 	align-items: stretch;
-	text-align: center;
-	-webkit-flex: 1 1 100%;
+	text-align: left;
 }
 
 @media #{$tablet}{
 	.pricing-item {
-		-webkit-flex: 0 1 100%;
-	}
+    -webkit-flex: 0 1 100%;
+    margin: 10px 0;
+  }
+
 }
 
 @media #{$mid-point}{
-	.pricing-item {
-	-webkit-flex: 0 1 30%;
+	#gsuite-setup .pricing-item {
+    -webkit-flex: 0 1 47%;
+    margin: 10px 20px 0 0;
+  }
+  .pricing-item {
+    -webkit-flex: 0 1 31%;
+    margin: 10px 20px 0 0;
 	}
 }
 
@@ -59,6 +64,11 @@
   padding: 15px 15px 10px;
 }
 
+.pricing-item-section > p {
+  padding-left: 15px;
+  text-align: left;
+}
+
 .pricing-price {
 	font-size: 3.5em;
 	font-weight: 400;
@@ -66,6 +76,7 @@
 	z-index: 100;
 	line-height: 0.6em;
 	color: $brand-color;
+	padding-left: 15px;
 }
 
 .pricing-currency {

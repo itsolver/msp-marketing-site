@@ -9,7 +9,8 @@ layout: info-page
     <div class="product-lockup" data-customizer="hp-hero-products" data-customizer-toggle="">
       <img class="product-lockup--img"  alt="G Suite product icons of Gmail, Docs, Drive and Calendar" src="/assets/images/gsuite-product-lockup.png">
     </div>
-    <a class="button dark no-border dark-hover go-away" href="https://docs.google.com/forms/d/1qnYZOFgeLjoWO_lPZ-lI33AQFMCF5l9s1NGQIiuOoFc">GET STARTED</a>
+    <!-- <a class="button dark no-border dark-hover go-away" href="https://docs.google.com/forms/d/1qnYZOFgeLjoWO_lPZ-lI33AQFMCF5l9s1NGQIiuOoFc">GET STARTED</a> -->
+    <a class="button dark no-border dark-hover go-away" href="#gsuite-setup">GET STARTED</a>
     <p>Millions of organisations around the world count on G Suite for professional email, file storage, video meetings, online calendars, document editing and more.</p>
     <div class="gg">
         <div class="js-video">
@@ -24,6 +25,55 @@ layout: info-page
     <strong>Enterprise-level management tools</strong>
     <p>Robust admin settings give you total command over users, devices, security and more. Your data always belongs to you, and it goes with you if you switch solutions.</p>
     <h3>Designed for your workplace, starting at just AUD $5/user/month</h3>
-    <a class="button dark no-border dark-hover go-away" href="https://docs.google.com/forms/d/1qnYZOFgeLjoWO_lPZ-lI33AQFMCF5l9s1NGQIiuOoFc">START FREE TRIAL</a>
-    <p>We will email a 20% discount promo code for first 12 months and IT Solver is also rewarded a 20% bonus from Google.</p>
 </div>
+
+<section id="gsuite-setup" class="pricing-section">
+<h2>Setup Pricing for G Suite (one-time fee)</h2>
+  <div class="pricing">
+      {% for column in site.data.gsuite-setup %}
+
+      <div class="pricing-item">
+              {% for plan in column.plan %}
+              {% if plan.name %}{% assign support-plan-name = plan.name %}
+          <div class="pricing-item-section">
+              <h3 class="pricing-title">{{ plan.name }}</h3>
+              {% endif %}
+              {% if plan.description %}
+              <p>{{ plan.description }}</p>
+              {% endif %}
+
+              {% if plan.fee %}
+              <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span></div>
+              <ul class="pricing-feature-list">
+              {% endif %}
+              {% if plan.feature %}
+                  <li class="pricing-feature">{{ plan.feature }}</li>
+              {% endif %}
+              {% endfor %}
+              </ul>
+          </div>
+
+          <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/buy/gsuite-setup-{{ support-plan-name | downcase }}">CHOOSE SETUP</a>
+      </div>
+      {% endfor %}
+  </div>
+</section>
+
+{% if page.faq %}
+<h2>Support Plans FAQ</h2>
+<dl class="faq">
+  {% for item in page.faq %}
+    <div>
+      <dt class="larger-text">{{ item.question }}</dt>
+      <dd>{{ item.answer }}</dd>
+    </div>
+  {% endfor %}
+</dl>
+{% endif %}
+
+<h3>DIY Option</h3>
+<p>Running on a shoestring budget? Try to do the setup yourself. It's an easy process for a fresh account setup.</p>
+<p>Start a free trial and receive a 20% discount promo code for the first 12 months.<br/>
+  Disclaimer: IT Solver benefits receive a commission from Google for each paying user.</p>
+
+<a class="button dark no-border dark-hover go-away" href="https://docs.google.com/forms/d/1qnYZOFgeLjoWO_lPZ-lI33AQFMCF5l9s1NGQIiuOoFc">DIY SETUP & FREE TRIAL</a>
