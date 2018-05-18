@@ -1,31 +1,33 @@
 - plan:
   - name: Solo
-  - fee: 49
-  - period: / month
-  - feature: Minor requests cost $49
+  - fee: 20
+  - period: / user / month
+  - feature: 1 Request included
+  - feature: Extra Requests are $49
   - feature: G Suite support & training
-  - feature: Dedicated expert
-  - feature: Email, chat, phone support
+  - feature: Access to a Google expert
+  - feature: Email, chat & phone support
   - feature: Mobile Management
   - highlight: true
 - plan:
   - name: Business
-  - fee: 99
-  - period: / month / 5 users
-  - feature: Unlimited requests
+  - fee: 33
+  - period: / user / month
+  - feature: 1 Request included
+  - feature: Extra Requests are $49
   - feature: G Suite support & training
-  - feature: Dedicated expert
-  - feature: Email, chat, phone support
+  - feature: Access to a Google expert
+  - feature: Email, chat & phone support
   - feature: Mobile Management
   - highlight: true
 - plan:
   - name: Enterprise
-  - fee: 249
-  - period: / month / 5 users
+  - fee: 49
+  - period: / user / month
   - feature: Unlimited requests
   - feature: G Suite support & training
-  - feature: Dedicated expert
+  - feature: Access to a Google expert
   - feature: Priority support
   - feature: Mobile Management
-  - feature: Cloud backup
+  - feature: Priority support
 
