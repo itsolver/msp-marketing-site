@@ -4,7 +4,7 @@
   - fee: 549
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
-  - feature: < 7 days full implementation time
+  - feature: Less than 7 days full implementation time
   - feature: 30 days post-project support
   - highlight: false
 - plan:
@@ -14,7 +14,7 @@
   - feature: Email, Contacts and Calendars migrated for 1 existing user
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
-  - feature: < 21 days full implementation time
+  - feature: Less than 21 days full implementation time
   - feature: 30 days post-project support
   - highlight: false
 - plan:
@@ -24,7 +24,7 @@
   - feature: Email, Contacts and Calendars migrated for up to 5 existing users
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
-  - feature: < 30 days full implementation time
+  - feature: Less than 30 days full implementation time
   - feature: 30 days post-project support
   - highlight: false
 - plan:
@@ -34,6 +34,6 @@
   - feature: Email, Contacts and Calendars migrated for up to 10 existing users
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
-  - feature: < 30 days full implementation time
+  - feature: Less than 30 days full implementation time
   - feature: 30 days post-project support
   - highlight: false
