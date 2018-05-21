@@ -2,6 +2,5 @@ fee: 179
 period: / request
 minimum: false
 features:
-  - feature: Submit only one support issue (a single, discrete problem) per request.
-  - feature: Includes up to 60 minutes of technical support
+  - feature: Submit only one support issue (a single, discrete problem)
   - feature: 30 days cover for peace of mind
