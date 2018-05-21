@@ -44,12 +44,15 @@
 @media #{$mid-point}{
 	#gsuite-setup .pricing-item {
     -webkit-flex: 0 1 47%;
-    margin: 10px 20px 30px 0;
+    margin: 10px 10px 30px 0;
   }
   .pricing-item {
-    -webkit-flex: 0 1 31%;
-    margin: 10px 20px 30px 0;
-	}
+    -webkit-flex: 0 1 32%;
+    margin: 10px 10px 30px 0;
+  }
+  .pricing-item:last-child {
+    margin: 10px 0 30px 0;
+  }
 }
 
 .pricing-item.single {
@@ -93,7 +96,6 @@
 }
 
 .pricing-feature-list {
-	font-size: 1.1em;
 	margin: 10px 15px;
 	letter-spacing: 0;
 	padding: 0;
@@ -104,7 +106,8 @@
 .pricing-feature {
 	border-bottom: 1px solid rgba(0,0,0,0.15);
     text-align: left;
-	padding: 13px 4px;
+  padding: 13px 4px;
+  font-size: 0.875em;
 }
 li.pricing-feature:last-child {
 	border-bottom: 0;
