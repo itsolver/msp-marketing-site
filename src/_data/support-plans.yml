@@ -2,21 +2,23 @@
   - name: Business
   - fee: 149
   - period: / 10 users / month
-  - feature: G Suite support & training
-  - feature: 1 active request
+  - feature: On-Demand support requests for G Suite
   - feature: Unlimited requests
-  - feature: Access to a Google expert
-  - feature: Email, chat & phone support
   - feature: Mobile Management
+  - feature: Submit requests via chat, email or phone
+  - feature: Get quick answers to tech questions
+  - feature: Assisted G Suite Learning via the web
   - highlight: true
 - plan:
   - name: Enterprise
   - fee: 249
   - period: / 10 users / month
-  - feature: G Suite support & training
-  - feature: 2 active requests
+  - feature: On-Demand support requests for G Suite
   - feature: Unlimited requests
-  - feature: Access to a Google expert
-  - feature: Priority support
   - feature: Mobile Management
+  - feature: Submit requests via chat, email or phone
+  - feature: Get quick answers to tech questions
+  - feature: Assisted G Suite Learning via the web
+  - feature: Next Business Day on-site support
+  - feature: 24/7 customer support
 
