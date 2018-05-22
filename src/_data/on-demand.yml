@@ -3,4 +3,5 @@ period: / request
 minimum: false
 features:
   - feature: Submit only one support issue (a single, discrete problem)
+  - feature: Fixed fee - no call out fee or hourly rate
   - feature: 30 days cover for peace of mind
