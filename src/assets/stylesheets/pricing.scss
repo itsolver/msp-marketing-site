@@ -43,15 +43,15 @@
 
 @media #{$mid-point}{
 	#gsuite-setup .pricing-item {
-    -webkit-flex: 0 1 47%;
-    margin: 10px 10px 30px 0;
+    -webkit-flex: 0 1 40%;
+    margin: 10px 40px 40px 0;
   }
   .pricing-item {
-    -webkit-flex: 0 1 32%;
-    margin: 10px 10px 30px 0;
+    -webkit-flex: 0 1 40%;
+    margin: 10px 40px 40px 0;
   }
   .pricing-item:last-child {
-    margin: 10px 0 30px 0;
+    margin: 10px 0 40px 0;
   }
 }
 
