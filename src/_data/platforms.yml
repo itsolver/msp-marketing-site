@@ -1,0 +1,31 @@
+- platforms-supported:
+  - header: Web services
+  - name: Stripe
+  - name: Xero
+  - name: Zapier
+  - name: Zendesk
+  - name:
+- platforms-supported:
+  - header: Collaboration platforms
+  - name: Google G Suite
+  - name: Microsoft Office 365
+  - name: Apple iCloud
+- platforms-supported:
+  - header: Cloud computing platforms
+  - name: Amazon Web Services
+  - name: Google Cloud
+- platforms-supported:
+  - header: Operating systems
+  - name: Apple iOS, macOS, watchOS and tvOS
+  - name: Microsoft Windows
+  - name: Google ChromeOS
+  - name: GNU Linux - Linux Mint, Ubuntu, Debian and Fedora
+- platforms-supported:
+ - header: Physical devices
+ - name: Routers, switches and wireless access points
+ - name: Laptops, Desktops and All-in-one PCs
+ - name: Smartphones and tablets
+ - name: TVs, streaming boxes and home theatre sound systems
+ - name: Printers, scanners and multifunctional copiers
+ - name: Digital signage
+ - name: Projectors

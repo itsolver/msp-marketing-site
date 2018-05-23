@@ -143,7 +143,7 @@ li.pricing-feature:last-child {
 	margin-right: 10px;
 }
 
-.faq {
+.faq, .requests, .platforms {
 	@media #{$desktop} {
 		@include columns(2);
 	}
