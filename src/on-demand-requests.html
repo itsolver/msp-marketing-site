@@ -21,11 +21,10 @@ description: This is an example of requests we do for On-Demand Support.<br/>If 
 <dl class="platforms">
   {% for column in site.data.platforms %}
   <div>
-  {% for platform in column.platforms-supported %}
+  {% for platform in column.platforms %}
   {% if platform.header %}<dt>{{ platform.header }}</dt>{% endif %}
   {% if platform.name %}<dd>{{ platform.name }}</dd>{% endif %}
   {% endfor %}
   </div>
-
   {% endfor %}
 </dl>
