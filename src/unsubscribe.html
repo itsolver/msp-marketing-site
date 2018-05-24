@@ -1,0 +1,25 @@
+---
+permalink: /unsubscribe
+title: Unsubscribe
+heading: You have been unsubscribed.
+layout: info-page
+---
+<form name="unsub" id="myForm" method="POST" action="https://hooks.zapier.com/hooks/catch/1938955/arkfip/">
+  <input type="hidden" id="email" name="email" value="">
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  document.getElementById("email").value = window.location.hash;
+  //document.getElementById("formButton").click();
+  function SubForm (){
+  $.ajax({
+      url:'https://hooks.zapier.com/hooks/catch/1938955/arkfip/',
+      type:'post',
+      data:$('#myForm').serialize(),
+  });
+  }
+  document.onreadystatechange = function () {
+  if (document.readyState === "complete") {
+    SubForm();
+  }}
+</script>
