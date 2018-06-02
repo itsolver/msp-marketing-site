@@ -2,25 +2,25 @@
   - name: Business
   - fee: 149
   - period: / 10 users / month
-  - feature: On-Demand support requests for G Suite
+  - feature: On-Demand support requests for G Suite or Office 365
   - feature: Unlimited requests
   - feature: Mobile Management
   - feature: Submit requests via chat, email or phone
   - feature: Remote desktop support
   - feature: Get quick answers to tech questions
-  - feature: Assisted G Suite Learning via the web
+  - feature: Assisted G Suite or Office 365 Learning via the web
   - highlight: true
 - plan:
   - name: Enterprise
   - fee: 249
   - period: / 10 users / month
-  - feature: On-Demand support requests for G Suite
+  - feature: On-Demand support requests for G Suite or Office 365
   - feature: Unlimited requests
   - feature: Mobile Management
   - feature: Submit requests via chat, email or phone
   - feature: Remote desktop support
   - feature: Customer site visits
   - feature: Get quick answers to tech questions
-  - feature: Assisted G Suite Learning via the web
+  - feature: Assisted G Suite or Office 365 Learning via the web
   - feature: 24/7 customer support
 
