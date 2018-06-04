@@ -1,7 +1,7 @@
 - plan:
   - name: Business
-  - fee: 149
-  - period: / 10 users / month
+  - fee: 14.9
+  - period: / user / month
   - feature: On-Demand support requests for G Suite or Office 365
   - feature: Unlimited requests
   - feature: Mobile Management
@@ -12,8 +12,8 @@
   - highlight: true
 - plan:
   - name: Enterprise
-  - fee: 249
-  - period: / 10 users / month
+  - fee: 24.9
+  - period: / user / month
   - feature: On-Demand support requests for G Suite or Office 365
   - feature: Unlimited requests
   - feature: Mobile Management
