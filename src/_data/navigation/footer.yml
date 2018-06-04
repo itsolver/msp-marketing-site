@@ -1,13 +1,13 @@
 - links:
   - header: IT Solver
-  - name: On-Demand
-    link: /on-demand
-  - name: Support Plans
-    link: /support-plans
-  - name: Maintenance
-    link: /maintenance
   - name: Cloud Apps
     link: /cloud-apps-g-suite
+  - name: Support Plans
+    link: /support-plans
+  - name: On-Demand
+    link: /on-demand
+  - name: Maintenance
+    link: /maintenance
   - name: About
     link: /about
   - name: Privacy & terms
