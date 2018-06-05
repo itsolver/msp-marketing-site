@@ -7,5 +7,4 @@ features:
   - feature: Managed software updates
   - feature: Automatic maintenance
   - feature: Regular health checks
-  - feature: Inventory
-  - feature: Reporting
+  - feature: Inventory reports
