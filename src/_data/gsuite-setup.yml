@@ -28,7 +28,7 @@
   - feature: 30 days post-project support
   - highlight: false
 - plan:
-  - name: Enterprise
+  - name: Premium
   - description: 10 Users Migrated
   - fee: 2499
   - feature: Emails, contacts & calendars migrated for 10 users
