@@ -39,10 +39,11 @@ In addition, you get:
 Learn more: https://www.itsolver.net/maintenance
 
 ## An hourly rate for consultation
-$120/hr including GST
-Free callout in the Redlands
-1-hour minimum
-Top questions about pricing
+- $120/hr including GST
+- Free callout in the Redlands
+- 1-hour minimum
+
+## Top questions about pricing
 
 **What is a user?**
 A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are included in pricing and don't count as additional users.
@@ -52,5 +53,6 @@ Get started with a free 14-day trial of your preferred Support Plan by replying 
 
 **What is the payment plan?**
 We offer a flexible payment plan. You can add and delete users at anytime. You are billed monthly. For more information on pricing, contact Angus.
+
 
 Have any questions? Reply to this email.
