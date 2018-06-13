@@ -2,9 +2,11 @@
 ---
 title: Introducing Support Plans, On-Demand & Maintenance 
 author: angus
+image: /assets/images/sunset-boats-scenery.jpg
+image_alt: Relaxing scene of boats moared near beach at sunset
+image_featured: true
 categories:
 - News
-image_featured: false
 ---
 Today, I’m excited to launch [Support Plans](https://www.itsolver.net/support-plans), [On-Demand](https://www.itsolver.net/on-demand) and [Maintenance](https://www.itsolver.net/maintenance), a new suite of services to help businesses manage their IT environment so they can focus on growing their business. These new services, are an evolution of hourly rates and add many new features.
 
