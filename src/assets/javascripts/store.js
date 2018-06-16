@@ -54,15 +54,9 @@ class Store {
 
   // Load the product details.
   async loadProducts() {
-    const url = window.location.href;
-    const prod_id = getParameterByName('id',url);
     const productsResponse = await fetch('/products');
     const products = (await productsResponse.json()).data;
-    products.forEach(product => {
-      if(product.id === prod_id){
-        this.products[product.id] = product
-      }
-    });
+    products.forEach(product => (this.products[product.id] = product));
   }
 
   // Create an order object to represent the line items.
