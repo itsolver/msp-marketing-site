@@ -269,7 +269,7 @@
       }
     ],
     "rewrites": [{
-        "source": "/buy/on-demand",
+        "source": "/buy/**",
         "function": "app"
       },
       {
