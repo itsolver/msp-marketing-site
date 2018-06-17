@@ -2,20 +2,20 @@
 var argv = require('yargs').argv;
 var autoprefixer = require('autoprefixer');
 var browserSync = require('browser-sync').create();
-var cheerio = require('gulp-cheerio');
-var concat = require('gulp-concat');
+// var cheerio = require('gulp-cheerio');
+// var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 var gulp = require('gulp');
-var newer = require('gulp-newer');
+// var newer = require('gulp-newer');
 var postcss = require('gulp-postcss');
-var rename = require('gulp-rename');
+// var rename = require('gulp-rename');
 var rev = require('gulp-rev');
 var sass = require('gulp-sass');
 var size = require('gulp-size');
 var sourcemaps = require('gulp-sourcemaps');
-var svgmin = require('gulp-svgmin');
-var svgstore = require('gulp-svgstore');
-var uglify = require('gulp-uglify');
+// var svgmin = require('gulp-svgmin');
+// var svgstore = require('gulp-svgstore');
+// var uglify = require('gulp-uglify');
 var when = require('gulp-if');
 const shell = require('gulp-shell');
 
