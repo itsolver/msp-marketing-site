@@ -1,0 +1,8 @@
+jshint:
+  enabled: true
+rubocop:
+  enabled: true
+scss:
+  enabled: true
+tslint:
+  enabled: true
