@@ -81,3 +81,5 @@ typings/
 
 # Environment variables to serve Firebase functions locally
 .runtimeconfig.json
+lib/*.js
+*.js.map
