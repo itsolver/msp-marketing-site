@@ -1,8 +1,3 @@
-// TO DO: set environment variables for Firebase functions. Replace with your variables.
-// Get the FIREBASE_API_TOKEN from https://console.firebase.google.com/u/0/project/$YOUR_PROJECT_ID/settings/general/
-// - firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
-// - firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
-// - firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
 import * as functions from 'firebase-functions';
 /**
  * config.js
