@@ -1,5 +1,3 @@
-import * as functions from 'firebase-functions';
-
 /**
  * routes.js
  * Stripe Payments Demo. Created by Romain Huet (@romainhuet).
