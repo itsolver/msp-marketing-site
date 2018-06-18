@@ -1,15 +1,8 @@
 'use strict';
 var changed     = require('gulp-changed');
-var filter      = require('gulp-filter');
-var glob        = require('glob');
 var gulp        = require('gulp');
-var gulpif      = require('gulp-if');
-var newer       = require('gulp-newer');
-var notify      = require('gulp-notify');
-var rename      = require('gulp-rename');
 var responsive  = require('gulp-responsive');
 var size        = require('gulp-size');
-var util        = require('gulp-util');
 var imagemin    = require('gulp-imagemin');
 
 // include paths file
