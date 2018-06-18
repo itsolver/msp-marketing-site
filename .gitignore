@@ -83,3 +83,4 @@ typings/
 .runtimeconfig.json
 functions/lib/*.js
 *.js.map
+functions/.stripetestconfig
