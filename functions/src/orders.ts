@@ -41,7 +41,7 @@ const updateOrder = async (orderId, properties) => {
 
 // List all products.
 const listProducts = async () => {
-  return await stripe.products.list({limit: 1});
+  return await stripe.products.list({limit: 1, type: 'good'});
 };
 
 // Retrieve a product by ID.
