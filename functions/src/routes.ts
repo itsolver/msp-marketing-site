@@ -9,6 +9,8 @@
 
 'use strict';
 
+export {}; // fix "cannot redeclare block-scoped variable errors". Learn more: https://stackoverflow.com/a/41975448/3012870
+
 const config = require('./config');
 const {orders, products} = require('./orders');
 const express = require('express');

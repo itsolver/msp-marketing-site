@@ -9,6 +9,9 @@
 
 'use strict';
 
+// fix "cannot redeclare block-scoped variable errors". Learn more: https://stackoverflow.com/a/41975448/3012870
+export {};
+
 const config = require('./config');
 const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
