@@ -11,16 +11,16 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "body-parser": "^1.17.1",
+    "body-parser": "^1.18.3",
     "ejs": "^2.5.7",
     "express": "^4.15.2",
     "firebase-admin": "^5.12.1",
-    "firebase-functions": "^1.0.1",
+    "firebase-functions": "^1.0.4",
     "stripe": "^4.18.0"
   },
   "devDependencies": {
     "tslint": "^5.8.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.9.2"
   },
   "private": true
 }
