@@ -2,6 +2,6 @@ fee: 179
 period: / request
 minimum: false
 features:
-  - feature: Submit only one support issue (a single, discrete problem)
-  - feature: Fixed fee - no call out fee or hourly rate
+  - feature: Purchase a single incident of support (a single, discrete request)
+  - feature: Fixed rate - no call out fee or hourly rate
   - feature: 30 days cover for peace of mind
