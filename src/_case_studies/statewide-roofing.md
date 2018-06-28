@@ -13,7 +13,7 @@ challenge: |
 solution: |
   The email was migrated to Office 365, files moved into Sharepoint Online. At the same time, we also deployed new laptops to the staff with everything ready to go.
 testimonial:
-  text_markdown: "Angus is always happy and helpful. He has managed to work with professional and knowledgeable attitude, while still explaining things in terms that are understandable to me. I thank him for his patience and support in helping us upgrade our computer system and related work practices."
+  text_markdown: "Angus is always happy and helpful. He has managed to work with a professional and knowledgeable attitude, while still explaining things in terms that are understandable to me. I thank him for his patience and support in helping us upgrade our computer system and related work practices."
   image_path:
   name: Chris Rice
   work_title: Estimating
