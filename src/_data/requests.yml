@@ -1,23 +1,26 @@
 - requests-included:
   - header: Common requests
-  - request: Setup new computers
+  - request: Setup new computers, tablets and phones
   - request: Software, hardware and network upgrades
+  - request: Performance troubleshooting
   - request: Network troubleshooting
   - request: Data back-up and recovery
-  - request: Responding to a breach of security
+  - request: Responding to a security breach
 - requests-included:
   - header: Staff changes
   - request: Adding and removing users
-  - request: Onboarding staff - adding user and setup device
-  - request: Offboarding staff - removing user and wiping company data
+  - request: Onboarding staff, adding user and setup device
+  - request: Offboarding staff, removing user and wiping company data
   - request: Locating a lost device
   - request: Wiping a company owned device to prevent theft of Intellectual Property
 - requests-included:
   - header: Security
-  - request: Malware/virus removal
+  - request: Security check-up
+  - request: Privacy check-up
+  - request: Malware removal
   - request: Recovering from a tech support scam
+  - request: "Configure Cisco Umbrella, extra layer of web protection"
   - request: Advising on best practices for cyber security
-  - request: Configure Cisco Umbrella - extra layer of web protection
 - requests-included:
   - header: Photo management
   - request: Configure photos to backup to cloud storage
@@ -26,7 +29,7 @@
   - header: Software support
   - request: Direct access to an expert to answer your questions on a wide range of topics
   - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
-  - request: Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets
+  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets"
   - request: Connecting to printers and networks
   - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV’s, smartphones and tablets (eg Apple iPad).
 - requests-included:
@@ -37,20 +40,22 @@
   - request: “Send as” other emails in Google Apps (impersonation)
 - requests-included:
   - header: Web & Domain Hosting
-  - request: Editing DNS / Domain settings
+  - request: Editing Domain settings
   - request: Editing basic web hosting settings
 - requests-included:
-  - header: Operating System - Apple macOS
-  - request: Your device’s operating system
-  - request: macOS & macOS Server using command-line interface
-  - request: macOS & macOS Server in a virtual environment
+  - header: Operating System, Apple macOS, Microsoft Windows, Google ChromeOS, Linux
+  - request: Maintenance for your device’s operating system
   - request: Troubleshooting automated administrative requests & scripts
-  - request: Troubleshooting cross-platform integration (security, file and print)
-  - request: Troubleshooting Directory Services integration (including Active Directory)
+  - request: "Troubleshooting cross-platform integration (security, file and print)"
   - request: File system and RAID configuration
 - requests-included:
+  - header: Printers
+  - request: Setup Printers and Multifunctions
+  - request: Setup network scanning
+  - request: Setup Fax to email
+- requests-included:
   - header: Troubleshooting
-  - request: We diagnose and solve technology problems, such as internet connectivity, Wi-Fi, removing viruses.
+  - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
 - requests-included:
   - header: Data services
   - request: Data recovery
@@ -61,3 +66,8 @@
   - request: Resilience training
   - request: Disaster recovery
   - request: Contingency planning
+- requests-included:
+  - header: Home Entertainment
+  - request: "Install set-top boxes (e.g. Apple TV, Foxtel IQ3)"
+  - request: Setup home theatre sound systems
+  - request: Setup Smart TVs (including wall mount)
