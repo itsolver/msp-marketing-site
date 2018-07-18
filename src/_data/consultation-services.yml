@@ -20,15 +20,15 @@
   - request: Plan the migration project
   - request: Schedule the migration for a seamless transition
 - requests-included:
-  - header: Process Automation
-  - request: Assess your business workflow and processes
-  - request: Advise on how to integrate your existing apps
-  - request: Present ideas on how to make your staff more productive
-  - request: Schedule your process automation
-- requests-included:
   - header: Customer Experience
   - request: The best customer experiences are built with Zendesk
   - request: Improve resolution rates, lower support costs, and happier customers
   - request: Help you deliver a customer experience that really stands out
   - request: Demonstrate how to transform and modernize your Customer Experience
   - request: We will partner with you on a comprehensive strategy for deploying a scalable solution
+- requests-included:
+  - header: Process Automation
+  - request: Assess your business workflow and processes
+  - request: Advise on how to integrate your existing apps
+  - request: Present ideas on how to make your staff more productive
+  - request: Schedule your process automation
