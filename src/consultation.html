@@ -1,0 +1,48 @@
+---
+permalink: /consultation/
+title: Consultation
+heading: Your success partner
+layout: info-page
+description: IT Solver offers a combination of broad technology expertise and deep product knowledge to help you focus on achieving your business goals.<br/>Consultation can include but are not limited to the following services.
+---
+<section class="maintenance">
+  <div class="grid2col">
+      <div class="column first">
+          <p>{{ page.description }}</p>
+          <dl class="consultation-services">
+            {% for column in site.data.consultation-services %}
+            <div>
+            {% for request in column.requests-included %}
+              {% if request.header %}<dt>{{ request.header }}</dt>{% endif %}
+              {% if request.request %}<dd>{{ request.request }}</dd>{% endif %}
+              {% endfor %}
+            </div>
+              {% endfor %}
+          </dl>
+
+          <div class="pricing-item single">
+              <div class="pricing-price"><span class="pricing-currency">$</span>{{ site.data.consultation.fee }}<span class="pricing-period">{{ site.data.consultation.period }}</span></div>
+              <ul class="pricing-feature-list">
+                  {% for feature in site.data.consultation.features %}
+                  <li class="pricing-feature">{{ feature.feature }}</li>
+                  {% endfor %}
+              </ul>
+              <a class="dark button" href="/contact/">CONTACT SALES</a>
+          </div>
+      </div>
+
+      {% include components/cta/free-technology-audit.html %}
+  </div>
+
+</section>
+{% if page.faq %}
+	<h2>Consultation FAQ</h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}

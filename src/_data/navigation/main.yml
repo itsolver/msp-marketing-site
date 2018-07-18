@@ -18,8 +18,8 @@
   new_window: false
   highlight: false
   first: false
-- name: Blog
-  link: /blog
+- name: Consultation
+  link: /consultation
   new_window: false
   highlight: false
   first: false
