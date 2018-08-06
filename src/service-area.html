@@ -18,7 +18,7 @@ description: Here are suburbs covered by on-site support. Further down, see coun
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226396.40630591198!2d153.21902380097967!3d-27.548732357589728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b916510942d8acf%3A0xf831a7625f6a263f!2sIT+Solver!5e0!3m2!1sen!2sau!4v1516345574015" height="400" frameborder="0"></iframe>
 <section class="service-area-on-site">
   <h2>Areas in Australia with free customer site visits</h2>
-  <p>The suburbs that receive free call outs are listed below. If your suburb is not listed, talk to us and we can come to a fair arrangement. If we do charge a travel fee, we will advise before booking in the job. Return travel is billed at $60/hour.</p>
+  <p>The suburbs that receive free call outs are listed below. If your suburb is not listed, talk to us and we can come to a fair arrangement. If we do charge a travel fee, we will check with you before booking in the job.</p>
   <p>Suburbs eligible for free call-outs:</p>
   {% for column in site.data.service-area %}
       {% if column.on-site %}<ul class="on-site service-area-container wrap">{% for suburb in column.on-site %}<li class="flex-item">{{ suburb.suburb }}</li>{% endfor %}</ul>{% endif %}
