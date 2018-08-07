@@ -11,10 +11,10 @@
     display: flex;
 }
 
-.wrap    {
+.wrap    { 
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
+  }  
 
 .flex-item {
     padding: 5px;
@@ -24,7 +24,3 @@
     font-size: 1em;
     text-align: left;
   }
-
-section.service-area-remote > h2, section.service-area-on-site > h2 {
-    padding-top: 20px;
-}
