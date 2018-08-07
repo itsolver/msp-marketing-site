@@ -2,7 +2,7 @@
 # Site
 environment: development
 url                      : ""
-profile                  : true
+profile                  : false
 future                   : true
 show_drafts              : true
 

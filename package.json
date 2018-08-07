@@ -1,5 +1,5 @@
 {
-  "name": "IT-Solver",
+  "name": "itsolver",
   "version": "1.0.0",
   "description": "Marketing website for IT Solver, a managed service provider. Built with Gulp + Jekyll + Travis CI + Firebase",
   "repository": {
@@ -18,7 +18,8 @@
   "scripts": {
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
-    "deploy": "firebase deploy --only hosting"
+    "deploy": "firebase deploy --only hosting",
+    "all": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
