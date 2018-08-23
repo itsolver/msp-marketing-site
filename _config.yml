@@ -59,9 +59,9 @@ defaults:
     values:
       layout: "post"
   - scope:
-      path:            "tech-review/**/*"
+      path: "tech-review/**/*.html"
     values:
-      sitemap:         false
+      sitemap: false
 
 collections:
   case_studies:
