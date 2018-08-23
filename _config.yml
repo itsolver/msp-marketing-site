@@ -58,6 +58,21 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path:            "tech-review/**/*"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "assets/**/*"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            ".well-known/**/*"
+    values:
+      sitemap:         false
 
 collections:
   case_studies:
