@@ -183,6 +183,11 @@
         "type": 301
       },
       {
+        "source": "/review",
+        "destination": "https://www.google.com.au/search?q=it%20solver#lrd=0x6b916510942d8acf:0xf831a7625f6a263f,3,5",
+        "type": 301
+      },
+      {
         "source": "/rs",
         "destination": "https://get.teamviewer.com/h5rbys3",
         "type": 301
