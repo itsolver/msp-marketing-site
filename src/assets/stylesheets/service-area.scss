@@ -17,14 +17,29 @@
   }
 
 .flex-item {
-    padding: 5px;
-    width: 150px;
+    width: 180px;
     height: 50px;
-    margin: 10px;
+    margin: 0 10px 10px 0;
     font-size: 1em;
     text-align: left;
   }
 
 section.service-area-remote > h2, section.service-area-on-site > h2 {
     padding-top: 20px;
+}
+
+.google-maps-container {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 75%; /* aspect ratio */
+	position: relative;
+}
+
+.google-maps {
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
