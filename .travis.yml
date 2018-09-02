@@ -8,7 +8,6 @@ branches:
   - master
 cache:
   bundler: true
-  yarn: true
   directories:
   - node_modules
 env:
