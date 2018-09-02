@@ -298,14 +298,6 @@
         "function": "app"
       },
       {
-        "source": "/skus",
-        "function": "app"
-      },
-      {
-        "source": "/skus/**",
-        "function": "app"
-      },
-      {
         "source": "/webhook",
         "function": "app"
       }],
