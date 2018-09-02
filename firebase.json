@@ -4,7 +4,7 @@
     "redirects": [
       {
         "source": "/accepting-apple-pay-and-android-pay",
-        "destination": "/news/2017/01/04/accepting-apple-pay-and-android-pay",
+        "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
         "type": 301
       },
       {
@@ -43,8 +43,8 @@
         "type": 301
       },
       {
-        "source": "/category/tips-tricks",
-        "destination": "https://www.itsolver.net/category/tips-and-tricks",
+        "source": "/category/**",
+        "destination": "/blog",
         "type": 301
       },
       {
@@ -148,8 +148,23 @@
         "type": 301
       },
       {
-        "source": "/national-consumer-fraud-week-18-24-may-2015",
-        "destination": "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
+        "source": "/mhado",
+        "destination": "/on-demand",
+        "type": 301
+      },
+      {
+        "source": "/midsdo",
+        "destination": "/on-demand",
+        "type": 301
+      },
+      {
+        "source": "/news/2017/01/04/accepting-apple-pay-and-android-pay/",
+        "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
+        "type": 301
+      },
+      {
+        "source": "/No-ADSL-ports-availabe-at-Macleay-Russell-Lamb-Karragarra-Islands",
+        "destination": "/news/2018/02/21/State-of-the-internet-at-Macleay-Russell-Lamb-Karragarra-Islands",
         "type": 301
       },
       {
@@ -223,13 +238,23 @@
         "type": 301
       },
       {
-        "source": "/page/*",
+        "source": "/page/**",
+        "destination": "/blog",
+        "type": 301
+      },
+      {
+        "source": "/tag/**",
         "destination": "/blog",
         "type": 301
       },
       {
         "source": "/terms-of-service",
-        "destination": "/terms",
+        "destination": "/legal",
+        "type": 301
+      },
+      {
+        "source": "/terms",
+        "destination": "/legal",
         "type": 301
       },
       {
