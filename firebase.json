@@ -208,7 +208,7 @@
         "type": 301
       },
       {
-        "source": "/service-plan",
+        "source": "/service-plan*",
         "destination": "/support-plans",
         "type": 301
       },
