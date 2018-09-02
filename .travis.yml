@@ -46,7 +46,6 @@ install:
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
-- yarn
 
 script:
 - cd functions && npm run build
