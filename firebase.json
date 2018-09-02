@@ -148,16 +148,6 @@
         "type": 301
       },
       {
-        "source": "/mhado",
-        "destination": "/on-demand",
-        "type": 301
-      },
-      {
-        "source": "/midsdo",
-        "destination": "/on-demand",
-        "type": 301
-      },
-      {
         "source": "/national-consumer-fraud-week-18-24-may-2015",
         "destination": "/news/security-advisory/2015/05/21/national-consumer-fraud-week-18-24-may-2015",
         "type": 301
