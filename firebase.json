@@ -174,12 +174,17 @@
       },
       {
         "source": "/pricing",
-        "destination": "/service-plans",
+        "destination": "/support-plans",
         "type": 301
       },
       {
         "source": "/qs",
         "destination": "https://get.teamviewer.com/k6xf54t",
+        "type": 301
+      },
+      {
+        "source": "/register",
+        "destination": "/support-plans",
         "type": 301
       },
       {
