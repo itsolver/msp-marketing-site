@@ -158,6 +158,11 @@
         "type": 301
       },
       {
+        "source": "/news**",
+        "destination": "/blog",
+        "type": 301
+      },
+      {
         "source": "/news/2017/01/04/accepting-apple-pay-and-android-pay/",
         "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
         "type": 301
