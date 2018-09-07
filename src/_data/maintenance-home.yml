@@ -4,6 +4,6 @@ minimum: false
 features:
   - feature: Scheduled home visit once a year to check hardware and software
   - feature: Call us for unlimited security checkups
-  - feature: Tips for Office and G Suite (via email only)
   - feature: Ask questions for personalised answers (via email only)
+  - feature: Tips for Office and G Suite
   - feature: Up to 3 devices may be a Windows PC, Mac, Android Tablet, iPad, Android Phone, iPhone, Chromebook and Printer.
