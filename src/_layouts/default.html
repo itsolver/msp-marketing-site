@@ -5,13 +5,6 @@
 <body>
     {{ content }}
     {% include navigation/footer.html %}
-    <!-- {% include serviceWorker.html %} -->
-    <script>
-        document.getElementById("open-nav").addEventListener("click", function (event) {
-          event.preventDefault();
-          document.body.classList.toggle("nav-open");
-        });
-    </script>
     <script>
       /*! lozad.js - v1.2.0 - 2018-01-23
       * https://github.com/ApoorvSaxena/lozad.js
@@ -22,7 +15,6 @@
       const observer = lozad(); // lazy loads elements with default selector as '.lozad'
       observer.observe();
     </script>
-
 </body>
 
 </html>
