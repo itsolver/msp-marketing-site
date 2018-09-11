@@ -11,7 +11,7 @@
   - name: Solo
   - description: 1 User Migrated
   - fee: 899
-  - feature: Emails, contacts & calendars migrated for 1 user
+  - feature: Files, Emails, contacts & calendars migrated for 1 user
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
   - feature: Less than 21 days full implementation time
@@ -21,7 +21,7 @@
   - name: Business
   - description: 5 Users Migrated
   - fee: 1499
-  - feature: Emails, contacts & calendars migrated for 5 users
+  - feature: Files, Emails, contacts & calendars migrated for 5 users
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
   - feature: Less than 30 days full implementation time
@@ -31,7 +31,7 @@
   - name: Premium
   - description: 10 Users Migrated
   - fee: 2499
-  - feature: Emails, contacts & calendars migrated for 10 users
+  - feature: Files, Emails, contacts & calendars migrated for 10 users
   - feature: Unlimited mailboxes configured for your team
   - feature: Professional project management
   - feature: Less than 30 days full implementation time
