@@ -25,4 +25,4 @@ Source code edited in [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Desktop
 
-[![desktop lighthouse report screenshot](ttps://www.itsolver.net/tech-review/www.itsolver.net/desktop-lighthouse-report-screenshot.png)](https://www.itsolver.net/tech-review/www.itsolver.net/www.itsolver.net_2018-09-12_11-25-43-desktop)
+[![desktop lighthouse report screenshot](https://www.itsolver.net/tech-review/www.itsolver.net/desktop-lighthouse-report-screenshot.png)](https://www.itsolver.net/tech-review/www.itsolver.net/www.itsolver.net_2018-09-12_11-25-43-desktop)
