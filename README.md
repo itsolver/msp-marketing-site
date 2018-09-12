@@ -30,12 +30,6 @@ Build status: [![Build Status](https://travis-ci.org/itsolver/msp-marketing-site
 
 [![desktop lighthouse report screenshot](https://www.itsolver.net/tech-review/www.itsolver.net/desktop-lighthouse-report-screenshot.png)](https://www.itsolver.net/tech-review/www.itsolver.net/www.itsolver.net_2018-09-12_11-25-43-desktop)
 
-## Setup
-
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally). 
-
 ## My workflow
 
 - local dev: Visual Studio Code with ``gulp`` running on integrated terminal for local testing of static content.
@@ -43,20 +37,53 @@ Build status: [![Build Status](https://travis-ci.org/itsolver/msp-marketing-site
 - automation / continuous integration: pushing code to this github repo triggers Travis build. If build successful, publishes to Firebase.
 - to do: create a testing branch and domain (for testing Firebase Functions)
 
+## Configure
+
+1. Delete .firebaserc
+2. Remove redirects in firebase.json
+3. In .travis.yml, replace with your own API keys for Firebase, Stripe and (optional) Slack.
+4. Add your site and author details in `_config.yml`.
+5. Add your Google Analytics and Disqus keys to `_config.yml`.
+6. Replace pages and posts with your own.
+
 ## Install
 
 Hydra was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-Install the dependencies with [Bundler](https://bundler.io/):
+Install dependencies:
 
 ~~~bash
+cd functions && npm install && cd ..
 bundle install
+npm install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Build functions:
 
 ~~~bash
-bundle exec jekyll serve
+- cd functions && npm run build
+- travis_retry gulp build --prod
+~~~
+
+Initiliaze your own Firebase project from the root of your directory:
+
+~~~bash
+npm install -g firebase-tools
+firebase login
+firebase init # enable Hosting and Functions
+~~~
+
+Run local server:
+
+~~~bash
+gulp
+~~~
+
+If not using Travis, deploy from local environment and submit sitemaps to search engines:
+
+~~~bash
+- firebase deploy
+- gulp submit
 ~~~
 
 ## Edits
@@ -78,12 +105,12 @@ Edit with your favourite text editor. There were editable classes in the origina
 ### Navigation
 
 - Exposed as a data file to give clients better access.
-- Set in the *Data- / *Navigation- section.
+- Set in src/_data/navigation/main.yml
 
 ### Footer
 
 - Exposed as a data file to give clients better access.
-- Set in the *Data- / *Footer- section.
+- Set in src/_data/navigation/footer.yml
 
 ### Jekyll Resources
 
