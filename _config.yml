@@ -20,7 +20,7 @@ future: false # Publish on schedule future dated posts https://stackoverflow.com
 google_site_verification : ""
 bing_site_verification   : ""
 alexa_site_verification  : ""
-yandex_site_verification : ""
+yandex_site_verification : "6636a05957c32947"
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: "/the_favicon/android-chrome-192x192.png"
