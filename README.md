@@ -1,6 +1,6 @@
 # IT Solver Marketing Site
 
-A marketing website for [IT Solver](https://www.itsolver.net), a managed service provider for people and business. 
+A marketing website for [IT Solver](https://www.itsolver.net), a managed service provider for people and business.
 
 This is a labour of ❤️ for serverless and the latest web technologies, built by a coding novice, Angus McLauchlan, whose day job is running a solo, desktop support business.
 
