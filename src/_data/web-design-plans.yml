@@ -1,0 +1,21 @@
+- plan:
+  - name: Business
+  - fee: 39
+  - period: / month
+  - feature: Three page mobile-friendly website
+  - feature: One round of design revisions
+  - feature: Website hosting
+  - feature: Professional writer and designer support
+  - feature: Dedicated local support via web, phone and email
+  - feature: Traffic and visitor analytics and reports
+  - feature: Editor for ongoing maintenance
+  - feature: List on Google My Business, True Local and Yellow Pages (online)
+  - highlight: true
+- plan:
+  - name: Premium
+  - fee: 99
+  - period: / month
+  - feature: Six page mobile-friendly website
+  - feature: Everything in Business, plus...
+  - feature: Unlimited round of design revisions
+  - feature: Quarterly one-on-one digital marketing coaching

@@ -1,5 +1,7 @@
 - links:
-  - header: IT Solver
+  - header: Services
+  - name: Web Design
+    link: /web-design
   - name: Cloud Apps
     link: /cloud-apps-g-suite
   - name: Support Plans
@@ -8,6 +10,10 @@
     link: /on-demand
   - name: Maintenance
     link: /maintenance
+  - name: Consultation
+    link: /consultation
+- links:
+  - header: Company
   - name: About
     link: /about
   - name: Privacy & terms
