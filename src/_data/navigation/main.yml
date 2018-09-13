@@ -2,29 +2,23 @@
   link: /web-design-business
   new_window: false
   highlight: false
-  first: false
 - name: Cloud Apps
   link: /cloud-apps-g-suite
   new_window: false
   highlight: false
-  first: false
 - name: Support Plans
   link: /support-plans
   new_window: false
   highlight: false
-  first: false
 - name: On-Demand
   link: /on-demand
   new_window: false
   highlight: false
-  first: true
 - name: Maintenance
   link: /maintenance
   new_window: false
   highlight: false
-  first: false
 - name: Consultation
   link: /consultation
   new_window: false
   highlight: false
-  first: false
