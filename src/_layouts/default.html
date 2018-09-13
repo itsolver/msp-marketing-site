@@ -6,6 +6,12 @@
     {{ content }}
     {% include navigation/footer.html %}
     <script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+    <script>
       /*! lozad.js - v1.2.0 - 2018-01-23
       * https://github.com/ApoorvSaxena/lozad.js
       * Copyright (c) 2018 Apoorv Saxena; Licensed MIT */
