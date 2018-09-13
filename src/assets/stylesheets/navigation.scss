@@ -36,7 +36,11 @@ header.plain  {
 		a,
 		a.button {
 			color: $cta-background-color;
-		}
+    }
+    nav a.active {
+      color: $dark-shade;
+    }
+
 
 		#open-nav {
 			svg {

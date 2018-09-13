@@ -1,24 +1,24 @@
 - name: Web Design
-  link: /web-design-business
+  link: /web-design-business/
   new_window: false
   highlight: false
 - name: Cloud Apps
-  link: /cloud-apps-g-suite
+  link: /cloud-apps-g-suite/
   new_window: false
   highlight: false
 - name: Support Plans
-  link: /support-plans
+  link: /support-plans/
   new_window: false
   highlight: false
 - name: On-Demand
-  link: /on-demand
+  link: /on-demand/
   new_window: false
   highlight: false
 - name: Maintenance
-  link: /maintenance
+  link: /maintenance/
   new_window: false
   highlight: false
 - name: Consultation
-  link: /consultation
+  link: /consultation/
   new_window: false
   highlight: false
