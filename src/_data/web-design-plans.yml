@@ -1,20 +1,15 @@
 - plan:
   - name: Business
   - fee: 49
-  - period: / month
+  - period: /mo
   - pages: Three
   - feature: One round of design revisions
-  - bonus: Free Domain ($40 value)
-  - bonus: Google Ads ($100 credit)
   - highlight: true
 - plan:
   - name: Premium
   - fee: 99
-  - period: / month
+  - period: /mo
   - pages: Six
-  - feature: Everything in Business, plus...
   - feature: Unlimited round of design revisions
+  - feature: Professional Email from Google with annual purchase
   - feature: Quarterly one-on-one digital marketing coaching
-  - feature: Lead capture built in
-  - bonus: Free Domain ($40 value)
-  - bonus: Google Ads ($100 credit)

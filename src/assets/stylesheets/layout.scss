@@ -119,10 +119,14 @@ iframe.screenshot {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -10px;
+  margin: 0 -10px;
 
 	li {
-		flex: 1 1 315px;
+    flex: 1 1 315px;
+    background: $cards-background-color;
+    .card-actions > a {
+      background: $cards-background-color;
+    }
 	}
 
 	h3 {
@@ -134,7 +138,7 @@ iframe.screenshot {
 		.material-icons {
 			flex: 0;
 			display: inline-block;
-			background: $light-accent;
+			background: $brand-color;
 			color: #fff;
 			padding: 8px;
 			border-radius: 50px;
