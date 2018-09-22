@@ -29,7 +29,7 @@ const createOrder = async (currency, items, email, shipping) => {
     },
   });
 };
-// Create an order.
+// Create a subscription.
 const createSubscription = async (email, source, shipping, plans, info) => {
   const customer = await stripe.customers.create({
     email: email,
@@ -86,12 +86,12 @@ const listPlans = async () => {
   return await stripe.plans.list({limit: 50});
 };
 
-// Retrieve a product by ID.
+// Retrieve a plan by ID.
 const retrievePlan = async planId => {
   return await stripe.plans.retrieve(planId);
 };
 
-// Validate that products exist.
+// Validate that plans exist.
 const checkPlans = planList => {
   const validPlans: any = ['prod_D4TQXt8olbWvY7'];
   return planList.data.reduce((accumulator, currentValue) => {
