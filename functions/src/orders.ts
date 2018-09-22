@@ -13,6 +13,7 @@
 export {};
 
 const config = require('./config');
+const _ = require('lodash');
 const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
@@ -28,6 +29,25 @@ const createOrder = async (currency, items, email, shipping) => {
     },
   });
 };
+// Create an order.
+const createSubscription = async (email, source, shipping, plans, info) => {
+  const customer = await stripe.customers.create({
+    email: email,
+    source: source.id,
+    shipping: shipping,
+    metadata: {
+      status: 'created',
+      phone: info.phone || ''
+    }
+  });
+  const plainArray = _.values(plans);
+  const items = plainArray.map((plan)=> ({plan: plan.id}));
+  return await stripe.subscriptions.create({
+    customer: customer.id,
+    items: items
+  })
+};
+
 
 // Retrieve an order by ID.
 const retrieveOrder = async orderId => {
@@ -41,7 +61,7 @@ const updateOrder = async (orderId, properties) => {
 
 // List all products.
 const listProducts = async () => {
-  return await stripe.products.list({limit: 1, type: 'good'});
+  return await stripe.products.list({limit: 3});
 };
 
 // Retrieve a product by ID.
@@ -55,10 +75,32 @@ const checkProducts = productList => {
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      productList.data.length === 1 &&
+      productList.data.length === 3 &&
       validProducts.includes(currentValue.id)
     );
   }, !!productList.data.length);
+};
+
+// List all plans.
+const listPlans = async () => {
+  return await stripe.plans.list({limit: 3});
+};
+
+// Retrieve a product by ID.
+const retrievePlan = async planId => {
+  return await stripe.plans.retrieve(planId);
+};
+
+// Validate that products exist.
+const checkPlans = planList => {
+  const validPlans: any = ['prod_D4TQXt8olbWvY7'];
+  return planList.data.reduce((accumulator, currentValue) => {
+    return (
+      accumulator &&
+      planList.data.length === 3 &&
+      validPlans.includes(currentValue.id)
+    );
+  }, !!planList.data.length);
 };
 
 exports.orders = {
@@ -72,3 +114,13 @@ exports.products = {
   retrieve: retrieveProduct,
   exist: checkProducts,
 };
+
+exports.plans = {
+  list: listPlans,
+  retrieve: retrievePlan,
+  exist: checkPlans,
+}
+
+exports.subscriptions = {
+  create: createSubscription,
+}

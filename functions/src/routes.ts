@@ -12,7 +12,7 @@
 export {}; // fix "cannot redeclare block-scoped variable errors". Learn more: https://stackoverflow.com/a/41975448/3012870
 
 const config = require('./config');
-const {orders, products} = require('./orders');
+const {orders, products, plans, subscriptions} = require('./orders');
 const express = require('express');
 const router = express.Router();
 const stripe = require('stripe')(config.stripe.secretKey);
@@ -32,6 +32,17 @@ router.get('/', (req, res) => {
  * 3. POST endpoint to be set as a webhook endpoint on your Stripe account.
  * It creates a charge as soon as a non-card payment source becomes chargeable.
  */
+// Create a customer and subscription on the backend.
+router.post('/subscriptions', async (req, res, next) => {
+  let {email, source, shipping, plans, info} = req.body;
+  try {
+    console.log('-------------------', email, shipping, plans, source);
+    let order = await subscriptions.create(email, source, shipping, plans, info);
+    return res.status(200).json({order});
+  } catch (err) {
+    return res.status(500).json({error: err.message});
+  }
+});
 
 // Create an order on the backend.
 router.post('/orders', async (req, res, next) => {
@@ -58,13 +69,12 @@ router.post('/orders', async (req, res, next) => {
         return res.status(403).json({order, source});
       }
       // Dynamically evaluate if 3D Secure should be used.
-    // TO DO: resolve error "variable 'dynamic3DS' used before declaration"
-      //   if (source && source.type === 'card') {
-    //     // A 3D Secure source may be created referencing the card source.
-    //     source = await dynamic3DS(source, order, req);
-    //   }
+    if (source && source.type === 'card') {
+      // A 3D Secure source may be created referencing the card source.
+      source = await dynamic3DS(source, order, req);
+    }
       // Demo: In test mode, replace the source with a test token so charges can work.
-      if (source.type === 'card' && !source.livemode) {
+    if (!source.livemode) {
         source.id = 'tok_visa';
       }
       // Pay the order using the Stripe source.
@@ -278,7 +288,6 @@ router.post('/orders', async (req, res, next) => {
     } else {
       // We need to set up the products.
       //await setup.run();
-      console.log("ERROR: Products don't exist. Add products in Stripe Dashboard.");
       res.json(await products.list());
     }
   });
@@ -287,5 +296,25 @@ router.post('/orders', async (req, res, next) => {
   router.get('/products/:id', async (req, res) => {
     res.json(await products.retrieve(req.params.id));
   });
+
+// Retrieve all plans.
+router.get('/plans', async (req, res) => {
+  const planList = await plans.list();
+  // Check if products exist on Stripe Account.
+  if (products.exist(planList)) {
+    res.json(planList);
+  } else {
+    // We need to set up the products.
+    //await setup.run();
+    res.json(await plans.list());
+  }
+});
+
+// Retrieve a product by ID.
+router.get('/plans/:id', async (req, res) => {
+  res.json(await plans.retrieve(req.params.id));
+});
+
+
 
   module.exports = router;
