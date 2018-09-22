@@ -325,6 +325,14 @@
         "function": "app"
       },
       {
+        "source": "/plans",
+        "function": "app"
+      },
+      {
+        "source": "/plans/**",
+        "function": "app"
+      },
+      {
         "source": "/products",
         "function": "app"
       },
