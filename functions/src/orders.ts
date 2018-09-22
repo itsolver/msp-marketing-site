@@ -61,7 +61,7 @@ const updateOrder = async (orderId, properties) => {
 
 // List all products.
 const listProducts = async () => {
-  return await stripe.products.list({limit: 3});
+  return await stripe.products.list({limit: 50});
 };
 
 // Retrieve a product by ID.
@@ -75,7 +75,7 @@ const checkProducts = productList => {
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      productList.data.length === 3 &&
+      productList.data.length === 50 &&
       validProducts.includes(currentValue.id)
     );
   }, !!productList.data.length);
@@ -83,7 +83,7 @@ const checkProducts = productList => {
 
 // List all plans.
 const listPlans = async () => {
-  return await stripe.plans.list({limit: 3});
+  return await stripe.plans.list({limit: 50});
 };
 
 // Retrieve a product by ID.
@@ -97,7 +97,7 @@ const checkPlans = planList => {
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      planList.data.length === 3 &&
+      planList.data.length === 50 &&
       validPlans.includes(currentValue.id)
     );
   }, !!planList.data.length);
