@@ -171,7 +171,7 @@ class Store {
     let price = (amount / 100).toFixed(2);
     let numberFormat = new Intl.NumberFormat(['en-US'], {
       style: 'currency',
-      currency: 'usd',
+      currency: 'aud',
       currencyDisplay: 'symbol',
     });
     return numberFormat.format(price);
