@@ -341,6 +341,14 @@
         "function": "app"
       },
       {
+        "source": "/subscriptions",
+        "function": "app"
+      },
+      {
+        "source": "/subscriptions/**",
+        "function": "app"
+      },
+      {
         "source": "/webhook",
         "function": "app"
       }],
