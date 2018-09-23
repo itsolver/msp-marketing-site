@@ -84,3 +84,5 @@ typings/
 functions/lib/*.js
 *.js.map
 functions/.stripetestconfig
+functions/src/plans.json
+functions/src/products.json
