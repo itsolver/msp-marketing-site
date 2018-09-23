@@ -86,7 +86,7 @@
    */
 
   // Make sure all data is loaded from the store to compute the order amount.
-  await store.loadProducts();
+  await store.loadPlans();
 
   // Create the payment request.
   const paymentRequest = stripe.paymentRequest({

@@ -77,8 +77,8 @@ class Store {
       this.plans[plan.id] = plan;
     });
     const url = window.location.href;
-    const prod_id = getParameterByName('id',url);
-    this.plans = plans.filter(plan=> plan.product===prod_id)
+    const plan_id = getParameterByName('id',url);
+    this.plans = plans.filter(plan=> plan.product===plan_id)
   }
 
   // Create an order object to represent the line items.
