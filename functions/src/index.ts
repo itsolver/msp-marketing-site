@@ -54,3 +54,12 @@ app.use(
 app.use('/', require('./routes'));
 
 exports.app = functions.https.onRequest(app);
+
+// Change Firebase Functions region to Tokyo
+exports.myStorageFunction = functions
+    .region('asia-northeast1')
+    .storage
+    .object()
+    .onFinalize((object) => {
+      // ...
+    });
