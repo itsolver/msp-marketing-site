@@ -86,3 +86,4 @@ functions/lib/*.js
 functions/.stripetestconfig
 functions/src/plans.json
 functions/src/products.json
+.firebase/**
