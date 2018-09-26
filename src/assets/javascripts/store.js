@@ -50,36 +50,35 @@ class Store {
   }
 
   // Load the product details.
-  async loadProducts() {
-    const url = window.location.href;
-    const prod_id = getParameterByName('id',url);
-    const productsResponse = await fetch('/products');
-    const products = (await productsResponse.json()).data;
-    products.forEach(product => {
-      if(product.id === prod_id){
-        this.products[product.id] = product
-      }
-    });
-  }
+  // async loadProducts() {
+  //   const url = window.location.href;
+  //   const prod_id = getParameterByName('id',url);
+  //   const productsResponse = await fetch('/products');
+  //   const products = (await productsResponse.json()).data;
+  //   products.forEach(product => {
+  //     if(product.id === prod_id){
+  //       this.products[product.id] = product
+  //     }
+  //   });
+  // }
 
   // Load the plans details.
-  async loadPlans() {
-    const plansResponse = await fetch('/plans');
-    const plans = (await plansResponse.json()).data;
-    plans.forEach(plan => {
-      let product = this.products[plan.product];
-      if (product) {
-        if (!product.plans) {
-          product.plans = [];
-        }
-        product.plans.push(plan);
-      }
-      this.plans[plan.id] = plan;
-    });
+  async loadPlan() {
     const url = window.location.href;
     const plan_id = getParameterByName('id',url);
-    this.plans = plans.filter(plan=> plan.product===plan_id)
-  }
+    console.log('plan_id:',plan_id);
+     const plansResponse = await fetch('/plans/' + plan_id);
+    // console.log('plansResponse:',plansResponse);
+    const plans = (await plansResponse.json()).data;
+    plans.forEach(plan => (this.plans[plan.id] = plan));
+    console.log('plan:',plan);
+    let plan0 = plan[0];
+    console.log('plan0:',plan0);
+    const productsResponse = await fetch('/products/' + 'prod_D4TQXt8olbWvY7')
+    console.log('productsResponse:',productsResponse);
+    const product = (await productsResponse.json()).data;
+    console.log('product:',product);
+}
 
   // Create an order object to represent the line items.
   async createSubscription(email, source, shipping, info) {
@@ -192,8 +191,7 @@ class Store {
   // but in production you would typically use a library like React to manage this effectively.
   async displayOrderSummary() {
     // Fetch the products from the store to get all the details (name, price, etc.).
-    await this.loadProducts();
-    await this.loadPlans();
+    await this.loadPlan();
     const orderItems = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
     let currency;
@@ -202,7 +200,6 @@ class Store {
     for (let [id, product] of Object.entries(this.products)) {
       console.log('product',product);
       const quantity = 1;
-      let plan = product.plans[0];
       currency = plan.currency;
       let planPrice = this.formatPrice(plan.amount, plan.currency);
       let lineItemPrice = this.formatPrice(plan.amount * quantity, plan.currency);
@@ -212,13 +209,13 @@ class Store {
       lineItem.innerHTML = `
         <img class="image" src="${product.metadata.image}">
         <div class="label">
-          <p class="product">${product.name}</p>
-          <p class="sku">${product.metadata.description}</p>
+          <p class="product">${plan.nickname}</p>
+          <p class="sku">${plan.product}</p>
         </div>
         <p class="price">${lineItemPrice}</p>`;
       orderItems.appendChild(lineItem);
       this.lineItems.push({
-        product: product.id,
+        product: plan.product,
         sku: plan.id,
         quantity,
       });
