@@ -34,10 +34,10 @@ router.get('/', (req, res) => {
  */
 // Create a customer and subscription on the backend.
 router.post('/subscriptions', async (req, res, next) => {
-  let {email, source, shipping, plans, info} = req.body;
+  const {email, source, shipping, plans, info} = req.body;
   try {
     console.log('-------------------', email, shipping, plans, source);
-    let order = await subscriptions.create(email, source, shipping, plans, info);
+    const order = await subscriptions.create(email, source, shipping, plans, info);
     return res.status(200).json({order});
   } catch (err) {
     return res.status(500).json({error: err.message});
@@ -46,9 +46,9 @@ router.post('/subscriptions', async (req, res, next) => {
 
 // Create an order on the backend.
 router.post('/orders', async (req, res, next) => {
-    let {currency, items, email, shipping} = req.body;
+    const {currency, items, email, shipping} = req.body;
     try {
-      let order = await orders.create(currency, items, email, shipping);
+      const order = await orders.create(currency, items, email, shipping);
       return res.status(200).json({order});
     } catch (err) {
       return res.status(500).json({error: err.message});
@@ -122,7 +122,7 @@ router.post('/orders', async (req, res, next) => {
     if (config.stripe.webhookSecret) {
       // Retrieve the event by verifying the signature using the raw body and secret.
       let event;
-      let signature = req.headers['stripe-signature'];
+      const signature = req.headers['stripe-signature'];
       try {
         event = stripe.webhooks.constructEvent(
           req.rawBody,
