@@ -87,16 +87,21 @@ class Store {
   // Create an order object to represent the line items.
   async createSubscription(email, source, shipping, info) { // To fix: Missing required param: items.
     try {
-      const url = window.location.href;
-      const plan_id = getParameterByName('id',url);
+      const plans = this.plans;
+      // const url = window.location.href;
+      // const plan_id = getParameterByName('id',url);
+      // console.log("plan_id",plan_id);
+      // const items = "" + plan_id;
+      //console.log("items",items);
       const response = await fetch('/subscriptions', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           email,
           source,
+          plans,
           shipping,
-          plan_id,
+          //plan_id,
           info,
         }),
       });
