@@ -310,47 +310,47 @@
     ],
     "rewrites": [{
         "source": "/buy/**",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/config",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/orders",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/orders/**",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/plans",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/plans/**",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/products",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/products/**",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/subscriptions",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/subscriptions/**",
-        "function": "app"
+        "function": "appTokyo"
       },
       {
         "source": "/webhook",
-        "function": "app"
+        "function": "appTokyo"
       }],
     "headers": [
       {

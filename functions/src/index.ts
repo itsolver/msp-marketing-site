@@ -20,7 +20,7 @@ import * as functions from 'firebase-functions';
 const config = require('./config');
 const express = require('express');
 const bodyParser = require('body-parser');
-const app = express();
+const appTokyo = express();
 
 /**
  * setup.js
@@ -34,7 +34,7 @@ const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
 // Setup useful middleware.
-app.use(
+appTokyo.use(
     bodyParser.json({
       // We need the raw body to verify webhook signatures.
       // Let's compute it only when hitting the Stripe webhook endpoint.
@@ -45,15 +45,15 @@ app.use(
       },
     })
   );
-  app.use(bodyParser.urlencoded({extended: true}));
-  //app.use(express.static(path.join(__dirname, '../public')));
-  app.engine('html', require('ejs').renderFile);
-  app.set('view engine', 'html');
+  appTokyo.use(bodyParser.urlencoded({extended: true}));
+  //appTokyo.use(express.static(path.join(__dirname, '../public')));
+  appTokyo.engine('html', require('ejs').renderFile);
+  appTokyo.set('view engine', 'html');
 
 // Define routes.
-app.use('/', require('./routes'));
+appTokyo.use('/', require('./routes'));
 
 // Change Firebase Functions region to Tokyo
-exports.app = functions
+exports.appTokyo = functions
   .region('asia-northeast1')
-  .https.onRequest(app);
+  .https.onRequest(appTokyo);
