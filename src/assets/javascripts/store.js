@@ -34,6 +34,7 @@ class Store {
       parent: this.lineItems[0].sku,
       quantity: this.lineItems[0].quantity,
     })
+    console.log('items',items);
     return items;
   }
 
@@ -45,58 +46,72 @@ class Store {
 
       return config;
     } catch (err) {
+      console.error(err);
       return {error: err.message};
     }
   }
 
   // Load the product details.
-  // async loadProducts() {
-  //   const url = window.location.href;
-  //   const prod_id = getParameterByName('id',url);
-  //   const productsResponse = await fetch('/products');
-  //   const products = (await productsResponse.json()).data;
-  //   products.forEach(product => {
-  //     if(product.id === prod_id){
-  //       this.products[product.id] = product
-  //     }
-  //   });
-  // }
+  async loadProducts() {
+    // const url = window.location.href;
+    // const prod_id = getParameterByName('id',url);
+    const prod_id = 'prod_D4TQXt8olbWvY7';
+    const productsResponse = await fetch('/products');
+    const products = (await productsResponse.json()).data;
+    products.forEach(product => {
+      if(product.id === prod_id){
+        this.products[product.id] = product
+      }
+    });
+  }
 
   // Load the plans details.
-  async loadPlan() {
+  async loadPlans() {
+    const plansResponse = await fetch('/plans');
+    const plans = (await plansResponse.json()).data;
+    plans.forEach(plan => {
+      let product = this.products[plan.product];
+      if (product) {
+        if (!product.plans) {
+          product.plans = [];
+        }
+        product.plans.push(plan);
+      }
+      this.plans[plan.id] = plan;
+    });
     const url = window.location.href;
     const plan_id = getParameterByName('id',url);
-    console.log('plan_id:',plan_id);
-     const plansResponse = await fetch('/plans/' + plan_id);
-    // console.log('plansResponse:',plansResponse);
-    const plans = (await plansResponse.json()).data;
-    plans.forEach(plan => (this.plans[plan.id] = plan));
-    console.log('plan:',plan);
-    let plan0 = plan[0];
-    console.log('plan0:',plan0);
-    const productsResponse = await fetch('/products/' + 'prod_D4TQXt8olbWvY7')
-    console.log('productsResponse:',productsResponse);
-    const product = (await productsResponse.json()).data;
-    console.log('product:',product);
-}
+    this.plans = plans.filter(plan=> plan.id===plan_id)
+  }
 
   // Create an order object to represent the line items.
-  async createSubscription(email, source, shipping, info) {
+  async createSubscription(email, source, shipping, info) { // To fix: Missing required param: items.
     try {
-      const plans = this.plans;
+      const url = window.location.href;
+      const plan_id = getParameterByName('id',url);
       const response = await fetch('/subscriptions', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           email,
           source,
-          plans,
           shipping,
+          plan_id,
           info,
         }),
       });
       const data = await response.json();
       if (data.error) {
+        console.error(data.error);
+        // Missing required param: items.
+        // createSubscription @ store.js:105
+        // async function (async)
+        // createSubscription @ store.js:92
+        // handleSubscription @ payments.js:285
+        // form.addEventListener @ payments.js:235
+        // async function (async)
+        // form.addEventListener @ payments.js:230
+
         return {error: data.error};
       } else {
         // Save the current order locally to lookup its status later.
@@ -104,6 +119,7 @@ class Store {
         return data.order;
       }
     } catch (err) {
+      console.error(err.message);
       return {error: err.message};
     }
     return order;
@@ -124,6 +140,7 @@ class Store {
       });
       const data = await response.json();
       if (data.error) {
+        console.error(data.error);
         return {error: data.error};
       } else {
         // Save the current order locally to lookup its status later.
@@ -131,6 +148,7 @@ class Store {
         return data.order;
       }
     } catch (err) {
+      console.error(err.message);
       return {error: err.message};
     }
     return order;
@@ -161,6 +179,7 @@ class Store {
       const response = await fetch(`/orders/${orderId}`);
       return await response.json();
     } catch (err) {
+      console.error(err);
       return {error: err};
     }
   }
@@ -191,7 +210,8 @@ class Store {
   // but in production you would typically use a library like React to manage this effectively.
   async displayOrderSummary() {
     // Fetch the products from the store to get all the details (name, price, etc.).
-    await this.loadPlan();
+    await this.loadProducts();
+    await this.loadPlans();
     const orderItems = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
     let currency;
@@ -200,28 +220,26 @@ class Store {
     for (let [id, product] of Object.entries(this.products)) {
       console.log('product',product);
       const quantity = 1;
-      currency = plan.currency;
-      let planPrice = this.formatPrice(plan.amount, plan.currency);
-      let lineItemPrice = this.formatPrice(plan.amount * quantity, plan.currency);
-
+      const plans = this.plans;
+      console.log('plans',plans);
+      currency = plans[0].currency;
       let lineItem = document.createElement('div');
       lineItem.classList.add('line-item');
       lineItem.innerHTML = `
         <img class="image" src="${product.metadata.image}">
         <div class="label">
-          <p class="product">${plan.nickname}</p>
-          <p class="sku">${plan.product}</p>
-        </div>
-        <p class="price">${lineItemPrice}</p>`;
+          <p class="product">${product.name}</p>
+          <p class="sku">${product.metadata.description}</p>
+        </div>`;
       orderItems.appendChild(lineItem);
       this.lineItems.push({
-        product: plan.product,
-        sku: plan.id,
+        product: product.id,
+        sku: plans[0].id,
         quantity,
       });
+      console.log('lineItems',this.lineItems);
     }
     const total = this.formatPrice(this.getOrderTotal(), currency);
-    orderTotal.querySelector('[data-subtotal]').innerText = total;
     orderTotal.querySelector('[data-total]').innerText = total;
     document.getElementById('main').classList.remove('loading');
   }

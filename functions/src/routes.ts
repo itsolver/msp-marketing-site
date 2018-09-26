@@ -35,11 +35,13 @@ router.get('/', (req, res) => {
 // Create a customer and subscription on the backend.
 router.post('/subscriptions', async (req, res, next) => {
   const {email, source, shipping, plan, info} = req.body;
+  console.log(email, source, shipping, plan, info);
+
   try {
-    console.log('-------------------', email, shipping, plan, source);
     const order = await subscriptions.create(email, source, shipping, plan, info);
     return res.status(200).json({order});
   } catch (err) {
+    console.error(err.message);
     return res.status(500).json({error: err.message});
   }
 });
@@ -74,7 +76,7 @@ router.post('/orders', async (req, res, next) => {
       source = await dynamic3DS(source, order, req);
     }
       // Demo: In test mode, replace the source with a test token so charges can work.
-    if (!source.livemode) {
+      if (source.type === 'card' && !source.livemode) {
         source.id = 'tok_visa';
       }
       // Pay the order using the Stripe source.
@@ -288,7 +290,7 @@ router.post('/orders', async (req, res, next) => {
     } else {
       // We need to set up the products.
       //await setup.run();
-      console.log("product doesn't exist, do setup.")
+      console.error("products don't exist, do setup.")
       res.json(await products.list());
     }
   });
@@ -307,7 +309,7 @@ router.get('/plans', async (req, res) => {
   } else {
     // We need to set up the products.
     //await setup.run();
-    console.log("product doesn't exist, do setup.")
+    console.error("plans don't exist, do setup.")
     res.json(await plans.list());
   }
 });

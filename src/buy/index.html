@@ -157,7 +157,7 @@ layout: store
           <p class="notice">Click the button below to generate a QR code for WeChat.</p>
         </div>
       </section>
-      <button class="billing" type="submit">Pay</button>
+      <button class="billing" id="payment-button" type="submit">Pay</button>
     </form>
     <div id="card-errors" class="element-errors"></div>
     <div id="iban-errors" class="element-errors"></div>
@@ -187,19 +187,8 @@ layout: store
   </div>
 </div>
 <div id="summary">
-  <header>
-    <h1>Order Summary</h1>
-  </header>
   <div id="order-items"></div>
   <div id="order-total">
-    <div class="line-item subtotal">
-      <p class="label">Subtotal</p>
-      <p class="price" data-subtotal></p>
-    </div>
-    <div class="line-item shipping">
-      <p class="label">Shipping</p>
-      <p class="price">Free</p>
-    </div>
     <div class="line-item demo">
       <div id="demo">
         <p class="label">Demo in test mode</p>
@@ -214,7 +203,7 @@ layout: store
       </div>
     </div>
     <div class="line-item total">
-      <p class="label">Total</p>
+      <p class="label">Monthly Payment</p>
       <p class="price" data-total></p>
     </div>
   </div>

@@ -40,8 +40,8 @@ const createSubscription = async (email, source, shipping, plans, info) => {
       phone: info.phone || ''
     }
   });
-  const plainArray = _.values(plans);
-  const items = plainArray.map((plan)=> ({plan: plan.id}));
+  const items = plans;
+  console.log("items",items);
   return await stripe.subscriptions.create({
     customer: customer.id,
     items: items
@@ -71,7 +71,7 @@ const retrieveProduct = async productId => {
 
 // Validate that products exist.
 const checkProducts = productList => {
-  const validProducts: any = ['on-demand-quick-support', 'support-on-demand'];
+  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7'];
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
@@ -93,7 +93,7 @@ const retrievePlan = async planId => {
 
 // Validate that plans exist.
 const checkPlans = planList => {
-  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TS6EfQMjLIAq', 'plan_D4TS6EfQMjLIAq'];
+  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TSCAXhq7WgFa', 'plan_D4TS6EfQMjLIAq'];
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&

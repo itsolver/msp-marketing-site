@@ -3,13 +3,13 @@
     "public": "dist",
     "redirects": [
       {
-        "source": "/accepting-apple-pay-and-android-pay",
-        "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
+        "source": "/accepting-appUSle-pay-and-android-pay",
+        "destination": "/news/2017/01/05/accepting-appUSle-pay-and-android-pay",
         "type": 301
       },
       {
-        "source": "/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
-        "destination": "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-apple-tv",
+        "source": "/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-appUSle-tv",
+        "destination": "/tips-and-tricks/2015/02/21/access-geo-blocked-netflix-hulu-plus-and-other-streaming-services-on-appUSle-tv",
         "type": 301
       },
       {
@@ -89,7 +89,7 @@
       },
       {
         "source": "/gsuite",
-        "destination": "https://www.itsolver.net/cloud-apps-g-suite",
+        "destination": "https://www.itsolver.net/cloud-appUSs-g-suite",
         "type": 301
       },
       {
@@ -163,8 +163,8 @@
         "type": 301
       },
       {
-        "source": "/news/2017/01/04/accepting-apple-pay-and-android-pay/",
-        "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
+        "source": "/news/2017/01/04/accepting-appUSle-pay-and-android-pay/",
+        "destination": "/news/2017/01/05/accepting-appUSle-pay-and-android-pay",
         "type": 301
       },
       {
@@ -310,47 +310,47 @@
     ],
     "rewrites": [{
         "source": "/buy/**",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/config",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/orders",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/orders/**",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/plans",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/plans/**",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/products",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/products/**",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/subscriptions",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/subscriptions/**",
-        "function": "appTokyo"
+        "function": "appUS"
       },
       {
         "source": "/webhook",
-        "function": "appTokyo"
+        "function": "appUS"
       }],
     "headers": [
       {
