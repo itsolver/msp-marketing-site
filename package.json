@@ -16,7 +16,6 @@
     "url": "https://github.com/itsolver/msp-marketing-site/issues"
   },
   "scripts": {
-    "install": "sudo npm install -g firebase-tools gulp-cli && cd functions && npm install && cd .. && npm install && bundle install",
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
     "deploy-hosting": "firebase deploy --only hosting",
