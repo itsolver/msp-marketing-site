@@ -288,6 +288,7 @@ router.post('/orders', async (req, res, next) => {
     } else {
       // We need to set up the products.
       //await setup.run();
+      console.log("product doesn't exist, do setup.")
       res.json(await products.list());
     }
   });
@@ -306,6 +307,7 @@ router.get('/plans', async (req, res) => {
   } else {
     // We need to set up the products.
     //await setup.run();
+    console.log("product doesn't exist, do setup.")
     res.json(await plans.list());
   }
 });
@@ -317,4 +319,4 @@ router.get('/plans/:id', async (req, res) => {
 
 
 
-  module.exports = router;
+module.exports = router;
