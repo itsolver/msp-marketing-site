@@ -8,13 +8,13 @@ categories:
 ![Man In The Middle attack illustration](/assets/images/man-in-the-middle-attack.png)
 Yesterday we discovered Lenovo is pre-installing adware on notebooks that uses a “man-in-the-middle” attack to break secure connections on affected laptops to get access to sensitive data and inject advertising. To make things worse, Lenovo installed a weak certificate into the system in a way that means affected users cannot trust any secure connections.
 
-Received a new computer from Lenovo? Until 1st March, **we are offering a [50% discount for a remote malware removal on affected Lenovo systems](https://itsolver.net/contact/)** as listed below. That's only $29.50 for malware removal. Alternatively for a free vulnerability check visit [https://filippo.io/Badfish/.](https://filippo.io/Badfish/)
+Received a new computer from Lenovo? Until 1st March, **we are offering a [50% discount for a remote malware removal on affected Lenovo systems](/contact/)** as listed below. That's only $29.50 for malware removal. Alternatively for a free vulnerability check visit [https://filippo.io/Badfish/.](https://filippo.io/Badfish/){:rel="nofollow"}
 
-Unfortunately corporate spying like this is the tip 0f the iceberg as we discovered from the [Snowden leaks](https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html) that all Windows and Mac computers have backdoors for government spies which then allow criminals in.
+Unfortunately corporate spying like this is the tip 0f the iceberg as we discovered from the [Snowden leaks](https://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html){:rel="nofollow"} that all Windows and Mac computers have backdoors for government spies which then allow criminals in.
 
-**The complete solution is to take back control of your hardware and software. Today we have the [Novena](https://www.crowdsupply.com/kosagi/novena-open-laptop) and in the not to distant future, [Purism Librem 15 laptop.](https://puri.sm/)**
+**The complete solution is to take back control of your hardware and software. Today we have the [Novena](https://www.crowdsupply.com/kosagi/novena-open-laptop){:rel="nofollow"} and in the not to distant future, [Purism Librem 15 laptop.](https://puri.sm/){:rel="nofollow"}**
 
-List of affected computers as provided in [Lenovo statement](http://news.lenovo.com/article_display.cfm?article_id=1929):
+List of affected computers as provided in [Lenovo statement](http://news.lenovo.com/article_display.cfm?article_id=1929){:rel="nofollow"}:
 
 _G Series:_ G410, G510, G710, G40-70, G50-70, G40-30, G50-30, G40-45, G50-45
 _U Series:_ U330P, U430P, U330Touch, U430Touch, U530Touch

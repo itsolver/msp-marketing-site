@@ -24,7 +24,7 @@ If you are vulnerable, you'll get:
     Your system is vulnerable. test script
 
 
-Additionally, [test your website or public IP](https://bashsmash.ccsir.org/) (Internet Protocol) address for Shellshock.
+Additionally, [test your website or public IP](https://bashsmash.ccsir.org/){:rel="nofollow"} (Internet Protocol) address for Shellshock.
 _Hint: To get your public IP address, do a web search "what is my ip"._
 
 
