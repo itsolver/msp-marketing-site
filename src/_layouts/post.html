@@ -16,7 +16,7 @@ icons: true
 			{% endfor %}
 		</div>
 		<div class="post-content">
-			{{ content }}
+			{% raw %}{{ content | replace: '<a href="https', '<a rel="nofollow" target="_blank" href="https' }}{% endraw %}
 
 			{% include components/blog/sharing-bar.html url=page.url title=page.title %}
 		</div>
