@@ -54,20 +54,20 @@ class Store {
   // Load the product details.
   async loadProducts() {
     try {
-    const prod_id = this.plans[0].product;
-    console.log('prod_id',prod_id)
-    const productsResponse = await fetch('/products');
-    const products = (await productsResponse.json()).data;
-    products.forEach(product => {
-      if(product.id === prod_id){
-        this.products[product.id] = product
-      }
-    });
-    //console.log('products',products);
+    if (this.plans[0].product) {
+      const prod_id = this.plans[0].product;
+      console.log('prod_id',prod_id)
+      const productsResponse = await fetch('/products');
+      const products = (await productsResponse.json()).data;
+      products.forEach(product => {
+        if(product.id === prod_id){
+          this.products[product.id] = product
+        }
+      });
+    }
     } catch (err) {
       console.error(err);
     }
-
   }
 
   // Load the plans details.
@@ -120,34 +120,34 @@ class Store {
     return order;
   }
 
-  // Create an order object to represent the line items.
-  async createOrder(currency, items, email, shipping) {
-    try {
-      const response = await fetch('/orders', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-          currency,
-          items,
-          email,
-          shipping,
-        }),
-      });
-      const data = await response.json();
-      if (data.error) {
-        console.error(data.error);
-        return {error: data.error};
-      } else {
-        // Save the current order locally to lookup its status later.
-        this.setActiveOrderId(data.order.id);
-        return data.order;
-      }
-    } catch (err) {
-      console.error(err.message);
-      return {error: err.message};
-    }
-    return order;
-  }
+  // // Create an order object to represent the line items.
+  // async createOrder(currency, items, email, shipping) {
+  //   try {
+  //     const response = await fetch('/orders', {
+  //       method: 'POST',
+  //       headers: {'Content-Type': 'application/json'},
+  //       body: JSON.stringify({
+  //         currency,
+  //         items,
+  //         email,
+  //         shipping,
+  //       }),
+  //     });
+  //     const data = await response.json();
+  //     if (data.error) {
+  //       console.error(data.error);
+  //       return {error: data.error};
+  //     } else {
+  //       // Save the current order locally to lookup its status later.
+  //       this.setActiveOrderId(data.order.id);
+  //       return data.order;
+  //     }
+  //   } catch (err) {
+  //     console.error(err.message);
+  //     return {error: err.message};
+  //   }
+  //   return order;
+  // }
 
   // Pay the specified order by sending a payment source alongside it.
   async payOrder(order, source) {
