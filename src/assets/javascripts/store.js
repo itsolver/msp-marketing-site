@@ -53,9 +53,9 @@ class Store {
 
   // Load the product details.
   async loadProducts() {
-    // const url = window.location.href;
-    // const prod_id = getParameterByName('id',url);
-    const prod_id = 'prod_D4TQXt8olbWvY7'; // To do: derive prod_id from plan data
+    try {
+    const prod_id = this.plans[0].product;
+    console.log('prod_id',prod_id)
     const productsResponse = await fetch('/products');
     const products = (await productsResponse.json()).data;
     products.forEach(product => {
@@ -63,6 +63,11 @@ class Store {
         this.products[product.id] = product
       }
     });
+    //console.log('products',products);
+    } catch (err) {
+      console.error(err);
+    }
+
   }
 
   // Load the plans details.
@@ -81,7 +86,8 @@ class Store {
     });
     const url = window.location.href;
     const plan_id = getParameterByName('id',url);
-    this.plans = plans.filter(plan=> plan.id===plan_id)
+    this.plans = plans.filter(plan=> plan.id===plan_id);
+    console.log('plan',this.plans);
   }
 
   // Create an order object to represent the line items.
@@ -199,8 +205,8 @@ class Store {
   // but in production you would typically use a library like React to manage this effectively.
   async displayOrderSummary() {
     // Fetch the products from the store to get all the details (name, price, etc.).
-    await this.loadProducts();
     await this.loadPlans();
+    await this.loadProducts();
     const orderItems = document.getElementById('order-items');
     const orderTotal = document.getElementById('order-total');
     let currency;
