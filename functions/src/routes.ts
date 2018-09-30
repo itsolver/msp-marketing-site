@@ -32,13 +32,22 @@ router.get('/', (req, res) => {
  * 3. POST endpoint to be set as a webhook endpoint on your Stripe account.
  * It creates a charge as soon as a non-card payment source becomes chargeable.
  */
+
+/**
+ * Billing Quick Start
+ * To automatically bill your customer periodically, follow these three steps:
+ * 1. Define a service product and pricing plan that sets how much should be billed and at what interval.
+ * 2. Create a customer in your Stripe account.
+ * 3. Subscribe the customer to the plan.
+ */
+
 // Create a customer and subscription on the backend.
 router.post('/subscriptions', async (req, res, next) => {
-  const {email, source, shipping, plan, info} = req.body;
-  console.log(email, source, shipping, plan, info);
+  const {email, source, shipping, plans, info} = req.body;
+  console.log(email, source, shipping, plans, info);
 
   try {
-    const order = await subscriptions.create(email, source, shipping, plan, info);
+    const order = await subscriptions.create(email, source, shipping, plans, info);
     return res.status(200).json({order});
   } catch (err) {
     console.error(err.message);

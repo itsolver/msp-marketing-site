@@ -55,7 +55,7 @@ class Store {
   async loadProducts() {
     // const url = window.location.href;
     // const prod_id = getParameterByName('id',url);
-    const prod_id = 'prod_D4TQXt8olbWvY7';
+    const prod_id = 'prod_D4TQXt8olbWvY7'; // To do: derive prod_id from plan data
     const productsResponse = await fetch('/products');
     const products = (await productsResponse.json()).data;
     products.forEach(product => {
@@ -85,33 +85,22 @@ class Store {
   }
 
   // Create an order object to represent the line items.
-  async createSubscription(email, source, shipping, info) { // To fix: Missing required param: items.
+  async createSubscription(email, source, shipping, info) {
     try {
-      const url = window.location.href;
-      const plan_id = getParameterByName('id',url);
+      const plans = this.plans;
       const response = await fetch('/subscriptions', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           email,
           source,
+          plans,
           shipping,
-          plan_id,
           info,
         }),
       });
       const data = await response.json();
       if (data.error) {
-        console.error(data.error);
-        // Missing required param: items.
-        // createSubscription @ store.js:105
-        // async function (async)
-        // createSubscription @ store.js:92
-        // handleSubscription @ payments.js:285
-        // form.addEventListener @ payments.js:235
-        // async function (async)
-        // form.addEventListener @ payments.js:230
-
         return {error: data.error};
       } else {
         // Save the current order locally to lookup its status later.

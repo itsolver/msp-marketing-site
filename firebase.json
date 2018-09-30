@@ -309,6 +309,10 @@
       }
     ],
     "rewrites": [{
+        "source": "/buy",
+        "function": "appUS"
+      },
+      {
         "source": "/buy/**",
         "function": "appUS"
       },

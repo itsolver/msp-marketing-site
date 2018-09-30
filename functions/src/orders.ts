@@ -30,7 +30,7 @@ const createOrder = async (currency, items, email, shipping) => {
   });
 };
 // Create a subscription.
-const createSubscription = async (email, source, shipping, plans, info) => {
+const createSubscription = async (email, source, shipping, info) => {
   const customer = await stripe.customers.create({
     email: email,
     source: source.id,
@@ -40,13 +40,18 @@ const createSubscription = async (email, source, shipping, plans, info) => {
       phone: info.phone || ''
     }
   });
-  const items = plans;
-  console.log("items",items);
+
   return await stripe.subscriptions.create({
     customer: customer.id,
-    items: items
+    items: [
+      {
+        plan: "plan_D4TSCAXhq7WgFa",
+      },
+    ]
   })
 };
+
+
 
 
 // Retrieve an order by ID.
