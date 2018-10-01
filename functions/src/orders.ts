@@ -66,7 +66,7 @@ const updateOrder = async (orderId, properties) => {
 
 // List all products.
 const listProducts = async () => {
-  return await stripe.products.list({limit: 50});
+  return await stripe.products.list({limit: 4});
 };
 
 // Retrieve a product by ID.
@@ -76,11 +76,11 @@ const retrieveProduct = async productId => {
 
 // Validate that products exist.
 const checkProducts = productList => {
-  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7'];
+  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7', 'on-demand-quick-support', 'support-on-demand'];
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      productList.data.length === 50 &&
+      productList.data.length === 4 &&
       validProducts.includes(currentValue.id)
     );
   }, !!productList.data.length);
@@ -88,7 +88,7 @@ const checkProducts = productList => {
 
 // List all plans.
 const listPlans = async () => {
-  return await stripe.plans.list({limit: 50});
+  return await stripe.plans.list({limit: 3});
 };
 
 // Retrieve a plan by ID.
@@ -98,11 +98,11 @@ const retrievePlan = async planId => {
 
 // Validate that plans exist.
 const checkPlans = planList => {
-  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TSCAXhq7WgFa', 'plan_D4TS6EfQMjLIAq'];
+  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TS6EfQMjLIAq', 'plan_D4TSCAXhq7WgFa'];
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      planList.data.length === 50 &&
+      planList.data.length === 3 &&
       validPlans.includes(currentValue.id)
     );
   }, !!planList.data.length);
