@@ -333,7 +333,7 @@
   });
 
   const handleSubscription = async (email, source, shipping, info, error = null) => {
-    console.log(email, source);
+    console.log('email, source',email, source);
     const response = await store.createSubscription(email, source, shipping, info);
     const mainElement = document.getElementById('main');
     const confirmationElement = document.getElementById('confirmation');
