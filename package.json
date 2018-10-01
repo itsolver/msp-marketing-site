@@ -18,10 +18,10 @@
   "scripts": {
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
-    "deploy-hosting": "firebase deploy --only hosting",
-    "deploy-functions": "cd functions && npm run build && firebase deploy --only functions",
     "deploy": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy",
-    "update-scripts": "gulp copy:scripts && npm run deploy-hosting"
+    "update-scripts": "gulp copy:scripts && firebase deploy --only hosting",
+    "update-functions": "cd functions && npm run build && firebase deploy --only functions",
+    "update-hosting": "gulp build --prod && firebase deploy --only hosting"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
