@@ -312,11 +312,11 @@ router.post('/orders', async (req, res, next) => {
 // Retrieve all plans.
 router.get('/plans', async (req, res) => {
   const planList = await plans.list();
-  // Check if products exist on Stripe Account.
-  if (products.exist(planList)) {
+  // Check if plans exist on Stripe Account.
+  if (plans.exist(planList)) {
     res.json(planList);
   } else {
-    // We need to set up the products.
+    // We need to set up the plans.
     //await setup.run();
     console.error("plans don't exist, do setup.")
     res.json(await plans.list());
