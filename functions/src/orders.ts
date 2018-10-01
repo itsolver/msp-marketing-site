@@ -30,7 +30,7 @@ const createOrder = async (currency, items, email, shipping) => {
   });
 };
 // Create a subscription.
-const createSubscription = async (email, source, shipping, info) => {
+const createSubscription = async (email, source, shipping, plans, info) => {
   const customer = await stripe.customers.create({
     email: email,
     source: source.id,
