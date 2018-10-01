@@ -236,6 +236,13 @@ class Store {
     }
     const total = this.formatPrice(this.getOrderTotal(), currency);
     orderTotal.querySelector('[data-total]').innerText = total;
+    const billingInterval = this.plans[0].interval;
+    console.log('billingInterval',billingInterval);
+    const intervalLabel = document.getElementById('interval').textContent;
+    const intervalLabelText = billingInterval + 'ly Payment';
+    console.log('intervalLabel',intervalLabel);
+    console.log('intervalLabelText',intervalLabelText);
+    document.getElementById('interval').textContent = intervalLabelText;
     document.getElementById('main').classList.remove('loading');
   }
 }
