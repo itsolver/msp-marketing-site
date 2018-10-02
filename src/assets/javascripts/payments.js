@@ -336,7 +336,7 @@
     console.log('email, source',email, source);
     const mainElement = document.getElementById('main');
     const confirmationElement = document.getElementById('confirmation');
-    mainElement.classList.add('success processing');
+    submitButton.textContent = 'Processing Payment…';
     const response = await store.createSubscription(email, source, shipping, info);
     if (error) {
       mainElement.classList.remove('processing');
