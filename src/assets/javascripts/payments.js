@@ -346,6 +346,7 @@
       mainElement.classList.add('error');
     }
     if(response.id) {
+      mainElement.classList.remove('processing');
       confirmationElement.querySelector('.note').innerText ='We’re excited to welcome you to IT Solver!';
       mainElement.classList.add('success');
     }
