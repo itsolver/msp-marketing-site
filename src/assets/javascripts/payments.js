@@ -145,8 +145,8 @@
     shippingOptions: [
       {
         id: 'free',
-        label: 'Free Shipping',
-        detail: 'Technician visit or remote assistance',
+        label: 'Technician visit or remote assistance',
+        detail: '',
         amount: 0,
       },
     ],
