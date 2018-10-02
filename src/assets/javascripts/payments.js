@@ -334,9 +334,17 @@
 
   const handleSubscription = async (email, source, shipping, info, error = null) => {
     console.log('email, source',email, source);
-    const response = await store.createSubscription(email, source, shipping, info);
     const mainElement = document.getElementById('main');
     const confirmationElement = document.getElementById('confirmation');
+    mainElement.classList.add('success processing');
+    const response = await store.createSubscription(email, source, shipping, info);
+    if (error) {
+      mainElement.classList.remove('processing');
+      mainElement.classList.remove('receiver');
+      confirmationElement.querySelector('.error-message').innerText =
+        error.message;
+      mainElement.classList.add('error');
+    }
     if(response.id) {
       confirmationElement.querySelector('.note').innerText ='We’re excited to welcome you to IT Solver!';
       mainElement.classList.add('success');
