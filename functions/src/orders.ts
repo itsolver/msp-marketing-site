@@ -40,12 +40,12 @@ const createSubscription = async (email, source, shipping, plans, info) => {
       phone: info.phone || ''
     }
   });
-
+  console.log('plans[0].id',plans[0].id);
   return await stripe.subscriptions.create({
     customer: customer.id,
     items: [
       {
-        plan: "plan_D4TSCAXhq7WgFa",
+        plan: plans[0].id,
       },
     ]
   })
