@@ -76,7 +76,7 @@ const retrieveProduct = async productId => {
 
 // Validate that products exist.
 const checkProducts = productList => {
-  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7', 'on-demand-quick-support', 'support-on-demand'];
+  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7', 'on-demand-quick-support', 'support-on-demand', 'prod_DjDsQB6YJLlCRI'];
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
@@ -98,7 +98,7 @@ const retrievePlan = async planId => {
 
 // Validate that plans exist.
 const checkPlans = planList => {
-  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TS6EfQMjLIAq', 'plan_D4TSCAXhq7WgFa'];
+  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TS6EfQMjLIAq', 'plan_D4TSCAXhq7WgFa', 'plan_DjDt4rJbEgrxYM'];
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
