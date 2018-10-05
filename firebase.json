@@ -345,6 +345,14 @@
         "function": "appUS"
       },
       {
+        "source": "/subscribe",
+        "function": "appUS"
+      },
+      {
+        "source": "/subscribe/**",
+        "function": "appUS"
+      },
+      {
         "source": "/subscriptions",
         "function": "appUS"
       },
