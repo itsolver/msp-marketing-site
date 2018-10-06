@@ -13,7 +13,7 @@
 export {};
 
 const config = require('./config');
-const _ = require('lodash');
+//const _ = require('lodash');
 const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
