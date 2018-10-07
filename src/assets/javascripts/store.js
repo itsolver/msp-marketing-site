@@ -221,10 +221,10 @@ class Store {
       let lineItem = document.createElement('div');
       lineItem.classList.add('line-item');
       lineItem.innerHTML = `
-        <img class="image" src="${product.metadata.image}">
+        <img class="image" src="${plans[0].metadata.image}">
         <div class="label">
-          <p class="product">${product.name}</p>
-          <p class="sku">${product.metadata.description}</p>
+          <p class="product">${plans[0].nickname}</p>
+          <p class="sku">${plans[0].metadata.description_short}</p>
         </div>`;
       orderItems.appendChild(lineItem);
       this.lineItems.push({
