@@ -51,9 +51,6 @@ const createSubscription = async (email, source, shipping, plans, info) => {
   })
 };
 
-
-
-
 // Retrieve an order by ID.
 const retrieveOrder = async orderId => {
   return await stripe.orders.retrieve(orderId);
@@ -76,7 +73,7 @@ const retrieveProduct = async productId => {
 
 // Validate that products exist.
 const checkProducts = productList => {
-  const validProducts: any = ['prod_DeUJM58yLt6GZe', 'prod_D4TQXt8olbWvY7', 'on-demand-quick-support', 'support-on-demand', 'prod_DjDsQB6YJLlCRI'];
+  const validProducts: any = ['g-suite', 'office-365', 'business-support-plans', 'home-support-plans', 'websites'];
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
@@ -98,11 +95,11 @@ const retrievePlan = async planId => {
 
 // Validate that plans exist.
 const checkPlans = planList => {
-  const validPlans: any = ['plan_DeUK3w1zXTiaL5', 'plan_D4TS6EfQMjLIAq', 'plan_D4TSCAXhq7WgFa', 'plan_DjDt4rJbEgrxYM'];
+  const validPlans: any = ['plan_g-suite-basic', 'plan_g-suite-basic-annual', 'plan_g-suite-business', 'plan_g-suite-business-annual', 'plan_g-suite-premium-support', 'plan_g-suite-standard-support', 'plan_maintenance-business', 'plan_maintenance-home-3', 'plan_o365-business', 'plan_o365-business-year', 'plan_o365-business-premium', 'plan_o365-business-premium-yr', 'plan_o365-premium-support', 'plan_o365-standard-support', 'plan_website', 'plan_website-premium'];
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      planList.data.length === 4 &&
+      planList.data.length === 16 &&
       validPlans.includes(currentValue.id)
     );
   }, !!planList.data.length);
