@@ -12,6 +12,7 @@
 export {}; // fix "cannot redeclare block-scoped variable errors". Learn more: https://stackoverflow.com/a/41975448/3012870
 
 const config = require('./config');
+const setup = require('./setup');
 const {orders, products, plans, subscriptions} = require('./orders');
 const express = require('express');
 const router = express.Router();
@@ -317,8 +318,7 @@ router.get('/plans', async (req, res) => {
     res.json(planList);
   } else {
     // We need to set up the plans.
-    //await setup.run();
-    console.error("plans don't exist, do setup.")
+    await setup.run();
     res.json(await plans.list());
   }
 });
