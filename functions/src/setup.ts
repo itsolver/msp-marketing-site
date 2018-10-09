@@ -9,8 +9,8 @@
 
 'use strict';
 
-const config = require('./config');
-const stripe = require('stripe')(config.stripe.secretKey);
+ quire('./config');
+ quire('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
         // Create a service products and plans assuming they don't already exist.
         try {
           // // Increment Magazine.
-          // const increment = await stripe.products.create({
+          //   await stripe.products.create({
           //   id: 'increment',
           //   type: 'good',
           //   name: 'Increment Magazine',
@@ -40,7 +40,7 @@ module.exports = {
           // });
 
           // // Stripe Shirt.
-          // const shirt = await stripe.products.create({
+          //  it stripe.products.create({
           //   id: 'shirt',
           //   type: 'good',
           //   name: 'Stripe Shirt',
@@ -56,7 +56,7 @@ module.exports = {
           // });
 
           // // Stripe Pins.
-          // const pins = await stripe.products.create({
+          //  t stripe.products.create({
           //   id: 'pins',
           //   type: 'good',
           //   name: 'Stripe Pins',
@@ -71,25 +71,25 @@ module.exports = {
           //   inventory: {type: 'finite', quantity: 500},
           // });
           // Office 365
-          const office365 = await stripe.products.create({
+          await stripe.products.create({
             id: 'office-365',
             type: 'service',
             name: 'Office 365',
           });
           // Business Support Plans
-          const businesssupportplans = await stripe.products.create({
+          await stripe.products.create({
             id: 'business-support-plans',
             type: 'service',
             name: 'Business Support Plans',
           });
           // Home Support Plans
-          const homesupportplans = await stripe.products.create({
+          await stripe.products.create({
             id: 'home-support-plans',
             type: 'service',
             name: 'Home Support Plans',
           });
           // Websites
-          const websites = await stripe.products.create({
+          await stripe.products.create({
             id: 'websites',
             type: 'service',
             name: 'Websites',
