@@ -13,7 +13,7 @@ export {}; // fix "cannot redeclare block-scoped variable errors". Learn more: h
 
 const config = require('./config');
 const setup = require('./setup');
-const {orders, products, plans, subscriptions} = require('./orders');
+const {orders, products, plans, subscriptions} = require('./inventory');
 const express = require('express');
 const router = express.Router();
 const stripe = require('stripe')(config.stripe.secretKey);
