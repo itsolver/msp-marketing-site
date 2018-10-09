@@ -70,6 +70,31 @@ module.exports = {
           //   currency: config.currency,
           //   inventory: {type: 'finite', quantity: 500},
           // });
+          // Office 365
+          const office365 = await stripe.products.create({
+            id: 'office-365',
+            type: 'service',
+            name: 'Office 365',
+          });
+          // Business Support Plans
+          const businesssupportplans = await stripe.products.create({
+            id: 'business-support-plans',
+            type: 'service',
+            name: 'Business Support Plans',
+          });
+          // Home Support Plans
+          const homesupportplans = await stripe.products.create({
+            id: 'home-support-plans',
+            type: 'service',
+            name: 'Home Support Plans',
+          });
+          // Websites
+          const websites = await stripe.products.create({
+            id: 'websites',
+            type: 'service',
+            name: 'Websites',
+          });
+
           await stripe.plans.create({
             id: 'plan_g-suite-basic',
             currency: 'AUD',
