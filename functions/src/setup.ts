@@ -9,8 +9,8 @@
 
 'use strict';
 
- quire('./config');
- quire('stripe')(config.stripe.secretKey);
+const config = require('./config');
+const stripe = require('stripe')(config.stripe.secretKey);
 stripe.setApiVersion(config.stripe.apiVersion);
 
 module.exports = {
