@@ -63,7 +63,11 @@ const updateOrder = async (orderId, properties) => {
 
 // List all products.
 const listProducts = async () => {
+  try {
   return await stripe.products.list({limit: 5});
+  } catch (err) {
+    console.log(`⚠️  listProducts failed: ${err}`);
+  };
 };
 
 // Retrieve a product by ID.
@@ -84,9 +88,14 @@ const checkProducts = productList => {
 };
 
 // List all plans.
-const listPlans = async () => {
-  return await stripe.plans.list({limit: 4});
-};
+
+  const listPlans = async () => {
+    try {
+      return await stripe.plans.list({limit: 16});
+    } catch (err) {
+      console.log(`⚠️  listPlans failed: ${err}`);
+    };
+  };
 
 // Retrieve a plan by ID.
 const retrievePlan = async planId => {
