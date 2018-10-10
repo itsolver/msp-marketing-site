@@ -95,12 +95,13 @@ module.exports = {
             name: 'Websites',
           });
 
+          // Plans
           await stripe.plans.create({
             id: 'plan_g-suite-basic',
             currency: 'AUD',
             interval: 'month',
             product: 'g-suite',
-            amount: '5.5',
+            amount: '550',
             billing_scheme: 'per_unit',
             metadata: {
                 image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/gsuite-setup-0.2x.png',
@@ -114,7 +115,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'year',
               product: 'g-suite',
-              amount: '66',
+              amount: '6600',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/gsuite-setup-0.2x.png',
@@ -128,7 +129,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'g-suite',
-              amount: '11',
+              amount: '1100',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/gsuite-setup-0.2x.png',
@@ -142,7 +143,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'year',
               product: 'g-suite',
-              amount: '132',
+              amount: '13200',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/gsuite-setup-0.2x.png',
@@ -156,7 +157,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'business-support-plans',
-              amount: '24.9',
+              amount: '2490',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
@@ -170,7 +171,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'business-support-plans',
-              amount: '14.9',
+              amount: '1490',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
@@ -184,7 +185,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'business-support-plans',
-              amount: '36',
+              amount: '3600',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
@@ -198,7 +199,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'home-support-plans',
-              amount: '299',
+              amount: '29900',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/maintenance-home-plan-0.2x.png',
@@ -212,7 +213,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'office-365',
-              amount: '15.73',
+              amount: '1573',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/office-365-australia-redlands-brisbane-gold-coast-sunshine-0.2x.png',
@@ -226,7 +227,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'year',
               product: 'office-365',
-              amount: '13.2',
+              amount: '1320',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/office-365-australia-redlands-brisbane-gold-coast-sunshine-0.2x.png',
@@ -240,7 +241,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'office-365',
-              amount: '21.01',
+              amount: '2101',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/office-365-australia-redlands-brisbane-gold-coast-sunshine-0.2x.png',
@@ -254,7 +255,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'year',
               product: 'office-365',
-              amount: '17.49',
+              amount: '1749',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/office-365-australia-redlands-brisbane-gold-coast-sunshine-0.2x.png',
@@ -268,7 +269,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'business-support-plans',
-              amount: '24.9',
+              amount: '2490',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
@@ -282,7 +283,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'business-support-plans',
-              amount: '14.9',
+              amount: '1490',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
@@ -296,7 +297,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'websites',
-              amount: '39',
+              amount: '3900',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://www.itsolver.net/assets/images/products/support-on-demand.png',
@@ -310,7 +311,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'websites',
-              amount: '79',
+              amount: '7900',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://www.itsolver.net/assets/images/products/support-on-demand.png',
