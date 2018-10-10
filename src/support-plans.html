@@ -36,23 +36,23 @@ faq:
         {% for column in site.data.support-plans %}
 
         <div class="pricing-item">
-                {% for plan in column.plan %}
-                {% if plan.name %}{% assign {{ support-plan-name = plan.name %}
-            <div class="pricing-item-section">
-                <h3 class="pricing-title">{{ plan.name }}</h3>
-        {% endif %}
-                {% if plan.fee %}
-                <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
-                <ul class="pricing-feature-list">
-                {% endif %}
-                {% if plan.feature %}
-                    <li class="pricing-feature">{{ plan.feature }}</li>
-                {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
-
-            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/register-{{ support-plan-name | downcase }}">CHOOSE PLAN</a>
+          {% for plan in column.plan %}
+          {% if plan.name %}
+          <div class="pricing-item-section">
+          <h3 class="pricing-title">{{ plan.name }}</h3>
+          {% endif %}
+          {% if plan.id %}{% assign plan-id = plan.id %}{% endif %}
+          {% if plan.fee %}
+          <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
+          <ul class="pricing-feature-list">
+          {% endif %}
+          {% if plan.feature %}
+              <li class="pricing-feature">{{ plan.feature }}</li>
+          {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+        <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/subscribe?id={{plan-id}}">CHOOSE PLAN</a>
         </div>
         {% endfor %}
     </div>

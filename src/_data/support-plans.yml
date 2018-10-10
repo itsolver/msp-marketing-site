@@ -1,20 +1,42 @@
 - plan:
-  - name: Business
+  - name: G Suite Standard Support Plan
+  - id: plan_g-suite-standard-support
   - fee: 14.9
   - period: / user / month
-  - feature: On-Demand support requests for G Suite or Office 365
+  - feature: On-Demand support requests for G Suite
   - feature: Unlimited requests
   - feature: Mobile Management
   - feature: Submit requests via chat, email or phone
   - feature: Remote desktop support
   - feature: Get quick answers to tech questions
-  - feature: Assisted G Suite or Office 365 Learning via the web
+  - feature: Assisted G Suite Learning via the web
   - highlight: true
 - plan:
-  - name: Premium
+  - name: G Suite Premium Support Plan
+  - id: plan_g-suite-premium-support
   - fee: 24.9
   - period: / user / month
-  - feature: Everything in Business, plus...
+  - feature: Everything in G Suite Standard Support, plus...
   - feature: Customer site visits
   - feature: 24/7 priority support
-
+- plan:
+  - name: Office 365 Standard Support Plan
+  - id: plan_o365-standard-support
+  - fee: 14.9
+  - period: / user / month
+  - feature: On-Demand support requests for Office 365
+  - feature: Unlimited requests
+  - feature: Mobile Management
+  - feature: Submit requests via chat, email or phone
+  - feature: Remote desktop support
+  - feature: Get quick answers to tech questions
+  - feature: Assisted Office 365 Learning via the web
+  - highlight: true
+- plan:
+  - name: Office 365 Premium Support Plan
+  - id: plan_o365-premium-support
+  - fee: 24.9
+  - period: / user / month
+  - feature: Everything in Office 365 Standard Support, plus...
+  - feature: Customer site visits
+  - feature: 24/7 priority support
