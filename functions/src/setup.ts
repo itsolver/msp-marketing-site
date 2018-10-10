@@ -264,7 +264,7 @@ module.exports = {
               currency: 'AUD',
               interval: 'month',
               product: 'websites',
-              amount: '7900',
+              amount: '9900',
               billing_scheme: 'per_unit',
               metadata: {
                   image: 'https://www.itsolver.net/assets/images/products/support-on-demand.png',
