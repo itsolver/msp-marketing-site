@@ -1,5 +1,6 @@
 - plan:
   - name: Business
+  - id: plan_website
   - fee: 49
   - period: /mo
   - pages: Three
@@ -7,6 +8,7 @@
   - highlight: true
 - plan:
   - name: Premium
+  - id: plan_website-premium
   - fee: 99
   - period: /mo
   - pages: Six

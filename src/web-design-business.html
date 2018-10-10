@@ -55,6 +55,8 @@ keywords: |
             <div class="pricing-item-section">
                 <h3 class="pricing-title">{{ plan.name }}</h3>
         {% endif %}
+        {% if plan.id %}{% assign plan-id = plan.id %}{% endif %}
+
                 {% if plan.pages %}<p><strong>{{ plan.pages }}</strong>-page mobile-friendly website</p>{% endif %}
                 {% if plan.fee %}
                 <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
@@ -67,7 +69,7 @@ keywords: |
                 </ul>
             </div>
 
-            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/contact">CONTACT US</a>
+            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/subscribe?id={{plan-id}}">CHOOSE PLAN</a>
         </div>
         {% endfor %}
     </div>
