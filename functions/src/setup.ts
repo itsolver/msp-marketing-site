@@ -24,7 +24,7 @@ module.exports = {
         // Create a service products and plans assuming they don't already exist.
         try {
           // G Suite
-          await stripe.products.create({
+            await stripe.products.create({
             id: 'g-suite',
             type: 'service',
             name: 'G Suite',
@@ -67,7 +67,7 @@ module.exports = {
                 description_short: 'Professional office suite with 30GB storage.',
             },
             nickname: 'G Suite Basic',
-            trial_period_days: '14',
+            trial_period_days: '14'
           });
           await stripe.plans.create({
               id: 'plan_g-suite-basic-annual',
@@ -81,7 +81,7 @@ module.exports = {
                   description_short: 'Professional office suite with 30GB storage.',
               },
               nickname: 'G Suite Basic Annual',
-              trial_period_days: '14',
+              trial_period_days: '14'
           });
           await stripe.plans.create({
               id: 'plan_g-suite-business',
@@ -95,7 +95,7 @@ module.exports = {
                   description_short: 'Enhanced office suite with unlimited storage and archiving.',
               },
               nickname: 'G Suite Business',
-              trial_period_days: '14',
+              trial_period_days: '14'
           });
           await stripe.plans.create({
               id: 'plan_g-suite-business-annual',
@@ -109,7 +109,7 @@ module.exports = {
                   description_short: 'Enhanced office suite with unlimited storage and archiving.',
               },
               nickname: 'G Suite Business Annual',
-              trial_period_days: '14',
+              trial_period_days: '14'
           });
           await stripe.plans.create({
               id: 'plan_g-suite-premium-support',
@@ -122,8 +122,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
                   description_short: '24/7 Priority support and ongoing management of your G suite environment. Unlimited technical support. Customer site visits.',
               },
-              nickname: 'G Suite Premium Support Plan',
-              trial_period_days: '',
+              nickname: 'G Suite Premium Support Plan'
           });
           await stripe.plans.create({
               id: 'plan_g-suite-standard-support',
@@ -136,8 +135,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
                   description_short: 'Ongoing management of your G suite environment. Unlimited technical support.',
               },
-              nickname: 'G Suite Standard Support Plan',
-              trial_period_days: '',
+              nickname: 'G Suite Standard Support Plan'
           });
           await stripe.plans.create({
               id: 'plan_maintenance-business',
@@ -150,8 +148,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
                   description_short: 'Regular health checks for your Mac and Windows computers to detect and resolve issues before they impact your business.',
               },
-              nickname: 'Maintenance for Business',
-              trial_period_days: '',
+              nickname: 'Maintenance for Business'
           });
           await stripe.plans.create({
               id: 'plan_maintenance-home-3',
@@ -164,8 +161,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/maintenance-home-plan-0.2x.png',
                   description_short: 'Protect yourself from the internet bad guys with direct access to a tech expert and preventative maintenance for 3 devices.',
               },
-              nickname: 'Maintenance for Home. 3 Devices.',
-              trial_period_days: '',
+              nickname: 'Maintenance for Home. 3 Devices.'
           });
           await stripe.plans.create({
               id: 'plan_o365-business',
@@ -179,7 +175,7 @@ module.exports = {
                   description_short: 'Best for businesses that need Office applications plus cloud file storage and sharing. Business email not included.',
               },
               nickname: 'Office 365 Business',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           await stripe.plans.create({
               id: 'plan_o365-business-year',
@@ -193,7 +189,7 @@ module.exports = {
                   description_short: 'Best for businesses that need Office applications plus cloud file storage and sharing. Business email not included.',
               },
               nickname: 'Office 365 Business Annual',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           await stripe.plans.create({
               id: 'plan_o365-business-premium',
@@ -207,7 +203,7 @@ module.exports = {
                   description_short: 'Best for businesses that need business email, Office applications, and other business services.',
               },
               nickname: 'Office 365 Business Premium',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           await stripe.plans.create({
               id: 'plan_o365-business-premium-yr',
@@ -221,7 +217,7 @@ module.exports = {
                   description_short: 'Best for businesses that need business email, Office applications, and other business services.',
               },
               nickname: 'Office 365 Business Premium Annual',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           await stripe.plans.create({
               id: 'plan_o365-premium-support',
@@ -234,8 +230,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
                   description_short: '24/7 Priority support and ongoing management of your Office 365 environment. Customer site visits. Unlimited technical support.',
               },
-              nickname: 'Office 365 Premium Support Plan',
-              trial_period_days: '',
+              nickname: 'Office 365 Premium Support Plan'
           });
           await stripe.plans.create({
               id: 'plan_o365-standard-support',
@@ -248,8 +243,7 @@ module.exports = {
                   image: 'https://fir-subscriptions-1ee7d.firebaseapp.com/assets/images/products/support-plan-0.2x.png',
                   description_short: 'Ongoing management of your Office 365 environment. Unlimited technical support.',
               },
-              nickname: 'Office 365 Standard Support Plan',
-              trial_period_days: '',
+              nickname: 'Office 365 Standard Support Plan'
           });
           await stripe.plans.create({
               id: 'plan_website',
@@ -263,7 +257,7 @@ module.exports = {
                   description_short: 'Three-page mobile friendly website',
               },
               nickname: 'Website',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           await stripe.plans.create({
               id: 'plan_website-premium',
@@ -277,7 +271,7 @@ module.exports = {
                   description_short: 'Six-page mobile friendly website',
               },
               nickname: 'Website Premium',
-              trial_period_days: '30',
+              trial_period_days: '30'
           });
           console.log('Setup complete.');
           resolve();
