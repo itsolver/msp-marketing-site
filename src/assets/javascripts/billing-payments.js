@@ -1,5 +1,5 @@
 /**
- * payments.js
+ * billing-payments.js
  * itsolver.net. Created by Romain Huet (@romainhuet).
  *
  * This modern JavaScript file handles the checkout process using Stripe.

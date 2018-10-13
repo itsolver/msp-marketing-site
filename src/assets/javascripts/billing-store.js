@@ -1,5 +1,5 @@
 /**
- * store.js
+ * billing-store.js
  * Stripe Payments Demo. Created by Romain Huet (@romainhuet).
  *
  * Representation of products, line items, and orders, and saving them on Stripe.
