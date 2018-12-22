@@ -84,3 +84,6 @@ typings/
 functions/lib/*.js
 *.js.map
 functions/.stripetestconfig
+
+# Bundle local vendor environment
+vendor/
