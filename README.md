@@ -24,11 +24,11 @@ Build status: [![Build Status](https://travis-ci.org/itsolver/msp-marketing-site
 
 ### Mobile
 
-[![mobile lighthouse report screenshot](https://www.itsolver.net/tech-review/www.itsolver.net/mobile-lighthouse-report-screenshot.png)](https://www.itsolver.net/tech-review/www.itsolver.net/www.itsolver.net_2018-09-12_11-27-30-mobile)
+[![mobile lighthouse report screenshot](https://www.itsolver.net/site-audit/www.itsolver.net/mobile-lighthouse-report-screenshot.png)](https://www.itsolver.net/site-audit/www.itsolver.net/www.itsolver.net_2018-09-12_11-27-30-mobile)
 
 ### Desktop
 
-[![desktop lighthouse report screenshot](https://www.itsolver.net/tech-review/www.itsolver.net/desktop-lighthouse-report-screenshot.png)](https://www.itsolver.net/tech-review/www.itsolver.net/www.itsolver.net_2018-09-12_11-25-43-desktop)
+[![desktop lighthouse report screenshot](https://www.itsolver.net/site-audit/www.itsolver.net/desktop-lighthouse-report-screenshot.png)](https://www.itsolver.net/site-audit/www.itsolver.net/www.itsolver.net_2018-09-12_11-25-43-desktop)
 
 ## My workflow
 
