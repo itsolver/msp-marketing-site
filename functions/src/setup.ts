@@ -141,7 +141,7 @@ module.exports = {
             id: 'plan_domain-name',
             currency: 'AUD',
             interval: 'year',
-            product: 'domain',
+            product: 'domain-names',
             amount: '4000',
             billing_scheme: 'per_unit',
             metadata: {
