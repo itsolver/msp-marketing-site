@@ -78,13 +78,13 @@ const retrieveProduct = async productId => {
 // Validate that products exist.
 const checkProducts = productList => {
   const validProducts: any = [
-    'Automation',
-    'Business Support Plans',
-    'Domain Names',
-    'G Suite',
-    'Home Support Plans',
-    'Office 365',
-    'Websites'
+    'automation',
+    'business-support-plans',
+    'domain-names',
+    'g-suite',
+    'home-support-plans',
+    'office-365',
+    'websites'
     ]
   return productList.data.reduce((accumulator, currentValue) => {
     return (
