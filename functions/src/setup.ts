@@ -17,7 +17,7 @@ module.exports = {
   running: false,
   run: async () => {
     if (this.running) {
-      console.log('⚠️  Setup already in progress.');
+      console.warn('⚠️  Setup already in progress.');
     } else {
       this.running = true;
       this.promise = new Promise(async resolve => {
@@ -415,10 +415,10 @@ module.exports = {
         this.running = false;
         } catch (err) {
           if (err.message === 'Product already exists.') {
-            console.log('⚠️  Products have already been registered.');
-            console.log('⚠️  Updating product');
+            console.warn('⚠️  Products have already been registered.');
+            console.warn('⚠️  Updating product');
           } else {
-            console.log('⚠️  An error occurred.', err);
+            console.error('🛑  An error occurred.', err);
           }
         }
       });
