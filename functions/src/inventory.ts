@@ -64,7 +64,7 @@ const updateOrder = async (orderId, properties) => {
 // List all products.
 const listProducts = async () => {
   try {
-  return await stripe.products.list({limit: 5});
+  return await stripe.products.list({limit: 7});
   } catch (err) {
     console.log(`⚠️  listProducts failed: ${err}`);
   };
@@ -77,11 +77,19 @@ const retrieveProduct = async productId => {
 
 // Validate that products exist.
 const checkProducts = productList => {
-  const validProducts: any = ['g-suite', 'office-365', 'business-support-plans', 'home-support-plans', 'websites'];
+  const validProducts: any = [
+    'Automation',
+    'Business Support Plans',
+    'Domain Names',
+    'G Suite',
+    'Home Support Plans',
+    'Office 365',
+    'Websites'
+    ]
   return productList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      productList.data.length === 5 &&
+      productList.data.length === 7 &&
       validProducts.includes(currentValue.id)
     );
   }, !!productList.data.length);
@@ -91,7 +99,7 @@ const checkProducts = productList => {
 
   const listPlans = async () => {
     try {
-      return await stripe.plans.list({limit: 16});
+      return await stripe.plans.list({limit: 23});
     } catch (err) {
       console.log(`⚠️  listPlans failed: ${err}`);
     };
@@ -104,11 +112,34 @@ const retrievePlan = async planId => {
 
 // Validate that plans exist.
 const checkPlans = planList => {
-  const validPlans: any = ['plan_g-suite-basic', 'plan_g-suite-basic-annual', 'plan_g-suite-business', 'plan_g-suite-business-annual', 'plan_g-suite-premium-support', 'plan_g-suite-standard-support', 'plan_maintenance-business', 'plan_maintenance-home-3', 'plan_o365-business', 'plan_o365-business-year', 'plan_o365-business-premium', 'plan_o365-business-premium-yr', 'plan_o365-premium-support', 'plan_o365-standard-support', 'plan_website', 'plan_website-premium'];
+  const validPlans: any = [
+    'plan_automation-pro_plus',
+    'plan_automation-starter',
+    'plan_automation-teams',
+    'plan_domain-name',
+    'plan_g-suite-basic',
+    'plan_g-suite-basic-annual',
+    'plan_g-suite-business',
+    'plan_g-suite-business-annual',
+    'plan_g-suite-premium-support',
+    'plan_g-suite-standard-support',
+    'plan_maintenance-business',
+    'plan_maintenance-home-3',
+    'plan_o365-business',
+    'plan_o365-business-premium',
+    'plan_o365-business-premium-yr',
+    'plan_o365-business-year',
+    'plan_o365-premium-support',
+    'plan_o365-standard-support',
+    'plan_personal-assistant-home-1',
+    'plan_website',
+    'plan_website-hosting',
+    'plan_website-premium'
+    ] 
   return planList.data.reduce((accumulator, currentValue) => {
     return (
       accumulator &&
-      planList.data.length === 16 &&
+      planList.data.length === 23 &&
       validPlans.includes(currentValue.id)
     );
   }, !!planList.data.length);
