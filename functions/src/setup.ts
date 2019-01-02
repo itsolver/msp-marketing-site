@@ -28,7 +28,7 @@ module.exports = {
             id: 'automation',
             type: 'service',
             name: 'Automation', 
-            statement_descriptor: 'itsolver.net automation', 
+            statement_descriptor: 'itsolver.net automate', 
             unit_label: 'account'
           });
         // Business Support Plans
