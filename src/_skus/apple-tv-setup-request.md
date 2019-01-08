@@ -4,14 +4,14 @@ id: apple-tv-setup-request
 title: Apple TV Setup
 heading: Apple TV Setup
 sub-title: Set up Apple TV and connect to the internet and existing power.
-description: |
-    Connect to suitable and functioning home network using existing wall outlet or wireless connection.
-    Setup free Apple ID account, if required.
-    Setup free trial with Netflix or Stan.
-    Setup catch up TV services ABC iView, SBS On-Demand, 9Now, 7Plus and TenPlay.
-    Demonstrate Apple TV features. 
-    All cables neatly arranged.
-    Clean up and remove rubbish
+features:
+- feature: Connect your Apple TV to a suitable and functioning home network using existing wall outlet or wireless connection.
+- feature: Setup free Apple ID account, if required.
+- feature: Setup free trial with Netflix or Stan.
+- feature: Setup catch up TV services ABC iView, SBS On-Demand, 9Now, 7Plus and TenPlay.
+- feature: Demonstrate Apple TV features. 
+- feature: All cables neatly arranged.
+- feature: Clean up and remove rubbish
 price: 159
 unit: request
 layout: sku
