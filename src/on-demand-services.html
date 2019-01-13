@@ -16,8 +16,6 @@ faq:
  - question: What is considered an acceptable solution?
    answer: Generally, a Support Request is resolved when we deliver one of the following&#58; (a) information that resolves the problem; (b) information on how to obtain a software solution that will resolve the problem; (c) notice that the problem is caused by a known, unresolved issue or an incompatibility issue with a Supported Product; (d) information that identifies the problem as being resolved by upgrading to a newer release of the Supported Product; or (e) notice that the problem has been identified as a hardware equipment issue.
 ---
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
 <section class="pricing-section">
     <div class="pricing">
         {% for sku in site.skus %}
@@ -31,6 +29,8 @@ faq:
                     {% endfor %}
                 </ul>
             </div>
+            <!-- Load Stripe.js on your website. -->
+            <script src="https://js.stripe.com/v3"></script>
             <!-- Create a button that your customers click to complete their purchase. -->
             <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
             <div id="error-message"></div>
