@@ -87,3 +87,9 @@ functions/.stripetestconfig
 
 # Bundle local vendor environment
 vendor/
+
+# Stripe product setup files
+Stripe-Orders-Setup.skus.sh
+Stripe-Orders-Setup.products.sh
+Stripe-Billing-Setup.products.sh
+Stripe-Billing-Setup.plans.sh
