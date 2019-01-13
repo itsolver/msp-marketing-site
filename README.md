@@ -46,11 +46,54 @@ Build status: [![Build Status](https://travis-ci.org/itsolver/msp-marketing-site
 5. Add your Google Analytics and Disqus keys to `_config.yml`.
 6. Replace pages and posts with your own.
 
-## Install
+## Preparation on macOS
 
 Hydra was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-Install dependencies:
+Install brew
+
+~~~bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+~~~
+
+Install node version 9.5
+
+~~~bash
+brew install node
+nvm install 9.5
+nvm use 9.5
+~~~
+
+## Install Jekyll on macOS
+Manage multiple Ruby environments with rbenv. Source: [jekyllrb.com](https://jekyllrb.com/docs/installation/macos/#rbenv)
+People often use [rbenv](https://github.com/rbenv/rbenv) to manage multiple Ruby versions. This is very useful when you need to be able to run a given Ruby version on a project.
+
+~~~bash
+# Install rbenv and ruby-build
+brew install rbenv
+
+# Setup rbenv integration to your shell
+rbenv init
+
+# Check your install
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+
+~~~
+
+Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby
+
+~~~bash
+rbenv install 2.4.1
+rbenv global 2.4.1
+ruby -v
+
+# Install Jekyll
+gem install --user-install bundler jekyll
+~~~
+
+That’s it! Head over [rbenv command references])(https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
+
+Install dependencies
 
 ~~~bash
 cd functions && npm install && cd ..
@@ -58,14 +101,14 @@ bundle install
 npm install
 ~~~
 
-Build functions:
+Build functions
 
 ~~~bash
-- cd functions && npm run build
-- travis_retry gulp build --prod
+cd functions && npm run build
+travis_retry gulp build --prod
 ~~~
 
-Initiliaze your own Firebase project from the root of your directory:
+Initiliaze your own Firebase project from the root of your directory
 
 ~~~bash
 npm install -g firebase-tools
@@ -73,13 +116,13 @@ firebase login
 firebase init # enable Hosting and Functions
 ~~~
 
-Run local server:
+Run local server
 
 ~~~bash
 gulp
 ~~~
 
-If not using Travis, deploy from local environment and submit sitemaps to search engines:
+If not using Travis, deploy from local environment and submit sitemaps to search engines
 
 ~~~bash
 - firebase deploy
