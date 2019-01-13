@@ -32,7 +32,7 @@ faq:
                 </ul>
             </div>
             <!-- Create a button that your customers click to complete their purchase. -->
-            <button id="checkout-button-{{ sku.id }}" class="checkout-button">Buy now</button>
+            <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
             <div id="error-message"></div>
 
             <script>
@@ -40,12 +40,12 @@ faq:
                 betas: ['checkout_beta_4']
               });
 
-              var checkoutButton = document.getElementById('checkout-button-{{ sku.id }}');
+              var checkoutButton = document.getElementById('checkout-button-{{ sku.id | replace: '/', ''}}');
               checkoutButton.addEventListener('click', function () {
                 // When the customer clicks on the button, redirect
                 // them to Checkout.
                 stripe.redirectToCheckout({
-                  items: [{sku: 'consulting-day', quantity: 1}],
+                  items: [{sku: '{{ sku.id | replace: '/', ''}}', quantity: 1}],
 
                   // Note that it is not guaranteed your customers will be redirected to this
                   // URL *100%* of the time, it's possible that they could e.g. close the
