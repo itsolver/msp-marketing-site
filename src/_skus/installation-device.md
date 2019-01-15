@@ -1,23 +1,1 @@
----
-sort_key: 12
-layout: sku
-id: installation-device
-title: Installation
-heading: Installation
-sub-title: Install a new printer, scanner or the latest software.
-features:
- - feature: "As part of our Hardware or Software Installation service we’ll:"
- - feature: "For Hardware:"
- - feature: Guide you through the physical setup of one (1) piece of hardware (eg,Printer, Scanner, Speakers)
- - feature: Install related software and drivers as well as required updates
- - feature: Test to ensure it’s setup and working correctly
- - feature: "For Software:"
- - feature: Verify compatibility with your computer
- - feature: Validate the software source and install the program
- - feature: Ensure software is up-to-date and functional
- - feature: Create a desktop shortcut and start menu entry, if required
- - feature: Ensure appropriate default settings are in place
- - feature: Test to ensure the program is working correctly
-price: 99
-unit: device
----
+---sort_key: 12layout: "sku"id: installation-devicetitle: "Installation"heading: "Installation"sub-title: "Install a new printer, scanner or the latest software."category: "Sales On-Demand Support"category_description: "Technical support at on-demand rates."keywords: ""features: - feature: "Data backed up to a destination of your choice:" - feature: "Cloud storage OR" - feature: "An external hard drive OR" - feature: "Network Attached Storage device (NAS)" - feature: "And the good news is you don’t need to hold onto the phone while the back up is in progress. We will start the transfer with you over-the-phone, then call back once it’s complete to finish the service."price: "99"unit: "device"australia_only: "Yes"---
