@@ -1,0 +1,22 @@
+---
+permalink: /on-demand-services-categories/
+title: "On Demand Services"
+heading: "On Demand Services"
+layout: info-page
+---
+<ul>
+    {% assign grouped = site.skus | group_by: 'category' %}
+    {% for group in grouped %}
+      <li class="category top-level">{% assign items = group.items | sort: 'order' %}
+        <a href="{{ site.baseurl }}{{ items.first.url }}">{{ group.name }}</a></li>
+        {% for item in items %}
+        {{ item.category_description }}
+        {% endfor %}
+        <ul>
+          {% for item in items %}
+            <li class="nav-item {% if item.url == page.url %}current{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+</ul>
