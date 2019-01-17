@@ -32,6 +32,11 @@
     <!--End of Zendesk Chat Script-->
     <!-- Load Stripe.js for Checkout Beta -->
     <script src="https://js.stripe.com/v3"></script>
+    <script>
+    var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU', {
+      betas: ['checkout_beta_4']
+    });
+    </script>
 </body>
 
 </html>
