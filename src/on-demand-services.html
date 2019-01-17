@@ -29,8 +29,7 @@ faq:
                     {% endfor %}
                 </ul>
             </div>
-            <!-- Load Stripe.js on your website. -->
-            <script src="https://js.stripe.com/v3"></script>
+
             <!-- Create a button that your customers click to complete their purchase. -->
             <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
             <div id="error-message"></div>
@@ -84,3 +83,6 @@ faq:
   <h2>For More Information</h2>
   Please review IT Solver's <a href="/legal">Terms and Conditions</a> for further details on IT Solver On-Demand support offerings.
 </section>
+
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
