@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 {% include head.html %}
-
+<!-- Load Stripe.js for Checkout Beta -->
+<script src="https://js.stripe.com/v3"></script>
 <body>
     {{ content }}
     {% include navigation/footer.html %}
@@ -30,13 +31,6 @@
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </script>
     <!--End of Zendesk Chat Script-->
-    <!-- Load Stripe.js for Checkout Beta -->
-    <script src="https://js.stripe.com/v3"></script>
-    <script>
-    var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU', {
-      betas: ['checkout_beta_4']
-    });
-    </script>
 </body>
 
 </html>
