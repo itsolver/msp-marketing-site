@@ -1,12 +1,10 @@
 ---
 permalink: /on-demand-services/
 title: On-Demand Services
-heading: Service for a one-time fee
-description: IT Solver offer technical services for a one-time fee.
+heading: On-Demand services
+description: One-time services to get you back on track.
 layout: info-page
 faq:
- - question: What kind of things will you do?
-   answer: Lots of stuff! Check out the <a href="/on-demand-requests/">full list here</a>.
  - question: Where is on-site support available?
    answer: On-site support is available for customers in <a href="/service-area">this service area near Redland Bay, Qld, Australia</a>.
  - question: What defines a ‘request’?
@@ -16,6 +14,7 @@ faq:
  - question: What is considered an acceptable solution?
    answer: Generally, a Support Request is resolved when we deliver one of the following&#58; (a) information that resolves the problem; (b) information on how to obtain a software solution that will resolve the problem; (c) notice that the problem is caused by a known, unresolved issue or an incompatibility issue with a Supported Product; (d) information that identifies the problem as being resolved by upgrading to a newer release of the Supported Product; or (e) notice that the problem has been identified as a hardware equipment issue.
 ---
+<p>{{ page.description }}</p>
 <section class="pricing-section">
     <div class="pricing">
         {% for sku in site.skus %}
@@ -83,6 +82,3 @@ faq:
   <h2>For More Information</h2>
   Please review IT Solver's <a href="/legal">Terms and Conditions</a> for further details on IT Solver On-Demand support offerings.
 </section>
-
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
