@@ -1,0 +1,74 @@
+---
+layout: page
+icons: true
+---
+
+<div class="wrapper">
+  <section>
+    <h1>{{ page.heading }}</h1>
+    {% if page.subtitle %}
+    <p class="subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </section>
+  {{ content }}
+  <section class="pricing-section">
+      <div class="pricing">
+        {% assign skus = site.skus | where: "category", page.title %}
+        <section class="pricing-section">
+            <div class="pricing">
+                {% for sku in skus %}
+                  {% if forloop.first == true %}
+                    <!-- Load Stripe.js once for Checkout Beta -->
+                    <script src="https://js.stripe.com/v3"></script>
+                  {% endif %}
+                  <div class="pricing-item">
+                      <div class="pricing-item-section">
+                          <h3 class="pricing-title">{{ sku.title }}</h3>
+                          <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ sku.price }}</span><span class="pricing-period">/ {{sku.unit}}</span></div>
+                          <ul class="pricing-feature-list">
+                              {% for feature in sku.features %}
+                              <li class="pricing-feature">{{ feature.feature }}</li>
+                              {% endfor %}
+                          </ul>
+          
+                      <!-- Create a button that your customers click to complete their purchase. -->
+                      <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
+                      <div id="error-message"></div>
+          
+                      <script>
+                        var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU', {
+                          betas: ['checkout_beta_4']
+                        });
+          
+                        var checkoutButton = document.getElementById('checkout-button-{{ sku.id | replace: "/", "" }}');
+                        checkoutButton.addEventListener('click', function () {
+                          // When the customer clicks on the button, redirect
+                          // them to Checkout.
+                          stripe.redirectToCheckout({
+                            items: [{sku: '{{ sku.id | replace: "/", "" }}', quantity: 1}],
+          
+                            // Note that it is not guaranteed your customers will be redirected to this
+                            // URL *100%* of the time, it's possible that they could e.g. close the
+                            // tab between form submission and the redirect.
+                            successUrl: 'https://www.itsolver.net/success',
+                            cancelUrl: 'https://www.itsolver.net/canceled',
+                          })
+                          .then(function (result) {
+                            if (result.error) {
+                              // If `redirectToCheckout` fails due to a browser or network
+                              // error, display the localized error message to your customer.
+                              var displayError = document.getElementById('error-message');
+                              displayError.textContent = result.error.message;
+                            }
+                          });
+                        });
+                      </script>
+                      </div>
+                  </div>
+                {% endfor %}
+            </div>
+        </section>
+
+      </div>
+  </section>
+</div>  

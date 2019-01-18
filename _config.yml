@@ -70,6 +70,9 @@ collections:
   skus:
     output: true
     permalink: /:name/
+  categories:
+    output: true
+    permalink: /:name/
 
 exclude:
 - .asset-cache
