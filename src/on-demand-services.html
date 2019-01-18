@@ -25,10 +25,13 @@ faq:
                 <ul class="pricing-feature-list">
                     {% for feature in sku.features %}
                     <li class="pricing-feature">{{ feature.feature }}</li>
+                    {% if forloop.first == true %}
+                    <!-- Load Stripe.js once for Checkout Beta -->
+                    <script src="https://js.stripe.com/v3"></script>
+                    {% endif %}
                     {% endfor %}
                 </ul>
-            </div>
-
+              </div>
             <!-- Create a button that your customers click to complete their purchase. -->
             <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
             <div id="error-message"></div>
@@ -61,8 +64,9 @@ faq:
                 });
               });
             </script>
-        </div>
-        {% endfor %}
+       
+      </div>
+      {% endfor %}
     </div>
 </section>
 
