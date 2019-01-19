@@ -1,7 +1,7 @@
 ---
-sort_key: 2
+sort_key: 3
 layout: "category"
 title: "Digital Transformation"
 heading: "Digital Transformation"
-subtitle: "Power up your business with the right technology."
+subtitle: "Cloud migration and integrating web services."
 ---

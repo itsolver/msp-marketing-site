@@ -19,22 +19,22 @@ faq:
 <section class="on-demand-support">
   <div class="grid2col">
       <div class="column first">
-          <p>If your products aren’t covered by a Support Plan, you can purchase support on-demand, from anywhere. Our service area is <a href="/service-area">world-wide</a>.</p>
-          <p>To purchase on-demand support, <a href="/buy/on-demand">buy now</a> or call <a href="tel:+61731236000">(07) 3123 6000</a>.</p>
-          <div class="pricing-item single">
-              <div class="pricing-price"><span class="pricing-currency">$</span>{{ site.data.on-demand.fee }}<span class="pricing-period">{{ site.data.on-demand.period }}{% if site.data.on-demand.minimum %}, minimum charge{% endif %}</span></div>
-              <ul class="pricing-feature-list">
-                  {% for feature in site.data.on-demand.features %}
-                  <li class="pricing-feature">{{ feature.feature }}</li>
-                  {% endfor %}
-              </ul>
-              <a class="dark button" href="/buy/on-demand">Buy now</a>
-          </div>
+          <p>If your products aren’t covered by a Support Plan, you can purchase On-Demand Support.</p>
+          <p>Choose a category:</p>
+          <section class="on-demand-categories">
+            {% assign grouped = site.skus | group_by: 'category' %}
+            <ul>
+            {% for group in grouped %}
+            <li class="on-demand-category"><a href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a></li>
+            {% endfor %}
+            </ul>
+          </section>
       </div>
 
       {% include components/cta/support-plans.html %}
   </div>
 </section>
+<p>Questions? Phone <a href="tel:+61731236000">07 3123 6000</a>.</p>
 {% if page.faq %}
 	<h2>On-Demand Support FAQ</h2>
 	<dl class="faq">

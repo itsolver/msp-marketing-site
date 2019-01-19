@@ -1,7 +1,7 @@
 ---
-sort_key: 1
+sort_key: 5
 layout: "category"
 title: "On-Demand Support"
-heading: On-Demand Support
-subtitle: "Pay per incident technical support."
+heading: "On-Demand Support"
+subtitle: "Technical support at on-demand rates."
 ---

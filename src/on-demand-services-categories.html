@@ -2,15 +2,8 @@
 permalink: /on-demand-services-categories/
 title: "On Demand Services"
 heading: "On Demand Services"
-description: Choose from our list of one-time services.
+description: "Choose from our list of one-time services:"
 layout: info-page
 ---
 <p>{{ page.description }}</p>
-<section class="category-section">
-  {% assign grouped = site.skus | group_by: 'category' %}
-  {% for group in grouped %}
-  {% assign items = group.items | sort: 'order' %}
 
-  <h3>{{items.first.category}}</p>
-  {% endfor %}
-</section>
