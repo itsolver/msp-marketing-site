@@ -173,6 +173,11 @@
 	img {
 		border-radius: $border-radius;
 		display: block;
+		margin: auto;
+	}
+
+	img a {
+		margin: auto;
 	}
 
 	h2,
@@ -278,11 +283,13 @@
 		.well,
 		img,
 		figure.highlight {
-			max-width: 100vw;
-			width: 112%;
-			margin-left: -6%;
-			margin-right: -6%;
+			width: fit-content;
+			margin: auto;
 			box-sizing: border-box;
 		}
 	}
+}
+
+div.caption {
+	text-align: center;
 }
