@@ -14,6 +14,7 @@ paths.sourceFolderName   = 'src';
 paths.stylesFolderName   = 'stylesheets';
 paths.tempFolderName     = '.tmp';
 paths.audioFolderName    = 'audio';
+paths.docsFolderName      = 'docs';
 
 paths.prodUrl            = 'https://www.itsolver.net';
 
@@ -30,6 +31,7 @@ paths.iconFiles          = paths.sourceDir + paths.assetsDir + paths.iconFolderN
 paths.imageFiles         = paths.sourceDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFiles          = paths.sourceDir + paths.assetsDir + paths.fontFolderName;
 paths.audioFiles         = paths.sourceDir + paths.assetsDir + paths.audioFolderName;
+paths.docsFiles          = paths.sourceDir + paths.assetsDir + paths.docsFolderName;
 
 // Temp asset files locations.
 paths.assetFilesTemp     = paths.tempDir + paths.assetsFolderName
@@ -39,6 +41,7 @@ paths.iconFilesTemp      = paths.tempDir + paths.assetsDir + paths.iconFolderNam
 paths.imageFilesTemp     = paths.tempDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFilesTemp      = paths.tempDir + paths.assetsDir + paths.fontFolderName;
 paths.audioFilesTemp     = paths.tempDir + paths.assetsDir + paths.audioFolderName;
+paths.docsFilesTemp     = paths.tempDir + paths.assetsDir + paths.docsFolderName;
 
 // Site asset files locations.
 paths.assetFilesSite     = paths.siteDir + paths.assetsFolderName
@@ -48,6 +51,7 @@ paths.iconFilesSite      = paths.siteDir + paths.assetsDir + paths.iconFolderNam
 paths.imageFilesSite     = paths.siteDir + paths.assetsDir + paths.imageFolderName;
 paths.fontFilesSite      = paths.siteDir + paths.assetsDir + paths.fontFolderName;
 paths.audioFilesSite     = paths.siteDir + paths.assetsDir + paths.audioFolderName;
+paths.docsFilesSite     = paths.siteDir + paths.assetsDir + paths.docsFolderName;
 
 
 // Glob patterns by file type.
@@ -60,6 +64,7 @@ paths.txtPattern         = '/**/*.txt';
 paths.xmlPattern         = '/**/*.{xml,json}';
 paths.ymlPattern         = '/**/*.yml';
 paths.audioPattern       = '/*.+(mp3|ogg|wav)';
+paths.docsPattern       = '/*.+(pdf|rtf|)';
 
 // File globs
 paths.htmlFilesGlob      = paths.sourceFolderName + paths.htmlPattern
@@ -71,5 +76,6 @@ paths.txtFilesGlob       = paths.sourceFolderName + paths.txtPattern
 paths.xmlFilesGlob       = paths.sourceFolderName + paths.xmlPattern
 paths.ymlFilesGlob       = paths.sourceFolderName + paths.ymlPattern
 paths.audioFilesGlob     = paths.audioFiles + paths.audioPattern
+paths.docsFilesGlob     = paths.docsFiles + paths.docsPattern
 
 module.exports = paths;
