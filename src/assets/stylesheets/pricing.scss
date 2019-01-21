@@ -203,7 +203,7 @@ li.pricing-feature:last-child {
 }
 @media #{$large-desktop}{
 	.grid2col .column.first {
-		width: 590px !important;
+		width: 660px !important;
 	}
 	.grid2col .column.last {
 		width: 270px !important;
@@ -293,4 +293,9 @@ li.pricing-feature:last-child {
 section.on-demand-support {
   padding: 0;
   margin-bottom: 50px;
+}
+
+// G-Suite features
+ul.plan-feature-list li {
+	list-style-type: disc;
 }
