@@ -1,11 +1,6 @@
 .testimonial {
 	background: $testimonial-background-color;
-
-	blockquote {
-		margin: 0;
-		box-shadow: $large-box-shadow;
-	}
-
+	
 	.author {
 		display: flex;
 		align-items: center;
