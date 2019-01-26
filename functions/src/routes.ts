@@ -299,7 +299,7 @@ router.post('/orders', async (req, res, next) => {
       res.json(productList);
     } else {
       // We need to set up the products.
-      //await setup.run();
+      await setup.run();
       console.error("products don't exist, do setup.")
       res.json(await products.list());
     }
