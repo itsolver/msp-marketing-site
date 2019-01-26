@@ -58,7 +58,11 @@ var pageDimensions = [{
                       }];
 
 // 'gulp styles:critical:home' -- Generate, minify and inline critical-path CSS
-gulp.task('styles:critical:home', () => {
+gulp.task('styles:critical:home', done => {
+  if (!argv.prod){
+    gutil.log('Skipping critical css in local dev.')
+    done();
+  } else {
   return gulp.src(paths.siteDir + 'index.html')
     .pipe(critical({
       base: paths.siteDir,
@@ -72,11 +76,15 @@ gulp.task('styles:critical:home', () => {
       ignore: ['@font-face]'] // defer loading of webfonts
     }))
     .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
-});
+}});
 
 // 'gulp styles:critical:archive' -- Generate, minify and inline critical-path CSS
-gulp.task('styles:critical:archive', () => {
-  return gulp.src(paths.siteDir + '/archived/index.html')
+gulp.task('styles:critical:archive', done => {
+  if (!argv.prod){
+    gutil.log('Skipping critical css in local dev.')
+    done();
+  } else {
+    return gulp.src(paths.siteDir + '/archived/index.html')
     .pipe(critical({
       base: paths.siteDir,
       inline: true,
@@ -89,10 +97,14 @@ gulp.task('styles:critical:archive', () => {
       ignore: ['@font-face'] // defer loading of webfonts
     }))
     .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
-});
+}});
 
 // 'gulp styles:critical:post' -- Generate, minify and inline critical-path CSS
-gulp.task('styles:critical:post', () => {
+gulp.task('styles:critical:post', done => {
+  if (!argv.prod){
+    gutil.log('Skipping critical css in local dev.')
+    done();
+  } else {
   return gulp.src(paths.siteDir + '/blog/index.html')
     .pipe(critical({
       base: paths.siteDir,
@@ -106,4 +118,4 @@ gulp.task('styles:critical:post', () => {
       ignore: ['@font-face'] // defer loading of webfonts
     }))
     .on('error', function(err) { gutil.log(gutil.colors.red(err.message)); })
-});
+}});

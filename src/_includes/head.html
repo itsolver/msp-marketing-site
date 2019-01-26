@@ -14,10 +14,11 @@
   <meta name="theme-color" content="#4182e4">{% seo %} {% feed_meta %}
 
 <!-- Inline navigation css for landing page that's missing from critical inlined css. Load remaining CSS for non-landing pages.  -->
-{% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
-{% if page.header_class == "landing" %}
+<!-- For quicker stylesheet changes in local dev, only inline css in production for landing page  -->
+{% if page.header_class == "landing" and jekyll.environment == "production"  %}
 <style>.nav-open .nav-bar.wrapper .main, .nav-open .nav-bar.wrapper .right {display: block;}</style>
 {% else %}
+{% assign style_css = site.data.css-manifest['main.css'] | default: 'main.css' | prepend: 'assets/stylesheets/' | relative_url %}
 <link rel="stylesheet" href="{{ style_css }}">
 {% endif %}
 
