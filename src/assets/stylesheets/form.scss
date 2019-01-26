@@ -25,7 +25,7 @@ input[type=text],input[type=email],input[type=password],textarea {
 }
 
 
-.checkout-button, a.button, input[type=submit] {
+a.button, .checkout-button, input[type=submit] {
 	padding: 18px $half-space;
 	display: inline-block;
 	border-radius: $border-radius;
@@ -34,6 +34,11 @@ input[type=text],input[type=email],input[type=password],textarea {
 	border: 0;
 	transition: $transition-duration background-color ease, $transition-duration color ease;
 	cursor: pointer;
+
+	&.wide {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
 	&:hover,
 	&.light.dark-hover:hover {
@@ -105,7 +110,7 @@ input[type=text],input[type=email],input[type=password],textarea {
 	}
 
 	&.light {
-		background: #fff;
+		background: #FFF;
 		color: $brand-color;
 		border: 1px solid $brand-color;
 
@@ -114,6 +119,8 @@ input[type=text],input[type=email],input[type=password],textarea {
 			background-color: #e8f2fc;
 		}
 	}
+
+	
 }
 
 a.button+a.button.alt {

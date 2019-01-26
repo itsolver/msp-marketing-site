@@ -23,9 +23,9 @@ faq:
           <p>Choose a category:</p>
           <section class="on-demand-categories">
             {% assign grouped = site.skus | group_by: 'category' %}
-            <ul>
+            <ul class="center">
             {% for group in grouped %}
-            <li class="on-demand-category"><a href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a></li>
+            <li class="on-demand-category"><a class="button wide light" href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a></li>
             {% endfor %}
             </ul>
           </section>
