@@ -1,5 +1,5 @@
 ---
-sort_key: 2
+sort_key: 3
 layout: "category"
 title: "Consulting"
 heading: "Consulting"

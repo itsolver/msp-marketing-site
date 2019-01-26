@@ -1,5 +1,5 @@
 ---
-sort_key: 1
+sort_key: 5
 layout: "category"
 title: "Home Entertainment"
 heading: "Home Entertainment"

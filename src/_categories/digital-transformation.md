@@ -1,5 +1,5 @@
 ---
-sort_key: 3
+sort_key: 2
 layout: "category"
 title: "Digital Transformation"
 heading: "Digital Transformation"
