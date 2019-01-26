@@ -20,7 +20,7 @@ Today in Australia, using an Apple TV we are offered  no subscription-based str
 
 
 
-  1. Sign up for a free 7-day trial at [Unblock-Us.](https://unblock-us.com) Follow the three steps on their website before proceeding.
+  1. Sign up for a free 7-day trial at [Unblock-Us.](https://unblock-us.com){:rel="nofollow"} Follow the three steps on their website before proceeding.
   2. Follow the guide Setting up Apple TV with Unblock-Us
   3. On the Apple TV, Go the Settings > General > iTunes Store > Location. Select United States.
   4. Return back to main screen to see Netflix, Hulu Plus and other streaming services available in US. You will need to follow the next set of instructions to create an account.
@@ -38,7 +38,7 @@ On a PC, smart phone or tablet, you will need an active trial with Unblock-Us se
 
 
 
-  1. On a device setup with Unblock-Us, visit [Netflix](https://www.netflix.com) to start your free month. At the payment method, I was successful using an Australian credit-card and provided the only US zip-code I know, 90210.
+  1. On a device setup with Unblock-Us, visit [Netflix](https://www.netflix.com){:rel="nofollow"} to start your free month. At the payment method, I was successful using an Australian credit-card and provided the only US zip-code I know, 90210.
 
 
   2. On the Apple TV, open the Netflix app and login using your Neflix account.  Once you’ve accessed your account, you can begin enjoying the services brought to you by Netflix.
@@ -54,7 +54,7 @@ Again this assumes you have Unblock-us enabled on your computer.
 
 
 
-  1. Start your free week at [Hulu.](https://www.hulu.com/) I had success signing up using an email address, and at the payment method, I got through with a [US-based iTunes account.](https://www.lifehacker.com.au/2010/09/how-to-set-up-a-us-itunes-account)
+  1. Start your free week at [Hulu.](https://www.hulu.com/){:rel="nofollow"} I had success signing up using an email address, and at the payment method, I got through with a [US-based iTunes account.](https://www.lifehacker.com.au/2010/09/how-to-set-up-a-us-itunes-account){:rel="nofollow"}
 
 
   2. On the Apple TV, open the Hulu Plus app and login using your Hulu Plus account.  Once you’ve accessed your account, you can begin enjoying the services brought to you by Hulu Plus.

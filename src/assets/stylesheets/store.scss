@@ -758,10 +758,6 @@
   margin-top: 10px;
 }
 
-p.product {
-  margin-top: 0;
-}
-
 #summary .discount p {
   margin-top: 0;
 }
@@ -777,6 +773,7 @@ p.product {
   width: 80px;
   height: 80px;
   margin-right: 15px;
+  background: #f6f9fc;
   border-radius: 3px;
 }
 
@@ -837,7 +834,6 @@ p.product {
   font-size: 24px;
   font-weight: 400;
   line-height: inherit;
-  text-transform: capitalize;
 }
 
 #demo {
@@ -908,4 +904,13 @@ p.product {
     height: auto;
     margin: 30px;
   }
+}
+
+ul.center {
+  text-align: center;
+  padding: 0;
+}
+
+section.on-demand-categories ul {
+  max-width: 370px;
 }

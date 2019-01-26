@@ -18,10 +18,8 @@
   "scripts": {
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
-    "deploy": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy",
-    "update-scripts": "gulp copy:scripts && firebase deploy --only hosting",
-    "update-functions": "cd functions && npm run build && firebase deploy --only functions",
-    "update-hosting": "gulp build --prod && firebase deploy --only hosting"
+    "deploy": "firebase deploy --only hosting",
+    "all": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
@@ -53,8 +51,5 @@
     "last 2 versions",
     "> 5%",
     "IE 9"
-  ],
-  "dependencies": {
-    "firebase-functions": "^2.0.5"
-  }
+  ]
 }

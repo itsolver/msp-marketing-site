@@ -86,7 +86,8 @@ gulp.task('serve', (done) => {
   // watch various files for changes and do the needful
   gulp.watch([paths.xmlFilesGlob, paths.txtFilesGlob], gulp.series('site', reload));
   gulp.watch(paths.jsFilesGlob, gulp.series('copy:scripts', reload));
-  gulp.watch(paths.sassFilesGlob, gulp.series('styles', reload));
+  gulp.watch(paths.docsFilesGlob, gulp.series('copy:docs', reload));
+  gulp.watch(paths.sassFilesGlob, gulp.series('styles', 'build:site', reload));
   gulp.watch(paths.imageFilesGlob, gulp.series('copy:images', reload));
   gulp.watch([paths.mdFilesGlob, paths.htmlFilesGlob, paths.ymlFilesGlob], gulp.series('build:site', reload));
 });

@@ -60,7 +60,7 @@ defaults:
     values:
       layout: "post"
   - scope:
-      path: "tech-review/**/*.html"
+      path: "site-audit/**/*.html"
     values:
       sitemap: false
 
@@ -68,6 +68,12 @@ collections:
   case_studies:
     output: false
     permalink: /case-studies/:name/
+  skus:
+    output: true
+    permalink: /:name/
+  categories:
+    output: true
+    permalink: /:name/
 
 exclude:
 - .asset-cache

@@ -1,6 +1,8 @@
+{% if page.cta != "disabled" %}
 <section class="cta">
     <div class="wrapper">
       <p class="big-text">{{ include.text }}</p>
       <a href="/support-plans" class="button dark brand no-border shadow">{{ include.button }}</a>
     </div>
 </section>
+{% endif %}

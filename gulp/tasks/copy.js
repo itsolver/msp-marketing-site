@@ -40,6 +40,13 @@ gulp.task('copy:audio', () => {
     .pipe(gulp.dest(paths.audioFilesSite))
 });
 
+// 'gulp copy:docs' -- copies documents to /dist/
+gulp.task('copy:docs', () => {
+  return gulp.src(paths.docsFilesGlob)
+    .pipe(newer(paths.docsFilesSite))
+    .pipe(gulp.dest(paths.docsFilesSite))
+});
+
 // 'gulp copy:site' -- copies processed Jekyll site to /dist/
 gulp.task('copy:site', () => {
   return gulp.src([paths.tempDir + paths.siteFolderName + '/**/*', paths.tempDir + paths.siteFolderName + '/**/.*'])

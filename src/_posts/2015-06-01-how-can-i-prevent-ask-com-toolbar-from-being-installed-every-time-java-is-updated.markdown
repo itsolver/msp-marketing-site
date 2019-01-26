@@ -8,12 +8,12 @@ categories:
 - Tips-and-Tricks
 ---
 Tired of the annoying Ask.com home page and search engine taking over your browser? So are we!
-The likely culprit is Java installing bundled "offers", i.e. a euphemism for [adware.](https://en.wikipedia.org/wiki/Adware)
+The likely culprit is Java installing bundled "offers", i.e. a euphemism for [adware.](https://en.wikipedia.org/wiki/Adware){:rel="nofollow"}
 
 
 ## Do I still need Java?
 
-If you play Minecraft, then yes! However, [Java is less popular these days](https://www.google.com/trends/explore#q=download%20java) so consider removing Java via the Control Panel > Programs and Features. After doing this, test your online banking and other important websites or programs to see if those services still work. If a website or programs stops working, you should probably [reinstall Java.](https://www.java.com)
+If you play Minecraft, then yes! However, [Java is less popular these days](https://www.google.com/trends/explore#q=download%20java){:rel="nofollow"} so consider removing Java via the Control Panel > Programs and Features. After doing this, test your online banking and other important websites or programs to see if those services still work. If a website or programs stops working, you should probably [reinstall Java.](https://www.java.com){:rel="nofollow"}
 
 
 ## Solution

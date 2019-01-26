@@ -13,7 +13,7 @@ According to Mac Daily News, the hack was achieved by a combination of weak pass
 
 <blockquote>We wanted to provide an update to our investigation into the theft of photos of certain celebrities. When we learned of the theft, we were outraged and immediately mobilized Apple’s engineers to discover the source. Our customers’ privacy and security are of utmost importance to us. After more than 40 hours of investigation, we have discovered that certain celebrity accounts were compromised by a very targeted attack on user names, passwords and security questions, a practice that has become all too common on the Internet. None of the cases we have investigated has resulted from any breach in any of Apple’s systems including iCloud® or Find my iPhone. We are continuing to work with law enforcement to help identify the criminals involved.
 
-To protect against this type of attack, we advise all users to always use a strong password and enable two-step verification. Both of these are addressed on our website at https://support.apple.com/kb/ht4232.</blockquote>
+To protect against this type of attack, we advise all users to always use a strong password and enable two-step verification. Both of these are addressed on our website at [https://support.apple.com/kb/ht4232](https://support.apple.com/kb/ht4232){:rel="nofollow"}.</blockquote>
 
 
 Storing data in online storage services such as iCloud is and will continue to be very useful to access and share our data.
@@ -54,7 +54,7 @@ Storing data in online storage services such as iCloud is and will continue to b
 
 
 
-  * Disregard the above, use private cloud storage such as [owncloud.org](https://owncloud.org/) instead of a big target like iCloud.
+  * Disregard the above, use private cloud storage such as [owncloud.org](https://owncloud.org/){:rel="nofollow"} instead of a big target like iCloud.
 
 
 

@@ -80,7 +80,6 @@ li {
 p,
 ul,
 ol,
-blockquote,
 figure,
 h1,
 h2,
@@ -125,7 +124,7 @@ ul {
   line-height: 1.7rem;
 }
 
-a.button,
+.checkout-button, a.button,
 input[type="submit"] {
   font-family: $font-display-family;
   font-size: $font-normal;

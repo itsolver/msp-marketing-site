@@ -13,6 +13,6 @@ You already use your phone for just about everything. Now at IT Solver you can p
 
 It's incredibly simple and secure.
 
-[Set up Apple Pay on your iPhone, iPad, Apple Watch, or Mac.](https://support.apple.com/en-au/HT204506)
+[Set up Apple Pay on your iPhone, iPad, Apple Watch, or Mac.](https://support.apple.com/en-au/HT204506){:rel="nofollow"}
 
-[Set up Android Pay on your Android phone or tablet.](https://www.android.com/pay/)
+[Set up Android Pay on your Android phone or tablet.](https://www.android.com/pay/){:rel="nofollow"}
