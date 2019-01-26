@@ -22,7 +22,7 @@ faq:
           <p>If your products aren’t covered by a Support Plan, you can purchase On-Demand Support.</p>
           <p>Choose a category:</p>
           <section class="on-demand-categories">
-            {% assign grouped = site.skus | group_by: 'category' %}
+            {% assign grouped = site.skus | sort: 'category_sort_key' | group_by: 'category' %}
             <ul class="center">
             {% for group in grouped %}
             <li class="on-demand-category"><a class="button wide light" href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a></li>
