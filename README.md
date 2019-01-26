@@ -104,8 +104,7 @@ npm install
 Build functions
 
 ~~~bash
-cd functions && npm run build
-travis_retry gulp build --prod
+cd functions && npm run build && cd ..
 ~~~
 
 Initiliaze your own Firebase project from the root of your directory
@@ -122,9 +121,10 @@ Run local server
 gulp
 ~~~
 
-If not using Travis, deploy from local environment and submit sitemaps to search engines
+If not using Travis, build for production, deploy to firebase and submit sitemaps to search engines.
 
 ~~~bash
+- gulp --prod
 - firebase deploy
 - gulp submit
 ~~~
