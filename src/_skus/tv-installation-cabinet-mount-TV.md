@@ -1,5 +1,6 @@
 ---
 sort_key: 34
+category_sort_key: 4
 layout: "sku"
 id: tv-installation-cabinet-mount-TV
 title: "TV Installation, Cabinet Mount"

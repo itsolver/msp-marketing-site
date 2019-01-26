@@ -1,5 +1,6 @@
 ---
 sort_key: 31
+category_sort_key: 1
 layout: "sku"
 id: troubleshoot-performance-computer
 title: "Troubleshoot Performance"

@@ -1,5 +1,6 @@
 ---
 sort_key: 28
+category_sort_key: 4
 layout: "sku"
 id: soundbar-setup-soundbar
 title: "Soundbar Setup"

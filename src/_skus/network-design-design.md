@@ -1,5 +1,6 @@
 ---
 sort_key: 17
+category_sort_key: 1
 layout: "sku"
 id: network-design-design
 title: "Network Design"

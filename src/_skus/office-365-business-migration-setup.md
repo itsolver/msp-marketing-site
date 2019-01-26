@@ -1,5 +1,6 @@
 ---
 sort_key: 19
+category_sort_key: 2
 layout: "sku"
 id: office-365-business-migration-setup
 title: "Office 365 Business Migration"

@@ -1,5 +1,6 @@
 ---
 sort_key: 33
+category_sort_key: 1
 layout: "sku"
 id: tutorial-hour
 title: "Tutorial"

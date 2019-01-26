@@ -1,5 +1,6 @@
 ---
 sort_key: 26
+category_sort_key: 4
 layout: "sku"
 id: plex-home-theatre-setup-plex-media-server
 title: "Plex Home Theatre Setup"

@@ -1,5 +1,6 @@
 ---
 sort_key: 18
+category_sort_key: 1
 layout: "sku"
 id: networking-home-network
 title: "Networking"

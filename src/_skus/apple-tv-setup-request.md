@@ -1,5 +1,6 @@
 ---
 sort_key: 1
+category_sort_key: 4
 layout: "sku"
 id: apple-tv-setup-request
 title: "Apple TV Setup"

@@ -1,5 +1,6 @@
 ---
 sort_key: 8
+category_sort_key: 2
 layout: "sku"
 id: g-suite-solo-migration-setup
 title: "G Suite Solo Migration"

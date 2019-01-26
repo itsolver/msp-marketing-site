@@ -1,5 +1,6 @@
 ---
 sort_key: 27
+category_sort_key: 1
 layout: "sku"
 id: relocation-hour
 title: "Relocation"

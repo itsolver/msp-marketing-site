@@ -1,5 +1,6 @@
 ---
 sort_key: 7
+category_sort_key: 2
 layout: "sku"
 id: g-suite-premium-migration-setup
 title: "G Suite Premium Migration"

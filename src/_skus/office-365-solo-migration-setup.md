@@ -1,5 +1,6 @@
 ---
 sort_key: 21
+category_sort_key: 2
 layout: "sku"
 id: office-365-solo-migration-setup
 title: "Office 365 Solo Migration"

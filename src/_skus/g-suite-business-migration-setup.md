@@ -1,5 +1,6 @@
 ---
 sort_key: 6
+category_sort_key: 2
 layout: "sku"
 id: g-suite-business-migration-setup
 title: "G Suite Business Migration"

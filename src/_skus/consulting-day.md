@@ -1,5 +1,6 @@
 ---
 sort_key: 2
+category_sort_key: 3
 layout: "sku"
 id: consulting-day
 title: "Consulting"

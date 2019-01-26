@@ -1,5 +1,6 @@
 ---
 sort_key: 22
+category_sort_key: 2
 layout: "sku"
 id: office-365-startup-setup
 title: "Office 365 Startup"

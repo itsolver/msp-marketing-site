@@ -1,5 +1,6 @@
 ---
 sort_key: 20
+category_sort_key: 2
 layout: "sku"
 id: office-365-premium-migration-setup
 title: "Office 365 Premium Migration"

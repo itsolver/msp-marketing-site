@@ -1,5 +1,6 @@
 ---
 sort_key: 36
+category_sort_key: 1
 layout: "sku"
 id: upgrades-upgrade
 title: "Upgrades"

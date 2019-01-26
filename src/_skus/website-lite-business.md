@@ -1,5 +1,6 @@
 ---
 sort_key: 38
+category_sort_key: 8
 layout: "sku"
 id: website-lite-business
 title: "Website Lite"

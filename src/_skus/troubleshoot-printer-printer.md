@@ -1,5 +1,6 @@
 ---
 sort_key: 32
+category_sort_key: 1
 layout: "sku"
 id: troubleshoot-printer-printer
 title: "Troubleshoot Printer"

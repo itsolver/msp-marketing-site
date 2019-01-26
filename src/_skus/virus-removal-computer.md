@@ -1,5 +1,6 @@
 ---
 sort_key: 37
+category_sort_key: 1
 layout: "sku"
 id: virus-removal-computer
 title: "Virus Removal"

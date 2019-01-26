@@ -1,5 +1,6 @@
 ---
 sort_key: 15
+category_sort_key: 1
 layout: "sku"
 id: modem-wireless-network-setup-modem
 title: "Modem and Wireless Network Setup"

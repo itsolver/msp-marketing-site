@@ -1,5 +1,6 @@
 ---
 sort_key: 13
+category_sort_key: 6
 layout: "sku"
 id: insurance-quotes-device
 title: "Insurance Quotes"

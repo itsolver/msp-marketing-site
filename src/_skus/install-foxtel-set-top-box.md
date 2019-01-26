@@ -1,5 +1,6 @@
 ---
 sort_key: 11
+category_sort_key: 4
 layout: "sku"
 id: install-foxtel-set-top-box
 title: "Install Foxtel "

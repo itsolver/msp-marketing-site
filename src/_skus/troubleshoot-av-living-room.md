@@ -1,5 +1,6 @@
 ---
 sort_key: 30
+category_sort_key: 4
 layout: "sku"
 id: troubleshoot-av-living-room
 title: "Troubleshoot AV"

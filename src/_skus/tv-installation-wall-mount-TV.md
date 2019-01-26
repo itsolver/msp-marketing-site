@@ -1,5 +1,6 @@
 ---
 sort_key: 35
+category_sort_key: 4
 layout: "sku"
 id: tv-installation-wall-mount-TV
 title: "TV Installation, Wall Mount"

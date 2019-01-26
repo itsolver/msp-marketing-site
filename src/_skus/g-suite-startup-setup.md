@@ -1,5 +1,6 @@
 ---
 sort_key: 9
+category_sort_key: 2
 layout: "sku"
 id: g-suite-startup-setup
 title: "G Suite Startup"

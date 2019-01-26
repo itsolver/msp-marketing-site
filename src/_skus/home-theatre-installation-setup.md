@@ -1,5 +1,6 @@
 ---
 sort_key: 10
+category_sort_key: 4
 layout: "sku"
 id: home-theatre-installation-setup
 title: "Home Theatre Installation"

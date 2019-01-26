@@ -1,5 +1,6 @@
 ---
 sort_key: 29
+category_sort_key: 1
 layout: "sku"
 id: switch-to-gmail-account
 title: "Switch to Gmail"

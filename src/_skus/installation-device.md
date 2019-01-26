@@ -1,5 +1,6 @@
 ---
 sort_key: 12
+category_sort_key: 1
 layout: "sku"
 id: installation-device
 title: "Installation"

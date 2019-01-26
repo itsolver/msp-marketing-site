@@ -1,5 +1,6 @@
 ---
 sort_key: 4
+category_sort_key: 5
 layout: "sku"
 id: data-backup-hour
 title: "Data Backup"

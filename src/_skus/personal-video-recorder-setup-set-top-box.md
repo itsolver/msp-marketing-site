@@ -1,5 +1,6 @@
 ---
 sort_key: 25
+category_sort_key: 4
 layout: "sku"
 id: personal-video-recorder-setup-set-top-box
 title: "Personal Video Recorder Setup"

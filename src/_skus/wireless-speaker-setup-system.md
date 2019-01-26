@@ -1,5 +1,6 @@
 ---
 sort_key: 40
+category_sort_key: 7
 layout: "sku"
 id: wireless-speaker-setup-system
 title: "Wireless Speaker Setup"

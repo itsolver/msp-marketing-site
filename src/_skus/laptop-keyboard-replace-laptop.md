@@ -1,5 +1,6 @@
 ---
 sort_key: 14
+category_sort_key: 1
 layout: "sku"
 id: laptop-keyboard-replace-laptop
 title: "Laptop Keyboard Replacement"
