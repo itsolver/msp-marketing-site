@@ -35,7 +35,7 @@
 {% if site.yandex_site_verification %}
 <meta name="yandex-verification" content="{{ site.yandex_site_verification }}">
 {% endif %}
-<!-- / site verifications -->
+<!-- start Google Analytics code -->
 
 {% if site.environment == 'production' and site.google_analytics_key != '' %}
   <script>
@@ -50,4 +50,16 @@
     }
   </script>
 {% endif %}
+<!-- end Google Analytics code -->
+<!-- start Google Ads code -->
+{% if site.environment == 'production' %}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-8426964036989821",
+      enable_page_level_ads: true
+    });
+  </script>
+{% endif %}
+<!-- end Google Adsense code -->
 </head>
