@@ -56,10 +56,16 @@ Install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ~~~
 
-Install node version 9.5
+Using bash install nvm. 
+*Note: Homebrew installation is not supported. If you have issues with homebrew-installed nvm, please ``brew uninstall`` it, and install it using the instructions below.*
 
 ~~~bash
-brew install node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+~~~
+
+Using node version manager install and use node version 9.5:
+
+~~~bash
 nvm install 9.5
 nvm use 9.5
 ~~~
@@ -74,26 +80,28 @@ brew install rbenv
 
 # Setup rbenv integration to your shell
 rbenv init
-
-# Check your install
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
-
 ~~~
 
-Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby
+Open a new Terminal tab and check rbenv is installed:
+
+~~~bash
+# Check your install
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+~~~
+
+Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby. If you're interested, head over to [rbenv command references])(https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
 
 ~~~bash
 rbenv install 2.4.1
-rbenv global 2.4.1
-ruby -v
+~~~
 
-# Install Jekyll
+Install Jekyll:
+
+~~~bash
 gem install --user-install bundler jekyll
 ~~~
 
-That’s it! Head over [rbenv command references])(https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
-
-Install dependencies
+Install dependencies:
 
 ~~~bash
 cd functions && npm install && cd ..
@@ -101,7 +109,7 @@ bundle install
 npm install
 ~~~
 
-Build functions
+Build functions:
 
 ~~~bash
 cd functions && npm run build
@@ -116,13 +124,15 @@ firebase login
 firebase init # enable Hosting and Functions
 ~~~
 
-Run local server
+Run local server:
 
 ~~~bash
 gulp
 ~~~
 
-If not using Travis, deploy from local environment and submit sitemaps to search engines
+At this point I use [Travis CI](https://docs.travis-ci.com/user/tutorial/#to-get-started-with-travis-ci) for deploying my site.
+
+If you're not using Travis, deploy from local environment and submit sitemaps to search engines:
 
 ~~~bash
 - firebase deploy
