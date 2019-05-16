@@ -6,7 +6,7 @@ This is a labour of ❤️ for serverless and the latest web technologies, built
 
 Based on CloudCannon's [Hydra Jekyll Template](https://github.com/CloudCannon/hydra-jekyll-template) and inspired by Made Mistakes [How I'm Using Jekyll in 2017](https://mademistakes.com/articles/using-jekyll-2017/).
 
-Hosted at [Firebase Hosting](https://firebase.google.com/products/hosting/) for the secure connection, Fast content delivery, Rapid deployment, One-click rollbacks, and the free (Spark) plan for starters. Note the pay as you go [Blaze plan](https://firebase.google.com/pricing) or fixed rate Flame Plan is required for Stripe functions to work. [Firebase Pricing].
+Hosted at [Firebase Hosting](https://firebase.google.com/products/hosting/) for the secure connection, Fast content delivery, Rapid deployment, One-click rollbacks, and the free (Spark) plan for starters. Note the pay as you go [Blaze plan](https://firebase.google.com/pricing) or fixed rate Flame Plan is required for Stripe functions to work.
 
 [Gulp](https://gulpjs.com/) for development workflow.
 
