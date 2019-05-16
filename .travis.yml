@@ -3,9 +3,6 @@ rvm:
 - 2.4.1
 dist: trusty
 sudo: required
-branches:
-  only:
-  - master
 cache:
   bundler: true
   directories:
