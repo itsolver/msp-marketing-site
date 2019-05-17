@@ -43,7 +43,7 @@ install:
 - npm install -g gulp-cli
 - firebase use itsolver-499d1 --token "$FIREBASE_API_TOKEN"
 # Unset stripe config before setting environment variables
-# - echo "Configuring Stripe test keys""
+#- echo "Configuring Stripe test keys"
 - echo "Configuring Stripe live keys"
 - firebase functions:config:unset stripe --token "$FIREBASE_API_TOKEN"
 - firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
