@@ -1,8 +1,6 @@
 branches:
   only:
-  - master
-  - add-subscriptions
-  - dev
+  - /.*/
 language: ruby
 rvm:
 - 2.4.1
