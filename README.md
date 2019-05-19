@@ -93,6 +93,7 @@ Restart your terminal for changes to take effect. Now you can install the Ruby v
 
 ~~~bash
 rbenv install 2.4.1
+rbenv local 2.4.1
 ~~~
 
 Install Jekyll:
@@ -107,13 +108,13 @@ Install dependencies:
 cd functions && npm install && cd ..
 bundle install
 npm install
+npm install -g gulp-cli
 ~~~
 
 Build functions:
 
 ~~~bash
-cd functions && npm run build
-travis_retry gulp build --prod
+cd functions && npm run build  && cd ..
 ~~~
 
 Initiliaze your own Firebase project from the root of your directory
