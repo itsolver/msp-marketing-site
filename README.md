@@ -107,6 +107,7 @@ Install dependencies:
 cd functions && npm install && cd ..
 bundle install
 npm install
+npm install -g gulp-cli
 ~~~
 
 Build functions:
