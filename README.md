@@ -113,7 +113,6 @@ Build functions:
 
 ~~~bash
 cd functions && npm run build
-travis_retry gulp build --prod
 ~~~
 
 Initiliaze your own Firebase project from the root of your directory
