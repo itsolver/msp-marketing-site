@@ -93,6 +93,7 @@ Restart your terminal for changes to take effect. Now you can install the Ruby v
 
 ~~~bash
 rbenv install 2.4.1
+rbenv local 2.4.1
 ~~~
 
 Install Jekyll:
