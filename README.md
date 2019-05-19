@@ -112,7 +112,7 @@ npm install
 Build functions:
 
 ~~~bash
-cd functions && npm run build
+cd functions && npm run build  && cd ..
 ~~~
 
 Initiliaze your own Firebase project from the root of your directory
