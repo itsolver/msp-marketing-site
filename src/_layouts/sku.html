@@ -4,16 +4,14 @@ icons: true
 ---
 
 <div class="wrapper">
-  <section>
-    <h1>{{ page.heading }}</h1>
-    {% if page.subtitle %}
-    <p class="subtitle">{{ page.subtitle }}</p>
-    {% endif %}
-  </section>
+  <h1>{{ page.heading }}</h1>
   {{ content }}
   <section class="on-demand-support">
     <div class="grid2col">
         <div class="column first">
+            {% if page.subtitle %}
+            <p>{{ page.subtitle }}</p>
+            {% endif %}
             <div class="pricing-item single">
                 <div class="pricing-price"><span class="pricing-currency">$</span>{{ page.price }}</div>
                 <ul class="pricing-feature-list">
@@ -29,7 +27,7 @@ icons: true
                 <div id="error-message"></div>
 
                 <script>
-                  var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU', {
+                  var stripe = Stripe('pk_test_SG9X9fY1ESQ5MUd58bxByEVA', {
                     betas: ['checkout_beta_4']
                   });
 
@@ -58,8 +56,10 @@ icons: true
                 </script>
             </div>
         </div>
+        {% include components/cta/support-plans.html %}
       </div>
   </section>
+  
   {% if page.faq %}
     <h2>On-Demand Support FAQ</h2>
     <dl class="faq">
@@ -73,7 +73,6 @@ icons: true
   {% endif %}
   
   <section>
-    <h2>Pay and book online</h2>
-    <p>To discuss any specific requirements, please start a chat or call <a  href="tel:+61731236000">07 3123 6000</a></p>
+    <p>Questions? Phone <a  href="tel:+61731236000">07 3123 6000</a></p>
   </section>
 </div>
