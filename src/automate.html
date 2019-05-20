@@ -1,0 +1,144 @@
+---
+permalink: /automate/
+title: Automate
+heading: Save money and time with automation
+layout: info-page
+description: Make life intesting, automate the boring tasks.
+---
+<section class="maintenance">
+  <div class="grid2col">
+      <div class="column first">
+          <p>{{ page.description }}</p>
+
+          <div class="pricing-item single">
+              <div class="pricing-price"><span class="pricing-currency">$</span>108<span class="pricing-period"> / month</span></div>
+              <ul class="pricing-feature-list">
+                  <li class="pricing-feature">Automations 20 at a time.</li>
+                  <li class="pricing-feature">Tasks per month 1000.</li>
+                  <li class="pricing-feature">Support requests 1 at a time.</li>
+                  <li class="pricing-feature">Change management.</li>
+              </ul>
+              <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button
+                class="checkout-button"
+                id="checkout-button-plan_automate-starter"
+                role="link"
+                >
+                Checkout
+                </button>
+                
+                <div class="col col-qty layout-inline">
+                    <a href="#" class="qty qty-minus">-</a>
+                      <input id="quantity-button-plan_automate-starter" type="numeric" value="1" />
+                    <a href="#" class="qty qty-plus">+</a>
+                </div>
+                <div id="error-message"></div>
+              <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Load JQuery for quantity adjustments -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+
+
+
+
+<script>
+  var stripe = Stripe('pk_test_SG9X9fY1ESQ5MUd58bxByEVA');
+
+  var checkoutButton = document.getElementById('checkout-button-plan_automate-starter');
+
+  checkoutButton.addEventListener('click', function () {
+    // Get quantity requested
+    planQty = +document.getElementById('quantity-button-plan_automate-starter').value;
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{plan: 'plan_automate-starter', quantity: planQty} ],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://www.itsolver.net/success',
+      cancelUrl: 'https://www.itsolver.net/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
+
+<script>
+// SHOPPING CART PLUS OR MINUS
+$('a.qty-minus').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+    
+        if (value > 1) {
+            value = value - 1;
+        } else {
+            value = 0;
+        }
+    
+    $input.val(value);
+        
+    });
+
+    $('a.qty-plus').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+        value = value + 1;
+        } else {
+            value =100;
+        }
+
+        $input.val(value);
+    });
+
+// RESTRICT INPUTS TO NUMBERS ONLY WITH A MIN OF 0 AND A MAX 100
+$('input').on('blur', function(){
+
+    var input = $(this);
+    var value = parseInt($(this).val());
+
+        if (value < 0 || isNaN(value)) {
+            input.val(0);
+        } else if
+            (value > 100) {
+            input.val(100);
+        }
+});
+</script>
+          </div>
+      </div>
+
+      {% include components/cta/free-technology-audit.html %}
+  </div>
+
+</section>
+{% if page.faq %}
+	<h2>Consultation FAQ</h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}
