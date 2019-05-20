@@ -15,6 +15,7 @@ node_modules
 npm-debug.log*
 have-i-been-pwned-verification.txt
 firebase-debug.log
+/vendor/
 
 # .gitignore from stripe/stripe-payments-demo
 # macOS
