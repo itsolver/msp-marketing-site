@@ -61,4 +61,4 @@ script:
 
 after_success:
 - firebase --non-interactive deploy --token "$FIREBASE_API_TOKEN"
-- gulp submit
+#- gulp submit
