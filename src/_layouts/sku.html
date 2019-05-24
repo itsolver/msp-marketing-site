@@ -27,9 +27,7 @@ icons: true
                 <div id="error-message"></div>
 
                 <script>
-                  var stripe = Stripe('pk_test_SG9X9fY1ESQ5MUd58bxByEVA', {
-                    betas: ['checkout_beta_4']
-                  });
+                  var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU');
 
                   var checkoutButton = document.getElementById('checkout-button-{{ page.id | replace: '/', ''}}');
                   checkoutButton.addEventListener('click', function () {
