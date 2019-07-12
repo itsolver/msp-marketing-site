@@ -14,7 +14,7 @@
       },
       {
         "source": "/add",
-        "destination": "https://support.itsolver.net/hc/en-au/articles/360000946275-G-Suite-New-User",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSfSHbpp8OLbED_jdk118xq8v64G97Ugeg0P4n3gP83LUmGxOw/viewform?usp=sf_link",
         "type": 301
       },
       {
@@ -214,7 +214,7 @@
       },
       {
         "source": "/remove",
-        "destination": "https://support.itsolver.net/hc/en-au/articles/360000945835-G-Suite-Offboard-Employee",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLScO6-DyL1wczxDSGBr7QN3MV0-LAS4_0Tj7kvIs853hle9GPQ/viewform?usp=sf_link",
         "type": 301
       },
       {
