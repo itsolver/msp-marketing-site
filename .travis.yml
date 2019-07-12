@@ -31,12 +31,12 @@ before_install:
 install:
 - npm install -g firebase-tools
 - npm install -g gulp-cli
-- firebase use itsolver-499d1 --token "$FIREBASE_API_TOKEN"
+- firebase use itsolver-499d1 --token "$FIREBASE_TOKEN"
 # Unset stripe config before setting environment variables
-- firebase functions:config:unset stripe --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_API_TOKEN"
-- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_API_TOKEN"
+- firebase functions:config:unset stripe --token "$FIREBASE_TOKEN"
+- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_TOKEN"
+- firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_TOKEN"
+- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_TOKEN"
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
@@ -44,5 +44,5 @@ script:
 - cd functions && npm run build
 - travis_retry gulp build --prod
 after_success:
-- firebase --non-interactive deploy --token "$FIREBASE_API_TOKEN"
+- firebase --non-interactive deploy --token "$FIREBASE_TOKEN"
 - gulp submit
