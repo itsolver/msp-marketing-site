@@ -14,10 +14,6 @@
   link: /on-demand/
   new_window: false
   highlight: false
-- name: Maintenance
-  link: /maintenance/
-  new_window: false
-  highlight: false
 - name: Consultation
   link: /consultation/
   new_window: false
