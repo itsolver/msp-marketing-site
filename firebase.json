@@ -73,6 +73,11 @@
         "type": 301
       },
       {
+        "source": "/deck",
+        "destination": "https://slides.com/itsolver/deck",
+        "type": 301
+      },
+      {
         "source": "/demo",
         "destination": "https://docs.google.com/presentation/d/1G1nfh156vJk1sAHWzMQXe5JI6xXv3d9tPfLETvA_68k/edit?usp=sharing",
         "type": 301
