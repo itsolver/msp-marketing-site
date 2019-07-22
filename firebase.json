@@ -74,7 +74,7 @@
       },
       {
         "source": "/deck",
-        "destination": "https://slides.com/itsolver/deck",
+        "destination": "https://slides.com/itsolver/deck/live",
         "type": 301
       },
       {
