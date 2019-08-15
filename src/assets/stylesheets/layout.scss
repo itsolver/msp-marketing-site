@@ -148,3 +148,12 @@
   margin-right: auto;
   margin-bottom: 0;
 }
+
+.workshop {
+	max-width: 700px;
+	margin: auto;
+	@media only screen and (min-width: $x-large-desktop){
+		max-width: 940px;
+	}
+	
+}
