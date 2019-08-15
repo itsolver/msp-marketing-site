@@ -1,0 +1,57 @@
+---
+permalink: /workshop/
+title: Workshop on G Suite, Cloud, Backup &  More
+sitemap: false
+layout: info-page
+feature-image: workshop-cloud-intro-it-solver-debi-brett.png
+feature-image-max-width: 600px
+---
+<div 
+  style="max-width: {{page.feature-image-max-width}}; margin:auto;"
+  class="image"><img style="display: block;" class="lozad" data-src="/assets/images/{{page.feature-image}}" data-alt="{{page.feature-image}}" alt="{{page.feature-image}}"><noscript><img src="/assets/images/{{page.feature-image}}" alt="{{page.feature-image}}"></noscript></div>
+<br>
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+<div
+  style="text-align: center;">
+<a 
+  class="alt button dark no-border dark-hover"
+  id="checkout-button-workshop-cloud-apps-intro-person"
+  role="link"
+>
+  Buy a ticket
+</a>
+
+<div id="error-message"></div>
+</div>
+
+<script>
+  var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU');
+
+  var checkoutButton = document.getElementById('checkout-button-workshop-cloud-apps-intro-person');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'workshop-cloud-apps-intro-person', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://calendly.com/itsolver/workshop-cloud-intro?month=2019-08&date=2019-08-28',
+      cancelUrl: 'https://www.itsolver.net/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+</script>
