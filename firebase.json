@@ -53,6 +53,11 @@
         "type": 301
       },
       {
+        "source": "/cloud",
+        "destination": "https://slides.com/itsolver/deck-1/live",
+        "type": 301
+      },
+      {
         "source": "/community",
         "destination": "https://support.itsolver.net/hc/en-au/community/topics",
         "type": 301
