@@ -121,6 +121,9 @@ a.button, .checkout-button, input[type=submit] {
 	}
 	&.business {
 		background-color: $business-color;	
+		&:hover {
+			background-color: $business-color-light-accent;
+		}
 	}
 
 	
