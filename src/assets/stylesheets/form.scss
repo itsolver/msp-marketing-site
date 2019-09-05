@@ -111,8 +111,8 @@ a.button, .checkout-button, input[type=submit] {
 
 	&.light {
 		background: #FFF;
-		color: $light-accent;
-		border: 1px solid $light-accent;
+		color: $brand-color;
+		border: 1px solid $brand-color;
 
 		&:hover {
       		color: $text-color;
@@ -120,7 +120,9 @@ a.button, .checkout-button, input[type=submit] {
 		}
 	}
 	&.business {
-		background-color: $business-color;	
+		background-color: $business-color;
+    color: $light-shade;
+    
 		&:hover {
 			background-color: $business-color-light-accent;
 		}
