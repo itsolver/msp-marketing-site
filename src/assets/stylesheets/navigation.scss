@@ -74,7 +74,7 @@ nav.right > svg {
       padding: 20px 0;
       transition-duration: 0.15s;
     &:hover {
-      color: $dark-accent;
+      color: $light-accent;
     }
     svg,
     svg:hover {
@@ -91,7 +91,7 @@ nav.right > svg {
 			transition-duration: 0.2s;
 
 			&:hover {
-				color: $dark-accent;
+				color: $light-accent;
 			}
 		}
 	}
@@ -121,7 +121,7 @@ nav.right > svg {
 		}
 
 		&.light:hover {
-			color: $brand-color;
+			color: $light-accent;
 		}
 	}
 }
@@ -175,7 +175,7 @@ nav.right > svg {
 		.nav-bar.wrapper .right a {
 
       &:hover {
-        color: $dark-accent;
+        color: $light-accent;
       }
 
 			.button {
@@ -189,7 +189,7 @@ nav.right > svg {
 
     &:hover,
     &.button:hover {
-			color: $brand-color;
+			color: $light-accent;
     }
 
     &svg:hover {

@@ -111,13 +111,16 @@ a.button, .checkout-button, input[type=submit] {
 
 	&.light {
 		background: #FFF;
-		color: $brand-color;
-		border: 1px solid $brand-color;
+		color: $light-accent;
+		border: 1px solid $light-accent;
 
 		&:hover {
-      color: $brand-color;
-			background-color: #e8f2fc;
+      		color: $text-color;
+			background-color: $light-shade;
 		}
+	}
+	&.business {
+		background-color: $business-color;	
 	}
 
 	

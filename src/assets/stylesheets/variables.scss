@@ -1,9 +1,11 @@
 // Brand colour palette
 $light-shade: #e6e7e8;
 $light-accent: #2da9e1;
-$brand-color: #2da9e1;
+$brand-color: #003D84;
 $dark-accent: #003D84;
 $dark-shade: #003D84;
+$business-color: #78c143;
+$home-color: #662d91;
 
 // Colours
 $footer-color: #e6e7e8;
@@ -15,6 +17,7 @@ $form-icon-color: #828a9b;
 $placeholder-color: #b4b8c1;
 $plain-border-color: #e6e7e8;
 $light-hover-color: #e6e7e8;
+
 
 
 $middle-gradient-color: mix($brand-color, $dark-accent, 95%);
