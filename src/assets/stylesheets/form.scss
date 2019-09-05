@@ -115,8 +115,7 @@ a.button, .checkout-button, input[type=submit] {
 		border: 1px solid $brand-color;
 
 		&:hover {
-      		color: $text-color;
-			background-color: $light-shade;
+			border-color: $light-accent;
 		}
 	}
 	&.business {
