@@ -40,9 +40,11 @@ install:
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
+- snyk test
 script:
 - cd functions && npm run build
 - travis_retry gulp build --prod
 after_success:
 - firebase --non-interactive deploy --token "$FIREBASE_TOKEN"
 - gulp submit
+- snyk monitor
