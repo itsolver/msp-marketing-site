@@ -19,19 +19,20 @@
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
     "deploy": "firebase deploy --only hosting",
-    "all": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy"
+    "all": "gulp build --prod && cd functions && npm run build && cd .. && firebase deploy",
+    "update": "npm install -g npm-check-updates && ncu -u && npm update"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
-    "critical": "^1.3.4",
-    "del": "^5.0.0",
+    "critical": "^1.3.6",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-changed": "^4.0.0",
+    "gulp-changed": "^4.0.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^6.0.0",
+    "gulp-imagemin": "^6.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-postcss": "^8.0.0",
     "gulp-pretty-data": "^0.1.2",
@@ -45,7 +46,7 @@
     "require-dir": "^1.2.0",
     "shelljs": "^0.8.3",
     "submit-sitemap": "^0.1.3",
-    "yargs": "^13.3.0"
+    "yargs": "^14.0.0"
   },
   "browserslist": [
     "last 2 versions",

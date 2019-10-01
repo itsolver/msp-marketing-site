@@ -32,12 +32,12 @@ install:
 - npm install -g firebase-tools
 - npm install -g gulp-cli
 - npm install -g snyk
-- firebase use itsolver-499d1 --token "$FIREBASE_TOKEN"
+- firebase use itsolver-499d1 --token "$PROD_FIREBASE_TOKEN"
 # Unset stripe config before setting environment variables
-- firebase functions:config:unset stripe --token "$FIREBASE_TOKEN"
-- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_TOKEN"
-- firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_TOKEN"
-- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_TOKEN"
+- firebase functions:config:unset stripe --token "$PROD_FIREBASE_TOKEN"
+- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$PROD_FIREBASE_TOKEN"
+- firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$PROD_FIREBASE_TOKEN"
+- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$PROD_FIREBASE_TOKEN"
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
@@ -46,6 +46,6 @@ script:
 - cd functions && npm run build
 - travis_retry gulp build --prod
 after_success:
-- firebase --non-interactive deploy --token "$FIREBASE_TOKEN"
+- firebase --non-interactive deploy --token "$PROD_FIREBASE_TOKEN"
 - gulp submit
 - snyk monitor
