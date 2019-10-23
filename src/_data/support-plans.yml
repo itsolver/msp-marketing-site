@@ -2,19 +2,20 @@
   - name: Business
   - fee: 15
   - period: / user / month
-  - feature: On-Demand support requests for G Suite or Office 365
-  - feature: Unlimited requests
-  - feature: Mobile Management
+  - feature: Dedicated technical assistant who speaks your language.
+  - feature: Assistance with internet, email, storage, mobile and security
+  - feature: Get expert answers to tech questions
   - feature: Submit requests via chat, email or phone
-  - feature: Remote desktop support
-  - feature: Get quick answers to tech questions
-  - feature: Assisted G Suite or Office 365 Learning via the web
+  - feature: Remote desktop support for quick resolutions
+  - feature: Your concierge for G Suite or Office 365 admin tasks
+  - feature: How to guides for using G Suite or Office 365
+  - feature: Mobile Management to keep your company data secure
   - highlight: true
 - plan:
   - name: Premium
   - fee: 25
   - period: / user / month
   - feature: Everything in Business, plus...
-  - feature: Customer site visits
+  - feature: 4 customer site visits per year
   - feature: 24/7 priority support
-
+  - feature: 3 user minimum
