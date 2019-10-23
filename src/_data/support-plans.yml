@@ -1,6 +1,6 @@
 - plan:
   - name: Business
-  - fee: 14.9
+  - fee: 15
   - period: / user / month
   - feature: On-Demand support requests for G Suite or Office 365
   - feature: Unlimited requests
@@ -12,7 +12,7 @@
   - highlight: true
 - plan:
   - name: Premium
-  - fee: 24.9
+  - fee: 25
   - period: / user / month
   - feature: Everything in Business, plus...
   - feature: Customer site visits
