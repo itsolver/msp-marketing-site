@@ -1,11 +1,12 @@
 branches:
   only:
   - /.*/
-language: ruby, node_js, nvm
+language: ruby
 rvm:
 - 2.5.3
 dist: xenial
 sudo: required
+node_js: 11.0.0
 cache:
   bundler: true
   directories:
