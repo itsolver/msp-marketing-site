@@ -283,6 +283,11 @@
         "type": 301
       },
       {
+        "source": "/support",
+        "destination": "/support-plans",
+        "type": 301
+      },
+      {
         "source": "/terms-of-service",
         "destination": "/legal",
         "type": 301
