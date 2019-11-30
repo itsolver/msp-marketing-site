@@ -5,7 +5,6 @@ language: ruby
 rvm:
 - 2.5.3
 dist: xenial
-sudo: required
 node_js: 11.0.0
 cache:
   bundler: true
@@ -14,7 +13,7 @@ cache:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  notifications:
+notifications:
   pushover:
     on_success: always
     on_failure: always
@@ -23,8 +22,10 @@ env:
     users:
       secure: "n8BdLWvA99T3+cKcx5S62tSTp4BpJ74FnIGFEAe4yM18puRUotAK7skvN/nS6km7ipwo2Kk+/NuTE4ZEn0UuHAyncOTMA4jUzhAE2JAGMfBjOGxQdHlv777iCKpqohnceD3d2FLo51/2WKjB3m30BGY6vX242SVxJa/W7meJZtm9rVdcR/KF2Zv8ZwQ2Epl7/yxJf8Lti3jP8yru9+K7hNi7+i+K8/ZNIEzrCmOZ2+F9dDUKcijVz95oI77dvizlU68KS70db1hi7iqVU2HcnHGFsx/ogLL7Ft0+LFbGRLRWZHqLqCyw9i6lwm/DxQM+rHFvvgvBuWLpiy53ZMMzvli63OLsNOKfmm/3Ovjij311QOGvgSjN6d3ExF4oiP86MYgy+rOvGDZl+S++kwF+3wLERBSXJXxYkXgcQveXe+OUKgCxOF4DhcA0/LsudCRxHc/h034TTsqGyT7llJmjux7go38ggHbSbLWU3cL4DElCKJIHiT4V3H6gpBi7OPJLo1RB95kBMzHgV1vMs8enaX6NxsS2dO56JPPCrl5thgrjGJ6C1tsLvegH2CbazI+as5vi8/zFdNy3ZIr39cjUH2i0SaO3l4P3BPemiS6UNjmtWZLJAjxV/t4uHRNm2Qyf8oh5zgqTpKxoirE/jfxzzk7ZRx5ZfshVmvx93GVuYYI="
   email:
-    on_success: never
-    on_failure: change
+    recipients:
+      - angus@itsolver.net
+    on_success: never # default: change
+    on_failure: always # default: always
 before_install:
 - gem update --system
 - gem install bundler
