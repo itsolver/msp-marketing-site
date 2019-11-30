@@ -1,0 +1,45 @@
+---
+permalink: /support-plan-requests/
+title: Support Plan Requests
+heading: Support Plan Requests
+layout: info-page
+description: This is the list of requests we take care of under the <a href="support-plans">Support Plan</a>.<br/><br/>If something isn’t on the include list, that doesn’t mean we won’t do it. Reach out to us with your request. We’ll make a call on it and maybe even add it to this list. If not, we’ll give you an estimate of costs.
+---
+<p>{{page.description}}</p>
+
+<h2>Included Requests</h2>
+<div class="requests">
+{% for column in site.data.support-plan-requests %}
+
+    <ul class="included">
+    {% for request in column.requests-included %}
+    {% if request.header %}<h3>{{ request.header }}</h3>{% endif %}
+    {% if request.request %}<li>{{ request.request }}</li>{% endif %}
+    {% endfor %}
+    </ul>
+
+{% endfor %}
+</div>
+<h2>Supported technologies</h2>
+<dl class="platforms">
+  {% for column in site.data.platforms %}
+  <div>
+  {% for platform in column.platforms %}
+  {% if platform.header %}<dt>{{ platform.header }}</dt>{% endif %}
+  {% if platform.name %}<dd>{{ platform.name }}</dd>{% endif %}
+  {% endfor %}
+  </div>
+  {% endfor %}
+</dl>
+
+<h2>Excluded requests</h2>
+<dl class="requests">
+    {% for column in site.data.support-plan-requests %}
+    <div>
+    {% for request in column.requests-excluded %}
+    {% if request.header %}<dt>{{ request.header }}</dt>{% endif %}
+    {% if request.request %}<dd>{{ request.request }}</dd>{% endif %}
+    {% endfor %}
+  </div>
+    {% endfor %}
+</dl>
