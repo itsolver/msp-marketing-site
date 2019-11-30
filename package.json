@@ -16,7 +16,7 @@
     "url": "https://github.com/itsolver/msp-marketing-site/issues"
   },
   "engines": {
-    "node": "8"
+    "node": "12.13.1"
   },
   "scripts": {
     "build": "gulp build --prod",
