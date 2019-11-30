@@ -299,3 +299,13 @@ section.on-demand-support {
 ul.plan-feature-list li {
 	list-style-type: disc;
 }
+
+
+ul.included, ul.excluded {
+	-webkit-column-break-inside: avoid;
+	li {
+		list-style-type: disc;
+		margin-left: 10px;
+		padding-left: 10px;
+	}
+}
