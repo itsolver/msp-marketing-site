@@ -19,7 +19,6 @@
   - request: Privacy check-up
   - request: Malware removal
   - request: Recovering from a tech support scam
-  - request: "Configure Cisco Umbrella, extra layer of web protection"
   - request: Advising on best practices for cyber security
 - requests-included:
   - header: Photo management
