@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/itsolver/msp-marketing-site/issues"
   },
+  "engines": {
+    "node": "8"
+  },
   "scripts": {
     "build": "gulp build --prod",
     "serve": "gulp build --prod && gulp serve --prod",
