@@ -1,0 +1,61 @@
+- requests-included:
+  - header: Common requests
+  - request: Setup new computers, tablets and phones (excluding physical installation)
+  - request: Adding new printer to computers (excluding physical installation)
+  - request: Performance troubleshooting
+  - request: Network troubleshooting
+  - request: Setup cloud backup and sync
+  - request: Responding to a security breach
+- requests-included:
+  - header: Staff changes
+  - request: Adding and removing users
+  - request: Onboarding staff, adding user and setup device
+  - request: Offboarding staff, removing user and wiping company data
+  - request: Locating a lost device
+  - request: Wiping a company owned device to prevent theft of Intellectual Property
+- requests-included:
+  - header: Security
+  - request: Security check-up
+  - request: Privacy check-up
+  - request: Malware removal
+  - request: Recovering from a tech support scam
+  - request: Advising on best practices for cyber security
+- requests-included:
+  - header: Photo management
+  - request: Configure photos to backup to cloud storage
+  - request: Demonstrate how to copy transfer photos to a computer
+- requests-included:
+  - header: Software support
+  - request: Direct access to an expert to answer your questions on a wide range of topics
+  - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
+  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets"
+  - request: Connecting to printers and networks
+  - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV’s, smartphones and tablets (eg Apple iPad).
+- requests-included:
+  - header: Email
+  - request: Change basic account settings
+  - request: Create email addresses
+  - request: Forward email addresses to other ones
+  - request: “Send as” other emails in Google Apps (impersonation)
+- requests-included:
+  - header: Web & Domain Hosting
+  - request: Editing Domain settings
+  - request: Editing basic web hosting settings
+- requests-included:
+  - header: Operating System, Apple macOS, Microsoft Windows, Google ChromeOS, Linux
+  - request: Maintenance for your device’s operating system
+  - request: Troubleshooting automated administrative requests & scripts
+  - request: "Troubleshooting cross-platform integration (security, file and print)"
+- requests-included:
+  - header: Printers
+  - request: Connect to Printers and Multifunctions
+  - request: Demonstrate how to scan to cloud or networked computer
+- requests-included:
+  - header: Troubleshooting
+  - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
+- requests-excluded:
+  - header: Excluded Requests
+  - request: Physically unpack and install any equipment.
+  - request: Troubleshooting automated administrative requests & scripts
+  - request: "Troubleshooting cross-platform integration (security, file and print)"
+  - request: Website redesign, optimizations or SEO work.
