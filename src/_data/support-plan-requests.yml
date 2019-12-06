@@ -1,5 +1,5 @@
 - requests-included:
-  - header: Common requests
+  - header: Setup
   - request: Setup new computers, tablets and phones (excluding physical installation)
   - request: Adding new printer to computers (excluding physical installation)
   - request: Performance troubleshooting
@@ -54,8 +54,18 @@
   - header: Troubleshooting
   - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
 - requests-excluded:
-  - header: Excluded Requests
+  - header: Hardware Service
+  - request: Any hardware service, except for diagnostics.
+  - request: Adds, moves or changes of equipment.
+  - request: Hardware upgrades.
   - request: Physically unpack and install any equipment.
-  - request: Troubleshooting automated administrative requests & scripts
+- requests-excluded:
+  - header: Automation
+  - request: Setup or troubleshoot automated administrative requests & scripts
+- requests-excluded:
+  - header: Cross-platform Integration
   - request: "Troubleshooting cross-platform integration (security, file and print)"
-  - request: Website redesign, optimizations or SEO work.
+- requests-excluded:
+  - header: Web Services
+  - request: 
+  - request: Website design, optimizations or SEO work.
