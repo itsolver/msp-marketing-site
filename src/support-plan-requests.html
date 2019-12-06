@@ -11,7 +11,7 @@ description: This is the list of requests we take care of under the <a href="sup
 <div class="requests">
 {% for column in site.data.support-plan-requests %}
 
-    <ul class="included">
+    <ul id="included" class="included">
     {% for request in column.requests-included %}
     {% if request.header %}<h3>{{ request.header }}</h3>{% endif %}
     {% if request.request %}<li>{{ request.request }}</li>{% endif %}
@@ -33,7 +33,7 @@ description: This is the list of requests we take care of under the <a href="sup
 </dl>
 
 <h2>Excluded requests</h2>
-<dl class="requests">
+<dl id="excluded" class="requests">
     {% for column in site.data.support-plan-requests %}
     <div>
     {% for request in column.requests-excluded %}
