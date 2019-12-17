@@ -30,6 +30,7 @@ before_install:
 - nvm install 12.13.1
 - nvm use 12.13.1
 - gem update --system
+- gem update bundler
 - gem install bundler
 install:
 - npm install -g firebase-tools
