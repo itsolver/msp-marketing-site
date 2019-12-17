@@ -53,17 +53,22 @@
 - requests-included:
   - header: Troubleshooting
   - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
+  - request: Hardware diagnostics when equipment isn't working as expected.
+- requests-excluded: 
+  - header: Adds, moves or changes
+  - request: Substantial adds, moves or changes to software, network or physical environments.
+  - request: Upgrading operating systems
 - requests-excluded:
   - header: Hardware Service
   - request: Any hardware service, except for diagnostics.
-  - request: Adds, moves or changes of equipment.
   - request: Hardware upgrades.
-  - request: Physically unpack and install any equipment.
+  - request: Physically unpack and install equipment.
 - requests-excluded:
   - header: Automation
   - request: Setup or troubleshoot automated administrative requests & scripts
 - requests-excluded:
   - header: Cross-platform Integration
+  - request: Install or support third party software unless 
   - request: "Troubleshooting cross-platform integration (security, file and print)"
 - requests-excluded:
   - header: Web Services
