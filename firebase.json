@@ -338,7 +338,10 @@
         "type": 301
       }
     ],
-    "rewrites": [{
+    // Dynamic Links will start with https://itsolver.net/a
+    "appAssociation": "AUTO",
+    "rewrites": [ { "source": "/a/**", "dynamicLinks": true },
+      {
         "source": "/buy/**",
         "function": "app"
       },
