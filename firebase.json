@@ -340,7 +340,10 @@
     ],
     // Dynamic Links will start with https://itsolver.net/a
     "appAssociation": "AUTO",
-    "rewrites": [ { "source": "/a/**", "dynamicLinks": true },
+    "rewrites": [ 
+      { "source": "/links/**", 
+        "dynamicLinks": true 
+      },
       {
         "source": "/buy/**",
         "function": "app"
