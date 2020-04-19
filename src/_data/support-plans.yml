@@ -1,7 +1,7 @@
 - plan:
   - name: Business
-  - fee: 15
-  - period: / user / month
+  - fee: 45
+  - period: / month
   - feature: Dedicated technical assistant who speaks your language.
   - feature: Assistance with internet, email, storage, mobile and security
   - feature: Get expert answers to tech questions
@@ -10,13 +10,13 @@
   - feature: Your concierge for G Suite or Office 365 admin tasks
   - feature: How to guides for using G Suite or Office 365
   - feature: Mobile Management to keep your company data secure
-  - feature: 2 user minimum
+  - feature: includes support for 3 users, $15/mo for extra users
   - highlight: true
 - plan:
   - name: Premium
-  - fee: 25
-  - period: / user / month
+  - fee: 100
+  - period: / month
   - feature: Everything in Business, plus...
   - feature: 4 customer site visits per year
   - feature: 24/7 priority support
-  - feature: 4 user minimum
+  - feature: includes support for 4 users, $25/mo for extra users
