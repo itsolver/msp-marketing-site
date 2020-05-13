@@ -8,69 +8,76 @@ icons: true
   {{ content }}
   <section class="on-demand-support">
     <div class="grid2col">
-        <div class="column first">
-            {% if page.subtitle %}
-            <p>{{ page.subtitle }}</p>
-            {% endif %}
-            <div class="pricing-item single">
-                <div class="pricing-price"><span class="pricing-currency">$</span>{{ page.price }}</div>
-                <ul class="pricing-feature-list">
-                  {% for feature in page.features %}
-                  <li class="pricing-feature">{{ feature.feature }}</li>
-                  {% endfor %}
-                </ul>
-                <!-- Load Stripe.js on your website. -->
-                <script src="https://js.stripe.com/v3"></script>
+      <div class="column first">
+        {% if page.subtitle %}
+        <p>{{ page.subtitle }}</p>
+        {% endif %}
+        <div class="pricing-item single">
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>{{ page.price }}
+          </div>
+          <ul class="pricing-feature-list">
+            {% for feature in page.features %}
+            <li class="pricing-feature">{{ feature.feature }}</li>
+            {% endfor %}
+          </ul>
+          <!-- Load Stripe.js on your website. -->
+          <script src="https://js.stripe.com/v3"></script>
 
-                <!-- Create a button that your customers click to complete their purchase. -->
-                <button id="checkout-button-{{ page.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
-                <div id="error-message"></div>
+          <!-- Create a button that your customers click to complete their purchase. -->
+          <button
+            id="checkout-button-{{ page.id | replace: '/', '' }}"
+            class="checkout-button"
+          >
+            Buy now
+          </button>
+          <div id="error-message"></div>
 
-                <script>
-                  var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU');
+          <script>
+            var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU');
 
-                  var checkoutButton = document.getElementById('checkout-button-{{ page.id | replace: '/', ''}}');
-                  checkoutButton.addEventListener('click', function () {
-                    // When the customer clicks on the button, redirect
-                    // them to Checkout.
-                    stripe.redirectToCheckout({
-                      items: [{sku: '{{ page.id | replace: '/', ''}}', quantity: 1}],
+            var checkoutButton = document.getElementById('checkout-button-{{ page.id | replace: '/', ''}}');
+            checkoutButton.addEventListener('click', function () {
+              // When the customer clicks on the button, redirect
+              // them to Checkout.
+              stripe.redirectToCheckout({
+                items: [{sku: '{{ page.id | replace: '/', ''}}', quantity: 1}],
 
-                      // Note that it is not guaranteed your customers will be redirected to this
-                      // URL *100%* of the time, it's possible that they could e.g. close the
-                      // tab between form submission and the redirect.
-                      successUrl: 'https://www.itsolver.net/success',
-                      cancelUrl: 'https://www.itsolver.net/canceled',
-                    })
-                    .then(function (result) {
-                      if (result.error) {
-                        // If `redirectToCheckout` fails due to a browser or network
-                        // error, display the localized error message to your customer.
-                        var displayError = document.getElementById('error-message');
-                        displayError.textContent = result.error.message;
-                      }
-                    });
-                  });
-                </script>
-            </div>
+                // Note that it is not guaranteed your customers will be redirected to this
+                // URL *100%* of the time, it's possible that they could e.g. close the
+                // tab between form submission and the redirect.
+                successUrl: '{{page.success_url | default: 'https://www.itsolver.net/success'' }}',
+                cancelUrl: 'https://www.itsolver.net/canceled',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  // If `redirectToCheckout` fails due to a browser or network
+                  // error, display the localized error message to your customer.
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
         </div>
-        {% include components/cta/support-plans.html %}
       </div>
+      {% include components/cta/support-plans.html %}
+    </div>
   </section>
-  
+
   {% if page.faq %}
-    <h2>On-Demand Support FAQ</h2>
-    <dl class="faq">
-      {% for item in page.faq %}
-        <div>
-          <dt>{{ item.question }}</dt>
-          <dd>{{ item.answer }}</dd>
-        </div>
-      {% endfor %}
-    </dl>
+  <h2>On-Demand Support FAQ</h2>
+  <dl class="faq">
+    {% for item in page.faq %}
+    <div>
+      <dt>{{ item.question }}</dt>
+      <dd>{{ item.answer }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
   {% endif %}
-  
+
   <section>
-    <p>Questions? Phone <a  href="tel:+61731236000">07 3123 6000</a></p>
+    <p>Questions? Phone <a href="tel:+61731236000">07 3123 6000</a></p>
   </section>
 </div>
