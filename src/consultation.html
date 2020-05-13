@@ -3,47 +3,56 @@ permalink: /consultation/
 title: Consultation
 heading: Put your technology in the best hands
 layout: info-page
-description: How can my business produce more work efficiently?  How can my work get done when I'm not there to do it? These are questions we aim to solve when designing and desploying your IT systems. 
+description: How can my business produce more work efficiently?  How can my work get done when I'm not there to do it? These are questions we aim to solve when designing and desploying your IT systems.
 ---
+
 <section class="maintenance">
   <div class="grid2col">
-      <div class="column first">
-          <p>{{ page.description }}</p>
-          <p>Get started by choosing one or more of the solutions you're interested in</p>
-          <dl class="consultation-services">
-            {% for column in site.data.consultation-services %}
-            <div>
-            {% for request in column.requests-included %}
-              {% if request.header %}<dt>{{ request.header }}</dt>{% endif %}
-              {% if request.request %}<dd>{{ request.request }}</dd>{% endif %}
-              {% endfor %}
-            </div>
-              {% endfor %}
-          </dl>
+    <div class="column first">
+      <p>{{ page.description }}</p>
+      <p>
+        Get started by choosing one or more of the solutions you're interested
+        in
+      </p>
+      <dl class="consultation-services">
+        {% for column in site.data.consultation-services %}
+        <div>
+          {% for request in column.requests-included %} {% if request.header %}
+          <dt>{{ request.header }}</dt>
+          {% endif %} {% if request.request %}
+          <dd>{{ request.request }}</dd>
+          {% endif %} {% endfor %}
+        </div>
+        {% endfor %}
+      </dl>
 
-          <div class="pricing-item single">
-              <div class="pricing-price"><span class="pricing-currency">$</span>{{ site.data.consultation.fee }}<span class="pricing-period">{{ site.data.consultation.period }}</span></div>
-              <ul class="pricing-feature-list">
-                  {% for feature in site.data.consultation.features %}
-                  <li class="pricing-feature">{{ feature.feature }}</li>
-                  {% endfor %}
-              </ul>
-              <a class="dark button" href="/contact/">CONTACT SALES</a>
-          </div>
+      <div class="pricing-item single">
+        <div class="pricing-price">
+          <span class="pricing-currency">$</span>{{ site.data.consultation.fee
+          }}<span class="pricing-period"
+            >{{ site.data.consultation.period }}</span
+          >
+        </div>
+        <ul class="pricing-feature-list">
+          {% for feature in site.data.consultation.features %}
+          <li class="pricing-feature">{{ feature.feature }}</li>
+          {% endfor %}
+        </ul>
+        <a class="dark button" href="/contact/">CONTACT SALES</a>
       </div>
+    </div>
 
-      {% include components/cta/free-technology-audit.html %}
+    {% include components/cta/systems-health-check.html %}
   </div>
-
 </section>
 {% if page.faq %}
-	<h2>Consultation FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
+<h2>Consultation FAQ</h2>
+<dl class="faq">
+  {% for item in page.faq %}
+  <div>
+    <dt>{{ item.question }}</dt>
+    <dd>{{ item.answer }}</dd>
+  </div>
+  {% endfor %}
+</dl>
 {% endif %}

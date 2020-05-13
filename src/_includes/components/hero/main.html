@@ -1,15 +1,23 @@
 <section class="hero">
-    <div class="wrapper">
-      <h1>{{ include.heading }}</h1>
-      <p class="subtitle">{{ include.subtitle }}</p>
-      <div class="hero-cta">
-          <a class="button light border light-hover" href="/on-demand-quick-support-request">Get instant help</a>
-          <a class="alt button dark no-border dark-hover" href="/it-audit/">Book a Free IT Audit</a>
-      </div>
-      {% if include.video != "" %}
-      <div class="landing-video">
-        {% include video.html video = include.video %}
-      </div>
-      {% endif %}
+  <div class="wrapper">
+    <h1>{{ include.heading }}</h1>
+    <p class="subtitle">{{ include.subtitle }}</p>
+    <div class="hero-cta">
+      <a
+        class="button light border light-hover"
+        href="/on-demand-quick-support-request"
+        >Get instant help</a
+      >
+      <a
+        class="alt button dark no-border dark-hover"
+        href="/systems-health-check/"
+        >Book a Systems Health Check</a
+      >
     </div>
-  </section>
+    {% if include.video != "" %}
+    <div class="landing-video">
+      {% include video.html video = include.video %}
+    </div>
+    {% endif %}
+  </div>
+</section>
