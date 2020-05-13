@@ -66,8 +66,8 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 Using node version manager install and use node version 9.5:
 
 ~~~bash
-nvm install 9.5
-nvm use 9.5
+nvm install 12.13.1
+nvm use 12.13.1
 ~~~
 
 ## Install Jekyll on macOS
@@ -92,8 +92,8 @@ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor 
 Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby. If you're interested, head over to [rbenv command references])(https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
 
 ~~~bash
-rbenv install 2.4.1
-rbenv local 2.4.1
+rbenv install 2.5.3
+rbenv local 2.5.3
 ~~~
 
 Install Jekyll:
