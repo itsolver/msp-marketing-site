@@ -16,6 +16,9 @@ twitter:
   username: "itsolvernet"
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 
+# Default Calendly Booking URL 
+booking_url: "https://calendly.com/itsolver/on-demand-support"
+
 # Let search engines discover this site quicker
 google_site_verification : ""
 bing_site_verification   : ""

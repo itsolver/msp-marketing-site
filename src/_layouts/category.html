@@ -47,7 +47,7 @@ icons: true
                   // Note that it is not guaranteed your customers will be redirected to this
                   // URL *100%* of the time, it's possible that they could e.g. close the
                   // tab between form submission and the redirect.
-                  successUrl: 'https://www.itsolver.net/success',
+                  successUrl: '{{ sku.success_url | default: site.booking_url }}',
                   cancelUrl: 'https://www.itsolver.net/canceled',
                 })
                 .then(function (result) {
