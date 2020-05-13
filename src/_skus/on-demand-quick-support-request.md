@@ -15,4 +15,5 @@ features:
  - feature: "If it turns out to be more complex, provide a quote for an appropriate solution."
 price: "75"
 unit: "request"
+success_url: "https://calendly.com/itsolver/on-demand-quick-support"
 ---
