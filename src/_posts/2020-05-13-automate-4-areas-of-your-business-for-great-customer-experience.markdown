@@ -10,7 +10,7 @@ _I've got this <a href="https://xkcd.com/1205/">xkcd</a> comic on my wall to rem
 
 I'm lazy and if I can automate something boring out of my life, you can bet I’m thinking of a way to make it more efficient.
 
-Below is an outline on how to automate 4 areas of your business - typing, billing, appointments and reviews - to achieve a better customer experience. You will save bucket loads of time and they're worth the time to implement.
+Below is an outline on how to automate 4 areas of your business - typing, billing, appointments and getting reviews - to achieve a better customer experience. You will save bucket loads of time and they're worth the time to implement.
 
 If you look after your customers, you will also get raving reviews on Google and Facebook.
 
@@ -44,17 +44,19 @@ Invoicing is one of my pet hates, fair enough I don’t mind spending time invoi
 
 **IT Solver uses** Stripe Checkout. It's the quickest way to build beautiful, conversion-optimized payment forms, hosted on Stripe.
 
-One of my favourite flows is a quick chat with the customer that establishes their requirements, then I give them (using shortcut :quick) the relevant link to my website. The customer completes the Stripe Checkout, I get paid and the customer is redirected to the booking page.
+One of my favourite flows is a quick chat with the customer that establishes their requirements. Then I give them the link to my website. The customer completes the Stripe Checkout, I get paid and the customer is redirected to the booking page.
 
 The other biggest time saving is Stripe Billing for subscriptions. IT Solver collects customer's payment details once, and recurring invoices are paid automatically.
 
-**Easier:** Use Calendly Pro to connect with Stripe to receive full or part-payments before scheduling in the customer. Embed/link on your website or send the link directly to your customer.
+**Easier:** Use Calendly Pro to connect with Stripe to receive full or part-payments before scheduling in the customer. You can add it to your website or send the link directly to your customer.
 
 Other great options to streamline e-commerce include Shopify, Square and setting up bank feeds in Xero.
 
-**Xero + Stripe feed:** Turn on Stripe bank feed to make reconciling super easy in Xero. Invoice Reminders turned on to save chasing those other invoices that are not prepaid. Get your trusted bookkeeper or accountant to help set this up.
+Invoice Reminders turned on to save chasing those other invoices that are not prepaid. Get your trusted bookkeeper or accountant to help set this up.
 
-**Xero + Square feed:** Keep your sales in sync with the [official Square Xero integration brought to you by Amaka](https://amaka.com/integrations/square/xero/) in partnership with Square and Xero. Note: the payouts not included whereas Stripe feed
+**Xero + Stripe feed:** Turn on Stripe bank feed to make reconciling super easy in Xero.
+
+**Xero + Square feed:** Keep your sales in sync with the [official Square Xero integration brought to you by Amaka](https://amaka.com/integrations/square/xero/) in partnership with Square and Xero. Note: the payouts not included whereas Stripe feed.
 
 ## Appointments
 
@@ -68,14 +70,14 @@ Easier: Calendly has a free Basic plan to get started but the Premium can take c
 
 Ask at the right time with clear instructions and you will have a great reputation online. For service-based business I find asking 24 hours after a resolution is good timing. If you're selling products, it would be a good idea to at least wait until your customer has the product in their hands.
 
-I like to keep the email short and use direct links to make it easy for your customer to leave the review, as their time is valuable. Some people prefer leaving Facebook reviews over Google, whichever is easier for them.
+I like to keep the email short and use direct links to make it easy for the customer to leave the review, as their time is valuable.
 
-**IT Solver uses:** Zendesk has an automation option where you can send an email 24 hours after a request is solved. When I respond to the reviews, I tag the customer in Zendesk so they don't get another review request on the next transaction.
+**IT Solver uses** Zendesk, it has an automation option where you can send an email 24 hours after a request is solved. When I respond to the reviews, I tag the customer in Zendesk so they don't get another review request on the next transaction.
 
-**Easier:** Calendly Premium & Pro can do an email follow up to the event. See screenshot above.
+**Easier:** Calendly Premium & Pro can do an email follow up. See screenshot above.
 
 Easy: Include a link to your Google and Facebook review page on the footer of your receipt, invoice or email template that is part of your deliverables.
 
-Other options: Marketing software like Mailchimp and Hubspot can send the email to certain segments based on your conditions. A New Xero Invoice trigger in Zapier can trigger the process.
+Other options: Marketing software like Mailchimp and Hubspot can send the email to certain segments based on your conditions.
 
 If you need help implementing any of the above or have something else you want to automate, please [get in touch](https://www.itsolver.net/contact/).
