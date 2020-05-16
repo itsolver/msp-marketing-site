@@ -7,7 +7,7 @@ faq:
  - question: What kind of things will you do?
    answer: Lots of stuff! Check out the <a href="/on-demand-requests/">full list here</a>.
  - question: Where is on-site support available?
-   answer: On-site support is available for customers in <a href="/service-area">this service area near Redland Bay, Qld, Australia</a>.
+   answer: On-site support is available for customers in <a href="/service-area">this service area near Cleveland, Qld, Australia</a>.
  - question: What defines a ‘request’?
    answer: A request is defined as a single support issue and the reasonable effort(s) needed to resolve it. A single support issue is a problem that cannot be broken down into subordinate problems. If it can be broken down into subordinate problems, each subordinate problem shall be considered a separate request. A request may require multiple contacts and off-line research to achieve final resolution. The time spent in delivering these solutions is independent to the amount you will be charged.
  - question: Am I guaranteed a solution?
@@ -17,38 +17,42 @@ faq:
 ---
 
 <section class="on-demand-support">
-  <div class="grid2col">
-      <div class="column first">
-          <p>If your products aren’t covered by a Support Plan, you can purchase On-Demand Support.</p>
-          <p>Choose a category:</p>
-          <section class="on-demand-categories">
-            {% assign grouped = site.skus | sort: 'category_sort_key' | group_by: 'category' %}
-            <ul class="center">
-            {% for group in grouped %}
-            <li class="on-demand-category"><a class="button wide light" href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a></li>
-            {% endfor %}
-            </ul>
-          </section>
-      </div>
+    <div class="grid2col">
+        <div class="column first">
+            <p>If your products aren’t covered by a Support Plan, you can purchase On-Demand Support.</p>
+            <p>Choose a category:</p>
+            <section class="on-demand-categories">
+                {% assign grouped = site.skus | sort: 'category_sort_key' | group_by: 'category' %}
+                <ul class="center">
+                    {% for group in grouped %}
+                        <li class="on-demand-category">
+                            <a class="button wide light" href="/{{ group.items.first.category | downcase | replace: ' ', '-' }}">{{group.items.first.category}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
 
-      {% include components/cta/support-plans.html %}
-  </div>
+        {% include components/cta/support-plans.html %}
+    </div>
 </section>
-<p>Questions? Phone <a href="tel:+61731236000">07 3123 6000</a>.</p>
+<p>Questions? Phone
+    <a href="tel:+61731236000">07 3123 6000</a>.</p>
 {% if page.faq %}
-	<h2>On-Demand Support FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
+    <h2>On-Demand Support FAQ</h2>
+    <dl class="faq">
+        {% for item in page.faq %}
+            <div>
+                <dt>{{ item.question }}</dt>
+                <dd>{{ item.answer }}</dd>
+            </div>
+        {% endfor %}
+    </dl>
 {% endif %}
 
 <section>
-  <h2>For More Information</h2>
-  Please review IT Solver's <a href="/general-terms-conditions">Terms and Conditions</a> for further details on IT Solver On-Demand support offerings.
+    <h2>For More Information</h2>
+    Please review IT Solver's
+    <a href="/general-terms-conditions">Terms and Conditions</a>
+    for further details on IT Solver On-Demand support offerings.
 </section>
-

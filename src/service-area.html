@@ -17,7 +17,7 @@ description: Here are suburbs covered by on-site support. Further down, see coun
 </section>
 <section class="service-area-on-site">
   <h2>Areas in Australia with free customer site visits</h2>
-  <p>The suburbs listed below receive free call outs and are generally within 30 minutes drive of Redland Bay. If your suburb is not listed, talk to us and we can come to a fair arrangement.</p>
+  <p>The suburbs listed below receive free call outs and are generally within 30 minutes drive of Cleveland. If your suburb is not listed, talk to us and we can come to a fair arrangement.</p>
   <p>Suburbs eligible for free call-outs:</p>
   {% for column in site.data.service-area %}
       {% if column.on-site %}<ul class="on-site service-area-container wrap">{% for suburb in column.on-site %}<li class="flex-item">{{ suburb.suburb }}</li>{% endfor %}</ul>{% endif %}
