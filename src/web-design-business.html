@@ -2,6 +2,7 @@
 permalink: /web-design-business/
 title: Web Design
 heading: We get your business on the web in 10 days
+subtitle: Stand out from the competition with a mobile friendly website.
 layout: info-page
 faq:
  - question: When do I pay for the website?
@@ -42,69 +43,82 @@ keywords: |
   web design business
   website refresh
 ---
-
-<p>Stand out from the competition with a mobile friendly website.</p>
-
 <section class="pricing-section">
     <div class="pricing">
         {% for column in site.data.web-design-plans %}
 
-        <div class="pricing-item">
+            <div class="pricing-item">
                 {% for plan in column.plan %}
-                {% if plan.name %}
-            <div class="pricing-item-section">
-                <h3 class="pricing-title">{{ plan.name }}</h3>
-        {% endif %}
-                {% if plan.pages %}<p><strong>{{ plan.pages }}</strong>-page mobile-friendly website</p>{% endif %}
-                {% if plan.fee %}
-                <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
-                <ul class="pricing-feature-list">
-                {% endif %}
-                {% if plan.feature %}
-                    <li class="pricing-feature">{{ plan.feature }}</li>
-                {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
+                    {% if plan.name %}
+                        <div class="pricing-item-section">
+                            <h3 class="pricing-title">{{ plan.name }}</h3>
+                        {% endif %}
+                        {% if plan.pages %}
+                            <p>
+                                <strong>{{ plan.pages }}</strong>-page mobile-friendly website</p>
+                        {% endif %}
+                        {% if plan.fee %}
+                            <div class="pricing-price">
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-amount">{{ plan.fee }}</span>
+                            {% endif %}
+                            {% if plan.period %}
+                                <span class="pricing-period">{{plan.period}}</span>
+                            </div>
+                            <ul class="pricing-feature-list">
+                            {% endif %}
+                            {% if plan.feature %}
+                                <li class="pricing-feature">{{ plan.feature }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
 
-            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/contact">CONTACT US</a>
-        </div>
+                <a {% if plan.highlight %} class="button light no-border no-border-radius dark-hover" {% else %} class="button dark no-border no-border-radius light-hover" {% endif %} href="https://www.itsolver.net/contact">CONTACT US</a>
+            </div>
         {% endfor %}
     </div>
 </section>
 
 <div class="feature-content">
-  <h2>All plans come with</h2>
+    <h2>All plans come with</h2>
 
-  <ul class="cards">
-      {% for feature in site.data.web-design-features %}
-      <li class="card">
-          <h3><i class="material-icons">{{ feature.icon }}</i><span>{{ feature.title }}</span></h3>
-          <p>{{ feature.content | markdownify }}</p>
+    <ul class="cards">
+        {% for feature in site.data.web-design-features %}
+            <li class="card">
+                <h3>
+                    <i class="material-icons">{{ feature.icon }}</i>
+                    <span>{{ feature.title }}</span>
+                </h3>
+                <p>{{ feature.content | markdownify }}</p>
 
-          {% if feature.video %}
-            <div class="card-actions"><a class="button light no-border no-padding no-hover video-link" data-video="{{ feature.video }}" href="https://youtu.be/{{ include.video }}">View demo &rsaquo;</a></div>
-          {% endif %}
-        </li>
-      {% endfor %}
-  </ul>
+                {% if feature.video %}
+                    <div class="card-actions">
+                        <a class="button light no-border no-padding no-hover video-link" data-video="{{ feature.video }}" href="https://youtu.be/{{ include.video }}">View demo &rsaquo;</a>
+                    </div>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
 </div>
 
 {% if page.faq %}
-	<h2>Website Plans FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt class="larger-text">{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
+    <h2>Website Plans FAQ</h2>
+    <dl class="faq">
+        {% for item in page.faq %}
+            <div>
+                <dt class="larger-text">{{ item.question }}</dt>
+                <dd>{{ item.answer }}</dd>
+            </div>
+        {% endfor %}
+    </dl>
 {% endif %}
 
 <section>
-  <h2>For More Information on Website Design</h2>
-  Please review IT Solver's <a href="/legal">Terms and Conditions</a> for further details on IT Solver Web Design offerings.
+    <h2>For More Information on Website Design</h2>
+    Please review IT Solver's
+    <a href="/legal">Terms and Conditions</a>
+    for further details on IT Solver Web Design offerings.
 </section>
 
 <script src="/assets/javascripts/features.js"></script>
