@@ -35,49 +35,59 @@ faq:
   - question: Have more questions?
     answer: <a href="/contact/">Contact us</a>.
 ---
-<p>With G Suite or Office 365 setup, you have taken a crucial step in streamlining your business and lowering the Total Cost of Ownership for your IT systems.</p>
-<p>We know businesses who are cloud-based have less technical issues so we pass on the savings.</p>
+<p>If your business is setup with G Suite or Microsoft 365, you have taken a crucial step in streamlining your business.</p>
+<p>This also means your organisation is eligible for Support Plans by IT Solver.</p>
+<p>We understand the needs of cloud-based businesses so we can support you through any technical challenge.</p>
 <p>Whether you are solo or up to 50 employees, when you run into something you don't understand, IT Solver has the expertise to walk you through it.</p>
 <section class="pricing-section">
     <div class="pricing">
         {% for column in site.data.support-plans %}
 
-        <div class="pricing-item">
+            <div class="pricing-item">
                 {% for plan in column.plan %}
-                {% if plan.name %}{% assign {{ support-plan-name = plan.name %}
-            <div class="pricing-item-section">
-                <h3 class="pricing-title">{{ plan.name }}</h3>
-        {% endif %}
-                {% if plan.fee %}
-                <div class="pricing-price"><span class="pricing-currency">$</span><span class="pricing-amount">{{ plan.fee }}</span>{% endif %}{% if plan.period %}<span class="pricing-period">{{plan.period}}</span></div>
-                <ul class="pricing-feature-list">
-                {% endif %}
-                {% if plan.feature %}
-                    <li class="pricing-feature">{{ plan.feature }}</li>
-                {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
+                    {% if plan.name %}
+                        {% assign {{ support-plan-name = plan.name %}
+                        <div class="pricing-item-section">
+                            <h3 class="pricing-title">{{ plan.name }}</h3>
+                        {% endif %}
+                        {% if plan.fee %}
+                            <div class="pricing-price">
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-amount">{{ plan.fee }}</span>
+                            {% endif %}
+                            {% if plan.period %}
+                                <span class="pricing-period">{{plan.period}}</span>
+                            </div>
+                            <ul class="pricing-feature-list">
+                            {% endif %}
+                            {% if plan.feature %}
+                                <li class="pricing-feature">{{ plan.feature }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
 
-            <a {% if plan.highlight %}class="button light no-border no-border-radius dark-hover"{% else %}class="button dark no-border no-border-radius light-hover"{% endif %} href="https://www.itsolver.net/register-{{ support-plan-name | downcase }}">CHOOSE PLAN</a>
-        </div>
+                <a {% if plan.highlight %} class="button light no-border no-border-radius dark-hover" {% else %} class="button dark no-border no-border-radius light-hover" {% endif %} href="https://www.itsolver.net/register-{{ support-plan-name | downcase }}">CHOOSE PLAN</a>
+            </div>
         {% endfor %}
     </div>
 </section>
 
 {% if page.faq %}
-	<h2>Support Plans FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt class="larger-text">{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
+    <h2>Support Plans FAQ</h2>
+    <dl class="faq">
+        {% for item in page.faq %}
+            <div>
+                <dt class="larger-text">{{ item.question }}</dt>
+                <dd>{{ item.answer }}</dd>
+            </div>
+        {% endfor %}
+    </dl>
 {% endif %}
 
 <section>
-  <h2>For More Information</h2>
-  Please review IT Solver's <a href="/legal">Terms and Conditions</a> for further details on IT Solver On-Demand support offerings.
+    <h2>For More Information</h2>
+    Please review IT Solver's
+    <a href="/legal">Terms and Conditions</a>
+    for further details on IT Solver On-Demand support offerings.
 </section>
