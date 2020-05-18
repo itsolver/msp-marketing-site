@@ -13,6 +13,9 @@ icons: true
   {{ content }}
   {% assign skus = site.skus | where: "category", page.title %}
 
+  <!-- Load Stripe.js once for Checkout Beta -->
+  <script src="https://js.stripe.com/v3"></script>
+  
   <section class="pricing-section">
     <div class="pricing">
         {% for sku in skus %}
@@ -24,8 +27,7 @@ icons: true
                     {% for feature in sku.features %}
                     <li class="pricing-feature">{{ feature.feature }}</li>
                     {% if forloop.first == true %}
-                    <!-- Load Stripe.js once for Checkout Beta -->
-                    <script src="https://js.stripe.com/v3"></script>
+                    
                     {% endif %}
                     {% endfor %}
                 </ul>
@@ -67,4 +69,4 @@ icons: true
 </section>
       </div>
   </section>
-</div>  
+</div>
