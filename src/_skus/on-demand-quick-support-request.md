@@ -13,6 +13,7 @@ category_description: "Technical support at on-demand rates."
 features:
  - feature: "Provide one quick solution, or"
  - feature: "If it turns out to be more complex, provide a quote for an appropriate solution."
+ - feature: "Available only for remote support or secondary on-site requests."
 price: "75"
 unit: "request"
 success_url: "https://calendly.com/itsolver/on-demand-quick-support"
