@@ -11,7 +11,7 @@ Purchase a single incident of support to troubleshoot a product or service made 
 category: "On-Demand Support"
 category_description: "Technical support at on-demand rates."
 features:
- - feature: "Provide one quick solution, or"
+ - feature: "Provide one quick solution."
  - feature: "Available for remote support or secondary on-site requests."
  - feature: "If it turns out to be more complex, we provide a quote for an appropriate solution."
 price: "75"
