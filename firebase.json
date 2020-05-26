@@ -288,6 +288,16 @@
         "type": 301
       },
       {
+        "source": "/register-support%20plan",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSehCi2U_gs-7uD6oYi9SO9p5Swk8gkQmZCQEsihh2dYNOYQEw/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
+        "source": "/register-support%20plan%20premium",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLScH4RfxSp7WVT3b5pAVdHo1np_Kcdt01MJQepKvBT4JpkNTZg/viewform?usp=sf_link",
+        "type": 301
+      },
+      {
         "source": "/terms-of-service",
         "destination": "/legal",
         "type": 301
@@ -340,10 +350,8 @@
     ],
     // Dynamic Links will start with https://itsolver.net/a
     "appAssociation": "AUTO",
-    "rewrites": [ 
-      { "source": "/a/**", 
-        "dynamicLinks": true 
-      },
+    "rewrites": [
+      {"source": "/a/**", "dynamicLinks": true},
       {
         "source": "/buy/**",
         "function": "app"
@@ -371,14 +379,17 @@
       {
         "source": "/webhook",
         "function": "app"
-      }],
+      }
+    ],
     "headers": [
       {
         "source": "/buy/*",
-        "headers" : [ {
-        "key" : "Access-Control-Allow-Origin",
-        "value" : "*"
-      } ]
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
       },
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
