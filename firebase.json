@@ -288,12 +288,12 @@
         "type": 301
       },
       {
-        "source": "/register-support%20plan",
+        "source": "/register-support plan",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSehCi2U_gs-7uD6oYi9SO9p5Swk8gkQmZCQEsihh2dYNOYQEw/viewform?usp=sf_link",
         "type": 301
       },
       {
-        "source": "/register-support%20plan%20premium",
+        "source": "/register-support plan premium",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLScH4RfxSp7WVT3b5pAVdHo1np_Kcdt01MJQepKvBT4JpkNTZg/viewform?usp=sf_link",
         "type": 301
       },
