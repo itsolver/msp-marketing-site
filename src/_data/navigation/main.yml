@@ -18,3 +18,7 @@
   link: /contact/
   new_window: false
   highlight: false
+- name: Shop
+  link: http://it-solver.square.site/
+  new_window: true
+  highlight: true
