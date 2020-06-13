@@ -1,41 +1,36 @@
 - links:
-  - header: Services
-  - name: Web Design
-    link: /web-design-business
-  - name: Cloud Apps
-    link: /cloud-apps-g-suite
-  - name: Support Plans
-    link: /support-plans
-  - name: On-Demand
-    link: /on-demand
-  - name: Maintenance
-    link: /maintenance
-  - name: Consultation
-    link: /consultation
+    - header: SERVICES
+    - name: Quick Support
+      link: /on-demand-quick-support-request
+    - name: Systems Health Check
+      link: /systems-health-check
+    - name: Cloud Apps
+      link: /cloud-apps-g-suite
+    - name: Support Plans
+      link: /support-plans
+    - name: Web Design
+      link: /web-design-business
+
 - links:
-  - header: Company
-  - name: About
-    link: /about
-  - name: Privacy & terms
-    link: /privacy
+    - header: COMPANY
+    - name: Shop
+      link: https://shop.itsolver.net
+    - name: Blog
+      link: /blog/
+    - name: About
+      link: /about
+    - name: Privacy & terms
+      link: /privacy
 - links:
-  - header: Support
-  - name: Help Centre
-    link: https://support.itsolver.net/hc/en-au
-    contact_icon: help
-  - name: support@itsolver.net
-    link: mailto:support@itsolver.net
-    contact_icon: email
-  - name: (07) 3123 6000
-    link: tel:+61731236000
-    contact_icon: phone
-  - name: Contact
-    link: /contact
-- links:
-  - header: Connect
-  - name: Blog
-    link: /blog/
-    social_icon: IT-Solver
-  - name: Twitter
-    link: /twitter-timeline
-    social_icon: Twitter
+    - header: SUPPORT
+    - name: Help Centre
+      link: https://support.itsolver.net/hc/en-au
+      contact_icon: help
+    - name: support@itsolver.net
+      link: mailto:support@itsolver.net
+      contact_icon: email
+    - name: (07) 3123 6000
+      link: tel:+61731236000
+      contact_icon: phone
+    - name: Contact
+      link: /contact
