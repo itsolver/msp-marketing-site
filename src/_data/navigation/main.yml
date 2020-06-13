@@ -1,7 +1,7 @@
-- name: Web Design
-  link: /web-design-business/
-  new_window: false
-  highlight: false
+- name: Quick Support
+  link: /on-demand-quick-support-request
+- name: Systems Health Check
+  link: /systems-health-check
 - name: Cloud Apps
   link: /cloud-apps-g-suite/
   new_window: false
@@ -10,11 +10,7 @@
   link: /support-plans/
   new_window: false
   highlight: false
-- name: On-Demand
-  link: /on-demand/
-  new_window: false
-  highlight: false
-- name: Contact
-  link: /contact/
+- name: Web Design
+  link: /web-design-business/
   new_window: false
   highlight: false
