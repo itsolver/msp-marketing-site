@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
-{% include head.html %}
-<body>
-<!-- Start of FB Messenger widget -->
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
+    {% include head.html %}
+    <body>
+        <!-- Start of FB Messenger widget -->
+                <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,
-      version          : 'v6.0'
+      version          : 'v6.0',
+      greeting_dialog_display : 'hide'
     });
   };
 
@@ -21,22 +22,18 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="346353632068707"
-theme_color="#2da9e1">
-</div>
-<!-- End of FB Messenger widget -->
-{{ content }}
-{% include navigation/footer.html %}
-<script>
+        <!-- Your customer chat code -->
+        <div attribution="setup_tool" class="fb-customerchat" page_id="346353632068707" theme_color="#2da9e1"></div>
+        <!-- End of FB Messenger widget -->
+        {{ content }}
+        {% include navigation/footer.html %}
+        <script>
   document.getElementById("open-nav").onclick = function () {
     document.body.classList.toggle("nav-open");
     return false;
   };
 </script>
-<script>
+        <script>
   /*! lozad.js - v1.9.0 - 2019-02-09
   * https://github.com/ApoorvSaxena/lozad.js
   * Copyright (c) 2019 Apoorv Saxena; Licensed MIT */
@@ -49,5 +46,5 @@ theme_color="#2da9e1">
   const observer = lozad(); // lazy loads elements with default selector as '.lozad'
   observer.observe();
 </script>
-</body>
+    </body>
 </html>
