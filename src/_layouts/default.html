@@ -3,14 +3,13 @@
     {% include head.html %}
     <body>
         <!-- Start of FB Messenger widget -->
-                <!-- Load Facebook SDK for JavaScript -->
+                                <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
         <script>
   window.fbAsyncInit = function() {
     FB.init({
       xfbml            : true,
       version          : 'v6.0',
-      greeting_dialog_display : 'hide'
     });
   };
 
@@ -23,7 +22,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
         <!-- Your customer chat code -->
-        <div attribution="setup_tool" class="fb-customerchat" page_id="346353632068707" theme_color="#2da9e1"></div>
+        <div attribution="setup_tool" class="fb-customerchat" greeting_dialog_display="hide" page_id="346353632068707" theme_color="#2da9e1"></div>
         <!-- End of FB Messenger widget -->
         {{ content }}
         {% include navigation/footer.html %}
