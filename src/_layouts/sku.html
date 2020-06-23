@@ -10,7 +10,9 @@ icons: true
     <div class="grid2col">
       <div class="column first">
         {% if page.subtitle %}
-        <p>{{ page.subtitle }}</p>
+        <h4>{{ page.subtitle }}</h4>
+        {% endif %} {% if page.details %}
+        <p>{{ page.details }}</p>
         {% endif %}
         <div class="pricing-item single">
           <div class="pricing-price">
