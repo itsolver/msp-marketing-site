@@ -19,5 +19,5 @@ features:
   - feature: 'Restore backup of your Wordpress to this new instance'
   - feature: 'Associate new server with your public IP address'
 price: '275'
-unit: 'business'
+unit: 'upgrade'
 ---
