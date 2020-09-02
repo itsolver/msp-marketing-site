@@ -1,15 +1,16 @@
 - plan:
-  - name: Business
-  - fee: 49
-  - period: /mo
-  - pages: Three
-  - feature: One round of design revisions
-  - highlight: true
+    - name: Business
+    - fee: 49
+    - period: /mo
+    - pages: Three
+    - feature: $490 setup
+    - feature: One round of design revisions
+    - highlight: true
 - plan:
-  - name: Premium
-  - fee: 99
-  - period: /mo
-  - pages: Six
-  - feature: Unlimited round of design revisions
-  - feature: Professional Email from Google with annual purchase
-  - feature: Quarterly one-on-one digital marketing coaching
+    - name: Premium
+    - fee: 99
+    - period: /mo
+    - pages: Six
+    - feature: $990 setup
+    - feature: Unlimited round of design revisions
+    - feature: Quarterly one-on-one digital marketing coaching
