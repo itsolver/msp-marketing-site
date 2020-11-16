@@ -12,7 +12,7 @@ features:
  - feature: "Expertise to handle networking questions."
  - feature: "Provide local administrator access to install printer software."
  - feature: "Assist with installing printer drivers on up to 10 computers."
- - feature: "Setup the SMTP Relay required by my Google/Microsoft for securely scanning to email."
+ - feature: "Setup secure scan to email with Google or Microsoft."
  - feature: "If required, setup scan to network folder."
 price: "254"
 unit: "printer"
