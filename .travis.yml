@@ -1,31 +1,31 @@
 branches:
   only:
-    - /.*/
+  - "/.*/"
 language: ruby
 rvm:
-  - 2.5.3
+- 2.5.3
 dist: xenial
 node_js: 12.13.1
 cache:
   bundler: true
   directories:
-    - node_modules
+  - node_modules
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 notifications:
   pushover:
     on_success: always
     on_failure: always
     api_key:
-      secure: "$PUSHOVER_APP_KEY"
+      secure: TFEZpHHKvnQfu6OsjAt4/N3rF4Ov2l0cjBfmTe8m6IXR/22jGJnqTjvVbMCd+J2lvzWt/GZfDCJY7rNNZVYymSAfB3tqlOwXa8+7WDBzgEEW8iuCj93DplhdarAcQF2rwFvLtHN6EaMf7wdfAuE0uRgscS4asgEcf+g83lj1aQE1Oa+eWByV1j/mb6M09UMTWkI+ihNqwMbGQcye4bfPGCoNHypqk6udiZ5txnxBWb83VYMV1PCE9nkj3vHo4+mDtpWBSUjwaJwef/xUzWOoVfMrdphh2x7pDjx4NHevOJR5aBiwZEeNNIVEP22mJAY2MjBz0gbmdvIz78HM77m3nxv7nA98d3Hj1xf+tvho7aWw8X6Hg/6EkTB4Rcd72rwgqfQU+ivcjH6ViynNcq0Mm10h7XHZba45NJUf38U6APvqzevUJ5HAUsCPHkhXhdrdEoTEqBtTYgR38cPhc/eBuoJ1bCBq6Oe5juxG9fSuvhyKUFECIny2spxfwcTy7iKhXn0AdINHOuab0e2VmD2EfQVTqxzfHAPQVvC7H6dI/A0vSCdCKB7gJHFCsovWjL0A26oQMxVRGC2mHprJQzT8iZC5tgP22SmXD6HTAVf8zI2YBEznDd80KeUG+YbWuSkp0S14l4ZQH86VZ7STeimRoifgjKQiRR/AyJdZrc+z5vY=
     users:
-      secure: "$PUSHOVER_USER_KEY"
+      secure: uAnJzctdSEtPis/KvtobbALRkE8z7y3Uc8XJ2cFOUixWKdv6CKg9j3hgvN25fD5JKxjfE/yiJavJN/HEVK42LsXiPhx6vhnzb3SHnnbwunVaNJVN8V7ZOMqLdbOiabac0dtPZhNlmiHcF2S5UAJbck/Kkz6G1GfQTKBGWkDtiN6g6syTdTOdv/3Er6SqqRm+/x3MyW8Tv6r8rpCkqR4TsJT6nZRHsjulxUXStQYJZxii1djnHGlQrmNtLToTy/gBpI3Osg4jVTWU/KRBm/9Ov3VMhBf9P0ijK5m4fXAB8HR7TIfIDd9Gie9RKWKYeeOHX19pF/8lCs1bFmuSGxPKczbOFnqmbFO0pw1NDVGrgesUM8vUXtZe7ezpdLc3Dh00iHP4LT5DrzhKPgLUz2ER8F25r1uSyCydEjTOD8HlL4FL+xRSzkVb9vV4fmQI0qeYkb8z0UmSE4J8IIxtK0c0jbZDeeGD1N2w6M+iM7sVdQAdWdry/d2IDAl9ZIGFKa9GiGLzqpuw7zLytlbMyEGOWxY/ogMmmUiBG9Bd9rUFVkpMWydDShHhv3BXGTiTRKvoAFCfLn1VI473hP+PXbq9hX3szXNPvcOFoC9j2i99ccOJDjvqYJLfNscjYqUwwAXQqo3IBZTclsHnuGgBXp9e63kZpagCDJY8WgNo9FyuaMg=
   email:
     recipients:
       - angus@itsolver.net
-    on_success: never # default: change
-    on_failure: always # default: always
+    on_success: never
+    on_failure: always
 before_install:
 - nvm install 12.13.1
 - nvm use 12.13.1
@@ -37,11 +37,12 @@ install:
 - npm install -g gulp-cli
 - npm install -g snyk
 - firebase use "$FIREBASE_PROJECT" --token "$FIREBASE_TOKEN"
-# Unset stripe config before setting environment variables
 - firebase functions:config:unset stripe --token "$FIREBASE_TOKEN"
-- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token "$FIREBASE_TOKEN"
+- firebase functions:config:set stripe.publishable_key="$STRIPE_PUBLISHABLE_KEY" --token
+  "$FIREBASE_TOKEN"
 - firebase functions:config:set stripe.secret_key="$STRIPE_SECRET_KEY" --token "$FIREBASE_TOKEN"
-- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token "$FIREBASE_TOKEN"
+- firebase functions:config:set stripe.webhook_secret="$STRIPE_WEBHOOK_SECRET" --token
+  "$FIREBASE_TOKEN"
 - cd functions && npm install && cd ..
 - npm install
 - bundle install
