@@ -15,8 +15,9 @@ const config = require('./config');
 const {orders, products} = require('./orders');
 const express = require('express');
 const router = express.Router();
-const stripe = require('stripe')(config.stripe.secretKey);
-stripe.setApiVersion(config.stripe.apiVersion);
+const stripe = require('stripe')(config.stripe.secretKey, {
+  apiVersion: config.stripe.apiVersion,
+});
 
 // Render the main app HTML.
 router.get('/', (req, res) => {

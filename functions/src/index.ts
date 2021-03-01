@@ -30,8 +30,9 @@ const app = express();
  * namely products and SKUs, that can then used to create orders when completing the
  * checkout flow in the web interface.
  */
-const stripe = require('stripe')(config.stripe.secretKey);
-stripe.setApiVersion(config.stripe.apiVersion);
+const stripe = require('stripe')(config.stripe.secretKey, {
+  apiVersion: config.stripe.apiVersion,
+});
 
 // Setup useful middleware.
 app.use(

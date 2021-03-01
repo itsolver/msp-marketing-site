@@ -13,8 +13,10 @@
 export {};
 
 const config = require('./config');
-const stripe = require('stripe')(config.stripe.secretKey);
-stripe.setApiVersion(config.stripe.apiVersion);
+const stripe = require('stripe')(config.stripe.secretKey, {
+  apiVersion: config.stripe.apiVersion,
+});
+
 
 // Create an order.
 const createOrder = async (currency, items, email, shipping) => {
