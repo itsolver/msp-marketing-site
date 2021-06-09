@@ -1,6 +1,6 @@
 - plan:
     - name: Support Plan
-    - fee: 115
+    - fee: 169
     - period: / month
     - feature: Dedicated technical assistant who speaks your language.
     - feature: Assistance with internet, email, storage, mobile and security
@@ -13,7 +13,7 @@
     - highlight: true
 - plan:
     - name: Support Plan Premium
-    - fee: 480
+    - fee: 420
     - period: / month
     - feature: Everything in Support Plan, plus...
     - feature: 4 customer site visits per year
