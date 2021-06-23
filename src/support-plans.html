@@ -73,7 +73,7 @@ faq:
           {% endif %} {% endfor %}
         </ul>
       </div>
-
+      {% if plan.payment_link %} {% assign payment_link = plan.payment_link %} {% endif %}
       <a
         {%
         if
@@ -87,9 +87,8 @@ faq:
         {%
         endif
         %}
-        href="https://www.itsolver.net/register-{{ plan.payment-link }}"
-        >CHOOSE PLAN</a
-      >
+        href="{{ payment_link }}"
+        >CHOOSE PLAN</a>
     </div>
     {% endfor %}
   </div>

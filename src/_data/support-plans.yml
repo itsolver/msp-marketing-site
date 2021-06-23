@@ -21,4 +21,4 @@
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
     - feature: 24/7 priority response
-    - payment-link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
+    - payment_link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
