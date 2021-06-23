@@ -2,13 +2,15 @@
     - name: Support Plan
     - fee: 169
     - period: / month
+    - feature: All you can eat buffet in IT service
+    - feature: Remote assistance for quick resolutions
     - feature: Dedicated technical assistant who speaks your language.
-    - feature: Assistance with internet, email, storage, mobile and security
+    - feature: Assistance with internet, email, storage, mobilility and security
     - feature: Get expert answers to tech questions
     - feature: Submit requests via chat, email or phone
-    - feature: Remote desktop support for quick resolutions
-    - feature: Your concierge for G Suite or Office 365 admin tasks
-    - feature: How to guides for using G Suite or Office 365
+    - feature: Domain Name management
+    - feature: Outsourced admin tasks for Google Workspace and Microsoft 365
+    - feature: How to guides for using Google Workspace and Microsoft 365
     - feature: Mobile Management to keep your company data secure
     - highlight: true
 - plan:
@@ -16,5 +18,5 @@
     - fee: 420
     - period: / month
     - feature: Everything in Support Plan, plus...
-    - feature: 4 maintenance visits per year
-    - feature: 24/7 priority support
+    - feature: On-site service calls
+    - feature: 24/7 priority response
