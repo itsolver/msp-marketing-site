@@ -13,6 +13,7 @@
     - feature: How to guides for using Google Workspace and Microsoft 365
     - feature: Mobile Management to keep your company data secure
     - highlight: true
+    - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
 - plan:
     - name: Support Plan Premium
     - fee: 420
@@ -20,3 +21,4 @@
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
     - feature: 24/7 priority response
+    - payment-link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
