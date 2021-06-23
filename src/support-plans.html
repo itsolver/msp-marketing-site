@@ -70,10 +70,11 @@ faq:
         <ul class="pricing-feature-list">
           {% endif %} {% if plan.feature %}
           <li class="pricing-feature">{{ plan.feature }}</li>
-          {% endif %} {% endfor %}
+          {% endif %}
         </ul>
       </div>
       {% if plan.payment_link %} {% assign payment_link = plan.payment_link %} {% endif %}
+
       <a
         {%
         if
@@ -90,6 +91,7 @@ faq:
         href="{{ payment_link }}"
         >CHOOSE PLAN</a>
     </div>
+    {% endfor %}
     {% endfor %}
   </div>
 </section>
