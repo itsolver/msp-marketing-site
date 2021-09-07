@@ -15,7 +15,8 @@ features:
   - feature: 'Connect and test printer and scanner.'
   - feature: 'Install up to 5 programs.'
   - feature: 'Customize default apps to make you more productive.'
-price: '99'
+  - feature: 'Sync email, files and bookmarks for one user.'
+price: '240'
 unit: 'device'
 australia_only: 'Yes'
 ---
