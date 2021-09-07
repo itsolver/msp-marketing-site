@@ -1,5 +1,5 @@
 ---
-sort_key: 0
+sort_key: 1
 category_sort_key: 1
 layout: 'sku'
 id: setup-computer
