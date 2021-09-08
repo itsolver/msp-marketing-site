@@ -5,11 +5,11 @@ layout: 'sku'
 id: switch-to-gmail-account
 title: 'Switch to Gmail'
 heading: 'Switch to Gmail'
-subtitle: 'Say goodbye to wasting time on spam with a more reliable Gmail experience. '
+subtitle: 'Say goodbye to wasting time on spam with a more reliable Gmail experience.'
 category: 'On-Demand Support'
 category_description: 'Technical support at on-demand rates.'
 features:
-  - feature: 'We'll make sure you keep receiving emails from the old address.'
+  - feature: 'We will make sure you keep receiving emails from the old address.'
   - feature: 'Setup a new gmail account.'
   - feature: 'Copy contacts from existing email setup.'
   - feature: 'Forward new emails from existing account to gmail. '
