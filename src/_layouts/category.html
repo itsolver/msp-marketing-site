@@ -11,11 +11,11 @@ icons: true
     {% endif %}
   </section>
   {{ content }}
-  {% assign skus = site.skus | where: "category", page.title %}
+  {% assign skus = site.skus | where: "category", page.title | sort: 'sort_key' %}
 
   <!-- Load Stripe.js once for Checkout Beta -->
   <script src="https://js.stripe.com/v3"></script>
-  
+
   <section class="pricing-section">
     <div class="pricing">
         {% for sku in skus %}
@@ -27,13 +27,13 @@ icons: true
                     {% for feature in sku.features %}
                     <li class="pricing-feature">{{ feature.feature }}</li>
                     {% if forloop.first == true %}
-                    
+
                     {% endif %}
                     {% endfor %}
                 </ul>
               </div>
             <!-- Create a button that your customers click to complete their purchase. -->
-            <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button> 
+            <button id="checkout-button-{{ sku.id | replace: '/', '' }}" class="checkout-button">Buy now</button>
             <div id="error-message"></div>
 
             <script>
@@ -62,7 +62,7 @@ icons: true
                 });
               });
             </script>
-       
+
       </div>
       {% endfor %}
     </div>
