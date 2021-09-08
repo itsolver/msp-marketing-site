@@ -3,7 +3,7 @@ branches:
   - "/.*/"
 language: ruby
 rvm:
-- 2.5.3
+- 3.0.0
 dist: xenial
 node_js: 12.13.1
 cache:
