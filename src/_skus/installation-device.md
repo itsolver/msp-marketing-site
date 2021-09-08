@@ -9,7 +9,7 @@ subtitle: "Install a new printer, scanner or the latest software. Excludes custo
 category: 'On-Demand Support'
 category_description: 'Technical support at on-demand rates.'
 features:
-  - feature: 'Install a new printer, scanner or the latest software.'
+  - feature: 'Install a new printer, scanner, device or the latest software. Excludes customizing the hardware or software.'
 price: '99'
 unit: 'device'
 australia_only: 'Yes'

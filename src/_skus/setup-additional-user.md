@@ -15,7 +15,7 @@ features:
   - feature: 'Sync files from cloud storage.'
   - feature: 'Customize shortcuts.'
   - feature: 'Customize default apps.'
-price: '240'
+price: '165'
 unit: 'user'
 australia_only: 'Yes'
 ---
