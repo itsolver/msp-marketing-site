@@ -2,7 +2,7 @@ branches:
   only:
   - "/.*/"
 language: ruby
-dist: xenial
+dist: focal
 node_js: 12.13.1
 cache:
   bundler: true
