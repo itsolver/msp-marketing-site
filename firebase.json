@@ -3,6 +3,11 @@
     "public": "dist",
     "redirects": [
       {
+        "source": "/mac",
+        "destination": "https://slides.com/d/dFoa334/live",
+        "type": 301
+      },
+      {
         "source": "/accepting-apple-pay-and-android-pay",
         "destination": "/news/2017/01/05/accepting-apple-pay-and-android-pay",
         "type": 301
