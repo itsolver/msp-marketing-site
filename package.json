@@ -1,6 +1,6 @@
 {
   "name": "itsolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Marketing website for IT Solver, a managed service provider. Built with Gulp + Jekyll + Travis CI + Firebase",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "url": "https://github.com/itsolver/msp-marketing-site/issues"
   },
   "engines": {
-    "node": "12.13.1"
+    "node": "14.18.3"
   },
   "scripts": {
     "build": "gulp build --prod",
@@ -26,31 +26,31 @@
     "update": "npm install -g npm-check-updates && ncu -u && npm update"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "browser-sync": "^2.26.7",
-    "critical": "^1.3.9",
-    "del": "^5.1.0",
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^2.27.9",
+    "critical": "^4.0.1",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-changed": "^4.0.2",
+    "gulp-changed": "^4.0.3",
     "gulp-cssnano": "^2.1.3",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
     "gulp-pretty-data": "^0.1.2",
     "gulp-responsive": "^3.0.1",
     "gulp-rev": "^9.0.0",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "gulp-shell": "^0.8.0",
-    "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
+    "gulp-size": "^4.0.1",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-util": "^3.0.8",
     "require-dir": "^1.2.0",
-    "sass": "^1.39.0",
+    "sass": "^1.49.11",
     "shelljs": "^0.8.5",
     "submit-sitemap": "^0.1.3",
-    "yargs": "^15.3.1"
+    "yargs": "^17.4.0"
   },
   "browserslist": [
     "last 2 versions",

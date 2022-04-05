@@ -66,8 +66,8 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 Using node version manager install and use node version 9.5:
 
 ```bash
-nvm install 12.13.1
-nvm use 12.13.1
+nvm install 14.18.3
+nvm use 14.18.3
 ```
 
 ## Install Jekyll on macOS
@@ -77,7 +77,7 @@ People often use [rbenv](https://github.com/rbenv/rbenv) to manage multiple Ruby
 
 ```bash
 # Install rbenv and ruby-build
-brew install rbenv
+brew install rbenv ruby-build
 
 # Setup rbenv integration to your shell
 rbenv init
@@ -87,14 +87,19 @@ Open a new Terminal tab and check rbenv is installed:
 
 ```bash
 # Check your install
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
 ```
 
-Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby. If you're interested, head over to [rbenv command references])(https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
+Restart your terminal for changes to take effect. Now you can install the Ruby version of our choice, let’s go with current latest stable Ruby. If you're interested, head over to [rbenv command references](https://github.com/rbenv/rbenv#command-reference) to learn how to use different versions of Ruby in your projects.
 
-```bash
-rbenv install 2.5.3
-rbenv local 2.5.3
+```bash on M1 Apple Silicon
+RUBY_CFLAGS=-DUSE_FFI_CLOSURE_ALLOC rbenv install 2.7.1
+rbenv local 2.7.1
+```
+
+```bash on Intel
+rbenv install 2.7.1
+rbenv local 2.7.1
 ```
 
 Install Jekyll:
@@ -134,6 +139,14 @@ If you're not using Travis, deploy from local environment and submit sitemaps to
 - gulp submit
 ```
 
+Update dev dependencies in npm:
+
+```bash
+npm install -g npm-check-updates
+ncu --dep dev -u
+npm install
+```
+
 ## Edits
 
 Edit with your favourite text editor. There were editable classes in the original template, for live editing at [CloudCannon](https://app.cloudcannon.com/), but I am doing all editing via source code, so I removed them. CloudCanon is ideal for giving easy access to editors.
@@ -141,7 +154,7 @@ Edit with your favourite text editor. There were editable classes in the origina
 ### Posts
 
 - Add, update or remove a post in the \*Posts- collection.
-- The **Staff Author\*- field links to members in the **Staff\*- collection.
+- The **Staff Author** field links to members in the **Staff** collection.
 - Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
 - Change the defaults when new posts are created in `_posts/_defaults.md`.
 

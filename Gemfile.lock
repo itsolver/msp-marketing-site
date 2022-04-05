@@ -61,6 +61,10 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.3-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
@@ -97,6 +101,7 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+  -darwin-21
   arm64-darwin-20
   x86_64-linux
 
@@ -110,4 +115,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   2.2.27
+   2.3.10
