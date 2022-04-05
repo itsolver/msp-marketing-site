@@ -28,11 +28,6 @@
         "type": 301
       },
       {
-        "source": "/angus.vcf",
-        "destination": "/Angus_McLauchlan.vcf",
-        "type": 301
-      },
-      {
         "source": "/angus-of-it-solver-a-genius-at-smart-tv-installation",
         "destination": "/news/2015/06/09/smart-tv-and-netflix-installations-are-easy-with-it-solver",
         "type": 301
