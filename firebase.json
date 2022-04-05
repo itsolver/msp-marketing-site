@@ -3,6 +3,11 @@
     "public": "dist",
     "redirects": [
       {
+        "source": "/angus",
+        "destination": "/angus.vcf",
+        "type": 301
+      },
+      {
         "source": "/mac",
         "destination": "https://slides.com/d/dFoa334/live",
         "type": 301
