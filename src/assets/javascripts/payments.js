@@ -132,7 +132,7 @@
       {
         id: 'free',
         label: 'Free',
-        detail: 'Technician visit or remote assistance',
+        detail: 'Technician visit or online assistance',
         amount: 0,
       },
     ],

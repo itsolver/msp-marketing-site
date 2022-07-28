@@ -3,15 +3,13 @@
     - fee: 169
     - period: / month
     - feature: All you can eat buffet in IT service
-    - feature: Remote assistance for quick resolutions
+    - feature: Outsourced admin tasks for Google Workspace or Microsoft 365
+    - feature: Best practice suggestions for modern security
     - feature: Dedicated technical assistant who speaks your language.
     - feature: Assistance with internet, email, storage, mobilility and security
     - feature: Get expert answers to tech questions
     - feature: Submit requests via chat, email or phone
     - feature: Domain Name management
-    - feature: Outsourced admin tasks for Google Workspace and Microsoft 365
-    - feature: How to guides for using Google Workspace and Microsoft 365
-    - feature: Mobile Management to keep your company data secure
     - highlight: true
     - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
 - plan:
@@ -20,5 +18,6 @@
     - period: / month
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
+    - feature: Mobile Management to keep your company data secure
     - feature: 24/7 priority response
     - payment_link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl

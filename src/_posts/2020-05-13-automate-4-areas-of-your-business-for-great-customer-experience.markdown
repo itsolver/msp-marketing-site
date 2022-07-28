@@ -21,7 +21,7 @@ Let’s get started!
 ## Text expansion (replace text with a phrase)
 
 ![text expansion iphone screen recording](/assets/images/demo_of_iOS_keyboard_text_expansion_with_alf_stewart_giphy.gif)
-_When I type **:quick** it expands to 'Book your remote support here: https://www.itsolver.net/on-demand-quick-support-request'_
+_When I type **:work** it expands to **112 Bloomfield St, Level 1 Suite 6A, Cleveland QLD 4163**.
 
 If you are on Mac, iPhone and iPad, there is a built-in option in System Preferences > Keyboard > Text.
 This is what I use, and I love it!
