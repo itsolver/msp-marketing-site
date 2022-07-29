@@ -353,49 +353,7 @@
         "type": 301
       }
     ],
-    // Dynamic Links will start with https://itsolver.net/a
-    "appAssociation": "AUTO",
-    "rewrites": [
-      {"source": "/a/**", "dynamicLinks": true},
-      {
-        "source": "/buy/**",
-        "function": "app"
-      },
-      {
-        "source": "/config",
-        "function": "app"
-      },
-      {
-        "source": "/orders",
-        "function": "app"
-      },
-      {
-        "source": "/orders/**",
-        "function": "app"
-      },
-      {
-        "source": "/products",
-        "function": "app"
-      },
-      {
-        "source": "/products/**",
-        "function": "app"
-      },
-      {
-        "source": "/webhook",
-        "function": "app"
-      }
-    ],
     "headers": [
-      {
-        "source": "/buy/*",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "*"
-          }
-        ]
-      },
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
         "headers": [
