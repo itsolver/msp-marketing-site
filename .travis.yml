@@ -41,6 +41,6 @@ install:
 script:
 - travis_retry gulp build --prod
 after_success:
-- firebase --non-interactive deploy --token "$FIREBASE_TOKEN"
+- firebase --non-interactive deploy --token "$FIREBASE_TOKEN" --only hosting
 - gulp submit
 - snyk monitor
