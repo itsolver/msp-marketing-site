@@ -34,13 +34,16 @@ install:
 - npm install -g firebase-tools
 - npm install -g gulp-cli
 - npm install -g snyk
-- firebase use "$FIREBASE_PROJECT" --token $FIREBASE_TOKEN
 - npm install
 - bundle install
 - snyk test
 script:
 - travis_retry gulp build --prod
 after_success:
-- firebase --non-interactive deploy --token "$FIREBASE_TOKEN" --only hosting
 - gulp submit
 - snyk monitor
+deploy:
+  provider: firebase
+  token:
+    secure: "NXSn/Zt+MRF8DTJJ3XhJcaUHXYLId9TnwJuw+7ptqY1qZocWBALsRlkbUrzxv3+ZbqBYCDeqofCrSdw37XO6F3TI80HqQjEMfV1teoOXdoDunUJjmwjGw5bsCHk8Q3Trt8Tcld0Gv4d+V/pDiPHkiSnHdD899OTlHbh2EfABEpFDc58gN57n2Utk/ZBMKt8fvQ0RI0J2MWWk60qE1r8v4Bs8Ta5P5e/murBkb1Aq2CeaMV256b+mII0BU0O2iC6Fl6PEqggZogNhvd74J2sqvR3RK0Ovai0+2j6oGKOsae0kwSZyUprSZFPpJ9dkxXUZkKHQn+78likaOeT8D3QLfVI3nr7Br2UOEDgUXGif1/FPFYOwzJKWHC19TpVY2pheCW2iH26+UP2GLOGxctJcgZlND16RpzkBEMftxE/WLnzUF6x6IJCwmVemZnwId+79U2m6rfPm4u2wLqsnmeEEpe03dTQVaoILUAL9tcDB8g1vUYlaEyZFVCldhg9699x2hp8ox8IBPSCeqlM0oJY3bPAllUk+ALzrp+8Ye+hqkBfuml+WJ0umK1PWgTxXIJmy3kyK5eacivYBgOcFBk1HshqC6Nzf0utqRe2pNmzsiKszUFx5YpzVCUmAlBL7pxAquGdtaE1UzmhEAl1A2NWxRUgHwPna8SVT1bhFhe74QTU="
+  project: "itsolver-499d1"
