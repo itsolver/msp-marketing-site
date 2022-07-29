@@ -1,39 +1,51 @@
 ---
 permalink: /support-plans/
-title: Support Plans
+title: Business Support
 heading: Choose the plan that’s right for your business.
-description: IT Solver offers managed services plans to automatically resolve all computer technical issues from remote maintenance, security updates to on-site hardware servicing. Choose from three support plans to cater for all levels of care.
+description: IT Solver offers managed services plans to automatically resolve all computer technical issues from
+maintenance, security updates to on-site hardware servicing. Choose from two support plans to cater for all levels of
+care.
 layout: info-page
 faq:
-  - question: What kind of things will you do?
-    answer: Lot's of things! Check out the <a href="support-plan-requests">full list of requests</a> we can handle.
-  - question: What kind of things won't you do?
-    answer: Any bigger jobs like moving equipment, installing Wi-Fi, migrating data, working on servers and hardware repairs. Check out the <a href="support-plan-requests">exclusions list at the bottom of this page</a>. We do have a dedicated team for projects and hardware repairs. <a href="https://itsolver.net/contact/">Contact us</a> if you need this kind of work.
-  - question: How does it work?
-    answer: Once you have signed up, email or phone in your request. Or join a live chat on our website. We’ll get on it and email you back when it is complete or if we have any questions.
-  - question: What is a user?
-    answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as sales@yourcompany and support@yourcompany are included in pricing and don't count as additional users.
-  - question: How do I buy and pay?
-    answer: Choose plan above and complete the sign up form. Payment details will be requested when we call you shortly. We accept Visa and Mastercard.
-  - question: What is the payment plan?
-    answer: We offer a flexible payment plan. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.
-  - question: Where is on-site support available?
-    answer: Premium customers receive <a href="/service-area">free call outs in the Redlands and surrounding suburbs</a>.
-  - question: Is there a call out fee?
-    answer: Premium customers within the service area have free call outs. Return travel time of more than 1 hour from Cleveland to the customer's address is billed at $50 per 30 minutes.
-  - question: If I'm on the Support Plan require a call out, what are my options?
-    answer: Generally most issues are resolved quickly over the phone or internet. Customers on the Support Plan can request <a href="/on-demand">On-Demand support</a> which are billed separately.
-  - question: What priority is given to a request?
-    answer: |
-      Priority 1: Product/service unusable in production.<br/>
-      Priority 2: Use of product/service is significantly affected.<br/>
-      Priority 3: All other questions and bug reports<br/>
-  - question: Do you offer email accounts?
-    answer: Yes. You may <a href="/cloud-apps-g-suite/">purchase email accounts separately</a>.
-  - question: What isn't included?
-    answer: Data migration is billed separately. Refer to <a href="https://www.itsolver.net/cloud-apps-g-suite#gsuite-setup">data migration pricing</a>.
-  - question: Have more questions?
-    answer: <a href="/contact/">Contact us</a>.
+- question: What kind of things will you do?
+answer: Lot's of things! Check out the <a href="support-plan-requests">full list of requests</a> we can handle.
+- question: What kind of things won't you do?
+answer: Any bigger jobs like moving equipment, installing Wi-Fi, migrating data, working on servers and hardware
+repairs. Check out the <a href="support-plan-requests">exclusions list at the bottom of this page</a>. We do have a
+dedicated team for projects and hardware repairs. <a href="https://itsolver.net/contact/">Contact us</a> if you need
+this kind of work.
+- question: How does it work?
+answer: Once you have signed up, email or phone in your request. Or join a live chat on our website. We’ll get on it and
+email you back when it is complete or if we have any questions.
+- question: What is a user?
+answer: A user is defined as one personalized email address (you@yourcompany). Group email aliases such as
+sales@yourcompany and support@yourcompany are included in pricing and don't count as additional users.
+- question: How do I buy and pay?
+answer: Choose plan above and complete the sign up form. Payment details will be requested when we call you shortly. We
+accept Visa and Mastercard.
+- question: What is the payment plan?
+answer: We offer a flexible payment plan. You are billed monthly. For more information on pricing, <a
+  href="https://itsolver.net/contact/">contact sales</a>.
+- question: Where is on-site support available?
+answer: Premium customers receive <a href="/service-area">free call outs in the Redlands and surrounding suburbs</a>.
+- question: Is there a call out fee?
+answer: Premium customers within the service area have free call outs. Return travel time of more than 1 hour from
+Cleveland to the customer's address is billed at $50 per 30 minutes.
+- question: If I'm on the Support Plan require a call out, what are my options?
+answer: Generally most issues are resolved quickly over the phone or internet. Customers on the Support Plan can request
+<a href="/on-demand">On-Demand support</a> which are billed separately.
+- question: What priority is given to a request?
+answer: |
+Priority 1: Product/service unusable in production.<br />
+Priority 2: Use of product/service is significantly affected.<br />
+Priority 3: All other questions and bug reports<br />
+- question: Do you offer email accounts?
+answer: Yes. You may <a href="/cloud-apps-g-suite/">purchase email accounts separately</a>.
+- question: What isn't included?
+answer: Data migration is billed separately. Refer to <a
+  href="https://www.itsolver.net/cloud-apps-g-suite#gsuite-setup">data migration pricing</a>.
+- question: Have more questions?
+answer: <a href="/contact/">Contact us</a>.
 ---
 
 <p>
@@ -76,21 +88,8 @@ faq:
         </ul>
       </div>
 
-      <a
-        {%
-        if
-        plan.highlight
-        %}
-        class="button light no-border no-border-radius dark-hover"
-        {%
-        else
-        %}
-        class="button dark no-border no-border-radius light-hover"
-        {%
-        endif
-        %}
-        href="{{ payment_link }}"
-        >CHOOSE PLAN</a>
+      <a {% if plan.highlight %} class="button light no-border no-border-radius dark-hover" {% else %}
+        class="button dark no-border no-border-radius light-hover" {% endif %} href="{{ payment_link }}">CHOOSE PLAN</a>
     </div>
     {% endfor %}
   </div>
