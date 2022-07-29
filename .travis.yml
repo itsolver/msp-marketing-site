@@ -5,7 +5,7 @@ language: ruby
 dist: focal
 node_js: 14.18.0
 cache:
-  bundler: true# caching bundler gem packages will speed up build
+  bundler: true
   directories:
   - node_modules
 env:
