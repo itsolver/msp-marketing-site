@@ -2,7 +2,7 @@
   - header: Troubleshooting
   - request: Performance troubleshooting
   - request: Network troubleshooting
- - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
+  - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
   - request: Hardware diagnostics when equipment isn't working as expected.
 - requests-included:
   - header: Staff changes
