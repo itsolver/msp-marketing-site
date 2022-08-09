@@ -16,7 +16,7 @@ twitter:
   username: "itsolvernet"
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 
-# Default Calendly Booking URL 
+# Default Calendly Booking URL
 booking_url: "https://calendly.com/itsolver/on-demand-support"
 
 # Let search engines discover this site quicker
@@ -80,6 +80,7 @@ collections:
 exclude:
 - .asset-cache
 - .bundle
+- .jekyll-cache/
 - .jekyll-assets-cache
 - .sass-cache
 - "*.sublime-project"
