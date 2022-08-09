@@ -40,8 +40,8 @@
   - request: Editing Domain settings
   - request: Editing basic web hosting settings
 - requests-included:
-  - header: Operating System, Apple macOS, Microsoft Windows, Google ChromeOS, Linux
-  - request: Maintenance for your device’s operating system
+  - header: Operating Systems
+  - request: Maintenance for your device’s operating system including macOS, Windows and ChromeOS
   - request: "Troubleshooting cross-platform integration (security, file and print)"
 - requests-included:
   - header: Printers
