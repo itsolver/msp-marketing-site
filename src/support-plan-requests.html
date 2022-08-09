@@ -20,17 +20,6 @@ description: This is the list of requests we take care of under the <a href="sup
 
 {% endfor %}
 </div>
-<h2>Supported technologies</h2>
-<dl class="platforms">
-  {% for column in site.data.platforms %}
-  <div>
-  {% for platform in column.platforms %}
-  {% if platform.header %}<dt>{{ platform.header }}</dt>{% endif %}
-  {% if platform.name %}<dd>{{ platform.name }}</dd>{% endif %}
-  {% endfor %}
-  </div>
-  {% endfor %}
-</dl>
 
 <h2>Excluded requests</h2>
 <dl id="excluded" class="requests">
@@ -43,3 +32,16 @@ description: This is the list of requests we take care of under the <a href="sup
   </div>
     {% endfor %}
 </dl>
+
+<h2>Supported technologies</h2>
+<dl class="platforms">
+  {% for column in site.data.platforms %}
+  <div>
+  {% for platform in column.platforms %}
+  {% if platform.header %}<dt>{{ platform.header }}</dt>{% endif %}
+  {% if platform.name %}<dd>{{ platform.name }}</dd>{% endif %}
+  {% endfor %}
+  </div>
+  {% endfor %}
+</dl>
+
