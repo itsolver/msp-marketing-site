@@ -1,11 +1,9 @@
 - requests-included:
-  - header: Setup
-  - request: Setup new computers, tablets and phones (excluding physical installation)
-  - request: Adding new printer to computers (excluding physical installation)
+  - header: Troubleshooting
   - request: Performance troubleshooting
   - request: Network troubleshooting
-  - request: Setup cloud backup and sync
-  - request: Responding to a security breach
+ - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
+  - request: Hardware diagnostics when equipment isn't working as expected.
 - requests-included:
   - header: Staff changes
   - request: Adding and removing users
@@ -28,15 +26,15 @@
   - header: Software support
   - request: Direct access to an expert to answer your questions on a wide range of topics
   - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
-  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets"
-  - request: Connecting to printers and networks
+  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs and Sheets"
+  - request "Quick how-to questions about Microsoft-branded apps, such as Outlook, Word and Excel"
   - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV’s, smartphones and tablets (eg Apple iPad).
 - requests-included:
   - header: Email
   - request: Change basic account settings
   - request: Create email addresses
   - request: Forward email addresses to other ones
-  - request: “Send as” other emails in Google Apps (impersonation)
+  - request: “Send as” in Gmail and Microsoft 365
 - requests-included:
   - header: Web & Domain Hosting
   - request: Editing Domain settings
@@ -44,31 +42,27 @@
 - requests-included:
   - header: Operating System, Apple macOS, Microsoft Windows, Google ChromeOS, Linux
   - request: Maintenance for your device’s operating system
-  - request: Troubleshooting automated administrative requests & scripts
   - request: "Troubleshooting cross-platform integration (security, file and print)"
 - requests-included:
   - header: Printers
-  - request: Connect to Printers and Multifunctions
+  - request: Connecting to printers (excludes initial setup)
   - request: Demonstrate how to scan to cloud or networked computer
-- requests-included:
-  - header: Troubleshooting
-  - request: "Diagnose and solve technology problems, such as internet connectivity, Wi-Fi and removing viruses."
-  - request: Hardware diagnostics when equipment isn't working as expected.
-- requests-excluded: 
+- requests-excluded:
   - header: Adds, moves or changes
+  - request: Installing new computers, tablets, phones or other hardware
   - request: Substantial adds, moves or changes to software, network or physical environments.
   - request: Upgrading operating systems
 - requests-excluded:
   - header: Hardware Service
   - request: Any hardware service, except for diagnostics.
   - request: Hardware upgrades.
-  - request: Physically unpack and install equipment.
+  - request: Physical unpack and install of equipment.
 - requests-excluded:
   - header: Automation
   - request: Setup or troubleshoot automated administrative requests & scripts
 - requests-excluded:
   - header: Cross-platform Integration
-  - request: Install or support third party software unless 
+  - request: Install or support third party software unless
   - request: "Troubleshooting cross-platform integration (security, file and print)"
 - requests-excluded:
   - header: Web Services
