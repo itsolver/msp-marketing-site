@@ -1,18 +1,19 @@
 - platforms:
-  - header: Web services
-  - name: Stripe
-  - name: Xero
-  - name: Zapier
-  - name: Zendesk
-- platforms:
-  - header: Collaboration platforms
-  - name: Google G Suite
-  - name: Microsoft Office 365
-  - name: Apple iCloud
+  - header: Core productivity platforms
+  - name: Google Workspace
+  - name: Microsoft 365
 - platforms:
   - header: Cloud computing platforms
   - name: Amazon Web Services
   - name: Google Cloud
+  - name: Microsoft Azure
+- platforms:
+  - header: Web services
+  - name: Azure Logic App and Power Automate
+  - name: Stripe
+  - name: Xero (integration only, rest is up to your bookkeeper and accountant)
+  - name: Zapier
+  - name: Zendesk
 - platforms:
   - header: Operating systems
   - name: Apple iOS, macOS, watchOS and tvOS
