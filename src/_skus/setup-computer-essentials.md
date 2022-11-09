@@ -2,7 +2,7 @@
 sort_key: 1
 category_sort_key: 1
 layout: 'sku'
-id: setup-computer
+id: sku_MlhdHguGLNTWHp
 title: 'Setup Computer'
 heading: 'Setup Computer'
 subtitle: 'Get your computer setup right.'
