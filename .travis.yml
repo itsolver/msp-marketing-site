@@ -34,9 +34,9 @@ install:
 - npm install -g gulp-cli
 - npm install
 - bundle _2.3.10_ install
-- firebase use "$FIREBASE_PROJECT" --token $FIREBASE_TOKEN
+- firebase use "$FIREBASE_PROJECT"
 script:
 - travis_retry gulp build --prod
 after_success:
-- firebase --non-interactive deploy --token "$FIREBASE_TOKEN" --only hosting
+- firebase --non-interactive deploy --only hosting
 - gulp submit
