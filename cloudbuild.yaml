@@ -1,0 +1,10 @@
+
+steps:
+# [START gulp build --prod]
+- name: 'gcr.io/itsolver-marketing-site/jekyll-builder'
+  args: ['build', '--prod']
+# [END cloudbuild_install]
+## [START cloudbuild_firebase_deploy]
+- name: gcr.io/itsolver-marketing-site/firebase
+  args: ['deploy', '--project=itsolver-marketing-site', '--only=hosting']
+## [END cloudbuild_firebase_deploy]

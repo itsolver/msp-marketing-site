@@ -56,5 +56,8 @@
     "last 2 versions",
     "> 5%",
     "IE 9"
-  ]
+  ],
+  "dependencies": {
+    "sharp": "^0.31.2"
+  }
 }
