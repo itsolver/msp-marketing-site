@@ -3,5 +3,7 @@ steps:
   args: ['build', '--prod']
 - name: gcr.io/itsolver-marketing-site/firebase
   args: ['deploy', '--project=itsolver-marketing-site', '--only=hosting']
+- name: 'gcr.io/itsolver-marketing-site/jekyll-builder'
+  args: ['submit']
 options:
   logging: CLOUD_LOGGING_ONLY
