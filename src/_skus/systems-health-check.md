@@ -6,8 +6,8 @@ id: systems-health-check
 title: 'Systems Health Check'
 heading: 'Systems Health Check'
 subtitle: "Identify and fix common problems that affect your business's internet connection, Wi-Fi coverage, online presence, customer interaction, digital marketing, supplier interaction, information security, mobility, business strategy and efficiency."
-category: 'Consulting'
-category_description: 'IT Audit for your business.'
+category: "On-Demand Support"
+category_description: "Technical support at on-demand rates."
 features:
   - feature: 'Your IT systems are vital to the productivity of your business.'
   - feature: 'Find out what areas are doing well and what areas need attention.'

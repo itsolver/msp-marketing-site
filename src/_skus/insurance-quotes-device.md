@@ -6,8 +6,8 @@ id: insurance-quotes-device
 title: 'Insurance Quotes'
 heading: 'Insurance Quotes'
 subtitle: 'Insurance quotes for damaged equipment'
-category: 'Insurance Quotes and Support'
-category_description: 'Repair quotes and services covered by insurance claims.'
+category: "On-Demand Support"
+category_description: "Technical support at on-demand rates."
 features:
   - feature: 'Perform diagnostics on 1 device'
   - feature: 'Supply a report advising Repair Estimate'
