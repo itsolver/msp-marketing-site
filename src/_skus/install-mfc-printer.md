@@ -14,7 +14,7 @@ features:
  - feature: "Assist with installing printer drivers on up to 10 computers."
  - feature: "Setup secure scan to email with Google or Microsoft."
  - feature: "If required, setup scan to network folder."
-price: "254"
+price: "275"
 unit: "printer"
 australia_only: "Yes"
 ---

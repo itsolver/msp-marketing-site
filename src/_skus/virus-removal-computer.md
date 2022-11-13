@@ -13,7 +13,7 @@ features:
   - feature: 'Identify and remove any malware or adware on one (1) computer'
   - feature: 'Mitigate and repair any issues caused by malicious software'
   - feature: 'Review your current security setup and make recommendations to avoid further infection'
-price: '179'
+price: '275'
 unit: 'computer'
 australia_only: 'Yes'
 ---

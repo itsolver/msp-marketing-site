@@ -10,7 +10,7 @@ category: 'Consulting'
 category_description: 'Custom development'
 features:
   - feature: 'Technical expertise as your disposal.'
-  - feature: 'We work with JavaScript, Google App Script, Python and Powershell.'
+  - feature: 'We code in whatever language is suitable including JavaScript, Python and Powershell.'
 price: '150'
 unit: 'hour'
 ---

@@ -18,7 +18,7 @@ features:
  - feature: "If required, setup wireless bridge (bridge not included)."
  - feature: "Demonstrate features of new speakers and how to use the native App including how to play the same (or different) playlist in each zone, and how to add a new zone."
  - feature: "Clean up and remove packaging."
-price: "149"
+price: "275"
 unit: "system"
 australia_only: "Yes"
 ---

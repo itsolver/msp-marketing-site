@@ -16,6 +16,6 @@ features:
   - feature: 'Design and send your first newsletter.'
   - feature: 'Review Mailchimp report.'
   - feature: '30 days support after first newsletter.'
-price: '450'
+price: '550'
 unit: 'success'
 ---

@@ -11,7 +11,7 @@ category_description: 'Services for TVs and Home Theatre devices.'
 features:
   - feature: "If you don't want to do a self-install, IT Solver will take care of your Foxtel install. "
   - feature: "We support IQ2, IQ3, IQ4 and IQ5 if it's the name released."
-price: '179'
+price: '275'
 unit: 'set top box'
 australia_only: 'Yes'
 ---

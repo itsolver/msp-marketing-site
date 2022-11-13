@@ -15,6 +15,6 @@ features:
   - feature: 'Forward new emails from existing account to gmail. '
   - feature: 'Turn on security enhancements in Gmail.'
   - feature: 'Help you advise friends and family of your new email address that you will still receive emails from the old address, but to update their records.'
-price: '199'
+price: '225'
 unit: 'account'
 ---
