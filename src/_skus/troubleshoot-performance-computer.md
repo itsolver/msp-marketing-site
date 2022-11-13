@@ -11,6 +11,6 @@ category_description: "Technical support at on-demand rates."
 features:
  - feature: "Run through 12 steps to identify and resolve performance issues in Windows or macOS."
  - feature: "If hardware is faulty, then we provide a quote for the best solution."
-price: "179"
+price: "275"
 unit: "computer"
 ---

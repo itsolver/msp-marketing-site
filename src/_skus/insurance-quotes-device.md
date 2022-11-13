@@ -12,7 +12,7 @@ features:
   - feature: 'Perform diagnostics on 1 device'
   - feature: 'Supply a report advising Repair Estimate'
   - feature: 'If Not Economical to Repair, we advise Replace'
-price: '99'
+price: '120'
 unit: 'device'
 australia_only: 'Yes'
 ---
