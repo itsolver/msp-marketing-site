@@ -4,7 +4,7 @@
     "redirects": [
       {
         "source": "/defender",
-        "destination": "/assets/deploy/defender.cmd",
+        "destination": "https://drive.google.com/file/d/1xNA7ASxLC2EhwJWdUlsK7F9QWMg7dGRD/view?usp=sharing",
         "type": 301
       },
       {
