@@ -3,6 +3,11 @@
     "public": "dist",
     "redirects": [
       {
+        "source": "/defender",
+        "destination": "/assets/deploy/defender.cmd",
+        "type": 301
+      },
+      {
         "source": "/angus",
         "destination": "/angus.vcf",
         "type": 301
