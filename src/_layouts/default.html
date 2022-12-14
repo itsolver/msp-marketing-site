@@ -2,32 +2,6 @@
 <html lang="en">
     {% include head.html %}
     <body>
-        <!-- Start of FB Messenger widget -->
-                                <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"
-        greeting_dialog_display="fade"
-        greeting_dialog_delay="3"
-        theme_color="#2a5280">
-        </div>
-        <script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v6.0',
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- Your customer chat code -->
-        <div attribution="setup_tool" class="fb-customerchat" greeting_dialog_display="hide" page_id="346353632068707" theme_color="#2da9e1"></div>
-        <!-- End of FB Messenger widget -->
         {{ content }}
         {% include navigation/footer.html %}
         <script>
