@@ -1,7 +1,0 @@
-fee: 120
-period: / hour
-minimum: true
-features:
-  - feature: 1 hour minimum
-  - feature: Billed in 15 minute blocks
-  - feature: 'Free call out within <a href="https://www.itsolver.net/service-area">service area</a>'
