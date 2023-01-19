@@ -68,6 +68,11 @@
         "type": 301
       },
       {
+        "source": "/cloud-apps-g-suite",
+        "destination": "/google-workspace",
+        "type": 301
+      },
+      {
         "source": "/community",
         "destination": "https://support.itsolver.net/hc/en-au/community/topics",
         "type": 301
