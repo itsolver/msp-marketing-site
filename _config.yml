@@ -13,7 +13,7 @@ google_analytics_key: "UA-90161029-1"
 disqus_shortname:
 icon_ready: true
 twitter:
-  username: "itsolvernet"
+  username: "itsolver"
 future: false # Publish on schedule future dated posts https://stackoverflow.com/a/5013966
 
 # Default Calendly Booking URL
