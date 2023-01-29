@@ -1,13 +1,28 @@
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L12Z3KJLB4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L12Z3KJLB4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-L12Z3KJLB4');
-</script>
+    gtag('config', 'G-L12Z3KJLB4');
+  </script>
+  <!-- start Google Analytics code, that will stop publishing in 1 July 2023 -->
+  {% if site.environment == 'production' and site.google_analytics_key != '' %}
+    <script>
+      if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+        (function (e, a, t, n, c, o, s) {
+            e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
+                    (e[c].q = e[c].q || []).push(arguments)
+                }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src =
+                n, s.parentNode.insertBefore(o, s)
+        })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
+            "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
+      }
+    </script>
+  {% endif %}
+  <!-- end Google Analytics code -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
@@ -64,21 +79,6 @@
 {% endif %}
 <!-- Pinterest verification -->
 <meta name="p:domain_verify" content="7e80672a9fef4e57a48e31b67591b38e"/>
-
-<!-- start Google Analytics code -->
-{% if site.environment == 'production' and site.google_analytics_key != '' %}
-  <script>
-    if(navigator.userAgent.indexOf("Speed Insights") == -1) {
-      (function (e, a, t, n, c, o, s) {
-          e.GoogleAnalyticsObject = c, e[c] = e[c] || function () {
-                  (e[c].q = e[c].q || []).push(arguments)
-              }, e[c].l = 1 * new Date, o = a.createElement(t), s = a.getElementsByTagName(t)[0], o.async = 1, o.src =
-              n, s.parentNode.insertBefore(o, s)
-      })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create",
-          "{{ site.google_analytics_key }}", "auto"), ga("send", "pageview")
-    }
-  </script>
-{% endif %}
 <!-- end Google Analytics code -->
 <!-- add SEO meta tags that are not included by jekyll-seo-tag -->
 {% if page.author %}
