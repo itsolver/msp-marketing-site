@@ -80,5 +80,10 @@
   </script>
 {% endif %}
 <!-- end Google Analytics code -->
+<!-- add SEO meta tags that are not included by jekyll-seo-tag -->
+{% if page.author %}
+  <meta content="article" property="og:type">
+{% else %}
+  <meta content="website" property="og:type">
 </head>
 
