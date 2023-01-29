@@ -3,6 +3,7 @@ sort_key: 23
 category_sort_key: 1
 layout: 'sku'
 id: on-demand-quick-support-request
+payment_link: 'https://book.stripe.com/7sI17a2LlaUJ6ru28c'
 title: 'On-Demand Quick Support'
 heading: 'On-Demand Quick Support'
 subtitle: 'If your products aren’t covered by a Support Plan, you can purchase On-Demand Support.'
