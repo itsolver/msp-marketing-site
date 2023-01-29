@@ -1,6 +1,6 @@
 - plan:
     - name: Support Plan
-    - fee: 169
+    - fee: 275
     - period: / month
     - feature: All you can eat buffet in IT service
     - feature: Outsourced admin tasks for Google Workspace or Microsoft 365
@@ -14,7 +14,7 @@
     - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
 - plan:
     - name: Support Plan Premium
-    - fee: 420
+    - fee: 550
     - period: / month
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
