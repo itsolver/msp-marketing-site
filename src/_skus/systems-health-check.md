@@ -30,3 +30,8 @@ faq:
   - question: Have more questions?
     answer: <a href="/contact/">Contact us</a>.
 ---
+Are you considering adopting Google Workspace or Microsoft 365 for your business? Are you already subscribed but looking for ways to improve your current configuration? Whether you're a business owner or leader, our Systems Health Check is the perfect solution for leveraging technology to grow your business.
+## Expert IT Systems Review for Professional Recommendations
+Our team of experts will review all of your IT systems, providing professional recommendations on improvements. We'll help you choose the best platform for your industry and business, whether it's Google or Microsoft. We'll look at all the hardware and software, and provide solutions for all situations.
+## Presenting Solutions for Improving Your Business Technology Strategy
+After your audit, we will present solutions for improving your current business technology strategy. We'll provide an in-depth report of our findings and recommendations, including a detailed analysis of your current IT systems and how they can be optimised to support your business goals.
