@@ -109,10 +109,11 @@ gem install --user-install bundler jekyll
 ```
 
 Install dependencies:
+rm -r node_modules/sharp
 
 ```bash
 bundle install
-npm install
+npm install --unsafe-perm
 npm install -g gulp-cli
 ```
 

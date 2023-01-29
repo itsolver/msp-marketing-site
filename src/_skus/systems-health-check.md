@@ -3,6 +3,7 @@ sort_key: 24
 category_sort_key: 1
 layout: 'sku'
 id: systems-health-check
+payment_link: 'https://book.stripe.com/dR617a4TtaUJ8zC28b'
 title: 'Systems Health Check'
 heading: 'Systems Health Check'
 subtitle: "Identify and fix common problems that affect your business's internet connection, Wi-Fi coverage, online presence, customer interaction, digital marketing, supplier interaction, information security, mobility, business strategy and efficiency."

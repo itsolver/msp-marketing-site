@@ -23,9 +23,6 @@ icons: true
             <li class="pricing-feature">{{ feature.feature }}</li>
             {% endfor %}
           </ul>
-          <!-- Load Stripe.js on your website. -->
-          <script src="https://js.stripe.com/v3"></script>
-
           <!-- Create a button that your customers click to complete their purchase. -->
           <button
             id="checkout-button-{{ page.id | replace: '/', '' }}"
@@ -36,21 +33,11 @@ icons: true
           <div id="error-message"></div>
 
           <script>
-            var stripe = Stripe('pk_live_VJ3u45huMiamA3vibzwz4zCU');
-
             var checkoutButton = document.getElementById('checkout-button-{{ page.id | replace: '/', ''}}');
             checkoutButton.addEventListener('click', function () {
               // When the customer clicks on the button, redirect
               // them to Checkout.
-              stripe.redirectToCheckout({
-                items: [{sku: '{{ page.id | replace: "/", "" }}', quantity: 1}],
-
-                // Note that it is not guaranteed your customers will be redirected to this
-                // URL *100%* of the time, it's possible that they could e.g. close the
-                // tab between form submission and the redirect.
-                successUrl: '{{ page.success_url | default: site.booking_url }}',
-                cancelUrl: 'https://www.itsolver.net/canceled',
-              })
+              .location.href="{{page.payment_link}}"
               .then(function (result) {
                 if (result.error) {
                   // If `redirectToCheckout` fails due to a browser or network
