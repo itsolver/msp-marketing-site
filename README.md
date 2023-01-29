@@ -113,7 +113,8 @@ rm -r node_modules/sharp
 
 ```bash
 bundle install
-npm install --unsafe-perm
+npm install sharp --unsafe-perm
+npm install
 npm install -g gulp-cli
 ```
 
