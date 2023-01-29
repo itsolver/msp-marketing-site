@@ -4,7 +4,11 @@ author: angus
 date: 2023-01-29
 categories:
   - Google Workspace
-keywords: Google Workspace, productivity, collaboration, communication, organization
+keywords: 
+  - Google Workspace productivity
+  - collaboration
+  - communication
+  - organization
 description: Learn how to use Google Workspace to increase productivity and collaboration for your business or team. Get tips and best practices for using the platform effectively.
 ---
 Google Workspace (formerly G Suite) is a collection of cloud-based tools and services that can help businesses and teams increase productivity and collaboration. From email and calendar to document creation and project management, Google Workspace has everything you need to stay organized and connected. In this post, we'll go over the benefits of using Google Workspace and provide tips for getting the most out of the platform.
