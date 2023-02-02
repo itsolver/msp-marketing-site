@@ -6,10 +6,12 @@
     - feature: Outsourced admin tasks for Google Workspace or Microsoft 365
     - feature: Best practices for modern security
     - feature: Dedicated technical assistant who speaks your language.
-    - feature: Assistance with internet, email, storage, mobilility and security
+    - feature: Assistance with internet, email, storage, mobility and security
     - feature: Get expert answers to tech questions
-    - feature: Submit requests via chat, email or phone
     - feature: Domain Name management
+    - feature: Submit requests via email
+    - feature: Emergency requests via phone.
+    - feature: Mon-Fri 9am-5pm
     - highlight: true
     - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
 - plan:
@@ -19,5 +21,5 @@
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
     - feature: Mobile Management to keep your company data secure
-    - feature: 24/7 priority response
+    - feature: 7 days a week 7am-7pm
     - payment_link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
