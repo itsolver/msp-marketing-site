@@ -19,7 +19,6 @@ features:
   - feature: 'Business technology strategy to meet your goals.'
 price: '275'
 unit: 'visit'
-success_url: 'https://calendly.com/itsolver/systems-health-check'
 faq:
   - question: Is there a call out fee?
     answer: <a href="/service-area">Free call outs in the Redlands and surrounding suburbs</a>. If you're outside this service area, return travel time of more than 1 hour from Cleveland to the customer's address is billed at $50 per 30 minutes.
