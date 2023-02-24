@@ -9,12 +9,10 @@
   - request: Troubleshooting print errors
   - request: Reinstalling an existing printer
 - requests-included:
-  - header: Staff changes
-  - request: Adding and removing users
-  - request: Onboarding staff, adding user and setup device
-  - request: Offboarding staff, removing user and wiping company data
-  - request: Locating a lost device
-  - request: Wiping a company owned device to prevent theft of Intellectual Property
+  - header: Google Workspace and Microsoft 365
+  - request: Adding and removing users in Google Workspace or Microsoft 365
+  - request: Managing access to Google Shared Drives and Sharepoint sites
+  - request: Tweaking admin settings for company policy
 - requests-included:
   - header: Security
   - request: Security check-up
@@ -22,6 +20,8 @@
   - request: Malware removal
   - request: Recovering from a tech support scam
   - request: Advising on best practices for cyber security
+  - request: Locating a lost device
+  - request: Wiping a company owned device to prevent theft of Intellectual Property
 - requests-included:
   - header: Email
   - request: Change basic account settings
@@ -45,6 +45,7 @@
   - request: Editing basic web hosting settings
 - requests-excluded:
   - header: Adds, moves or changes
+  - request: Onboarding/offboarding staff
   - request: Installing new computers, tablets, phones or other hardware
   - request: Substantial adds, moves or changes to software or hardware.
   - request: Upgrading operating systems
