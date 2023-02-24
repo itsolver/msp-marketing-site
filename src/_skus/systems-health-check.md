@@ -6,8 +6,7 @@ id: systems-health-check
 payment_link: 'https://book.stripe.com/dR617a4TtaUJ8zC28b'
 title: 'Maximise Your Business Potential with a Systems Health Check'
 heading: 'Expert IT Systems Review for Professional Recommendations'
-subtitle: "Leverage Technology to Grow Your Business with a Systems Health Check."
-description: "Maximize your business potential with a Systems Health Check. Our experts review your IT systems and provide professional recommendations on improvements. Improve your business configuration and leverage technology to grow your business with a Systems Health Check."
+description: "Our team of experts will review all of your IT systems, providing professional recommendations on improvements. We’ll help you choose the best platform for your industry and business, whether it’s Google or Microsoft. We’ll look at all the hardware and software, and provide solutions for all situations."
 category: "On-Demand Support"
 category_description: "Technical support at on-demand rates."
 features:
@@ -25,12 +24,10 @@ faq:
   - question: What isn't included?
     answer: This is a discovery session, we will identify solutions but not implement them. We will provide a quote for the implementation.
   - question: What areas do you provide a Systems Health Check?
-    answer: As we are based in the Redlands, we've done IT systems reviews in Cleveland, Capalaba, Redland Bay, Thornlands, Victoria Point, Ormiston, Raby Bay and Macleay Island. We travel regularly to our customers in Tingalpa, Newstead, Wynnum. We also providfe hardware and software solutions along the east coast including Sydney, Port Macquarie and Newcastle. We're also thrilled to [serve international customers](https://itsolver.net/service-area).
+    answer: Located in Redlands, our IT team conducts system reviews in Cleveland, Capalaba, Redland Bay, Thornlands, Victoria Point, Ormiston, Raby Bay and Macleay Island. We offer hardware and software solutions across the east coast, including Sydney, Port Macquarie, and Newcastle. Our services extend to Tingalpa, Newstead, and Wynnum. We're also thrilled to <a href="https://itsolver.net/service-area">serve international customers</a>.
   - question: Have more questions?
     answer: <a href="/contact/">Contact us</a>.
 ---
-Are you considering adopting Google Workspace or Microsoft 365 for your business? Are you already subscribed but looking for ways to improve your current configuration? Whether you're a business owner or leader, our Systems Health Check is the perfect solution for leveraging technology to grow your business.
-## Expert IT Systems Review for Professional Recommendations
-Our team of experts will review all of your IT systems, providing professional recommendations on improvements. We'll help you choose the best platform for your industry and business, whether it's Google or Microsoft. We'll look at all the hardware and software, and provide solutions for all situations.
+Our team of experts will review all of your IT systems, providing professional recommendations on improvements. We’ll help you choose the best platform for your industry and business, whether it’s Google or Microsoft. We’ll look at all the hardware and software, and provide solutions for all situations.
 ## Presenting Solutions for Improving Your Business Technology Strategy
 After your audit, we will present solutions for improving your current business technology strategy. We'll provide an in-depth report of our findings and recommendations, including a detailed analysis of your current IT systems and how they can be optimised to support your business goals.
