@@ -3,8 +3,13 @@
     "public": "dist",
     "redirects": [
       {
-        "source": "/defender",
-        "destination": "https://drive.google.com/file/d/1xNA7ASxLC2EhwJWdUlsK7F9QWMg7dGRD/view?usp=sharing",
+        "source": "/help",
+        "destination": "https://book.stripe.com/3cs8zC99Jgf3aHK005",
+        "type": 301
+      },
+      {
+        "source": "/health",
+        "destination": "https://book.stripe.com/dR617a4TtaUJ8zC28b",
         "type": 301
       },
       {
@@ -135,11 +140,6 @@
       {
         "source": "/google-review",
         "destination": "https://www.google.com.au/search?q=IT+Solver,+Redland+Bay+QLD,+Australiaandludocid=17884259636214375999&gws_rd=cr&ei=60eIWf2OMIKp0gTkr7KQDg#lrd=0x6b916510942d8acf:0xf831a7625f6a263f,3,5",
-        "type": 301
-      },
-      {
-        "source": "/help",
-        "destination": "https://support.itsolver.net/hc/en-au",
         "type": 301
       },
       {
