@@ -3,16 +3,10 @@
     <h1>{{ include.heading }}</h1>
     <p class="subtitle">{{ include.subtitle }}</p>
     <div class="hero-cta">
-      <a
-        class="button light border light-hover"
-        href="https://book.stripe.com/3cs8zC99Jgf3aHK005"
-        >Get instant help</a
-      >
-      <a
-        class="alt button dark no-border dark-hover"
-        href="https://book.stripe.com/dR617a4TtaUJ8zC28b"
-        >Book a Systems Health Check</a
-      >
+      <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+      <stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq"
+      publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU">
+      </stripe-pricing-table>
     </div>
     {% if include.video != "" %}
     <div class="landing-video">
