@@ -2,15 +2,15 @@
     - name: Support Plan
     - fee: 275
     - period: / month
-    - feature: All you can eat buffet in IT service
+    - feature: All you can eat buffet in IT support (see exclusions)
     - feature: Outsourced admin tasks for Google Workspace or Microsoft 365
     - feature: Best practices for modern security
     - feature: Dedicated technical assistant who speaks your language.
-    - feature: Assistance with internet, email, storage, mobility and security
-    - feature: Get expert answers to tech questions
+    - feature: Assistance with internet, email, storage, mobilility and security
     - feature: Domain Name management
+    - feature: Get expert answers to tech questions
     - feature: Submit requests via email
-    - feature: Emergency requests via phone.
+    - feature: Emergency requests via phone
     - feature: Mon-Fri 9am-5pm
     - highlight: true
     - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
@@ -20,6 +20,8 @@
     - period: / month
     - feature: Everything in Support Plan, plus...
     - feature: On-site service calls
+    - feature: Dedicated support agent a phone call away.
     - feature: Mobile Management to keep your company data secure
+    - feature: Monitoring devices for threats (requires Defender for Business)
     - feature: 7 days a week 7am-7pm
     - payment_link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
