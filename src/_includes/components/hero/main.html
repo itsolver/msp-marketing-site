@@ -3,10 +3,10 @@
     <h1>{{ include.heading }}</h1>
     <p class="subtitle">{{ include.subtitle }}</p>
     <div class="hero-cta">
+      <p>Become a paying customer to enjoy exclusive benefits, including immediate phone support. Sign up now!</p>
       <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-      <stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq"
-      publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU">
-      </stripe-pricing-table>
+      <stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq" publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU"></stripe-pricing-table>
+      <a href="#prctbl_0MVQkDGwvziWDQizVeR7eCkq" class="cta-button">Get Started</a>
     </div>
     {% if include.video != "" %}
     <div class="landing-video">
