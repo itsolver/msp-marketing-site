@@ -1,6 +1,7 @@
 ul.benefits {
   -webkit-padding-start: 0;
   padding-left: 0;
+
   li {
     padding-bottom: 10px;
   }
@@ -46,9 +47,11 @@ ul.benefits {
   @media only screen and (min-width: $desktop-min) {
     padding-bottom: 0;
   }
+
   .wrapper {
     padding-bottom: 0;
   }
+
   .subtitle {
     max-width: 470px;
   }
@@ -69,4 +72,8 @@ ul.benefits {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.PricingTable {
+  padding-bottom: 50px;
 }
