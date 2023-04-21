@@ -30,6 +30,8 @@
     - name: support@itsolver.net
       link: mailto:support@itsolver.net
       contact_icon: email
+    - name: Chat
+      link: https://shop.itsolver.net/?show_chat
     - name: (07) 3123 6000
       link: tel:+61731236000
       contact_icon: phone
