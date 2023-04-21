@@ -1,19 +1,22 @@
 p.subtext {
-	text-align: center;
+  text-align: center;
 }
+
 .map {
-    border:0;
-    background: #eee;
-    display: block;
-    width: 100%;
+  border: 0;
+  background: #eee;
+  display: block;
+  width: 100%;
 }
+
 .contact-help-centre h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 h2.what,
 h2.when,
 h2.where {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 ul.operating-hours {
@@ -21,6 +24,7 @@ ul.operating-hours {
   @include flex-flow(wrap);
   margin: 0 0 1.5rem 0;
   padding: 0;
+
   li {
     -webkit-flex: 1 0 180px;
     flex: 1 0 180px;
@@ -29,6 +33,7 @@ ul.operating-hours {
     max-width: 180px;
     text-align: left;
   }
+
   .days {
     max-width: 110px;
   }
@@ -41,4 +46,8 @@ p.urgent-enquries {
 img.contact {
   padding-bottom: 72px;
   padding-top: 54px;
+}
+
+stripe-pricing-table>iframe {
+  padding-bottom: 50px;
 }
