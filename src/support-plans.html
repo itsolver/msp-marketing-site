@@ -51,38 +51,8 @@ faq:
   Whether you are solo or up to 50 employees, when you run into something you
   don't understand, IT Solver has the expertise to walk you through it.
 </p>
-<section class="pricing-section">
-  <div class="pricing">
-    {% for column in site.data.support-plans %}
-
-    <div class="pricing-item">
-      {% for plan in column.plan %} {% if plan.name %} {% assign {{
-      support-plan-name = plan.name %}
-      <div class="pricing-item-section">
-        <h3 class="pricing-title">{{ plan.name }}</h3>
-        {% endif %} {% if plan.fee %}
-        <div class="pricing-price">
-          <span class="pricing-currency">$</span>
-          <span class="pricing-amount">{{ plan.fee }}</span>
-          {% endif %} {% if plan.period %}
-          <span class="pricing-period">{{plan.period}}</span>
-        </div>
-        <ul class="pricing-feature-list">
-          {% endif %} {% if plan.feature %}
-          <li class="pricing-feature">{{ plan.feature }}</li>
-          {% endif %}
-          {% if plan.payment_link %} {% assign payment_link = plan.payment_link %} {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-
-      <a {% if plan.highlight %} class="button light no-border no-border-radius dark-hover" {% else %}
-        class="button dark no-border no-border-radius light-hover" {% endif %} href="{{ payment_link }}">CHOOSE PLAN</a>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq" publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU"></stripe-pricing-table>
 {% if page.faq %}
 <h2>Support Plans FAQ</h2>
 <dl class="faq">
