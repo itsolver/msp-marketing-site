@@ -183,16 +183,6 @@
         "type": 301
       },
       {
-        "source": "/mhado",
-        "destination": "/on-demand",
-        "type": 301
-      },
-      {
-        "source": "/midsdo",
-        "destination": "/on-demand",
-        "type": 301
-      },
-      {
         "source": "/news**",
         "destination": "/blog",
         "type": 301
@@ -210,6 +200,16 @@
       {
         "source": "/No-ADSL-ports-availabe-at-Macleay-Russell-Lamb-Karragarra-Islands",
         "destination": "/news/2018/02/21/State-of-the-internet-at-Macleay-Russell-Lamb-Karragarra-Islands",
+        "type": 301
+      },
+      {
+        "source": "/ond",
+        "destination": "https://book.stripe.com/3cs8zC99Jgf3aHK005",
+        "type": 301
+      },
+      {
+        "source": "/on-demand",
+        "destination": "https://book.stripe.com/3cs8zC99Jgf3aHK005",
         "type": 301
       },
       {
@@ -355,11 +355,6 @@
       {
         "source": "/were-now-using-xero",
         "destination": "/news/2016/01/12/we're-now-using-xero",
-        "type": 301
-      },
-      {
-        "source": "/ddg",
-        "destination": "https://www.duckduckgo.com",
         "type": 301
       }
     ],
