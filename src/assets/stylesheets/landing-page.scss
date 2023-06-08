@@ -77,3 +77,9 @@ ul.benefits {
 .PricingTable {
   padding-bottom: 50px;
 }
+
+@media only screen and (max-width: 394px) {
+  .Tabs.is-insettabs .Tabs-TabListItem {
+    font-size: 12px;
+  }
+}
