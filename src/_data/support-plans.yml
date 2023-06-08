@@ -12,6 +12,7 @@
     - feature: Submit requests via email
     - feature: Emergency requests via phone
     - feature: Mon-Fri 9am-5pm
+    - feature: MACs (Moves, Adds or Changes) $150/hr or $225/hr outside M-F 9-5 hours.
     - highlight: true
     - payment_link: https://buy.stripe.com/3cs6rufy73shcPS5kk
 - plan:
