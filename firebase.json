@@ -13,6 +13,11 @@
         "type": 301
       },
       {
+        "source": "/systems-health-check",
+        "destination": "https://book.stripe.com/dR617a4TtaUJ8zC28b",
+        "type": 301
+      },
+      {
         "source": "/angus",
         "destination": "/angus.vcf",
         "type": 301
