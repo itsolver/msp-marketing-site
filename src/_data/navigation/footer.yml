@@ -2,12 +2,14 @@
     - header: SERVICES
     - name: Systems Health Check
       link: /systems-health-check
+    - name: Cloud Migration
+      link: https://shop.itsolver.net/collections/cloud-migration
     - name: Google Workspace
-      link: /cloud-apps-g-suite
+      link: https://shop.itsolver.net/products/integrate-google-workspace-into-your-business
     - name: Microsoft 365
-      link: https://shop.itsolver.net/collections/business-basics/products/integrate-microsoft-365-for-business-basics
+      link: https://shop.itsolver.net/products/integrate-microsoft-365-for-business-basics
     - name: Security Boost
-      link: https://shop.itsolver.net/collections/business-basics/products/boost-security
+      link: https://shop.itsolver.net/collections/security
     - name: Business Support
       link: /support-plans
     - name: Web Design

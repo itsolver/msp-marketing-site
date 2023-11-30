@@ -1,9 +1,9 @@
 - name: Google Workspace
   link: /cloud-apps-g-suite
 - name: Microsoft 365
-  link: https://shop.itsolver.net/collections/business-basics/products/integrate-microsoft-365-for-business-basics
-- name: Security
-  link: https://shop.itsolver.net/collections/business-basics/products/boost-security
+  link: https://shop.itsolver.net/products/integrate-microsoft-365-for-business-basics
+- name: Shop
+  link: https://shop.itsolver.net/
 - name: Support
   link: /support-plans/
   highlight: true
