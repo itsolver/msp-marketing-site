@@ -62,6 +62,10 @@
         "destination": "/",
         "type": 301
       },
+      { "source": "billing",
+        "destination": "https://billing.stripe.com/p/login/aEUbJz5c11DgcTK4gg",
+        "type": 301
+      },
       {
         "source": "/cal",
         "destination": "https://calendly.com/itsolver",
