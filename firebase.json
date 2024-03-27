@@ -331,6 +331,19 @@
         "destination": "/legal",
         "type": 301
       },
+      { "source": "/toolkit/cleanup",
+        "destination": "https://drive.google.com/drive/folders/1dKLKN7_G2MOGZ2XiV03Jq-pTXGjqn4f4?usp=sharing",
+        "type": 301
+      },
+      { "source": "/toolkit/backup",
+        "destination": "https://drive.google.com/drive/folders/1nACSMmameeBjSJJO_zwSt-Q55KCZoS17?usp=sharing",
+        "type": 301
+      },
+      {
+        "source": "/toolkit/activation",
+        "destination": "https://drive.google.com/drive/folders/1j2Y2Fw0XZPb3wKaet744N1_FR0xIIRo2?usp=sharing",
+        "type": 301
+      },
       {
         "source": "/the-future-of-television-is-here",
         "destination": "/news/2016/07/13/the-future-of-television-is-here",
