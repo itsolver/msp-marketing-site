@@ -28,21 +28,21 @@
   - request: Change basic account settings
   - request: Create email addresses
   - request: Forward email addresses to other ones
-  - request: “Send as” in Gmail and Microsoft 365
+  - request: "Send as" in Gmail and Microsoft 365
 - requests-included:
   - header: Software support
   - request: Direct access to an expert to answer your questions on a wide range of topics
   - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
   - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs and Sheets"
   - request "Quick how-to questions about Microsoft-branded apps, such as Outlook, Word and Excel"
-  - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV’s, smartphones and tablets (eg Apple iPad).
+  - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV's, smartphones and tablets (eg Apple iPad).
 - requests-included:
   - header: Operating Systems
-  - request: Maintenance for your device’s operating system including macOS, Windows and ChromeOS
+  - request: Maintenance for your device's operating system including macOS, Windows and ChromeOS
   - request: "Troubleshooting cross-platform integration (security, file and print)"
 - requests-included:
-  - header: Website & Domain Hosting
-  - request: Editing Domain settings
+  - header: Website & Domain Hosting configuration
+  - request: Editing Domain name records
   - request: Editing basic web hosting settings
 - requests-excluded:
   - header: Adds, moves or changes
@@ -50,6 +50,13 @@
   - request: Installing new computers, tablets, phones or other hardware
   - request: Substantial adds, moves or changes to software or hardware.
   - request: Upgrading operating systems
+- requests-excluded:
+  - header: Custom Software Development
+  - request: Design and development of custom software applications.
+  - request: Any solutions requiring custom coding.
+- requests-excluded:
+  - header: Content Creation
+  - request: Creating/integrating forms, workflow applications or services.
 - requests-excluded:
   - header: Hardware Service
   - request: Any hardware service, except for diagnostics.
@@ -59,3 +66,7 @@
   - header: Web Services
   - request: Marketing or advertising services
   - request: Website design, optimizations or SEO work.
+- requests-excluded:
+  - header: Data Migration
+  - request: Migrating data between systems or applications
+  - request: Data backup and recovery services
