@@ -20,9 +20,8 @@
     - fee: 550
     - period: / month
     - feature: Everything in Support Plan, plus...
-    - feature: On-site service calls
     - feature: Dedicated support agent a phone call away.
-    - feature: Mobile Management to keep your company data secure
+    - feature: Mobile Device Management to keep your company data secure
     - feature: Monitoring devices for threats (requires Defender for Business)
     - feature: 7 days a week 7am-7pm
     - payment_link: https://buy.stripe.com/9AQg2485Fd2R9DG5kl
