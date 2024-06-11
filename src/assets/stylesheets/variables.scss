@@ -47,7 +47,7 @@ $section-padding-tablet: 50px;
 $section-padding: 65px;
 $half-space: math.div($section-padding, 2);
 $quarter-space: math.div($half-space, 2);
-$octa-space: calc($quarter-space / 2);
+$octa-space: math.div($quarter-space, 2);
 
 $mobile-card-padding: 20px;
 $card-padding: 30px;
