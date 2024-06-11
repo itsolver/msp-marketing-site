@@ -62,7 +62,8 @@
         "destination": "/",
         "type": 301
       },
-      { "source": "billing",
+      {
+        "source": "billing",
         "destination": "https://billing.stripe.com/p/login/aEUbJz5c11DgcTK4gg",
         "type": 301
       },
@@ -227,11 +228,6 @@
         "type": 301
       },
       {
-        "source": "/qs",
-        "destination": "https://get.teamviewer.com/k6xf54t",
-        "type": 301
-      },
-      {
         "source": "/register",
         "destination": "/support-plans",
         "type": 301
@@ -259,11 +255,6 @@
       {
         "source": "/review",
         "destination": "https://www.google.com.au/search?q=it%20solver#lrd=0x6b916510942d8acf:0xf831a7625f6a263f,3,5",
-        "type": 301
-      },
-      {
-        "source": "/rs",
-        "destination": "https://get.teamviewer.com/h5rbys3",
         "type": 301
       },
       {
@@ -331,11 +322,13 @@
         "destination": "/legal",
         "type": 301
       },
-      { "source": "/toolkit/cleanup",
+      {
+        "source": "/toolkit/cleanup",
         "destination": "https://drive.google.com/drive/folders/1dKLKN7_G2MOGZ2XiV03Jq-pTXGjqn4f4?usp=sharing",
         "type": 301
       },
-      { "source": "/toolkit/backup",
+      {
+        "source": "/toolkit/backup",
         "destination": "https://drive.google.com/drive/folders/1nACSMmameeBjSJJO_zwSt-Q55KCZoS17?usp=sharing",
         "type": 301
       },
@@ -377,6 +370,11 @@
       {
         "source": "/were-now-using-xero",
         "destination": "/news/2016/01/12/we're-now-using-xero",
+        "type": 301
+      },
+      {
+        "source": "/sos",
+        "destination": "https://my.splashtop.com/sos/packages/generic-download/TYAJK3STSXT3",
         "type": 301
       }
     ],
