@@ -46,6 +46,116 @@ Build status: [![Build Status](https://travis-ci.com/itsolver/msp-marketing-site
 5. Add your Google Analytics and Disqus keys to `_config.yml`.
 6. Replace pages and posts with your own.
 
+---
+## Preparation on Windows
+
+Hydra was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+
+### Install Chocolatey
+
+Chocolatey is a package manager for Windows. Install it by running the following command in an elevated (Administrator) PowerShell:
+
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+### Install Node.js and nvm
+
+Using Chocolatey, install Node.js and nvm:
+
+```powershell
+choco install nvm
+nvm install 20.12.0
+nvm use 20.12.0
+```
+
+### Install Ruby and Jekyll
+
+Install Ruby using Chocolatey:
+
+```powershell
+choco install ruby -y
+refreshenv
+```
+
+Verify Ruby installation and install Jekyll:
+
+```powershell
+ruby -v
+gem install bundler jekyll
+```
+
+### Install Git
+
+If you haven't already, install Git for Windows:
+
+```powershell
+choco install git -y
+refreshenv
+```
+
+### Install Gulp
+
+Install Gulp CLI globally:
+
+```powershell
+npm install -g gulp-cli
+```
+
+### Install Project Dependencies
+
+Navigate to your project directory and install the necessary npm packages:
+
+Remove existing `node_modules/sharp` directory and reinstall sharp:
+
+```powershell
+rm -r node_modules\sharp
+npm install sharp --unsafe-perm
+```
+
+Install rest of dependences:
+
+```powershell
+npm install
+```
+
+### Initialize Firebase
+
+Install Firebase CLI globally and log in to your Firebase account:
+
+```powershell
+npm install -g firebase-tools
+firebase login
+firebase init # enable Hosting
+```
+
+### Run Local Server
+
+To run the local server, use the following command:
+
+```powershell
+gulp
+```
+
+### Deployment
+
+If you're using Travis CI, it will handle the deployment for you. Otherwise, you can deploy from your local environment and submit sitemaps to search engines:
+
+```powershell
+firebase deploy
+gulp submit
+```
+
+### Update Dev Dependencies
+
+To update development dependencies in npm, run:
+
+```powershell
+npm install -g npm-check-updates
+ncu --dep dev -u
+npm install
+```
+---
 ## Preparation on macOS
 
 Hydra was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
@@ -148,6 +258,8 @@ npm install -g npm-check-updates
 ncu --dep dev -u
 npm install
 ```
+
+---
 
 ## Edits
 

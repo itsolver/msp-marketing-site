@@ -6,67 +6,110 @@
   - request: Hardware diagnostics when equipment isn't working as expected.
 - requests-included:
   - header: Printers
-  - request: Troubleshooting print errors
-  - request: Reinstalling an existing printer
+  - request: Troubleshooting print errors for various printer brands and models
+  - request: Reinstalling existing printers on Windows, macOS, and mobile devices
+  - request: Configuring network printers and print servers
 - requests-included:
   - header: Google Workspace and Microsoft 365
-  - request: Adding and removing users (excludes user onboarding) in Google Workspace or Microsoft 365
-  - request: Offboarding users (remove licence, email forwarding, files access)
-  - request: Managing access to Google Shared Drives and Sharepoint sites
-  - request: Tweaking admin settings for company policy
+  - request: Adding and removing users (excludes user onboarding) in Google Workspace or Microsoft 365 admin consoles
+  - request: Offboarding users (remove licence, email forwarding, files access) in both platforms
+  - request: Managing access to Google Shared Drives, Google Sites, Microsoft SharePoint sites, and OneDrive
+  - request: Tweaking admin settings for company policy in Google Workspace and Microsoft 365
+  - request: Configuring and troubleshooting single sign-on (SSO) for both platforms
 - requests-included:
   - header: Security
-  - request: Security check-up
-  - request: Privacy check-up
-  - request: Malware removal
-  - request: Recovering from a tech support scam
-  - request: Advising on best practices for cyber security
-  - request: Locating a lost device
-  - request: Wiping a company owned device to prevent theft of Intellectual Property
+  - request: Security check-up for Windows, macOS, iOS, and Android devices
+  - request: Privacy check-up and settings optimization across platforms
+  - request: Malware removal and virus scanning on Windows and macOS
+  - request: Recovering from tech support scams and phishing attempts
+  - request: Advising on best practices for cyber security, including password management and two-factor authentication
+  - request: Locating lost devices using Find My iPhone, Find My Device for Android, or other tracking software
+  - request: Wiping company-owned devices to prevent theft of Intellectual Property, including remote wipe procedures
 - requests-included:
   - header: Email
-  - request: Change basic account settings
-  - request: Create email addresses
-  - request: Forward email addresses to other ones
-  - request: "Send as" in Gmail and Microsoft 365
+  - request: Change basic account settings in Gmail, Outlook, and other email clients
+  - request: Create email addresses and aliases in Google Workspace and Microsoft 365
+  - request: Set up email forwarding rules and auto-responders
+  - request: Configure "Send as" and delegation settings in Gmail and Microsoft 365
+  - request: Troubleshoot email delivery issues and spam filter configuration
 - requests-included:
   - header: Software support
-  - request: Direct access to an expert to answer your questions on a wide range of topics
-  - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote and more
-  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs and Sheets"
-  - request "Quick how-to questions about Microsoft-branded apps, such as Outlook, Word and Excel"
-  - request: Support for most Australian supplied internet enabled devices, such as computers, smart TV's, smartphones and tablets (eg Apple iPad).
+  - request: Direct access to an expert to answer questions on a wide range of software topics
+  - request: Quick how-to questions about Apple-branded apps, such as Photos, iMovie, GarageBand, Pages, Numbers, Keynote, and more
+  - request: "Quick how-to questions about Google-branded apps, such as Gmail, Calendar, Docs, Sheets, Slides, and Meet"
+  - request: "Quick how-to questions about Microsoft-branded apps, such as Outlook, Word, Excel, PowerPoint, and Teams"
+  - request: Support for most Australian-supplied internet-enabled devices, including computers, smart TVs, smartphones, and tablets (e.g., Apple iPad, Samsung Galaxy Tab, Microsoft Surface)
+  - request: Assistance with third-party productivity apps like Slack, Trello, and Asana
 - requests-included:
   - header: Operating Systems
-  - request: Maintenance for your device's operating system including macOS, Windows and ChromeOS
-  - request: "Troubleshooting cross-platform integration (security, file and print)"
+  - request: Maintenance for device operating systems including macOS, Windows, ChromeOS, iOS, and Android
+  - request: "Troubleshooting cross-platform integration (security, file sharing, and printing)"
+  - request: Assistance with system updates and patch management
+  - request: Optimizing system performance and startup times
 - requests-included:
   - header: Website & Domain Hosting configuration
-  - request: Editing Domain name records
-  - request: Editing basic web hosting settings
+  - request: Editing Domain Name System (DNS) records for various domain registrars
+  - request: Configuring MX records for email routing
+  - request: Setting up and managing SSL certificates
+  - request: Editing basic web hosting settings on popular platforms like cPanel, Plesk, or WordPress
+  - request: Troubleshooting website accessibility and basic performance issues
 - requests-excluded:
   - header: Adds, moves or changes
   - request: Onboarding new staff
   - request: Installing new computers, tablets, phones or other hardware
-  - request: Substantial adds, moves or changes to software or hardware.
+  - request: Substantial adds, moves or changes to software or hardware
   - request: Upgrading operating systems
+  - request: Office relocations or major infrastructure changes
+  - request: Setting up new network equipment (routers, switches, etc.)
 - requests-excluded:
   - header: Custom Software Development
-  - request: Design and development of custom software applications.
-  - request: Any solutions requiring custom coding.
+  - request: Design and development of custom software applications
+  - request: Any solutions requiring custom coding
+  - request: Scripting or automation development
+  - request: Database design or custom queries
 - requests-excluded:
-  - header: Content Creation
-  - request: Creating/integrating forms, workflow applications or services.
+  - header: Content Creation and Management
+  - request: Creating/integrating forms, workflow applications or services
+  - request: Content writing or editing for websites or applications
+  - request: Graphic design or multimedia production
 - requests-excluded:
   - header: Hardware Service
-  - request: Any hardware service, except for diagnostics.
-  - request: Physical unpack and install of equipment.
-  - request: Hardware upgrades.
+  - request: Any hardware service, except for diagnostics
+  - request: Physical unpack and install of equipment
+  - request: Hardware upgrades or replacements
+  - request: Repair of physical damage to devices
+  - request: Printer hardware maintenance or repair
 - requests-excluded:
   - header: Web Services
   - request: Marketing or advertising services
-  - request: Website design, optimizations or SEO work.
+  - request: Website design, optimizations or SEO work
+  - request: E-commerce platform setup or management
+  - request: Web hosting setup or server management
 - requests-excluded:
-  - header: Data Migration
+  - header: Data Migration and Management
   - request: Migrating data between systems or applications
   - request: Data backup and recovery services
+  - request: Large-scale data entry or data cleansing
+  - request: Database administration or performance tuning
+- requests-excluded:
+  - header: Training and Documentation
+  - request: Developing training materials or user guides
+  - request: Conducting group training sessions
+  - request: Creating process documentation or standard operating procedures
+- requests-excluded:
+  - header: Project Management
+  - request: Managing large-scale IT projects
+  - request: Vendor management or procurement services
+  - request: IT strategy consulting or roadmap development
+- requests-excluded:
+  - header: Compliance and Auditing
+  - request: Conducting IT audits or risk assessments
+  - request: Setting up systems to meet industry standards or data protection laws
+  - request: Developing or reviewing IT policies and procedures
+- requests-excluded:
+  - header: Electronic Form Creation and Workflow Digitization
+  - request: Creating electronic forms or digitizing paper forms
+  - request: Designing and implementing digital workflows
+  - request: Automating business processes through digital means
+  - request: Integrating electronic forms with existing systems
+  - request: Customizing form logic or complex calculations
