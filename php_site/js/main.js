@@ -1,75 +1,63 @@
-// Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile navigation toggle
-    const mobileToggle = document.createElement('button');
-    mobileToggle.classList.add('mobile-nav-toggle');
-    mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
-    mobileToggle.innerHTML = '<span></span><span></span><span></span>';
-    
-    const nav = document.querySelector('nav');
-    const header = document.querySelector('header .container');
-    
-    if (window.innerWidth <= 768 && header && nav) {
-        header.insertBefore(mobileToggle, nav);
-        
-        mobileToggle.addEventListener('click', function() {
-            nav.classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    }
-    
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+  // Mobile menu toggle
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+      document.body.classList.toggle('mobile-menu-open');
+      
+      // Show the active segment navigation
+      const activeSegment = document.querySelector('.segment-link.active');
+      if (activeSegment) {
+        const segmentType = activeSegment.textContent.toLowerCase().trim();
+        const segmentNav = document.querySelector(`.${segmentType}-nav`);
+        if (segmentNav) {
+          segmentNav.style.display = document.body.classList.contains('mobile-menu-open') ? 'flex' : 'none';
+        }
+      }
     });
-    
-    // Form validation for contact forms
-    const contactForms = document.querySelectorAll('form.contact-form');
-    
-    contactForms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            const requiredFields = form.querySelectorAll('[required]');
-            let isValid = true;
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                    
-                    const errorMsg = field.nextElementSibling;
-                    if (errorMsg && errorMsg.classList.contains('error-message')) {
-                        errorMsg.textContent = 'This field is required';
-                    } else {
-                        const span = document.createElement('span');
-                        span.classList.add('error-message');
-                        span.textContent = 'This field is required';
-                        field.insertAdjacentElement('afterend', span);
-                    }
-                } else {
-                    field.classList.remove('error');
-                    const errorMsg = field.nextElementSibling;
-                    if (errorMsg && errorMsg.classList.contains('error-message')) {
-                        errorMsg.textContent = '';
-                    }
-                }
-            });
-            
-            if (!isValid) {
-                e.preventDefault();
-            }
-        });
+  }
+  
+  // Segment switcher
+  const segmentLinks = document.querySelectorAll('.segment-link');
+  segmentLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      // We'll let the link navigate naturally to change the segment
+      // The PHP will handle setting the active segment
     });
+  });
+
+  // Form validation
+  const forms = document.querySelectorAll('form');
+  forms.forEach(form => {
+    form.addEventListener('submit', function(event) {
+      const requiredFields = form.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          isValid = false;
+          field.classList.add('error');
+          
+          // Create or update error message
+          let errorMessage = field.nextElementSibling;
+          if (!errorMessage || !errorMessage.classList.contains('error-message')) {
+            errorMessage = document.createElement('div');
+            errorMessage.classList.add('error-message');
+            field.parentNode.insertBefore(errorMessage, field.nextSibling);
+          }
+          errorMessage.textContent = 'This field is required';
+        } else {
+          field.classList.remove('error');
+          const errorMessage = field.nextElementSibling;
+          if (errorMessage && errorMessage.classList.contains('error-message')) {
+            errorMessage.remove();
+          }
+        }
+      });
+
+      if (!isValid) {
+        event.preventDefault();
+      }
+    });
+  });
 }); 

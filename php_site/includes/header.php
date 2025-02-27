@@ -1,34 +1,68 @@
+<?php
+/**
+ * Site Header with Navigation
+ */
+
+// Default to business segment if not set
+$activeSegment = isset($activeSegment) ? $activeSegment : 'business';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title ?? 'IT Solver - Managed Service Provider'; ?></title>
-    <meta name="description" content="<?php echo $page_description ?? 'IT Solver is a managed service provider for people and business'; ?>">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- You can add Bootstrap or any other CSS framework here if needed -->
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo isset($pageTitle) ? $pageTitle . ' - IT Solver' : 'IT Solver - IT Support & Solutions'; ?></title>
+  <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'IT Solver provides managed IT services, support plans, and technology solutions for businesses.'; ?>">
+  <link rel="stylesheet" href="/css/style.css">
+  <?php if (isset($additionalCss)): ?>
+    <?php foreach ($additionalCss as $css): ?>
+      <link rel="stylesheet" href="<?php echo $css; ?>">
+    <?php endforeach; ?>
+  <?php endif; ?>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="IT Solver Logo">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/services.php">Services</a></li>
-                    <li><a href="/pages/support-plans.php">Support Plans</a></li>
-                    <li><a href="/pages/google-workspace.php">Google Workspace</a></li>
-                    <li><a href="/pages/about.php">About</a></li>
-                    <li><a href="/pages/contact.php">Contact</a></li>
-                    <li><a href="/pages/blog.php">Blog</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <a href="/">IT Solver</a>
         </div>
-    </header>
-    <main>
-        <div class="container"> 
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+          <button class="mobile-menu-toggle">☰</button>
+          
+          <!-- Segment Selector -->
+          <div class="segment-selector">
+            <a href="/?segment=personal" class="segment-link <?php echo $activeSegment === 'personal' ? 'active' : ''; ?>">PERSONAL</a>
+            <span class="segment-divider">|</span>
+            <a href="/?segment=business" class="segment-link <?php echo $activeSegment === 'business' ? 'active' : ''; ?>">BUSINESS</a>
+          </div>
+          
+          <!-- Personal Segment Navigation -->
+          <?php if ($activeSegment === 'personal'): ?>
+          <ul class="segment-nav personal-nav">
+            <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
+            <li><a href="/pages/backup.php">Backup</a></li>
+            <li><a href="https://shop.itsolver.net" target="_blank">Shop</a></li>
+            <li><a href="/pages/contact.php" class="cta">Contact</a></li>
+          </ul>
+          
+          <!-- Business Segment Navigation -->
+          <?php else: ?>
+          <ul class="segment-nav business-nav">
+            <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
+            <li><a href="/pages/support-plans.php">Support Plans</a></li>
+            <li><a href="/pages/microsoft-365.php">Microsoft 365</a></li>
+            <li><a href="/pages/google-workspace.php">Google Workspace</a></li>
+            <li><a href="/pages/backup.php">Backup</a></li>
+            <li><a href="https://itsolver.net" target="_blank">Shop</a></li>
+            <li><a href="https://billing.itsolver.net" target="_blank">Billing Dashboard</a></li>
+            <li><a href="/pages/contact.php" class="cta">Contact</a></li>
+          </ul>
+          <?php endif; ?>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main> 
