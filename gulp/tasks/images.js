@@ -1,28 +1,37 @@
 'use strict';
-var changed     = require('gulp-changed');
-var gulp        = require('gulp');
-var responsive  = require('gulp-responsive');
-var size        = require('gulp-size');
-var imagemin    = require('gulp-imagemin');
+import changed from 'gulp-changed';
+import gulp from 'gulp';
+import responsive from 'gulp-responsive';
+import size from 'gulp-size';
+import imagemin from 'gulp-imagemin';
+import gifsicle from 'imagemin-gifsicle';
+import jpegtran from 'imagemin-jpegtran';
+import optipng from 'imagemin-optipng';
+import svgo from 'imagemin-svgo';
 
-// include paths file
-var paths       = require('../paths');
+// Use dynamic import for paths
+const getPaths = async () => {
+  const { default: paths } = await import('../paths.mjs');
+  return paths;
+};
 
 // 'gulp images:optimize' -- optimize images, overwriting src.
-gulp.task('images:optimize', () => {
+gulp.task('images:optimize', async () => {
+  const paths = await getPaths();
   return gulp.src([paths.imageFilesGlob])
     .pipe(imagemin([
-      imagemin.gifsicle({interlaced: true}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.optipng(),
-      imagemin.svgo({plugins: [{cleanupIDs: false}]})
-    ], {verbose: true}))
+      gifsicle({ interlaced: true }),
+      jpegtran({ progressive: true }),
+      optipng(),
+      svgo({ plugins: [{ cleanupIDs: false }] })
+    ], { verbose: true }))
     .pipe(gulp.dest(paths.imageFiles))
-    .pipe(size({title: 'images'}))
+    .pipe(size({ title: 'images' }));
 });
 
 // 'gulp images:feature' -- resize images
-gulp.task('images:feature', () => {
+gulp.task('images:feature', async () => {
+  const paths = await getPaths();
   return gulp.src([paths.imageFiles + '/feature' + paths.imagePattern, '!' + paths.imageFiles + '/feature/**/*.{gif,svg}'])
     .pipe(changed(paths.imageFilesSite))
     .pipe(responsive({
@@ -49,5 +58,5 @@ gulp.task('images:feature', () => {
       withMetadata: false,
       errorOnUnusedConfig: false
     }))
-    .pipe(gulp.dest(paths.imageFilesSite))
+    .pipe(gulp.dest(paths.imageFilesSite));
 });

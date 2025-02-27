@@ -1,13 +1,18 @@
-'use strict';
-var del   = require('del');
-var gulp  = require('gulp');
+import del from 'del';
+import gulp from 'gulp';
 
 // include paths file
-var paths = require('../paths');
+import paths from '../paths.js';
 
 // 'gulp clean:assets' -- removes temporary and built CSS/JS assets
 gulp.task('clean:assets', () => {
-  return del([paths.tempFolderName + '/**/*', '!' + paths.assetFilesTemp, paths.assetFilesSite + '/**/*', '!' + paths.imageFilesSite, '!' + paths.imageFilesSite + '/**/*']);
+  return del([
+    `${paths.tempFolderName}/**/*`,
+    `!${paths.assetFilesTemp}`,
+    `${paths.assetFilesSite}/**/*`,
+    `!${paths.imageFilesSite}`,
+    `!${paths.imageFilesSite}/**/*`
+  ]);
 });
 
 // 'gulp clean:images' -- removes only image assets
@@ -22,10 +27,12 @@ gulp.task('clean:dist', () => {
 
 // 'gulp clean:site' -- removes temporary source
 gulp.task('clean:site', () => {
-  return del([paths.tempDir  + paths.sourceFolderName]);
+  return del([`${paths.tempDir}${paths.sourceFolderName}`]);
 });
 
 // 'gulp clean:temp' -- removes temporary directory
 gulp.task('clean:temp', () => {
   return del([paths.tempDir]);
 });
+
+export { };

@@ -1,67 +1,43 @@
-'use strict';
-var argv = require('yargs').argv;
-var autoprefixer = require('autoprefixer');
-var browserSync = require('browser-sync').create();
-var cssnano = require('gulp-cssnano');
-var gulp = require('gulp');
-var postcss = require('gulp-postcss');
-var rev = require('gulp-rev');
-var sass = require('gulp-sass')(require('sass'));
-var size = require('gulp-size');
-var sourcemaps = require('gulp-sourcemaps');
-var when = require('gulp-if');
-const shell = require('gulp-shell');
+import yargs from 'yargs';
+import autoprefixer from 'autoprefixer';
+import browserSync from 'browser-sync';
+import cssnano from 'gulp-cssnano';
+import gulp from 'gulp';
+import postcss from 'gulp-postcss';
+import rev from 'gulp-rev';
+import sass from 'gulp-sass';
+import size from 'gulp-size';
+import sourcemaps from 'gulp-sourcemaps';
+import gulpIf from 'gulp-if';
+import shell from 'gulp-shell';
 
 // include paths file
-var paths = require('../paths');
+import paths from '../paths.mjs';
+
+const { argv } = yargs;
 
 // Get latest lozad.min.js
-// Highly performant, light ~0.8kb and configurable lazy loader in pure JS with no dependencies for responsive images, iframes and more
-// https://github.com/ApoorvSaxena/lozad.js
 gulp.task('lozadjs', shell.task([
-  'cd ' + paths.jsFiles + '&& wget https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js -O lozad.min.js'
+  `cd ${paths.jsFiles} && wget https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js -O lozad.min.js`
 ]));
 
-// 'gulp scripts' -- creates a index.js file with Sourcemap from your JavaScript files
-// 'gulp scripts --prod' -- creates a index.js file from your JavaScript files,
-//   minifies, and cache busts it (does not create a Sourcemap)
-// gulp.task('scripts', () => {
-//   // NOTE: The order here is important since it's concatenated in order from
-//   // top to bottom, so you want vendor scripts etc on top
-//   return gulp.src([
-//     paths.jsFiles + '/*.js',
-//   ])
-//   .pipe(gulp.dest(paths.jsFilesSite))
-// });
-
-// 'gulp styles' -- creates a CSS file from SCSS, adds prefixes and creates a Sourcemap
-// 'gulp styles --prod' -- creates a CSS file from your SCSS, adds prefixes,
-//   minifies, and cache busts it (does not create a Sourcemap)
+// 'gulp styles' task
 gulp.task('styles', () => {
-  return gulp.src([paths.sassFiles + '/main.scss'])
-    .pipe(when(!argv.prod, sourcemaps.init()))
-    // preprocess Sass
+  return gulp.src([`${paths.sassFiles}/main.scss`])
+    .pipe(gulpIf(!argv.prod, sourcemaps.init()))
     .pipe(sass({ precision: 10 }).on('error', sass.logError))
-    // add-remove vendor prefixes
-    .pipe(postcss([autoprefixer({
-      grid: true
-    })]))
-    // minify for production
-    .pipe(when(argv.prod, when('*.css', cssnano({ autoprefixer: false }))))
+    .pipe(postcss([autoprefixer({ grid: true })]))
+    .pipe(gulpIf(argv.prod, gulpIf('*.css', cssnano({ autoprefixer: false }))))
     .pipe(size({ showFiles: true }))
-    // output sourcemap for development
-    .pipe(when(!argv.prod, sourcemaps.write('.')))
-    .pipe(when(argv.prod, gulp.dest(paths.sassFilesTemp)))
-    // hash CSS for production
-    .pipe(when(argv.prod, rev()))
-    .pipe(when(argv.prod, size({ showFiles: true })))
-    // output hashed files
+    .pipe(gulpIf(!argv.prod, sourcemaps.write('.')))
+    .pipe(gulpIf(argv.prod, gulp.dest(paths.sassFilesTemp)))
+    .pipe(gulpIf(argv.prod, rev()))
+    .pipe(gulpIf(argv.prod, size({ showFiles: true })))
     .pipe(gulp.dest(paths.sassFilesTemp))
-    // generate manifest of hashed CSS files
     .pipe(rev.manifest('css-manifest.json'))
-    .pipe(when(argv.prod,gulp.dest(paths.tempDir + paths.sourceDir + paths.dataFolderName)))
-    .pipe(when(argv.prod, size({ showFiles: true })))
-    .pipe(when(!argv.prod, browserSync.stream()))
+    .pipe(gulpIf(argv.prod, gulp.dest(`${paths.tempDir}${paths.sourceDir}${paths.dataFolderName}`)))
+    .pipe(gulpIf(argv.prod, size({ showFiles: true })))
+    .pipe(gulpIf(!argv.prod, browserSync.stream()));
 });
 
 // function to properly reload your browser
@@ -69,13 +45,11 @@ function reload(done) {
   browserSync.reload();
   done();
 }
-// 'gulp serve' -- open site in browser and watch for changes
-// in source files and update them when needed
+
+// 'gulp serve' task
 gulp.task('serve', (done) => {
   browserSync.init({
-    // tunnel: true,
-    // open: false,
-    port: 4000, // change port to match default Jekyll
+    port: 4000,
     ui: {
       port: 4001
     },
@@ -91,3 +65,5 @@ gulp.task('serve', (done) => {
   gulp.watch(paths.imageFilesGlob, gulp.series('copy:images', reload));
   gulp.watch([paths.mdFilesGlob, paths.htmlFilesGlob, paths.ymlFilesGlob], gulp.series('build:site', reload));
 });
+
+export { reload };
