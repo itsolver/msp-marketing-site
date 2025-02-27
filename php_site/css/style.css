@@ -70,6 +70,18 @@ a:hover {
 section {
   padding: var(--space-5) 0;
   border-bottom: 1px solid var(--color-border);
+  position: relative;
+}
+
+/* Background Image Overlay */
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 /* Header */
@@ -78,8 +90,9 @@ header {
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
-  background-color: var(--color-background);
+  background-color: rgba(18, 18, 18, 0.95);
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header-container {
@@ -101,15 +114,18 @@ header {
 /* Navigation */
 .main-nav {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  align-items: center;
+  margin-right: var(--space-3);
 }
 
 /* Segment Selector */
 .segment-selector {
-  margin-bottom: var(--space-1);
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 4px 8px;
 }
 
 .segment-link {
@@ -117,7 +133,7 @@ header {
   text-decoration: none;
   font-size: var(--font-size-small);
   font-weight: 600;
-  padding: 0 var(--space-1);
+  padding: 4px 8px;
   transition: var(--transition-base);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -125,14 +141,13 @@ header {
 
 .segment-link.active {
   color: var(--color-text);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .segment-link:hover {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
 }
 
 .segment-divider {
@@ -168,16 +183,35 @@ header {
   position: absolute;
   right: var(--space-2);
   top: var(--space-2);
+  color: var(--color-text);
 }
 
 /* Hero Section */
 .hero {
   padding: var(--space-6) 0;
   text-align: center;
+  position: relative;
+  background-image: url('/images/ITSOLVER-LOWRES-1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .hero h1 {
   margin-bottom: var(--space-3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -186,6 +220,7 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Call to Action */
@@ -198,17 +233,36 @@ header {
   font-weight: 600;
   transition: var(--transition-base);
   text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .cta:hover {
   background-color: var(--color-primary);
   opacity: 0.9;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Services Section */
 .services {
   background-color: var(--color-background);
+  position: relative;
+  background-image: url('/images/ITSOLVER-LOWRES-2.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 .service-item {
@@ -217,43 +271,96 @@ header {
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   transition: var(--transition-base);
+  background-color: rgba(30, 30, 30, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .service-item:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
+  background-color: rgba(40, 40, 40, 0.9);
 }
 
 .service-item h3 {
   margin-bottom: var(--space-1);
 }
 
+/* Why Choose Us Section */
+.why-us {
+  position: relative;
+  background-image: url('/images/ITSOLVER-LOWRES-3.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.why-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
 /* Features */
 .feature {
   margin-bottom: var(--space-3);
-  padding-left: var(--space-3);
-  border-left: 3px solid var(--color-primary);
+  padding: var(--space-3);
+  border-radius: var(--border-radius);
+  background-color: rgba(30, 30, 30, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-base);
+}
+
+.feature:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  background-color: rgba(40, 40, 40, 0.9);
 }
 
 .feature h3 {
   margin-bottom: var(--space-1);
+  color: var(--color-primary);
 }
 
 /* Testimonials */
+.testimonial {
+  position: relative;
+  background-image: url('/images/ITSOLVER-LOWRES-4.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
 .testimonial-item {
   padding: var(--space-3);
-  background-color: var(--color-background);
+  background-color: rgba(30, 30, 30, 0.8);
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   margin-bottom: var(--space-3);
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial-item:before {
   content: '"';
   font-size: 4rem;
   color: var(--color-primary);
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   top: -20px;
   left: 10px;
@@ -261,6 +368,7 @@ header {
 
 .testimonial-author {
   margin-top: var(--space-2);
+  text-align: right;
 }
 
 /* CTA Section */
@@ -268,10 +376,27 @@ header {
   background-color: var(--color-background);
   padding: var(--space-5) 0;
   text-align: center;
+  position: relative;
+  background-image: url('/images/ITSOLVER-LOWRES-5.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
 }
 
 .cta-section h2 {
   margin-bottom: var(--space-2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .cta-section p {
@@ -279,6 +404,7 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Pricing Box */
@@ -293,13 +419,14 @@ header {
   text-align: center;
   max-width: 500px;
   margin: 0 auto;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
+  background-color: rgba(30, 30, 30, 0.8);
 }
 
 .pricing-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .price {
@@ -355,20 +482,21 @@ header {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--space-3);
-  background-color: var(--color-background);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background-color: rgba(30, 30, 30, 0.8);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
   position: relative;
 }
 
 .plan-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .plan-box.featured {
   border-color: var(--color-primary);
   transform: scale(1.05);
+  background-color: rgba(40, 40, 40, 0.9);
 }
 
 .plan-box.featured:hover {
@@ -396,6 +524,7 @@ header {
 
 .plan-header h3 {
   margin-bottom: var(--space-1);
+  color: var(--color-text);
 }
 
 .plan-price {
@@ -455,8 +584,19 @@ header {
 /* FAQ Section */
 .faq-item {
   margin-bottom: var(--space-3);
+  padding: var(--space-3);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-border);
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-base);
+}
+
+.faq-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+  background-color: rgba(40, 40, 40, 0.9);
 }
 
 .faq-item:last-child {
@@ -466,6 +606,7 @@ header {
 .faq-item h3 {
   margin-bottom: var(--space-1);
   color: var(--color-primary);
+  font-size: var(--font-size-large);
 }
 
 /* Steps Section */
@@ -517,6 +658,22 @@ footer {
   padding: var(--space-4) 0;
   background-color: var(--color-background);
   border-top: 1px solid var(--color-border);
+  position: relative;
+  background-image: url('/images/angus-checking-connection.jpeg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 .footer-container {
@@ -524,6 +681,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: var(--space-3);
+  position: relative;
+  z-index: 1;
 }
 
 .footer-links {
@@ -534,10 +693,15 @@ footer {
 
 .footer-links h4 {
   margin-bottom: var(--space-1);
+  color: var(--color-text);
 }
 
 .footer-links a {
   color: var(--color-text-light);
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
 }
 
 .copyright {
@@ -553,10 +717,15 @@ form {
   gap: var(--space-2);
   max-width: 500px;
   margin: 0 auto;
+  background-color: rgba(30, 30, 30, 0.8);
+  padding: var(--space-3);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 label {
   font-weight: 600;
+  color: var(--color-text);
 }
 
 input, textarea, select {
@@ -566,10 +735,30 @@ input, textarea, select {
   border-radius: var(--border-radius);
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.3);
 }
 
 button {
   cursor: pointer;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -577,59 +766,80 @@ button {
   .segment-nav {
     gap: var(--space-1);
   }
-  
+
   .segment-nav a {
     padding: var(--space-1) calc(var(--space-1) / 2);
     font-size: var(--font-size-small);
   }
-  
+
   .plans-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .plan-box {
     width: 100%;
     max-width: 500px;
   }
-  
+
   .plan-box.featured {
     transform: scale(1);
     order: -1;
   }
-  
+
   .plan-box.featured:hover {
     transform: translateY(-5px);
   }
-  
+
   .steps {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .step {
     width: 100%;
     max-width: 500px;
   }
+
+  h1 {
+    font-size: calc(var(--font-size-xxxl) * 0.8);
+  }
+
+  h2 {
+    font-size: calc(var(--font-size-xxl) * 0.8);
+  }
 }
 
 @media (max-width: 768px) {
-  .main-nav {
-    align-items: flex-end;
+  .header-container {
+    flex-wrap: wrap;
   }
-  
+
+  .logo {
+    flex: 1;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    margin-top: var(--space-2);
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+
+  .segment-selector {
+    order: 2;
+  }
+
   .mobile-menu-toggle {
     display: block;
+    order: 1;
   }
-  
-  .segment-selector {
-    margin-right: var(--space-4);
-  }
-  
+
   .segment-nav {
     display: none;
   }
-  
+
   .mobile-menu-open .segment-nav {
     display: flex;
     flex-direction: column;
@@ -637,14 +847,73 @@ button {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--color-background);
+    background-color: rgba(18, 18, 18, 0.95);
     padding: var(--space-2);
     border-bottom: 1px solid var(--color-border);
     z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-  
+
+  .segment-nav a {
+    padding: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .segment-nav li:last-child a {
+    border-bottom: none;
+  }
+
   .footer-container {
     flex-direction: column;
+  }
+
+  .requests,
+  .platforms {
+    flex-direction: column;
+  }
+
+  .requests > ul,
+  .requests > div,
+  .platforms > div {
+    min-width: 100%;
+  }
+
+  h1 {
+    font-size: calc(var(--font-size-xxxl) * 0.7);
+  }
+
+  h2 {
+    font-size: calc(var(--font-size-xxl) * 0.7);
+  }
+
+  .hero {
+    padding: var(--space-4) 0;
+  }
+
+  .hero p {
+    font-size: var(--font-size-base);
+  }
+
+  section {
+    padding: var(--space-4) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .segment-selector {
+    margin-left: auto;
+  }
+
+  h1 {
+    font-size: calc(var(--font-size-xxxl) * 0.6);
+  }
+
+  h2 {
+    font-size: calc(var(--font-size-xxl) * 0.6);
+  }
+
+  .service-item, .feature, .testimonial-item, .faq-item {
+    padding: var(--space-2);
   }
 }
 
@@ -779,10 +1048,10 @@ stripe-pricing-table {
   .platforms {
     flex-direction: column;
   }
-  
+
   .requests > ul,
   .requests > div,
   .platforms > div {
     min-width: 100%;
   }
-} 
+}

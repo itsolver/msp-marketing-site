@@ -19,35 +19,40 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
       <link rel="stylesheet" href="<?php echo $css; ?>">
     <?php endforeach; ?>
   <?php endif; ?>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+      const mainNav = document.querySelector('.main-nav');
+
+      if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+          mainNav.classList.toggle('mobile-menu-open');
+        });
+      }
+    });
+  </script>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-container">
+        <!-- Logo -->
         <div class="logo">
           <a href="/">IT Solver</a>
         </div>
-        
+
         <!-- Main Navigation -->
         <nav class="main-nav">
           <button class="mobile-menu-toggle">☰</button>
-          
-          <!-- Segment Selector -->
-          <div class="segment-selector">
-            <a href="/?segment=personal" class="segment-link <?php echo $activeSegment === 'personal' ? 'active' : ''; ?>">PERSONAL</a>
-            <span class="segment-divider">|</span>
-            <a href="/?segment=business" class="segment-link <?php echo $activeSegment === 'business' ? 'active' : ''; ?>">BUSINESS</a>
-          </div>
-          
-          <!-- Personal Segment Navigation -->
+
+          <!-- Segment Navigation -->
           <?php if ($activeSegment === 'personal'): ?>
           <ul class="segment-nav personal-nav">
             <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
             <li><a href="/pages/backup.php?segment=personal">Backup</a></li>
             <li><a href="https://shop.itsolver.net" target="_blank">Shop</a></li>
           </ul>
-          
-          <!-- Business Segment Navigation -->
+
           <?php else: ?>
           <ul class="segment-nav business-nav">
             <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
@@ -60,7 +65,14 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
           </ul>
           <?php endif; ?>
         </nav>
+
+        <!-- Segment Selector -->
+        <div class="segment-selector">
+          <a href="/?segment=personal" class="segment-link <?php echo $activeSegment === 'personal' ? 'active' : ''; ?>">PERSONAL</a>
+          <span class="segment-divider">|</span>
+          <a href="/?segment=business" class="segment-link <?php echo $activeSegment === 'business' ? 'active' : ''; ?>">BUSINESS</a>
+        </div>
       </div>
     </div>
   </header>
-  <main> 
+  <main>

@@ -5,7 +5,7 @@
 .firebaserc
 .jekyll-metadata
 .sass-cache
-.vscode
+.vscode/launch.json
 .tmp
 _assets
 _site
