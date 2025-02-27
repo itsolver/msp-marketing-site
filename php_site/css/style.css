@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 @import 'variables.css';
 
 /* Reset and Base Styles */
@@ -34,6 +35,7 @@ body::before {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
   line-height: var(--line-height-heading);
   margin-bottom: var(--space-2);
   font-weight: 700;
@@ -1107,4 +1109,37 @@ stripe-pricing-table {
   .platforms > div {
     min-width: 100%;
   }
+}
+
+/* Marketing Color Utilities */
+.business-color {
+  color: var(--color-business);
+}
+
+.business-bg {
+  background-color: var(--color-business);
+}
+
+.personal-color {
+  color: var(--color-personal);
+}
+
+.personal-bg {
+  background-color: var(--color-personal);
+}
+
+.primary-color {
+  color: var(--color-primary);
+}
+
+.primary-bg {
+  background-color: var(--color-primary);
+}
+
+.secondary-color {
+  color: var(--color-secondary);
+}
+
+.secondary-bg {
+  background-color: var(--color-secondary);
 }

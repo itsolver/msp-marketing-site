@@ -1,6 +1,13 @@
 :root {
   /* Color System */
-  --color-primary: #0066cc; /* IT Solver blue - adjust as needed */
+  /* Brand Colors */
+  --color-primary: #003D84; /* IT Solver main blue */
+  --color-secondary: #2da9e1; /* IT Solver light blue */
+  --color-light-gray: #e6e7e8; /* Light gray */
+  --color-business: #78c143; /* Green - For business marketing material only */
+  --color-personal: #662d91; /* Purple - For personal marketing material only */
+
+  /* UI Colors */
   --color-background: #121212; /* Dark background */
   --color-text: #ffffff; /* White text */
   --color-text-light: #cccccc; /* Light gray text */
@@ -12,7 +19,8 @@
   --box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
 
   /* Typography */
-  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-family-display: 'Source Sans Pro', sans-serif;
   --font-size-base: 1rem;
   --font-size-small: 0.875rem;
   --font-size-large: 1.125rem;
