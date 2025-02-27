@@ -3,34 +3,26 @@
     <div class="container">
       <div class="footer-container">
         <div class="footer-links">
-          <h4>Services</h4>
-          <a href="/pages/managed-it.php">Managed IT</a>
-          <a href="/pages/cloud-services.php">Cloud Services</a>
-          <a href="/pages/cybersecurity.php">Cybersecurity</a>
+          <h4>Residential</h4>
+          <a href="/pages/on-demand-support.php">On-Demand Support</a>
+          <a href="/pages/backup.php">Backup</a>
+          <a href="https://shop.itsolver.net" target="_blank">Shop</a>
+        </div>
+        <div class="footer-links">
+          <h4>Business</h4>
+          <a href="/pages/on-demand-support.php">On-Demand Support</a>
           <a href="/pages/support-plans.php">Support Plans</a>
+          <a href="/pages/microsoft-365.php">Microsoft 365</a>
+          <a href="/pages/google-workspace.php">Google Workspace</a>
+          <a href="/pages/backup.php">Backup</a>
+          <a href="https://itsolver.net" target="_blank">Shop</a>
+          <a href="https://billing.itsolver.net" target="_blank">Billing</a>
         </div>
         <div class="footer-links">
-          <h4>Company</h4>
+          <h4>Pages</h4>
           <a href="/pages/about.php">About Us</a>
-          <a href="/pages/team.php">Our Team</a>
-          <a href="/pages/testimonials.php">Testimonials</a>
-          <a href="/pages/contact.php">Contact</a>
-        </div>
-        <div class="footer-links">
-          <h4>Resources</h4>
-          <a href="/pages/blog.php">Blog</a>
-          <a href="/pages/faq.php">FAQ</a>
-          <a href="/pages/support.php">Support</a>
           <a href="/pages/privacy.php">Privacy Policy</a>
-        </div>
-        <div class="footer-links">
-          <h4>Connect</h4>
-          <a href="mailto:info@itsolver.net">info@itsolver.net</a>
-          <a href="tel:+61755041234">+61 7 5504 1234</a>
-          <div class="social-links">
-            <a href="https://linkedin.com/company/itsolver" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/itsolver" target="_blank">Twitter</a>
-          </div>
+          <a href="/pages/terms.php">Terms of Service</a>
         </div>
       </div>
       <div class="copyright">

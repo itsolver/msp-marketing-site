@@ -45,7 +45,6 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
             <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
             <li><a href="/pages/backup.php">Backup</a></li>
             <li><a href="https://shop.itsolver.net" target="_blank">Shop</a></li>
-            <li><a href="/pages/contact.php" class="cta">Contact</a></li>
           </ul>
           
           <!-- Business Segment Navigation -->
@@ -57,8 +56,7 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
             <li><a href="/pages/google-workspace.php">Google Workspace</a></li>
             <li><a href="/pages/backup.php">Backup</a></li>
             <li><a href="https://itsolver.net" target="_blank">Shop</a></li>
-            <li><a href="https://billing.itsolver.net" target="_blank">Billing Dashboard</a></li>
-            <li><a href="/pages/contact.php" class="cta">Contact</a></li>
+            <li><a href="https://billing.itsolver.net" target="_blank">Billing</a></li>
           </ul>
           <?php endif; ?>
         </nav>
