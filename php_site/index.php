@@ -12,9 +12,6 @@ $pageDescription = 'IT Solver provides ' . ($activeSegment === 'personal' ? 'per
 
 // Include header
 include 'includes/header.php';
-
-// Include CTA component
-include 'includes/cta.php';
 ?>
 
 <!-- Hero Section -->
@@ -28,7 +25,27 @@ include 'includes/cta.php';
         <h1>IT Support That Actually Solves Business Problems</h1>
         <p>We provide reliable IT solutions that keep your business running smoothly, so you can focus on what matters most.</p>
       <?php endif; ?>
-      <a href="<?php echo $activeSegment === 'personal' ? '/pages/on-demand-support.php' : '/pages/support-plans.php'; ?>" class="cta"><?php echo $activeSegment === 'personal' ? 'Get Support Now' : 'View Support Plans'; ?></a>
+
+      <div class="cta-container">
+        <a href="<?php echo $activeSegment === 'personal' ? '/pages/on-demand-support.php' : '/pages/business/support-plans.php'; ?>" class="cta"><?php echo $activeSegment === 'personal' ? 'Get Support Now' : 'View Support Plans'; ?></a>
+        <a href="/contact" class="cta secondary">Schedule Consultation</a>
+      </div>
+
+      <!-- Hero Features -->
+      <div class="hero-features">
+        <div class="hero-feature">
+          <h3>Expert Support</h3>
+          <p>On-demand help for immediate fixes or ongoing managed support.</p>
+        </div>
+        <div class="hero-feature">
+          <h3>Cloud Solutions</h3>
+          <p>Seamless migration to modern cloud services for better productivity.</p>
+        </div>
+        <div class="hero-feature">
+          <h3>Security Focus</h3>
+          <p>Keep your business protected with proactive security measures.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -126,18 +143,18 @@ include 'includes/cta.php';
 
       <?php if ($activeSegment === 'personal'): ?>
       <div class="testimonial-item">
-        <p>"IT Solver has been a lifesaver for our family's technology needs. From setting up our home network to recovering lost photos, they've been responsive, professional, and easy to work with."</p>
+        <p>"Angus was amazing, incredibly fast service and fixed our sons computer same day. Incredibly helpful and knowledgeable. Will 100% be back!"</p>
         <div class="testimonial-author">
-          <p><strong>Michael Thompson</strong></p>
+          <p><strong>Sandy McCristal</strong></p>
           <p>Brisbane, QLD</p>
         </div>
       </div>
       <?php else: ?>
       <div class="testimonial-item">
-        <p>"IT Solver has transformed how our business operates. Their proactive approach means we rarely experience downtime, and when we do need help, they're incredibly responsive."</p>
+        <p>"Angus is always happy and helpful. He has managed to work with a professional and knowledgeable attitude, while still explaining things in terms that are understandable to me. I thank him for his patience and support in helping us upgrade our computer system and related work practices."</p>
         <div class="testimonial-author">
-          <p><strong>Sarah Johnson</strong></p>
-          <p>CEO, Johnson Accounting</p>
+          <p><strong>Chris Rice</strong></p>
+          <p>Statewide Roofing</p>
         </div>
       </div>
       <?php endif; ?>
@@ -146,6 +163,9 @@ include 'includes/cta.php';
 </section>
 
 <?php
+// Include CTA component
+include 'includes/cta.php';
+
 // Render CTA with segment-specific content
 if ($activeSegment === 'personal') {
   renderCTA(
@@ -158,7 +178,7 @@ if ($activeSegment === 'personal') {
   renderCTA(
     'Ready to solve your IT challenges?',
     'Choose a Support Plan',
-    '/pages/support-plans.php',
+    '/pages/business/support-plans.php',
     'Select the right IT support plan to keep your business running smoothly.'
   );
 }
