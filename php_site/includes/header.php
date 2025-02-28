@@ -67,6 +67,15 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
           }
         });
       });
+
+      // Check if menu should be visible on resize
+      window.addEventListener('resize', function() {
+        // If window is resized to desktop width and menu is open, close it
+        if (window.innerWidth > 1500 && mobileMenu.classList.contains('active')) {
+          mobileMenu.classList.remove('active');
+          document.body.classList.remove('menu-open');
+        }
+      });
     });
   </script>
 </head>
@@ -133,7 +142,7 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
             <li><a href="https://shop.itsolver.net" target="_blank">Shop</a></li>
           </ul>
           <ul class="mobile-nav-list business-nav-list" style="display: <?php echo $activeSegment === 'business' ? 'block' : 'none'; ?>">
-            <li><a href="/pages/business/tech-support.php">Tech Support</a></li>
+            <li><a href="/pages/business/support-plans.php">Support Plans</a></li>
             <li><a href="/pages/business/microsoft-365.php">Microsoft 365</a></li>
             <li><a href="/pages/business/google-workspace.php">Google Workspace</a></li>
             <li><a href="/pages/business/backup.php">Backup</a></li>

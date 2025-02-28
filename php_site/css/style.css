@@ -317,6 +317,11 @@ body.menu-open {
     display: block;
   }
 
+  /* Side menu for tablet and small desktop */
+  .mobile-menu {
+    width: 350px; /* Fixed width for side panel */
+  }
+
   .plans-container {
     flex-direction: column;
     align-items: center;
@@ -355,9 +360,20 @@ body.menu-open {
   }
 }
 
-@media (min-width: 1025px) {
+/* Full width mobile menu for small screens */
+@media (max-width: 1024px) {
+  .mobile-menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1501px) {
   .mobile-menu {
     display: none !important;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
   }
 }
 
