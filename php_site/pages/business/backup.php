@@ -11,10 +11,10 @@ $pageTitle = 'Business Backup Solutions';
 $pageDescription = 'Secure and reliable backup solutions for your business data. Protect your important files with IT Solver.';
 
 // Include header
-include '../includes/header.php';
+include '../../includes/header.php';
 
 // Include CTA component
-include '../includes/cta.php';
+include '../../includes/cta.php';
 ?>
 
 <!-- Hero Section -->
@@ -65,19 +65,18 @@ include '../includes/cta.php';
       <div class="service-item">
         <h3>☁️ Cloud Backup for Microsoft 365 & Google Workspace</h3>
         <p>Protect your business emails, documents, and collaboration data with our comprehensive cloud backup solution.</p>
-        <p><strong>Starting at $17/month per user</strong></p>
+        <p><strong>$25/month for single user or $17/month per user for multiple users</strong></p>
       </div>
 
       <div class="service-item">
         <h3>💻 Workstation Backup</h3>
-        <p>Secure backup for all files on your business workstations, with file history and deletion recovery.</p>
+        <p>Secure backup for all files on your business workstations, with file history and deletion recovery. Includes the ability to recover your entire computer to the cloud or to a new physical machine.</p>
         <p><strong>$30/month per workstation</strong></p>
       </div>
 
       <div class="service-item">
         <h3>🖥️ Server Backup</h3>
-        <p>Comprehensive backup solution for your business servers, ensuring your critical data is protected and can be quickly restored.</p>
-        <p><strong>$50/month per server</strong></p>
+        <p>Comprehensive backup solution for your business servers, ensuring your critical data is protected and can be quickly restored. Contact our sales team for custom pricing based on your server environment.</p>
       </div>
     </div>
   </div>
