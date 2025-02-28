@@ -171,7 +171,7 @@ if ($activeSegment === 'personal') {
   renderCTA(
     'Ready to solve your tech problems?',
     'Buy On-Demand Support',
-    '/pages/on-demand-support.php',
+    '/pages/tech-support.php',
     'Get immediate help with your technology issues for a simple fixed rate.'
   );
 } else {

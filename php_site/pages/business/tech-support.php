@@ -49,6 +49,10 @@ include '../../includes/cta.php';
         don't understand, IT Solver has the expertise to walk you through it.
       </p>
 
+      <p>
+        <strong>Flexible Payment Options:</strong> Choose from monthly, yearly, or one-time payment options to suit your business needs and budget.
+      </p>
+
       <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
       <stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq" publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU"></stripe-pricing-table>
 
@@ -72,7 +76,7 @@ include '../../includes/cta.php';
 
       <div class="faq-item">
         <h3>What is a Support Plan?</h3>
-        <p>A Support Plan is a monthly subscription that provides you with access to IT Solver's team of experts. We can help you with any technical issue you may have with your computer, network, software, hardware, mobile devices and more.</p>
+        <p>A Support Plan provides you with access to IT Solver's team of experts who can help with any technical issue you may have with your computer, network, software, hardware, mobile devices, and more. Plans are available as monthly subscriptions, annual subscriptions (at a discount), or one-time payments depending on your needs.</p>
       </div>
 
       <div class="faq-item">
@@ -92,12 +96,18 @@ include '../../includes/cta.php';
 
       <div class="faq-item">
         <h3>How do I buy and pay?</h3>
-        <p>Choose plan above and complete the sign up form. Payment details will be requested when we call you shortly. We accept Visa and Mastercard.</p>
+        <p>Choose your preferred plan and payment frequency (monthly, yearly, or one-time) from the pricing table above and complete the sign-up form. Payment details will be requested when we call you shortly. We accept Visa and Mastercard.</p>
       </div>
 
       <div class="faq-item">
         <h3>What is the payment plan?</h3>
-        <p>We offer a flexible payment plan. You are billed monthly. For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.</p>
+        <p>We offer flexible payment options to suit your needs:</p>
+        <ul>
+          <li><strong>Monthly:</strong> Pay month-to-month with the flexibility to cancel anytime.</li>
+          <li><strong>Yearly:</strong> Save with our annual payment option.</li>
+          <li><strong>One-time:</strong> For businesses that prefer a single payment for specific support needs.</li>
+        </ul>
+        <p>For more information on pricing, <a href="https://itsolver.net/contact/">contact sales</a>.</p>
       </div>
 
       <div class="faq-item">
