@@ -50,15 +50,14 @@ $activeSegment = isset($activeSegment) ? $activeSegment : 'business';
             <!-- Segment Navigation -->
             <?php if ($activeSegment === 'personal'): ?>
             <ul class="segment-nav personal-nav">
-              <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
+              <li><a href="/pages/tech-support.php">Tech Support</a></li>
               <li><a href="/pages/backup.php?segment=personal">Backup</a></li>
               <li><a href="https://shop.itsolver.net" target="_blank">Shop</a></li>
             </ul>
 
             <?php else: ?>
             <ul class="segment-nav business-nav">
-              <li><a href="/pages/on-demand-support.php">On-Demand Support</a></li>
-              <li><a href="/pages/business/support-plans.php">Support Plans</a></li>
+              <li><a href="/pages/business/tech-support.php">Tech Support</a></li>
               <li><a href="/pages/business/microsoft-365.php">Microsoft 365</a></li>
               <li><a href="/pages/business/google-workspace.php">Google Workspace</a></li>
               <li><a href="/pages/backup.php?segment=business">Backup</a></li>

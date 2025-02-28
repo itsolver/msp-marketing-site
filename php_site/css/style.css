@@ -127,7 +127,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--header-background-color);
 }
 
 .header-container {
@@ -160,7 +159,6 @@ header {
 .segment-selector {
   display: flex;
   align-items: center;
-  background-color: var(--input-background-color);
   border-radius: 4px;
   padding: 4px 8px;
 }

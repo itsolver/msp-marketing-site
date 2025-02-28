@@ -4,7 +4,7 @@
       <div class="footer-container">
         <div class="footer-links">
           <h4>Personal</h4>
-          <a href="https://itsolver.net/help" target="_blank">On-Demand Support</a>
+          <a href="/pages/tech-support.php">On-Demand Support</a>
           <a href="/pages/backup.php?segment=personal">Backup</a>
           <a href="https://shop.itsolver.net" target="_blank">Shop</a>
         </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="footer-links">
           <h4>Pages</h4>
-          <a href="/pages/on-demand-support.php">On-Demand Support</a>
+          <a href="/pages/tech-support.php">On-Demand Support</a>
           <a href="/pages/backup.php?segment=business">Backup</a>
           <a href="https://itsolver.net" target="_blank">Shop</a>
           <a href="/pages/about.php">About Us</a>
@@ -37,4 +37,4 @@
     <?php endforeach; ?>
   <?php endif; ?>
 </body>
-</html> 
+</html>
