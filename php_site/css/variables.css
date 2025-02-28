@@ -1,21 +1,33 @@
 :root {
-  /* Color System */
-  /* Brand Colors */
+  /* Brand Colors - Not for text, only UI elements */
   --color-primary: #003D84; /* IT Solver main blue */
   --color-secondary: #2da9e1; /* IT Solver light blue */
   --color-light-gray: #e6e7e8; /* Light gray */
   --color-business: #78c143; /* Green - For business marketing material only */
   --color-personal: #662d91; /* Purple - For personal marketing material only */
 
-  /* UI Colors */
-  --color-background: #121212; /* Dark background */
-  --color-text: #ffffff; /* White text */
-  --color-text-light: #cccccc; /* Light gray text */
-  --color-border: #333333; /* Darker border */
+  /* Typography & UI Colors (Based on PhotoAI for accessibility) */
+  --global-background-color: #111;
+  --sidebar-background-color: #0d0d0d;
+  --header-background-color: #000;
+  --input-background-color: #161616;
+  --hover-background-color: #3f3f3f;
+  --global-text-color: #fff;
+  --global-link-color: #fff;
+  --global-border-color: #343434;
+  --photo-border-color: #343434;
+  --meta-label-background-color: rgba(0, 0, 0, 0.5);
+  --copycat-gallery-background: rgba(0, 0, 0, 0.75);
+
+  /* Mapping old variable names to new ones for compatibility */
+  --color-background: var(--global-background-color);
+  --color-text: var(--global-text-color);
+  --color-text-light: #cccccc;
+  --color-border: var(--global-border-color);
+  --color-background-alt: #1e1e1e; /* Slightly lighter dark background */
   --color-success: #28a745;
   --color-error: #dc3545;
   --color-danger: #dc3545;
-  --color-background-alt: #1e1e1e; /* Slightly lighter dark background */
   --box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
 
   /* Typography */

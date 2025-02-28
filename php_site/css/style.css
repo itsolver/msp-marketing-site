@@ -58,7 +58,7 @@ p {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--global-link-color);
   text-decoration: none;
   transition: var(--transition-base);
 }
@@ -97,7 +97,7 @@ section:nth-child(odd), section:nth-child(even) {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--copycat-gallery-background);
   z-index: -1;
 }
 
@@ -127,6 +127,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  background-color: var(--header-background-color);
 }
 
 .header-container {
@@ -159,7 +160,7 @@ header {
 .segment-selector {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--input-background-color);
   border-radius: 4px;
   padding: 4px 8px;
 }
@@ -234,7 +235,7 @@ header {
 
 .hero .content {
   padding: var(--space-4);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--meta-label-background-color);
   border-radius: var(--border-radius);
   backdrop-filter: blur(5px);
   max-width: 800px;
@@ -298,9 +299,9 @@ header {
   margin-bottom: var(--space-4);
   padding: var(--space-3);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--global-border-color);
   transition: var(--transition-base);
-  background-color: rgba(18, 18, 18, 0.85);
+  background-color: var(--input-background-color);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -308,12 +309,12 @@ header {
 
 .service-item:hover {
   opacity: 0.75;
-  border-color: var(--color-primary);
+  border-color: var(--hover-background-color);
 }
 
 .service-item h3 {
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--global-text-color);
 }
 
 /* Why Choose Us Section */
@@ -339,22 +340,22 @@ header {
   margin-bottom: var(--space-3);
   padding: var(--space-3);
   border-radius: var(--border-radius);
-  background-color: rgba(18, 18, 18, 0.85);
+  background-color: var(--input-background-color);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--global-border-color);
 }
 
 .feature:hover {
   opacity: 0.75;
-  border-color: var(--color-primary);
+  border-color: var(--hover-background-color);
 }
 
 .feature h3 {
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--global-text-color);
 }
 
 /* Testimonials */
@@ -377,9 +378,9 @@ header {
 
 .testimonial-item {
   padding: var(--space-3);
-  background-color: rgba(18, 18, 18, 0.85);
+  background-color: var(--input-background-color);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--global-border-color);
   margin-bottom: var(--space-3);
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -390,13 +391,13 @@ header {
 
 .testimonial-item:hover {
   opacity: 0.75;
-  border-color: var(--color-primary);
+  border-color: var(--hover-background-color);
 }
 
 .testimonial-item:before {
   content: '"';
   font-size: 4rem;
-  color: var(--color-primary);
+  color: var(--global-text-color);
   opacity: 0.3;
   position: absolute;
   top: -20px;
@@ -409,7 +410,8 @@ header {
 }
 
 .testimonial-author strong {
-  color: var(--color-primary);
+  color: var(--global-text-color);
+  font-weight: 700;
 }
 
 /* CTA Section */
@@ -458,7 +460,7 @@ header {
   margin: 0 auto;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: var(--input-background-color);
 }
 
 .pricing-box:hover {
@@ -468,7 +470,7 @@ header {
 .price {
   font-size: var(--font-size-xxxl);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--global-text-color);
   margin-bottom: var(--space-1);
 }
 
@@ -518,7 +520,7 @@ header {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--space-3);
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: var(--input-background-color);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
   position: relative;
@@ -529,9 +531,9 @@ header {
 }
 
 .plan-box.featured {
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
   transform: scale(1.05);
-  background-color: rgba(40, 40, 40, 0.9);
+  background-color: var(--sidebar-background-color);
 }
 
 .plan-box.featured:hover {
@@ -565,7 +567,7 @@ header {
 .plan-price {
   font-size: var(--font-size-xxl);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--global-text-color);
 }
 
 .plan-price span {
@@ -622,7 +624,7 @@ header {
   padding: var(--space-3);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-border);
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: var(--input-background-color);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
@@ -638,7 +640,7 @@ header {
 
 .faq-item h3 {
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--global-text-color);
   font-size: var(--font-size-large);
 }
 
@@ -741,10 +743,11 @@ form {
   gap: var(--space-2);
   max-width: 500px;
   margin: 0 auto;
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: var(--input-background-color);
   padding: var(--space-3);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--global-border-color);
 }
 
 label {
@@ -755,18 +758,18 @@ label {
 input, textarea, select {
   width: 100%;
   padding: var(--space-1);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--global-border-color);
   border-radius: var(--border-radius);
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-text);
+  background-color: var(--input-background-color);
+  color: var(--global-text-color);
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.3);
+  border-color: var(--hover-background-color);
+  box-shadow: 0 0 0 2px rgba(63, 63, 63, 0.3);
 }
 
 button {
@@ -964,14 +967,15 @@ stripe-pricing-table {
 .included {
   list-style: none;
   padding: var(--space-3);
-  background-color: var(--color-background-alt);
+  background-color: var(--input-background-color);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-sm);
+  border: 1px solid var(--global-border-color);
 }
 
 .included h3 {
   margin-bottom: var(--space-2);
-  color: var(--color-primary);
+  color: var(--global-text-color);
   font-size: var(--font-size-large);
 }
 
@@ -993,7 +997,7 @@ stripe-pricing-table {
   font-weight: bold;
   font-size: var(--font-size-large);
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--global-text-color);
 }
 
 #excluded dd {
@@ -1027,7 +1031,7 @@ stripe-pricing-table {
   font-weight: bold;
   font-size: var(--font-size-large);
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--global-text-color);
 }
 
 .platforms dd {
@@ -1038,7 +1042,7 @@ stripe-pricing-table {
 
 .platforms dd:before {
   content: "•";
-  color: var(--color-primary);
+  color: var(--global-text-color);
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -1061,7 +1065,7 @@ stripe-pricing-table {
 
 .faq-item h3 {
   margin-bottom: var(--space-1);
-  color: var(--color-text);
+  color: var(--global-text-color);
   font-size: var(--font-size-large);
 }
 
@@ -1110,4 +1114,67 @@ stripe-pricing-table {
 
 .secondary-bg {
   background-color: var(--color-secondary);
+}
+
+/* Link styles - updated for accessibility */
+a:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
+
+.segment-link:hover,
+.segment-nav a:hover {
+  color: var(--global-text-color);
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.segment-link.active {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: 700;
+}
+
+/* Testimonial quote symbol */
+.testimonial-item:before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--global-text-color);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+/* Success and error colors */
+.included li:before {
+  content: "✓";
+  color: var(--color-success);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+#excluded dd:before {
+  content: "✕";
+  color: var(--color-danger);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Brand colors utility classes remain for non-text UI elements */
+
+/* Keep brand colors for action elements */
+.cta, button, .step-number, .plan-badge {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Ensuring the active section in plan box has proper contrast */
+.plan-box.featured {
+  border-color: var(--color-secondary);
+  transform: scale(1.05);
+  background-color: var(--sidebar-background-color);
 }
