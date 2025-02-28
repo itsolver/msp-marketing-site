@@ -1,6 +1,6 @@
 <?php
 /**
- * IT Solver - Homepage
+ * IT Solver - Homepage with Starlink-inspired design
  */
 
 // Handle segment parameter
@@ -14,36 +14,38 @@ $pageDescription = 'IT Solver provides ' . ($activeSegment === 'personal' ? 'per
 include 'includes/header.php';
 ?>
 
+<div class="header-hero-wrapper" style="background-image: url('/images/ITSOLVER-LOWRES-1.jpg');">
+
 <!-- Hero Section -->
 <section class="hero">
   <div class="container">
     <div class="content">
       <?php if ($activeSegment === 'personal'): ?>
-        <h1>IT Support That Actually Solves Your Problems</h1>
-        <p>We provide reliable IT solutions for your home and personal technology needs, so you can focus on what matters most.</p>
+        <h1>STARLINK FOR HOME</h1>
+        <p>Reliable high-speed internet for homes, starting at $139/mo.</p>
       <?php else: ?>
-        <h1>IT Support That Actually Solves Business Problems</h1>
-        <p>We provide reliable IT solutions that keep your business running smoothly, so you can focus on what matters most.</p>
+        <h1>STARLINK FOR BUSINESSES</h1>
+        <p>Reliable high-speed internet for businesses, starting at $176/mo.</p>
       <?php endif; ?>
 
-      <div class="cta-container">
-        <a href="<?php echo $activeSegment === 'personal' ? '/pages/on-demand-support.php' : '/pages/business/support-plans.php'; ?>" class="cta"><?php echo $activeSegment === 'personal' ? 'Get Support Now' : 'View Support Plans'; ?></a>
-        <a href="/contact" class="cta secondary">Schedule Consultation</a>
+      <div class="price-info">
+        <div>Flat HP Kit now available for <span class="price">$2,699</span> <span class="sale-price">$2,749</span> until 2/28.</div>
+        <div class="price-note">Schedule a consultation or view our buyer's guide.</div>
       </div>
 
-      <!-- Hero Features -->
-      <div class="hero-features">
-        <div class="hero-feature">
-          <h3>Expert Support</h3>
-          <p>On-demand help for immediate fixes or ongoing managed support.</p>
-        </div>
-        <div class="hero-feature">
-          <h3>Cloud Solutions</h3>
-          <p>Seamless migration to modern cloud services for better productivity.</p>
-        </div>
-        <div class="hero-feature">
-          <h3>Security Focus</h3>
-          <p>Keep your business protected with proactive security measures.</p>
+      <div class="action-links">
+        <a href="/pages/consultation.php">Schedule a consultation</a>
+        <span class="action-sep">or</span>
+        <a href="/pages/buyers-guide.php">buyer's guide</a>
+      </div>
+
+      <div class="address-form">
+        <div class="address-form-row">
+          <div class="address-input">
+            <label for="service-address">SERVICE ADDRESS</label>
+            <input type="text" id="service-address" placeholder="TYPE AND SELECT">
+          </div>
+          <button class="order-now-btn">ORDER NOW</button>
         </div>
       </div>
     </div>
@@ -52,56 +54,27 @@ include 'includes/header.php';
 
 </div><!-- Close header-hero-wrapper -->
 
-<!-- Services Section -->
+<!-- Features Section -->
 <section class="services">
   <div class="container">
-    <div class="content">
-      <h2>How We Help</h2>
-
-      <?php if ($activeSegment === 'personal'): ?>
-      <!-- Personal Services -->
-      <div class="service-item">
-        <h3>🛠️ On-Demand Support</h3>
-        <p>Expert IT support when you need it, with a simple fixed-rate fee. No technical problem is too big or small for our team.</p>
+    <div class="hero-features">
+      <div class="hero-feature">
+        <div class="hero-feature-icon">🌐</div>
+        <h3>Global Coverage</h3>
+        <p>Reliable internet service wherever you need it with our global satellite network.</p>
       </div>
 
-      <div class="service-item">
-        <h3>💾 Backup Solutions</h3>
-        <p>Protect your precious photos, documents, and digital memories with secure and reliable backup solutions.</p>
+      <div class="hero-feature">
+        <div class="hero-feature-icon">⚡</div>
+        <h3>High Performance</h3>
+        <p>Up to 150Mbps download speeds for seamless video conferencing and cloud services.</p>
       </div>
 
-      <div class="service-item">
-        <h3>🔒 Security & Privacy</h3>
-        <p>Keep your personal information safe with our security solutions and privacy protection services.</p>
+      <div class="hero-feature">
+        <div class="hero-feature-icon">🔌</div>
+        <h3>Easy Setup</h3>
+        <p>Simple self-installation with minimal technical knowledge required.</p>
       </div>
-
-      <div class="service-item">
-        <h3>🛒 Tech Shop</h3>
-        <p>Quality technology products with expert setup and support included. Shop with confidence knowing we're here to help.</p>
-      </div>
-
-      <?php else: ?>
-      <!-- Business Services -->
-      <div class="service-item">
-        <h3>🖥️ Managed IT Services</h3>
-        <p>Comprehensive IT management and support for your entire business, with proactive monitoring and maintenance to prevent issues before they happen.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>☁️ Cloud Solutions</h3>
-        <p>Secure and reliable cloud services including Microsoft 365 and Google Workspace implementation, migration, and ongoing support.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>🔒 Cybersecurity</h3>
-        <p>Protect your business with comprehensive security solutions including threat detection, prevention, and employee training.</p>
-      </div>
-
-      <div class="service-item">
-        <h3>🛠️ IT Support Plans</h3>
-        <p>Flexible support options tailored to your business needs, from on-demand assistance to full managed services.</p>
-      </div>
-      <?php endif; ?>
     </div>
   </div>
 </section>
@@ -170,7 +143,7 @@ include 'includes/cta.php';
 if ($activeSegment === 'personal') {
   renderCTA(
     'Ready to solve your tech problems?',
-    'Buy On-Demand Support',
+    'Get Support Now',
     '/pages/tech-support.php',
     'Get immediate help with your technology issues for a simple fixed rate.'
   );

@@ -104,10 +104,11 @@ section:nth-child(odd), section:nth-child(even) {
 /* Header and Hero Combined Background */
 .header-hero-wrapper {
   position: relative;
-  background-image: url('/images/ITSOLVER-LOWRES-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  height: 100vh;
+  min-height: 760px;
 }
 
 .header-hero-wrapper::before {
@@ -117,7 +118,7 @@ section:nth-child(odd), section:nth-child(even) {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
   z-index: 0;
 }
 
@@ -138,13 +139,14 @@ header {
   align-items: center;
   position: relative;
   z-index: 10;
-  padding: var(--space-1) 0;
+  padding: var(--space-1) var(--space-2);
 }
 
 .logo {
   font-size: var(--font-size-large);
   font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .logo a {
@@ -460,17 +462,17 @@ body.menu-open {
 /* Hero Section */
 .hero {
   padding: 0;
-  text-align: center;
   position: relative;
   color: white;
   z-index: 1;
-  min-height: 60vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -1px;
   background-color: transparent;
   background-image: none;
+  text-align: left;
 }
 
 .hero::before {
@@ -478,60 +480,163 @@ body.menu-open {
 }
 
 .hero .content {
-  padding: var(--space-3);
-  background-color: var(--meta-label-background-color);
-  border-radius: var(--border-radius);
-  backdrop-filter: blur(5px);
-  max-width: 800px;
+  padding: var(--space-5) 0;
+  max-width: 900px;
   margin: 0 auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-3);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 2.8rem;
+  font-size: 4rem;
   line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  font-size: var(--font-size-base);
-  margin-bottom: var(--space-3);
+  font-size: 1.25rem;
+  margin-bottom: var(--space-4);
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Add a hero features section to display key points above the fold */
+/* Starlink-style form input */
+.address-form {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 700px;
+}
+
+.address-form-row {
+  display: flex;
+  gap: var(--space-2);
+  width: 100%;
+}
+
+.address-input {
+  flex: 1;
+  position: relative;
+}
+
+.address-input input {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(22, 22, 22, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.address-input input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.address-form label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-size: var(--font-size-small);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.order-now-btn {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.order-now-btn:hover {
+  background-color: #0058cc;
+}
+
+/* Hero price info */
+.price-info {
+  margin: var(--space-3) 0;
+  font-size: 1rem;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.sale-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 0.5rem;
+}
+
+.price-note {
+  font-size: 0.9rem;
+  margin-top: var(--space-1);
+}
+
+/* Action links */
+.action-links {
+  margin-top: var(--space-3);
+  display: flex;
+  gap: var(--space-3);
+}
+
+.action-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.action-links a:hover {
+  text-decoration: underline;
+}
+
+.action-sep {
+  color: #666;
+  font-weight: 300;
+}
+
+/* Hero features section for Starlink-style icons */
 .hero-features {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-2);
-  margin-top: var(--space-3);
+  justify-content: space-between;
+  margin-top: var(--space-5);
+  gap: var(--space-3);
 }
 
 .hero-feature {
   flex: 1;
-  min-width: 200px;
-  max-width: 250px;
-  padding: var(--space-2);
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: var(--border-radius);
-  border: 1px solid var(--global-border-color);
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3);
+  max-width: 300px;
+}
+
+.hero-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
 }
 
 .hero-feature h3 {
-  font-size: var(--font-size-base);
+  font-size: 1.2rem;
   margin-bottom: var(--space-1);
-  color: var(--color-secondary);
+  font-weight: 600;
 }
 
 .hero-feature p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0;
+  color: #ccc;
 }
 
 /* Call to Action */
@@ -539,23 +644,32 @@ body.menu-open {
   display: inline-block;
   background-color: var(--color-primary);
   color: white;
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-2) var(--space-3);
   border-radius: var(--border-radius);
   font-weight: 600;
   transition: var(--transition-base);
   text-decoration: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   margin-right: var(--space-2);
-}
-
-.cta:hover {
-  opacity: 0.75;
-  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .cta.secondary {
   background-color: transparent;
   border: 1px solid white;
+}
+
+/* CTA Container */
+.cta-container {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.cta-container .cta {
+  margin-right: 0;
 }
 
 /* Services Section */

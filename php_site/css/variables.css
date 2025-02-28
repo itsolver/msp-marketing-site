@@ -1,16 +1,16 @@
 :root {
-  /* Brand Colors - Not for text, only UI elements */
-  --color-primary: #003D84; /* IT Solver main blue */
-  --color-secondary: #2da9e1; /* IT Solver light blue */
+  /* Brand Colors - Based on Starlink's design */
+  --color-primary: #006FFF; /* Starlink blue */
+  --color-secondary: #2da9e1; /* Light blue accent */
   --color-light-gray: #e6e7e8; /* Light gray */
-  --color-business: #78c143; /* Green - For business marketing material only */
-  --color-personal: #662d91; /* Purple - For personal marketing material only */
+  --color-business: #006FFF; /* Blue - For business marketing material only */
+  --color-personal: #006FFF; /* Same blue for personal - Keeping brand consistency */
 
-  /* Typography & UI Colors (Based on PhotoAI for accessibility) */
-  --global-background-color: #111;
+  /* Typography & UI Colors (Based on Starlink for accessibility) */
+  --global-background-color: #000; /* Deep black background */
   --sidebar-background-color: #0d0d0d;
   --header-background-color: #000;
-  --input-background-color: #161616;
+  --input-background-color: rgba(22, 22, 22, 0.7); /* Semi-transparent input fields */
   --hover-background-color: #3f3f3f;
   --global-text-color: #fff;
   --global-link-color: #fff;
@@ -38,7 +38,7 @@
   --font-size-large: 1.125rem;
   --font-size-xl: 1.5rem;
   --font-size-xxl: 2rem;
-  --font-size-xxxl: 2.5rem;
+  --font-size-xxxl: 3rem; /* Increased for more dramatic headings */
   --line-height-base: 1.5;
   --line-height-heading: 1.2;
 
