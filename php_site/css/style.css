@@ -63,10 +63,6 @@ a {
   transition: var(--transition-base);
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* Layout */
 .container {
   width: 100%;
@@ -180,14 +176,8 @@ header {
 }
 
 .segment-link.active {
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.segment-link:hover {
-  color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .segment-divider {
@@ -208,10 +198,6 @@ header {
   padding: var(--space-1);
   transition: var(--transition-base);
   font-size: var(--font-size-base);
-}
-
-.segment-nav a:hover {
-  color: var(--color-primary);
 }
 
 .mobile-menu-toggle {
@@ -286,11 +272,8 @@ header {
 }
 
 .cta:hover {
-  background-color: var(--color-primary);
-  opacity: 0.9;
+  opacity: 0.75;
   text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Services Section */
@@ -324,9 +307,7 @@ header {
 }
 
 .service-item:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
-  background-color: rgba(30, 30, 30, 0.9);
+  opacity: 0.75;
   border-color: var(--color-primary);
 }
 
@@ -367,9 +348,7 @@ header {
 }
 
 .feature:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
-  background-color: rgba(30, 30, 30, 0.9);
+  opacity: 0.75;
   border-color: var(--color-primary);
 }
 
@@ -410,8 +389,7 @@ header {
 }
 
 .testimonial-item:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
+  opacity: 0.75;
   border-color: var(--color-primary);
 }
 
@@ -484,8 +462,7 @@ header {
 }
 
 .pricing-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  opacity: 0.75;
 }
 
 .price {
@@ -548,8 +525,7 @@ header {
 }
 
 .plan-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  opacity: 0.75;
 }
 
 .plan-box.featured {
@@ -559,7 +535,7 @@ header {
 }
 
 .plan-box.featured:hover {
-  transform: scale(1.05) translateY(-5px);
+  opacity: 0.75;
 }
 
 .plan-badge {
@@ -653,9 +629,7 @@ header {
 }
 
 .faq-item:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  transform: translateY(-2px);
-  background-color: rgba(40, 40, 40, 0.9);
+  opacity: 0.75;
 }
 
 .faq-item:last-child {
@@ -691,8 +665,7 @@ header {
 }
 
 .step:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 0.75;
 }
 
 .step-number {
@@ -755,10 +728,6 @@ footer::before {
   color: var(--color-text-light);
 }
 
-.footer-links a:hover {
-  color: var(--color-primary);
-}
-
 .copyright {
   margin-top: var(--space-3);
   color: var(--color-text-light);
@@ -812,8 +781,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
+  opacity: 0.75;
 }
 
 /* Responsive */
