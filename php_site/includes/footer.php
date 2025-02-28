@@ -9,7 +9,7 @@
         </div>
         <div class="footer-links">
           <h4>Business</h4>
-          <a href="/pages/business/tech-support.php">Tech Support</a>
+          <a href="/pages/business/support-plans.php">Support Plans</a>
           <a href="/pages/business/microsoft-365.php">Microsoft 365</a>
           <a href="/pages/business/google-workspace.php">Google Workspace</a>
           <a href="/pages/business/backup.php">Backup</a>

@@ -127,5 +127,5 @@ renderCTA(
 );
 
 // Include footer
-include '../includes/footer.php';
+include '../../includes/footer.php';
 ?>
