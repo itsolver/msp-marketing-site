@@ -19,8 +19,7 @@
           <h4>Pages</h4>
           <a href="https://shop.itsolver.net" target="_blank">Shop</a>
           <a href="https://my.splashtop.com/sos/packages/download/TYAJK3STSXT3" target="_blank">SOS</a>
-          <a href="/pages/about.php">About Us</a>
-          <a href="/pages/privacy.php">Privacy Policy</a>
+          <a href="/pages/legal.php">Legal</a>
           <a href="/pages/terms.php">Terms of Service</a>
         </div>
       </div>
