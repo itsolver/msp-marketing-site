@@ -17,35 +17,41 @@ include 'includes/header.php';
 <div class="header-hero-wrapper" style="background-image: url('/images/ITSOLVER-LOWRES-1.jpg');">
 
 <!-- Hero Section -->
-<section class="hero">
-  <div class="container">
-    <div class="content">
-      <?php if ($activeSegment === 'personal'): ?>
-        <h1>STARLINK FOR HOME</h1>
-        <p>Reliable high-speed internet for homes, starting at $139/mo.</p>
-      <?php else: ?>
-        <h1>STARLINK FOR BUSINESSES</h1>
-        <p>Reliable high-speed internet for businesses, starting at $176/mo.</p>
-      <?php endif; ?>
+<section class="hero" id="order-now">
+  <div class="hero-container">
+    <div class="text-container">
+      <div class="text-wrapper">
+        <h1 class="text-headline">TECHNOLOGY MADE SIMPLE</h1>
+        <h2 class="text-subheading">Support at home and business</h2>
+        <?php if (isset($videoButton) && $videoButton): ?>
+        <div>
+          <a class="video-button" tabindex="0">
+            <span class="video-button-text">Watch Now</span>
+            <span class="video-icon">play_circle_outline</span>
+          </a>
+        </div>
+        <?php endif; ?>
+      </div>
+    </div>
 
-      <div class="price-info">
-        <div>Flat HP Kit now available for <span class="price">$2,699</span> <span class="sale-price">$2,749</span> until 2/28.</div>
-        <div class="price-note">Schedule a consultation or view our buyer's guide.</div>
+    <div class="service-plan-card-container">
+      <div class="hero-service-plan-card-container" id="residential-hero-card">
+        <p class="service-card-title">RESIDENTIAL</p>
+        <p class="service-card-subtitle">Support for home</p>
+        <p class="service-card-description"><strong>Starting at $139/mo</strong></p>
+        <div class="service-card-call-to-action">
+          <a href="/pages/on-demand-support.php" class="primary-action-button">Order Now</a>
+          <a href="/pages/residential.php" class="secondary-action-button">Learn More</a>
+        </div>
       </div>
 
-      <div class="action-links">
-        <a href="/pages/consultation.php">Schedule a consultation</a>
-        <span class="action-sep">or</span>
-        <a href="/pages/buyers-guide.php">buyer's guide</a>
-      </div>
-
-      <div class="address-form">
-        <div class="address-form-row">
-          <div class="address-input">
-            <label for="service-address">SERVICE ADDRESS</label>
-            <input type="text" id="service-address" placeholder="TYPE AND SELECT">
-          </div>
-          <button class="order-now-btn">ORDER NOW</button>
+      <div class="hero-service-plan-card-container" id="business-hero-card">
+        <p class="service-card-title">BUSINESS</p>
+        <p class="service-card-subtitle">Support for cloud based businesses anywhere in the world</p>
+        <p class="service-card-description"><strong>Starting at $176/mo</strong></p>
+        <div class="service-card-call-to-action">
+          <a href="/pages/business/support-plans.php" class="primary-action-button">Order Now</a>
+          <a href="/pages/business.php" class="secondary-action-button">Learn More</a>
         </div>
       </div>
     </div>
@@ -59,21 +65,21 @@ include 'includes/header.php';
   <div class="container">
     <div class="hero-features">
       <div class="hero-feature">
-        <div class="hero-feature-icon">🌐</div>
-        <h3>Global Coverage</h3>
-        <p>Reliable internet service wherever you need it with our global satellite network.</p>
+        <div class="hero-feature-icon">🖥️</div>
+        <h3>Expert Support</h3>
+        <p>On-demand help for immediate fixes or ongoing managed support.</p>
       </div>
 
       <div class="hero-feature">
-        <div class="hero-feature-icon">⚡</div>
-        <h3>High Performance</h3>
-        <p>Up to 150Mbps download speeds for seamless video conferencing and cloud services.</p>
+        <div class="hero-feature-icon">☁️</div>
+        <h3>Cloud Solutions</h3>
+        <p>Seamless migration to modern cloud services for better productivity.</p>
       </div>
 
       <div class="hero-feature">
-        <div class="hero-feature-icon">🔌</div>
-        <h3>Easy Setup</h3>
-        <p>Simple self-installation with minimal technical knowledge required.</p>
+        <div class="hero-feature-icon">🔒</div>
+        <h3>Security Focus</h3>
+        <p>Keep your technology protected with proactive security measures.</p>
       </div>
     </div>
   </div>
@@ -142,17 +148,17 @@ include 'includes/cta.php';
 // Render CTA with segment-specific content
 if ($activeSegment === 'personal') {
   renderCTA(
-    'Ready to solve your tech problems?',
+    'Ready to enhance your tech experience?',
     'Get Support Now',
     '/pages/tech-support.php',
-    'Get immediate help with your technology issues for a simple fixed rate.'
+    'Get expert technology assistance for a simple fixed rate that keeps you moving forward.'
   );
 } else {
   renderCTA(
-    'Ready to solve your IT challenges?',
+    'Ready to elevate your IT infrastructure?',
     'Choose a Support Plan',
     '/pages/business/support-plans.php',
-    'Select the right IT support plan to keep your business running smoothly.'
+    'Select the right IT support plan to keep your business growing and thriving.'
   );
 }
 

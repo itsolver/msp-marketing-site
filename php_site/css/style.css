@@ -459,46 +459,282 @@ body.menu-open {
   }
 }
 
-/* Hero Section */
+/* Hero Section - New Starlink Style */
 .hero {
-  padding: 0;
   position: relative;
-  color: white;
   z-index: 1;
-  min-height: calc(100vh - 80px);
+  height: 100vh;
+  min-height: 760px;
+  overflow: hidden;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin-top: -1px;
-  background-color: transparent;
-  background-image: none;
-  text-align: left;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.text-container {
+  margin-top: auto;
+  padding: 0 var(--space-3);
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.text-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-headline {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-subheading {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-3);
+  font-weight: 300;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.video-button {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.video-button:hover {
+  opacity: 0.8;
+}
+
+.video-button-text {
+  margin-right: var(--space-1);
+}
+
+.video-icon {
+  font-size: 1.5rem;
+}
+
+/* Service Plan Cards */
+.service-plan-card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  gap: var(--space-3);
+  padding: 0 var(--space-3);
+}
+
+.hero-service-plan-card-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: var(--space-3);
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-service-plan-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-card-subtitle {
+  font-size: 1rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-text-light);
+}
+
+.service-card-description {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-3);
+}
+
+.service-card-call-to-action {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.primary-action-button {
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  transition: background-color 0.2s;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.primary-action-button:hover {
+  background-color: #0058cc;
+}
+
+.secondary-action-button {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--border-radius);
+  border: 1px solid white;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.secondary-action-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive styles for the hero section */
+@media (max-width: 1024px) {
+  .text-headline {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-headline {
+    font-size: 2.5rem;
+  }
+
+  .text-subheading {
+    font-size: 1.2rem;
+  }
+
+  .service-plan-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-service-plan-card-container {
+    max-width: 100%;
+    margin-bottom: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-headline {
+    font-size: 2rem;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .service-card-call-to-action {
+    flex-direction: column;
+  }
+
+  .primary-action-button,
+  .secondary-action-button {
+    width: 100%;
+  }
+}
+
+/* Hero Features - Updated styling */
+.hero-features {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.hero-feature {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.hero-feature:hover {
+  transform: translateY(-5px);
+}
+
+.hero-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+}
+
+.hero-feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-1);
+  font-weight: 600;
+}
+
+.hero-feature p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+/* Services Section - Updated background */
+.services {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-6) 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(10, 10, 30, 0.9));
+}
+
+/* Make sure existing styles don't conflict */
 .hero::before {
   display: none;
 }
 
 .hero .content {
-  padding: var(--space-5) 0;
-  max-width: 900px;
-  margin: 0 auto;
+  display: none;
 }
 
-.hero h1 {
-  margin-bottom: var(--space-3);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 4rem;
-  line-height: 1.1;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+@media (max-width: 768px) {
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: var(--space-4);
-  max-width: 600px;
+  .hero-feature {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 /* Starlink-style form input */
@@ -603,42 +839,6 @@ body.menu-open {
   font-weight: 300;
 }
 
-/* Hero features section for Starlink-style icons */
-.hero-features {
-  display: flex;
-  justify-content: space-between;
-  margin-top: var(--space-5);
-  gap: var(--space-3);
-}
-
-.hero-feature {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: var(--space-3);
-  max-width: 300px;
-}
-
-.hero-feature-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--space-2);
-  color: var(--color-primary);
-}
-
-.hero-feature h3 {
-  font-size: 1.2rem;
-  margin-bottom: var(--space-1);
-  font-weight: 600;
-}
-
-.hero-feature p {
-  font-size: 1rem;
-  margin-bottom: 0;
-  color: #ccc;
-}
-
 /* Call to Action */
 .cta {
   display: inline-block;
@@ -673,23 +873,6 @@ body.menu-open {
 }
 
 /* Services Section */
-.services {
-  position: relative;
-  z-index: 1;
-  padding: var(--space-6) 0;
-}
-
-.services::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  z-index: -1;
-}
-
 .service-item {
   margin-bottom: var(--space-4);
   padding: var(--space-3);
