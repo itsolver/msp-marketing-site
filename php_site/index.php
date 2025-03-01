@@ -35,13 +35,13 @@ include 'includes/header.php';
     </div>
 
     <div class="service-plan-card-container">
-      <div class="hero-service-plan-card-container" id="residential-hero-card">
-        <p class="service-card-title">RESIDENTIAL</p>
+      <div class="hero-service-plan-card-container" id="personal-hero-card">
+        <p class="service-card-title">personal</p>
         <p class="service-card-subtitle">Support for home</p>
         <p class="service-card-description"><strong>Starting at $139/mo</strong></p>
         <div class="service-card-call-to-action">
           <a href="/pages/on-demand-support.php" class="primary-action-button">Order Now</a>
-          <a href="/pages/residential.php" class="secondary-action-button">Learn More</a>
+          <a href="/pages/personal.php" class="secondary-action-button">Learn More</a>
         </div>
       </div>
 
