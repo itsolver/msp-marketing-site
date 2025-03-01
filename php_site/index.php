@@ -47,10 +47,10 @@ include 'includes/header.php';
 
       <div class="hero-service-plan-card-container" id="business-hero-card">
         <p class="service-card-title">BUSINESS</p>
-        <p class="service-card-subtitle">Support for cloud based businesses anywhere in the world</p>
+        <p class="service-card-subtitle">Systems Health Check and ongoing support for businesses anywhere in the world</p>
         <p class="service-card-description"><strong>$330</strong></p>
         <div class="service-card-call-to-action">
-          <a href="https://book.stripe.com/dR617a4TtaUJ8zC28b" class="primary-action-button">Systems Health Check</a>
+          <a href="https://book.stripe.com/dR617a4TtaUJ8zC28b" class="primary-action-button">Order Now</a>
           <a href="/pages/business/tech-support.php" class="secondary-action-button">Learn More</a>
         </div>
       </div>
