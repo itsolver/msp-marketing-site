@@ -3,6 +3,9 @@
  * IT Solver - Homepage with Starlink-inspired design
  */
 
+$db_path = __DIR__ . '/../php_site_db/customers.db';
+$db = new PDO('sqlite:' . $db_path);
+
 // Handle segment parameter
 $activeSegment = isset($_GET['segment']) && $_GET['segment'] === 'personal' ? 'personal' : 'business';
 
