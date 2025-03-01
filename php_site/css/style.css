@@ -128,9 +128,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 .header-container {
@@ -235,7 +233,7 @@ header {
   bottom: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #000;
   z-index: 1000;
   overflow-y: auto;
   padding: var(--space-3);
@@ -541,10 +539,8 @@ body.menu-open {
 }
 
 .hero-service-plan-card-container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #111;
   border-radius: var(--border-radius);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   padding: var(--space-3);
   max-width: 500px;
   width: 100%;
@@ -681,7 +677,7 @@ body.menu-open {
   align-items: center;
   text-align: center;
   padding: var(--space-3);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #111;
   border-radius: var(--border-radius);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: transform 0.3s;
@@ -761,7 +757,7 @@ body.menu-open {
   width: 100%;
   padding: var(--space-2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(22, 22, 22, 0.7);
+  background: #161616;
   color: white;
   border-radius: 4px;
   font-size: 1rem;
@@ -879,10 +875,8 @@ body.menu-open {
   border-radius: var(--border-radius);
   border: 1px solid var(--global-border-color);
   transition: var(--transition-base);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .service-item:hover {
@@ -918,11 +912,9 @@ body.menu-open {
   margin-bottom: var(--space-3);
   padding: var(--space-3);
   border-radius: var(--border-radius);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--global-border-color);
 }
 
@@ -956,14 +948,12 @@ body.menu-open {
 
 .testimonial-item {
   padding: var(--space-3);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   border-radius: var(--border-radius);
   border: 1px solid var(--global-border-color);
   margin-bottom: var(--space-3);
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   transition: var(--transition-base);
 }
 
@@ -1038,7 +1028,7 @@ body.menu-open {
   margin: 0 auto;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
-  background-color: var(--input-background-color);
+  background-color: #161616;
 }
 
 .pricing-box:hover {
@@ -1098,7 +1088,7 @@ body.menu-open {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   padding: var(--space-3);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
   position: relative;
@@ -1111,7 +1101,7 @@ body.menu-open {
 .plan-box.featured {
   border-color: var(--color-secondary);
   transform: scale(1.05);
-  background-color: var(--sidebar-background-color);
+  background-color: #111;
 }
 
 .plan-box.featured:hover {
@@ -1202,7 +1192,7 @@ body.menu-open {
   padding: var(--space-3);
   padding-bottom: var(--space-3);
   border-bottom: 1px solid var(--color-border);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: var(--transition-base);
@@ -1321,7 +1311,7 @@ form {
   gap: var(--space-2);
   max-width: 500px;
   margin: 0 auto;
-  background-color: var(--input-background-color);
+  background-color: #161616;
   padding: var(--space-3);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -1340,7 +1330,7 @@ input, textarea, select {
   border-radius: var(--border-radius);
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   color: var(--global-text-color);
 }
 
@@ -1453,79 +1443,11 @@ a:hover {
   color: white;
 }
 
-/* Ensuring the active section in plan box has proper contrast */
-.plan-box.featured {
-  border-color: var(--color-secondary);
-  transform: scale(1.05);
-  background-color: var(--sidebar-background-color);
-}
-
-/* CTA Container */
-.cta-container {
-  display: flex;
-  justify-content: center;
-  gap: var(--space-2);
-  margin-bottom: var(--space-3);
-  flex-wrap: wrap;
-}
-
-.cta-container .cta {
-  margin-right: 0; /* Override the margin we added earlier */
-}
-
-@media (max-width: 480px) {
-  .cta-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .cta-container .cta {
-    width: 100%;
-    text-align: center;
-    margin-bottom: var(--space-1);
-  }
-}
-
-/* Pricing Section */
-.pricing-section {
-  position: relative;
-  z-index: 1;
-  padding: var(--space-4) 0;
-  text-align: center;
-}
-
-.pricing-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
-  z-index: -1;
-}
-
-.pricing-section h2 {
-  margin-bottom: var(--space-1);
-  color: var(--global-text-color);
-}
-
-.pricing-section p {
-  margin-bottom: var(--space-3);
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.pricing-section .cta-container {
-  margin-top: var(--space-3);
-}
-
 /* Stripe Pricing Table - Additional Styling */
 stripe-pricing-table {
   --stripe-pricing-table-primary-color: var(--color-primary);
   --stripe-pricing-table-primary-text-color: white;
-  --stripe-pricing-table-background-color: rgba(22, 22, 22, 0.7);
+  --stripe-pricing-table-background-color: #161616;
   --stripe-pricing-table-border-radius: var(--border-radius);
   max-width: 1000px;
   margin: 0 auto;
@@ -1555,7 +1477,7 @@ stripe-pricing-table {
 .included {
   list-style: none;
   padding: var(--space-3);
-  background-color: var(--input-background-color);
+  background-color: #161616;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-sm);
   border: 1px solid var(--global-border-color);
