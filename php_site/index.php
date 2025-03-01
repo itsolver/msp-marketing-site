@@ -38,20 +38,20 @@ include 'includes/header.php';
       <div class="hero-service-plan-card-container" id="personal-hero-card">
         <p class="service-card-title">personal</p>
         <p class="service-card-subtitle">Support for home</p>
-        <p class="service-card-description"><strong>Starting at $139/mo</strong></p>
+        <p class="service-card-description"><strong>$330</strong></p>
         <div class="service-card-call-to-action">
-          <a href="/pages/on-demand-support.php" class="primary-action-button">Order Now</a>
-          <a href="/pages/personal.php" class="secondary-action-button">Learn More</a>
+          <a href="https://book.stripe.com/3cs8zC99Jgf3aHK005" class="primary-action-button">Order Now</a>
+          <a href="/pages/tech-support.php" class="secondary-action-button">Learn More</a>
         </div>
       </div>
 
       <div class="hero-service-plan-card-container" id="business-hero-card">
         <p class="service-card-title">BUSINESS</p>
         <p class="service-card-subtitle">Support for cloud based businesses anywhere in the world</p>
-        <p class="service-card-description"><strong>Starting at $176/mo</strong></p>
+        <p class="service-card-description"><strong>$330</strong></p>
         <div class="service-card-call-to-action">
-          <a href="/pages/business/support-plans.php" class="primary-action-button">Order Now</a>
-          <a href="/pages/business.php" class="secondary-action-button">Learn More</a>
+          <a href="https://book.stripe.com/dR617a4TtaUJ8zC28b" class="primary-action-button">Systems Health Check</a>
+          <a href="/pages/business/tech-support.php" class="secondary-action-button">Learn More</a>
         </div>
       </div>
     </div>
