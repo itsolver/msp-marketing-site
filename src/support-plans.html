@@ -63,6 +63,42 @@ faq:
 </dl>
 {% endif %}
 
+<h2 id="included">Included Requests</h2>
+<div class="requests">
+{% for column in site.data.support-plan-requests %}
+    <ul class="included">
+    {% for request in column.requests-included %}
+    {% if request.header %}<h3>{{ request.header }}</h3>{% endif %}
+    {% if request.request %}<li>{{ request.request }}</li>{% endif %}
+    {% endfor %}
+    </ul>
+{% endfor %}
+</div>
+
+<h2 id="excluded">Excluded requests</h2>
+<dl id="excluded" class="requests">
+    {% for column in site.data.support-plan-requests %}
+    <div>
+    {% for request in column.requests-excluded %}
+    {% if request.header %}<dt>{{ request.header }}</dt>{% endif %}
+    {% if request.request %}<dd>{{ request.request }}</dd>{% endif %}
+    {% endfor %}
+    </div>
+    {% endfor %}
+</dl>
+
+<h2 id="platforms">Supported technologies</h2>
+<dl class="platforms">
+  {% for column in site.data.platforms %}
+  <div>
+  {% for platform in column.platforms %}
+  {% if platform.header %}<dt>{{ platform.header }}</dt>{% endif %}
+  {% if platform.name %}<dd>{{ platform.name }}</dd>{% endif %}
+  {% endfor %}
+  </div>
+  {% endfor %}
+</dl>
+
 <section>
   <h2>For More Information</h2>
   Please review IT Solver's
