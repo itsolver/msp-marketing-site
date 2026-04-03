@@ -1,7 +1,10 @@
-fee: 179
-period: / request
+fee: 330
+period: / incident
 minimum: false
 features:
-  - feature: Purchase a single incident of support
-  - feature: Fixed rate - no call out fee or hourly rate
-  - feature: 30 days cover for peace of mind
+  - feature: Expert support for a single, critical issue
+  - feature: Transparent fixed rate - no hidden fees or hourly charges
+  - feature: Up to 2 hours of dedicated support, with option to extend at $165/hr
+  - feature: 30-day follow-up coverage for peace of mind
+  - feature: Access to our knowledge base and video tutorials
+  - feature: Detailed issue resolution report

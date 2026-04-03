@@ -1,12 +1,30 @@
 <section class="hero">
   <div class="wrapper">
-    <h1>{{ include.heading }}</h1>
-    <p class="subtitle">{{ include.subtitle }}</p>
-    <div class="hero-cta">
-      <p>Become a paying customer to enjoy exclusive benefits, including immediate phone support. Sign up now!</p>
-      <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-      <stripe-pricing-table pricing-table-id="prctbl_0MVQkDGwvziWDQizVeR7eCkq" publishable-key="pk_live_VJ3u45huMiamA3vibzwz4zCU"></stripe-pricing-table>
+    <div class="content">
+      <h1>{{ include.heading }}</h1>
+      <p class="subtitle">{{ include.subtitle }}</p>
+
+      <div class="cta-container">
+        <a href="/plans" class="cta">View Support Plans</a>
+        <a href="/contact" class="cta secondary">Schedule Consultation</a>
+      </div>
+
+      <div class="hero-features">
+        <div class="hero-feature">
+          <h3>Expert Support</h3>
+          <p>On-demand help for immediate fixes or ongoing managed support.</p>
+        </div>
+        <div class="hero-feature">
+          <h3>Cloud Solutions</h3>
+          <p>Seamless migration to modern cloud services for better productivity.</p>
+        </div>
+        <div class="hero-feature">
+          <h3>Security Focus</h3>
+          <p>Keep your business protected with proactive security measures.</p>
+        </div>
+      </div>
     </div>
+
     {% if include.video != "" %}
     <div class="landing-video">
       {% include video.html video = include.video %}
