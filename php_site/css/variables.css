@@ -1,0 +1,60 @@
+:root {
+  /* Brand Colors - Based on Starlink's design */
+  --color-primary: #006FFF; /* Starlink blue */
+  --color-secondary: #2da9e1; /* Light blue accent */
+  --color-light-gray: #e6e7e8; /* Light gray */
+  --color-business: #006FFF; /* Blue - For business marketing material only */
+  --color-personal: #006FFF; /* Same blue for personal - Keeping brand consistency */
+
+  /* Typography & UI Colors (Based on Starlink for accessibility) */
+  --global-background-color: #000; /* Deep black background */
+  --sidebar-background-color: #0d0d0d;
+  --header-background-color: #000;
+  --input-background-color: rgba(22, 22, 22, 0.7); /* Semi-transparent input fields */
+  --hover-background-color: #3f3f3f;
+  --global-text-color: #fff;
+  --global-link-color: #fff;
+  --global-border-color: #343434;
+  --photo-border-color: #343434;
+  --meta-label-background-color: rgba(0, 0, 0, 0.5);
+  --copycat-gallery-background: rgba(0, 0, 0, 0.75);
+
+  /* Mapping old variable names to new ones for compatibility */
+  --color-background: var(--global-background-color);
+  --color-text: var(--global-text-color);
+  --color-text-light: #cccccc;
+  --color-border: var(--global-border-color);
+  --color-background-alt: #1e1e1e; /* Slightly lighter dark background */
+  --color-success: #28a745;
+  --color-error: #dc3545;
+  --color-danger: #dc3545;
+  --box-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+
+  /* Typography */
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-family-display: 'Source Sans Pro', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-large: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+  --font-size-xxxl: 3rem; /* Increased for more dramatic headings */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing - based on 8px increments */
+  --space-1: 0.5rem;    /* 8px */
+  --space-2: 1rem;      /* 16px */
+  --space-3: 1.5rem;    /* 24px */
+  --space-4: 2rem;      /* 32px */
+  --space-5: 3rem;      /* 48px */
+  --space-6: 4rem;      /* 64px */
+
+  /* Layout */
+  --container-width: 1200px;
+  --content-width: 800px;
+  --border-radius: 4px;
+
+  /* Transitions */
+  --transition-base: all 0.2s ease-in-out;
+}
